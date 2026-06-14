@@ -1,15 +1,15 @@
 const APP_COPY = {
   it: {
-    loading: "Aggiorno il meteo per suggerire il contenuto piu rilevante.",
+    loading: "Aggiorno il meteo per suggerire il contenuto più rilevante.",
     weatherFallback: "Dati non disponibili",
     tempFallback: "--",
     summary: (weatherText) =>
-      `Meteo attuale: ${weatherText}. La homepage riorganizza le priorita in base allo scenario attivo.`,
+      `Meteo attuale: ${weatherText}. La homepage riorganizza le priorità in base allo scenario attivo.`,
     scenarios: {
       walk: {
         label: "Scenario A",
         priority: "Via Francigena e camminatori",
-        title: "Mattina soleggiata: priorita ai cammini",
+        title: "Mattina soleggiata: priorità ai cammini",
         copy: "Con sole tra le 07:00 e le 11:00 conviene spingere la Tappa 40 e i contenuti per chi cammina."
       },
       sunset: {
@@ -28,7 +28,7 @@ const APP_COPY = {
         label: "Scenario D",
         priority: "Weekend allungato",
         title: "Weekend attivo: Montefiascone come hub della Tuscia",
-        copy: "Tra venerdi e domenica la home rafforza le spoke utili a soggiorni di piu notti e visite nei dintorni."
+        copy: "Tra venerdì e domenica la home rafforza le spoke utili a soggiorni di più notti e visite nei dintorni."
       },
       heritage: {
         label: "Scenario base",

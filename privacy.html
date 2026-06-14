@@ -16,7 +16,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
-    <link rel="stylesheet" href="/css/style.css?v=2026-06-14-rwd2">
+    <link rel="stylesheet" href="/css/style.css?v=2026-06-14-itlaunch">
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
@@ -62,26 +62,56 @@
       <section class="section">
         <div class="container content-stack">
           <section class="card">
-            <h2>Cosa e verificabile dal codice</h2>
+            <h2>Natura del sito e dati trattati</h2>
             <p>
-              Il sito e composto principalmente da pagine statiche HTML, CSS e JavaScript. Nel codice ispezionato non
-              risultano attivi script di analytics o cookie di profilazione caricati nelle pagine italiane pubbliche.
+              Il sito è composto principalmente da pagine statiche HTML, CSS e JavaScript. Nel codice pubblicato per il
+              soft launch italiano non risultano attivi sistemi di analytics, pixel pubblicitari o cookie di profilazione.
             </p>
             <p>
-              Se in produzione verranno attivati analytics, pixel, form esterni o integrazioni di terze parti, questa
-              informativa dovra essere aggiornata prima della pubblicazione definitiva.
+              Il portale non richiede registrazione e non raccoglie dati personali tramite form. L'unico contatto
+              diretto avviene via email, su iniziativa dell'utente.
             </p>
           </section>
 
           <section class="card">
-            <h2>Dati di contatto e richieste</h2>
+            <h2>Servizi di terze parti</h2>
             <p>
-              Per richieste relative ai contenuti o per segnalazioni sul portale e disponibile il contatto
+              Alcune funzionalità caricano risorse da servizi esterni. Tali servizi possono ricevere l'indirizzo IP del
+              dispositivo e dati tecnici di connessione necessari a fornire la risorsa richiesta:
+            </p>
+            <ul class="plain-list">
+              <li><strong>Google Fonts</strong> (<code>fonts.googleapis.com</code>, <code>fonts.gstatic.com</code>):
+                caricamento dei caratteri tipografici su tutte le pagine.</li>
+              <li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>): dati meteo nel riquadro informativo
+                della homepage. Non vengono inviati dati personali; la richiesta usa coordinate fisse di Montefiascone.</li>
+              <li><strong>Mappe</strong> (solo nella pagina Mappa): libreria <strong>Leaflet</strong> da
+                <code>unpkg.com</code> e tile cartografiche da <strong>OpenStreetMap</strong>,
+                <strong>OpenTopoMap</strong> e <strong>ArcGIS</strong> (<code>server.arcgisonline.com</code>).</li>
+            </ul>
+            <p>
+              Questi servizi non sono gestiti dal portale e applicano proprie informative privacy, che si invita a
+              consultare per i dettagli sul trattamento dei dati.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>Archiviazione locale</h2>
+            <p>
+              Per ridurre le richieste di rete, il dato meteo della homepage può essere conservato temporaneamente nel
+              <code>sessionStorage</code> del browser (chiave tecnica, valida per la durata della sessione). Non è un
+              cookie di profilazione e non viene condiviso con terzi.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>Contatti e aggiornamenti</h2>
+            <p>
+              Per richieste relative ai contenuti o segnalazioni è disponibile il contatto
               <a href="mailto:info@comune.montefiascone.vt.it">info@comune.montefiascone.vt.it</a>.
             </p>
             <p>
-              Eventuali trattamenti aggiuntivi non verificabili dal codice disponibile vanno documentati prima
-              dell'attivazione pubblica.
+              Se in produzione verranno attivati analytics, pixel, form esterni o ulteriori integrazioni di terze parti,
+              questa informativa sarà aggiornata prima dell'attivazione.
             </p>
           </section>
         </div>
@@ -90,15 +120,6 @@
 
     <footer class="site-footer">
       <div class="container footer__inner">
-        <section class="contact-card">
-          <h2 class="footer__title">Trasparenza</h2>
-          <div class="footer-list">
-            <p><a href="/progetto-editoriale.html">Progetto editoriale</a></p>
-            <p><a href="/privacy.html" aria-current="page">Privacy</a></p>
-            <p><a href="/cookie.html">Cookie</a></p>
-          </div>
-        </section>
-
         <section class="contact-card" data-trust-footer>
           <h2 class="footer__title">Trasparenza</h2>
           <div class="footer-list">
@@ -115,7 +136,7 @@
       </div>
     </footer>
 
-    <script src="/js/main.js?v=2026-06-14-rwd2" defer></script>
-    <script src="/pwa-boot.js?v=2026-06-14-rwd2" defer></script>
+    <script src="/js/main.js?v=2026-06-14-itlaunch" defer></script>
+    <script src="/pwa-boot.js?v=2026-06-14-itlaunch" defer></script>
   </body>
 </html>

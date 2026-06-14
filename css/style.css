@@ -1149,7 +1149,9 @@ dl {
 
 /* Floating Hero Card */
 .page-hero__panel--home {
+  /* JPG fallback first; modern browsers use the WebP via image-set (matches the <link rel=preload> hero) */
   background: var(--hero-bg-image, url("/media/hero-rocca-dei-papi-1600.jpg")) center / cover no-repeat;
+  background: var(--hero-bg-image, image-set(url("/media/hero-rocca-dei-papi-1600.webp") type("image/webp"), url("/media/hero-rocca-dei-papi-1600.jpg") type("image/jpeg"))) center / cover no-repeat;
   min-height: 520px;
   display: flex;
   align-items: center;
