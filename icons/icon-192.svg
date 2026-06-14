@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Icona Montefiascone">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6f1d2f"/>
+      <stop offset="55%" stop-color="#8f3547"/>
+      <stop offset="100%" stop-color="#b98652"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#58a6b5"/>
+      <stop offset="100%" stop-color="#2b6d7c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <circle cx="256" cy="218" r="136" fill="#f6efe5" opacity="0.14"/>
+  <path d="M112 354c40-17 87-23 140-18 58 6 104 4 148-8 12-4 25 5 25 18v38H112z" fill="url(#lake)"/>
+  <path d="M160 128v12c0 55 31 105 80 127v31h-32c-9 0-16 7-16 16s7 16 16 16h32v44c-39 8-67 41-67 81v9h166v-9c0-40-28-73-67-81v-44h32c9 0 16-7 16-16s-7-16-16-16h-32v-31c49-22 80-72 80-127v-12H160zm42 32h108c-6 43-32 76-54 76s-48-33-54-76zm30 256c7-11 19-18 32-18s25 7 32 18h-64z" fill="#f6efe5"/>
+</svg>

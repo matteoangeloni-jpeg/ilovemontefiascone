@@ -1,0 +1,882 @@
+﻿<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galleria Montefiascone | Foto, EXIF e Lightbox</title>
+    <meta
+      name="description"
+      content="Esplora la galleria di Montefiascone con foto del borgo, overlay EXIF, lightbox ad alta risoluzione e crediti delle immagini utilizzate nel portale.">
+    <meta name="theme-color" content="#6fb8d1">
+    <link rel="canonical" href="https://ilovemontefiascone.com/galleria.html">
+    <link rel="alternate" hreflang="it" href="https://ilovemontefiascone.com/galleria.html">
+    <link rel="alternate" hreflang="x-default" href="https://ilovemontefiascone.com/galleria.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Galleria Montefiascone | Foto, EXIF e Lightbox">
+    <meta
+      property="og:description"
+      content="Esplora la galleria di Montefiascone con foto del borgo, overlay EXIF, lightbox ad alta risoluzione e crediti delle immagini utilizzate nel portale.">
+    <meta property="og:url" content="https://ilovemontefiascone.com/galleria.html">
+    <meta property="og:image" content="https://ilovemontefiascone.com/media/gallery/rocca-overview.jpg">
+    <meta property="og:locale" content="it_IT">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galleria Montefiascone | Foto, EXIF e Lightbox">
+    <meta
+      name="twitter:description"
+      content="Esplora la galleria di Montefiascone con foto del borgo, overlay EXIF, lightbox ad alta risoluzione e crediti delle immagini utilizzate nel portale.">
+    <meta name="twitter:image" content="https://ilovemontefiascone.com/media/gallery/rocca-overview.jpg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
+    <link rel="stylesheet" href="/assets/site.css?v=2026-06-14-rwd2">
+    <link rel="stylesheet" href="/assets/gallery.css?v=2026-06-14-rwd2">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="/">Montefiascone</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>Menu</button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Navigazione principale">
+          <a href="/">Home</a>
+          <a href="/cosa-vedere.html">Cosa vedere</a>
+          <a href="/vino.html">Vino</a>
+          <a href="/eventi.html">Eventi</a>
+          <a href="/galleria.html" aria-current="page">Galleria</a>
+          <a href="/mappa.html">Mappa</a>
+          <a href="/associazioni-volontariato-montefiascone.html">Associazioni</a>
+        </nav>
+        <div class="header__actions">
+          <div class="lang-switcher" aria-label="Versione del sito">
+            <a class="is-current" href="/galleria.html" lang="it">IT</a>
+          </div>
+          <a href="/cosa-vedere-montefiascone-guida-completa.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenuto">
+      <section class="page-hero shell">
+        <div class="page-hero-card">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/media/hero-rocca-dei-papi-768.webp 768w, /media/hero-rocca-dei-papi-1280.webp 1280w, /media/hero-rocca-dei-papi-1600.webp 1600w"
+              sizes="100vw">
+            <img alt="Rocca dei Papi e Lago di Bolsena in luce serale" class="hero-media" decoding="async" height="1204" src="/media/hero-rocca-dei-papi-1600.jpg" width="1600"/>
+          </picture>
+
+          <div class="page-hero-content">
+            <p class="eyebrow">Galleria avanzata &middot; EXIF &middot; High resolution</p>
+            <h1>Galleria immagini avanzata per Montefiascone</h1>
+            <p>
+              La griglia combina anteprime leggere in WebP, lettura EXIF dai JPEG originali e una lightbox fluida per
+              mantenere micro-contrasto, profondita tonale e dettagli cromatici del tufo e del Lago di Bolsena.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <div class="gallery-intro" data-reveal>
+          <div class="section-header">
+            <p class="section-kicker">Componente riusabile</p>
+            <h2>Masonry grid con overlay tecnico in stile HUD</h2>
+            <p>
+              Le anteprime usano <code>loading="lazy"</code> e aprono il JPEG ad alta risoluzione solo al click. I dati tecnici
+              vengono letti con <strong>Exif.js</strong> dal file originale, in linea con il fatto che lo standard EXIF
+              si applica ai JPEG e ai TIFF.
+            </p>
+          </div>
+
+          <article class="gallery-note">
+            <p><strong>Uso consigliato:</strong> questo componente funziona bene per pagine dedicate a spot fotografici, eventi motoristici, cantine e monumenti.</p>
+            <p><strong>Comportamento:</strong> su desktop l'overlay compare al passaggio del mouse; su mobile il tocco apre direttamente la lightbox con i dati tecnici completi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <div class="gallery-masonry" data-reveal>
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Rocca dei Papi, apertura sul bacino vulcanico"
+              data-caption="Inquadratura ampia per leggere insieme rocca, crinale urbano e Lago di Bolsena, con resa naturale dei toni chiari del tufo."
+              data-full-src="/media/gallery/rocca-overview.jpg"
+              data-exif-src="/media/gallery/rocca-overview.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/rocca-overview.webp">
+                  <img alt="Rocca dei Papi con il Lago di Bolsena sullo sfondo" decoding="async" height="1204" loading="lazy" src="/media/gallery/rocca-overview.jpg" width="1600"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Rocca dei Papi</h3>
+                      <p>Panorama largo sul lago e sul profilo alto del borgo.</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Cupola e lago in compressione prospettica"
+              data-caption="Taglio verticale pensato per isolare la parte alta del borgo e far lavorare il teleobiettivo sulla separazione dei piani."
+              data-full-src="/media/gallery/cupola-lake.jpg"
+              data-exif-src="/media/gallery/cupola-lake.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/cupola-lake.webp">
+                  <img alt="Dettaglio del profilo alto di Montefiascone sopra il lago" decoding="async" height="1415" loading="lazy" src="/media/gallery/cupola-lake.jpg" width="1400"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Compressione dei piani</h3>
+                      <p>Un taglio piu stretto esalta la distanza tra il colle e il lago.</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Dettaglio materico del tufo"
+              data-caption="Crop piu ravvicinato per simulare una lettura architettonica del borgo e valutare micro-contrasto, texture e transizioni tonali."
+              data-full-src="/media/gallery/tufo-detail.jpg"
+              data-exif-src="/media/gallery/tufo-detail.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/tufo-detail.webp">
+                  <img alt="Dettaglio architettonico con toni caldi del tufo a Montefiascone" decoding="async" height="1339" loading="lazy" src="/media/gallery/tufo-detail.jpg" width="1280"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Materie e texture</h3>
+                      <p>Tonalita calde e spigoli netti per il racconto editoriale del centro storico.</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Belvedere tele, rilievi e abitato"
+              data-caption="Lettura piu grafica della collina: il tele aumenta la densita delle forme e rende piu leggibile la successione di crinale, pietra e acqua."
+              data-full-src="/media/gallery/belvedere-tele.jpg"
+              data-exif-src="/media/gallery/belvedere-tele.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/belvedere-tele.webp">
+                  <img alt="Inquadratura teleobiettivo sul profilo di Montefiascone" decoding="async" height="1399" loading="lazy" src="/media/gallery/belvedere-tele.jpg" width="1500"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Compressione tele</h3>
+                      <p>Immagine utile per eventi, cronaca sportiva e fotografia paesaggistica.</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Lago in luce piu fredda"
+              data-caption="Versione piu raccolta e leggermente piu fredda, utile per testare la tenuta dei blu nelle aree d'acqua e cielo."
+              data-full-src="/media/gallery/lago-bluehour.jpg"
+              data-exif-src="/media/gallery/lago-bluehour.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/lago-bluehour.webp">
+                  <img alt="Lago di Bolsena in luce piu fredda visto da Montefiascone" decoding="async" height="936" loading="lazy" src="/media/gallery/lago-bluehour.jpg" width="1600"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Blu e riflessi</h3>
+                      <p>Il file hi-res mantiene leggibile il passaggio tra acqua, foschia e rilievi lontani.</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Linee di discesa e lettura del paesaggio"
+              data-caption="Crop pensato per una pagina su cammini, punti panoramici o cronoscalata: le linee principali restano pulite anche in riduzione."
+              data-full-src="/media/gallery/francigena-lines.jpg"
+              data-exif-src="/media/gallery/francigena-lines.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/francigena-lines.webp">
+                  <img alt="Declivio di Montefiascone con linee prospettiche verso il lago" decoding="async" height="1150" loading="lazy" src="/media/gallery/francigena-lines.jpg" width="1400"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Linee e profondita</h3>
+                      <p>File adatto a itinerari, pagine mappa e storytelling visivo del colle.</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Montefiascone dall'Alto"
+              data-caption="Spettacolare veduta aerea del borgo medievale con la Cattedrale di Santa Margherita in evidenza. Foto a cura di David Petretti (Scatto Matto - Instagram: @david_petretti_ph_scattomatto)."
+              data-full-src="/media/gallery/petretti-drone1.jpg"
+              data-exif-src="/media/gallery/petretti-drone1.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/petretti-drone1.webp">
+                  <img alt="Veduta aerea di Montefiascone di David Petretti" decoding="async" height="767" loading="lazy" src="/media/gallery/petretti-drone1.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Montefiascone dall'Alto</h3>
+                      <p>Foto di David Petretti (Scatto Matto)</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Silenzio sul Lago"
+              data-caption="Suggestivo tramonto sul Lago di Bolsena incorniciato dalla vegetazione locale, con una tipica barca in primo piano. Foto a cura di David Petretti (Scatto Matto - Instagram: @david_petretti_ph_scattomatto)."
+              data-full-src="/media/gallery/petretti-lago-tramonto.jpg"
+              data-exif-src="/media/gallery/petretti-lago-tramonto.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/petretti-lago-tramonto.webp">
+                  <img alt="Tramonto sul Lago di Bolsena di David Petretti" decoding="async" height="960" loading="lazy" src="/media/gallery/petretti-lago-tramonto.jpg" width="960"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Silenzio sul Lago</h3>
+                      <p>Foto di David Petretti (Scatto Matto)</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="La Cupola dall'Interno"
+              data-caption="Prospettiva grandangolare rivolta verso la grande cupola dipinta della Cattedrale di Santa Margherita. Foto a cura di David Petretti (Scatto Matto - Instagram: @david_petretti_ph_scattomatto)."
+              data-full-src="/media/gallery/petretti-cupola-interno.jpg"
+              data-exif-src="/media/gallery/petretti-cupola-interno.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/petretti-cupola-interno.webp">
+                  <img alt="Interno Cupola di Santa Margherita di David Petretti" decoding="async" height="680" loading="lazy" src="/media/gallery/petretti-cupola-interno.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>La Cupola dall'Interno</h3>
+                      <p>Foto di David Petretti (Scatto Matto)</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Rocca e Cupola in Luce Calda"
+              data-caption="Volo aereo sopra i tetti del borgo illuminati dalla luce calda del tardo pomeriggio. Foto a cura di David Petretti (Scatto Matto - Instagram: @david_petretti_ph_scattomatto)."
+              data-full-src="/media/gallery/petretti-drone2.jpg"
+              data-exif-src="/media/gallery/petretti-drone2.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/petretti-drone2.webp">
+                  <img alt="Veduta aerea Rocca e Cupola di David Petretti" decoding="async" height="681" loading="lazy" src="/media/gallery/petretti-drone2.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Rocca e Cupola in Luce Calda</h3>
+                      <p>Foto di David Petretti (Scatto Matto)</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="La Rocca Illuminata"
+              data-caption="Suggestiva veduta notturna della Rocca dei Papi illuminata a festa in occasione della Fiera del Vino. Foto a cura di Fiera del Vino (Facebook: @fieradelvinomontefiascone)."
+              data-full-src="/media/gallery/fieradelvino-rocca-notte.jpg"
+              data-exif-src="/media/gallery/fieradelvino-rocca-notte.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/fieradelvino-rocca-notte.webp">
+                  <img alt="Rocca dei Papi illuminata di notte per la Fiera del Vino" decoding="async" height="681" loading="lazy" src="/media/gallery/fieradelvino-rocca-notte.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>La Rocca Illuminata</h3>
+                      <p>Foto Fiera del Vino Montefiascone</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Corsa delle Botti e Borgo in Festa"
+              data-caption="Il borgo medievale gremito di visitatori sotto le luminarie della Fiera del Vino. Foto a cura di Fiera del Vino (Facebook: @fieradelvinomontefiascone)."
+              data-full-src="/media/gallery/fieradelvino-via-allestita.jpg"
+              data-exif-src="/media/gallery/fieradelvino-via-allestita.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/fieradelvino-via-allestita.webp">
+                  <img alt="Borgo in festa per la Fiera del Vino" decoding="async" height="681" loading="lazy" src="/media/gallery/fieradelvino-via-allestita.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Borgo in Festa</h3>
+                      <p>Foto Fiera del Vino Montefiascone</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="La Fontana del Vino"
+              data-caption="Dettaglio ravvicinato della fontana monumentale addobbata con tralci di vite e uva durante i festeggiamenti della fiera. Foto a cura di Fiera del Vino (Facebook: @fieradelvinomontefiascone)."
+              data-full-src="/media/gallery/fieradelvino-fontana-uva.jpg"
+              data-exif-src="/media/gallery/fieradelvino-fontana-uva.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/fieradelvino-fontana-uva.webp">
+                  <img alt="Fontana monumentale addobbata con uva" decoding="async" height="681" loading="lazy" src="/media/gallery/fieradelvino-fontana-uva.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>La Fontana del Vino</h3>
+                      <p>Foto Fiera del Vino Montefiascone</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="I Vini delle Cantine Storiche"
+              data-caption="Degustazione guidata da un sommelier FISAR all'interno di una delle storiche cantine sotterranee del borgo. Foto a cura di Fiera del Vino (Facebook: @fieradelvinomontefiascone)."
+              data-full-src="/media/gallery/fieradelvino-sommelier-cantina.jpg"
+              data-exif-src="/media/gallery/fieradelvino-sommelier-cantina.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/fieradelvino-sommelier-cantina.webp">
+                  <img alt="Degustazione di vino con sommelier in cantina" decoding="async" height="682" loading="lazy" src="/media/gallery/fieradelvino-sommelier-cantina.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Degustazione in Cantina</h3>
+                      <p>Foto Fiera del Vino Montefiascone</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Sfilata del Corteo Storico"
+              data-caption="La folla si accalca lungo le vie storiche del borgo durante la sfilata del Corteo Storico e l'inaugurazione della fiera. Foto a cura di Fiera del Vino (Facebook: @fieradelvinomontefiascone)."
+              data-full-src="/media/gallery/fieradelvino-corteo-folla.jpg"
+              data-exif-src="/media/gallery/fieradelvino-corteo-folla.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/fieradelvino-corteo-folla.webp">
+                  <img alt="Corteo storico e sfilata per le vie di Montefiascone" decoding="async" height="681" loading="lazy" src="/media/gallery/fieradelvino-corteo-folla.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Corteo Storico</h3>
+                      <p>Foto Fiera del Vino Montefiascone</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Vicoli in Festa (ATB Festival)"
+              data-caption="Il caratteristico rione Porticella animato dai visitatori durante le serate dell'ATB Festival. Foto a cura di ATB Festival (Facebook: @ATusciaBirra, Instagram: @atbfestival)."
+              data-full-src="/media/gallery/atbfestival-via-folla.jpg"
+              data-exif-src="/media/gallery/atbfestival-via-folla.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/atbfestival-via-folla.webp">
+                  <img alt="Vicolo storico di Porticella gremito di visitatori all'ATB Festival" decoding="async" height="681" loading="lazy" src="/media/gallery/atbfestival-via-folla.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Vicoli in Festa</h3>
+                      <p>Foto ATB Festival</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Il Grande Palco (ATB Festival)"
+              data-caption="Il palco principale dell'ATB Festival allestito per i concerti live di musica indipendente. Foto a cura di ATB Festival (Facebook: @ATusciaBirra, Instagram: @atbfestival)."
+              data-full-src="/media/gallery/atbfestival-palco-notte.jpg"
+              data-exif-src="/media/gallery/atbfestival-palco-notte.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/atbfestival-palco-notte.webp">
+                  <img alt="Palco allestito all'aperto durante i concerti dell'ATB Festival" decoding="async" height="680" loading="lazy" src="/media/gallery/atbfestival-palco-notte.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Il Grande Palco</h3>
+                      <p>Foto ATB Festival</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Tamburi nel Borgo (ATB Festival)"
+              data-caption="Spettacolare esibizione itinerante di percussionisti e sbandieratori tra le vie medievali. Foto a cura di ATB Festival (Facebook: @ATusciaBirra, Instagram: @atbfestival)."
+              data-full-src="/media/gallery/atbfestival-tamburi-borgo.jpg"
+              data-exif-src="/media/gallery/atbfestival-tamburi-borgo.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/atbfestival-tamburi-borgo.webp">
+                  <img alt="Gruppo di percussionisti in sfilata per le vie storiche" decoding="async" height="680" loading="lazy" src="/media/gallery/atbfestival-tamburi-borgo.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Musica e Ritmi</h3>
+                      <p>Foto ATB Festival</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="La Spillatura (ATB Festival)"
+              data-caption="Mastri birrai all'opera per servire le migliori birre artigianali all'interno delle storiche grotte e cantine. Foto a cura di ATB Festival (Facebook: @ATusciaBirra, Instagram: @atbfestival)."
+              data-full-src="/media/gallery/atbfestival-spillatore-cantina.jpg"
+              data-exif-src="/media/gallery/atbfestival-spillatore-cantina.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/atbfestival-spillatore-cantina.webp">
+                  <img alt="Spillatura di birra artigianale da un bancone attrezzato" decoding="async" height="680" loading="lazy" src="/media/gallery/atbfestival-spillatore-cantina.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Le Birre Artigianali</h3>
+                      <p>Foto ATB Festival</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Performance Live (ATB Festival)"
+              data-caption="Dettaglio dell'esibizione dal vivo di una band indipendente sotto i riflettori del palco. Foto a cura di ATB Festival (Facebook: @ATusciaBirra, Instagram: @atbfestival)."
+              data-full-src="/media/gallery/atbfestival-cantante-concerto.jpg"
+              data-exif-src="/media/gallery/atbfestival-cantante-concerto.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/atbfestival-cantante-concerto.webp">
+                  <img alt="Cantante e chitarrista si esibiscono dal vivo sul palco" decoding="async" height="683" loading="lazy" src="/media/gallery/atbfestival-cantante-concerto.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Energia Live</h3>
+                      <p>Foto ATB Festival</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Il Casco del Pilota (Cronoscalata)"
+              data-caption="Dettaglio ravvicinato del casco del pilota M. Antonini all'interno dell'abitacolo prima della partenza. Foto a cura di Spada Visual (Instagram: @spada.visual)."
+              data-full-src="/media/gallery/cronoscalata-casco-pilota.jpg"
+              data-exif-src="/media/gallery/cronoscalata-casco-pilota.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/cronoscalata-casco-pilota.webp">
+                  <img alt="Casco del pilota M. Antonini all'interno dell'auto da corsa" decoding="async" height="683" loading="lazy" src="/media/gallery/cronoscalata-casco-pilota.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Dettaglio Pilota</h3>
+                      <p>Foto Spada Visual</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Abitacolo da Corsa (Cronoscalata)"
+              data-caption="L'interno dell'abitacolo con volante Sparco e strumentazione analogica per il controllo dei giri e dei parametri motore. Foto a cura di Spada Visual (Instagram: @spada.visual)."
+              data-full-src="/media/gallery/cronoscalata-abitacolo-pilota.jpg"
+              data-exif-src="/media/gallery/cronoscalata-abitacolo-pilota.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/cronoscalata-abitacolo-pilota.webp">
+                  <img alt="Interno dell'abitacolo di una vettura da corsa con volante Sparco e strumentazione" decoding="async" height="683" loading="lazy" src="/media/gallery/cronoscalata-abitacolo-pilota.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Interno Abitacolo</h3>
+                      <p>Foto Spada Visual</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Piloti e Auto Storiche (Cronoscalata)"
+              data-caption="Un pilota in tuta rossa si riposa appoggiandosi alle vetture d'epoca pronte per la manche di salita. Foto a cura di Spada Visual (Instagram: @spada.visual)."
+              data-full-src="/media/gallery/cronoscalata-piloti-auto-storiche.jpg"
+              data-exif-src="/media/gallery/cronoscalata-piloti-auto-storiche.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/cronoscalata-piloti-auto-storiche.webp">
+                  <img alt="Pilota in tuta rossa appoggiato a auto storiche da corsa" decoding="async" height="683" loading="lazy" src="/media/gallery/cronoscalata-piloti-auto-storiche.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Concentrazione e Attesa</h3>
+                      <p>Foto Spada Visual</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Ferrari nel Borgo (Cronoscalata)"
+              data-caption="Una fiammante Ferrari da corsa sfila tra i palazzi storici di Montefiascone prima di affrontare la salita. Foto a cura di Spada Visual (Instagram: @spada.visual)."
+              data-full-src="/media/gallery/cronoscalata-ferrari-borgo.jpg"
+              data-exif-src="/media/gallery/cronoscalata-ferrari-borgo.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/cronoscalata-ferrari-borgo.webp">
+                  <img alt="Ferrari da corsa rossa sul tracciato cittadino del borgo" decoding="async" height="1024" loading="lazy" src="/media/gallery/cronoscalata-ferrari-borgo.jpg" width="683"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Ferrari in Corsa</h3>
+                      <p>Foto Spada Visual</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+
+          <article class="gallery-card" data-gallery-card data-exif-state="idle">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-gallery-trigger
+              data-title="Prototipo in Curva (Cronoscalata)"
+              data-caption="Un prototipo sportivo da corsa affronta in piena accelerazione un tornante in salita della Coppa Città di Montefiascone. Foto a cura di Spada Visual (Instagram: @spada.visual)."
+              data-full-src="/media/gallery/cronoscalata-prototipo-curva.jpg"
+              data-exif-src="/media/gallery/cronoscalata-prototipo-curva.jpg">
+              <div class="gallery-media">
+                <picture>
+                  <source type="image/webp" srcset="/media/gallery/cronoscalata-prototipo-curva.webp">
+                  <img alt="Prototipo da corsa sportivo affronta una curva in salita" decoding="async" height="683" loading="lazy" src="/media/gallery/cronoscalata-prototipo-curva.jpg" width="1024"/>
+                </picture>
+                <div class="gallery-hud">
+                  <div class="gallery-hud__header">
+                    <div class="gallery-hud__title">
+                      <h3>Massima Trazione</h3>
+                      <p>Foto Spada Visual</p>
+                    </div>
+                    <span class="gallery-hud__status" data-gallery-status>Lettura EXIF</span>
+                  </div>
+                  <div class="gallery-specs" data-gallery-specs></div>
+                </div>
+              </div>
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <section class="contact-card">
+          <h2 class="footer__title">Contatti utili</h2>
+          <div class="footer-list">
+            <p><strong>Ufficio Turistico</strong><br>Largo del Plebiscito, 1 &middot; Montefiascone</p>
+            <p><strong>Telefono</strong><br><a href="tel:+390761832060">0761 832060</a></p>
+            <p><strong>Email</strong><br><a href="mailto:info@comune.montefiascone.vt.it">info@comune.montefiascone.vt.it</a></p>
+            <p><strong>Canali Social</strong><br>
+              <a href="https://www.facebook.com/IloveMontefiascone" target="_blank" rel="noopener">Facebook</a> &middot; 
+              <a href="https://www.instagram.com/ilove_montefiascone/" target="_blank" rel="noopener">Instagram</a>
+            </p>
+          </div>
+        </section>
+        <section class="contact-card">
+          <h2 class="footer__title">Navigazione rapida</h2>
+          <div class="footer-list">
+            <p><a href="/">Home</a></p>
+            <p><a href="/cosa-vedere.html">Cosa Vedere</a></p>
+            <p><a href="/mappa.html">Mappa</a></p>
+            <p><a href="/associazioni-volontariato-montefiascone.html">Associazioni</a></p>
+          </div>
+        </section>
+
+        <section class="contact-card" data-trust-footer>
+          <h2 class="footer__title">Trasparenza</h2>
+          <div class="footer-list">
+            <p><a href="/progetto-editoriale.html">Progetto editoriale</a></p>
+            <p><a href="/privacy.html" rel="nofollow">Privacy</a> &middot; <a href="/cookie.html" rel="nofollow">Cookie</a></p>
+            <p><strong>Crediti immagini</strong><br>
+              <a href="https://www.instagram.com/david_petretti_ph_scattomatto/" target="_blank" rel="noopener">David Petretti</a> &middot;
+              <a href="https://www.instagram.com/atbfestival" target="_blank" rel="noopener">ATB Festival</a> &middot;
+              <a href="https://www.instagram.com/spada.visual" target="_blank" rel="noopener">Spada Visual</a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <div class="lightbox" data-lightbox aria-hidden="true" data-state="idle">
+      <div class="lightbox__backdrop" data-lightbox-dismiss></div>
+
+      <div class="lightbox__frame" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <div class="lightbox__media-shell">
+          <div class="lightbox__toolbar">
+            <span class="lightbox__counter" data-lightbox-counter>1 / 6</span>
+            <span class="lightbox__status" data-lightbox-status>JPEG ad alta risoluzione</span>
+            <div class="lightbox__nav-group">
+              <button class="lightbox__nav" type="button" data-lightbox-prev aria-label="Immagine precedente">&#8249;</button>
+              <button class="lightbox__nav" type="button" data-lightbox-next aria-label="Immagine successiva">&#8250;</button>
+              <button class="lightbox__close" type="button" data-lightbox-close aria-label="Chiudi galleria">&times;</button>
+            </div>
+          </div>
+
+          <img alt="" class="lightbox__image" data-lightbox-image="" decoding="async" loading="lazy"/>
+        </div>
+
+        <aside class="lightbox__panel">
+          <p class="section-kicker">Overlay tecnico</p>
+          <h2 id="lightbox-title" data-lightbox-title>Dettaglio immagine</h2>
+          <p class="lightbox__caption" data-lightbox-caption></p>
+          <div class="lightbox__specs" data-lightbox-specs></div>
+          <p class="lightbox__helper">
+            La lightbox usa il JPEG originale per conservare piu dettaglio tonale nelle aree del lago e nelle superfici in tufo.
+          </p>
+        </aside>
+      </div>
+    </div>
+
+    <script src="/assets/site.js?v=2026-06-14-rwd2" defer></script>
+    <script src="/assets/vendor/exif-js.js" defer></script>
+    <script src="/assets/gallery.js?v=2026-06-14-rwd2" defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cronoscalata-lago-montefiascone-2026",
+    "slug": "cronoscalata-montefiascone-coppa-citta",
+    "titolo_seo": "Cronoscalata Coppa Citta di Montefiascone: Percorso e Guida",
+    "meta_descrizione": "Scopri il tracciato della storica Cronoscalata del Lago di Bolsena. Guida per spettatori e fotografi: curve, punti panoramici e programma della gara.",
+    "nome_evento": "Cronoscalata Lago Montefiascone - Coppa Citta di Montefiascone",
+    "categoria": "Motorsport",
+    "data_inizio": "2026-06-19",
+    "data_fine": "2026-06-21",
+    "location_esatta": "S.P. Lago di Bolsena, dal km 5+150 al km 0+400, Montefiascone (VT)",
+    "sezioni_testo": [
+      {
+        "titolo_h2": "Il Tracciato: curve, pendenza e ritmo di gara",
+        "corpo_markdown": "La salita ufficiale si sviluppa lungo la S.P. Lago di Bolsena per **4,750 km**, con partenza al **km 5+150** e arrivo al **km 0+400**. Il dislivello totale e di **229,60 metri**, con pendenza media del **4,87%** e punta massima del **7,79%**.\\n\\nIl tratto iniziale favorisce l'allungo e la trazione, mentre la parte alta obbliga a una guida piu precisa. I tre riferimenti tecnici piu letti da pubblico e fotografi sono il tornante destrorso al **km 3+100**, il sinistrorso al **km 3+550** e l'ultimo destrorso al **km 4+150**."
+      },
+      {
+        "titolo_h2": "Spot per spettatori e fotografi",
+        "corpo_markdown": "Per chi segue la gara da bordo strada, i punti piu leggibili sono la **zona partenza**, l'**area rialzata al km 2+200** e i tre tornanti del settore alto.\\n\\nDal punto di vista fotografico, un **70-200 mm** consente di comprimere i piani e tenere il Lago di Bolsena sullo sfondo, mentre focali piu lunghe aiutano a isolare il lavoro dell'assetto in ingresso curva. Il pubblico deve restare solo nelle aree consentite dal piano di sicurezza e fuori dalle traiettorie di fuga."
+      },
+      {
+        "titolo_h2": "Logistica del weekend di gara",
+        "corpo_markdown": "Il paddock e collocato in **zona partenza**, mentre il **parco chiuso** e previsto a **Piazzale Roma**. Le verifiche sportive e tecniche sono fissate per **venerdi 19 giugno 2026** in **Piazza del Mercato**.\\n\\nLe prove cronometrate si svolgono **sabato 20 giugno 2026** con prima manche alle **14:30**. La gara ufficiale e prevista **domenica 21 giugno 2026** con prima partenza alle **09:30**. Il tracciato viene chiuso normalmente **due ore prima** di prove e gara."
+      }
+    ],
+    "link_programma_pdf": null,
+    "coordinate_parcheggio_consigliato": {
+      "nome": "Parcheggio Campo Boario",
+      "lat": 42.5363065,
+      "lng": 12.0324715
+    },
+    "strade_chiuse_boolean": true
+  },
+  {
+    "id": "est-film-festival-montefiascone-2026",
+    "slug": "est-film-festival-montefiascone",
+    "titolo_seo": "Est Film Festival Montefiascone: programma e guida pratica",
+    "meta_descrizione": "Date, location e consigli utili per vivere l'Est Film Festival a Montefiascone: cinema indipendente, incontri con gli autori e logistica serale.",
+    "nome_evento": "Est Film Festival",
+    "categoria": "Cinema",
+    "data_inizio": "2026-07-20",
+    "data_fine": "2026-07-26",
+    "location_esatta": "Piazzale Angelo Frigo, centro storico di Montefiascone (VT)",
+    "sezioni_testo": [
+      {
+        "titolo_h2": "Il cuore del festival: il concorso lungometraggi",
+        "corpo_markdown": "Per l'edizione 2026 il cuore estivo dell'Est Film Festival si concentra a Montefiascone dal **20 al 26 luglio**, con il **concorso lungometraggi** ospitato a **Piazzale Angelo Frigo**.\\n\\nLa dimensione del festival resta quella del cinema indipendente: proiezioni serali, incontri con autori e interpreti, e un pubblico che vive il centro storico come arena culturale all'aperto."
+      },
+      {
+        "titolo_h2": "I registi in gara e le sezioni del progetto",
+        "corpo_markdown": "Il format del festival non si esaurisce nella sola settimana estiva. Il progetto 2026 distribuisce le sue sezioni lungo l'anno, con **cortometraggi a gennaio**, **documentari a maggio** e **lungometraggi a luglio**.\\n\\nQuesta articolazione da a ogni pagina evento un margine editoriale molto ampio: si possono evidenziare registi in concorso, giurie, masterclass, incontri stampa e sezioni speciali senza forzare un template rigido."
+      },
+      {
+        "titolo_h2": "Come organizzare la serata a Montefiascone",
+        "corpo_markdown": "Arrivare nel tardo pomeriggio permette di unire una passeggiata nel borgo alla proiezione serale. La soluzione piu pratica per la sosta e lasciare l'auto in un parcheggio di cintura e raggiungere **Piazzale Angelo Frigo** a piedi.\\n\\nDurante il festival conviene controllare i canali ufficiali per eventuali variazioni di orario, ospiti aggiunti e spostamenti di location tra piazza, sale interne e spazi partner."
+      }
+    ],
+    "link_programma_pdf": null,
+    "coordinate_parcheggio_consigliato": {
+      "nome": "Parcheggio Campo Boario",
+      "lat": 42.5363065,
+      "lng": 12.0324715
+    },
+    "strade_chiuse_boolean": false
+  }
+]

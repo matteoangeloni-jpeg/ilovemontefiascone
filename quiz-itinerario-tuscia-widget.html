@@ -1,0 +1,863 @@
+<section id="tuscia-quiz-widget" class="min-h-screen bg-sand-gradient py-12 px-4 text-stone-950">
+  <style>
+    :root {
+      color-scheme: light;
+      --sand-50: #f7f2e9;
+      --sand-100: #efe4d1;
+      --sand-200: #e3d1b4;
+      --sand-300: #d5bb95;
+      --sand-500: #b7874a;
+      --sand-700: #835329;
+      --lagoon-500: #2b6f83;
+      --lagoon-700: #184454;
+      --moss-500: #587353;
+      --moss-700: #31452f;
+      --wine-500: #8d4b42;
+      --stone-50: #fafaf9;
+      --stone-100: #f5f5f4;
+      --stone-200: #e7e5e4;
+      --stone-400: #a8a29e;
+      --stone-600: #57534e;
+      --stone-800: #292524;
+      --stone-950: #1c1917;
+      --shadow-xl: 0 24px 60px rgba(45, 31, 16, 0.12);
+      --shadow-lg: 0 14px 32px rgba(45, 31, 16, 0.08);
+      --radius-xl: 1.75rem;
+      --radius-lg: 1.25rem;
+      --transition-base: 260ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    #tuscia-quiz-widget * {
+      box-sizing: border-box;
+    }
+
+    #tuscia-quiz-widget {
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .bg-sand-gradient {
+      background:
+        radial-gradient(circle at top right, rgba(184, 135, 74, 0.18), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(43, 111, 131, 0.18), transparent 30%),
+        linear-gradient(180deg, #fbf7f1 0%, #efe3d1 100%);
+    }
+
+    .max-w-6xl { max-width: 72rem; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .grid { display: grid; }
+    .gap-8 { gap: 2rem; }
+    .gap-6 { gap: 1.5rem; }
+    .gap-4 { gap: 1rem; }
+    .gap-3 { gap: 0.75rem; }
+    .gap-2 { gap: 0.5rem; }
+    .items-center { align-items: center; }
+    .justify-between { justify-content: space-between; }
+    .flex { display: flex; }
+    .flex-wrap { flex-wrap: wrap; }
+    .flex-col { flex-direction: column; }
+    .w-full { width: 100%; }
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .uppercase { text-transform: uppercase; }
+    .tracking-wide { letter-spacing: 0.18em; }
+    .font-semibold { font-weight: 600; }
+    .font-bold { font-weight: 700; }
+    .font-black { font-weight: 800; }
+    .text-xs { font-size: 0.75rem; }
+    .text-sm { font-size: 0.92rem; }
+    .text-base { font-size: 1rem; }
+    .text-lg { font-size: 1.125rem; }
+    .text-xl { font-size: 1.35rem; }
+    .text-2xl { font-size: 1.85rem; }
+    .text-4xl { font-size: clamp(2rem, 4vw, 3.2rem); }
+    .leading-tight { line-height: 1.1; }
+    .leading-relaxed { line-height: 1.7; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-3 { margin-top: 0.75rem; }
+    .mt-4 { margin-top: 1rem; }
+    .mt-5 { margin-top: 1.25rem; }
+    .mt-6 { margin-top: 1.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 1.5rem; }
+    .p-6 { padding: 1.5rem; }
+    .p-8 { padding: 2rem; }
+    .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+    .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+    .rounded-full { border-radius: 999px; }
+    .rounded-2xl { border-radius: 1.5rem; }
+    .rounded-3xl { border-radius: 1.9rem; }
+    .border { border: 1px solid rgba(41, 37, 36, 0.12); }
+    .border-soft { border: 1px solid rgba(41, 37, 36, 0.1); }
+    .border-strong { border: 1px solid rgba(41, 37, 36, 0.2); }
+    .shadow-xl { box-shadow: var(--shadow-xl); }
+    .shadow-lg { box-shadow: var(--shadow-lg); }
+    .bg-white\/80 { background: rgba(255, 255, 255, 0.82); }
+    .bg-white\/92 { background: rgba(255, 255, 255, 0.92); }
+    .bg-stone-950 { background: var(--stone-950); }
+    .bg-sand-100 { background: var(--sand-100); }
+    .bg-sand-200 { background: var(--sand-200); }
+    .text-stone-950 { color: var(--stone-950); }
+    .text-stone-800 { color: var(--stone-800); }
+    .text-stone-600 { color: var(--stone-600); }
+    .text-stone-400 { color: var(--stone-400); }
+    .text-white { color: #fff; }
+    .text-lagoon-700 { color: var(--lagoon-700); }
+    .text-wine-500 { color: var(--wine-500); }
+    .text-moss-700 { color: var(--moss-700); }
+    .backdrop-blur {
+      backdrop-filter: blur(14px);
+    }
+
+    .hero-grid {
+      grid-template-columns: 1.05fr 0.95fr;
+    }
+
+    .quiz-card {
+      min-height: 38rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ornament {
+      position: absolute;
+      inset: auto -4rem -4rem auto;
+      width: 12rem;
+      height: 12rem;
+      background: radial-gradient(circle, rgba(43, 111, 131, 0.16), transparent 68%);
+      pointer-events: none;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 0.65rem;
+      background: rgba(131, 83, 41, 0.12);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 25%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--wine-500), var(--sand-500), var(--lagoon-500));
+      transition: width var(--transition-base);
+    }
+
+    .question-shell {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity var(--transition-base), transform var(--transition-base);
+    }
+
+    .question-shell.is-transitioning {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    .answer-card {
+      appearance: none;
+      width: 100%;
+      border: 1px solid rgba(41, 37, 36, 0.12);
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1rem 1rem 1.1rem;
+      cursor: pointer;
+      text-align: left;
+      transition:
+        transform var(--transition-base),
+        border-color var(--transition-base),
+        box-shadow var(--transition-base),
+        background var(--transition-base);
+    }
+
+    .answer-card:hover,
+    .answer-card:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(43, 111, 131, 0.4);
+      box-shadow: 0 16px 28px rgba(43, 111, 131, 0.12);
+      outline: none;
+    }
+
+    .answer-card.is-selected {
+      background: linear-gradient(180deg, rgba(43, 111, 131, 0.08), rgba(183, 135, 74, 0.08));
+      border-color: rgba(43, 111, 131, 0.5);
+      box-shadow: 0 18px 34px rgba(43, 111, 131, 0.16);
+    }
+
+    .answer-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      background: rgba(183, 135, 74, 0.12);
+      color: var(--sand-700);
+      font-size: 0.88rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .answer-card.is-selected .answer-label {
+      background: var(--lagoon-500);
+      color: #fff;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(41, 37, 36, 0.08);
+      color: var(--stone-600);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .profile-panel {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 242, 233, 0.92)),
+        linear-gradient(135deg, rgba(43, 111, 131, 0.06), rgba(183, 135, 74, 0.08));
+      border: 1px solid rgba(41, 37, 36, 0.08);
+      border-radius: 1.7rem;
+      padding: 1.35rem;
+    }
+
+    .lead-form {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .email-input {
+      width: 100%;
+      border: 1px solid rgba(41, 37, 36, 0.16);
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--stone-950);
+      border-radius: 999px;
+      min-height: 3.25rem;
+      padding: 0.95rem 1rem;
+      font-size: 1rem;
+      transition: border-color var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .email-input:focus {
+      outline: none;
+      border-color: rgba(43, 111, 131, 0.45);
+      box-shadow: 0 0 0 4px rgba(43, 111, 131, 0.12);
+    }
+
+    .cta-button,
+    .ghost-button {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      min-height: 3.25rem;
+      padding: 0.95rem 1.3rem;
+      font-size: 0.98rem;
+      font-weight: 700;
+      transition: transform var(--transition-base), opacity var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .cta-button {
+      color: #fff;
+      background: linear-gradient(135deg, var(--lagoon-700), var(--lagoon-500));
+      box-shadow: 0 18px 32px rgba(24, 68, 84, 0.18);
+    }
+
+    .ghost-button {
+      color: var(--stone-950);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(41, 37, 36, 0.12);
+    }
+
+    .cta-button:hover,
+    .ghost-button:hover {
+      transform: translateY(-1px);
+    }
+
+    .cta-button:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .result-highlight {
+      background: linear-gradient(135deg, rgba(88, 115, 83, 0.12), rgba(43, 111, 131, 0.08));
+      border: 1px solid rgba(88, 115, 83, 0.18);
+      border-radius: 1.25rem;
+      padding: 1rem;
+    }
+
+    .bullet-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .bullet-list li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.75rem;
+      align-items: start;
+    }
+
+    .bullet-dot {
+      width: 0.7rem;
+      height: 0.7rem;
+      margin-top: 0.4rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--sand-500), var(--lagoon-500));
+      flex-shrink: 0;
+    }
+
+    .micro-note {
+      min-height: 1.4rem;
+    }
+
+    .animate-rise {
+      animation: riseIn 460ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .p-8 { padding: 1.35rem; }
+      .p-6 { padding: 1.15rem; }
+      .quiz-card { min-height: 42rem; }
+      .lead-form {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="max-w-6xl mx-auto grid hero-grid gap-8">
+    <aside class="bg-white/80 backdrop-blur border-soft rounded-3xl shadow-lg p-8">
+      <span class="badge-pill uppercase tracking-wide">Quiz interattivo</span>
+      <h2 class="text-4xl font-black leading-tight mt-4">
+        Scopri il tuo itinerario perfetto nella Tuscia
+      </h2>
+      <p class="text-base text-stone-600 leading-relaxed mt-4">
+        Quattro domande, un profilo finale e una CTA pensata per convertire il visitatore in lead:
+        l'itinerario PDF viene sbloccato dopo l'inserimento dell'email.
+      </p>
+
+      <div class="profile-panel mt-6">
+        <p class="text-xs uppercase tracking-wide text-wine-500 font-bold">I tre profili finali</p>
+        <div class="grid gap-3 mt-4">
+          <div>
+            <p class="font-bold text-moss-700">L'Esploratore</p>
+            <p class="text-sm text-stone-600">Via Francigena, belvederi, sentieri e natura del lago.</p>
+          </div>
+          <div>
+            <p class="font-bold text-wine-500">L'Epi-curioso</p>
+            <p class="text-sm text-stone-600">Cantine Est! Est!! Est!!!, tavole di territorio e degustazioni.</p>
+          </div>
+          <div>
+            <p class="font-bold text-lagoon-700">Lo Storico</p>
+            <p class="text-sm text-stone-600">Rocca dei Papi, San Flaviano, centro storico e memoria medievale.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-highlight mt-6">
+        <p class="text-sm font-semibold text-stone-800">Perche funziona bene in ottica CRO</p>
+        <p class="text-sm text-stone-600 leading-relaxed mt-2">
+          Il quiz segmenta l'utente in modo naturale, personalizza il risultato e prepara una CTA finale
+          ad alta intenzione: scaricare un PDF realmente utile per il viaggio.
+        </p>
+      </div>
+    </aside>
+
+    <main class="quiz-card bg-white/92 backdrop-blur rounded-3xl shadow-xl border-soft p-8">
+      <div class="ornament"></div>
+
+      <div class="flex justify-between items-center gap-4 flex-wrap">
+        <div>
+          <p class="text-xs uppercase tracking-wide text-stone-400 font-bold">Il tuo match Tuscia</p>
+          <p class="text-lg font-bold mt-2">Rispondi e sblocca il PDF giusto per te</p>
+        </div>
+        <div class="badge-pill">
+          <span id="quiz-step-label">Domanda 1 di 4</span>
+        </div>
+      </div>
+
+      <div class="progress-track mt-5">
+        <div id="quiz-progress" class="progress-fill"></div>
+      </div>
+
+      <div id="quiz-stage" class="question-shell mt-6 animate-rise" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const quizRoot = document.getElementById("tuscia-quiz-widget");
+      const stage = document.getElementById("quiz-stage");
+      const progress = document.getElementById("quiz-progress");
+      const stepLabel = document.getElementById("quiz-step-label");
+
+      const profilePdfUrls = {
+        explorer: "/pdf/itinerario-esploratore-tuscia.pdf",
+        epicurious: "/pdf/itinerario-epi-curioso-tuscia.pdf",
+        storico: "/pdf/itinerario-storico-tuscia.pdf"
+      };
+
+      const profilePalette = {
+        explorer: "text-moss-700",
+        epicurious: "text-wine-500",
+        storico: "text-lagoon-700"
+      };
+
+      const quiz = {
+        questions: [
+          {
+            id: "sunday_morning",
+            prompt: "Cosa preferisci fare la domenica mattina?",
+            helper: "Partiamo dal tuo ritmo ideale, quello che dice molto piu del semplice “mi piace viaggiare”.",
+            answers: [
+              {
+                id: "sleep",
+                label: "Dormire fino a tardi e iniziare con calma",
+                scoring: { epicurious: 3, storico: 1 }
+              },
+              {
+                id: "woods",
+                label: "Camminare nei boschi o lungo un sentiero panoramico",
+                scoring: { explorer: 3 }
+              },
+              {
+                id: "museums",
+                label: "Visitare musei, chiese o luoghi storici",
+                scoring: { storico: 3, explorer: 1 }
+              }
+            ]
+          },
+          {
+            id: "lunch_style",
+            prompt: "Quale pausa pranzo ti somiglia di piu?",
+            helper: "Immagina di essere gia in Tuscia, con la giornata davanti e zero obblighi.",
+            answers: [
+              {
+                id: "picnic",
+                label: "Un picnic vista lago o una sosta all'ombra dopo il cammino",
+                scoring: { explorer: 3, epicurious: 1 }
+              },
+              {
+                id: "tasting",
+                label: "Tagliere, calice di Est! Est!! Est!!! e degustazione guidata",
+                scoring: { epicurious: 3 }
+              },
+              {
+                id: "trattoria",
+                label: "Una trattoria storica con racconti di borgo e cucina tipica",
+                scoring: { storico: 2, epicurious: 2 }
+              }
+            ]
+          },
+          {
+            id: "photo_memory",
+            prompt: "Che tipo di foto salveresti per prima sul telefono?",
+            helper: "La tua memoria visiva racconta il viaggio meglio di qualsiasi bio.",
+            answers: [
+              {
+                id: "trail_photo",
+                label: "Una vista aperta sulla Francigena o sul profilo del lago",
+                scoring: { explorer: 3 }
+              },
+              {
+                id: "table_photo",
+                label: "Una bottiglia perfetta, un tagliere e il tavolo ancora apparecchiato",
+                scoring: { epicurious: 3 }
+              },
+              {
+                id: "stone_photo",
+                label: "Un affresco, una torre, un dettaglio di pietra o una navata medievale",
+                scoring: { storico: 3 }
+              }
+            ]
+          },
+          {
+            id: "afternoon_choice",
+            prompt: "Hai un pomeriggio libero a Montefiascone: dove vai senza pensarci troppo?",
+            helper: "Qui scegli davvero il tuo itinerario naturale.",
+            answers: [
+              {
+                id: "francigena",
+                label: "Sul tratto locale della Via Francigena, tra aria aperta e dislivello gentile",
+                scoring: { explorer: 4 }
+              },
+              {
+                id: "cellar",
+                label: "In cantina, per capire da vicino Est! Est!! Est!!! e assaggiare il territorio",
+                scoring: { epicurious: 4 }
+              },
+              {
+                id: "rocca",
+                label: "Alla Rocca dei Papi e poi verso San Flaviano, seguendo il filo della storia",
+                scoring: { storico: 4 }
+              }
+            ]
+          }
+        ],
+        profiles: {
+          explorer: {
+            key: "explorer",
+            title: "L'Esploratore",
+            subtitle: "Il tuo ritmo ideale e fatto di sentieri, luce aperta e prospettiva.",
+            intro:
+              "Ti muovi bene quando il viaggio lascia spazio all'aria, al paesaggio e a una sensazione concreta di strada. Montefiascone per te e il punto d'appoggio perfetto per Via Francigena, belvederi e natura del lago.",
+            highlights: [
+              "Tratto locale della Via Francigena e antica Cassia",
+              "Belvederi sul Lago di Bolsena e cammini al mattino",
+              "Itinerario pensato per chi ama muoversi e fotografare"
+            ],
+            ctaLabel: "Ricevi il PDF dell'Esploratore",
+            ctaHint: "Lascia la tua email e ti inviamo un itinerario agile, panoramico e facile da seguire."
+          },
+          epicurious: {
+            key: "epicurious",
+            title: "L'Epi-curioso",
+            subtitle: "Per te il viaggio comincia davvero quando entrano in scena tavola e cantina.",
+            intro:
+              "Ami i luoghi che si spiegano bene attraverso un calice, una degustazione e un pranzo fatto con criterio. Montefiascone ti premia con cantine, Est! Est!! Est!!!, cucina di lago e soste che restano in memoria.",
+            highlights: [
+              "Degustazioni di Est! Est!! Est!!! e produttori locali",
+              "Ristoranti e soste adatte a un weekend slow",
+              "Itinerario per unire gusto, panorama e centro storico"
+            ],
+            ctaLabel: "Ricevi il PDF dell'Epi-curioso",
+            ctaHint: "Lascia la tua email e sblocca il percorso tra cantine, tavole locali e pause giuste."
+          },
+          storico: {
+            key: "storico",
+            title: "Lo Storico",
+            subtitle: "Ti orienti meglio quando il viaggio ha spessore, pietra e racconto.",
+            intro:
+              "Sei attratto dai luoghi che conservano tracce leggibili: torri, basiliche, architetture di potere e dettagli medievali. Montefiascone ti offre una densita storica ideale da vivere con calma e profondita.",
+            highlights: [
+              "Rocca dei Papi, Santa Margherita e Basilica di San Flaviano",
+              "Passeggiata ragionata nel centro alto di Montefiascone",
+              "Itinerario per chi vuole capire il borgo, non solo vederlo"
+            ],
+            ctaLabel: "Ricevi il PDF dello Storico",
+            ctaHint: "Lascia la tua email e ottieni un itinerario con tappe storiche e tempi di visita consigliati."
+          }
+        }
+      };
+
+      const state = {
+        currentIndex: 0,
+        scores: { explorer: 0, epicurious: 0, storico: 0 },
+        answers: [],
+        selectedAnswerId: null,
+        result: null
+      };
+
+      function animateSwap(renderFn) {
+        stage.classList.add("is-transitioning");
+        setTimeout(() => {
+          renderFn();
+          stage.classList.remove("animate-rise");
+          void stage.offsetWidth;
+          stage.classList.remove("is-transitioning");
+          stage.classList.add("animate-rise");
+        }, 180);
+      }
+
+      function updateProgress() {
+        if (state.result) {
+          stepLabel.textContent = "Profilo sbloccato";
+          progress.style.width = "100%";
+          return;
+        }
+
+        const step = state.currentIndex + 1;
+        stepLabel.textContent = "Domanda " + step + " di " + quiz.questions.length;
+        progress.style.width = (step / quiz.questions.length) * 100 + "%";
+      }
+
+      function renderQuestion() {
+        updateProgress();
+        const question = quiz.questions[state.currentIndex];
+
+        stage.innerHTML =
+          '<div class="grid gap-6">' +
+            '<div>' +
+              '<p class="text-xs uppercase tracking-wide text-stone-400 font-bold">Domanda chiave</p>' +
+              '<h3 class="text-2xl font-black leading-tight mt-3">' + escapeHtml(question.prompt) + "</h3>" +
+              '<p class="text-base text-stone-600 leading-relaxed mt-3">' + escapeHtml(question.helper) + "</p>" +
+            "</div>" +
+            '<div class="grid gap-4" id="answers-list"></div>' +
+            '<div class="flex justify-between items-center gap-4 flex-wrap">' +
+              '<button type="button" class="ghost-button" id="quiz-back" ' + (state.currentIndex === 0 ? "disabled" : "") + '>Indietro</button>' +
+              '<div class="micro-note text-sm text-stone-400" id="quiz-note">Seleziona la risposta che senti piu tua.</div>' +
+            "</div>" +
+          "</div>";
+
+        const answersList = stage.querySelector("#answers-list");
+        question.answers.forEach((answer, index) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "answer-card flex gap-4 items-center";
+          button.setAttribute("data-answer-id", answer.id);
+          button.innerHTML =
+            '<span class="answer-label">' + String.fromCharCode(65 + index) + "</span>" +
+            '<span class="text-base font-semibold text-stone-800">' + escapeHtml(answer.label) + "</span>";
+
+          button.addEventListener("click", function () {
+            state.selectedAnswerId = answer.id;
+            answersList.querySelectorAll(".answer-card").forEach((card) => card.classList.remove("is-selected"));
+            button.classList.add("is-selected");
+            const note = stage.querySelector("#quiz-note");
+            note.textContent = "Scelta registrata. Ti porto alla prossima domanda...";
+
+            setTimeout(() => applyAnswer(answer), 260);
+          });
+
+          answersList.appendChild(button);
+        });
+
+        stage.querySelector("#quiz-back").addEventListener("click", goBack);
+      }
+
+      function applyAnswer(answer) {
+        state.answers[state.currentIndex] = {
+          questionId: quiz.questions[state.currentIndex].id,
+          answerId: answer.id,
+          scoring: answer.scoring
+        };
+
+        Object.keys(answer.scoring).forEach((profileKey) => {
+          state.scores[profileKey] += answer.scoring[profileKey];
+        });
+
+        if (state.currentIndex < quiz.questions.length - 1) {
+          state.currentIndex += 1;
+          state.selectedAnswerId = null;
+          animateSwap(renderQuestion);
+        } else {
+          state.result = computeResult();
+          saveResponseAnonymously(state.result.key, state.answers);
+          animateSwap(renderResult);
+        }
+      }
+
+      function saveResponseAnonymously(profileKey, answers) {
+        const payload = {
+          profile: profileKey,
+          answers: answers.map((ans) => ({
+            questionId: ans.questionId,
+            answerId: ans.answerId
+          })),
+          submittedAt: new Date().toISOString()
+        };
+
+        fetch("/api/quiz-response", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        })
+          .then((response) => {
+            if (!response.ok) {
+              console.warn("Failed to record anonymous quiz response. Status:", response.status);
+            } else {
+              console.log("Successfully recorded anonymous quiz response.");
+            }
+          })
+          .catch((err) => {
+            console.error("Error communicating with quiz response backend:", err);
+          });
+      }
+
+      function goBack() {
+        if (state.currentIndex === 0) return;
+
+        const previousAnswer = state.answers[state.currentIndex - 1];
+        if (previousAnswer) {
+          Object.keys(previousAnswer.scoring).forEach((profileKey) => {
+            state.scores[profileKey] -= previousAnswer.scoring[profileKey];
+          });
+        }
+
+        state.answers = state.answers.slice(0, state.currentIndex - 1);
+        state.currentIndex -= 1;
+        state.result = null;
+        state.selectedAnswerId = null;
+        animateSwap(renderQuestion);
+      }
+
+      function computeResult() {
+        const ranking = Object.entries(state.scores).sort((a, b) => b[1] - a[1]);
+        let winnerKey = ranking[0][0];
+
+        if (ranking.length > 1 && ranking[0][1] === ranking[1][1]) {
+          const reverseAnswers = [...state.answers].reverse();
+          const tieProfiles = ranking.filter((entry) => entry[1] === ranking[0][1]).map((entry) => entry[0]);
+          const decisive = reverseAnswers.find((entry) =>
+            Object.keys(entry.scoring).some((profileKey) => tieProfiles.includes(profileKey))
+          );
+
+          if (decisive) {
+            const bestFromDecisive = Object.entries(decisive.scoring).sort((a, b) => b[1] - a[1])[0];
+            if (bestFromDecisive && tieProfiles.includes(bestFromDecisive[0])) {
+              winnerKey = bestFromDecisive[0];
+            }
+          }
+        }
+
+        return quiz.profiles[winnerKey];
+      }
+
+      function renderResult() {
+        updateProgress();
+        const profile = state.result;
+        const accentClass = profilePalette[profile.key];
+        const listHtml = profile.highlights
+          .map(function (item) {
+            return (
+              '<li><span class="bullet-dot"></span><span class="text-sm text-stone-600 leading-relaxed">' +
+              escapeHtml(item) +
+              "</span></li>"
+            );
+          })
+          .join("");
+
+        stage.innerHTML =
+          '<div class="grid gap-6">' +
+            '<div>' +
+              '<p class="text-xs uppercase tracking-wide text-stone-400 font-bold">Profilo finale</p>' +
+              '<h3 class="text-2xl font-black leading-tight mt-3 ' + accentClass + '">' + escapeHtml(profile.title) + "</h3>" +
+              '<p class="text-lg font-semibold text-stone-800 mt-2">' + escapeHtml(profile.subtitle) + "</p>" +
+              '<p class="text-base text-stone-600 leading-relaxed mt-4">' + escapeHtml(profile.intro) + "</p>" +
+            "</div>" +
+            '<div class="result-highlight">' +
+              '<p class="text-sm font-bold text-stone-800">Il tuo itinerario ideale include</p>' +
+              '<ul class="bullet-list mt-4">' + listHtml + "</ul>" +
+            "</div>" +
+            '<div class="profile-panel">' +
+              '<p class="text-sm font-bold text-stone-800">Scarica il PDF personalizzato</p>' +
+              '<p class="text-sm text-stone-600 leading-relaxed mt-2">' + escapeHtml(profile.ctaHint) + "</p>" +
+              '<form id="quiz-lead-form" class="lead-form">' +
+                '<input class="email-input" id="quiz-email" name="email" type="email" autocomplete="email" placeholder="Inserisci la tua email" required />' +
+                '<button class="cta-button" id="quiz-cta-button" type="submit">' + escapeHtml(profile.ctaLabel) + "</button>" +
+              "</form>" +
+              '<p class="micro-note text-sm text-stone-400 mt-3" id="quiz-lead-message">Niente spam: solo il PDF del tuo itinerario e aggiornamenti utili sul viaggio.</p>' +
+            "</div>" +
+            '<div class="flex justify-between items-center gap-4 flex-wrap">' +
+              '<button type="button" class="ghost-button" id="quiz-restart">Ricomincia il quiz</button>' +
+              '<span class="badge-pill">Match: ' + escapeHtml(profile.title) + "</span>" +
+            "</div>" +
+          "</div>";
+
+        stage.querySelector("#quiz-restart").addEventListener("click", restartQuiz);
+        stage.querySelector("#quiz-lead-form").addEventListener("submit", handleLeadSubmit);
+      }
+
+      function handleLeadSubmit(event) {
+        event.preventDefault();
+
+        const form = event.currentTarget;
+        const emailInput = form.querySelector("#quiz-email");
+        const message = stage.querySelector("#quiz-lead-message");
+        const button = stage.querySelector("#quiz-cta-button");
+        const email = emailInput.value.trim();
+
+        if (!isValidEmail(email)) {
+          message.textContent = "Inserisci un'email valida per ricevere il PDF.";
+          message.className = "micro-note text-sm text-wine-500 mt-3";
+          emailInput.focus();
+          return;
+        }
+
+        button.disabled = true;
+        button.textContent = "Sto preparando il PDF...";
+
+        const payload = {
+          profile: state.result.key,
+          profileTitle: state.result.title,
+          email: email,
+          answers: state.answers,
+          submittedAt: new Date().toISOString()
+        };
+
+        try {
+          window.dispatchEvent(
+            new CustomEvent("tuscia-quiz:lead", {
+              detail: payload
+            })
+          );
+          window.localStorage.setItem("tusciaQuizLead", JSON.stringify(payload));
+        } catch (error) {
+          console.warn("Lead storage unavailable", error);
+        }
+
+        const pdfUrl = profilePdfUrls[state.result.key];
+        if (pdfUrl) {
+          const link = document.createElement("a");
+          link.href = pdfUrl;
+          link.target = "_blank";
+          link.rel = "noopener";
+          link.click();
+        }
+
+        message.textContent =
+          "Perfetto: abbiamo registrato la tua email e aperto il PDF del profilo " +
+          state.result.title +
+          ". Puoi collegare l'evento tuscia-quiz:lead al tuo CRM o CMS.";
+        message.className = "micro-note text-sm text-moss-700 mt-3";
+        button.textContent = "PDF sbloccato";
+      }
+
+      function restartQuiz() {
+        state.currentIndex = 0;
+        state.scores = { explorer: 0, epicurious: 0, storico: 0 };
+        state.answers = [];
+        state.selectedAnswerId = null;
+        state.result = null;
+        animateSwap(renderQuestion);
+      }
+
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      renderQuestion();
+    })();
+  </script>
+</section>

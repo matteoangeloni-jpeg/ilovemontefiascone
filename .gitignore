@@ -1,0 +1,54 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.temp
+*.bak
+*~
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Node / tool caches
+node_modules/
+.cache/
+
+# Generated deploy output
+dist/
+dist-it/
+
+# Local runtime data
+*.db
+*.sqlite
+*.sqlite3
+
+# Audit / preview artifacts
+audit-*.png
+audit-*.json
+audit-*.md
+audit_*.json
+check-*.png
+qa-*.png
+*-preview.png
+*preview*.png
+homepage-preview.png
+gallery-preview.png
+cronoscalata-preview.png
+
+# Generated reports / scratch files
+seo_report.json
+audit_data.json
+gemini-code-*.md

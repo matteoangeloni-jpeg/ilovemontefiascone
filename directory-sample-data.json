@@ -1,0 +1,328 @@
+[
+  {
+    "place": {
+      "place_code": "cantina-belvedere-est",
+      "slug": "cantina-belvedere-est-montefiascone",
+      "name": "Cantina Belvedere Est",
+      "primary_category_code": "winery",
+      "short_description": "Cantina demo con degustazioni vista lago e focus sull'Est! Est!! Est!!!",
+      "long_description": "Cantina sample pensata per testare directory, filtri CMS e query analytics sul territorio di Montefiascone.",
+      "street_address": "Via del Lago 18",
+      "postal_code": "01027",
+      "locality": "Montefiascone",
+      "province_code": "VT",
+      "region_name": "Lazio",
+      "country_code": "IT",
+      "latitude": 42.541220,
+      "longitude": 12.010880,
+      "phone": "+39 0761 000101",
+      "email": "info@cantinabelvedereest.example",
+      "website_url": "https://cantinabelvedereest.example",
+      "booking_url": "https://cantinabelvedereest.example/degustazioni",
+      "price_tier": "€€",
+      "average_price_min_eur": 18.00,
+      "average_price_max_eur": 45.00,
+      "rooms_count": null,
+      "seats_count": 28,
+      "checkin_time": null,
+      "checkout_time": null,
+      "offers_breakfast_boolean": false,
+      "offers_lunch_boolean": false,
+      "offers_dinner_boolean": false,
+      "distanza_dal_lago_km": 1.20,
+      "distanza_dal_centro_km": 0.90,
+      "distanza_dalla_francigena_km": 0.70,
+      "vicinanza_francigena_boolean": true,
+      "offre_degustazione_est_est_est_boolean": true,
+      "vende_prodotti_locali_boolean": true,
+      "reservation_required_boolean": true,
+      "pet_friendly_boolean": false,
+      "parking_available_boolean": true,
+      "accessible_mobility_boolean": true,
+      "lake_view_boolean": true,
+      "family_friendly_boolean": true,
+      "status": "active",
+      "created_at": "2026-06-09T10:00:00",
+      "updated_at": "2026-06-09T10:00:00"
+    },
+    "categories": [
+      {
+        "place_code": "cantina-belvedere-est",
+        "category_code": "winery",
+        "is_primary": true,
+        "notes": "Categoria principale"
+      }
+    ],
+    "amenities": [
+      {
+        "place_code": "cantina-belvedere-est",
+        "amenity_code": "parking",
+        "amenity_value_text": "private lot for 14 cars"
+      },
+      {
+        "place_code": "cantina-belvedere-est",
+        "amenity_code": "wine-tasting",
+        "amenity_value_text": "daily tasting at 11:30 and 17:30"
+      },
+      {
+        "place_code": "cantina-belvedere-est",
+        "amenity_code": "lake-view",
+        "amenity_value_text": "terrace overlooking Lago di Bolsena"
+      }
+    ],
+    "opening_hours": [
+      {
+        "place_code": "cantina-belvedere-est",
+        "service_label": "general",
+        "day_of_week": 5,
+        "opens_at": "10:00:00",
+        "closes_at": "19:00:00",
+        "is_closed": false,
+        "notes": "visite e shop"
+      },
+      {
+        "place_code": "cantina-belvedere-est",
+        "service_label": "general",
+        "day_of_week": 6,
+        "opens_at": "10:00:00",
+        "closes_at": "20:00:00",
+        "is_closed": false,
+        "notes": "degustazioni estese"
+      }
+    ],
+    "reviews": [
+      {
+        "place_code": "cantina-belvedere-est",
+        "source_system": "internal",
+        "external_review_id": "demo-review-001",
+        "reviewer_name": "Giulia R.",
+        "rating": 4.8,
+        "review_title": "Bella degustazione vista lago",
+        "review_text": "Esperienza curata e ottima introduzione ai bianchi del territorio.",
+        "review_date": "2026-05-22",
+        "language_code": "it"
+      }
+    ]
+  },
+  {
+    "place": {
+      "place_code": "osteria-san-flaviano",
+      "slug": "osteria-san-flaviano-montefiascone",
+      "name": "Osteria San Flaviano",
+      "primary_category_code": "restaurant",
+      "short_description": "Ristorante tipico demo con cucina della Tuscia e carta vini locale.",
+      "long_description": "Record di esempio per testare filtri su ristoranti, vicinanza alla Francigena e presenza di tavoli esterni.",
+      "street_address": "Via San Flaviano 7",
+      "postal_code": "01027",
+      "locality": "Montefiascone",
+      "province_code": "VT",
+      "region_name": "Lazio",
+      "country_code": "IT",
+      "latitude": 42.540920,
+      "longitude": 12.035210,
+      "phone": "+39 0761 000202",
+      "email": "prenotazioni@osteriasanflaviano.example",
+      "website_url": "https://osteriasanflaviano.example",
+      "booking_url": "https://osteriasanflaviano.example/reservations",
+      "price_tier": "€€",
+      "average_price_min_eur": 22.00,
+      "average_price_max_eur": 42.00,
+      "rooms_count": null,
+      "seats_count": 46,
+      "checkin_time": null,
+      "checkout_time": null,
+      "offers_breakfast_boolean": false,
+      "offers_lunch_boolean": true,
+      "offers_dinner_boolean": true,
+      "distanza_dal_lago_km": 2.10,
+      "distanza_dal_centro_km": 0.80,
+      "distanza_dalla_francigena_km": 0.20,
+      "vicinanza_francigena_boolean": true,
+      "offre_degustazione_est_est_est_boolean": false,
+      "vende_prodotti_locali_boolean": true,
+      "reservation_required_boolean": true,
+      "pet_friendly_boolean": true,
+      "parking_available_boolean": false,
+      "accessible_mobility_boolean": false,
+      "lake_view_boolean": false,
+      "family_friendly_boolean": true,
+      "status": "active",
+      "created_at": "2026-06-09T10:00:00",
+      "updated_at": "2026-06-09T10:00:00"
+    },
+    "categories": [
+      {
+        "place_code": "osteria-san-flaviano",
+        "category_code": "restaurant",
+        "is_primary": true,
+        "notes": "Categoria principale"
+      }
+    ],
+    "amenities": [
+      {
+        "place_code": "osteria-san-flaviano",
+        "amenity_code": "wifi",
+        "amenity_value_text": null
+      },
+      {
+        "place_code": "osteria-san-flaviano",
+        "amenity_code": "outdoor-seating",
+        "amenity_value_text": "courtyard with 18 seats"
+      },
+      {
+        "place_code": "osteria-san-flaviano",
+        "amenity_code": "pet-friendly",
+        "amenity_value_text": "small dogs allowed"
+      }
+    ],
+    "opening_hours": [
+      {
+        "place_code": "osteria-san-flaviano",
+        "service_label": "lunch",
+        "day_of_week": 6,
+        "opens_at": "12:30:00",
+        "closes_at": "14:30:00",
+        "is_closed": false,
+        "notes": null
+      },
+      {
+        "place_code": "osteria-san-flaviano",
+        "service_label": "dinner",
+        "day_of_week": 6,
+        "opens_at": "19:30:00",
+        "closes_at": "22:30:00",
+        "is_closed": false,
+        "notes": null
+      }
+    ],
+    "reviews": [
+      {
+        "place_code": "osteria-san-flaviano",
+        "source_system": "internal",
+        "external_review_id": "demo-review-002",
+        "reviewer_name": "Marco T.",
+        "rating": 4.6,
+        "review_title": "Ottima sosta dopo la Francigena",
+        "review_text": "Carta vini locale ben costruita e cucina di territorio convincente.",
+        "review_date": "2026-05-30",
+        "language_code": "it"
+      }
+    ]
+  },
+  {
+    "place": {
+      "place_code": "bb-la-cupola",
+      "slug": "bb-la-cupola-montefiascone",
+      "name": "B&B La Cupola",
+      "primary_category_code": "bnb",
+      "short_description": "B&B demo nel centro alto di Montefiascone, pratico per lago e Via Francigena.",
+      "long_description": "Record di esempio per strutture ricettive con check-in, colazione inclusa e attributi utili a CMS e analytics.",
+      "street_address": "Via Santa Lucia Filippini 11",
+      "postal_code": "01027",
+      "locality": "Montefiascone",
+      "province_code": "VT",
+      "region_name": "Lazio",
+      "country_code": "IT",
+      "latitude": 42.536870,
+      "longitude": 12.030700,
+      "phone": "+39 0761 000303",
+      "email": "stay@bblacupola.example",
+      "website_url": "https://bblacupola.example",
+      "booking_url": "https://bblacupola.example/book",
+      "price_tier": "€€",
+      "average_price_min_eur": 85.00,
+      "average_price_max_eur": 135.00,
+      "rooms_count": 6,
+      "seats_count": null,
+      "checkin_time": "15:00:00",
+      "checkout_time": "10:30:00",
+      "offers_breakfast_boolean": true,
+      "offers_lunch_boolean": false,
+      "offers_dinner_boolean": false,
+      "distanza_dal_lago_km": 1.80,
+      "distanza_dal_centro_km": 0.10,
+      "distanza_dalla_francigena_km": 0.40,
+      "vicinanza_francigena_boolean": true,
+      "offre_degustazione_est_est_est_boolean": false,
+      "vende_prodotti_locali_boolean": false,
+      "reservation_required_boolean": true,
+      "pet_friendly_boolean": true,
+      "parking_available_boolean": true,
+      "accessible_mobility_boolean": false,
+      "lake_view_boolean": false,
+      "family_friendly_boolean": true,
+      "status": "active",
+      "created_at": "2026-06-09T10:00:00",
+      "updated_at": "2026-06-09T10:00:00"
+    },
+    "categories": [
+      {
+        "place_code": "bb-la-cupola",
+        "category_code": "bnb",
+        "is_primary": true,
+        "notes": "Categoria principale"
+      },
+      {
+        "place_code": "bb-la-cupola",
+        "category_code": "accommodation",
+        "is_primary": false,
+        "notes": "Macro-categoria"
+      }
+    ],
+    "amenities": [
+      {
+        "place_code": "bb-la-cupola",
+        "amenity_code": "wifi",
+        "amenity_value_text": null
+      },
+      {
+        "place_code": "bb-la-cupola",
+        "amenity_code": "parking",
+        "amenity_value_text": "garage and 4 outdoor spaces"
+      },
+      {
+        "place_code": "bb-la-cupola",
+        "amenity_code": "breakfast-included",
+        "amenity_value_text": "served from 07:30 to 10:00"
+      },
+      {
+        "place_code": "bb-la-cupola",
+        "amenity_code": "pet-friendly",
+        "amenity_value_text": "pets accepted on request"
+      }
+    ],
+    "opening_hours": [
+      {
+        "place_code": "bb-la-cupola",
+        "service_label": "checkin",
+        "day_of_week": 5,
+        "opens_at": "15:00:00",
+        "closes_at": "20:00:00",
+        "is_closed": false,
+        "notes": "self check-in after 20:00 on request"
+      },
+      {
+        "place_code": "bb-la-cupola",
+        "service_label": "breakfast",
+        "day_of_week": 6,
+        "opens_at": "07:30:00",
+        "closes_at": "10:00:00",
+        "is_closed": false,
+        "notes": null
+      }
+    ],
+    "reviews": [
+      {
+        "place_code": "bb-la-cupola",
+        "source_system": "internal",
+        "external_review_id": "demo-review-003",
+        "reviewer_name": "Anne L.",
+        "rating": 4.7,
+        "review_title": "Perfect base for the lake and old town",
+        "review_text": "Central position, easy parking and very convenient for a two-night stay in Montefiascone.",
+        "review_date": "2026-06-01",
+        "language_code": "en"
+      }
+    ]
+  }
+]

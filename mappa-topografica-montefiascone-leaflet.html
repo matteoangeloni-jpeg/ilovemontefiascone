@@ -1,0 +1,425 @@
+<section class="mf-map-section">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+    @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+
+    .mf-map-section {
+      --mf-wine: #8b2635;
+      --mf-tufo: #dcc7aa;
+      --mf-charcoal: #2d2d2d;
+      --mf-lake: #2c5e6d;
+      --mf-bg: linear-gradient(180deg, #faf7f2 0%, #f1e6d5 100%);
+      --mf-card: rgba(255, 255, 255, 0.9);
+      --mf-border: rgba(45, 45, 45, 0.12);
+      --mf-text: var(--mf-charcoal);
+      --mf-muted: #5f5a54;
+      --mf-route: #8b2635;
+      background: var(--mf-bg);
+      border: 1px solid var(--mf-border);
+      border-radius: 28px;
+      padding: clamp(24px, 3vw, 40px);
+      box-shadow: 0 24px 56px rgba(45, 45, 45, 0.08);
+      color: var(--mf-text);
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    }
+
+    .mf-map-section * {
+      box-sizing: border-box;
+    }
+
+    .mf-map-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    .mf-map-kicker {
+      margin: 0 0 6px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mf-wine);
+    }
+
+    .mf-map-title {
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.85rem, 2.8vw, 2.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .mf-map-copy-wrap {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+      max-width: 62ch;
+    }
+
+    .mf-map-copy {
+      margin: 0;
+      color: var(--mf-muted);
+      line-height: 1.68;
+      font-size: 1rem;
+    }
+
+    .mf-map-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      max-width: 32rem;
+    }
+
+    .mf-map-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--mf-card);
+      border: 1px solid rgba(45, 45, 45, 0.08);
+      color: var(--mf-charcoal);
+      font-size: 0.92rem;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+    }
+
+    .mf-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      flex-shrink: 0;
+    }
+
+    .mf-dot-route { background: var(--mf-route); }
+    .mf-dot-crater { background: var(--mf-tufo); border: 1px solid rgba(45, 45, 45, 0.16); }
+    .mf-dot-lake { background: var(--mf-lake); }
+
+    .mf-map-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid rgba(45, 45, 45, 0.1);
+      background: #dfe8eb;
+    }
+
+    #map {
+      width: 100%;
+      min-height: 420px;
+      height: clamp(420px, 68vh, 760px);
+    }
+
+    .mf-powered-by {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      z-index: 650;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: #323232;
+      font: 12px/1.2 "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .mf-map-note {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(45, 45, 45, 0.1);
+      color: var(--mf-muted);
+      font-size: 0.92rem;
+      line-height: 1.62;
+      max-width: 68ch;
+    }
+
+    .mf-poi-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50% 50% 50% 12%;
+      transform: rotate(-45deg);
+      display: grid;
+      place-items: center;
+      border: 2px solid rgba(255, 255, 255, 0.86);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+    }
+
+    .mf-poi-icon span {
+      transform: rotate(45deg);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .mf-poi-cathedral { background: linear-gradient(135deg, #8b2635, #b86b56); }
+    .mf-poi-rocca { background: linear-gradient(135deg, #2c5e6d, #4b8798); }
+    .mf-poi-francigena { background: linear-gradient(135deg, #64523a, #8c7657); }
+
+    .mf-popup h3 {
+      margin: 0 0 6px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .mf-popup p {
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.52;
+      color: #473e36;
+    }
+
+    .mf-map-section :focus-visible {
+      outline: 2px solid var(--mf-wine);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .mf-map-section {
+        padding: 18px;
+      }
+
+      .mf-map-header {
+        margin-bottom: 20px;
+      }
+
+      #map {
+        min-height: 360px;
+        height: 70vh;
+      }
+    }
+  </style>
+
+  <div class="mf-map-header">
+    <div>
+      <p class="mf-map-kicker">Mappa topografica interattiva</p>
+      <h2 class="mf-map-title">Montefiascone, Lago di Bolsena e caldera vulcanica</h2>
+      <div class="mf-map-copy-wrap">
+        <p class="mf-map-copy">
+          Questa mappa colloca Montefiascone nel paesaggio del Lago di Bolsena e del distretto vulcanico Vulsino.
+        </p>
+        <p class="mf-map-copy">
+          Evidenzia tre chiavi di lettura: i principali riferimenti monumentali, la caldera e il primo tratto della Via Francigena verso Viterbo.
+        </p>
+      </div>
+    </div>
+
+    <div class="mf-map-legend" aria-label="Legenda mappa">
+      <span class="mf-map-pill"><span class="mf-dot mf-dot-crater" aria-hidden="true"></span>Caldera vulcanica</span>
+      <span class="mf-map-pill"><span class="mf-dot mf-dot-route" aria-hidden="true"></span>Primi 5 km della Tappa 40</span>
+      <span class="mf-map-pill"><span class="mf-dot mf-dot-lake" aria-hidden="true"></span>Vista lago e paesaggio</span>
+    </div>
+  </div>
+
+  <div class="mf-map-frame">
+    <div id="map" role="region" aria-label="Mappa topografica di Montefiascone e Lago di Bolsena"></div>
+    <div class="mf-powered-by">Powered by Esri</div>
+  </div>
+
+  <p class="mf-map-note">
+    Il bordo della caldera e rappresentato con una <strong>schematizzazione cartografica</strong> a fini interpretativi.
+    Il tracciato della Francigena e una semplificazione dei primi 5 km verso Viterbo.
+  </p>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script>
+    (function () {
+      if (typeof L === "undefined") {
+        console.error("Leaflet non disponibile: controlla il tag script.");
+        return;
+      }
+
+      const montefiascone = [42.537925, 12.030997];
+      const santaMargherita = [42.536522, 12.030510];
+      const roccaDeiPapi = [42.536605, 12.028129];
+      const inizioBasolato = [42.536855, 12.027616];
+
+      const map = L.map("map", {
+        zoomControl: true,
+        scrollWheelZoom: true,
+        zoomSnap: 0.5
+      }).setView(montefiascone, 11);
+
+      const topoLayer = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
+        maxZoom: 17,
+        detectRetina: true,
+        attribution:
+          'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+          'DEM: SRTM | Map style: &copy; <a href="https://opentopomap.org/about">OpenTopoMap</a> (CC-BY-SA)'
+      });
+
+      const satelliteLayer = L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        {
+          maxZoom: 19,
+          detectRetina: true,
+          attribution:
+            'Tiles &copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community'
+        }
+      ).addTo(map);
+
+      const craterGeoJson = {
+        type: "Feature",
+        properties: {
+          name: "Caldera vulcanica del Lago di Bolsena",
+          note: "Schematizzazione del bordo craterico"
+        },
+        geometry: {
+          type: "Polygon",
+          coordinates: [[
+            [11.820, 42.646],
+            [11.844, 42.699],
+            [11.894, 42.734],
+            [11.971, 42.740],
+            [12.044, 42.716],
+            [12.096, 42.666],
+            [12.111, 42.604],
+            [12.097, 42.547],
+            [12.051, 42.501],
+            [11.983, 42.479],
+            [11.910, 42.482],
+            [11.851, 42.510],
+            [11.819, 42.566],
+            [11.820, 42.646]
+          ]]
+        }
+      };
+
+      const francigenaFirst5Km = {
+        type: "Feature",
+        properties: {
+          name: "Via Francigena - Montefiascone to Viterbo (primi 5 km)",
+          distance_km: 5.0,
+          note: "Traccia semplificata dai primi chilometri della tappa ufficiale"
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: [
+            [12.029079, 42.537035],
+            [12.027616, 42.536855],
+            [12.026713, 42.536063],
+            [12.025851, 42.534012],
+            [12.029864, 42.531593],
+            [12.032924, 42.529273],
+            [12.035987, 42.526807],
+            [12.037914, 42.522567],
+            [12.040554, 42.519265],
+            [12.042125, 42.515996],
+            [12.045157, 42.513111],
+            [12.048081, 42.508965],
+            [12.049907, 42.506202],
+            [12.052806, 42.503501],
+            [12.054429, 42.502019]
+          ]
+        }
+      };
+
+      const craterLayer = L.geoJSON(craterGeoJson, {
+        style: function () {
+          return {
+            color: "#b6631f",
+            weight: 2,
+            dashArray: "10 8",
+            fillColor: "#d99a4a",
+            fillOpacity: 0.08
+          };
+        }
+      })
+        .bindPopup(
+          '<div class="mf-popup">' +
+            "<h3>Caldera vulcanica del Lago di Bolsena</h3>" +
+            "<p>Schematizzazione visiva del bordo craterico, utile per leggere il rapporto tra rilievi, lago e Montefiascone.</p>" +
+          "</div>"
+        )
+        .addTo(map);
+
+      const routeLayer = L.geoJSON(francigenaFirst5Km, {
+        style: function () {
+          return {
+            color: "#7d4c2d",
+            weight: 5,
+            opacity: 0.95,
+            dashArray: "12 8",
+            lineCap: "round",
+            lineJoin: "round"
+          };
+        }
+      })
+        .bindPopup(
+          '<div class="mf-popup">' +
+            "<h3>Via Francigena: primi 5 km verso Viterbo</h3>" +
+            "<p>Tratto iniziale della discesa da Montefiascone, con il celebre basolato romano della Via Cassia Antica.</p>" +
+          "</div>"
+        )
+        .addTo(map);
+
+      function makePoiIcon(label, variantClass) {
+        return L.divIcon({
+          className: "",
+          html:
+            '<div class="mf-poi-icon ' + variantClass + '">' +
+              "<span>" + label + "</span>" +
+            "</div>",
+          iconSize: [42, 42],
+          iconAnchor: [21, 42],
+          popupAnchor: [0, -36]
+        });
+      }
+
+      const markers = [
+        {
+          coords: santaMargherita,
+          title: "Cattedrale di Santa Margherita",
+          description: "La cattedrale e il principale riferimento monumentale del centro storico; la cupola seicentesca definisce lo skyline del colle.",
+          icon: makePoiIcon("SM", "mf-poi-cathedral")
+        },
+        {
+          coords: roccaDeiPapi,
+          title: "Rocca dei Papi",
+          description: "Punto panoramico piu elevato del borgo, utile per leggere il rapporto tra colle, lago e paesaggio vulcanico.",
+          icon: makePoiIcon("RP", "mf-poi-rocca")
+        },
+        {
+          coords: inizioBasolato,
+          title: "Inizio del basolato romano della Via Francigena",
+          description: "Accesso indicativo al tratto storico della Via Cassia Antica percorso dalla Via Francigena verso Viterbo.",
+          icon: makePoiIcon("VF", "mf-poi-francigena")
+        }
+      ];
+
+      markers.forEach(function (markerData) {
+        L.marker(markerData.coords, {
+          icon: markerData.icon,
+          title: markerData.title,
+          keyboard: true
+        })
+          .bindPopup(
+            '<div class="mf-popup">' +
+              "<h3>" + markerData.title + "</h3>" +
+              "<p>" + markerData.description + "</p>" +
+            "</div>"
+          )
+          .addTo(map);
+      });
+
+      L.control.layers(
+        {
+          "Satellitare": satelliteLayer,
+          "Topografica": topoLayer
+        },
+        {
+          "Caldera vulcanica": craterLayer,
+          "Via Francigena (5 km)": routeLayer
+        },
+        { collapsed: false }
+      ).addTo(map);
+
+      L.control.scale({ imperial: false }).addTo(map);
+    })();
+  </script>
+</section>

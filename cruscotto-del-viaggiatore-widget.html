@@ -1,0 +1,461 @@
+<section class="traveler-dashboard" data-lat="42.53" data-lon="12.03" data-timezone="Europe/Rome">
+  <style>
+    .traveler-dashboard {
+      --td-bg: linear-gradient(180deg, #f8f3eb 0%, #f0e5d3 100%);
+      --td-card: rgba(255, 255, 255, 0.78);
+      --td-border: rgba(107, 77, 47, 0.12);
+      --td-text: #2a2119;
+      --td-muted: #6f6254;
+      --td-accent: #9a5f2e;
+      --td-accent-2: #275d80;
+      --td-good: #2f7d4a;
+      --td-warn: #b8741a;
+      --td-bad: #ae3e32;
+      color: var(--td-text);
+      background: var(--td-bg);
+      border: 1px solid var(--td-border);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 18px 45px rgba(59, 39, 19, 0.08);
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    .traveler-dashboard * {
+      box-sizing: border-box;
+    }
+
+    .td-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .td-kicker {
+      margin: 0 0 6px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--td-accent);
+      font-weight: 700;
+    }
+
+    .td-title {
+      margin: 0;
+      font-size: clamp(1.4rem, 2vw, 1.9rem);
+      line-height: 1.1;
+    }
+
+    .td-subtitle {
+      margin: 8px 0 0;
+      color: var(--td-muted);
+      max-width: 65ch;
+      line-height: 1.5;
+    }
+
+    .td-refresh {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      background: var(--td-text);
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 120ms ease, opacity 120ms ease;
+    }
+
+    .td-refresh:hover {
+      transform: translateY(-1px);
+      opacity: 0.94;
+    }
+
+    .td-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .td-card {
+      background: var(--td-card);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      border-radius: 18px;
+      padding: 18px;
+      backdrop-filter: blur(10px);
+      min-height: 148px;
+    }
+
+    .td-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.02rem;
+    }
+
+    .td-time-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      padding: 8px 0;
+      border-top: 1px solid rgba(107, 77, 47, 0.08);
+    }
+
+    .td-time-row:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .td-label {
+      color: var(--td-muted);
+      font-size: 0.95rem;
+    }
+
+    .td-value {
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .td-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .td-badge.good {
+      background: rgba(47, 125, 74, 0.12);
+      color: var(--td-good);
+    }
+
+    .td-badge.warn {
+      background: rgba(184, 116, 26, 0.14);
+      color: var(--td-warn);
+    }
+
+    .td-badge.bad {
+      background: rgba(174, 62, 50, 0.12);
+      color: var(--td-bad);
+    }
+
+    .td-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 12px;
+      margin-top: 14px;
+      color: var(--td-muted);
+      font-size: 0.94rem;
+    }
+
+    .td-summary {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .td-footnote {
+      margin-top: 16px;
+      color: var(--td-muted);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .td-status {
+      padding: 14px 0 0;
+      color: var(--td-muted);
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 760px) {
+      .td-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="td-header">
+    <div>
+      <p class="td-kicker">Il Cruscotto del Viaggiatore</p>
+      <h2 class="td-title">Luce giusta e meteo utile per oggi a Montefiascone</h2>
+      <p class="td-subtitle">
+        Golden Hour, Blue Hour e una lettura rapida delle condizioni per scattare, passeggiare o uscire sul lago.
+      </p>
+    </div>
+    <button class="td-refresh" type="button">Aggiorna</button>
+  </div>
+
+  <div class="td-grid">
+    <article class="td-card">
+      <h3>Fasi di luce</h3>
+      <div class="td-time-row">
+        <span class="td-label">Blue Hour mattino</span>
+        <strong class="td-value" data-blue-morning>--:-- - --:--</strong>
+      </div>
+      <div class="td-time-row">
+        <span class="td-label">Golden Hour mattino</span>
+        <strong class="td-value" data-golden-morning>--:-- - --:--</strong>
+      </div>
+      <div class="td-time-row">
+        <span class="td-label">Golden Hour sera</span>
+        <strong class="td-value" data-golden-evening>--:-- - --:--</strong>
+      </div>
+      <div class="td-time-row">
+        <span class="td-label">Blue Hour sera</span>
+        <strong class="td-value" data-blue-evening>--:-- - --:--</strong>
+      </div>
+      <div class="td-time-row">
+        <span class="td-label">Sunrise / Sunset</span>
+        <strong class="td-value" data-sunrise-sunset>--:-- / --:--</strong>
+      </div>
+    </article>
+
+    <article class="td-card">
+      <h3>Condizioni di scatto / passeggiata</h3>
+      <div class="td-badge warn" data-condition-badge>Caricamento...</div>
+      <p class="td-summary" data-condition-text>
+        Recupero meteo in corso...
+      </p>
+      <div class="td-metrics">
+        <span data-metric-temp>Temperatura: --</span>
+        <span data-metric-wind>Vento: --</span>
+        <span data-metric-rain>Pioggia prob.: --</span>
+        <span data-metric-cloud>Nuvolosita: --</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="td-status" data-status>Caricamento dati...</div>
+  <p class="td-footnote">
+    Calcolo fasi di luce con SunCalc. Meteo da Open-Meteo. Coordinate fisse: 42.53 N, 12.03 E, fuso Europe/Rome.
+  </p>
+
+  <script>
+    (function () {
+      const root = document.currentScript.closest(".traveler-dashboard");
+      const lat = Number(root.dataset.lat || "42.53");
+      const lon = Number(root.dataset.lon || "12.03");
+      const timezone = root.dataset.timezone || "Europe/Rome";
+
+      const els = {
+        refresh: root.querySelector(".td-refresh"),
+        blueMorning: root.querySelector("[data-blue-morning]"),
+        goldenMorning: root.querySelector("[data-golden-morning]"),
+        goldenEvening: root.querySelector("[data-golden-evening]"),
+        blueEvening: root.querySelector("[data-blue-evening]"),
+        sunriseSunset: root.querySelector("[data-sunrise-sunset]"),
+        badge: root.querySelector("[data-condition-badge]"),
+        text: root.querySelector("[data-condition-text]"),
+        status: root.querySelector("[data-status]"),
+        temp: root.querySelector("[data-metric-temp]"),
+        wind: root.querySelector("[data-metric-wind]"),
+        rain: root.querySelector("[data-metric-rain]"),
+        cloud: root.querySelector("[data-metric-cloud]")
+      };
+
+      const weatherLabels = {
+        0: "cielo sereno",
+        1: "quasi sereno",
+        2: "parzialmente nuvoloso",
+        3: "coperto",
+        45: "nebbia",
+        48: "brina con nebbia",
+        51: "pioviggine leggera",
+        53: "pioviggine moderata",
+        55: "pioviggine intensa",
+        61: "pioggia debole",
+        63: "pioggia moderata",
+        65: "pioggia intensa",
+        71: "neve debole",
+        73: "neve moderata",
+        75: "neve intensa",
+        80: "rovesci leggeri",
+        81: "rovesci moderati",
+        82: "rovesci forti",
+        95: "temporale",
+        96: "temporale con grandine",
+        99: "temporale forte con grandine"
+      };
+
+      function loadSunCalc() {
+        if (window.SunCalc) {
+          return Promise.resolve(window.SunCalc);
+        }
+
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = "https://cdn.jsdelivr.net/npm/suncalc@1.9.0/suncalc.js";
+          script.async = true;
+          script.onload = () => resolve(window.SunCalc);
+          script.onerror = () => reject(new Error("SunCalc non raggiungibile"));
+          document.head.appendChild(script);
+        });
+      }
+
+      function formatTime(date) {
+        return new Intl.DateTimeFormat("it-IT", {
+          hour: "2-digit",
+          minute: "2-digit",
+          timeZone: timezone
+        }).format(date);
+      }
+
+      function formatRange(start, end) {
+        return formatTime(start) + " - " + formatTime(end);
+      }
+
+      function clamp(n, min, max) {
+        return Math.min(max, Math.max(min, n));
+      }
+
+      function evaluateConditions(snapshot) {
+        const weatherCode = Number(snapshot.current.weather_code);
+        const cloudCover = Number(snapshot.current.cloud_cover);
+        const wind = Number(snapshot.current.wind_speed_10m);
+        const rainChance = Number(snapshot.daily.precipitation_probability_max[0]);
+
+        let score = 100;
+
+        if ([45, 48].includes(weatherCode)) score -= 18;
+        if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(weatherCode)) score -= 38;
+        if ([71, 73, 75, 77].includes(weatherCode)) score -= 30;
+        if ([95, 96, 99].includes(weatherCode)) score -= 60;
+
+        if (wind > 32) score -= 24;
+        else if (wind > 22) score -= 12;
+
+        if (rainChance > 65) score -= 20;
+        else if (rainChance > 35) score -= 10;
+
+        if (cloudCover >= 25 && cloudCover <= 70) score += 8;
+        if (cloudCover > 90) score -= 14;
+
+        score = clamp(score, 10, 100);
+
+        let level = "good";
+        let label = "Ottime";
+
+        if (score < 45) {
+          level = "bad";
+          label = "Difficili";
+        } else if (score < 72) {
+          level = "warn";
+          label = "Variabili";
+        }
+
+        const parts = [];
+
+        if (weatherCode === 0 || weatherCode === 1) {
+          parts.push("Luce pulita e aria abbastanza stabile");
+        } else if (cloudCover >= 25 && cloudCover <= 70) {
+          parts.push("Nuvolosita interessante per foto di paesaggio");
+        } else if (weatherCode === 3 || cloudCover > 85) {
+          parts.push("Cielo molto chiuso, resa piu piatta");
+        }
+
+        if (wind > 32) {
+          parts.push("vento sostenuto sulle quote alte");
+        } else if (wind > 22) {
+          parts.push("vento percepibile alla Rocca e sul lago");
+        } else {
+          parts.push("vento gestibile per passeggiata e scatti");
+        }
+
+        if (rainChance > 65) {
+          parts.push("alta probabilita di pioggia");
+        } else if (rainChance > 35) {
+          parts.push("possibili passaggi instabili");
+        }
+
+        return {
+          level,
+          label,
+          summary: parts.join(", ") + ".",
+          weatherLabel: weatherLabels[weatherCode] || "condizioni miste"
+        };
+      }
+
+      async function fetchForecast() {
+        const url =
+          "https://api.open-meteo.com/v1/forecast" +
+          "?latitude=" + encodeURIComponent(lat) +
+          "&longitude=" + encodeURIComponent(lon) +
+          "&timezone=" + encodeURIComponent(timezone) +
+          "&forecast_days=1" +
+          "&current=temperature_2m,precipitation,weather_code,wind_speed_10m,cloud_cover,is_day" +
+          "&daily=sunrise,sunset,weather_code,precipitation_probability_max,wind_speed_10m_max,temperature_2m_max,temperature_2m_min";
+
+        const response = await fetch(url, { headers: { Accept: "application/json" } });
+        if (!response.ok) {
+          throw new Error("Open-Meteo ha risposto con " + response.status);
+        }
+        return response.json();
+      }
+
+      async function renderDashboard() {
+        els.status.textContent = "Aggiornamento dati...";
+        els.refresh.disabled = true;
+        els.refresh.textContent = "Aggiorno...";
+
+        try {
+          const [SunCalc, forecast] = await Promise.all([loadSunCalc(), fetchForecast()]);
+
+          const baseDate = new Date(forecast.daily.time[0] + "T12:00:00");
+          const sun = SunCalc.getTimes(baseDate, lat, lon);
+          const sunrise = new Date(forecast.daily.sunrise[0]);
+          const sunset = new Date(forecast.daily.sunset[0]);
+
+          // Blue hour approximated with nautical twilight to sunrise/sunset.
+          els.blueMorning.textContent = formatRange(sun.nauticalDawn, sunrise);
+          els.goldenMorning.textContent = formatRange(sun.sunrise, sun.goldenHourEnd);
+          els.goldenEvening.textContent = formatRange(sun.goldenHour, sunset);
+          els.blueEvening.textContent = formatRange(sunset, sun.nauticalDusk);
+          els.sunriseSunset.textContent = formatTime(sunrise) + " / " + formatTime(sunset);
+
+          const condition = evaluateConditions(forecast);
+          els.badge.className = "td-badge " + condition.level;
+          els.badge.textContent = condition.label;
+          els.text.textContent =
+            condition.summary.charAt(0).toUpperCase() +
+            condition.summary.slice(1) +
+            " Stato cielo: " +
+            condition.weatherLabel +
+            ".";
+
+          els.temp.textContent =
+            "Temperatura: " + Math.round(forecast.current.temperature_2m) + " C";
+          els.wind.textContent =
+            "Vento: " + Math.round(forecast.current.wind_speed_10m) + " km/h";
+          els.rain.textContent =
+            "Pioggia prob.: " + Math.round(forecast.daily.precipitation_probability_max[0]) + "%";
+          els.cloud.textContent =
+            "Nuvolosita: " + Math.round(forecast.current.cloud_cover) + "%";
+
+          const updatedAt = new Intl.DateTimeFormat("it-IT", {
+            dateStyle: "medium",
+            timeStyle: "short",
+            timeZone: timezone
+          }).format(new Date());
+
+          els.status.textContent = "Dati aggiornati: " + updatedAt;
+        } catch (error) {
+          console.error(error);
+          els.badge.className = "td-badge bad";
+          els.badge.textContent = "Non disponibile";
+          els.text.textContent =
+            "Il widget non riesce a recuperare i dati in questo momento. Verifica accesso a Open-Meteo e al file SunCalc.";
+          els.status.textContent = "Errore: " + error.message;
+        } finally {
+          els.refresh.disabled = false;
+          els.refresh.textContent = "Aggiorna";
+        }
+      }
+
+      els.refresh.addEventListener("click", renderDashboard);
+      renderDashboard();
+    })();
+  </script>
+</section>

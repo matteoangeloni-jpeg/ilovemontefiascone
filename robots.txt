@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /en/
+Disallow: /de/
+Disallow: /*-widget.html
+Disallow: /*-leaflet.html
+Disallow: /offline.html
+Disallow: /base.html
+Disallow: /pages/
+Disallow: /data/
+Disallow: /server.py
+Disallow: /*.md$
+Disallow: /audit
+Disallow: /check-
+Disallow: /qa-
+
+Sitemap: https://ilovemontefiascone.com/sitemap.xml

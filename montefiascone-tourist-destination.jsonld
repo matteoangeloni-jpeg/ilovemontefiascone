@@ -1,0 +1,95 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TouristDestination",
+  "@id": "https://www.ilovemontefiascone.com/#montefiascone",
+  "name": "Montefiascone",
+  "description": "Centro storico della Tuscia viterbese sul versante sud-orientale del Lago di Bolsena, documentato dal Medioevo e noto per la Rocca dei Papi, la Cattedrale di Santa Margherita, la Via Francigena e la tradizione del vino Est! Est!! Est!!!.",
+  "url": "https://www.ilovemontefiascone.com/",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.5366,
+    "longitude": 12.03013
+  },
+  "touristType": [
+    {
+      "@type": "Audience",
+      "audienceType": "Cultural tourism"
+    },
+    {
+      "@type": "Audience",
+      "audienceType": "Wine tourism"
+    },
+    {
+      "@type": "Audience",
+      "audienceType": "Pilgrims"
+    }
+  ],
+  "containedInPlace": [
+    {
+      "@type": "Place",
+      "@id": "https://www.ilovemontefiascone.com/#provincia-di-viterbo",
+      "name": "Provincia di Viterbo"
+    },
+    {
+      "@type": "Place",
+      "@id": "https://www.ilovemontefiascone.com/#lago-di-bolsena",
+      "name": "Lago di Bolsena"
+    }
+  ],
+  "includesAttraction": [
+    {
+      "@type": [
+        "TouristAttraction",
+        "LandmarksOrHistoricalBuildings"
+      ],
+      "@id": "https://www.ilovemontefiascone.com/#rocca-dei-papi",
+      "name": "Rocca dei Papi",
+      "description": "Complesso storico sul punto piu alto del borgo, legato alla presenza papale e alla funzione difensiva medievale.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.53661,
+        "longitude": 12.02813
+      },
+      "touristType": [
+        {
+          "@type": "Audience",
+          "audienceType": "Cultural tourism"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Pilgrims"
+        }
+      ],
+      "containedInPlace": {
+        "@id": "https://www.ilovemontefiascone.com/#montefiascone"
+      }
+    },
+    {
+      "@type": [
+        "TouristAttraction",
+        "Church"
+      ],
+      "@id": "https://www.ilovemontefiascone.com/#cattedrale-di-santa-margherita",
+      "name": "Cattedrale di Santa Margherita",
+      "description": "Edificio religioso dominante nel profilo urbano di Montefiascone, con grande cupola e impianto ricostruito in eta moderna.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.53652,
+        "longitude": 12.03051
+      },
+      "touristType": [
+        {
+          "@type": "Audience",
+          "audienceType": "Cultural tourism"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Pilgrims"
+        }
+      ],
+      "containedInPlace": {
+        "@id": "https://www.ilovemontefiascone.com/#montefiascone"
+      }
+    }
+  ]
+}

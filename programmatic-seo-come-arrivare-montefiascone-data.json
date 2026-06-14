@@ -1,0 +1,37 @@
+[
+  {
+    "citta_di_partenza": "Roma",
+    "distanza_km": 117,
+    "tempo_auto": "1 ora e 45 minuti",
+    "mezzo_consigliato": "Treno",
+    "tappa_intermedia_suggerita": "Viterbo"
+  },
+  {
+    "citta_di_partenza": "Firenze",
+    "distanza_km": 190,
+    "tempo_auto": "2 ore e 15 minuti",
+    "mezzo_consigliato": "Auto",
+    "tappa_intermedia_suggerita": "Orvieto"
+  },
+  {
+    "citta_di_partenza": "Siena",
+    "distanza_km": 149,
+    "tempo_auto": "2 ore",
+    "mezzo_consigliato": "Auto",
+    "tappa_intermedia_suggerita": "Acquapendente"
+  },
+  {
+    "citta_di_partenza": "Viterbo",
+    "distanza_km": 18,
+    "tempo_auto": "25-30 minuti",
+    "mezzo_consigliato": "Bus Cotral",
+    "tappa_intermedia_suggerita": "Terme del Bagnaccio"
+  },
+  {
+    "citta_di_partenza": "Orvieto",
+    "distanza_km": 29,
+    "tempo_auto": "30-35 minuti",
+    "mezzo_consigliato": "Auto",
+    "tappa_intermedia_suggerita": "Lago di Bolsena"
+  }
+]

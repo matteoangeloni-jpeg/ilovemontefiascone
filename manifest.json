@@ -1,0 +1,37 @@
+{
+  "name": "I Love Montefiascone",
+  "short_name": "Montefiascone",
+  "description": "Portale turistico di Montefiascone con guide, mappe e contenuti consultabili anche con rete instabile.",
+  "lang": "it-IT",
+  "dir": "ltr",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#faf6ef",
+  "theme_color": "#2c5e6d",
+  "categories": ["travel", "navigation", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-512.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
