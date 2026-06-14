@@ -95,7 +95,7 @@ Pubblicato via Pages:
 
 - homepage e pagine italiane root;
 - asset in `assets/`, `css/`, `js/`, `icons/`, `media/`;
-- `manifest.json`, `sw.js`, `robots.txt`, `sitemap.xml`.
+- `manifest.json`, `sw.js`, `robots.txt`, `sitemap.xml` (sitemap index) e `sitemap-it.xml` (URL italiani).
 
 Tenuto nel repository ma non pubblicato:
 
