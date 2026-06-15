@@ -4,6 +4,16 @@ $root = if ($PSScriptRoot) { $PSScriptRoot } else { (Get-Location).Path }
 $outputDir = Join-Path $root "dist-it"
 
 $rootFiles = @(
+  "come-arrivare-a-montefiascone-da-roma.html",
+  "borghi-del-lago-di-bolsena-in-auto.html",
+  "lago-di-bolsena-in-2-giorni.html",
+  "tuscia-in-3-giorni-da-montefiascone.html",
+  "bomarzo-da-montefiascone.html",
+  "viterbo-da-montefiascone.html",
+  "calendario-eventi-montefiascone.html",
+  "montefiascone-in-2-giorni.html",
+  "estate-sul-lago-di-bolsena.html",
+  "migliori-panorami-lago-di-bolsena.html",
   "civita-di-bagnoregio-da-montefiascone.html",
   "lago-di-bolsena-con-bambini.html",
   "lago-di-bolsena-cosa-vedere.html",
