@@ -1,11 +1,13 @@
 # Portal Maturity Plan — ilovemontefiascone.com
 
-Da "pubblicabile" a "portale maturo". Stato al commit `87766c3`. Monetizzazione **fuori perimetro** (vedi §15). Documento operativo, non eseguito automaticamente: gli sprint C–G richiedono conferma.
+Da "pubblicabile" a "portale maturo". Monetizzazione **fuori perimetro** (vedi §15). Documento operativo, non eseguito automaticamente: gli sprint D–G richiedono conferma.
+
+> **Aggiornamento — Sprint C eseguito.** Aggiunte 10 nuove pagine IT ad alto impatto (3 arrivi: Viterbo/Orvieto/Firenze; 2 Via Francigena: tappa Bolsena→Montefiascone + cosa portare; 2 borghi: San Lorenzo Nuovo, Valentano; 3 Tuscia: Tuscania, Caprarola/Palazzo Farnese, Villa Lante a Bagnaia). Cluster **Via Francigena** ora 3 spoke; **arrivi** completati (Roma/Viterbo/Orvieto/Firenze); **Tuscia** rafforzata. Totali aggiornati sotto. Prossimo sprint esecutivo proposto: **D**.
 
 ## 1. Stato attuale (snapshot verificato)
-- Branch `claude/eager-albattani-shs17k`, working tree pulito.
-- **68 pagine IT indicizzabili**; 72 HTML in `dist-it` (68 + privacy/cookie/404/offline noindex).
-- `sitemap.xml` = indice → `sitemap-it.xml` (**68 URL**, hreflang `it`+`x-default` self), **0 disallineamenti**.
+- Branch `claude/eager-albattani-shs17k`.
+- **78 pagine IT indicizzabili** (era 68; +10 Sprint C); 82 HTML in `dist-it` (78 + privacy/cookie/404/offline noindex).
+- `sitemap.xml` = indice → `sitemap-it.xml` (**78 URL**, hreflang `it`+`x-default` self), **0 disallineamenti**.
 - **JSON-LD: 67/67 blocchi validi**; **0 flag** metadata (title<60, meta 120–155, H1 unico, canonical, OG/Twitter su tutte); **0 immagini senza alt**.
 - SW `mf-pwa-v10`; robots blocca en/de/widget/leaflet/offline/base/data/server.py/.md; noindex su privacy/cookie/404/offline.
 - EN (20 pagine) e DE (legacy) **preparate ma escluse** da deploy/sitemap/robots; **0 link IT→EN/DE**.
@@ -20,8 +22,8 @@ Da "pubblicabile" a "portale maturo". Stato al commit `87766c3`. Monetizzazione 
 | Internal linking | Buono | hub con **3–4 sezioni "correlate" impilate** (index/guide=4) | P2 | consolidare in un solo blocco (Sprint F) |
 | Internal linking | Buono | pagine a basso inbound: `monumenti-minori` (in=1), `cronoscalata` (in=2) | P2 | +link contestuali da hub pertinenti |
 | Profondità | Solida | ~9 pagine concise (~460–476 parole incl. chrome) | P2 | espandere con dati verificati (Sprint E) |
-| Cluster | Coperti | **Via Francigena** (1 spoke) e **Outdoor** (2 pagine) deboli | P1/P2 | nuove spoke (Sprint C/D) |
-| Info pratiche | Forte | mancano "come arrivare da Viterbo/Orvieto" | P1 | programmatic (Sprint C) |
+| Cluster | Coperti | ~~Via Francigena (1 spoke)~~ → **3 spoke (Sprint C)**; **Outdoor** (2 pagine) ancora debole | P2 | Outdoor: nuove spoke (Sprint D) |
+| Info pratiche | Forte | ~~mancano arrivi da Viterbo/Orvieto~~ → **completati in Sprint C** (Roma/Viterbo/Orvieto/Firenze) | — | — |
 | Stagionali | Debole | solo "estate sul lago" | P2 | primavera/autunno/inverno (Sprint D) |
 | E-E-A-T | Medio | responsabile editoriale = TODO | P1 (editoriale) | nominare soggetto reale |
 | Eventi | Medio | date affidate a verifica esterna | P1 (editoriale) | confermare/aggiornare; no `Event` non confermato |
@@ -86,11 +88,12 @@ Hub con inbound massimo: `cosa-vedere`, `vino`, `mappa`, `galleria`, `eventi`, `
 Tutte le "deboli" sopra + `marta`, `capodimonte`, `prodotti-tipici`, `cucina-tipica` — **solo con fatti verificati**, evitando riempimento.
 
 ## 11. Prossimi sprint C / D / E / F / G
-### Sprint C — 10 pagine IT ad alto impatto (cluster deboli)
+### Sprint C — 10 pagine IT ad alto impatto (cluster deboli) — ✅ ESEGUITO
 - Obiettivo: rafforzare Via Francigena, Info pratiche (arrivi), Borghi, Tuscia.
-- Pagine: `come-arrivare-da-viterbo`, `come-arrivare-da-orvieto`, `via-francigena-bolsena-montefiascone`, `via-francigena-cosa-portare`, `san-lorenzo-nuovo`, `valentano`, `tuscania-da-montefiascone`, `caprarola-palazzo-farnese`, `gradoli`-espansione, `quando-visitare`-cross.
-- Impatto SEO alto, GEO alto. Rischio dati: medio/alto (tempi, biglietti) → formule prudenti.
-- Dipendenze: roadmap §4. NON: pubblicare EN, inventare orari/biglietti/km.
+- Pagine create: `come-arrivare-a-montefiascone-da-viterbo`, `-da-orvieto`, `-da-firenze`, `via-francigena-bolsena-montefiascone`, `via-francigena-cosa-portare`, `san-lorenzo-nuovo-cosa-vedere-lago-di-bolsena`, `valentano-cosa-vedere-lago-di-bolsena`, `tuscania-da-montefiascone`, `caprarola-palazzo-farnese-da-montefiascone`, `villa-lante-bagnaia-da-montefiascone`.
+- Inbound aggiunti (senza nuove sezioni "correlate"): hub arrivi, Via Francigena, borghi-in-auto, dintorni, Tuscia-3-giorni.
+- Impatto SEO/GEO alto. Dati prudenti: nessun km/orario/biglietto inventato; fatti enciclopedici verificabili (basiliche di Tuscania, Palazzo Farnese, Villa Lante, Tappa 39 AEVF, San Lorenzo Nuovo settecentesco, Valentano/Farnese).
+- (`gradoli`-espansione e `quando-visitare`-cross spostati a Sprint E/linking.)
 
 ### Sprint D — 10 pagine IT stagionali/esperienziali
 - Obiettivo: query stagionali e di esperienza.
