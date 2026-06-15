@@ -1,4 +1,4 @@
-const SW_VERSION = "mf-pwa-v9-2026-06-14-rwd2";
+const SW_VERSION = "mf-pwa-v10-2026-06-14-itlaunch";
 const STATIC_CACHE = `${SW_VERSION}-static`;
 const ARTICLE_CACHE = `${SW_VERSION}-articles`;
 const ASSET_CACHE = `${SW_VERSION}-assets`;

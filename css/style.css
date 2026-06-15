@@ -549,6 +549,22 @@ dl {
   gap: 0.7rem;
 }
 
+/* Consolidated "Continua a esplorare" related block (Sprint F) */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem 2.25rem;
+}
+
+.related-col h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+}
+
+.related-col .plain-list {
+  gap: 0.55rem;
+}
+
 .plain-list li {
   padding-left: 1rem;
   position: relative;
@@ -1149,7 +1165,9 @@ dl {
 
 /* Floating Hero Card */
 .page-hero__panel--home {
+  /* JPG fallback first; modern browsers use the WebP via image-set (matches the <link rel=preload> hero) */
   background: var(--hero-bg-image, url("/media/hero-rocca-dei-papi-1600.jpg")) center / cover no-repeat;
+  background: var(--hero-bg-image, image-set(url("/media/hero-rocca-dei-papi-1600.webp") type("image/webp"), url("/media/hero-rocca-dei-papi-1600.jpg") type("image/jpeg"))) center / cover no-repeat;
   min-height: 520px;
   display: flex;
   align-items: center;

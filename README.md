@@ -95,7 +95,7 @@ Pubblicato via Pages:
 
 - homepage e pagine italiane root;
 - asset in `assets/`, `css/`, `js/`, `icons/`, `media/`;
-- `manifest.json`, `sw.js`, `robots.txt`, `sitemap.xml`.
+- `manifest.json`, `sw.js`, `robots.txt`, `sitemap.xml` (sitemap index) e `sitemap-it.xml` (URL italiani).
 
 Tenuto nel repository ma non pubblicato:
 
@@ -112,11 +112,23 @@ Escluso dal repository tramite `.gitignore`:
 
 ## Checklist pre go-live
 
-- verificare titles, metadata e canonical delle pagine italiane;
-- rigenerare `dist-it/` prima di ogni release;
-- verificare date eventi e JSON-LD prima della pubblicazione;
-- non pubblicare `en/` e `de/` finché non vengono risolti encoding, metadata e copertura pagine;
-- configurare la pagina 404 lato hosting, non solo il file `404.html`.
+Completato in preparazione del soft launch IT:
+
+- [x] accenti italiani corretti su tutte le pagine pubblicabili e sulle stringhe JS visibili;
+- [x] `privacy.html` e `cookie.html` dichiarano i servizi di terze parti (Google Fonts, Open-Meteo, tile mappa, Leaflet/unpkg, `sessionStorage`);
+- [x] footer "Trasparenza" deduplicato su `404`, `privacy`, `cookie`, `progetto-editoriale`;
+- [x] immagini homepage in `<picture>` WebP con fallback JPG; preload hero allineato al background CSS (`image-set`);
+- [x] versione cache PWA aggiornata (`sw.js` + token `?v=` degli asset);
+- [x] titoli, metadata, canonical, OG/Twitter e JSON-LD verificati sulle pagine italiane.
+
+Da completare prima/dopo il go-live:
+
+- [ ] indicare in `progetto-editoriale.html` il responsabile editoriale (TODO ancora aperto, da non inventare);
+- [ ] confermare le date evento JSON-LD (`cronoscalata`, `eventi-tradizioni`) con i canali ufficiali e aggiornarle dopo lo svolgimento;
+- [ ] in `Settings > Pages` impostare la source su **GitHub Actions** (non "Deploy from a branch"): solo `dist-it/` deve andare online;
+- [ ] rigenerare `dist-it/` a ogni release ed evitare la pubblicazione di `en/` e `de/`;
+- [ ] configurare la pagina 404 lato hosting (su GitHub Pages la `404.html` in root è automatica);
+- [ ] valutare il self-hosting dei font per eliminare il trasferimento IP verso Google Fonts.
 
 ## Stato multilingua
 
