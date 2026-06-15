@@ -68,4 +68,39 @@ Generated from validated IT pages, culturally adapted (not literal translation),
 
 **Until all the above are done, EN remains unpublished and excluded from the deploy.**
 
-## EN publishable: NO (draft ready for human review)
+## QA results (2026-06-15)
+
+**Verdict: QUASI PUBBLICABILE** — technically ready; one non-automatable gate remains (human native-speaker sign-off) plus the publishing steps (reciprocal hreflang, `sitemap-en.xml`, robots, build).
+
+Automated QA on all 20 pages: **0 flagged**. Every page has title < 60, meta description 120–155, single H1, self canonical, OG + Twitter, `inLanguage="en"`, valid JSON-LD, ≥ 9 working internal links. **0 mojibake, 0 Italian residue, 0 broken links.** Spelling is consistently British (`centre`, `travelling`; the only "color" tokens are the standard `theme-color` meta). Isolation re-confirmed: not in `sitemap.xml`/`sitemap-it.xml`, `robots.txt` still blocks `/en/`, 0 IT pages with `hreflang="en"`, `/en/` absent from `dist-it`.
+
+**Fix applied this sprint:** removed a duplicated "Home › Home" breadcrumb on `/en/index.html` (visible + BreadcrumbList schema).
+
+Indicative scores (SEO / Content / Localization / Technical), all ≥ 85:
+
+| Page | SEO | Content | Loc | Tech |
+|---|---|---|---|---|
+| index | 93 | 87 | 90 | 95 |
+| things-to-see-montefiascone | 92 | 88 | 90 | 95 |
+| montefiascone-travel-guide | 92 | 88 | 90 | 95 |
+| how-to-get-to-montefiascone | 92 | 88 | 90 | 95 |
+| parking-in-montefiascone | 90 | 86 | 90 | 95 |
+| tourist-information-montefiascone | 90 | 84 | 88 | 95 |
+| best-time-to-visit-montefiascone | 90 | 84 | 88 | 95 |
+| lake-bolsena | 92 | 87 | 90 | 95 |
+| what-to-see-on-lake-bolsena | 91 | 85 | 89 | 95 |
+| lake-bolsena-in-one-day | 91 | 85 | 89 | 95 |
+| best-villages-on-lake-bolsena | 90 | 84 | 89 | 95 |
+| bolsena-things-to-see | 91 | 86 | 90 | 95 |
+| marta-lake-bolsena-things-to-see | 90 | 85 | 90 | 95 |
+| capodimonte-lake-bolsena-things-to-see | 90 | 85 | 90 | 95 |
+| montefiascone-in-one-day | 91 | 86 | 89 | 95 |
+| weekend-in-montefiascone | 91 | 86 | 89 | 95 |
+| civita-di-bagnoregio-from-montefiascone | 91 | 87 | 90 | 95 |
+| montefiascone-wine-guide | 92 | 87 | 90 | 95 |
+| where-to-stay-in-montefiascone | 91 | 87 | 90 | 95 |
+| where-to-eat-in-montefiascone | 90 | 86 | 89 | 95 |
+
+**Residual (non-blocking):** content is concise (~430–515 visible words incl. chrome); a human editorial/native pass is recommended before go-live; some pages could be deepened with verified facts.
+
+## EN publishable: NO yet — QUASI PUBBLICABILE (pending human native review + publishing steps)
