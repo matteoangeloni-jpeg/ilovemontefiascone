@@ -25,7 +25,7 @@ description: "Scopri cantine Montefiascone degustazione, Est! Est!! Est!!! DOC, 
 seo:
   title: "Cantine Montefiascone degustazione: guida DOC"
   description: "Scopri cantine Montefiascone degustazione, Est! Est!! Est!!! DOC, terroir vulcanico e abbinamenti tipici tra lago e Tuscia."
-  canonical: "https://ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est/"
+  canonical: "https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est/"
   focus_keyword: "Cantine Montefiascone degustazione"
   secondary_keywords:
     - "Est Est Est vino"

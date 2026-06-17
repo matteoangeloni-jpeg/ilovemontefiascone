@@ -24,7 +24,7 @@ description: "Scopri cosa vedere nei dintorni di Montefiascone tra Bolsena, Mart
 seo:
   title: "Cosa vedere dintorni Montefiascone: itinerario"
   description: "Scopri cosa vedere nei dintorni di Montefiascone tra Bolsena, Marta, Capodimonte, Civita e Bomarzo. Itinerario perfetto per 2-3 giorni."
-  canonical: "https://ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario/"
+  canonical: "https://www.ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario/"
   focus_keyword: "Cosa vedere dintorni Montefiascone"
   secondary_keywords:
     - "weekend lago di bolsena"

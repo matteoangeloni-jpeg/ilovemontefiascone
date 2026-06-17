@@ -101,6 +101,7 @@ $rootFiles = @(
   "robots.txt",
   "sitemap.xml",
   "sw.js",
+  "CNAME",
   "vino.html"
 )
 
