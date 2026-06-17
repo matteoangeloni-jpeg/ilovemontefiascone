@@ -41,6 +41,7 @@ $rootFiles = @(
   "bomarzo-da-montefiascone.html",
   "viterbo-da-montefiascone.html",
   "calendario-eventi-montefiascone.html",
+  "concerto-banda-rb-revue-montefiascone.html",
   "montefiascone-in-2-giorni.html",
   "estate-sul-lago-di-bolsena.html",
   "migliori-panorami-lago-di-bolsena.html",
