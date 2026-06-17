@@ -85,7 +85,7 @@ Per i turisti, iniziative di questo tipo spiegano bene il carattere sociale di M
 
 ### AS.VO.M. - Protezione Civile Montefiascone
 
-AS.VO.M., storica realtÃ  di Protezione Civile di Montefiascone, nasce nel 1994 e rappresenta uno dei presidi piu importanti della sicurezza locale. La presenza di una sala operativa H24 in piazzale della Stazione rende immediatamente percepibile la dimensione organizzativa del loro lavoro: non un volontariato occasionale, ma una struttura capace di coordinarsi, rispondere e intervenire con continuita.
+AS.VO.M., storica realtà di Protezione Civile di Montefiascone, nasce nel 1994 e rappresenta uno dei presidi piu importanti della sicurezza locale. La presenza di una sala operativa H24 in piazzale della Stazione rende immediatamente percepibile la dimensione organizzativa del loro lavoro: non un volontariato occasionale, ma una struttura capace di coordinarsi, rispondere e intervenire con continuita.
 
 Il loro contributo e fondamentale nelle emergenze, ma non si esaurisce nei momenti piu critici. AS.VO.M. ha svolto e continua a svolgere, con modalita operative che possono evolvere nel tempo, un ruolo importante anche nel supporto alla viabilita, nella gestione dei flussi durante eventi pubblici e nelle attivita che richiedono assistenza logistica, presidio del territorio e coordinamento con altri soggetti istituzionali. Questo significa che una parte della vivibilita ordinaria del borgo passa anche dal loro lavoro, spesso discreto ma decisivo.
 

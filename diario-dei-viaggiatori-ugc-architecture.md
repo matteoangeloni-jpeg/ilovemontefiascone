@@ -235,7 +235,7 @@ function normalizeReviews(testimonials) {
         "@type": "Person",
         "name": item.public_name
       },
-      "datePublished": item.published_at ? item.published_at.slice(0, 10) : item.visit_date,
+      "datePublished": item.published_at  item.published_at.slice(0, 10) : item.visit_date,
       "reviewBody": item.review_body,
       "reviewRating": {
         "@type": "Rating",
@@ -243,7 +243,7 @@ function normalizeReviews(testimonials) {
         "bestRating": 5,
         "worstRating": 1
       },
-      "positiveNotes": item.is_verified ? "Visita verificata tramite geolocalizzazione." : undefined
+      "positiveNotes": item.is_verified  "Visita verificata tramite geolocalizzazione." : undefined
     }));
 }
 
@@ -377,7 +377,7 @@ Racconta un dettaglio reale della tua visita.
 
 Placeholder:
 
-Dove ti sei fermato? Cosa ti e` rimasto impresso? Cosa consiglieresti a chi arriva domani?
+Dove ti sei fermato Cosa ti e` rimasto impresso Cosa consiglieresti a chi arriva domani?
 
 **Consenso pubblicazione**
 

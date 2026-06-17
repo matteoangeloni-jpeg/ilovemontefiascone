@@ -2,7 +2,7 @@
 
 ### Perché il vino di Montefiascone si chiama Est Est Est?
 
-Il vino prende il nome dalla leggenda del prelato **Johannes Defuk** che, nel 1111, inviava avanti il servo **Martino** per assaggiare i vini migliori. A **Montefiascone** il giudizio fu entusiasta: scrisse “Est!” tre volte, dando origine al nome **Est! Est!! Est!!!**.
+Il vino prende il nome dalla leggenda del prelato **Johannes Defuk** che, nel 1111, inviava avanti il servo **Martino** per assaggiare i vini migliori. A **Montefiascone** il giudizio fu entusiasta: scrisse "Est!" tre volte, dando origine al nome **Est! Est!! Est!!!**.
 
 ### Quanto è alto il colle di Montefiascone?
 
@@ -10,11 +10,11 @@ Il colle di **Montefiascone** raggiunge circa **590 metri sul livello del mare**
 
 ### Chi è sepolto nella chiesa di San Flaviano a Montefiascone?
 
-Nella chiesa di **San Flaviano** è sepolto il prelato **Johannes Defuk**, protagonista della celebre leggenda del vino **Est! Est!! Est!!!**. La sua tomba si trova all’interno della basilica e ha reso il santuario una tappa simbolica per viaggiatori, appassionati di storia e cultori del vino.
+Nella chiesa di **San Flaviano** è sepolto il prelato **Johannes Defuk**, protagonista della celebre leggenda del vino **Est! Est!! Est!!!**. La sua tomba si trova all'interno della basilica e ha reso il santuario una tappa simbolica per viaggiatori, appassionati di storia e cultori del vino.
 
 ### Cosa c'è da vedere alla Rocca dei Papi?
 
-Alla **Rocca dei Papi** si vedono i resti della fortezza papale, la **Torre del Pellegrino** e uno dei panorami più spettacolari della **Tuscia**. Dall’area sommitale lo sguardo abbraccia il **Lago di Bolsena**, i tetti di **Montefiascone** e l’antico paesaggio vulcanico circostante.
+Alla **Rocca dei Papi** si vedono i resti della fortezza papale, la **Torre del Pellegrino** e uno dei panorami più spettacolari della **Tuscia**. Dall'area sommitale lo sguardo abbraccia il **Lago di Bolsena**, i tetti di **Montefiascone** e l'antico paesaggio vulcanico circostante.
 
 ### Qual è la chiesa con la cupola grande a Montefiascone?
 
@@ -47,7 +47,7 @@ La chiesa con la grande cupola di **Montefiascone** è la **Cattedrale di Santa 
       "name": "Chi è sepolto nella chiesa di San Flaviano a Montefiascone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nella chiesa di San Flaviano è sepolto il prelato Johannes Defuk, protagonista della celebre leggenda del vino Est! Est!! Est!!!. La sua tomba si trova all’interno della basilica e ha reso il santuario una tappa simbolica per viaggiatori, appassionati di storia e cultori del vino."
+        "text": "Nella chiesa di San Flaviano è sepolto il prelato Johannes Defuk, protagonista della celebre leggenda del vino Est! Est!! Est!!!. La sua tomba si trova all'interno della basilica e ha reso il santuario una tappa simbolica per viaggiatori, appassionati di storia e cultori del vino."
       }
     },
     {
@@ -55,7 +55,7 @@ La chiesa con la grande cupola di **Montefiascone** è la **Cattedrale di Santa 
       "name": "Cosa c'è da vedere alla Rocca dei Papi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alla Rocca dei Papi si vedono i resti della fortezza papale, la Torre del Pellegrino e uno dei panorami più spettacolari della Tuscia. Dall’area sommitale lo sguardo abbraccia il Lago di Bolsena, i tetti di Montefiascone e l’antico paesaggio vulcanico circostante."
+        "text": "Alla Rocca dei Papi si vedono i resti della fortezza papale, la Torre del Pellegrino e uno dei panorami più spettacolari della Tuscia. Dall'area sommitale lo sguardo abbraccia il Lago di Bolsena, i tetti di Montefiascone e l'antico paesaggio vulcanico circostante."
       }
     },
     {

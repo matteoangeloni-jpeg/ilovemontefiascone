@@ -226,7 +226,7 @@ Far evolvere il sito **da portale locale su Montefiascone → a portale territor
 ## 5. Prime 20 pagine da produrre (IT)
 
 **Sprint A (10)** — colmano gap ad alto intento e rinforzano i cluster lago/Tuscia/pratiche:
-| # roadmap | Pagina | Perché prioritaria | Dipendenze | Link | Dati da verificare | Traducibile EN ora? |
+| # roadmap | Pagina | Perché prioritaria | Dipendenze | Link | Dati da verificare | Traducibile EN ora |
 |---|---|---|---|---|---|---|
 |62|come-arrivare da Roma|alto intento, gap noto; template programmatic esiste|`programmatic-seo-come-arrivare-*`|come-arrivare, parcheggi|km/tempi/mezzi|no: prima verifica dati|
 |23|borghi del lago in auto (anello)|completa cluster lago|lago, borghi|itinerario-auto|nessuno critico|sì (#104)|
@@ -240,7 +240,7 @@ Far evolvere il sito **da portale locale su Montefiascone → a portale territor
 |55|Migliori panorami sul lago|visual, link foto|spot-fotografici|rocca, belvedere|nessuno|sì|
 
 **Sprint B (10)**:
-| # roadmap | Pagina | Perché | Traducibile EN ora? |
+| # roadmap | Pagina | Perché | Traducibile EN ora |
 |---|---|---|---|
 |2|Montefiascone senza auto|accessibilità/intento pratico|sì|
 |19|Gradoli cosa vedere|long-tail borgo|attendere (espandere prima)|
@@ -256,7 +256,7 @@ Far evolvere il sito **da portale locale su Montefiascone → a portale territor
 ## 6. Prime 30 pagine da tradurre/adattare in EN
 Le 20 EN core esistono già come bozza (vedi `docs/en-localization-status.md`); vanno **prima validate (sign-off madrelingua) e pubblicate** con hreflang reciproco. Ordine di estensione EN (oltre alle 20 core):
 
-| # | URL IT | URL EN consigliato | Pri | Ragione | Adattamento | Rischio loc. | EN core esiste? | Espandere prima? |
+| # | URL IT | URL EN consigliato | Pri | Ragione | Adattamento | Rischio loc. | EN core esiste | Espandere prima |
 |---|---|---|---|---|---|---|---|---|
 |1|/ (home)|/en/index.html|P0|ingresso|forte (Rome/Tuscia context)|basso|sì|no|
 |2|cosa-vedere-…-guida-completa|/en/montefiascone-complete-guide|P1|long-form chiave|medio|basso|no (solo travel-guide breve)|sì|
