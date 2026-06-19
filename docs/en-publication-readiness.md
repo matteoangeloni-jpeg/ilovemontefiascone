@@ -17,8 +17,13 @@ The Italian site remains the primary version. This sprint did not create a publi
 | `/en/index.html` | Ready | 94 | 90 | 90 | 95 | Strong hub page; useful context for Lake Bolsena, Tuscia and northern Lazio. |
 | `/en/things-to-see-montefiascone.html` | Ready | 95 | 92 | 91 | 96 | Strong core page for attractions and first-time visitors. |
 | `/en/montefiascone-travel-guide.html` | Ready | 95 | 92 | 92 | 96 | Good pillar-style guide and internal linking. |
+| `/en/rocca-dei-papi-montefiascone.html` | Ready | 95 | 90 | 91 | 96 | Dedicated attraction page with panoramic, historical and planning context. |
+| `/en/cathedral-santa-margherita-montefiascone.html` | Ready | 95 | 90 | 91 | 96 | Dedicated architecture page explaining the dome and visitor context. |
+| `/en/basilica-san-flaviano-montefiascone.html` | Ready | 95 | 90 | 91 | 96 | Dedicated page for San Flaviano, the Via Francigena and the Est legend. |
 | `/en/lake-bolsena.html` | Almost ready | 94 | 86 | 88 | 96 | Accurate and useful, but can later support more sensory/travel detail. |
 | `/en/montefiascone-wine-guide.html` | Ready | 94 | 90 | 92 | 96 | Good explanation of Est! Est!! Est!!! and wine context. |
+| `/en/est-est-est-montefiascone-doc-wine.html` | Ready | 95 | 91 | 92 | 96 | Focused wine entity page for the DOC, legend, terroir and cautious tasting advice. |
+| `/en/via-francigena-montefiascone-viterbo.html` | Ready | 95 | 90 | 91 | 96 | Dedicated pilgrimage page with practical caution and route context. |
 | `/en/how-to-get-to-montefiascone.html` | Ready | 95 | 90 | 90 | 96 | Practical and cautious about transport details. |
 | `/en/where-to-stay-in-montefiascone.html` | Ready | 94 | 88 | 90 | 96 | Good intent match without inventing hotels. |
 | `/en/where-to-eat-in-montefiascone.html` | Almost ready | 94 | 84 | 88 | 96 | Useful but intentionally generic; can be enriched later with verified categories only. |
@@ -37,7 +42,7 @@ The Italian site remains the primary version. This sprint did not create a publi
 
 ## Current QA Results
 
-Automated checks over 20 English HTML pages:
+Automated checks over 25 English HTML pages:
 
 - Title length: all under 60 characters.
 - Meta description length: all between 120 and 155 characters.
@@ -63,6 +68,18 @@ These pages are not broken, but remain concise and should be strengthened before
 - `/en/marta-lake-bolsena-things-to-see.html`
 - `/en/capodimonte-lake-bolsena-things-to-see.html`
 - `/en/montefiascone-in-one-day.html`
+
+## Newly Added EN Spoke Pages
+
+The second English-readiness pass added five publication-grade spoke pages:
+
+- `/en/rocca-dei-papi-montefiascone.html`
+- `/en/cathedral-santa-margherita-montefiascone.html`
+- `/en/basilica-san-flaviano-montefiascone.html`
+- `/en/est-est-est-montefiascone-doc-wine.html`
+- `/en/via-francigena-montefiascone-viterbo.html`
+
+These pages are intentionally not linked from the Italian public site and are not included in any public sitemap. They strengthen the future English hub-and-spoke graph without changing current publication status.
 
 Do not expand these with invented opening hours, restaurant names, hotel names, event dates, transport guarantees, ticket prices, or exact access conditions. Add only verified or evergreen planning context.
 
