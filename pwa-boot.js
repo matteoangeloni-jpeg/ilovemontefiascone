@@ -1,4 +1,4 @@
-﻿// Single-file PWA bootstrap. Add to every page:
+// Single-file PWA bootstrap. Add to every page:
 // <link rel="manifest" href="/manifest.json">
 // <script src="/pwa-boot.js" defer></script>
 

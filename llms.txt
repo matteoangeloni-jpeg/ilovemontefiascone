@@ -9,6 +9,21 @@
 - Tipologia contenuti: guide turistiche, itinerari, eventi, enogastronomia, mappe, patrimonio culturale, informazioni pratiche
 - Ultimo aggiornamento llms.txt: 2026-06-19
 
+## Temi principali del sito
+- Montefiascone e Lago di Bolsena.
+- Cosa vedere a Montefiascone.
+- Rocca dei Papi.
+- Cattedrale di Santa Margherita.
+- Basilica di San Flaviano.
+- Via Francigena.
+- Est! Est!! Est!!! di Montefiascone DOC.
+- Cantine e degustazioni.
+- Eventi locali.
+- Fiera del Vino.
+- Cronoscalata Lago Montefiascone.
+- Itinerari nella Tuscia.
+- Turismo lento e weekend.
+
 ## Pagine Hub Principali
 - [Homepage](https://www.ilovemontefiascone.com/): punto di accesso principale al portale turistico di Montefiascone.
 - [Cosa vedere a Montefiascone](https://www.ilovemontefiascone.com/cosa-vedere.html): guida sintetica ai principali monumenti e luoghi di visita.
