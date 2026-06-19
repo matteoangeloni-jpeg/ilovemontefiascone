@@ -208,8 +208,24 @@ const SUNNY_CODES = new Set([0, 1, 2]);
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
-  initContextualWeather();
+  scheduleContextualWeather();
 });
+
+function scheduleContextualWeather() {
+  const run = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(() => initContextualWeather(), { timeout: 2500 });
+    } else {
+      window.setTimeout(() => initContextualWeather(), 900);
+    }
+  };
+
+  if (document.readyState === "complete") {
+    run();
+  } else {
+    window.addEventListener("load", run, { once: true });
+  }
+}
 
 function initNav() {
   const toggle = document.querySelector("[data-nav-toggle]");

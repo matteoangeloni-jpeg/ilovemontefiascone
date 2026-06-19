@@ -25,13 +25,20 @@
       content="Scopri Montefiascone sul Lago di Bolsena: cosa vedere, vino Est! Est!! Est!!!, eventi, itinerari e consigli utili per organizzare la visita.">
     <meta name="twitter:image" content="https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg">
     <meta name="theme-color" content="#2C5E6D">
-    <link rel="preload" as="image" href="/media/hero-rocca-dei-papi-1600.webp" fetchpriority="high">
+    <link
+      rel="preload"
+      as="image"
+      href="/media/hero-rocca-dei-papi-768.webp"
+      imagesrcset="/media/hero-rocca-dei-papi-768.webp 768w, /media/hero-rocca-dei-papi-1280.webp 1280w, /media/hero-rocca-dei-papi-1600.webp 1600w"
+      imagesizes="(max-width: 767px) calc(100vw - 32px), min(1160px, calc(100vw - 32px))"
+      type="image/webp"
+      fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
-    <link rel="stylesheet" href="/css/style.css?v=2026-06-14-itlaunch">
+    <link rel="stylesheet" href="/css/style.css?v=2026-06-19-lcp">
     <link rel="manifest" href="/manifest.json">
     <script type="application/ld+json">
       {
@@ -147,6 +154,19 @@
       <section class="page-hero">
         <div class="container">
           <div class="page-hero__panel page-hero__panel--home">
+            <picture class="page-hero__media" aria-hidden="true">
+              <source
+                type="image/webp"
+                srcset="/media/hero-rocca-dei-papi-768.webp 768w, /media/hero-rocca-dei-papi-1280.webp 1280w, /media/hero-rocca-dei-papi-1600.webp 1600w"
+                sizes="(max-width: 767px) calc(100vw - 32px), min(1160px, calc(100vw - 32px))">
+              <img
+                src="/media/hero-rocca-dei-papi-1600.jpg"
+                alt=""
+                width="1600"
+                height="1204"
+                decoding="sync"
+                fetchpriority="high">
+            </picture>
             <div class="page-hero__content--floating">
               <span class="eyebrow">Tuscia &middot; Lago di Bolsena &middot; Via Francigena</span>
               <h1>Montefiascone, porta del Lago di Bolsena</h1>
@@ -573,7 +593,7 @@
       </div>
     </footer>
 
-    <script src="/js/main.js?v=2026-06-14-itlaunch" defer></script>
+    <script src="/js/main.js?v=2026-06-19-lcp" defer></script>
     <script src="/pwa-boot.js?v=2026-06-14-itlaunch" defer></script>
   </body>
 </html>

@@ -1010,7 +1010,7 @@ dl {
 .page-hero__panel--home {
   background:
     linear-gradient(135deg, rgba(139, 38, 53, 0.7), rgba(44, 94, 109, 0.74)),
-    var(--hero-bg-image, url("/media/hero-rocca-dei-papi-1600.jpg")) center / cover no-repeat;
+    #224654;
 }
 
 .page-hero__content {
@@ -1165,14 +1165,24 @@ dl {
 
 /* Floating Hero Card */
 .page-hero__panel--home {
-  /* JPG fallback first; modern browsers use the WebP via image-set (matches the <link rel=preload> hero) */
-  background: var(--hero-bg-image, url("/media/hero-rocca-dei-papi-1600.jpg")) center / cover no-repeat;
-  background: var(--hero-bg-image, image-set(url("/media/hero-rocca-dei-papi-1600.webp") type("image/webp"), url("/media/hero-rocca-dei-papi-1600.jpg") type("image/jpeg"))) center / cover no-repeat;
+  background: #224654;
   min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.page-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.page-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .page-hero__panel--home::before {
@@ -1239,6 +1249,17 @@ dl {
 .button--hero:hover {
   background: var(--blu-lago);
   color: #ffffff;
+}
+
+@media (max-width: 47.99rem) {
+  .page-hero__panel--home {
+    min-height: 460px;
+  }
+
+  .page-hero__content--floating {
+    padding: 2rem 1.35rem;
+    margin: 1rem;
+  }
 }
 
 /* Two-column Hub Layout */
