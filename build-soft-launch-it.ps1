@@ -8,6 +8,7 @@ $rootFiles = @(
   "montefiascone-in-autunno-vendemmia.html",
   "montefiascone-in-inverno.html",
   "lago-di-bolsena-in-autunno.html",
+  "llms.txt",
   "weekend-romantico-lago-di-bolsena.html",
   "cosa-fare-a-montefiascone-quando-piove.html",
   "dove-vedere-il-tramonto-sul-lago-di-bolsena.html",
