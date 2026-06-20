@@ -1252,13 +1252,41 @@ dl {
 }
 
 @media (max-width: 47.99rem) {
+  .page-hero {
+    padding: 1rem 0 0.75rem;
+  }
+
   .page-hero__panel--home {
-    min-height: 460px;
+    min-height: 420px;
   }
 
   .page-hero__content--floating {
-    padding: 2rem 1.35rem;
-    margin: 1rem;
+    padding: 1.55rem 1.2rem;
+    margin: 0.85rem;
+  }
+
+  .page-hero__content--floating h1 {
+    font-size: clamp(1.85rem, 9vw, 2.35rem);
+  }
+
+  .page-hero__content--floating p {
+    font-size: 1rem;
+  }
+
+  .home-en .detail-hero {
+    padding-top: 1rem;
+  }
+
+  .home-en .detail-hero__media {
+    min-height: 15rem;
+  }
+
+  .home-en .detail-hero__content {
+    padding: 1.2rem;
+  }
+
+  .home-en .detail-hero h1 {
+    font-size: clamp(1.85rem, 8vw, 2.3rem);
   }
 }
 
