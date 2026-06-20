@@ -7,7 +7,7 @@
 - Lingua principale: italiano
 - Area geografica: Montefiascone, Lago di Bolsena, Tuscia, Provincia di Viterbo, Lazio, Italia
 - Tipologia contenuti: guide turistiche, itinerari, eventi, enogastronomia, mappe, patrimonio culturale, informazioni pratiche
-- Ultimo aggiornamento llms.txt: 2026-06-19
+- Ultimo aggiornamento llms.txt: 2026-06-20
 
 ## Temi principali del sito
 - Montefiascone e Lago di Bolsena.
@@ -98,3 +98,12 @@
 - [Lake Bolsena](https://www.ilovemontefiascone.com/en/lake-bolsena.html): English guide to the lake and villages.
 - [Montefiascone wine guide](https://www.ilovemontefiascone.com/en/montefiascone-wine-guide.html): Est! Est!! Est!!! and wine tourism context.
 - [How to get to Montefiascone](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone.html): Practical travel planning.
+
+
+## English Expansion Guides
+- [Lake Bolsena in two days](https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days.html): weekend itinerary using Montefiascone as a hilltop base.
+- [Lake Bolsena beaches](https://www.ilovemontefiascone.com/en/lake-bolsena-beaches.html): practical English guide to swimming and shore planning.
+- [Things to do near Montefiascone](https://www.ilovemontefiascone.com/en/things-to-do-near-montefiascone.html): Tuscia day-trip hub for international visitors.
+- [Tuscia in three days](https://www.ilovemontefiascone.com/en/tuscia-in-three-days-from-montefiascone.html): hub-and-spoke itinerary from Montefiascone.
+- [Montefiascone in two days](https://www.ilovemontefiascone.com/en/montefiascone-in-two-days.html): weekend guide to town, lake, wine and monuments.
+- [Est! Est!! Est!!! wine route](https://www.ilovemontefiascone.com/en/est-est-est-wine-route-montefiascone.html): wine tourism guide for Montefiascone and Tuscia.
