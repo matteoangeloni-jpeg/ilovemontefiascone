@@ -82,6 +82,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/things-to-do-near-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario.html" />
   </url>
   <url>
@@ -199,6 +200,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/spiagge-lago-di-bolsena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-beaches.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/spiagge-lago-di-bolsena.html" />
   </url>
   <url>
@@ -207,6 +209,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/borghi-lago-di-bolsena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-villages.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/borghi-lago-di-bolsena.html" />
   </url>
   <url>
@@ -250,6 +253,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-con-bambini-famiglie.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-with-kids.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-con-bambini-famiglie.html" />
   </url>
   <url>
@@ -294,6 +298,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/prodotti-tipici-montefiascone-tuscia.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/local-products-montefiascone-tuscia.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/prodotti-tipici-montefiascone-tuscia.html" />
   </url>
   <url>
@@ -302,6 +307,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cucina-tipica-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/typical-food-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cucina-tipica-montefiascone.html" />
   </url>
   <url>
@@ -337,6 +343,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-con-bambini.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-with-kids.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-con-bambini.html" />
   </url>
   <url>
@@ -399,6 +406,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/terme-viterbo-da-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/thermal-baths-near-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/terme-viterbo-da-montefiascone.html" />
   </url>
   <url>
@@ -423,6 +431,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/borghi-del-lago-di-bolsena-in-auto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-villages-by-car.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/borghi-del-lago-di-bolsena-in-auto.html" />
   </url>
   <url>
@@ -431,6 +440,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-2-giorni.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-2-giorni.html" />
   </url>
   <url>
@@ -439,6 +449,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/tuscia-in-3-giorni-da-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/tuscia-in-three-days-from-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/tuscia-in-3-giorni-da-montefiascone.html" />
   </url>
   <url>
@@ -447,6 +458,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/bomarzo-da-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/bomarzo-from-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/bomarzo-da-montefiascone.html" />
   </url>
   <url>
@@ -471,6 +483,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-2-giorni.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-in-two-days.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-2-giorni.html" />
   </url>
   <url>
@@ -479,6 +492,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/estate-sul-lago-di-bolsena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/summer-on-lake-bolsena.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/estate-sul-lago-di-bolsena.html" />
   </url>
   <url>
@@ -487,6 +501,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/migliori-panorami-lago-di-bolsena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/best-viewpoints-lake-bolsena.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/migliori-panorami-lago-di-bolsena.html" />
   </url>
   <url>
@@ -495,6 +510,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/viterbo-da-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/viterbo-from-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/viterbo-da-montefiascone.html" />
   </url>
   <url>
@@ -503,6 +519,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-senza-auto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-without-car.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-senza-auto.html" />
   </url>
   <url>
@@ -535,6 +552,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-est-est-wine-route-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone.html" />
   </url>
   <url>
@@ -551,6 +569,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-bici.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/cycling-lake-bolsena.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-bici.html" />
   </url>
   <url>
@@ -639,6 +658,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/tuscania-da-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/tuscania-from-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/tuscania-da-montefiascone.html" />
   </url>
   <url>
@@ -647,6 +667,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/caprarola-palazzo-farnese-da-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/caprarola-palazzo-farnese-from-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/caprarola-palazzo-farnese-da-montefiascone.html" />
   </url>
   <url>
@@ -655,6 +676,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/villa-lante-bagnaia-da-montefiascone.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/villa-lante-from-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/villa-lante-bagnaia-da-montefiascone.html" />
   </url>
   <url>
@@ -687,6 +709,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-autunno.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-in-autumn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-autunno.html" />
   </url>
   <url>
@@ -703,6 +726,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cosa-fare-a-montefiascone-quando-piove.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/rainy-day-montefiascone.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cosa-fare-a-montefiascone-quando-piove.html" />
   </url>
   <url>
@@ -735,6 +759,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/viaggio-lento-lago-di-bolsena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/slow-travel-lake-bolsena.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/viaggio-lento-lago-di-bolsena.html" />
   </url>
 </urlset>
