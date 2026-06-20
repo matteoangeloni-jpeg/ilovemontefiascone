@@ -105,7 +105,6 @@ $rootFiles = @(
   "sitemap.xml",
   "_redirects",
   "sw.js",
-  "CNAME",
   "vino.html"
 )
 
