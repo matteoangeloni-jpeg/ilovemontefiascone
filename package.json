@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build:cloudflare": "node scripts/build-cloudflare.mjs"
+  },
+  "private": true
+}

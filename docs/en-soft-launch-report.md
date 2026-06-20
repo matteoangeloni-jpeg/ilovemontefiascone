@@ -4,35 +4,35 @@ Updated: 2026-06-20
 
 ## Objective
 
-Publish a controlled English core release for `https://ilovemontefiascone.com` while keeping German unpublished.
+Publish a controlled English core release for `https://www.ilovemontefiascone.com` while keeping German unpublished.
 
 ## Published EN Pages
 
-- `https://ilovemontefiascone.com/en/`
-- `https://ilovemontefiascone.com/en/things-to-see-montefiascone.html`
-- `https://ilovemontefiascone.com/en/montefiascone-travel-guide.html`
-- `https://ilovemontefiascone.com/en/lake-bolsena.html`
-- `https://ilovemontefiascone.com/en/what-to-see-on-lake-bolsena.html`
-- `https://ilovemontefiascone.com/en/lake-bolsena-in-one-day.html`
-- `https://ilovemontefiascone.com/en/best-villages-on-lake-bolsena.html`
-- `https://ilovemontefiascone.com/en/bolsena-things-to-see.html`
-- `https://ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see.html`
-- `https://ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see.html`
-- `https://ilovemontefiascone.com/en/montefiascone-in-one-day.html`
-- `https://ilovemontefiascone.com/en/weekend-in-montefiascone.html`
-- `https://ilovemontefiascone.com/en/how-to-get-to-montefiascone.html`
-- `https://ilovemontefiascone.com/en/parking-in-montefiascone.html`
-- `https://ilovemontefiascone.com/en/where-to-stay-in-montefiascone.html`
-- `https://ilovemontefiascone.com/en/where-to-eat-in-montefiascone.html`
-- `https://ilovemontefiascone.com/en/montefiascone-wine-guide.html`
-- `https://ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine.html`
-- `https://ilovemontefiascone.com/en/via-francigena-montefiascone-viterbo.html`
-- `https://ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone.html`
-- `https://ilovemontefiascone.com/en/tourist-information-montefiascone.html`
-- `https://ilovemontefiascone.com/en/best-time-to-visit-montefiascone.html`
-- `https://ilovemontefiascone.com/en/rocca-dei-papi-montefiascone.html`
-- `https://ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone.html`
-- `https://ilovemontefiascone.com/en/basilica-san-flaviano-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/`
+- `https://www.ilovemontefiascone.com/en/things-to-see-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/montefiascone-travel-guide.html`
+- `https://www.ilovemontefiascone.com/en/lake-bolsena.html`
+- `https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena.html`
+- `https://www.ilovemontefiascone.com/en/lake-bolsena-in-one-day.html`
+- `https://www.ilovemontefiascone.com/en/best-villages-on-lake-bolsena.html`
+- `https://www.ilovemontefiascone.com/en/bolsena-things-to-see.html`
+- `https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see.html`
+- `https://www.ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see.html`
+- `https://www.ilovemontefiascone.com/en/montefiascone-in-one-day.html`
+- `https://www.ilovemontefiascone.com/en/weekend-in-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/parking-in-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/montefiascone-wine-guide.html`
+- `https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine.html`
+- `https://www.ilovemontefiascone.com/en/via-francigena-montefiascone-viterbo.html`
+- `https://www.ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/tourist-information-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/best-time-to-visit-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/rocca-dei-papi-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone.html`
+- `https://www.ilovemontefiascone.com/en/basilica-san-flaviano-montefiascone.html`
 
 ## EN Pages Not Published
 
@@ -42,31 +42,31 @@ None from the current `/en/` core set. All 25 existing English pages passed the 
 
 | IT | EN |
 |---|---|
-| `https://ilovemontefiascone.com/` | `https://ilovemontefiascone.com/en/` |
-| `https://ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa.html` | `https://ilovemontefiascone.com/en/things-to-see-montefiascone.html` |
-| `https://ilovemontefiascone.com/guide.html` | `https://ilovemontefiascone.com/en/montefiascone-travel-guide.html` |
-| `https://ilovemontefiascone.com/lago-di-bolsena.html` | `https://ilovemontefiascone.com/en/lake-bolsena.html` |
-| `https://ilovemontefiascone.com/lago-di-bolsena-cosa-vedere.html` | `https://ilovemontefiascone.com/en/what-to-see-on-lake-bolsena.html` |
-| `https://ilovemontefiascone.com/lago-di-bolsena-in-un-giorno.html` | `https://ilovemontefiascone.com/en/lake-bolsena-in-one-day.html` |
-| `https://ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena.html` | `https://ilovemontefiascone.com/en/best-villages-on-lake-bolsena.html` |
-| `https://ilovemontefiascone.com/bolsena-cosa-vedere.html` | `https://ilovemontefiascone.com/en/bolsena-things-to-see.html` |
-| `https://ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere.html` | `https://ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see.html` |
-| `https://ilovemontefiascone.com/capodimonte-lago-di-bolsena-cosa-vedere.html` | `https://ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see.html` |
-| `https://ilovemontefiascone.com/montefiascone-in-un-giorno.html` | `https://ilovemontefiascone.com/en/montefiascone-in-one-day.html` |
-| `https://ilovemontefiascone.com/weekend-a-montefiascone.html` | `https://ilovemontefiascone.com/en/weekend-in-montefiascone.html` |
-| `https://ilovemontefiascone.com/come-arrivare-a-montefiascone.html` | `https://ilovemontefiascone.com/en/how-to-get-to-montefiascone.html` |
-| `https://ilovemontefiascone.com/parcheggi-montefiascone.html` | `https://ilovemontefiascone.com/en/parking-in-montefiascone.html` |
-| `https://ilovemontefiascone.com/dove-dormire-a-montefiascone.html` | `https://ilovemontefiascone.com/en/where-to-stay-in-montefiascone.html` |
-| `https://ilovemontefiascone.com/dove-mangiare-a-montefiascone.html` | `https://ilovemontefiascone.com/en/where-to-eat-in-montefiascone.html` |
-| `https://ilovemontefiascone.com/vino.html` | `https://ilovemontefiascone.com/en/montefiascone-wine-guide.html` |
-| `https://ilovemontefiascone.com/est-est-est-montefiascone-vino-doc.html` | `https://ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine.html` |
-| `https://ilovemontefiascone.com/via-francigena-montefiascone-viterbo.html` | `https://ilovemontefiascone.com/en/via-francigena-montefiascone-viterbo.html` |
-| `https://ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone.html` | `https://ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone.html` |
-| `https://ilovemontefiascone.com/informazioni-turistiche-montefiascone.html` | `https://ilovemontefiascone.com/en/tourist-information-montefiascone.html` |
-| `https://ilovemontefiascone.com/quando-visitare-montefiascone.html` | `https://ilovemontefiascone.com/en/best-time-to-visit-montefiascone.html` |
-| `https://ilovemontefiascone.com/rocca-dei-papi-montefiascone.html` | `https://ilovemontefiascone.com/en/rocca-dei-papi-montefiascone.html` |
-| `https://ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone.html` | `https://ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone.html` |
-| `https://ilovemontefiascone.com/basilica-san-flaviano-montefiascone.html` | `https://ilovemontefiascone.com/en/basilica-san-flaviano-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/` | `https://www.ilovemontefiascone.com/en/` |
+| `https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa.html` | `https://www.ilovemontefiascone.com/en/things-to-see-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/guide.html` | `https://www.ilovemontefiascone.com/en/montefiascone-travel-guide.html` |
+| `https://www.ilovemontefiascone.com/lago-di-bolsena.html` | `https://www.ilovemontefiascone.com/en/lake-bolsena.html` |
+| `https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere.html` | `https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena.html` |
+| `https://www.ilovemontefiascone.com/lago-di-bolsena-in-un-giorno.html` | `https://www.ilovemontefiascone.com/en/lake-bolsena-in-one-day.html` |
+| `https://www.ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena.html` | `https://www.ilovemontefiascone.com/en/best-villages-on-lake-bolsena.html` |
+| `https://www.ilovemontefiascone.com/bolsena-cosa-vedere.html` | `https://www.ilovemontefiascone.com/en/bolsena-things-to-see.html` |
+| `https://www.ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere.html` | `https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see.html` |
+| `https://www.ilovemontefiascone.com/capodimonte-lago-di-bolsena-cosa-vedere.html` | `https://www.ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see.html` |
+| `https://www.ilovemontefiascone.com/montefiascone-in-un-giorno.html` | `https://www.ilovemontefiascone.com/en/montefiascone-in-one-day.html` |
+| `https://www.ilovemontefiascone.com/weekend-a-montefiascone.html` | `https://www.ilovemontefiascone.com/en/weekend-in-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone.html` | `https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/parcheggi-montefiascone.html` | `https://www.ilovemontefiascone.com/en/parking-in-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/dove-dormire-a-montefiascone.html` | `https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone.html` | `https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/vino.html` | `https://www.ilovemontefiascone.com/en/montefiascone-wine-guide.html` |
+| `https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc.html` | `https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine.html` |
+| `https://www.ilovemontefiascone.com/via-francigena-montefiascone-viterbo.html` | `https://www.ilovemontefiascone.com/en/via-francigena-montefiascone-viterbo.html` |
+| `https://www.ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone.html` | `https://www.ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/informazioni-turistiche-montefiascone.html` | `https://www.ilovemontefiascone.com/en/tourist-information-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/quando-visitare-montefiascone.html` | `https://www.ilovemontefiascone.com/en/best-time-to-visit-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone.html` | `https://www.ilovemontefiascone.com/en/rocca-dei-papi-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone.html` | `https://www.ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone.html` |
+| `https://www.ilovemontefiascone.com/basilica-san-flaviano-montefiascone.html` | `https://www.ilovemontefiascone.com/en/basilica-san-flaviano-montefiascone.html` |
 
 ## Sitemap
 
@@ -80,7 +80,7 @@ None from the current `/en/` core set. All 25 existing English pages passed the 
 - IT is crawlable.
 - EN is crawlable.
 - DE remains blocked with `Disallow: /de/`.
-- Sitemap points to `https://ilovemontefiascone.com/sitemap.xml`.
+- Sitemap points to `https://www.ilovemontefiascone.com/sitemap.xml`.
 
 ## Hreflang
 
@@ -114,4 +114,4 @@ Minimal IT/EN switcher activated only on paired published pages. No DE option is
 
 ## Next Steps
 
-After deploy, open `/en/`, `/sitemap-en.xml`, `/robots.txt`, resubmit `https://ilovemontefiascone.com/sitemap.xml` in Search Console, and request indexing for `https://ilovemontefiascone.com/en/`.
+After deploy, open `/en/`, `/sitemap-en.xml`, `/robots.txt`, resubmit `https://www.ilovemontefiascone.com/sitemap.xml` in Search Console, and request indexing for `https://www.ilovemontefiascone.com/en/`.

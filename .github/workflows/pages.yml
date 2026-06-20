@@ -26,9 +26,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Build IT soft launch package
-        shell: pwsh
-        run: ./build-soft-launch-it.ps1
+      - name: Build production package
+        run: npm run build:cloudflare
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

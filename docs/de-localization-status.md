@@ -118,7 +118,7 @@ These pages were removed from the unpublished German folder because they were le
 
 - Replaced mojibake-heavy DE core with UTF-8 German pages.
 - Removed public hreflang from German pages.
-- Added self-referential future canonicals on non-www `https://ilovemontefiascone.com/de/...` URLs.
+- Added self-referential future canonicals on non-www `https://www.ilovemontefiascone.com/de/...` URLs.
 - Added visible breadcrumbs and matching `BreadcrumbList` JSON-LD.
 - Added visible FAQ and matching `FAQPage` JSON-LD on all core pages.
 - Added `inLanguage: de` to structured data.
