@@ -103,6 +103,7 @@ $rootFiles = @(
   "pwa-boot.js",
   "robots.txt",
   "sitemap.xml",
+  "_redirects",
   "sw.js",
   "CNAME",
   "vino.html"
