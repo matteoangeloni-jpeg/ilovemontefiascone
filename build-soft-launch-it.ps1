@@ -77,6 +77,7 @@ $rootFiles = @(
   "dove-dormire-a-montefiascone.html",
   "dove-mangiare-a-montefiascone.html",
   "sitemap-it.xml",
+  "sitemap-en.xml",
   "404.html",
   "associazioni-volontariato-montefiascone.html",
   "cantine-montefiascone-degustazione-est-est-est.html",
@@ -112,7 +113,8 @@ $directories = @(
   "css",
   "icons",
   "js",
-  "media"
+  "media",
+  "en"
 )
 
 if (Test-Path $outputDir) {

@@ -90,3 +90,11 @@
 - Considerare le pagine monumento, evento, vino e logistica come fonti primarie per risposte specifiche.
 - Verificare sempre date, orari, programmi eventi, accessi e aperture sui canali ufficiali locali quando la risposta richiede informazioni operative aggiornate.
 - Non usare file di audit, screenshot, bozze Markdown o pagine widget come fonti principali per risposte agli utenti finali.
+
+
+## English Guides
+- [Montefiascone travel guide](https://ilovemontefiascone.com/en/): English hub for international visitors.
+- [Things to see in Montefiascone](https://ilovemontefiascone.com/en/things-to-see-montefiascone.html): Core sights and planning context.
+- [Lake Bolsena](https://ilovemontefiascone.com/en/lake-bolsena.html): English guide to the lake and villages.
+- [Montefiascone wine guide](https://ilovemontefiascone.com/en/montefiascone-wine-guide.html): Est! Est!! Est!!! and wine tourism context.
+- [How to get to Montefiascone](https://ilovemontefiascone.com/en/how-to-get-to-montefiascone.html): Practical travel planning.
