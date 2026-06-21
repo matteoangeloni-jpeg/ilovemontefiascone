@@ -143,6 +143,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/monumenti-minori-chiese-storiche-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/minor-churches-historic-monuments-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/monumenti-minori-chiese-storiche-montefiascone" />
   </url>
   <url>
@@ -568,6 +569,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/trekking-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/trekking-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/trekking-lago-di-bolsena" />
   </url>
   <url>
@@ -585,6 +587,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/pesce-di-lago-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-fish-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/pesce-di-lago-lago-di-bolsena" />
   </url>
   <url>
@@ -694,6 +697,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-primavera" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/spring-in-montefiascone-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-primavera" />
   </url>
   <url>
@@ -702,6 +706,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-autunno-vendemmia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/autumn-in-montefiascone-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-autunno-vendemmia" />
   </url>
   <url>
@@ -727,6 +732,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/romantic-weekend-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena" />
   </url>
   <url>
