@@ -37,7 +37,7 @@ The sprint focuses on:
 | Lake Bolsena | `https://www.ilovemontefiascone.com/en/where-to-watch-sunset-lake-bolsena` | Sunset viewpoint logic from Montefiascone. |
 | Lake Bolsena | `https://www.ilovemontefiascone.com/en/lake-bolsena-by-car` | Flexible lake route from Montefiascone. |
 | Events | `https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions` | Evergreen context for wine traditions and event planning. |
-| Events | `https://www.ilovemontefiascone.com/en/lake-montefiascone-hill-climb` | Visitor and photography guide for the hill-climb tradition. |
+| Events | `https://www.ilovemontefiascone.com/en/montefiascone-hill-climb` | Visitor and photography guide for the hill-climb tradition. |
 
 ## Italian Pages Updated
 
