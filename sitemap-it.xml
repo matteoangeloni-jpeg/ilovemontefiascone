@@ -91,6 +91,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est" />
   </url>
   <url>
@@ -107,6 +108,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone" />
   </url>
   <url>
@@ -115,6 +117,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-montefiascone-hill-climb" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta" />
   </url>
   <url>
@@ -131,6 +134,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-lago-bolsena-spot-fotografici-aerei" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/photo-spots-montefiascone-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-lago-bolsena-spot-fotografici-aerei" />
   </url>
   <url>
@@ -245,6 +249,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/itinerario-fotografico-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-photography-itinerary" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/itinerario-fotografico-montefiascone" />
   </url>
   <url>
@@ -415,6 +420,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/itinerario-auto-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-by-car" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/itinerario-auto-lago-di-bolsena" />
   </url>
   <url>
@@ -544,6 +550,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/how-wine-tasting-works-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona" />
   </url>
   <url>
@@ -626,6 +633,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/via-francigena-bolsena-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone" />
   </url>
   <url>
@@ -634,6 +642,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/via-francigena-cosa-portare" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/via-francigena-packing-list-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/via-francigena-cosa-portare" />
   </url>
   <url>
@@ -735,6 +744,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/dove-vedere-il-tramonto-sul-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-watch-sunset-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/dove-vedere-il-tramonto-sul-lago-di-bolsena" />
   </url>
   <url>
