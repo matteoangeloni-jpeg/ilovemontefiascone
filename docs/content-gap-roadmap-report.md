@@ -178,7 +178,7 @@ Rischio dati variabili: alto. Evitare date, programmi e orari non verificati.
 | `/montefiascone-lago-bolsena-spot-fotografici-aerei` | Best Photo Spots in Montefiascone and Lake Bolsena | `/en/photo-spots-montefiascone-lake-bolsena` | Montefiascone core | P1 | Alto valore per creator e AI search visuale. |
 | `/itinerario-fotografico-montefiascone` | Montefiascone Photography Itinerary | `/en/montefiascone-photography-itinerary` | Montefiascone core | P1 | Complementare alla pagina photo spots; può essere itinerario pratico. |
 | `/eventi-tradizioni-fiera-del-vino-montefiascone` | Montefiascone Wine Fair and Local Traditions | `/en/montefiascone-wine-fair-traditions` | Events | P1 | Evento identitario, da trattare evergreen senza programma annuale. |
-| `/cronoscalata-montefiascone-coppa-citta` | Lake Montefiascone Hill Climb: Visitor Guide | `/en/lake-montefiascone-hill-climb` | Events | P1 | Nicchia distintiva con potenziale fotografico e sportivo. |
+| `/cronoscalata-montefiascone-coppa-citta` | Montefiascone Hill Climb: Visitor Guide | `/en/montefiascone-hill-climb` | Events | P1 | Nicchia distintiva con potenziale fotografico e sportivo. |
 | `/dove-vedere-il-tramonto-sul-lago-di-bolsena` | Where to Watch Sunset over Lake Bolsena | `/en/where-to-watch-sunset-lake-bolsena` | Lake Bolsena | P1 | Intento turistico chiaro, evergreen, forte per immagini e AI answers. |
 | `/itinerario-auto-lago-di-bolsena` | Lake Bolsena by Car: Scenic Route from Montefiascone | `/en/lake-bolsena-by-car` | Lake Bolsena | P1 | Utile per stranieri con auto, evitando tempi troppo precisi. |
 
@@ -371,7 +371,7 @@ Pagine proposte:
 - `/en/where-to-watch-sunset-lake-bolsena`
 - `/en/lake-bolsena-by-car`
 - `/en/montefiascone-wine-fair-traditions`
-- `/en/lake-montefiascone-hill-climb`
+- `/en/montefiascone-hill-climb`
 
 Cosa non modificare: URL esistenti, redirect, DE, sitemap IT salvo aggiornamento automatico del nuovo batch EN quando approvato.
 

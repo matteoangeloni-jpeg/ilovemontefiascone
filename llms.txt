@@ -7,7 +7,7 @@
 - Lingua principale: italiano
 - Area geografica: Montefiascone, Lago di Bolsena, Tuscia, Provincia di Viterbo, Lazio, Italia
 - Tipologia contenuti: guide turistiche, itinerari, eventi, enogastronomia, mappe, patrimonio culturale, informazioni pratiche
-- Ultimo aggiornamento llms.txt: 2026-06-20
+- Ultimo aggiornamento llms.txt: 2026-06-21
 
 ## Temi principali del sito
 - Montefiascone e Lago di Bolsena.
@@ -107,3 +107,11 @@
 - [Tuscia in three days](https://www.ilovemontefiascone.com/en/tuscia-in-three-days-from-montefiascone): hub-and-spoke itinerary from Montefiascone.
 - [Montefiascone in two days](https://www.ilovemontefiascone.com/en/montefiascone-in-two-days): weekend guide to town, lake, wine and monuments.
 - [Est! Est!! Est!!! wine route](https://www.ilovemontefiascone.com/en/est-est-est-wine-route-montefiascone): wine tourism guide for Montefiascone and Tuscia.
+
+## English Sprint A Guides
+- [Via Francigena from Bolsena to Montefiascone](https://www.ilovemontefiascone.com/en/via-francigena-bolsena-montefiascone): walking context from Lake Bolsena to the hill town.
+- [Via Francigena packing list](https://www.ilovemontefiascone.com/en/via-francigena-packing-list-montefiascone): practical preparation guide for walkers around Montefiascone.
+- [Wine tasting in Montefiascone](https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est): practical guide to Est! Est!! Est!!! tasting.
+- [Photo spots in Montefiascone and Lake Bolsena](https://www.ilovemontefiascone.com/en/photo-spots-montefiascone-lake-bolsena): viewpoints, light and respectful photography notes.
+- [Lake Bolsena by car](https://www.ilovemontefiascone.com/en/lake-bolsena-by-car): scenic route logic from Montefiascone.
+- [Montefiascone Wine Fair and traditions](https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions): evergreen event context without annual date claims.
