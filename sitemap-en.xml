@@ -526,7 +526,7 @@
     <loc>https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone" />
@@ -535,7 +535,7 @@
     <loc>https://www.ilovemontefiascone.com/en/montefiascone-hill-climb</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-hill-climb" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta" />
@@ -617,5 +617,77 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/romantic-weekend-lake-bolsena" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/montefiascone-summer-events-2026</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-summer-events-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/anno-domini-1074-montefiascone</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/anno-domini-1074-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/integral-ecology-festival-montefiascone</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/integral-ecology-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/atb-festival-montefiascone</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/atb-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/atb-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/atb-festival-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/panorami-festival-montefiascone</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/panorami-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/panorami-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/panorami-festival-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/santa-margherita-feast-montefiascone</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/santa-margherita-feast-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/est-film-festival-montefiascone</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/est-film-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-film-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-film-festival-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/est-lake-festival-montefiascone</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/est-lake-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-lake-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-lake-festival-montefiascone" />
   </url>
 </urlset>
