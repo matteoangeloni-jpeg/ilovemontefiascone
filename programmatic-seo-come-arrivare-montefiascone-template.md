@@ -2,7 +2,7 @@
 
 Il dataset sorgente per la Programmatic SEO e in:
 
-- [programmatic-seo-come-arrivare-montefiascone-data.json](<C:/Users/Matteo Angeloni/Documents/ilovemontefiascone.com/programmatic-seo-come-arrivare-montefiascone-data.json>)
+- [programmatic-seo-come-arrivare-montefiascone-data.json](programmatic-seo-come-arrivare-montefiascone-data.json)
 
 ## 2. Template SEO (Markdown)
 
