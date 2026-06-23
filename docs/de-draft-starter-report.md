@@ -253,3 +253,83 @@ Sprint sullo stesso branch `feature/de-draft-starter` (commit di partenza `19986
 
 ## Commit
 `Polish German draft language` su `feature/de-draft-starter`. Nessun merge su `main`.
+
+---
+
+# German Go-Live Readiness — Final QA
+
+Sprint sullo stesso branch `feature/de-draft-starter` (commit di partenza `21c6c38`). Obiettivo: preparare il go-live tecnico DE (build, sitemap-de, hreflang IT/EN/DE, switcher). **Nessun merge su `main`.**
+
+## Verdetto
+**PRONTO PER MERGE E PUBBLICAZIONE** — 0 P0/P1. La pubblicazione effettiva avviene solo al merge controllato su `main`.
+
+## Pagine DE (mappatura trilingue)
+Tutte e 30 le pagine DE risultano **triple IT+EN+DE** complete (mapping validato contro la reciprocità IT↔EN già esistente sul sito; 2 mapping corretti rispetto alla prima ipotesi: `reisefuehrer→/guide`, `sehenswuerdigkeiten→/cosa-vedere-montefiascone-guida-completa`). Hreflang `it/en/de/x-default` su tutte; in sitemap-de; canonical self DE clean; esito OK su tutte.
+
+## Hreflang
+- Triple IT+EN+DE: **30** · coppie IT+DE: 0 · coppie EN+DE: 0 · DE only: 0 · uncertain: 0.
+- Reciprocità completa: ogni DE punta IT/EN/DE; ogni IT e EN mappata ora include `hreflang="de"`.
+- `x-default` → URL IT (coerente con convenzione del sito).
+- Nessun hreflang rotto, nessun `.html` (verificato sul crawl di `dist-it`).
+
+## Sitemap
+- IT: **97** (invariata) · EN: **77** (invariata) · DE: **30** (`sitemap-de.xml` nuovo).
+- `sitemap.xml` index ora elenca IT + EN + DE.
+- Nessun duplicato, nessun `.html`, solo dominio `www`.
+
+## Build
+- `de` aggiunto a `directories` del manifest; `sitemap-de.xml` aggiunto a `rootFiles`.
+- `dist-it/de/` presente con tutte le 30 pagine; `dist-it/sitemap-de.xml` presente.
+- File interni esclusi (`docs`, `server.py`, `README.md` assenti da `dist-it`); immagini OK; link OK.
+
+## SEO DE
+canonical self clean ✅ · og:url clean ✅ · JSON-LD valido (0 invalidi su 208 file) ✅ · BreadcrumbList clean ✅ · FAQPage solo con FAQ visibili ✅ · ATB DE senza `Event`/`MusicEvent` ✅.
+
+## Language switcher
+- Strategia: esteso lo switcher esistente IT/EN aggiungendo un link **DE clean** sulle 30 pagine IT e 30 EN mappate; aggiunto uno switcher IT/EN/DE alle 30 pagine DE.
+- Dove compare: header (`lang-switcher`) delle 90 pagine delle triple.
+- Pagine escluse: nessuna (tutte e 30 le triple complete).
+- Link rotti: **zero** (tutti i target esistono nel build).
+
+## robots.txt / llms.txt
+- **robots.txt:** rimosso `Disallow: /de/` — **necessario** per il go-live (altrimenti `/de/` resterebbe non scansionabile nonostante sitemap-de e hreflang). Modifica attiva solo al merge.
+- **llms.txt:** **non** modificato in questo sprint (decisione prudente). Da aggiornare al momento del merge aggiungendo le 30 URL DE clean e la data. → backlog.
+
+## QA
+| Controllo | Esito | Note |
+| --------- | ----- | ---- |
+| build `npm run build:cloudflare` | ✅ | success |
+| `dist-it/de/` + 30 pagine | ✅ | |
+| sitemap IT/EN/DE | ✅ | 97 / 77 / 30 |
+| sitemap index IT+EN+DE | ✅ | |
+| hreflang reciproci, 0 rotti | ✅ | crawl dist-it |
+| canonical/og:url clean, 0 `.html` | ✅ | |
+| link interni risolvibili | ✅ | incl. switcher DE/IT/EN |
+| immagini esistenti | ✅ | |
+| JSON-LD valido | ✅ | 0 invalidi / 208 |
+| `Event`/`MusicEvent` improprio | ✅ | assente (ATB DE incluso) |
+| robots consente `/de/` | ✅ | `Disallow: /de/` rimosso |
+| file interni / pages.dev / github.io / path locale | ✅ | assenti |
+| merge su `main` | ✅ | NON eseguito |
+
+## Problemi P0/P1
+**Zero.**
+
+## Problemi P2/P3
+- **P2** — `llms.txt` da aggiornare con le URL DE al merge/go-live.
+- **P3** — annotazioni hreflang a livello di sitemap (`xhtml:link`) non aggiunte per DE/IT/EN: l'hreflang in `<head>` è completo e sufficiente; opzionale in futuro.
+- **P3** — switcher IT con link interni IT/EN legacy in `.html` su alcune pagine: il link DE aggiunto è clean; uniformazione `.html`→clean degli IT switcher in sprint separato.
+- **P3** — rilettura madrelingua DE finale prima del go-live.
+- **P3** — disambiguazione `bolsena-sehenswuerdigkeiten` vs `bolsenasee-sehenswuerdigkeiten`.
+
+## Cosa NON è stato fatto
+- Nessun merge su `main`; nessun push su `main`; nessun deploy manuale.
+- Nessuna modifica a Cloudflare/DNS/Search Console/Analytics/AdSense.
+- Nessun dato inventato; nessun CSS cleanup; nessuna nuova pagina editoriale; nessuna pagina cancellata.
+- Nessuna modifica a pagine IT/EN non mappate; nessun cambio URL IT/EN; nessun `.html` reintrodotto nei segnali.
+
+## Commit
+`Prepare German version for go-live` su `feature/de-draft-starter`. Nessun merge su `main`.
+
+## Prossimo passo
+`Eseguire merge controllato su main, attendere deploy Cloudflare, testare /de/, sitemap-de.xml, hreflang, Search Console e Cloudflare AI Search.` Al merge: aggiornare `llms.txt` con le URL DE.
