@@ -115,6 +115,8 @@ FAQ visibili in HTML su tutte le pagine; nessuno stub `Event` in `about`.
 
 Sprint successivo sullo stesso branch `feature/de-draft-starter` (commit di partenza `dba970c`). Obiettivo: uniformare tutta la sezione DE draft agli **URL clean**, senza pubblicare la DE.
 
+**Cloudflare AI Search:** nessun fix codice necessario. Gli errori AI Search (2× "Unable to convert to markdown" sulle homepage, 4× "network connection lost") risultano transitori: le 6 pagine sono tecnicamente sane (HTML valido, `<main>`, H1 unico, JSON-LD valido, canonical clean, nessun `noindex`). Procedere con **retry manuale Sync dal pannello Cloudflare**.
+
 ## Sintesi
 - **Pagine DE auditate:** 30 (`de/*.html`).
 - **Pagine legacy con `.html` nei segnali/link:** 25.
@@ -146,10 +148,15 @@ Mappatura: `/de/index.html` → `/de/` (home); `/de/<slug>.html` → `/de/<slug>
 - Nessun duplicato: 0 title duplicati, 0 meta description duplicate, 0 H1 duplicati, 0 corpi testo identici.
 - Coppia di nomi simili ma **temi distinti** (nessuna azione, solo nota): `bolsena-sehenswuerdigkeiten` (città di Bolsena) vs `bolsenasee-sehenswuerdigkeiten` (Bolsenasee).
 
-## Revisione linguistica
-- Nessuna modifica sostanziale necessaria: il tedesco delle pagine legacy è adeguato (tono turistico, frasi brevi, nomi propri invariati).
-- **Nessun dato inventato** introdotto.
-- Mojibake rilevato ma **non corretto** (regola: no mojibake cleanup): `Weinf?hrer` (→ "Weinführer") presente in più pagine DE legacy. Vedi P3.
+## Revisione linguistica (pass approfondito)
+- **Verifica su tutte le 30 pagine DE** (testo `<main>`); campione riletto integralmente: `index`, `sehenswuerdigkeiten-montefiascone`, `bolsenasee`, `montefiascone-wein-guide`, `anreise-nach-montefiascone`, `essen-in-montefiascone`, `montefiascone-mit-kindern` + le 5 nuove.
+- **Esito:** tedesco turistico-editoriale naturale, frasi brevi, nessuna traduzione letteralmente italiana, nessun keyword stuffing, nomi propri invariati. La struttura ricorrente ("Kurz gesagt / Warum…? / Was…? / Praktische Hinweise") è un pattern editoriale coerente, non un difetto.
+- **Nessuna modifica sostanziale necessaria/sicura**: gli interventi possibili coincidono con cleanup vietati in questo sprint. **Nessun dato inventato.**
+- Lessico coerente con il glossario richiesto (eccezione voluta: si usa **`Bolsenasee`**, grafia tedesca standard in una parola, anziché `Bolsena-See`).
+- **Difetti rilevati ma NON corretti per regola (no mojibake/CSS cleanup):**
+  - `Weinf?hrer` → "Weinführer": mojibake in **14** pagine DE legacy (titolo/H1/link). → P3.
+  - Ortografia `ss` al posto di `ß` (es. "grosser Kuppel"): variante coerente in tutte le legacy; normalizzazione a `ß` rimandata. → P3.
+- Da far rivedere a madrelingua prima del go-live: tutte (rilettura finale), priorità sui titoli/H1 con `Weinf?hrer`.
 
 ## QA tecnico (build)
 | Controllo | Esito |
@@ -179,6 +186,7 @@ Mappatura: `/de/index.html` → `/de/` (home); `/de/<slug>.html` → `/de/<slug>
 - **P3** — mojibake `Weinf?hrer` → "Weinführer" in pagine DE legacy: da correggere in uno sprint dedicato (fuori scope per regola anti-mojibake-cleanup).
 - **P3** — nomi simili `bolsena-sehenswuerdigkeiten` vs `bolsenasee-sehenswuerdigkeiten`: valutare disambiguazione prima del go-live.
 - **P3** — reciprocità hreflang IT/EN/DE e inclusione `de` nel build: sprint di pubblicazione.
+- **P3** — ortografia `ss`/`ß` nelle pagine DE legacy (es. "grosser"): normalizzazione a `ß` in uno sprint dedicato (assimilabile a cleanup, fuori scope qui).
 
 ## Commit
 `Consolidate German draft pages` su `feature/de-draft-starter`. Nessun merge su `main`.
