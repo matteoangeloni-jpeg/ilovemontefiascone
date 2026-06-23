@@ -7,7 +7,7 @@
 - Lingua principale: italiano
 - Area geografica: Montefiascone, Lago di Bolsena, Tuscia, Provincia di Viterbo, Lazio, Italia
 - Tipologia contenuti: guide turistiche, itinerari, eventi, enogastronomia, mappe, patrimonio culturale, informazioni pratiche
-- Ultimo aggiornamento llms.txt: 2026-06-21
+- Ultimo aggiornamento llms.txt: 2026-06-23
 
 ## Temi principali del sito
 - Montefiascone e Lago di Bolsena.
@@ -128,3 +128,35 @@
 - [Fiera del Vino di Montefiascone 2026](https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone): date 2026, Est! Est!! Est!!!, folklore and visitor notes.
 - [Est Film Festival 2026](https://www.ilovemontefiascone.com/est-film-festival-montefiascone): cinema festival page with confirmed dates and cautious programme notes.
 - [Anno Domini 1074](https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone): historical re-enactment guide for the medieval town.
+
+## Deutsche Reiseführer (DE)
+- [Montefiascone & Bolsenasee | Reisefuehrer](https://www.ilovemontefiascone.com/de/): Plane Montefiascone in Latium: Altstadt, Bolsenasee, Via Francigena, Est! Est!! Est!!!, Anreise und Ausfluege in die Tuscia.
+- [Anreise nach Montefiascone](https://www.ilovemontefiascone.com/de/anreise-nach-montefiascone): Anreise nach Montefiascone in Latium: Orientierung fuer Auto, Bahn, Bus, Parken und Weiterreise zum Bolsenasee und nach Viterbo.
+- [ATB Festival 2026 in Montefiascone | Termine & Infos](https://www.ilovemontefiascone.com/de/atb-festival-montefiascone): ATB Festival 2026 in Montefiascone, vom 9.
+- [Beste Reisezeit Montefiascone](https://www.ilovemontefiascone.com/de/beste-reisezeit-montefiascone): Beste Reisezeit fuer Montefiascone und Bolsenasee: Fruehling, Sommer, Herbst, Winter, Wetter, Wein, See und langsames Reisen.
+- [Bolsena Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/bolsena-sehenswuerdigkeiten): Bolsena Sehenswuerdigkeiten am Bolsenasee: historischer Ort, Seeufer, Spaziergaenge und Planung ab Montefiascone mit praktischen Hinweisen.
+- [Bolsenasee Reisefuehrer](https://www.ilovemontefiascone.com/de/bolsenasee): Bolsenasee Reisefuehrer ab Montefiascone: Orte, Aussichtspunkte, Tagesausfluege, praktische Hinweise und Reiseplanung in Latium.
+- [Bolsenasee an einem Tag](https://www.ilovemontefiascone.com/de/bolsenasee-an-einem-tag): Bolsenasee an einem Tag ab Montefiascone: ruhige Route mit Bolsena, Marta, Capodimonte, Aussicht und praktischen Hinweisen.
+- [Bolsenasee in zwei Tagen](https://www.ilovemontefiascone.com/de/bolsenasee-in-zwei-tagen): Bolsenasee in zwei Tagen ab Montefiascone: Route fuer Orte am See, Pausen, Aussichtspunkte und langsames Reisen in Latium.
+- [Bolsenasee Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/bolsenasee-sehenswuerdigkeiten): Sehenswuerdigkeiten am Bolsenasee: Bolsena, Marta, Capodimonte, Uferorte, Aussichtspunkte und Planung ab Montefiascone mit praktischen Hinweisen.
+- [Capodimonte am Bolsenasee](https://www.ilovemontefiascone.com/de/capodimonte-bolsenasee-sehenswuerdigkeiten): Capodimonte am Bolsenasee: Reisetipps, Lage am Wasser, Spaziergaenge und Planung ab Montefiascone in der Tuscia mit praktischen Hinweisen.
+- [Civita di Bagnoregio ab Montefiascone](https://www.ilovemontefiascone.com/de/civita-di-bagnoregio-ab-montefiascone): Civita di Bagnoregio ab Montefiascone: Ausflug in der Tuscia mit Planung, Zugangshinweisen und Reiseorientierung mit praktischen Hinweisen.
+- [Essen in Montefiascone](https://www.ilovemontefiascone.com/de/essen-in-montefiascone): Essen in Montefiascone: lokale Kueche, Bolsenasee, Wein Est! Est!! Est!!! und Tipps fuer Restaurants und Mahlzeiten mit praktischen Hinweisen.
+- [Est! Est!! Est!!! Wein Montefiascone](https://www.ilovemontefiascone.com/de/est-est-est-wein-montefiascone): Est! Est!! Est!!! Wein aus Montefiascone: DOC, Legende, Rebsorten-Kontext, Bolsenasee und Tipps zur Verkostung mit praktischen Hinweisen.
+- [Fiera del Vino Montefiascone | Weinfest & Tradition](https://www.ilovemontefiascone.com/de/fiera-del-vino-montefiascone): Die Fiera del Vino in Montefiascone: das traditionsreiche Weinfest rund um den Est! Est!! Est!!!, mit Altstadt-Atmosphäre und Tuscia-Genuss.
+- [Marta am Bolsenasee | Reisetipps](https://www.ilovemontefiascone.com/de/marta-bolsenasee-sehenswuerdigkeiten): Marta am Bolsenasee: Reisetipps fuer Spaziergaenge, Seeufer, ruhige Pausen und eine Route ab Montefiascone in Latium mit praktischen Hinweisen.
+- [Montefiascone an einem Tag](https://www.ilovemontefiascone.com/de/montefiascone-an-einem-tag): Montefiascone an einem Tag: Route durch Altstadt, Rocca dei Papi, Santa Margherita, San Flaviano, Wein und Bolsenasee mit praktischen Hinweisen.
+- [Montefiascone in zwei Tagen](https://www.ilovemontefiascone.com/de/montefiascone-in-zwei-tagen): Montefiascone in zwei Tagen: Altstadt, Bolsenasee, Wein, Via Francigena und Ausfluege in die Tuscia entspannt planen mit praktischen Hinweisen.
+- [Montefiascone mit Kindern](https://www.ilovemontefiascone.com/de/montefiascone-mit-kindern): Montefiascone mit Kindern: Bolsenasee, kurze Wege, Pausen, Altstadt, Familienplanung und praktische Hinweise fuer Latium.
+- [Montefiascone Weinführer](https://www.ilovemontefiascone.com/de/montefiascone-wein-guide): Montefiascone Weinführer: Est! Est!! Est!!! DOC, vulkanische Boeden, Bolsenasee, Verkostung und Essen in der Tuscia mit praktischen Hinweisen.
+- [Parken in Montefiascone](https://www.ilovemontefiascone.com/de/parken-in-montefiascone): Orientierung zum Parken in Montefiascone: Altstadt, Steigungen, Fusswege und Hinweise fuer einen Besuch am Bolsenasee mit praktischen Hinweisen.
+- [Montefiascone Reisefuehrer](https://www.ilovemontefiascone.com/de/reisefuehrer-montefiascone): Praktischer Reisefuehrer fuer Montefiascone in Latium: Lage, Sehenswuerdigkeiten, Bolsenasee, Wein, Anreise und Ausfluege.
+- [Schoenste Orte am Bolsenasee](https://www.ilovemontefiascone.com/de/schoenste-orte-am-bolsenasee): Schoenste Orte am Bolsenasee: Bolsena, Marta, Capodimonte und Montefiascone als Aussichtsbasis fuer eine Reise in Latium.
+- [Montefiascone Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/sehenswuerdigkeiten-montefiascone): Die wichtigsten Sehenswuerdigkeiten in Montefiascone: Rocca dei Papi, Santa Margherita, San Flaviano, Altstadt und Bolsenasee.
+- [Sommerveranstaltungen Montefiascone 2026](https://www.ilovemontefiascone.com/de/sommerveranstaltungen-montefiascone-2026): Sommerveranstaltungen in Montefiascone 2026: Festivals, Musik, Wein und Traditionen im Überblick, mit Terminen, die bereits bestätigt sind.
+- [Tagesausflüge ab Montefiascone | Tuscia & Bolsenasee](https://www.ilovemontefiascone.com/de/tagesausfluege-montefiascone): Tagesausflüge ab Montefiascone: Bolsenasee, Civita di Bagnoregio, Viterbo und weitere Ausflugsziele in der Tuscia, mit praktischen Hinweisen.
+- [Touristeninformation Montefiascone](https://www.ilovemontefiascone.com/de/touristeninformation-montefiascone): Touristeninformation fuer Montefiascone: Besuch, offizielle Auskuenfte, Karten, Veranstaltungen und saisonale Hinweise vorbereiten.
+- [Unterkunft in Montefiascone](https://www.ilovemontefiascone.com/de/unterkunft-in-montefiascone): Unterkunft in Montefiascone finden: Altstadt, Bolsenasee-Blick, Lage, Parken, Familien, Paare und praktische Hinweise mit praktischen Hinweisen.
+- [Via Francigena in Montefiascone | Etappe & Tipps](https://www.ilovemontefiascone.com/de/via-francigena-montefiascone): Die Via Francigena in Montefiascone: Pilger- und Wanderweg zwischen Bolsena und Viterbo, mit Altstadt-Etappe, Aussicht und praktischen Hinweisen.
+- [Viterbo ab Montefiascone](https://www.ilovemontefiascone.com/de/viterbo-ab-montefiascone): Viterbo ab Montefiascone: Ausflug in die Tuscia mit Altstadt, Thermen-Kontext, Planung und praktischen Hinweisen mit praktischen Hinweisen.
+- [Wochenende in Montefiascone](https://www.ilovemontefiascone.com/de/wochenende-in-montefiascone): Wochenende in Montefiascone planen: Altstadt, Bolsenasee, Wein, Tuscia-Ausfluege, Unterkunft und praktische Hinweise mit praktischen Hinweisen.
