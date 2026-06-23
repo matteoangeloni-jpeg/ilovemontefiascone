@@ -108,3 +108,77 @@ FAQ visibili in HTML su tutte le pagine; nessuno stub `Event` in `about`.
 2. **Ampliamento DE** ad altre pagine strategiche e uniformazione degli slug/URL clean su tutta la sezione DE.
 3. **Preparazione pubblicazione tecnica DE**: `sitemap-de.xml`, hreflang reciproci IT/EN/DE, voce lingua nel selettore, inclusione `de` nel build.
 4. **Solo dopo**: merge su `main` e go-live controllato.
+
+---
+
+# German Draft Consolidation — Clean URL & Language QA
+
+Sprint successivo sullo stesso branch `feature/de-draft-starter` (commit di partenza `dba970c`). Obiettivo: uniformare tutta la sezione DE draft agli **URL clean**, senza pubblicare la DE.
+
+## Sintesi
+- **Pagine DE auditate:** 30 (`de/*.html`).
+- **Pagine legacy con `.html` nei segnali/link:** 25.
+- **Pagine già clean (sprint precedente):** 5 (le 5 nuove).
+- **Pagine corrette in questo sprint:** 25.
+- **Occorrenze `/de/...html` residue dopo il fix:** 0.
+
+## Intervento applicato
+Strip di `.html` da **tutti gli URL `/de/...`** (e solo quelli — asset `.jpg/.webp/.css/.js` non toccati), in:
+- canonical, `og:url`, `twitter` (meta) della pagina;
+- URL assoluti nel JSON-LD (incl. `BreadcrumbList`, `WebPage`/`Article` `url`/`@id`);
+- link interni DE (`href="/de/..."`).
+
+Mappatura: `/de/index.html` → `/de/` (home); `/de/<slug>.html` → `/de/<slug>`. Diff: 25 file, 220/220 righe (solo URL).
+
+## Verifica per-pagina (30/30)
+| Controllo | Esito |
+| --------- | ----- |
+| canonical clean (no `.html`) | ✅ 30/30 |
+| `og:url` clean | ✅ 30/30 |
+| JSON-LD URL clean (incl. BreadcrumbList) | ✅ 30/30 |
+| link interni DE clean + risolvibili | ✅ 30/30 |
+| `index.html` canonical = `https://www.ilovemontefiascone.com/de/` | ✅ |
+| JSON-LD valido | ✅ 30/30 |
+| schema `Event`/`MusicEvent` improprio | ✅ assente ovunque |
+| FAQPage solo con FAQ visibili | ✅ |
+
+## Duplicati
+- Nessun duplicato: 0 title duplicati, 0 meta description duplicate, 0 H1 duplicati, 0 corpi testo identici.
+- Coppia di nomi simili ma **temi distinti** (nessuna azione, solo nota): `bolsena-sehenswuerdigkeiten` (città di Bolsena) vs `bolsenasee-sehenswuerdigkeiten` (Bolsenasee).
+
+## Revisione linguistica
+- Nessuna modifica sostanziale necessaria: il tedesco delle pagine legacy è adeguato (tono turistico, frasi brevi, nomi propri invariati).
+- **Nessun dato inventato** introdotto.
+- Mojibake rilevato ma **non corretto** (regola: no mojibake cleanup): `Weinf?hrer` (→ "Weinführer") presente in più pagine DE legacy. Vedi P3.
+
+## QA tecnico (build)
+| Controllo | Esito |
+| --------- | ----- |
+| `npm run build:cloudflare` | ✅ success |
+| DE fuori da `dist-it` (non pubblicata) | ✅ |
+| sitemap IT | ✅ 97 |
+| sitemap EN | ✅ 77 |
+| sitemap index | ✅ solo IT+EN (2) |
+| `sitemap-de.xml` | ✅ assente |
+| `hreflang de` (in dist) | ✅ assente |
+| link pubblici IT/EN → `/de/` | ✅ nessuno (IT/EN non modificate) |
+| `.html` nei segnali/link DE | ✅ 0 |
+| path locale / `pages.dev` / `github.io` | ✅ assenti |
+
+## Conferme esplicite
+- DE **non pubblicata** (solo branch). ✅
+- sitemap IT **97** / EN **77**. ✅
+- nessun `sitemap-de.xml`. ✅
+- nessun `hreflang de`. ✅
+- nessun link pubblico IT/EN verso DE. ✅
+
+## Problemi P0/P1
+**Zero.**
+
+## Problemi P2/P3 (backlog)
+- **P3** — mojibake `Weinf?hrer` → "Weinführer" in pagine DE legacy: da correggere in uno sprint dedicato (fuori scope per regola anti-mojibake-cleanup).
+- **P3** — nomi simili `bolsena-sehenswuerdigkeiten` vs `bolsenasee-sehenswuerdigkeiten`: valutare disambiguazione prima del go-live.
+- **P3** — reciprocità hreflang IT/EN/DE e inclusione `de` nel build: sprint di pubblicazione.
+
+## Commit
+`Consolidate German draft pages` su `feature/de-draft-starter`. Nessun merge su `main`.
