@@ -183,10 +183,73 @@ Mappatura: `/de/index.html` → `/de/` (home); `/de/<slug>.html` → `/de/<slug>
 **Zero.**
 
 ## Problemi P2/P3 (backlog)
-- **P3** — mojibake `Weinf?hrer` → "Weinführer" in pagine DE legacy: da correggere in uno sprint dedicato (fuori scope per regola anti-mojibake-cleanup).
+- ✅ **RISOLTO** (sprint Language Polish) — mojibake `Weinf?hrer` → `Weinführer`.
+- ✅ **RISOLTO** (sprint Language Polish) — ortografia `ß`: `grosser` → `großer`.
 - **P3** — nomi simili `bolsena-sehenswuerdigkeiten` vs `bolsenasee-sehenswuerdigkeiten`: valutare disambiguazione prima del go-live.
 - **P3** — reciprocità hreflang IT/EN/DE e inclusione `de` nel build: sprint di pubblicazione.
-- **P3** — ortografia `ss`/`ß` nelle pagine DE legacy (es. "grosser"): normalizzazione a `ß` in uno sprint dedicato (assimilabile a cleanup, fuori scope qui).
 
 ## Commit
 `Consolidate German draft pages` su `feature/de-draft-starter`. Nessun merge su `main`.
+
+---
+
+# German Draft Language Polish — Mojibake and ß QA
+
+Sprint sullo stesso branch `feature/de-draft-starter` (commit di partenza `1998646`). Obiettivo: correzione mojibake e ortografia `ß`, micro-revisione leggera. Nessuna pubblicazione DE.
+
+## Verdetto
+**PRONTO PER REVIEW** — 0 problemi P0/P1.
+
+## Correzioni applicate
+| Tipo | Occorrenze | File coinvolti | Esito |
+| ---- | ---------: | -------------- | ----- |
+| Mojibake `Weinf?hrer` → `Weinführer` | 24 | 14 pagine DE (titolo/H1/breadcrumb/anchor/description) | ✅ corretto |
+| Ortografia `grosser` → `großer` | 1 | `sehenswuerdigkeiten-montefiascone` | ✅ corretto |
+| Micro-revisione linguistica | 0 | — | nessuna modifica necessaria (tedesco già naturale) |
+
+**Falso positivo NON toccato:** la sequenza `s?v` rilevata in tutte le pagine è il cache-buster legittimo `css/style.css?v=2026-06-14-itlaunch`, **non** un mojibake — lasciato invariato.
+
+## Pagine DE revisionate
+- Totale: **30**.
+- Modificate: **14** (quelle con `Weinf?hrer` e/o `grosser`).
+- Non modificate perché già corrette: **16**.
+
+## Lingua tedesca
+- Valutazione: buona, tono turistico-editoriale naturale, frasi brevi, nessuna traduzione letterale.
+- Termini uniformati/confermati: `Weinführer`, `Bolsenasee`, `Altstadt`, `Sehenswürdigkeiten`, `Tuscia`, `Lazio`, `Via Francigena`, `Rocca dei Papi`, `Est! Est!! Est!!!`, `Montefiascone`. (Nota: si mantiene `Bolsenasee` in una parola, grafia tedesca standard, anziché `Bolsena-See`.)
+- ATB DE: formule prudenti invariate (`vom 9. bis 12. Juli 2026`, `Musik, Craft Beer, Food und Festivalatmosphäre`, `Eintritt frei`, `Loc. Porticella`).
+- Consigliata comunque una rilettura madrelingua finale prima del go-live (nessun blocco).
+
+## SEO e tecnica
+- canonical clean ✅ · og:url clean ✅ · JSON-LD valido ✅ (0 invalidi/178) · BreadcrumbList clean ✅
+- nessun `.html` nei segnali/link DE ✅ · nessun `Event`/`MusicEvent` improprio ✅
+- nessun `Weinf?hrer` residuo ✅ · cache-buster `css?v=` intatto ✅
+- DE non pubblicata ✅
+
+## QA
+| Controllo | Esito | Note |
+| --------- | ----- | ---- |
+| build `npm run build:cloudflare` | ✅ | success |
+| scope modifiche | ✅ | solo `de/*.html` (14 file) |
+| DE source 0 issues (30 pagine) | ✅ | |
+| sitemap IT / EN / index | ✅ | 97 / 77 / 2 |
+| `sitemap-de.xml` / `hreflang de` / `/de/` in dist | ✅ | assenti |
+| mojibake `Weinf?hrer` residuo | ✅ | 0 |
+| stray `?` in parole tedesche (escluso `css?v=`) | ✅ | 0 |
+| pages.dev / github.io / path locale | ✅ | assenti |
+| modifiche IT/EN/ATB/homepage | ✅ | nessuna |
+
+## Problemi P0/P1
+**Zero.**
+
+## Problemi P2/P3
+- **P3** — disambiguazione `bolsena-sehenswuerdigkeiten` vs `bolsenasee-sehenswuerdigkeiten` (go-live).
+- **P3** — reciprocità hreflang IT/EN/DE + `de` nel build (sprint di pubblicazione).
+- **P3** — rilettura madrelingua finale consigliata.
+
+## Cosa NON è stato fatto
+- Nessun merge su `main`; nessuna pubblicazione DE; nessun `sitemap-de.xml`/`hreflang de`/link pubblico DE.
+- Nessuna modifica IT/EN/ATB/homepage; nessuna modifica infrastrutturale; nessun CSS cleanup; nessun refactor; nessun dato inventato; nessuna pagina creata/cancellata.
+
+## Commit
+`Polish German draft language` su `feature/de-draft-starter`. Nessun merge su `main`.
