@@ -690,4 +690,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-lake-festival-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-lake-festival-montefiascone" />
   </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/map-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/mappa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/map-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/mappa" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/associations-volunteering-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/associazioni-volontariato-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/associations-volunteering-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/associazioni-volontariato-montefiascone" />
+  </url>
 </urlset>

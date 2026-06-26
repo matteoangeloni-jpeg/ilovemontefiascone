@@ -5,114 +5,99 @@ Branch: `feature/de-articles-expansion`
 
 ## Quantitative Snapshot
 
-| Metric | Count |
-| --- | ---: |
-| IT pages detected from `sitemap-it.xml` | 97 |
-| EN pages detected from `sitemap-en.xml` | 77 |
-| DE source pages detected in `/de/` | 32 |
-| Pages with IT/EN/DE equivalence | 29 |
-| EN gaps against IT | 29 |
-| DE gaps against IT | 65 |
-| EN pages to review | 26 |
-| DE pages to review | 0 |
+| Metric | Before sprint | Current |
+| --- | ---: | ---: |
+| IT URLs in public sitemap | 97 | 97 |
+| EN URLs in public sitemap | 77 | 79 |
+| DE source pages | 32 | 32 |
+| Complete IT/EN/DE equivalences | 29 | 31 |
+| EN gaps against IT | 29 | 20 |
+| DE gaps against IT | 65 | 63 |
+| EN pages to review | 26 | 0 |
+| DE pages to review | 0 | 0 |
 
-## Priority Model
+## Publication Gate
 
-- P0: homepage, main hubs, strategic tourism pages, menu/footer coherence pages and pages that would create navigation gaps.
-- P1: evergreen guides, major events, seasonal pages and high-value travel content.
-- P2: secondary articles, minor information pages and low-risk long-tail pages.
+DE publication is **not prepared** in this sprint. The corpus is still not symmetrical: IT has 97 public sitemap URLs, EN has 79, and DE has 32 source pages. DE must remain excluded from the public build, sitemap, hreflang, language switcher and `llms.txt`. FR remains not started.
 
-## P0 Status After This Sprint
+## P0 Gaps and Actions
 
-| IT page | EN status | DE status | Action |
-| --- | --- | --- | --- |
-| https://www.ilovemontefiascone.com/ | da revisionare | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/cosa-vedere | da revisionare | assente | Still open |
-| https://www.ilovemontefiascone.com/guide | da revisionare | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/eventi | presente | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/vino | da revisionare | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/mappa | assente | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/associazioni-volontariato-montefiascone | assente | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa | da revisionare | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est | assente | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/lago-di-bolsena | da revisionare | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone | da revisionare | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone | da revisionare | completa | Covered in DE source |
-| https://www.ilovemontefiascone.com/basilica-san-flaviano-montefiascone | da revisionare | completa | Covered in DE source |
+| Priority | Type | IT page | EN status | DE status | Recommended action |
+| --- | --- | --- | --- | --- | --- |
+| P0 | hub | https://www.ilovemontefiascone.com/cosa-vedere | assente | presente | Create EN equivalent before parity. |
+| P0 | hub | https://www.ilovemontefiascone.com/eventi | assente | presente | Create EN equivalent before parity. |
+| P0 | hub | https://www.ilovemontefiascone.com/galleria | assente | assente | Create EN and DE equivalents before parity. |
 
-## Remaining P1 Pages
+## P1 Gaps and Actions
 
-| IT page | EN status | DE status | Recommended next action |
-| --- | --- | --- | --- |
-| https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/montefiascone-lago-bolsena-spot-fotografici-aerei | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/spiagge-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/borghi-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/via-francigena-montefiascone-viterbo | da revisionare | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/lago-di-bolsena-con-bambini | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/terme-viterbo-da-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/itinerario-auto-lago-di-bolsena | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/borghi-del-lago-di-bolsena-in-auto | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/tuscia-in-3-giorni-da-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/bomarzo-da-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/concerto-banda-rb-revue-montefiascone | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/estate-sul-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/migliori-panorami-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/gradoli-cosa-vedere-lago-di-bolsena | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/grotte-di-castro-cosa-vedere-lago-di-bolsena | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/trekking-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/lago-di-bolsena-in-bici | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/pesce-di-lago-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/san-lorenzo-nuovo-cosa-vedere-lago-di-bolsena | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/valentano-cosa-vedere-lago-di-bolsena | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/tuscania-da-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/caprarola-palazzo-farnese-da-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/villa-lante-bagnaia-da-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/montefiascone-in-primavera | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/montefiascone-in-autunno-vendemmia | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/montefiascone-in-inverno | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/lago-di-bolsena-in-autunno | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/dove-vedere-il-tramonto-sul-lago-di-bolsena | assente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/viaggio-lento-lago-di-bolsena | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026 | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/atb-festival-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/panorami-festival-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/est-film-festival-montefiascone | presente | assente | Localize selectively after P0 review. |
-| https://www.ilovemontefiascone.com/est-lake-festival-montefiascone | presente | assente | Localize selectively after P0 review. |
+| Priority | Type | IT page | EN status | DE status | Recommended action |
+| --- | --- | --- | --- | --- | --- |
+| P1 | evento | https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/atb-festival-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/calendario-eventi-montefiascone | assente | assente | Create EN and DE equivalents before parity. |
+| P1 | evento | https://www.ilovemontefiascone.com/concerto-banda-rb-revue-montefiascone | assente | assente | Create EN and DE equivalents before parity. |
+| P1 | evento | https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/est-film-festival-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/est-lake-festival-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026 | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/migliori-panorami-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | evento | https://www.ilovemontefiascone.com/panorami-festival-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/borghi-del-lago-di-bolsena-in-auto | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/borghi-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/gradoli-cosa-vedere-lago-di-bolsena | assente | assente | Create EN and DE equivalents before parity. |
+| P1 | guida | https://www.ilovemontefiascone.com/grotte-di-castro-cosa-vedere-lago-di-bolsena | assente | assente | Create EN and DE equivalents before parity. |
+| P1 | guida | https://www.ilovemontefiascone.com/itinerario-auto-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/lago-di-bolsena-con-bambini | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/lago-di-bolsena-in-bici | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/pesce-di-lago-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/prodotti-tipici-montefiascone-tuscia | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/san-lorenzo-nuovo-cosa-vedere-lago-di-bolsena | assente | assente | Create EN and DE equivalents before parity. |
+| P1 | guida | https://www.ilovemontefiascone.com/spiagge-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/terme-viterbo-da-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/trekking-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/valentano-cosa-vedere-lago-di-bolsena | assente | assente | Create EN and DE equivalents before parity. |
+| P1 | guida | https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/via-francigena-cosa-portare | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/via-francigena-montefiascone-viterbo | presente | assente | Create DE equivalent before DE publication. |
+| P1 | guida | https://www.ilovemontefiascone.com/viaggio-lento-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | pagina servizio | https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone-da-viterbo | assente | assente | Create EN and DE equivalents before parity. |
+| P1 | pagina servizio | https://www.ilovemontefiascone.com/dove-vedere-il-tramonto-sul-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | pagina stagionale | https://www.ilovemontefiascone.com/estate-sul-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
+| P1 | pagina stagionale | https://www.ilovemontefiascone.com/lago-di-bolsena-in-autunno | presente | assente | Create DE equivalent before DE publication. |
+| P1 | pagina stagionale | https://www.ilovemontefiascone.com/tuscia-in-3-giorni-da-montefiascone | presente | assente | Create DE equivalent before DE publication. |
+| P1 | pagina stagionale | https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena | presente | assente | Create DE equivalent before DE publication. |
 
-## Remaining P2 Pages
+## P2 Decision
 
-| Count | Notes |
-| ---: | --- |
-| 23 | Secondary pages should not be batch-generated before DE native QA and publication strategy are defined. |
+| Decision | Count | Notes |
+| --- | ---: | --- |
+| Complete later | 24 | Secondary pages should be handled after P0/P1 language families are complete. |
+| Excluded technical/legal | 1 | Technical pages are not a blocker for travel corpus parity unless publicly navigational. |
 
-## Main Findings
+## Work Completed in This Sprint
 
-- IT remains the widest corpus with 97 URLs.
-- EN is substantially broader than DE, with 77 public-source URLs.
-- DE now covers the core travel/navigation set but remains intentionally unpublished.
-- DE should not enter sitemap, hreflang or `llms.txt` until the publication gate is approved.
-- FR must not start until IT/EN/DE have equal validated coverage, as stated in `docs/fr-publication-gate-roadmap.md`.
+- Added EN source page for the tourist map: `en/map-montefiascone.html`.
+- Added EN source page for associations and volunteering: `en/associations-volunteering-montefiascone.html`.
+- Added reciprocal EN signals to the corresponding IT pages.
+- Updated `sitemap-en.xml` and `llms.txt` for the new EN pages only.
+- Regenerated the trilingual matrix with explicit metadata, JSON-LD, H1, headings, image-alt and internal-link checks.
 
-## P0 Gap Closure Performed
+## Guardrails Still Active
 
-- Added DE source page for events.
-- Added DE source page for map/orientation.
-- Added DE source page for associations and volunteering.
-- Added DE source pages for Rocca dei Papi, Santa Margherita and San Flaviano.
-- Added DE source page for wineries and tastings.
-- Normalized visible DE mojibake in the existing DE source set.
+- No `/fr/` directory or `sitemap-fr.xml`.
+- No `/de/` in the public build.
+- No `sitemap-de.xml`.
+- No DE hreflang in live IT/EN pages.
+- No DE URLs in `llms.txt`.
+- No merge to `main` and no deployment.
 
-## Publication Guardrails
+## QA Note Outside This Branch
 
-- Do not add `/de/` to the public build.
-- Do not create `sitemap-de.xml`.
-- Do not add DE hreflang to live IT/EN pages.
-- Do not add DE URLs to `llms.txt`.
-- Do not create or publish FR.
+- Event structured data is still incomplete on this branch because the dedicated fix exists separately on `fix/event-structured-data`.
+- Current Event QA on this branch finds 19 Event-like nodes, with 18 still missing `startDate` and `location`.
+- Do not merge this content branch to production until the Event structured data fix is integrated through a controlled merge sequence.

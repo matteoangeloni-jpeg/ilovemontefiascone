@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Montefiascone Map | Lake, Old Town and Via Francigena</title>
+    <meta
+      name="description"
+      content="Use the Montefiascone map to understand the old town, Lake Bolsena, viewpoints, parking logic and the local Via Francigena route.">
+    <meta name="theme-color" content="#2C5E6D">
+    <link rel="canonical" href="https://www.ilovemontefiascone.com/en/map-montefiascone">
+    <link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/mappa">
+    <link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/map-montefiascone">
+    <link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/mappa">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Montefiascone Map | Lake, Old Town and Via Francigena">
+    <meta
+      property="og:description"
+      content="Use the Montefiascone map to understand the old town, Lake Bolsena, viewpoints, parking logic and the local Via Francigena route.">
+    <meta property="og:url" content="https://www.ilovemontefiascone.com/en/map-montefiascone">
+    <meta property="og:image" content="https://www.ilovemontefiascone.com/media/gallery/petretti-drone2.jpg">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Montefiascone Map | Lake, Old Town and Via Francigena">
+    <meta
+      name="twitter:description"
+      content="Use the Montefiascone map to understand the old town, Lake Bolsena, viewpoints, parking logic and the local Via Francigena route.">
+    <meta name="twitter:image" content="https://www.ilovemontefiascone.com/media/gallery/petretti-drone2.jpg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="">
+    <link rel="stylesheet" href="/css/style.css?v=2026-06-14-itlaunch">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Map",
+            "@id": "https://www.ilovemontefiascone.com/en/map-montefiascone#map",
+            "name": "Tourist map of Montefiascone",
+            "url": "https://www.ilovemontefiascone.com/en/map-montefiascone",
+            "description": "Tourist map of Montefiascone with the old town, Lake Bolsena, the Via Francigena and practical orientation points.",
+            "inLanguage": "en",
+            "about": {
+              "@id": "https://www.ilovemontefiascone.com/en/map-montefiascone#destination"
+            }
+          },
+          {
+            "@type": "TouristDestination",
+            "@id": "https://www.ilovemontefiascone.com/en/map-montefiascone#destination",
+            "name": "Montefiascone",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 42.5366,
+              "longitude": 12.03013
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.ilovemontefiascone.com/en/map-montefiascone#breadcrumb",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ilovemontefiascone.com/en/" },
+              { "@type": "ListItem", "position": 2, "name": "Map", "item": "https://www.ilovemontefiascone.com/en/map-montefiascone" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.ilovemontefiascone.com/en/map-montefiascone#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What should I mark on a Montefiascone map first?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Start with Rocca dei Papi, the Cathedral of Santa Margherita, the Basilica of San Flaviano and the local Via Francigena connection."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Montefiascone directly on Lake Bolsena?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Montefiascone is a hill town above Lake Bolsena rather than a flat lakeside village. The map helps visitors understand altitude, viewpoints and access routes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can this map replace live navigation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. It is an orientation map for planning. Always follow local signs, current traffic rules and updated navigation information while travelling."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenuto">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="/en/">Montefiascone</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>Menu</button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation" data-nav>
+          <ul>
+            <li><a href="/en/">Home</a></li>
+            <li><a href="/en/things-to-see-montefiascone">Things to see</a></li>
+            <li><a href="/en/montefiascone-travel-guide">Travel guide</a></li>
+            <li><a href="/en/lake-bolsena">Lake Bolsena</a></li>
+            <li><a href="/en/montefiascone-wine-guide">Wine</a></li>
+            <li><a href="/en/how-to-get-to-montefiascone">Getting here</a></li>
+            <li><a href="/en/where-to-stay-in-montefiascone">Where to stay</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <div class="lang-switcher" aria-label="Site language">
+            <a href="/mappa" lang="it">IT</a>
+            <a class="is-current" href="/en/map-montefiascone" lang="en">EN</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenuto">
+      <section class="detail-hero">
+        <div class="container detail-hero__grid">
+          <article class="detail-hero__panel">
+            <div class="detail-hero__media">
+              <img alt="Aerial view of Montefiascone above Lake Bolsena" decoding="async" height="681" src="/media/gallery/petretti-drone2.jpg" width="1024">
+            </div>
+            <div class="detail-hero__content">
+              <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb">
+                  <li><a href="/en/">Home</a></li>
+                  <li>Map</li>
+                </ol>
+              </nav>
+              <p class="eyebrow eyebrow--light">Orientation</p>
+              <h1>Tourist map of Montefiascone</h1>
+              <p>
+                Use this map to understand how the old town, Lake Bolsena, the hilltop viewpoints and the local Via Francigena route fit together before you arrive.
+              </p>
+            </div>
+          </article>
+
+          <aside class="card">
+            <h2 class="card__eyebrow">Save first</h2>
+            <ul class="plain-list">
+              <li>Rocca dei Papi for the panoramic reading of the landscape.</li>
+              <li>Cathedral of Santa Margherita for the historic centre.</li>
+              <li>Basilica of San Flaviano for the medieval pilgrim route.</li>
+              <li>Parking and walking access points before entering the old town.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section-grid">
+          <article class="card content-card">
+            <div class="content-stack">
+              <section>
+                <h2>How to read Montefiascone on a map</h2>
+                <h3>A hill town above Lake Bolsena</h3>
+                <p>
+                  Montefiascone is not a flat lakeside resort. It stands above Lake Bolsena, so distances on a map should always be read together with altitude and walking gradients.
+                </p>
+                <h3>Old town, monuments and viewpoints</h3>
+                <p>
+                  A practical visit usually connects the upper historic centre, Rocca dei Papi, the Cathedral of Santa Margherita and San Flaviano. The map helps you decide which order makes sense for your time and energy.
+                </p>
+              </section>
+
+              <section>
+                <h2>Interactive orientation map</h2>
+                <p>
+                  The layer below is designed for orientation rather than turn-by-turn navigation. Roads, temporary closures, parking access and event traffic can change, so always check current local information before travelling.
+                </p>
+              </section>
+            </div>
+          </article>
+
+          <aside class="card">
+            <h2 class="card__eyebrow">Useful next steps</h2>
+            <ul class="plain-list">
+              <li><a href="/en/things-to-see-montefiascone">Things to see in Montefiascone</a></li>
+              <li><a href="/en/parking-in-montefiascone">Parking in Montefiascone</a></li>
+              <li><a href="/en/via-francigena-montefiascone-viterbo">Via Francigena to Viterbo</a></li>
+              <li><a href="/en/lake-bolsena">Lake Bolsena guide</a></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="map-panel">
+            <div class="map-header">
+              <div>
+                <p class="eyebrow eyebrow--dark">Topographic context</p>
+                <h2>Hill, lake and walking route</h2>
+                <p class="map-copy">
+                  The map places Montefiascone in the volcanic landscape of Lake Bolsena and highlights the relationship between the town, the lake and the first section of the Via Francigena towards Viterbo.
+                </p>
+              </div>
+              <div class="map-legend" aria-label="Map legend">
+                <span class="map-pill"><span class="map-dot dot-crater" aria-hidden="true"></span>Volcanic caldera</span>
+                <span class="map-pill"><span class="map-dot dot-route" aria-hidden="true"></span>Via Francigena</span>
+                <span class="map-pill"><span class="map-dot dot-lake" aria-hidden="true"></span>Lake landscape</span>
+              </div>
+            </div>
+
+            <div class="map-frame">
+              <div id="map" role="region" aria-label="Topographic map of Montefiascone and Lake Bolsena"></div>
+              <div class="map-powered">Leaflet &middot; OpenStreetMap &middot; Esri</div>
+            </div>
+
+            <p class="map-note">
+              The caldera outline and walking route are interpretive aids for travel planning. Use official signs and current navigation information on site.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow eyebrow--dark">FAQ</p>
+            <h2>Quick answers for visitors</h2>
+          </div>
+          <div class="media-card-grid media-card-grid--3">
+            <article class="card">
+              <h3>What should I mark first?</h3>
+              <p>Start with Rocca dei Papi, Santa Margherita, San Flaviano and the Via Francigena connection.</p>
+            </article>
+            <article class="card">
+              <h3>Is Montefiascone directly on the lake?</h3>
+              <p>No. It is a hill town above Lake Bolsena, so the map is useful for reading altitude and access routes.</p>
+            </article>
+            <article class="card">
+              <h3>Can this map replace live navigation?</h3>
+              <p>No. It is an orientation tool. Check signs, closures and current route information while travelling.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <section class="contact-card">
+          <h2 class="footer__title">I Love Montefiascone</h2>
+          <div class="footer-list">
+            <p>Independent travel guide to Montefiascone, Lake Bolsena and Tuscia.</p>
+            <p><a href="/en/tourist-information-montefiascone">Tourist information</a></p>
+          </div>
+        </section>
+        <section class="contact-card">
+          <h2 class="footer__title">Quick links</h2>
+          <div class="footer-list">
+            <p><a href="/en/">Home</a></p>
+            <p><a href="/en/things-to-see-montefiascone">Things to see</a></p>
+            <p><a href="/en/lake-bolsena">Lake Bolsena</a></p>
+            <p><a href="/en/montefiascone-travel-guide">Travel guide</a></p>
+          </div>
+        </section>
+        <section class="contact-card">
+          <h2 class="footer__title">Editorial note</h2>
+          <div class="footer-list">
+            <p>This is an independent guide and is not affiliated with the Municipality of Montefiascone.</p>
+            <p>Verify time-sensitive details through official sources before travelling.</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script>
+      window.mapContent = {
+        satelliteLabel: "Satellite",
+        topoLabel: "Topographic",
+        craterLayerLabel: "Volcanic caldera",
+        routeLayerLabel: "Via Francigena (5 km)",
+        craterPopupTitle: "Lake Bolsena volcanic caldera",
+        craterPopupText: "Interpretive outline for understanding the relationship between hills, lake and Montefiascone.",
+        routePopupTitle: "Via Francigena: first 5 km towards Viterbo",
+        routePopupText: "Simplified route from Montefiascone along the historic Via Cassia axis.",
+        cathedralTitle: "Cathedral of Santa Margherita",
+        cathedralText: "Main monumental reference in the historic centre.",
+        roccaTitle: "Rocca dei Papi",
+        roccaText: "One of the highest panoramic viewpoints in town.",
+        routeTitle: "Start of the Roman paving on the Via Francigena",
+        routeText: "Indicative access to the historic Via Cassia route."
+      };
+    </script>
+    <script src="/js/main.js?v=2026-06-14-itlaunch" defer></script>
+    <script src="/pwa-boot.js?v=2026-06-14-itlaunch" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+    <script src="/assets/map.js?v=2026-06-14-itlaunch" defer></script>
+  </body>
+</html>

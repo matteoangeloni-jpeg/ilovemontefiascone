@@ -16,6 +16,7 @@ Scope: unpublished German source pages for `ilovemontefiascone.com`.
 - Do not invent opening hours, prices, booking rules, transport timetables, event programmes or exact access conditions.
 - Use cautious phrases for variable data: "vor der Reise prüfen", "je nach Saison", "direkt beim Anbieter prüfen".
 - Do not present this website as official. Keep the independent editorial disclaimer.
+- Do not add historical dates, operational access rules or event details unless they already exist in the internal IT/EN source page being localized.
 
 ## Structure
 
@@ -23,6 +24,7 @@ Scope: unpublished German source pages for `ilovemontefiascone.com`.
 - Use one H1 per page, followed by logical H2 sections.
 - Add concise "Kurz gesagt" bullets on practical pages.
 - Keep CTAs as internal planning links, not commercial pressure.
+- Use German alt text for every image that appears in a German page.
 
 ## Technical Rules
 
@@ -30,4 +32,6 @@ Scope: unpublished German source pages for `ilovemontefiascone.com`.
 - Slugs use ASCII transliteration: `ue`, `ae`, `oe`, `ss`; visible text uses correct German characters.
 - Do not add public DE hreflang until DE is published.
 - Do not add `/de/` to sitemap, `llms.txt` or the public build.
+- Do not add German URLs to public language switchers before the DE publication gate.
+- Do not start FR or add FR placeholders while DE remains unpublished.
 - Check every page for mojibake before future publication.

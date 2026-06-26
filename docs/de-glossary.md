@@ -23,3 +23,5 @@ Updated: 2026-06-26
 | Belvedere | viewpoint | Aussichtspunkt | Translate in ordinary German. |
 | pellegrinaggio | pilgrimage | Pilgerreise / Pilgerweg | Use "Pilgerweg" for Via Francigena context. |
 | Via Francigena | Via Francigena | Via Francigena | Keep Italian route name; explain as historischer Pilgerweg. |
+| Fiera del Vino | Wine Fair | Fiera del Vino | Keep Italian event name; add "Weinfest" only as explanatory wording in body text. |
+| Cronoscalata | hill climb | Bergrennen / Cronoscalata | Use "Bergrennen" for German readability; keep the official Italian name when referring to the event. |
