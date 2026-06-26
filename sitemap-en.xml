@@ -1,693 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/associations-volunteering-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/" />
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/associazioni-volontariato-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/associations-volunteering-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/vereine-ehrenamt-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/associazioni-volontariato-montefiascone" />
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/en/basilica-san-flaviano-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/basilica-san-flaviano-montefiascone" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/basilica-san-flaviano-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/basilika-san-flaviano-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/basilica-san-flaviano-montefiascone" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/best-time-to-visit-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/quando-visitare-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/best-time-to-visit-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/quando-visitare-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/best-viewpoints-lake-bolsena</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/migliori-panorami-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/best-viewpoints-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/migliori-panorami-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/best-villages-on-lake-bolsena</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/best-villages-on-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/bolsena-things-to-see</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/bolsena-cosa-vedere" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/bolsena-things-to-see" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/bolsena-cosa-vedere" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/bomarzo-from-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/bomarzo-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/bomarzo-from-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/bomarzo-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/capodimonte-lago-di-bolsena-cosa-vedere" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/capodimonte-lago-di-bolsena-cosa-vedere" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/caprarola-palazzo-farnese-from-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/caprarola-palazzo-farnese-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/caprarola-palazzo-farnese-from-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/caprarola-palazzo-farnese-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/cycling-lake-bolsena</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-bici" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/cycling-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-bici" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/est-est-est-wine-route-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-est-est-wine-route-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-beaches</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/spiagge-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-beaches" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/spiagge-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-in-autumn</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-autunno" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-in-autumn" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-autunno" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-in-one-day</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-un-giorno" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-in-one-day" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-un-giorno" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-2-giorni" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-2-giorni" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-villages-by-car</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/borghi-del-lago-di-bolsena-in-auto" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-villages-by-car" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/borghi-del-lago-di-bolsena-in-auto" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-villages</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/borghi-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-villages" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/borghi-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-with-kids</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-con-bambini" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-with-kids" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-con-bambini" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/local-products-montefiascone-tuscia</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/prodotti-tipici-montefiascone-tuscia" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/local-products-montefiascone-tuscia" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/prodotti-tipici-montefiascone-tuscia" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-in-one-day</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-un-giorno" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-in-one-day" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-un-giorno" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-in-two-days</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-2-giorni" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-in-two-days" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-2-giorni" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-travel-guide</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/guide" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-travel-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/guide" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-wine-guide</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/vino" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-wine-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/vino" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-with-kids</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-con-bambini-famiglie" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-with-kids" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-con-bambini-famiglie" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-without-car</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-senza-auto" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-without-car" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-senza-auto" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/parking-in-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/parcheggi-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/parking-in-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/parcheggi-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/rainy-day-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cosa-fare-a-montefiascone-quando-piove" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/rainy-day-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cosa-fare-a-montefiascone-quando-piove" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/rocca-dei-papi-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/rocca-dei-papi-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/slow-travel-lake-bolsena</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/viaggio-lento-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/slow-travel-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/viaggio-lento-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/summer-on-lake-bolsena</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/estate-sul-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/summer-on-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/estate-sul-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/thermal-baths-near-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/terme-viterbo-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/thermal-baths-near-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/terme-viterbo-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/things-to-do-near-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/things-to-do-near-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/things-to-see-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/things-to-see-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/tourist-information-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/informazioni-turistiche-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/tourist-information-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/informazioni-turistiche-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/tuscania-from-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/tuscania-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/tuscania-from-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/tuscania-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/tuscia-in-three-days-from-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/tuscia-in-3-giorni-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/tuscia-in-three-days-from-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/tuscia-in-3-giorni-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/typical-food-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cucina-tipica-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/typical-food-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cucina-tipica-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/via-francigena-montefiascone-viterbo</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/via-francigena-montefiascone-viterbo" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/via-francigena-montefiascone-viterbo" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/via-francigena-montefiascone-viterbo" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/villa-lante-from-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/villa-lante-bagnaia-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/villa-lante-from-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/villa-lante-bagnaia-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/viterbo-from-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/viterbo-da-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/viterbo-from-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/viterbo-da-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/weekend-in-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/weekend-a-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/weekend-in-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/weekend-a-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/dove-dormire-a-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/dove-dormire-a-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/via-francigena-bolsena-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/via-francigena-bolsena-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/via-francigena-packing-list-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/via-francigena-cosa-portare" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/via-francigena-packing-list-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/via-francigena-cosa-portare" />
-  </url>
-  <url>
     <loc>https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/weingueter-montefiascone-verkostung" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/how-wine-tasting-works-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/how-wine-tasting-works-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/kathedrale-santa-margherita-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/photo-spots-montefiascone-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/things-to-see-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-lago-bolsena-spot-fotografici-aerei" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/photo-spots-montefiascone-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-lago-bolsena-spot-fotografici-aerei" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/things-to-see-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/sehenswuerdigkeiten-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-photography-itinerary</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/rocca-dei-papi-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/itinerario-fotografico-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-photography-itinerary" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/itinerario-fotografico-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/rocca-dei-papi-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/rocca-dei-papi-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/where-to-watch-sunset-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/montefiascone-travel-guide</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/dove-vedere-il-tramonto-sul-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-watch-sunset-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/dove-vedere-il-tramonto-sul-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-travel-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/reisefuehrer-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/guide" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-by-car</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/itinerario-auto-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-by-car" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/itinerario-auto-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/bolsenasee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-hill-climb</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-hill-climb" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/how-many-days-in-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/map-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/how-many-days-in-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/en/how-many-days-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/mappa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/map-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/karte-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/mappa" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/where-to-stay-montefiascone-vs-bolsena-viterbo</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/montefiascone-wine-guide</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-stay-montefiascone-vs-bolsena-viterbo" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/en/where-to-stay-montefiascone-vs-bolsena-viterbo" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/where-to-stay-around-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-stay-around-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/en/where-to-stay-around-lake-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/spring-in-montefiascone-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-primavera" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/spring-in-montefiascone-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-primavera" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/autumn-in-montefiascone-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-autunno-vendemmia" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/autumn-in-montefiascone-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-autunno-vendemmia" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/trekking-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/trekking-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/trekking-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/trekking-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/minor-churches-historic-monuments-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/monumenti-minori-chiese-storiche-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/minor-churches-historic-monuments-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/monumenti-minori-chiese-storiche-montefiascone" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/lake-fish-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/pesce-di-lago-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-fish-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/pesce-di-lago-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/romantic-weekend-lake-bolsena</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/romantic-weekend-lake-bolsena" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/weekend-romantico-lago-di-bolsena" />
-  </url>
-  <url>
-    <loc>https://www.ilovemontefiascone.com/en/montefiascone-summer-events-2026</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-summer-events-2026" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/vino" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-wine-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/montefiascone-wein-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/vino" />
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/en/anno-domini-1074-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/anno-domini-1074-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/anno-domini-1074-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/integral-ecology-festival-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/best-villages-on-lake-bolsena</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/integral-ecology-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/best-villages-on-lake-bolsena" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/schoenste-orte-am-bolsenasee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/atb-festival-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/atb-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/atb-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/atb-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/capodimonte-lago-di-bolsena-cosa-vedere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/capodimonte-bolsenasee-sehenswuerdigkeiten" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/capodimonte-lago-di-bolsena-cosa-vedere" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/panorami-festival-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/panorami-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/panorami-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/panorami-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/civita-di-bagnoregio-ab-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/santa-margherita-feast-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/santa-margherita-feast-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/est-est-est-wein-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/est-film-festival-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/est-film-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-film-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-film-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/bolsenasee-sehenswuerdigkeiten" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere" />
   </url>
   <url>
-    <loc>https://www.ilovemontefiascone.com/en/est-lake-festival-montefiascone</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-in-one-day</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/est-lake-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-lake-festival-montefiascone" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-lake-festival-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-un-giorno" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-in-one-day" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/bolsenasee-an-einem-tag" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-un-giorno" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/marta-bolsenasee-sehenswuerdigkeiten" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/viterbo-from-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/viterbo-da-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/viterbo-from-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/viterbo-ab-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/viterbo-da-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-2-giorni" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/bolsenasee-in-zwei-tagen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/lago-di-bolsena-in-2-giorni" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/bolsena-things-to-see</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/bolsena-cosa-vedere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/bolsena-things-to-see" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/bolsena-sehenswuerdigkeiten" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/bolsena-cosa-vedere" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/montefiascone-with-kids</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-con-bambini-famiglie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-with-kids" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/montefiascone-mit-kindern" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-con-bambini-famiglie" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/montefiascone-in-one-day</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-un-giorno" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-in-one-day" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/montefiascone-an-einem-tag" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-un-giorno" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/best-time-to-visit-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/quando-visitare-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/best-time-to-visit-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/beste-reisezeit-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/quando-visitare-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/anreise-nach-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/dove-dormire-a-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/unterkunft-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/dove-dormire-a-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/essen-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/tourist-information-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/informazioni-turistiche-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/tourist-information-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/touristeninformation-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/informazioni-turistiche-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/parking-in-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/parcheggi-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/parking-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/parken-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/parcheggi-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/montefiascone-in-two-days</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/montefiascone-in-2-giorni" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-in-two-days" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/montefiascone-in-zwei-tagen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/montefiascone-in-2-giorni" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/en/weekend-in-montefiascone</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/weekend-a-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/weekend-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/wochenende-in-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/weekend-a-montefiascone" />
   </url>
 </urlset>
