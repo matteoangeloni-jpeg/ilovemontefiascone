@@ -18,6 +18,7 @@ function readPowerShellArray(source, name) {
 
 const psBuild = readFileSync(join(root, "build-soft-launch-it.ps1"), "utf8");
 const rootFiles = readPowerShellArray(psBuild, "rootFiles");
+const enFiles = readPowerShellArray(psBuild, "enFiles");
 const directories = readPowerShellArray(psBuild, "directories");
 const deFiles = readPowerShellArray(psBuild, "deFiles");
 
@@ -38,6 +39,17 @@ for (const directory of directories) {
     throw new Error(`Missing required directory: ${directory}`);
   }
   cpSync(source, join(outputDir, directory), { recursive: true, force: true });
+}
+
+for (const file of enFiles) {
+  const source = join(root, file);
+  if (!existsSync(source)) {
+    throw new Error(`Missing required EN perimeter file: ${file}`);
+  }
+
+  const destination = join(outputDir, file);
+  mkdirSync(dirname(destination), { recursive: true });
+  cpSync(source, destination, { force: true });
 }
 
 for (const file of deFiles) {

@@ -5,9 +5,9 @@ Branch: `feature/de-articles-expansion`
 
 ## Strategy
 
-Chosen strategy: **A - strict symmetric trilingual sitemap perimeter**.
+Chosen strategy: **A - strict symmetric trilingual public build perimeter**.
 
-The first publication perimeter contains only pages with an existing IT, EN and DE version that pass basic publication checks. IT and EN still have additional source pages in the repository, but the crawl-facing trilingual perimeter is intentionally limited to the validated equivalent set. This avoids publishing incomplete German pages and avoids adding hreflang DE to pages without a real DE equivalent.
+The first publication perimeter contains only pages with an existing IT, EN and DE version that pass basic publication checks. IT and EN still have additional source pages in the repository, but the public build is intentionally limited to the validated equivalent set. This avoids publishing incomplete German pages, avoids crawlable extra pages outside the trilingual set and avoids adding hreflang DE to pages without a real DE equivalent.
 
 ## Final Proposed Public Perimeter
 
@@ -17,7 +17,7 @@ The first publication perimeter contains only pages with an existing IT, EN and 
 | EN | 32 | Included in `sitemap-en.xml` with reciprocal IT/EN/DE hreflang. |
 | DE | 32 | Included in `sitemap-de.xml` and copied by the Cloudflare build. |
 
-Recommendation: **publish the minimum trilingual perimeter now**, then continue P0/P1 gap closure in separate sprints.
+Recommendation: **publish the minimum trilingual perimeter now**, then continue P0/P1 gap closure in separate sprints. Extra IT/EN source pages remain in the repository but must not be copied to the public build until they have a validated DE equivalent or a documented publication strategy.
 
 ## Included Pages
 

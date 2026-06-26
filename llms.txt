@@ -1,166 +1,126 @@
 # I Love Montefiascone
-> Portale turistico indipendente dedicato a Montefiascone, al Lago di Bolsena e alla Tuscia. Le guide raccolgono informazioni pratiche, itinerari, patrimonio storico, Via Francigena, vino Est! Est!! Est!!!, eventi locali e risorse utili per organizzare la visita.
+> Independent trilingual travel guide for Montefiascone, Lake Bolsena and Tuscia. This file lists only the validated public IT/EN/DE perimeter currently exposed by the production build.
 
-## Identita del sito
-- Nome progetto: I Love Montefiascone
-- Dominio canonico: https://www.ilovemontefiascone.com/
-- Lingua principale: italiano
-- Area geografica: Montefiascone, Lago di Bolsena, Tuscia, Provincia di Viterbo, Lazio, Italia
-- Tipologia contenuti: guide turistiche, itinerari, eventi, enogastronomia, mappe, patrimonio culturale, informazioni pratiche
-- Ultimo aggiornamento llms.txt: 2026-06-21
+## Site Identity
+- Canonical domain: https://www.ilovemontefiascone.com/
+- Public languages: Italian, English, German.
+- Geographic focus: Montefiascone, Lake Bolsena, Tuscia, Viterbo province, Lazio, Italy.
+- Public perimeter updated: 2026-06-26.
 
-## Temi principali del sito
-- Montefiascone e Lago di Bolsena.
-- Cosa vedere a Montefiascone.
+## Main Topics
+- Montefiascone and Lake Bolsena.
+- Things to see in Montefiascone.
 - Rocca dei Papi.
-- Cattedrale di Santa Margherita.
-- Basilica di San Flaviano.
-- Via Francigena.
+- Cathedral of Santa Margherita.
+- Basilica of San Flaviano.
 - Est! Est!! Est!!! di Montefiascone DOC.
-- Cantine e degustazioni.
-- Eventi locali.
-- Fiera del Vino.
-- Cronoscalata Lago Montefiascone.
-- Itinerari nella Tuscia.
-- Turismo lento e weekend.
+- Wine tasting and local food.
+- Slow travel, weekend itineraries and practical visitor planning.
 
-## Pagine Hub Principali
-- [Homepage](https://www.ilovemontefiascone.com/): punto di accesso principale al portale turistico di Montefiascone.
-- [Cosa vedere a Montefiascone](https://www.ilovemontefiascone.com/cosa-vedere): guida sintetica ai principali monumenti e luoghi di visita.
-- [Guida completa su cosa vedere a Montefiascone](https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa): approfondimento pillar su Rocca dei Papi, Cattedrale di Santa Margherita, Basilica di San Flaviano, Via Francigena e centro storico.
-- [Guide turistiche](https://www.ilovemontefiascone.com/guide): raccolta degli itinerari e delle guide pratiche per organizzare la visita.
-- [Mappa turistica](https://www.ilovemontefiascone.com/mappa): orientamento, punti principali, dislivelli e riferimenti urbani.
-- [Eventi a Montefiascone](https://www.ilovemontefiascone.com/eventi): hub degli eventi, festival, tradizioni e appuntamenti locali.
-- [Vino ed enogastronomia](https://www.ilovemontefiascone.com/vino): hub dedicato a Est! Est!! Est!!!, cantine, cucina locale e degustazioni.
-- [Galleria fotografica](https://www.ilovemontefiascone.com/galleria): immagini del territorio, crediti fotografici e contenuti visuali del portale.
+## Italian Public Pages
+- [Homepage](https://www.ilovemontefiascone.com/): main Italian travel hub.
+- [Associazioni e volontariato](https://www.ilovemontefiascone.com/associazioni-volontariato-montefiascone): local community and volunteering guide.
+- [Basilica di San Flaviano](https://www.ilovemontefiascone.com/basilica-san-flaviano-montefiascone): guide to the two-level basilica.
+- [Cantine e degustazioni](https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est): wine tasting guide.
+- [Cattedrale di Santa Margherita](https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone): cathedral and dome guide.
+- [Cosa vedere a Montefiascone](https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa): main sights guide.
+- [Rocca dei Papi](https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone): historic fortress and viewpoint.
+- [Guide](https://www.ilovemontefiascone.com/guide): travel guide hub.
+- [Lago di Bolsena](https://www.ilovemontefiascone.com/lago-di-bolsena): lake guide.
+- [Mappa](https://www.ilovemontefiascone.com/mappa): visitor map.
+- [Vino](https://www.ilovemontefiascone.com/vino): wine and food hub.
+- [Anno Domini 1074](https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone): historical event guide.
+- [Borghi piu belli del Lago di Bolsena](https://www.ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena): lake villages guide.
+- [Capodimonte](https://www.ilovemontefiascone.com/capodimonte-lago-di-bolsena-cosa-vedere): Capodimonte guide.
+- [Civita di Bagnoregio](https://www.ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone): day trip guide.
+- [Est! Est!! Est!!! DOC](https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc): wine guide.
+- [Cosa vedere sul Lago di Bolsena](https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere): lake sights.
+- [Lago di Bolsena in un giorno](https://www.ilovemontefiascone.com/lago-di-bolsena-in-un-giorno): one-day itinerary.
+- [Marta](https://www.ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere): Marta guide.
+- [Viterbo da Montefiascone](https://www.ilovemontefiascone.com/viterbo-da-montefiascone): day trip guide.
+- [Lago di Bolsena in 2 giorni](https://www.ilovemontefiascone.com/lago-di-bolsena-in-2-giorni): two-day itinerary.
+- [Bolsena](https://www.ilovemontefiascone.com/bolsena-cosa-vedere): Bolsena guide.
+- [Montefiascone con bambini](https://www.ilovemontefiascone.com/montefiascone-con-bambini-famiglie): family guide.
+- [Montefiascone in un giorno](https://www.ilovemontefiascone.com/montefiascone-in-un-giorno): one-day visit.
+- [Quando visitare Montefiascone](https://www.ilovemontefiascone.com/quando-visitare-montefiascone): seasonal planning.
+- [Come arrivare](https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone): travel logistics.
+- [Dove dormire](https://www.ilovemontefiascone.com/dove-dormire-a-montefiascone): accommodation areas.
+- [Dove mangiare](https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone): food planning.
+- [Informazioni turistiche](https://www.ilovemontefiascone.com/informazioni-turistiche-montefiascone): visitor information.
+- [Parcheggi](https://www.ilovemontefiascone.com/parcheggi-montefiascone): parking guide.
+- [Montefiascone in 2 giorni](https://www.ilovemontefiascone.com/montefiascone-in-2-giorni): weekend itinerary.
+- [Weekend a Montefiascone](https://www.ilovemontefiascone.com/weekend-a-montefiascone): two-day stay guide.
 
-## Monumenti e Patrimonio
-- [Rocca dei Papi](https://www.ilovemontefiascone.com/rocca-dei-papi-montefiascone): storia, panorama e ruolo della rocca nel profilo urbano del borgo.
-- [Cattedrale di Santa Margherita](https://www.ilovemontefiascone.com/cattedrale-santa-margherita-montefiascone): guida alla cattedrale e alla grande cupola di Montefiascone.
-- [Basilica di San Flaviano](https://www.ilovemontefiascone.com/basilica-san-flaviano-montefiascone): chiesa a due livelli, Via Francigena e memoria della leggenda di Defuk.
-- [Monumenti minori e chiese storiche](https://www.ilovemontefiascone.com/monumenti-minori-chiese-storiche-montefiascone): luoghi sacri e testimonianze meno note del centro storico.
+## English Public Pages
+- [Homepage](https://www.ilovemontefiascone.com/en/): main English travel hub.
+- [Associations and volunteering](https://www.ilovemontefiascone.com/en/associations-volunteering-montefiascone): community guide.
+- [Basilica of San Flaviano](https://www.ilovemontefiascone.com/en/basilica-san-flaviano-montefiascone): basilica guide.
+- [Wine tasting in Montefiascone](https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est): wine tasting guide.
+- [Cathedral of Santa Margherita](https://www.ilovemontefiascone.com/en/cathedral-santa-margherita-montefiascone): cathedral guide.
+- [Things to see in Montefiascone](https://www.ilovemontefiascone.com/en/things-to-see-montefiascone): main sights guide.
+- [Rocca dei Papi](https://www.ilovemontefiascone.com/en/rocca-dei-papi-montefiascone): fortress and viewpoint.
+- [Montefiascone travel guide](https://www.ilovemontefiascone.com/en/montefiascone-travel-guide): English guide hub.
+- [Lake Bolsena](https://www.ilovemontefiascone.com/en/lake-bolsena): lake guide.
+- [Montefiascone map](https://www.ilovemontefiascone.com/en/map-montefiascone): visitor map.
+- [Montefiascone wine guide](https://www.ilovemontefiascone.com/en/montefiascone-wine-guide): wine and food hub.
+- [Anno Domini 1074](https://www.ilovemontefiascone.com/en/anno-domini-1074-montefiascone): historical event guide.
+- [Best villages on Lake Bolsena](https://www.ilovemontefiascone.com/en/best-villages-on-lake-bolsena): villages guide.
+- [Capodimonte](https://www.ilovemontefiascone.com/en/capodimonte-lake-bolsena-things-to-see): Capodimonte guide.
+- [Civita di Bagnoregio](https://www.ilovemontefiascone.com/en/civita-di-bagnoregio-from-montefiascone): day trip guide.
+- [Est! Est!! Est!!! DOC wine](https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine): wine guide.
+- [What to see on Lake Bolsena](https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena): lake sights.
+- [Lake Bolsena in one day](https://www.ilovemontefiascone.com/en/lake-bolsena-in-one-day): one-day itinerary.
+- [Marta](https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see): Marta guide.
+- [Viterbo from Montefiascone](https://www.ilovemontefiascone.com/en/viterbo-from-montefiascone): day trip guide.
+- [Lake Bolsena in two days](https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days): two-day itinerary.
+- [Bolsena](https://www.ilovemontefiascone.com/en/bolsena-things-to-see): Bolsena guide.
+- [Montefiascone with kids](https://www.ilovemontefiascone.com/en/montefiascone-with-kids): family guide.
+- [Montefiascone in one day](https://www.ilovemontefiascone.com/en/montefiascone-in-one-day): one-day visit.
+- [Best time to visit Montefiascone](https://www.ilovemontefiascone.com/en/best-time-to-visit-montefiascone): seasonal planning.
+- [How to get to Montefiascone](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone): travel logistics.
+- [Where to stay in Montefiascone](https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone): accommodation areas.
+- [Where to eat in Montefiascone](https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone): food planning.
+- [Tourist information](https://www.ilovemontefiascone.com/en/tourist-information-montefiascone): visitor information.
+- [Parking in Montefiascone](https://www.ilovemontefiascone.com/en/parking-in-montefiascone): parking guide.
+- [Montefiascone in two days](https://www.ilovemontefiascone.com/en/montefiascone-in-two-days): weekend itinerary.
+- [Weekend in Montefiascone](https://www.ilovemontefiascone.com/en/weekend-in-montefiascone): two-day stay guide.
 
-## Itinerari e Logistica
-- [Montefiascone in un giorno](https://www.ilovemontefiascone.com/montefiascone-in-un-giorno): itinerario essenziale per una visita breve.
-- [Montefiascone in 2 giorni](https://www.ilovemontefiascone.com/montefiascone-in-2-giorni): percorso per un weekend tra borgo, lago e vino.
-- [Weekend a Montefiascone](https://www.ilovemontefiascone.com/weekend-a-montefiascone): guida per soggiornare nel borgo e usarlo come base nella Tuscia.
-- [Tuscia in 3 giorni da Montefiascone](https://www.ilovemontefiascone.com/tuscia-in-3-giorni-da-montefiascone): itinerario hub-and-spoke verso lago, borghi e citta vicine.
-- [Come arrivare a Montefiascone](https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone): accessi, collegamenti e indicazioni logistiche.
-- [Parcheggi a Montefiascone](https://www.ilovemontefiascone.com/parcheggi-montefiascone): aree di sosta e consigli per raggiungere il centro storico.
-- [Montefiascone senza auto](https://www.ilovemontefiascone.com/montefiascone-senza-auto): indicazioni per visitare il borgo a piedi e con mezzi pubblici.
+## German Public Pages
+- [Startseite](https://www.ilovemontefiascone.com/de/): main German travel hub.
+- [Vereine und Ehrenamt](https://www.ilovemontefiascone.com/de/vereine-ehrenamt-montefiascone): community guide.
+- [Basilika San Flaviano](https://www.ilovemontefiascone.com/de/basilika-san-flaviano-montefiascone): basilica guide.
+- [Weingueter und Verkostung](https://www.ilovemontefiascone.com/de/weingueter-montefiascone-verkostung): wine tasting guide.
+- [Kathedrale Santa Margherita](https://www.ilovemontefiascone.com/de/kathedrale-santa-margherita-montefiascone): cathedral guide.
+- [Sehenswuerdigkeiten Montefiascone](https://www.ilovemontefiascone.com/de/sehenswuerdigkeiten-montefiascone): main sights guide.
+- [Rocca dei Papi](https://www.ilovemontefiascone.com/de/rocca-dei-papi-montefiascone): fortress and viewpoint.
+- [Reisefuehrer Montefiascone](https://www.ilovemontefiascone.com/de/reisefuehrer-montefiascone): German guide hub.
+- [Bolsenasee](https://www.ilovemontefiascone.com/de/bolsenasee): lake guide.
+- [Karte Montefiascone](https://www.ilovemontefiascone.com/de/karte-montefiascone): visitor map.
+- [Montefiascone Wein Guide](https://www.ilovemontefiascone.com/de/montefiascone-wein-guide): wine and food hub.
+- [Anno Domini 1074](https://www.ilovemontefiascone.com/de/anno-domini-1074-montefiascone): historical event guide.
+- [Schoenste Orte am Bolsenasee](https://www.ilovemontefiascone.com/de/schoenste-orte-am-bolsenasee): villages guide.
+- [Capodimonte am Bolsenasee](https://www.ilovemontefiascone.com/de/capodimonte-bolsenasee-sehenswuerdigkeiten): Capodimonte guide.
+- [Civita di Bagnoregio ab Montefiascone](https://www.ilovemontefiascone.com/de/civita-di-bagnoregio-ab-montefiascone): day trip guide.
+- [Est! Est!! Est!!! Wein](https://www.ilovemontefiascone.com/de/est-est-est-wein-montefiascone): wine guide.
+- [Bolsenasee Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/bolsenasee-sehenswuerdigkeiten): lake sights.
+- [Bolsenasee an einem Tag](https://www.ilovemontefiascone.com/de/bolsenasee-an-einem-tag): one-day itinerary.
+- [Marta am Bolsenasee](https://www.ilovemontefiascone.com/de/marta-bolsenasee-sehenswuerdigkeiten): Marta guide.
+- [Viterbo ab Montefiascone](https://www.ilovemontefiascone.com/de/viterbo-ab-montefiascone): day trip guide.
+- [Bolsenasee in zwei Tagen](https://www.ilovemontefiascone.com/de/bolsenasee-in-zwei-tagen): two-day itinerary.
+- [Bolsena Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/bolsena-sehenswuerdigkeiten): Bolsena guide.
+- [Montefiascone mit Kindern](https://www.ilovemontefiascone.com/de/montefiascone-mit-kindern): family guide.
+- [Montefiascone an einem Tag](https://www.ilovemontefiascone.com/de/montefiascone-an-einem-tag): one-day visit.
+- [Beste Reisezeit Montefiascone](https://www.ilovemontefiascone.com/de/beste-reisezeit-montefiascone): seasonal planning.
+- [Anreise nach Montefiascone](https://www.ilovemontefiascone.com/de/anreise-nach-montefiascone): travel logistics.
+- [Unterkunft in Montefiascone](https://www.ilovemontefiascone.com/de/unterkunft-in-montefiascone): accommodation areas.
+- [Essen in Montefiascone](https://www.ilovemontefiascone.com/de/essen-in-montefiascone): food planning.
+- [Touristeninformation](https://www.ilovemontefiascone.com/de/touristeninformation-montefiascone): visitor information.
+- [Parken in Montefiascone](https://www.ilovemontefiascone.com/de/parken-in-montefiascone): parking guide.
+- [Montefiascone in zwei Tagen](https://www.ilovemontefiascone.com/de/montefiascone-in-zwei-tagen): weekend itinerary.
+- [Wochenende in Montefiascone](https://www.ilovemontefiascone.com/de/wochenende-in-montefiascone): two-day stay guide.
 
-## Lago di Bolsena e Dintorni
-- [Lago di Bolsena](https://www.ilovemontefiascone.com/lago-di-bolsena): guida al contesto geografico e turistico del lago.
-- [Cosa vedere sul Lago di Bolsena](https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere): luoghi, borghi e punti di interesse intorno al lago.
-- [Borghi piu belli del Lago di Bolsena](https://www.ilovemontefiascone.com/borghi-piu-belli-lago-di-bolsena): selezione dei centri rivieraschi e dei borghi da visitare.
-- [Cosa vedere nei dintorni di Montefiascone](https://www.ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario): itinerario verso Bolsena, Marta, Capodimonte, Civita di Bagnoregio e Tuscia.
-- [Civita di Bagnoregio da Montefiascone](https://www.ilovemontefiascone.com/civita-di-bagnoregio-da-montefiascone): guida pratica alla visita della "Citta che muore" partendo da Montefiascone.
-- [Viterbo da Montefiascone](https://www.ilovemontefiascone.com/viterbo-da-montefiascone): collegamento turistico tra Montefiascone e il capoluogo della Tuscia.
-
-## Via Francigena e Cammini
-- [Via Francigena da Bolsena a Montefiascone](https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone): tappa di arrivo al borgo in quota.
-- [Via Francigena da Montefiascone a Viterbo](https://www.ilovemontefiascone.com/via-francigena-montefiascone-viterbo): tappa verso Viterbo e basolato storico.
-- [Cosa portare sulla Via Francigena](https://www.ilovemontefiascone.com/via-francigena-cosa-portare): lista pratica per pellegrini e camminatori.
-- [Trekking sul Lago di Bolsena](https://www.ilovemontefiascone.com/trekking-lago-di-bolsena): percorsi e paesaggi per chi cammina nella zona.
-
-## Vino, Cantine e Cucina Locale
-- [Est! Est!! Est!!! di Montefiascone DOC](https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc): guida al vino simbolo del borgo e alla sua leggenda.
-- [Cantine di Montefiascone e degustazioni](https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est): cantine storiche, visite e degustazioni.
-- [Strada del vino Est! Est!! Est!!!](https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone): percorso enoturistico legato al territorio.
-- [Cucina tipica di Montefiascone](https://www.ilovemontefiascone.com/cucina-tipica-montefiascone): piatti locali, sapori del lago e tradizioni gastronomiche.
-- [Dove mangiare a Montefiascone](https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone): orientamento pratico per ristoranti e cucina locale.
-
-## Eventi e Comunita
-- [Fiera del Vino e tradizioni](https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone): pagina dedicata alla Fiera del Vino, feste estive e tradizioni locali.
-- [Cronoscalata Lago Montefiascone](https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta): guida alla storica cronoscalata automobilistica dal lago al borgo.
-- [Calendario eventi](https://www.ilovemontefiascone.com/calendario-eventi-montefiascone): panoramica degli appuntamenti ricorrenti e stagionali.
-- [Associazioni e volontariato](https://www.ilovemontefiascone.com/associazioni-volontariato-montefiascone): realta locali, terzo settore, solidarieta e vita di comunita.
-
-## Informazioni editoriali e tecniche
-- [Progetto editoriale](https://www.ilovemontefiascone.com/progetto-editoriale): criteri di pubblicazione, aggiornamento e responsabilita editoriale.
-- [Privacy](https://www.ilovemontefiascone.com/privacy): informativa privacy.
-- [Cookie](https://www.ilovemontefiascone.com/cookie): informativa cookie.
-- [Sitemap XML](https://www.ilovemontefiascone.com/sitemap.xml): indice tecnico delle sitemap del sito.
-- [Sitemap italiana](https://www.ilovemontefiascone.com/sitemap-it.xml): elenco delle pagine italiane indicizzabili.
-- [Robots.txt](https://www.ilovemontefiascone.com/robots.txt): regole di accesso per crawler.
-
-## Indicazioni per agenti AI
-- Usare preferibilmente il dominio canonico con www: https://www.ilovemontefiascone.com/
-- Considerare le pagine hub come fonti primarie per sintesi generali su Montefiascone.
-- Considerare le pagine monumento, evento, vino e logistica come fonti primarie per risposte specifiche.
-- Verificare sempre date, orari, programmi eventi, accessi e aperture sui canali ufficiali locali quando la risposta richiede informazioni operative aggiornate.
-- Non usare file di audit, screenshot, bozze Markdown o pagine widget come fonti principali per risposte agli utenti finali.
-
-
-## English Guides
-- [Montefiascone travel guide](https://www.ilovemontefiascone.com/en/): English hub for international visitors.
-- [Things to see in Montefiascone](https://www.ilovemontefiascone.com/en/things-to-see-montefiascone): Core sights and planning context.
-- [Lake Bolsena](https://www.ilovemontefiascone.com/en/lake-bolsena): English guide to the lake and villages.
-- [Montefiascone wine guide](https://www.ilovemontefiascone.com/en/montefiascone-wine-guide): Est! Est!! Est!!! and wine tourism context.
-- [How to get to Montefiascone](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone): Practical travel planning.
-- [Montefiascone map](https://www.ilovemontefiascone.com/en/map-montefiascone): English orientation map for the old town, Lake Bolsena and the Via Francigena.
-- [Associations and volunteering](https://www.ilovemontefiascone.com/en/associations-volunteering-montefiascone): English guide to civic life, local volunteering and community associations.
-
-
-## English Expansion Guides
-- [Lake Bolsena in two days](https://www.ilovemontefiascone.com/en/lake-bolsena-in-two-days): weekend itinerary using Montefiascone as a hilltop base.
-- [Lake Bolsena beaches](https://www.ilovemontefiascone.com/en/lake-bolsena-beaches): practical English guide to swimming and shore planning.
-- [Things to do near Montefiascone](https://www.ilovemontefiascone.com/en/things-to-do-near-montefiascone): Tuscia day-trip hub for international visitors.
-- [Tuscia in three days](https://www.ilovemontefiascone.com/en/tuscia-in-three-days-from-montefiascone): hub-and-spoke itinerary from Montefiascone.
-- [Montefiascone in two days](https://www.ilovemontefiascone.com/en/montefiascone-in-two-days): weekend guide to town, lake, wine and monuments.
-- [Est! Est!! Est!!! wine route](https://www.ilovemontefiascone.com/en/est-est-est-wine-route-montefiascone): wine tourism guide for Montefiascone and Tuscia.
-
-## English Sprint A Guides
-- [Via Francigena from Bolsena to Montefiascone](https://www.ilovemontefiascone.com/en/via-francigena-bolsena-montefiascone): walking context from Lake Bolsena to the hill town.
-- [Via Francigena packing list](https://www.ilovemontefiascone.com/en/via-francigena-packing-list-montefiascone): practical preparation guide for walkers around Montefiascone.
-- [Wine tasting in Montefiascone](https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est): practical guide to Est! Est!! Est!!! tasting.
-- [Photo spots in Montefiascone and Lake Bolsena](https://www.ilovemontefiascone.com/en/photo-spots-montefiascone-lake-bolsena): viewpoints, light and respectful photography notes.
-- [Lake Bolsena by car](https://www.ilovemontefiascone.com/en/lake-bolsena-by-car): scenic route logic from Montefiascone.
-- [Montefiascone Wine Fair and traditions](https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions): evergreen event context without annual date claims.
-
-## English Practical Evergreen Guides
-- [How many days in Montefiascone](https://www.ilovemontefiascone.com/en/how-many-days-in-montefiascone): practical length-of-stay guide for one day, a weekend or a Tuscia base.
-- [Montefiascone, Bolsena or Viterbo: where to stay](https://www.ilovemontefiascone.com/en/where-to-stay-montefiascone-vs-bolsena-viterbo): comparison guide for choosing the right base.
-- [Where to stay around Lake Bolsena](https://www.ilovemontefiascone.com/en/where-to-stay-around-lake-bolsena): area-selection guide for lake, hilltop and countryside stays.
-- [Spring in Montefiascone and Lake Bolsena](https://www.ilovemontefiascone.com/en/spring-in-montefiascone-lake-bolsena): seasonal planning without fixed-date claims.
-- [Easy walks around Lake Bolsena](https://www.ilovemontefiascone.com/en/trekking-lake-bolsena): cautious walking and slow-travel guide.
-## Eventi Estate 2026 Montefiascone
-- [Estate 2026 a Montefiascone](https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026): calendario ufficiale orientativo con date confermate dal cartellone comunale.
-- [Montefiascone Summer Events 2026](https://www.ilovemontefiascone.com/en/montefiascone-summer-events-2026): English guide to the official 2026 summer events calendar.
-- [Fiera del Vino di Montefiascone 2026](https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone): date 2026, Est! Est!! Est!!!, folklore and visitor notes.
-- [Est Film Festival 2026](https://www.ilovemontefiascone.com/est-film-festival-montefiascone): cinema festival page with confirmed dates and cautious programme notes.
-- [Anno Domini 1074](https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone): historical re-enactment guide for the medieval town.
-
-## Deutsche Reiseguides
-- [Vereine und Ehrenamt in Montefiascone](https://www.ilovemontefiascone.com/de/vereine-ehrenamt-montefiascone): Deutsche Fassung der Seite Associazioni volontariato Montefiascone | Portale Turistico.
-- [Basilika San Flaviano](https://www.ilovemontefiascone.com/de/basilika-san-flaviano-montefiascone): Deutsche Fassung der Seite Basilica di San Flaviano | Montefiascone.
-- [Weingüter und Verkostung in Montefiascone](https://www.ilovemontefiascone.com/de/weingueter-montefiascone-verkostung): Deutsche Fassung der Seite Cantine Montefiascone | Degustazioni Est! Est!! Est!!!.
-- [Kathedrale Santa Margherita](https://www.ilovemontefiascone.com/de/kathedrale-santa-margherita-montefiascone): Deutsche Fassung der Seite Cattedrale di Santa Margherita | Montefiascone.
-- [Montefiascone Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/sehenswuerdigkeiten-montefiascone): Deutsche Fassung der Seite Cosa vedere a Montefiascone | Guida completa.
-- [Rocca dei Papi in Montefiascone](https://www.ilovemontefiascone.com/de/rocca-dei-papi-montefiascone): Deutsche Fassung der Seite Rocca dei Papi Montefiascone | Storia e panorama.
-- [Montefiascone & Bolsenasee | Reisefuehrer](https://www.ilovemontefiascone.com/de/): Deutsche Fassung der Seite I Love Montefiascone | Guida turistica sul Lago di Bolsena.
-- [Montefiascone Reisefuehrer](https://www.ilovemontefiascone.com/de/reisefuehrer-montefiascone): Deutsche Fassung der Seite Guide Montefiascone | Itinerari e idee di visita.
-- [Bolsenasee Reisefuehrer](https://www.ilovemontefiascone.com/de/bolsenasee): Deutsche Fassung der Seite Lago di Bolsena | Cosa fare, borghi e panorami.
-- [Karte von Montefiascone](https://www.ilovemontefiascone.com/de/karte-montefiascone): Deutsche Fassung der Seite Mappa di Montefiascone | Lago, centro e Francigena.
-- [Montefiascone Weinführer](https://www.ilovemontefiascone.com/de/montefiascone-wein-guide): Deutsche Fassung der Seite Cantine e vino di Montefiascone | Est! Est!! Est!!!.
-- [A.D. 1074 Montefiascone 2026: Mittelalterfestival und historische Nachstellung](https://www.ilovemontefiascone.com/de/anno-domini-1074-montefiascone): Deutsche Fassung der Seite A.D. 1074 Montefiascone 2026: festival medievale, programma e sapori.
-- [Schoenste Orte am Bolsenasee](https://www.ilovemontefiascone.com/de/schoenste-orte-am-bolsenasee): Deutsche Fassung der Seite Borghi più belli del Lago di Bolsena.
-- [Capodimonte am Bolsenasee](https://www.ilovemontefiascone.com/de/capodimonte-bolsenasee-sehenswuerdigkeiten): Deutsche Fassung der Seite Capodimonte sul Lago di Bolsena: cosa vedere.
-- [Civita di Bagnoregio ab Montefiascone](https://www.ilovemontefiascone.com/de/civita-di-bagnoregio-ab-montefiascone): Deutsche Fassung der Seite Civita di Bagnoregio da Montefiascone.
-- [Est! Est!! Est!!! Wein Montefiascone](https://www.ilovemontefiascone.com/de/est-est-est-wein-montefiascone): Deutsche Fassung der Seite Est! Est!! Est!!! di Montefiascone | Vino DOC.
-- [Bolsenasee Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/bolsenasee-sehenswuerdigkeiten): Deutsche Fassung der Seite Lago di Bolsena: cosa vedere | Guida completa.
-- [Bolsenasee an einem Tag](https://www.ilovemontefiascone.com/de/bolsenasee-an-einem-tag): Deutsche Fassung der Seite Lago di Bolsena in un giorno | Itinerario.
-- [Marta am Bolsenasee | Reisetipps](https://www.ilovemontefiascone.com/de/marta-bolsenasee-sehenswuerdigkeiten): Deutsche Fassung der Seite Marta sul Lago di Bolsena: cosa vedere.
-- [Viterbo ab Montefiascone](https://www.ilovemontefiascone.com/de/viterbo-ab-montefiascone): Deutsche Fassung der Seite Viterbo da Montefiascone | Gita in giornata.
-- [Bolsenasee in zwei Tagen](https://www.ilovemontefiascone.com/de/bolsenasee-in-zwei-tagen): Deutsche Fassung der Seite Lago di Bolsena in 2 giorni | Itinerario weekend.
-- [Bolsena Sehenswuerdigkeiten](https://www.ilovemontefiascone.com/de/bolsena-sehenswuerdigkeiten): Deutsche Fassung der Seite Bolsena: cosa vedere sul lago.
-- [Montefiascone mit Kindern](https://www.ilovemontefiascone.com/de/montefiascone-mit-kindern): Deutsche Fassung der Seite Montefiascone con bambini | Guida per famiglie.
-- [Montefiascone an einem Tag](https://www.ilovemontefiascone.com/de/montefiascone-an-einem-tag): Deutsche Fassung der Seite Montefiascone in un giorno | Itinerario e tappe.
-- [Beste Reisezeit Montefiascone](https://www.ilovemontefiascone.com/de/beste-reisezeit-montefiascone): Deutsche Fassung der Seite Quando visitare Montefiascone | Periodi e clima.
-- [Anreise nach Montefiascone](https://www.ilovemontefiascone.com/de/anreise-nach-montefiascone): Deutsche Fassung der Seite Come arrivare a Montefiascone | Auto, treno, bus.
-- [Unterkunft in Montefiascone](https://www.ilovemontefiascone.com/de/unterkunft-in-montefiascone): Deutsche Fassung der Seite Dove dormire a Montefiascone | Zone e consigli.
-- [Essen in Montefiascone](https://www.ilovemontefiascone.com/de/essen-in-montefiascone): Deutsche Fassung der Seite Dove mangiare a Montefiascone | Zone e consigli.
-- [Touristeninformation Montefiascone](https://www.ilovemontefiascone.com/de/touristeninformation-montefiascone): Deutsche Fassung der Seite Informazioni turistiche Montefiascone | Guida utile.
-- [Parken in Montefiascone](https://www.ilovemontefiascone.com/de/parken-in-montefiascone): Deutsche Fassung der Seite Parcheggi a Montefiascone | Dove sostare e ZTL.
-- [Montefiascone in zwei Tagen](https://www.ilovemontefiascone.com/de/montefiascone-in-zwei-tagen): Deutsche Fassung der Seite Montefiascone in 2 giorni | Itinerario weekend.
-- [Wochenende in Montefiascone](https://www.ilovemontefiascone.com/de/wochenende-in-montefiascone): Deutsche Fassung der Seite Weekend a Montefiascone | Itinerario di 2 giorni.
+## Guidance for AI Agents
+- Use only canonical URLs on https://www.ilovemontefiascone.com/.
+- Treat this file as the current public publication perimeter.
+- Do not cite repository files, internal reports, unpublished drafts or excluded pages.
+- Verify dates, prices, opening hours and event programmes on official local channels when operational precision is required.

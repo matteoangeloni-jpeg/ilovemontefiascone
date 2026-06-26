@@ -3,117 +3,89 @@ $ErrorActionPreference = "Stop"
 $root = if ($PSScriptRoot) { $PSScriptRoot } else { (Get-Location).Path }
 $outputDir = Join-Path $root "dist-it"
 
+# Public production perimeter: only the validated 32 IT / 32 EN / 32 DE pages.
 $rootFiles = @(
-  "montefiascone-in-primavera.html",
-  "montefiascone-in-autunno-vendemmia.html",
-  "montefiascone-in-inverno.html",
-  "lago-di-bolsena-in-autunno.html",
-  "llms.txt",
-  "weekend-romantico-lago-di-bolsena.html",
-  "cosa-fare-a-montefiascone-quando-piove.html",
-  "dove-vedere-il-tramonto-sul-lago-di-bolsena.html",
-  "esperienze-enogastronomiche-montefiascone.html",
-  "cosa-fare-la-sera-a-montefiascone.html",
-  "viaggio-lento-lago-di-bolsena.html",
-  "come-arrivare-a-montefiascone-da-viterbo.html",
-  "come-arrivare-a-montefiascone-da-orvieto.html",
-  "come-arrivare-a-montefiascone-da-firenze.html",
-  "via-francigena-bolsena-montefiascone.html",
-  "via-francigena-cosa-portare.html",
-  "san-lorenzo-nuovo-cosa-vedere-lago-di-bolsena.html",
-  "valentano-cosa-vedere-lago-di-bolsena.html",
-  "tuscania-da-montefiascone.html",
-  "caprarola-palazzo-farnese-da-montefiascone.html",
-  "villa-lante-bagnaia-da-montefiascone.html",
-  "montefiascone-senza-auto.html",
-  "gradoli-cosa-vedere-lago-di-bolsena.html",
-  "grotte-di-castro-cosa-vedere-lago-di-bolsena.html",
-  "degustazione-vino-montefiascone-come-funziona.html",
-  "strada-del-vino-est-est-est-montefiascone.html",
-  "trekking-lago-di-bolsena.html",
-  "lago-di-bolsena-in-bici.html",
-  "pesce-di-lago-lago-di-bolsena.html",
-  "dormire-centro-storico-montefiascone.html",
-  "mangiare-centro-storico-montefiascone.html",
-  "come-arrivare-a-montefiascone-da-roma.html",
-  "borghi-del-lago-di-bolsena-in-auto.html",
-  "lago-di-bolsena-in-2-giorni.html",
-  "tuscia-in-3-giorni-da-montefiascone.html",
-  "bomarzo-da-montefiascone.html",
-  "viterbo-da-montefiascone.html",
-  "calendario-eventi-montefiascone.html",
-  "concerto-banda-rb-revue-montefiascone.html",
-  "montefiascone-in-2-giorni.html",
-  "estate-sul-lago-di-bolsena.html",
-  "migliori-panorami-lago-di-bolsena.html",
+  "associazioni-volontariato-montefiascone.html",
+  "basilica-san-flaviano-montefiascone.html",
+  "cantine-montefiascone-degustazione-est-est-est.html",
+  "cattedrale-santa-margherita-montefiascone.html",
+  "cosa-vedere-montefiascone-guida-completa.html",
+  "rocca-dei-papi-montefiascone.html",
+  "index.html",
+  "guide.html",
+  "lago-di-bolsena.html",
+  "mappa.html",
+  "vino.html",
+  "anno-domini-1074-montefiascone.html",
+  "borghi-piu-belli-lago-di-bolsena.html",
+  "capodimonte-lago-di-bolsena-cosa-vedere.html",
   "civita-di-bagnoregio-da-montefiascone.html",
-  "lago-di-bolsena-con-bambini.html",
+  "est-est-est-montefiascone-vino-doc.html",
   "lago-di-bolsena-cosa-vedere.html",
   "lago-di-bolsena-in-un-giorno.html",
-  "borghi-piu-belli-lago-di-bolsena.html",
-  "bolsena-cosa-vedere.html",
   "marta-lago-di-bolsena-cosa-vedere.html",
-  "capodimonte-lago-di-bolsena-cosa-vedere.html",
-  "terme-viterbo-da-montefiascone.html",
-  "itinerario-auto-lago-di-bolsena.html",
-  "come-arrivare-a-montefiascone.html",
-  "parcheggi-montefiascone.html",
-  "informazioni-turistiche-montefiascone.html",
-  "quando-visitare-montefiascone.html",
-  "lago-di-bolsena.html",
-  "spiagge-lago-di-bolsena.html",
-  "borghi-lago-di-bolsena.html",
-  "montefiascone-in-un-giorno.html",
-  "weekend-a-montefiascone.html",
-  "via-francigena-montefiascone-viterbo.html",
-  "itinerario-fotografico-montefiascone.html",
+  "viterbo-da-montefiascone.html",
+  "lago-di-bolsena-in-2-giorni.html",
+  "bolsena-cosa-vedere.html",
   "montefiascone-con-bambini-famiglie.html",
-  "rocca-dei-papi-montefiascone.html",
-  "cattedrale-santa-margherita-montefiascone.html",
-  "basilica-san-flaviano-montefiascone.html",
-  "est-est-est-montefiascone-vino-doc.html",
-  "prodotti-tipici-montefiascone-tuscia.html",
-  "cucina-tipica-montefiascone.html",
+  "montefiascone-in-un-giorno.html",
+  "quando-visitare-montefiascone.html",
+  "come-arrivare-a-montefiascone.html",
   "dove-dormire-a-montefiascone.html",
   "dove-mangiare-a-montefiascone.html",
-  "sitemap-it.xml",
-  "sitemap-en.xml",`r`n  "sitemap-de.xml",
+  "informazioni-turistiche-montefiascone.html",
+  "parcheggi-montefiascone.html",
+  "montefiascone-in-2-giorni.html",
+  "weekend-a-montefiascone.html",
   "404.html",
-  "associazioni-volontariato-montefiascone.html",
-  "cantine-montefiascone-degustazione-est-est-est.html",
   "cookie.html",
-  "cosa-vedere-dintorni-montefiascone-itinerario.html",
-  "cosa-vedere-montefiascone-guida-completa.html",
-  "cosa-vedere.html",
-  "cronoscalata-montefiascone-coppa-citta.html",
-  "anno-domini-1074-montefiascone.html",
-  "atb-festival-montefiascone.html",
-  "est-film-festival-montefiascone.html",
-  "est-lake-festival-montefiascone.html",
-  "eventi-estate-montefiascone-2026.html",
-  "festa-santa-margherita-montefiascone.html",
-  "festival-ecologia-integrale-montefiascone.html",
-  "panorami-festival-montefiascone.html",
-  "enogastronomia-ricette-tipiche-montefiascone.html",
-  "eventi-tradizioni-fiera-del-vino-montefiascone.html",
-  "eventi.html",
-  "galleria.html",
-  "guide.html",
-  "index.html",
-  "itinerari-tematici-montefiascone.html",
+  "llms.txt",
   "manifest.json",
-  "mappa.html",
-  "montefiascone-lago-bolsena-spot-fotografici-aerei.html",
-  "monumenti-minori-chiese-storiche-montefiascone.html",
   "offline.html",
   "privacy.html",
-  "progetto-editoriale.html",
   "pwa-boot.js",
   "robots.txt",
   "sitemap.xml",
+  "sitemap-it.xml",
+  "sitemap-en.xml",
+  "sitemap-de.xml",
   "_redirects",
-  "sw.js",
-  "vino.html"
+  "sw.js"
+)
+
+$enFiles = @(
+  "en/associations-volunteering-montefiascone.html",
+  "en/basilica-san-flaviano-montefiascone.html",
+  "en/wine-tasting-montefiascone-est-est-est.html",
+  "en/cathedral-santa-margherita-montefiascone.html",
+  "en/things-to-see-montefiascone.html",
+  "en/rocca-dei-papi-montefiascone.html",
+  "en/index.html",
+  "en/montefiascone-travel-guide.html",
+  "en/lake-bolsena.html",
+  "en/map-montefiascone.html",
+  "en/montefiascone-wine-guide.html",
+  "en/anno-domini-1074-montefiascone.html",
+  "en/best-villages-on-lake-bolsena.html",
+  "en/capodimonte-lake-bolsena-things-to-see.html",
+  "en/civita-di-bagnoregio-from-montefiascone.html",
+  "en/est-est-est-montefiascone-doc-wine.html",
+  "en/what-to-see-on-lake-bolsena.html",
+  "en/lake-bolsena-in-one-day.html",
+  "en/marta-lake-bolsena-things-to-see.html",
+  "en/viterbo-from-montefiascone.html",
+  "en/lake-bolsena-in-two-days.html",
+  "en/bolsena-things-to-see.html",
+  "en/montefiascone-with-kids.html",
+  "en/montefiascone-in-one-day.html",
+  "en/best-time-to-visit-montefiascone.html",
+  "en/how-to-get-to-montefiascone.html",
+  "en/where-to-stay-in-montefiascone.html",
+  "en/where-to-eat-in-montefiascone.html",
+  "en/tourist-information-montefiascone.html",
+  "en/parking-in-montefiascone.html",
+  "en/montefiascone-in-two-days.html",
+  "en/weekend-in-montefiascone.html"
 )
 
 $deFiles = @(
@@ -156,9 +128,23 @@ $directories = @(
   "css",
   "icons",
   "js",
-  "media",
-  "en"
+  "media"
 )
+
+function Copy-PublicFile($file) {
+  $source = Join-Path $root $file
+  if (-not (Test-Path $source)) {
+    throw "Missing required public file: $file"
+  }
+
+  $destination = Join-Path $outputDir $file
+  $destinationDir = Split-Path -Parent $destination
+  if ($destinationDir -and -not (Test-Path $destinationDir)) {
+    New-Item -ItemType Directory -Path $destinationDir -Force | Out-Null
+  }
+
+  Copy-Item -LiteralPath $source -Destination $destination -Force
+}
 
 if (Test-Path $outputDir) {
   Remove-Item -LiteralPath $outputDir -Recurse -Force
@@ -166,26 +152,9 @@ if (Test-Path $outputDir) {
 
 New-Item -ItemType Directory -Path $outputDir | Out-Null
 
-foreach ($file in $rootFiles) {
-  $source = Join-Path $root $file
-  if (-not (Test-Path $source)) {
-    throw "Missing required file: $file"
-  }
-  Copy-Item -LiteralPath $source -Destination (Join-Path $outputDir $file) -Force
-}
-
-foreach ($file in $deFiles) {
-  $source = Join-Path $root $file
-  if (-not (Test-Path $source)) {
-    throw "Missing required DE perimeter file: $file"
-  }
-  $destination = Join-Path $outputDir $file
-  $destinationDir = Split-Path -Parent $destination
-  if (-not (Test-Path $destinationDir)) {
-    New-Item -ItemType Directory -Path $destinationDir -Force | Out-Null
-  }
-  Copy-Item -LiteralPath $source -Destination $destination -Force
-}
+foreach ($file in $rootFiles) { Copy-PublicFile $file }
+foreach ($file in $enFiles) { Copy-PublicFile $file }
+foreach ($file in $deFiles) { Copy-PublicFile $file }
 
 foreach ($directory in $directories) {
   $source = Join-Path $root $directory
@@ -195,4 +164,4 @@ foreach ($directory in $directories) {
   Copy-Item -LiteralPath $source -Destination (Join-Path $outputDir $directory) -Recurse -Force
 }
 
-Write-Host "Soft launch package created in $outputDir"
+Write-Host "Strict trilingual package created in $outputDir"
