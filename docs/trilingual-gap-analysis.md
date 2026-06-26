@@ -9,16 +9,16 @@ Branch: `feature/de-articles-expansion`
 | --- | ---: | ---: |
 | IT URLs in public sitemap | 97 | 97 |
 | EN URLs in public sitemap | 77 | 79 |
-| DE source pages | 32 | 32 |
-| Complete IT/EN/DE equivalences | 29 | 31 |
+| DE source pages | 32 | 33 |
+| Complete IT/EN/DE equivalences | 29 | 32 |
 | EN gaps against IT | 29 | 20 |
-| DE gaps against IT | 65 | 63 |
+| DE gaps against IT | 65 | 62 |
 | EN pages to review | 26 | 0 |
 | DE pages to review | 0 | 0 |
 
 ## Publication Gate
 
-DE publication is **not prepared** in this sprint. The corpus is still not symmetrical: IT has 97 public sitemap URLs, EN has 79, and DE has 32 source pages. DE must remain excluded from the public build, sitemap, hreflang, language switcher and `llms.txt`. FR remains not started.
+DE publication is **not prepared** in this sprint. The corpus is still not symmetrical: IT has 97 public sitemap URLs, EN has 79, and DE has 33 source pages. DE must remain excluded from the public build, sitemap, hreflang, language switcher and `llms.txt`. FR remains not started.
 
 ## P0 Gaps and Actions
 
@@ -32,7 +32,6 @@ DE publication is **not prepared** in this sprint. The corpus is still not symme
 
 | Priority | Type | IT page | EN status | DE status | Recommended action |
 | --- | --- | --- | --- | --- | --- |
-| P1 | evento | https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone | presente | assente | Create DE equivalent before DE publication. |
 | P1 | evento | https://www.ilovemontefiascone.com/atb-festival-montefiascone | presente | assente | Create DE equivalent before DE publication. |
 | P1 | evento | https://www.ilovemontefiascone.com/calendario-eventi-montefiascone | assente | assente | Create EN and DE equivalents before parity. |
 | P1 | evento | https://www.ilovemontefiascone.com/concerto-banda-rb-revue-montefiascone | assente | assente | Create EN and DE equivalents before parity. |
@@ -86,6 +85,9 @@ DE publication is **not prepared** in this sprint. The corpus is still not symme
 - Added reciprocal EN signals to the corresponding IT pages.
 - Updated `sitemap-en.xml` and `llms.txt` for the new EN pages only.
 - Regenerated the trilingual matrix with explicit metadata, JSON-LD, H1, headings, image-alt and internal-link checks.
+- Updated A.D. 1074 / Anno Domini 1074 in IT and EN with richer visitor content, cautious programme details and complete Event JSON-LD.
+- Added the DE source-only page `de/anno-domini-1074-montefiascone.html`.
+- Added a source-only DE internal link from `de/veranstaltungen-montefiascone.html` to the new A.D. 1074 page.
 
 ## Guardrails Still Active
 
@@ -98,6 +100,6 @@ DE publication is **not prepared** in this sprint. The corpus is still not symme
 
 ## QA Note Outside This Branch
 
-- Event structured data is still incomplete on this branch because the dedicated fix exists separately on `fix/event-structured-data`.
-- Current Event QA on this branch finds 19 Event-like nodes, with 18 still missing `startDate` and `location`.
+- Event structured data is still incomplete on this branch outside the A.D. 1074 page family because the dedicated fix exists separately on `fix/event-structured-data`.
+- Current Event QA on this branch is expected to improve for A.D. 1074 only; the remaining Event nodes still require the dedicated structured-data branch before production merge.
 - Do not merge this content branch to production until the Event structured data fix is integrated through a controlled merge sequence.
