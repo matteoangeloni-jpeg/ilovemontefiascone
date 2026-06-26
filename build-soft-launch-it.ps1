@@ -77,7 +77,7 @@ $rootFiles = @(
   "dove-dormire-a-montefiascone.html",
   "dove-mangiare-a-montefiascone.html",
   "sitemap-it.xml",
-  "sitemap-en.xml",
+  "sitemap-en.xml",`r`n  "sitemap-de.xml",
   "404.html",
   "associazioni-volontariato-montefiascone.html",
   "cantine-montefiascone-degustazione-est-est-est.html",
@@ -116,6 +116,41 @@ $rootFiles = @(
   "vino.html"
 )
 
+$deFiles = @(
+  "de/vereine-ehrenamt-montefiascone.html",
+  "de/basilika-san-flaviano-montefiascone.html",
+  "de/weingueter-montefiascone-verkostung.html",
+  "de/kathedrale-santa-margherita-montefiascone.html",
+  "de/sehenswuerdigkeiten-montefiascone.html",
+  "de/rocca-dei-papi-montefiascone.html",
+  "de/index.html",
+  "de/reisefuehrer-montefiascone.html",
+  "de/bolsenasee.html",
+  "de/karte-montefiascone.html",
+  "de/montefiascone-wein-guide.html",
+  "de/anno-domini-1074-montefiascone.html",
+  "de/schoenste-orte-am-bolsenasee.html",
+  "de/capodimonte-bolsenasee-sehenswuerdigkeiten.html",
+  "de/civita-di-bagnoregio-ab-montefiascone.html",
+  "de/est-est-est-wein-montefiascone.html",
+  "de/bolsenasee-sehenswuerdigkeiten.html",
+  "de/bolsenasee-an-einem-tag.html",
+  "de/marta-bolsenasee-sehenswuerdigkeiten.html",
+  "de/viterbo-ab-montefiascone.html",
+  "de/bolsenasee-in-zwei-tagen.html",
+  "de/bolsena-sehenswuerdigkeiten.html",
+  "de/montefiascone-mit-kindern.html",
+  "de/montefiascone-an-einem-tag.html",
+  "de/beste-reisezeit-montefiascone.html",
+  "de/anreise-nach-montefiascone.html",
+  "de/unterkunft-in-montefiascone.html",
+  "de/essen-in-montefiascone.html",
+  "de/touristeninformation-montefiascone.html",
+  "de/parken-in-montefiascone.html",
+  "de/montefiascone-in-zwei-tagen.html",
+  "de/wochenende-in-montefiascone.html"
+)
+
 $directories = @(
   "assets",
   "css",
@@ -137,6 +172,19 @@ foreach ($file in $rootFiles) {
     throw "Missing required file: $file"
   }
   Copy-Item -LiteralPath $source -Destination (Join-Path $outputDir $file) -Force
+}
+
+foreach ($file in $deFiles) {
+  $source = Join-Path $root $file
+  if (-not (Test-Path $source)) {
+    throw "Missing required DE perimeter file: $file"
+  }
+  $destination = Join-Path $outputDir $file
+  $destinationDir = Split-Path -Parent $destination
+  if (-not (Test-Path $destinationDir)) {
+    New-Item -ItemType Directory -Path $destinationDir -Force | Out-Null
+  }
+  Copy-Item -LiteralPath $source -Destination $destination -Force
 }
 
 foreach ($directory in $directories) {

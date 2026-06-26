@@ -2,14 +2,15 @@
 
 Updated: 2026-06-26
 Branch: `feature/de-articles-expansion`
-Publication note: DE remains source-only and excluded from the public build. FR is not started.
+Publication note: DE is prepared for a 32-page validated public perimeter. FR is not started.
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| Total IT URLs in public sitemap | 97 |
-| Total EN URLs in public sitemap | 79 |
+| Total IT URLs in public sitemap | 32 |
+| Total EN URLs in public sitemap | 32 |
+| Total DE URLs in public sitemap | 32 |
 | Total DE source pages | 33 |
 | Pages with IT/EN/DE equivalence | 32 |
 | IT pages without EN equivalent | 20 |
@@ -20,8 +21,8 @@ Publication note: DE remains source-only and excluded from the public build. FR 
 
 ## Reading Rules
 
-- IT/EN counts come from `sitemap-it.xml` and `sitemap-en.xml`; DE is source-only because it is intentionally unpublished.
-- DE URLs are source/planned URLs only: they are not in the public build, public sitemap, hreflang or `llms.txt`.
+- IT/EN/DE public counts come from the language sitemaps and represent the strict trilingual perimeter.
+- DE URLs are public only for the validated perimeter; non-perimeter DE source pages remain unpublished.
 - `present` means the file exists with title, meta description and H1 and no obvious mojibake.
 - `da revisionare` means the file exists but basic QA found mojibake or a missing core metadata/content field.
 

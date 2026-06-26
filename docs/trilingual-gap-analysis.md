@@ -7,8 +7,8 @@ Branch: `feature/de-articles-expansion`
 
 | Metric | Before sprint | Current |
 | --- | ---: | ---: |
-| IT URLs in public sitemap | 97 | 97 |
-| EN URLs in public sitemap | 77 | 79 |
+| IT URLs in public sitemap | 97 | 32 |
+| EN URLs in public sitemap | 77 | 32 |
 | DE source pages | 32 | 33 |
 | Complete IT/EN/DE equivalences | 29 | 32 |
 | EN gaps against IT | 29 | 20 |
@@ -18,7 +18,7 @@ Branch: `feature/de-articles-expansion`
 
 ## Publication Gate
 
-DE publication is **not prepared** in this sprint. The corpus is still not symmetrical: IT has 97 public sitemap URLs, EN has 79, and DE has 33 source pages. DE must remain excluded from the public build, sitemap, hreflang, language switcher and `llms.txt`. FR remains not started.
+DE publication is prepared as a **strict symmetric perimeter**: IT, EN and DE each expose 32 validated URLs in their language sitemap. DE is included only for the approved perimeter; FR remains not started. Extra IT/EN source pages remain outside the trilingual sitemap perimeter until matching equivalents are ready.
 
 ## P0 Gaps and Actions
 
@@ -93,7 +93,7 @@ DE publication is **not prepared** in this sprint. The corpus is still not symme
 
 - No `/fr/` directory or `sitemap-fr.xml`.
 - No `/de/` in the public build.
-- No `sitemap-de.xml`.
+- `sitemap-de.xml` is generated for the 32-page validated DE perimeter.
 - No DE hreflang in live IT/EN pages.
 - No DE URLs in `llms.txt`.
 - No merge to `main` and no deployment.
