@@ -208,6 +208,7 @@ const SUNNY_CODES = new Set([0, 1, 2]);
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
+  initShareBar();
   scheduleContextualWeather();
 });
 
@@ -238,6 +239,174 @@ function initNav() {
     toggle.setAttribute("aria-expanded", String(!expanded));
     nav.classList.toggle("is-open", !expanded);
   });
+}
+
+function initShareBar() {
+  if (document.querySelector("[data-share-bar]")) return;
+
+  const path =
+    window.location.pathname
+      .replace(/\/index\.html$/, "/")
+      .replace(/\.html$/, "")
+      .replace(/\/+$/, "") || "/";
+  const excludedPaths = new Set(["/", "/en", "/en/", "/privacy", "/cookie", "/offline", "/404"]);
+  if (excludedPaths.has(path)) return;
+
+  const detailHeroContent = document.querySelector(".detail-hero__content");
+  const target =
+    detailHeroContent?.closest(".detail-hero__panel") ||
+    document.querySelector(".content-card .content-stack") ||
+    document.querySelector("main .card");
+
+  if (!target) return;
+
+  const lang = document.documentElement.lang.slice(0, 2).toLowerCase() === "en" ? "en" : "it";
+  const copy = {
+    it: {
+      title: "Condividi",
+      native: "Condividi",
+      copy: "Copia link",
+      copied: "Link copiato",
+      cancelled: "",
+      labels: {
+        whatsapp: "Condividi su WhatsApp",
+        facebook: "Condividi su Facebook",
+        twitter: "Condividi su X",
+        telegram: "Condividi su Telegram",
+        linkedin: "Condividi su LinkedIn"
+      }
+    },
+    en: {
+      title: "Share",
+      native: "Share",
+      copy: "Copy link",
+      copied: "Link copied",
+      cancelled: "",
+      labels: {
+        whatsapp: "Share on WhatsApp",
+        facebook: "Share on Facebook",
+        twitter: "Share on X",
+        telegram: "Share on Telegram",
+        linkedin: "Share on LinkedIn"
+      }
+    }
+  }[lang];
+
+  const canonical = document.querySelector('link[rel="canonical"]')?.href || window.location.href.split("#")[0];
+  const title =
+    document.querySelector('meta[property="og:title"]')?.content ||
+    document.querySelector('meta[name="twitter:title"]')?.content ||
+    document.title;
+  const description =
+    document.querySelector('meta[property="og:description"]')?.content ||
+    document.querySelector('meta[name="description"]')?.content ||
+    "";
+
+  const shareTargets = [
+    {
+      key: "whatsapp",
+      label: "WhatsApp",
+      url: `https://wa.me/?text=${encodeURIComponent(`${title} ${canonical}`)}`
+    },
+    {
+      key: "facebook",
+      label: "Facebook",
+      url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonical)}`
+    },
+    {
+      key: "twitter",
+      label: "X",
+      url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(canonical)}&text=${encodeURIComponent(title)}`
+    },
+    {
+      key: "telegram",
+      label: "Telegram",
+      url: `https://t.me/share/url?url=${encodeURIComponent(canonical)}&text=${encodeURIComponent(title)}`
+    },
+    {
+      key: "linkedin",
+      label: "LinkedIn",
+      url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonical)}`
+    }
+  ];
+
+  const shareBar = document.createElement("section");
+  shareBar.className = "share-bar";
+  shareBar.setAttribute("data-share-bar", "");
+  shareBar.setAttribute("aria-labelledby", "share-bar-title");
+  shareBar.innerHTML = `
+    <div class="share-bar__header">
+      <h2 id="share-bar-title">${copy.title}</h2>
+      <p class="share-bar__status" aria-live="polite" data-share-status></p>
+    </div>
+    <div class="share-bar__actions">
+      <button class="share-bar__button share-bar__button--primary" type="button" data-native-share aria-label="${copy.native}">${copy.native}</button>
+      <button class="share-bar__button" type="button" data-copy-share aria-label="${copy.copy}">${copy.copy}</button>
+      ${shareTargets
+        .map(
+          (item) =>
+            `<a class="share-bar__button" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="${copy.labels[item.key]}">${item.label}</a>`
+        )
+        .join("")}
+    </div>
+  `;
+
+  target.insertAdjacentElement("afterend", shareBar);
+
+  const status = shareBar.querySelector("[data-share-status]");
+  const nativeButton = shareBar.querySelector("[data-native-share]");
+  const copyButton = shareBar.querySelector("[data-copy-share]");
+
+  if (!navigator.share) {
+    nativeButton.hidden = true;
+  }
+
+  nativeButton?.addEventListener("click", async () => {
+    if (!navigator.share) return;
+    try {
+      await navigator.share({ title, text: description, url: canonical });
+    } catch (error) {
+      if (error?.name !== "AbortError" && status) {
+        status.textContent = "";
+      }
+    }
+  });
+
+  copyButton?.addEventListener("click", async () => {
+    const copied = await copyToClipboard(canonical);
+    if (copied && status) {
+      status.textContent = copy.copied;
+      window.setTimeout(() => {
+        status.textContent = "";
+      }, 2800);
+    }
+  });
+}
+
+async function copyToClipboard(text) {
+  if (navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch {
+      /* fallback below */
+    }
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.inset = "auto auto 0 0";
+  textarea.style.opacity = "0";
+  document.body.appendChild(textarea);
+  textarea.select();
+
+  try {
+    return document.execCommand("copy");
+  } finally {
+    textarea.remove();
+  }
 }
 
 async function initContextualWeather() {

@@ -701,6 +701,99 @@ dl {
   gap: 0.75rem;
 }
 
+.share-bar {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, var(--surface-strong) 0%, var(--tufo-50) 100%);
+  box-shadow: 0 0.6rem 1.8rem rgba(45, 45, 45, 0.06);
+}
+
+.detail-hero__panel + .share-bar,
+.detail-hero__content + .share-bar {
+  margin-top: 1rem;
+}
+
+.share-bar__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.share-bar__header h2 {
+  color: var(--rosso);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.share-bar__status {
+  min-height: 1.25rem;
+  color: var(--blu-lago);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.share-bar__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.share-bar__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+  padding: 0 0.85rem;
+  border: 1px solid rgba(44, 94, 109, 0.2);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--blu-lago);
+  cursor: pointer;
+  font: 800 0.82rem/1 var(--font-body);
+  text-decoration: none;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.share-bar__button:hover {
+  transform: translateY(-1px);
+  border-color: var(--blu-lago);
+  background: rgba(44, 94, 109, 0.08);
+  color: var(--blu-lago-700);
+}
+
+.share-bar__button--primary {
+  border-color: var(--blu-lago);
+  background: var(--blu-lago);
+  color: #ffffff;
+}
+
+.share-bar__button--primary:hover {
+  background: var(--rosso);
+  border-color: var(--rosso);
+  color: #ffffff;
+}
+
+@media (max-width: 35rem) {
+  .share-bar__actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .share-bar__button {
+    width: 100%;
+    padding-inline: 0.65rem;
+  }
+}
+
 .map-copy,
 .map-note {
   color: var(--text-soft);
