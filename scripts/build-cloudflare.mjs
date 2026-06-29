@@ -1,4 +1,4 @@
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readdirSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
@@ -7,20 +7,67 @@ const scriptDir = dirname(fileURLToPath(import.meta.url));
 const root = resolve(scriptDir, "..");
 const outputDir = join(root, "dist-it");
 
-function readPowerShellArray(source, name) {
-  const match = source.match(new RegExp(`\\$${name}\\s*=\\s*@\\(([^]*?)\\)`, "m"));
-  if (!match) {
-    throw new Error(`Missing ${name} array in build-soft-launch-it.ps1`);
-  }
+const technicalRootFiles = new Set([
+  "404.html",
+  "cookie.html",
+  "offline.html",
+  "privacy.html",
+]);
 
-  return [...match[1].matchAll(/"([^"]+)"/g)].map((item) => item[1]);
+const supportRootFiles = [
+  "llms.txt",
+  "manifest.json",
+  "pwa-boot.js",
+  "robots.txt",
+  "sitemap.xml",
+  "sitemap-it.xml",
+  "sitemap-en.xml",
+  "sitemap-de.xml",
+  "_redirects",
+  "sw.js",
+];
+
+const nonPublicRootHtml = new Set([
+  "base.html",
+  "cruscotto-del-viaggiatore-widget.html",
+  "mappa-topografica-montefiascone-leaflet.html",
+  "quiz-itinerario-tuscia-widget.html",
+]);
+
+const nonPublicEnHtml = new Set([
+  "how-many-days-in-montefiascone.html",
+  "where-to-stay-around-lake-bolsena.html",
+  "where-to-stay-montefiascone-vs-bolsena-viterbo.html",
+]);
+
+const directories = [
+  "assets",
+  "css",
+  "icons",
+  "js",
+  "media",
+];
+
+function listHtml(dir) {
+  return readdirSync(dir, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".html"))
+    .map((entry) => entry.name)
+    .sort();
 }
 
-const psBuild = readFileSync(join(root, "build-soft-launch-it.ps1"), "utf8");
-const rootFiles = readPowerShellArray(psBuild, "rootFiles");
-const enFiles = readPowerShellArray(psBuild, "enFiles");
-const directories = readPowerShellArray(psBuild, "directories");
-const deFiles = readPowerShellArray(psBuild, "deFiles");
+const rootFiles = [
+  ...listHtml(root).filter(
+    (file) => !technicalRootFiles.has(file) && !nonPublicRootHtml.has(file),
+  ),
+  ...[...technicalRootFiles],
+  ...supportRootFiles,
+];
+
+const enFiles = listHtml(join(root, "en"))
+  .filter((file) => !nonPublicEnHtml.has(file))
+  .map((file) => `en/${file}`);
+
+const deFiles = listHtml(join(root, "de")).map((file) => `de/${file}`);
 
 rmSync(outputDir, { recursive: true, force: true });
 mkdirSync(outputDir, { recursive: true });
@@ -41,26 +88,16 @@ for (const directory of directories) {
   cpSync(source, join(outputDir, directory), { recursive: true, force: true });
 }
 
-for (const file of enFiles) {
+for (const file of [...enFiles, ...deFiles]) {
   const source = join(root, file);
   if (!existsSync(source)) {
-    throw new Error(`Missing required EN perimeter file: ${file}`);
+    throw new Error(`Missing required perimeter file: ${file}`);
   }
-
   const destination = join(outputDir, file);
   mkdirSync(dirname(destination), { recursive: true });
   cpSync(source, destination, { force: true });
 }
 
-for (const file of deFiles) {
-  const source = join(root, file);
-  if (!existsSync(source)) {
-    throw new Error(`Missing required DE perimeter file: ${file}`);
-  }
-
-  const destination = join(outputDir, file);
-  mkdirSync(dirname(destination), { recursive: true });
-  cpSync(source, destination, { force: true });
-}
-
-console.log(`Cloudflare package created in ${outputDir}`);
+console.log(
+  `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length})`,
+);
