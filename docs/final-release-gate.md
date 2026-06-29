@@ -225,8 +225,11 @@ Post-resolution browser smoke test:
 
 Micro-fix applied during this gate:
 
-- no technical micro-fix was required
-- only the `14` target DE pages were expanded in content scope
+- no technical micro-fix was required during the original feature gate
+- during integration conflict resolution, two localized event-calendar pages were corrected to use the existing shared gallery asset path:
+  - `en/montefiascone-events-calendar.html`
+  - `de/veranstaltungskalender-montefiascone.html`
+- the `14` target DE pages expanded in content scope remain intact after merge resolution
 
 Operational-only actions during the gate:
 
