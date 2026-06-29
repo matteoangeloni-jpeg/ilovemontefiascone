@@ -1282,6 +1282,59 @@ dl {
 }
 
 @media (max-width: 47.99rem) {
+  .header__inner,
+  .nav-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.7rem 0.5rem;
+  }
+
+  .brand {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: clamp(1.2rem, 5.7vw, 1.45rem);
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
+
+  .header__actions {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    margin-left: 0;
+  }
+
+  .nav-toggle {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
+    order: initial;
+  }
+
+  .site-nav {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    order: initial;
+  }
+
+  .lang-switcher {
+    gap: 0.25rem;
+  }
+
+  .lang-switcher a {
+    min-width: 2rem;
+    padding-inline: 0.35rem;
+  }
+
+  .hero__grid,
+  .detail-hero__grid,
+  .hero__panel,
+  .detail-hero__panel,
+  .hero__content,
+  .detail-hero__content {
+    min-width: 0;
+  }
+
   .page-hero {
     padding: 1rem 0 0.75rem;
   }
@@ -1291,12 +1344,16 @@ dl {
   }
 
   .page-hero__content--floating {
+    width: calc(100% - 1.7rem);
+    max-width: none;
+    min-width: 0;
     padding: 1.55rem 1.2rem;
     margin: 0.85rem;
   }
 
   .page-hero__content--floating h1 {
     font-size: clamp(1.85rem, 9vw, 2.35rem);
+    overflow-wrap: anywhere;
   }
 
   .page-hero__content--floating p {
