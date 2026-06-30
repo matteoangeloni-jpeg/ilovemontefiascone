@@ -1,4 +1,12 @@
-import { cpSync, existsSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import {
+  cpSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
@@ -55,6 +63,48 @@ function listHtml(dir) {
     .sort();
 }
 
+function addAttribute(tag, name, value) {
+  const attribute = new RegExp(`\\s${name}=(['"])[^'"]*\\1`, "i");
+  if (attribute.test(tag)) {
+    return tag.replace(attribute, ` ${name}="${value}"`);
+  }
+  return tag.replace(/\s*\/?\s*>$/, ` ${name}="${value}">`);
+}
+
+function optimizePublicHtml(html) {
+  let optimized = html.replace(
+    /<link\b(?=[^>]*href=["']https:\/\/fonts\.googleapis\.com\/css2[^"']*["'])[^>]*>/gi,
+    (tag) => {
+      const href = tag.match(/href=["']([^"']+)["']/i)?.[1];
+      if (!href) return tag;
+      return `<link rel="preload" as="style" href="${href}" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="${href}"/></noscript>`;
+    },
+  );
+
+  optimized = optimized.replaceAll("/css/style.css", "/css/style.min.css");
+  optimized = optimized.replace(
+    /<source\s+srcset=["']\/media\/hero-rocca-dei-papi-1600\.webp["']\s+type=["']image\/webp["']\s*\/?\s*>/gi,
+    '<source srcset="/media/hero-rocca-dei-papi-640.webp 640w, /media/hero-rocca-dei-papi-768.webp 768w, /media/hero-rocca-dei-papi-1280.webp 1280w, /media/hero-rocca-dei-papi-1600.webp 1600w" sizes="100vw" type="image/webp">',
+  );
+
+  const hero = /<(?:section|header)\b[^>]*class=["'][^"']*\b(?:hero|detail-hero)\b[^"']*["'][^>]*>/i.exec(
+    optimized,
+  );
+  if (!hero) return optimized;
+
+  const sectionEnd = optimized.indexOf("</section>", hero.index);
+  const imageStart = optimized.indexOf("<img", hero.index);
+  if (imageStart < 0 || (sectionEnd >= 0 && imageStart > sectionEnd)) return optimized;
+
+  const imageEnd = optimized.indexOf(">", imageStart);
+  if (imageEnd < 0) return optimized;
+
+  let imageTag = optimized.slice(imageStart, imageEnd + 1);
+  imageTag = addAttribute(imageTag, "loading", "eager");
+  imageTag = addAttribute(imageTag, "fetchpriority", "high");
+  return `${optimized.slice(0, imageStart)}${imageTag}${optimized.slice(imageEnd + 1)}`;
+}
+
 const rootFiles = [
   ...listHtml(root).filter(
     (file) => !technicalRootFiles.has(file) && !nonPublicRootHtml.has(file),
@@ -96,6 +146,18 @@ for (const file of [...enFiles, ...deFiles]) {
   const destination = join(outputDir, file);
   mkdirSync(dirname(destination), { recursive: true });
   cpSync(source, destination, { force: true });
+}
+
+const publicHtmlFiles = [
+  ...rootFiles.filter((file) => file.endsWith(".html")),
+  ...enFiles,
+  ...deFiles,
+];
+
+for (const file of publicHtmlFiles) {
+  const destination = join(outputDir, file);
+  const html = readFileSync(destination, "utf8");
+  writeFileSync(destination, optimizePublicHtml(html), "utf8");
 }
 
 console.log(
