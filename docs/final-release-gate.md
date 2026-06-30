@@ -1,7 +1,7 @@
 # Final Release Gate
 
-Updated: 2026-06-29  
-Branch: `release/trilingual-public-gate-merge-resolution`  
+Updated: 2026-06-30  
+Branch: `main`  
 Scope: static repo `ilovemontefiascone.com` only. The separate Next.js project `D:/ilovemontefiascone` is out of scope.
 
 ## Verdict
@@ -9,6 +9,21 @@ Scope: static repo `ilovemontefiascone.com` only. The separate Next.js project `
 **READY**
 
 The public technical perimeter is stable, the build passes, and the previously documented German thin-content blocker has now been closed.
+
+## Final Main Merge
+
+- Readiness commit: `783e213` (`Finalize publishing readiness gate`).
+- Merge commit on `main`: `8f2d2d6` (`Merge final publishing readiness gate`).
+- Merge result: clean, with no conflicts.
+- Post-merge build: PASS (`97 IT / 97 EN / 97 DE`).
+- Public perimeter: 291 pages plus 4 technical HTML pages.
+- Sitemap and `llms.txt`: `97 / 97 / 97`.
+- Full post-merge QA: zero broken internal links, zero `.html` internal links, zero invalid JSON-LD, zero incomplete Event nodes, zero missing referenced assets, zero mojibake, zero placeholders and zero DE pages below 220 words.
+- Responsive smoke test: 34/34 passes across 17 representative IT/EN/DE pages at mobile and desktop viewports; no horizontal overflow.
+- Deploy: not executed.
+- Next operational step: controlled deploy from `main`, followed by live URL, sitemap, redirect and responsive verification.
+
+Historical integration notes below describe the pre-merge gate; this section is the authoritative final state on `main`.
 
 ## Integration Resolution
 

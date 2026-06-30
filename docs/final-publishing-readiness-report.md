@@ -1,7 +1,7 @@
 # Final Publishing Readiness Report
 
-Updated: 2026-06-29  
-Branch: `release/trilingual-public-gate-merge-resolution`  
+Updated: 2026-06-30  
+Branch: `main`  
 Scope: static repository `ilovemontefiascone.com`; `D:/ilovemontefiascone` excluded.
 
 ## Final Decision
@@ -9,6 +9,17 @@ Scope: static repository `ilovemontefiascone.com`; `D:/ilovemontefiascone` exclu
 **READY WITH IMAGE NOTES**
 
 The 97/97/97 public perimeter is technically ready for controlled merge and deploy. No P0 image is missing. Publication is not blocked, but a post-launch photography programme is recommended because a limited set of hero images is reused across many distinct intents.
+
+## Post-Merge Addendum
+
+- Readiness commit `783e213` was merged cleanly into `main`.
+- Merge commit: `8f2d2d6`.
+- Post-merge build and full-corpus QA reconfirmed `97 IT / 97 EN / 97 DE`, 291 public pages and 4 technical pages.
+- Sitemap and `llms.txt` counts remain `97 / 97 / 97`.
+- Technical regressions found: 0.
+- Responsive smoke test: 34/34 passes across 17 representative pages in mobile and desktop viewports.
+- Final decision remains **READY WITH IMAGE NOTES**.
+- Deploy was not executed. The next step is a controlled deploy from `main` followed by live verification.
 
 ## Final Counts
 
