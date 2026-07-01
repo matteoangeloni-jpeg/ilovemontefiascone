@@ -2,7 +2,40 @@
 
 ## Verdetto
 
-**READY a livello repo/build.** Tutti i gate locali e post-merge sono verdi. **QA live non verificabile da questa sandbox** (limite di rete, vedi sotto) — non dichiarato "READY live" per questo motivo esplicito. Vedi in fondo lo stato di merge/push/deploy.
+**READY a livello repo/build.** Tutti i gate locali e post-merge sono verdi, incluso il cleanup DOM di `/eventi` (quarto giro). **QA live non verificabile da questa sandbox** (limite di rete, vedi sotto) — non dichiarato "READY live" per questo motivo esplicito. La discrepanza segnalata sulla pagina EN Estate 2026 è stata diagnosticata come deploy/cache per-path su Cloudflare, non un bug di source/build (vedi addendum quarto giro). Vedi in fondo lo stato di merge/push/deploy.
+
+## Addendum — quarto giro (diagnosi deploy/cache EN + cleanup DOM `/eventi`)
+
+Dopo il terzo giro (fix separatori, mergiato e pushato come `b476288`), un controllo esterno sul live ha mostrato una situazione differenziata per lingua:
+
+- **IT Estate 2026**: aggiornata, separatori presenti, pattern vietati assenti.
+- **DE Estate 2026**: aggiornata, tabella/card presenti, separatori presenti.
+- **EN Estate 2026** (`/en/montefiascone-summer-events-2026`): ancora i vecchi pattern (`2026Open`, `Wine Fair guide Cinema`, `Film Festival guide Lake`, `Est-Lake guide Heritage`) e ancora il testo `Official source and method`.
+
+### Diagnosi EN: source e build sono corretti, causa è a valle
+
+- **EN source**: verificato — `en/montefiascone-summer-events-2026.html` ha lo stesso numero di separatori (`visually-hidden`) della versione IT (27 occorrenze in entrambi i file), agli stessi boundary (`</td><td`, `</th><th`, `</article>`→`<article class="card">`). Nessuna differenza strutturale rispetto a IT.
+- **EN build**: verificato — `dist-it/en/montefiascone-summer-events-2026.html` contiene esattamente lo stesso HTML del source per i boundary a rischio (confermato byte-per-byte sul frammento `Open the Wine Fair guide</a>\n</article><span class="visually-hidden"> — </span>\n<article class="card">`), quindi il separatore è presente sia nel source sia nel build.
+- **`check-semantic-text.mjs`** include la pagina EN in entrambe le liste (`PAGES` e `SOURCE_FILES`, riga 38) e la esegue regolarmente: 0 fallimenti, anche dopo un rebuild pulito eseguito espressamente per questa verifica.
+- **Verifica pattern esatti** (script ad-hoc): nessuno dei pattern segnalati (`2026Open`, `Wine Fair guide Cinema`, `Film Festival guide Lake`, `Est-Lake guide Heritage`, `Official source and method`) è presente né in `textContent` grezzo né whitespace-collapsed su IT/EN/DE/`/eventi` nel build appena generato.
+- **Prova indipendente e decisiva**: la stringa `Official source and method` **non esiste più nel repository da diversi commit** — è stata sostituita in `Official sources and method` nel commit `e6590ce` ("Finalize event content enrichment"), poi evoluta ulteriormente fino all'attuale `How to read this calendar`. `e6590ce` è un antenato diretto di `HEAD`/`main` (verificato con `git merge-base --is-ancestor`). Il fatto che il live mostri ancora testo precedente a `e6590ce` — cioè più vecchio di qualunque lavoro fatto in questa serie di round — è una conferma indipendente e inequivocabile che **il problema è la pubblicazione (deploy/cache) della singola pagina EN, non il codice**.
+
+**Conclusione EN: source corretto, build corretto, causa probabile = cache/deploy per-path su Cloudflare specifico per questa URL.** Nessun hotfix di contenuto applicato a EN, IT o DE in questo giro (nessuno era necessario).
+
+### Cleanup DOM `/eventi`: candidati di rotazione esposti come markup reale
+
+Controllo indipendente richiesto su `/eventi`: il featured principale (Festival dell'Ecologia Integrale) è corretto, ma il markup sorgente conteneva **10 blocchi "In evidenza" pre-renderizzati** (uno per ogni evento candidato alla rotazione, più il fallback) dentro elementi `<template data-event-id="...">`, ciascuno con un vero `<h2>` con il nome dell'evento, teaser, immagine, ecc.
+
+Questo è invisibile e corretto per un browser reale: la semantica HTML5 di `<template>` esclude il suo contenuto dall'albero DOM attivo, quindi `document.body.textContent`/`innerText` letti da Playwright non lo includevano mai (per questo la QA precedente, basata su browser reale, risultava pulita). **Ma non tutti gli estrattori di testo rispettano questa semantica**: un tag-stripper naive (regex `<[^>]+>` senza gestione speciale di `<template>`), o un parser HTML che tratta `<template>` come un contenitore generico (comportamento comune in parser non aggiornati alla spec HTML5), leggono il contenuto come markup normale — esponendo 10 sezioni "In evidenza" con titoli reali, apparendo come contenuto duplicato/contraddittorio su quale sia l'evento davvero in corso. Verificato concretamente: un estrattore naive che stringa solo i tag (senza escludere `<script>`) trovava il titolo del featured event duplicato.
+
+**Fix applicato**: i 10 blocchi alternativi non sono più markup HTML reale (niente più `<template>`, niente più `<h2>`/`<p>` duplicati nel sorgente). Sono ora serializzati come stringhe HTML dentro un payload JSON (`<script type="application/json" id="featured-event-alternates">`), esattamente come già avveniva per il manifest date/id. Questo sfrutta una convenzione molto più universale e consolidata di quella di `<template>`: qualunque estrattore di testo, anche il più naive, esclude o comunque non presenta come "contenuto" il testo dentro tag `<script>` — è la convenzione più antica e diffusa nell'ecosistema di conversione HTML→testo, a differenza della gestione di `<template>` che è una specifica più recente e meno uniformemente implementata.
+
+- `scripts/select-featured-event.mjs`: `updateHub()` ora costruisce un oggetto `{ eventId: htmlString, ..., fallback: htmlString }` e lo serializza con una nuova funzione `toInlineJson()` (uguale a `JSON.stringify` ma con `<` escappato in `<`, per sicurezza contro un'eventuale sequenza `</script>` nel payload). Rimossi il contenitore `<div id="featured-event-alternates" hidden>` e i tag `<template>`.
+- `js/featured-event-runtime.js`: la funzione `run()` ora fa `JSON.parse` anche del payload alternates (non più `querySelector('template[...]')` + `cloneNode`) e usa `section.innerHTML = alternates[winnerId]` — stesso identico HTML già generato dal build script, nessun contenuto nuovo generato lato client.
+- Verificato che la riconciliazione runtime funziona ancora correttamente con il nuovo formato: test con orologio simulato (`Date` sovrascritto a `2026-07-10`, dopo la fine del Festival dell'Ecologia Integrale) mostra correttamente lo scambio verso **ATB Festival**, con un solo `<h2>` presente nella sezione dopo lo scambio (nessuna duplicazione introdotta dallo swap).
+- Verificato con un estrattore naive realistico (tag-stripping con esclusione di `<script>`/`<style>`, la convenzione quasi universale): il titolo del featured event ora compare **una sola volta** nel testo estratto da `/eventi` (prima: 2 volte anche con questa convenzione più permissiva; con un naive extractor che non esclude affatto `<script>`, prima appariva raddoppiato come markup reale in tutte le 10 sezioni, ora appare solo come stringa JSON illeggibile, non come sezione HTML strutturata).
+- QA rieseguita: build 97/97/97, 5/5 scenari rotazione, `check-semantic-text.mjs` pulito, verifica pattern-esatti pulita, smoke test visivo 16/16 pulito.
+- Perimetro invariato: solo 3 file toccati in questo giro (`eventi.html`, `js/featured-event-runtime.js`, `scripts/select-featured-event.mjs`), nessun file IT/EN/DE Estate 2026 toccato perché già corretti.
 
 ## Addendum — terzo giro (bug reale di concatenazione testo: causa e fix)
 

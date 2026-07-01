@@ -53,12 +53,15 @@
     if (!section || !manifestEl || !alternatesEl) return;
 
     var events;
+    var alternates;
     try {
       events = JSON.parse(manifestEl.textContent);
+      alternates = JSON.parse(alternatesEl.textContent);
     } catch (err) {
       return;
     }
     if (!Array.isArray(events) || events.length === 0) return;
+    if (!alternates || typeof alternates !== "object") return;
 
     var todayIso = new Date().toISOString().slice(0, 10);
     var winner = pickFeaturedEvent(events, todayIso);
@@ -67,11 +70,10 @@
 
     if (winnerId === currentId) return;
 
-    var template = alternatesEl.querySelector('template[data-event-id="' + winnerId + '"]');
-    if (!template || !template.content) return;
+    var html = alternates[winnerId];
+    if (typeof html !== "string") return;
 
-    section.innerHTML = "";
-    section.appendChild(template.content.cloneNode(true));
+    section.innerHTML = html;
     section.setAttribute("data-event-id", winnerId);
   }
 
