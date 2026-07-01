@@ -2,7 +2,82 @@
 
 ## Verdetto
 
-**READY.** Tutti i gate locali e post-merge sono verdi. Vedi in fondo lo stato di merge/push/deploy.
+**READY a livello repo/build.** Tutti i gate locali e post-merge sono verdi. **QA live non verificabile da questa sandbox** (limite di rete, vedi sotto) — non dichiarato "READY live" per questo motivo esplicito. Vedi in fondo lo stato di merge/push/deploy.
+
+## Addendum — terzo giro (bug reale di concatenazione testo: causa e fix)
+
+Dopo il secondo giro (chiuso con report "READY"), il live ha continuato a mostrare gli stessi pattern di concatenazione vietati: `19, 20 e 21 giugno 2026Apri scheda`, `Apri la guida alla Fiera del Vino Cinema`, `19., 20. und 21. Juni 2026Seite öffnen`, `Zum Weinfest Kino`, ecc.
+
+### Causa reale
+
+**Non** è un problema di deploy Cloudflare, cache stantia, o build non allineata al source: è stato verificato direttamente che i pattern vietati **erano già presenti nel `dist-it` locale generato da `npm run build:cloudflare`**, quindi il problema era a monte, nel source stesso.
+
+La causa reale è che **il test semantico usato nei giri precedenti era troppo debole**: verificava `document.body.innerText`, che è un'API sensibile al CSS/layout — il browser inserisce automaticamente interruzioni di riga tra elementi di blocco (`<td>`, `<article>`, `<div>`) anche quando l'HTML sorgente non ha alcun carattere di separazione tra i tag adiacenti. Questo faceva apparire "pulito" un output che, letto con `document.body.textContent` (l'API CSS-agnostica, molto più vicina a come un crawler reale, un estrattore di testo per AI, o un "seleziona tutto + copia" leggono davvero la pagina) o dopo una normalizzazione whitespace-collapse (comunissima in qualunque pipeline di estrazione testo), produce esattamente le concatenazioni segnalate live:
+
+- **Boundary `</td><td>`** nella tabella calendario: zero caratteri tra una cella e la successiva nel markup sorgente → `innerText` inseriva un a-capo implicito (nascondendo il problema), `textContent` no.
+- **Boundary `</th><th>`** nell'intestazione della tabella (`Termine 2026` + `Seite` → `2026Seite` una volta collassato lo spazio bianco).
+- **Boundary `</dd></div><div><dt>`** nelle liste `summary-list` ("Kurz gesagt"/"In breve").
+- **Boundary `</article>` → `<article class="card">`** tra le card tematiche: qui esisteva un vero newline nel sorgente, ma qualunque normalizzazione whitespace (`\s+` → spazio singolo) lo collassa in un solo spazio, producendo l'esatto pattern segnalato ("...alla Fiera del Vino Cinema", CTA della card 1 seguita a un solo spazio dal badge categoria della card 2).
+
+### Confronto source / dist-it / live
+
+| Livello | Pattern vietati presenti? |
+|---|---|
+| Source (pre-fix) | Sì — confermato con `document.body.textContent` su `dist-it` servito localmente |
+| dist-it (pre-fix, generato da `npm run build:cloudflare`) | Sì — stesso identico bug del source, il build non introduce né corregge il problema |
+| Live (segnalato dall'utente) | Sì — coerente al 100% con quanto trovato in source/dist-it: **non è un problema di cache o deploy Cloudflare**, è un bug reale già presente nel codice mergiato |
+
+Verificato quindi che le ipotesi "Cloudflare non ha deployato" e "cache vecchia" sono da escludere: il bug è riproducibile localmente, a colpo sicuro, partendo dal source appena buildato, senza alcuna rete.
+
+### Fix applicato (reale nel DOM, non CSS)
+
+Come richiesto esplicitamente, il fix inserisce **separatori testuali reali** come nodi di testo nel DOM — non spaziatura CSS, non `::before`/`::after` con `content`, che non sarebbero comparsi in `textContent`. Riusa la classe utility già esistente `.visually-hidden` (definita in `css/style.css`, nessun CSS nuovo introdotto) per non alterare la resa visiva per gli utenti vedenti, applicata a un vero carattere di separazione (em dash) inserito come figlio DOM reale a ogni boundary a rischio:
+
+```html
+<span class="visually-hidden"> — </span>
+```
+
+Questo testo è presente in `textContent`, in `innerText`, nell'HTML grezzo e per gli screen reader in tutti i casi; è **anche visibile a schermo se il CSS non viene caricato affatto** (requisito esplicito "leggibile anche senza CSS"), perché senza le regole di `.visually-hidden` il testo torna semplicemente visibile nel flusso normale.
+
+Punti di inserimento:
+1. **Costante nel generatore build-time** (`scripts/select-featured-event.mjs`): la funzione che genera il blocco `<dl>` dei fatti dell'evento in evidenza ora inserisce il separatore dentro ogni `<dd>`, prima della sua chiusura — questo copre sia il blocco visibile sia **ogni** `<template>` alternativo pre-renderizzato per la riconciliazione runtime, e sopravvive a ogni rebuild futuro (a differenza di una modifica manuale diretta a `eventi.html`, che verrebbe sovrascritta).
+2. **Tabelle calendario** (IT/EN/DE Estate 2026): separatore inserito dentro l'ultima cella prima di ogni `</td><td` e `</th><th` (intestazione compresa).
+3. **Card tematiche** (IT/EN/DE Estate 2026): separatore inserito tra un `</article>` e l'`<article class="card">` successivo.
+4. **Liste "Kurz gesagt"/"In breve"** (`summary-list`): separatore inserito a ogni boundary `</dd>` → `</div><div><dt>`, incluse due pagine secondarie tedesche toccate in giri precedenti (`de/est-film-festival-montefiascone.html`, `de/cronoscalata-lago-montefiascone.html`), trovate tramite una scansione difensiva più ampia.
+
+### Pattern eliminati (verificati)
+
+Tutti i pattern esplicitamente elencati come "devono diventare impossibili" sono stati verificati assenti, sia in `textContent` grezzo sia dopo whitespace-collapse, su IT/EN/DE:
+
+`2026Apri`, `2026Seite`, `2026Open`, `2026Öffnen`, `2026Oeffnen`, `Fiera del Vino Cinema`, `Est Film Festival Lago`, `Est-Lake Tradizione`, `Zum Weinfest Kino`, `Zum Est Film Festival See`, più varianti equivalenti (`Cinema Lago`, `Lago Tradizione`, `Wine Cinema`, `Cinema Lake`, `Wein Kino`, `Kino See`).
+
+### Tooling: test semantico riscritto
+
+`scripts/check-semantic-text.mjs` è stato riscritto per non poter più nascondere questa classe di bug:
+1. **Controllo strutturale sul source grezzo**: scansiona i file HTML sorgente (non tramite browser) cercando boundary `</td><td>`, `</th><th>`, `</dd></div><div><dt>` e `</article>`→`<article class="card">` **non** preceduti dal separatore invisibile, tramite regex con lookbehind negativo.
+2. **Controllo su testo renderizzato**: carica le 5 pagine primarie in un browser reale (Playwright) e verifica `document.body.textContent`, sia grezzo sia dopo whitespace-collapse, contro l'elenco esteso dei pattern vietati (inclusi quelli segnalati live testualmente).
+
+Entrambi i controlli sono ora obbligatori e il risultato è verde su tutte le pagine coinvolte.
+
+### File modificati in questo giro
+
+- `scripts/select-featured-event.mjs` — separatore invisibile aggiunto alla generazione del blocco `<dl>` fatti evento (fix "alla fonte", si propaga a ogni rebuild).
+- `eventi-estate-montefiascone-2026.html`, `en/montefiascone-summer-events-2026.html`, `de/sommerveranstaltungen-montefiascone-2026.html` — separatori a ogni boundary `<td>`/`<th>`/`<article>` a rischio nella tabella calendario e nelle card tematiche.
+- `eventi.html` — rigenerato dal build script (riflette il fix di `select-featured-event.mjs`); inoltre corretti i boundary `<dd>` nelle liste `summary-list` statiche presenti nel file.
+- `de/est-film-festival-montefiascone.html`, `de/cronoscalata-lago-montefiascone.html` — separatore aggiunto al boundary `<dd>` residuo nella rispettiva lista "Kurz gesagt", trovato con una scansione difensiva.
+- `scripts/check-semantic-text.mjs` — riscritto: controllo strutturale sul source + controllo `textContent` renderizzato (grezzo e whitespace-collapsed), sostituendo il precedente controllo basato solo su `innerText`.
+
+### QA di questo giro
+
+- `npm run build:cloudflare`: verde, 97/97/97, 5/5 scenari di rotazione con data simulata superati.
+- `scripts/check-semantic-text.mjs`: verde — 0 boundary strutturali non separati, 0 pattern vietati nel `textContent` renderizzato (grezzo e whitespace-collapsed) su tutte le 5 pagine primarie.
+- Verifica diretta dei pattern esatti segnalati live (script ad-hoc, non committato) contro `textContent` grezzo e whitespace-collapsed di IT/EN/DE: tutto pulito.
+- Batteria standard di QA sito (295 file): 0 link rotti, 0 link interni `.html`, 0 asset mancanti, 0 JSON-LD invalidi, 0 problemi di completezza Event, 0 mismatch canonical/`og:url`, 0 problemi hreflang, 0 riferimenti FR, 0 mojibake.
+- QA visiva: 16/16 controlli puliti (8 pagine × 2 viewport). Screenshot dedicati di `.table-wrap` e `.media-card-grid--3` confermano che i separatori invisibili non producono alcun artefatto visivo (nessun trattino o spazio visibile fuori posto).
+
+### QA live
+
+**Non verificabile da questa sandbox.** L'accesso di rete verso `www.ilovemontefiascone.com` è bloccato dalla policy dell'ambiente (conferma ripetuta: connessioni verso il dominio live vanno in timeout/`403 policy denial` tramite il proxy). Questo è un limite d'ambiente già documentato nei giri precedenti, non un'evidenza sullo stato del sito reale. Si raccomanda una verifica manuale esterna delle pagine elencate nel task (in particolare Estate 2026 IT/EN/DE) dopo il deploy, confermando in particolare l'assenza dei pattern elencati sopra tramite "seleziona tutto + copia" o un estrattore di testo reale — non tramite ispezione visiva, che non avrebbe rilevato questo bug nemmeno prima del fix.
 
 ## Addendum — secondo giro (parità strutturale Estate 2026 DE)
 
@@ -147,4 +222,11 @@ Nessuna nuova richiesta rispetto ai task precedenti (restano valide le richieste
 - **Deploy rilevato:** no, non verificabile da questa sessione. Nessun workflow GitHub Actions in questo repository (`list_workflows` → `total_count: 0`) e accesso di rete generico bloccato dalla policy della sandbox (`403 policy denial` su `www.ilovemontefiascone.com`, confermato subito dopo il push tramite `$HTTPS_PROXY/__agentproxy/status`). Questo è lo stesso limite d'ambiente riscontrato in tutti i merge precedenti su questo repository — non è un'evidenza di deploy fallito. Il push è andato a buon fine: se Cloudflare Pages è collegato al repo con autodeploy, il deploy è atteso e dovrebbe avvenire automaticamente, in modo indipendente da questa sessione.
 - **QA live (Task 17):** non eseguita per il motivo sopra. Nessuna delle URL live richieste è stata controllata in questa sessione.
 - **Blocker residui:** nessuno di codice/repo; solo l'impossibilità di verificare deploy e QA live da questa sandbox. Si raccomanda una verifica manuale esterna (dashboard Cloudflare Pages + controllo diretto delle URL elencate nel Task 17), con particolare attenzione a `/de/sommerveranstaltungen-montefiascone-2026` per confermare che la nuova tabella/card siano visibili in produzione.
-- **Commit main finale:** `518ad59` (contenuto) → aggiornamento report in arrivo in un commit successivo.
+
+### Terzo giro (fix reale concatenazione testo: causa root `innerText` vs `textContent`)
+- **Causa reale confermata:** bug presente nel source/dist-it, non nel deploy/cache Cloudflare (vedi sezione dedicata sopra).
+- **Merge su main:** vedi commit hash aggiornati di seguito.
+- **QA post-merge:** batteria completa rieseguita su `main` dopo il merge (build 97/97/97, QA semantica strutturale + renderizzata su tutte le 5 pagine primarie, verifica diretta pattern vietati, link/JSON-LD/hreflang/mojibake, QA visiva 16/16).
+- **Push:** vedi commit hash aggiornati di seguito.
+- **Deploy rilevato:** no, stesso limite d'ambiente dei giri precedenti — accesso di rete verso `www.ilovemontefiascone.com` bloccato dalla policy della sandbox.
+- **QA live:** non eseguibile da questa sessione per lo stesso motivo. Non dichiarato "READY live".
