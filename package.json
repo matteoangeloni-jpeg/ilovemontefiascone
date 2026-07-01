@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build:cloudflare": "node scripts/build-cloudflare.mjs"
+    "build:cloudflare": "node scripts/select-featured-event.mjs && node scripts/build-cloudflare.mjs"
   },
   "private": true
 }
