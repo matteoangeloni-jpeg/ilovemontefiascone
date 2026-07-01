@@ -225,8 +225,8 @@ Nessuna nuova richiesta rispetto ai task precedenti (restano valide le richieste
 
 ### Terzo giro (fix reale concatenazione testo: causa root `innerText` vs `textContent`)
 - **Causa reale confermata:** bug presente nel source/dist-it, non nel deploy/cache Cloudflare (vedi sezione dedicata sopra).
-- **Merge su main:** vedi commit hash aggiornati di seguito.
-- **QA post-merge:** batteria completa rieseguita su `main` dopo il merge (build 97/97/97, QA semantica strutturale + renderizzata su tutte le 5 pagine primarie, verifica diretta pattern vietati, link/JSON-LD/hreflang/mojibake, QA visiva 16/16).
-- **Push:** vedi commit hash aggiornati di seguito.
-- **Deploy rilevato:** no, stesso limite d'ambiente dei giri precedenti — accesso di rete verso `www.ilovemontefiascone.com` bloccato dalla policy della sandbox.
+- **Merge su main:** sì — commit `1c3ef91` (merge di `86e8d64`), nessun conflitto.
+- **QA post-merge:** verde — build `npm run build:cloudflare` rieseguito su `main` dopo il merge (97/97/97, 5/5 scenari rotazione), `scripts/check-semantic-text.mjs` pulito su `dist-it` (0 boundary strutturali non separati, 0 pattern vietati in `textContent` grezzo/whitespace-collapsed su tutte le 5 pagine primarie), verifica diretta pattern esatti segnalati live pulita anche su `/eventi.html` e `/calendario-eventi-montefiascone.html`, QA sito completa su 295 file (0 link rotti, 0 link `.html` interni, 0 asset mancanti, 0 JSON-LD invalidi, 0 mismatch canonical/`og:url`, 0 hreflang `fr`, 0 riferimenti FR, 0 mojibake, 0 placeholder reali, `/fr/` e `sitemap-fr.xml` assenti), QA visiva 16/16 (8 pagine × 2 viewport) pulita.
+- **Push:** sì — `f0eeda7..1c3ef91 main -> main`.
+- **Deploy rilevato:** no, stesso limite d'ambiente dei giri precedenti — accesso di rete verso `www.ilovemontefiascone.com` bloccato dalla policy della sandbox (confermato di nuovo dopo il push).
 - **QA live:** non eseguibile da questa sessione per lo stesso motivo. Non dichiarato "READY live".
