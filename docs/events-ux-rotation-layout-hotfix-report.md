@@ -4,7 +4,20 @@
 
 **READY.** Tutti i gate locali e post-merge sono verdi. Vedi in fondo lo stato di merge/push/deploy.
 
-## Problemi trovati (Task 2 — audit prima del fix)
+## Addendum — secondo giro (parità strutturale Estate 2026 DE)
+
+Dopo il primo giro di questo hotfix (rotazione, test, correzione data Cronoscalata, fix tono/umlaut tedesco), un riesame più approfondito ha rilevato un problema concreto non ancora coperto: **la pagina `de/sommerveranstaltungen-montefiascone-2026.html` non aveva né la tabella calendario né la sezione "card tematiche"**, a differenza delle versioni IT/EN che le hanno entrambe. Era l'unico vero gap strutturale rimasto tra le tre lingue, ed è esattamente ciò che il task chiedeva di controllare ("tabella calendario... EN/DE equivalenti"; "card tematiche").
+
+Fix applicato in questo giro:
+
+- Aggiunta la sezione **"Offizieller Sommerkalender 2026"** (tabella `data-table`/`table-wrap`, stessa struttura responsive di IT/EN: colonne con padding su desktop, card etichettate su mobile), con le stesse 10 righe/date già confermate su IT/EN, tradotte in tedesco naturale (nessuna data nuova, nessun dato inventato). Riga dell'evento già concluso marcata `is-past` come nelle altre lingue.
+- Aggiunta la sezione **"Veranstaltungen nach Thema"** (griglia di 6 card tematiche: Wein, Kino, See, Tradition, Motorsport, Familie und Kultur), stessa struttura e stesso pattern CTA (`.nav-card__link`) delle versioni IT/EN, markup con whitespace reale tra gli elementi (nessuna concatenazione).
+- Tutti i link interni verificati esistenti prima di inserirli (9 pagine evento tedesche, tutte confermate presenti).
+- Verificato con `scripts/check-semantic-text.mjs`: pulito, nessuna concatenazione, nessun testo da audit.
+- Verificato visivamente desktop/mobile: 0 overflow, struttura identica a IT/EN.
+- Perimetro invariato: nessuna nuova pagina creata (la tabella e le card sono sezioni aggiunte dentro la pagina DE già esistente, non nuovi URL).
+
+## Problemi trovati (Task 2 — audit prima del fix, primo giro)
 
 | Area | Problema | Come è stato verificato |
 |---|---|---|
