@@ -2,7 +2,62 @@
 
 ## Verdetto
 
-**READY a livello repo/build.** Tutti i gate locali e post-merge sono verdi, incluso il cleanup DOM di `/eventi` (quarto giro). **QA live non verificabile da questa sandbox** (limite di rete, vedi sotto) — non dichiarato "READY live" per questo motivo esplicito. La discrepanza segnalata sulla pagina EN Estate 2026 è stata diagnosticata come deploy/cache per-path su Cloudflare, non un bug di source/build (vedi addendum quarto giro). Vedi in fondo lo stato di merge/push/deploy.
+**READY a livello repo/build.** Tutti i gate locali e post-merge sono verdi, incluso il cleanup DOM di `/eventi` (quarto giro) e la semantica autonoma delle card tematiche (quinto giro). **QA live non verificabile da questa sandbox** (limite di rete, vedi sotto) — non dichiarato "READY live" per questo motivo esplicito. La discrepanza segnalata sulla pagina EN Estate 2026 è stata diagnosticata come deploy/cache per-path su Cloudflare, non un bug di source/build (vedi addendum quarto giro). Vedi in fondo lo stato di merge/push/deploy.
+
+## Addendum — quinto giro (card tematiche semanticamente autonome)
+
+Dopo il quarto giro, un controllo esterno ha confermato che rotazione e tabella calendario sono corrette sul live, ma ha segnalato che le card "Eventi in evidenza per tema" / "Events by travel theme" / equivalente DE restavano semanticamente ambigue nel testo estratto nonostante il separatore "—" avesse già eliminato la concatenazione tecnica: `Apri la guida alla Fiera del Vino — Cinema`, `Open the Wine Fair guide — Cinema`, ecc. — la categoria della card successiva sembrava appartenere alla CTA precedente.
+
+### Fix applicato
+
+Ogni card nelle tre pagine Estate 2026 (IT/EN/DE) ora porta, tramite la stessa classe `.visually-hidden` già usata nel resto del task (invisibile a schermo, reale nel DOM, leggibile senza CSS):
+- un prefisso nascosto `Tema:` / `Theme:` / `Thema:` prima del badge di categoria;
+- un punto nascosto dopo il badge di categoria;
+- un punto nascosto dopo il titolo (`<h3>`);
+- un punto nascosto dopo il testo della CTA.
+
+Il separatore generico "—" tra una card e la successiva è stato rimosso: non serve più, perché ogni card ora si chiude con una punteggiatura reale prima che inizi la prossima (che a sua volta si apre con `Tema:`/`Theme:`/`Thema:`), rendendo il confine autoesplicativo senza bisogno di un separatore neutro.
+
+Risultato in `textContent` (verificato su `dist-it` con Playwright, grezzo e whitespace-collapsed):
+
+- IT: `Tema: Enogastronomia. Fiera del Vino. Il riferimento estivo per collegare centro storico, cantine, tradizioni falische e racconto dell'Est! Est!! Est!!!. Apri la guida alla Fiera del Vino. Tema: Cinema. Est Film Festival. Una settimana dedicata al cinema...`
+- EN: `Theme: Wine. Montefiascone Wine Fair. The seasonal reference point for the old town, local cellars, Faliscan traditions and the Est! Est!! Est!!! story. Open the Wine Fair guide. Theme: Cinema. Est Film Festival. A cinema-focused week...`
+- DE: `Thema: Wein. Weinfest von Montefiascone. Der saisonale Fixpunkt für Altstadt, lokale Kellereien, faliskische Traditionen und die Geschichte des Est! Est!! Est!!!. Zum Weinfest. Thema: Kino. Est Film Festival. Eine Filmwoche...`
+
+Ogni card è ora leggibile come blocco autonomo, senza ambiguità su quale categoria o CTA appartenga a quale evento.
+
+### Pattern vietati (finali) verificati assenti
+
+`Fiera del Vino — Cinema`, `Est Film Festival — Lago`, `Est-Lake — Tradizione`, `Wine Fair guide — Cinema`, `Est Film Festival guide — Lake`, `Est-Lake guide — Heritage`, `Weinfest — Kino`, `Est Film Festival — See`, `Est-Lake — Tradition` — nessuno presente, né in `textContent` grezzo né whitespace-collapsed, su IT/EN/DE.
+
+### Tono audit alleggerito
+
+- IT (FAQ Estate 2026): `Questa guida conserva solo il quadro pubblico gia confermato...` → `Qui trovi le date principali del cartellone. Orari, accessi e dettagli operativi possono essere aggiornati dagli organizzatori: controlla sempre i canali ufficiali prima della visita.` Anche la risposta sulla fonte del calendario è stata resa meno "da audit" (`incrociato con canali ufficiali` → `insieme ai canali ufficiali...quando disponibili`).
+- EN (FAQ Estate 2026): `cross-checked with official event channels where available` / `This guide keeps only the public framework already confirmed` → `together with the official channels of each event where available` / `This page summarises the main confirmed dates. Times, access details and operational information may change, so check official channels before travelling.`
+- DE: nessuna frase in tono audit residua trovata nel file (l'info-box "So liest du den Kalender" era già in tono naturale; la pagina non ha una sezione FAQ propria).
+
+### Tooling aggiornato
+
+`scripts/check-semantic-text.mjs`:
+- il controllo strutturale sul boundary `<article>`→`<article class="card">` ora riconosce il nuovo confine basato su punteggiatura reale (periodo nascosto) invece di richiedere il vecchio separatore a trattino, mantenendo comunque il rilevamento di qualunque boundary non sicuro;
+- la lista `BAD_PATTERNS` include ora anche le esatte varianti "— Categoria" segnalate dal vivo;
+- `AUDIT_TONE_PATTERNS` è stata ampliata (`questa guida conserva solo`, `conserva solo il quadro pubblico`, `this guide keeps only`, `cross-checked with official`) per non perdere varianti di formulazione come già successo in precedenza.
+
+### File modificati in questo giro
+
+- `eventi-estate-montefiascone-2026.html`, `en/montefiascone-summer-events-2026.html`, `de/sommerveranstaltungen-montefiascone-2026.html` — card tematiche riscritte con prefisso/punteggiatura nascosti, separatore a trattino rimosso; FAQ IT/EN alleggerite dal tono audit.
+- `scripts/check-semantic-text.mjs` — check strutturale aggiornato per il nuovo confine, pattern vietati e audit-tone ampliati.
+
+### QA di questo giro
+
+- `npm run build:cloudflare`: verde, 97/97/97, 5/5 scenari di rotazione.
+- Sitemap IT/EN/DE: 97/97/97. `llms.txt`: 97/97/97. `/fr/` e `sitemap-fr.xml`: assenti.
+- `check-semantic-text.mjs`: verde su tutte le 5 pagine primarie.
+- Verifica pattern-esatti + snippet attesi (script ad-hoc Playwright): tutti i pattern vietati assenti, tutte le frasi attese presenti in `textContent` su IT/EN/DE.
+- QA sito 295 file: 0 link rotti, 0 link `.html` interni, 0 asset mancanti, 0 JSON-LD invalidi, 0 mismatch canonical/`og:url`, 0 hreflang/FR, 0 mojibake, 0 placeholder reali.
+- QA visiva: 16/16 pulita (smoke test) + screenshot dedicati della griglia card tematiche su IT/EN/DE, desktop e mobile: 0 overflow, nessun artefatto visivo dai prefissi/punteggiatura nascosti, layout invariato.
+- Test rotazione `/eventi` (solo smoke, non toccato in questo giro): swap runtime con orologio simulato ancora corretto, un solo `<h2>` nella sezione featured.
+- Nessun file IT/DE/tabella calendario/schede Ecologia Integrale toccato oltre alle 3 pagine Estate 2026 in scope.
 
 ## Addendum — quarto giro (diagnosi deploy/cache EN + cleanup DOM `/eventi`)
 
@@ -269,6 +324,13 @@ Nessuna nuova richiesta rispetto ai task precedenti (restano valide le richieste
 - **Cleanup `/eventi`:** i 10 blocchi candidati alla rotazione, prima dentro `<template>` con markup reale, ora serializzati come payload JSON (`<script type="application/json" id="featured-event-alternates">`), non più leggibili come sezioni HTML duplicate da estrattori che non implementano la semantica di `<template>`.
 - **Merge su main:** sì — commit `3a38296` (merge di `ab01933`), nessun conflitto.
 - **QA post-merge:** verde — build 97/97/97, 5/5 scenari rotazione, `check-semantic-text.mjs` pulito, verifica pattern-esatti pulita (incluso `Official source and method`), test di swap runtime con orologio simulato verificato (un solo `<h2>` dopo lo scambio), QA sito 295 file pulita, QA visiva 16/16 pulita.
-- **Push:** in corso.
+- **Push:** sì — `b476288..ba7480f main -> main`.
+- **Deploy rilevato:** non verificabile da questa sandbox, stesso limite di rete dei giri precedenti.
+- **QA live:** non eseguibile da questa sessione. Non dichiarato "READY live".
+
+### Quinto giro (card tematiche semanticamente autonome)
+- **Merge su main:** sì — commit `f36c167` (merge di `c57447a`), nessun conflitto.
+- **QA post-merge:** verde — build 97/97/97, sitemap/llms 97/97/97, `/fr/`/`sitemap-fr.xml` assenti, `check-semantic-text.mjs` pulito, verifica pattern-esatti + snippet attesi pulita su IT/EN/DE, QA sito 295 file pulita, QA visiva 16/16 pulita + screenshot dedicati card tematiche (0 overflow, nessun artefatto), smoke test rotazione `/eventi` ancora corretto.
+- **Push:** vedi commit hash aggiornati di seguito.
 - **Deploy rilevato:** non verificabile da questa sandbox, stesso limite di rete dei giri precedenti.
 - **QA live:** non eseguibile da questa sessione. Non dichiarato "READY live".
