@@ -121,6 +121,11 @@ Nessuna nuova richiesta rispetto ai task precedenti (restano valide le richieste
 
 ---
 
-## Stato merge / push / deploy
+## Stato merge / push / deploy (Task 14-18)
 
-Sezione aggiornata dopo l'esecuzione dei Task 12-18 (vedi fondo del report per lo stato finale).
+- **Merge su main:** sì — commit `31a4075` (merge di `4882357`), nessun conflitto.
+- **QA post-merge:** verde — stessa batteria del Task 11 rieseguita su `main` dopo il merge: 97/97/97, sitemap/llms 97/97/97, `/fr/` e `sitemap-fr.xml` assenti, 0 link rotti, 0 asset mancanti, 0 JSON-LD invalidi, 0 mojibake, 0 placeholder, 0 overflow mobile, QA semantica pulita su tutte le 5 pagine primarie, evento in evidenza corretto (`festival-ecologia-integrale`, non passato).
+- **Push:** sì — `3cd17a1..31a4075 main -> main`.
+- **Deploy rilevato:** no, non verificabile da questa sessione. Nessun workflow GitHub Actions in questo repository (`list_workflows` → `total_count: 0`) e accesso di rete generico bloccato dalla policy della sandbox (`403 policy denial` su `www.ilovemontefiascone.com`, confermato subito dopo il push tramite `$HTTPS_PROXY/__agentproxy/status`). Questo è lo stesso limite d'ambiente riscontrato in tutti i merge precedenti su questo repository — non è un'evidenza di deploy fallito. Il push è andato a buon fine: se Cloudflare Pages è collegato al repo con autodeploy, il deploy è atteso e dovrebbe avvenire automaticamente, in modo indipendente da questa sessione.
+- **QA live (Task 17):** non eseguita per il motivo sopra. Nessuna delle URL live richieste è stata controllata in questa sessione.
+- **Blocker residui:** nessuno di codice/repo; solo l'impossibilità di verificare deploy e QA live da questa sandbox. Si raccomanda una verifica manuale esterna (dashboard Cloudflare Pages + controllo diretto delle URL elencate nel Task 17).
