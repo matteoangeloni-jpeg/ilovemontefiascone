@@ -52,11 +52,23 @@ const SOURCE_FILES = [
 
 const SEPARATOR_LOOKBEHIND = 'visually-hidden">\\s*—\\s*<\\/span>';
 
+// Theme cards no longer rely on a generic "—" separator between </article>
+// and the next <article class="card">: each card now ends its CTA with a
+// real (visually-hidden) period, and the next card opens with a hidden
+// "Tema:"/"Theme:"/"Thema:" prefix, so the boundary is self-disambiguating
+// by real terminal punctuation instead. Accept either that pattern or the
+// older dash separator (still used elsewhere) as a safe boundary.
+const PERIOD_LOOKBEHIND = '<span class="visually-hidden">\\.<\\/span>\\n';
+const DASH_LOOKBEHIND = 'visually-hidden">\\s*—\\s*<\\/span>\\n?';
+
 const STRUCTURAL_BOUNDARIES = [
   { name: "table cell (td/td)", regex: new RegExp(`(?<!${SEPARATOR_LOOKBEHIND})</td><td`, "g") },
   { name: "table header (th/th)", regex: new RegExp(`(?<!${SEPARATOR_LOOKBEHIND})</th><th`, "g") },
   { name: "summary-list fact (dd/div/div/dt)", regex: new RegExp(`(?<!${SEPARATOR_LOOKBEHIND})</dd>(?=</div><div>)`, "g") },
-  { name: "theme card (article/article)", regex: /<\/article>(?!<span class="visually-hidden")\n<article class="card">/g },
+  {
+    name: "theme card (article/article)",
+    regex: new RegExp(`(?<!${PERIOD_LOOKBEHIND})(?<!${DASH_LOOKBEHIND})</article>\\n<article class="card">`, "g"),
+  },
 ];
 
 // Known-bad patterns reported live, checked against rendered textContent
@@ -69,6 +81,9 @@ const BAD_PATTERNS = [
   "Wine Cinema", "Cinema Lake", "Wein Kino", "Kino See",
   "Est Film Festival Lago", "Est-Lake Tradizione",
   "Zum Weinfest Kino", "Zum Est Film Festival See",
+  "Fiera del Vino — Cinema", "Est Film Festival — Lago", "Est-Lake — Tradizione",
+  "Wine Fair guide — Cinema", "Est Film Festival guide — Lake", "Est-Lake guide — Heritage",
+  "Weinfest — Kino", "Est Film Festival — See", "Est-Lake — Tradition",
 ];
 
 const AUDIT_TONE_PATTERNS = [
@@ -76,9 +91,13 @@ const AUDIT_TONE_PATTERNS = [
   /cosa è confermato/i,
   /cosa e confermato/i,
   /questa pagina conserva solo/i,
+  /questa guida conserva solo/i,
+  /conserva solo il quadro pubblico/i,
   /public sources used/i,
   /what is confirmed/i,
   /this page keeps only/i,
+  /this guide keeps only/i,
+  /cross-checked with official/i,
   /oeffentliche quellen/i,
   /bestaetigte daten/i,
 ];
