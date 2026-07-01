@@ -98,7 +98,7 @@ Additional wording risk reductions were applied to:
 ## Editorial Issues Found
 
 - Several EN pages used clean SEO signals but still linked internally to `.html` URLs in navigation, footer and related-link blocks.
-- Some generated pages contained mojibake artifacts such as `Â·`.
+- Some generated pages contained mojibake artifacts such as `·`.
 - Strategic page openings were correct but sometimes too generic for international visitors.
 - Some cluster hubs lacked a clear "where to go next" pathway.
 - A few phrases were too assertive for variable travel conditions, for example "always", "best way" or "one of the best bases".

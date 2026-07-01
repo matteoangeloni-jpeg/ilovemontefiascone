@@ -52,7 +52,7 @@ Automated checks over 25 English HTML pages:
 - Internal linking: no missing `/en/` page links found.
 - EN to DE links: none found.
 - EN to Italian root content links: none found.
-- Mojibake: no real `piÃ¹`, `Ã¨`, `SÃ¬`, `Â`, or replacement-character issues found after cleanup.
+- Mojibake: no real `più`, `è`, `Sì`, `Â`, or replacement-character issues found after cleanup.
 - GitHub Pages/pages.dev references: none found.
 - Public staging phrase: removed `English version in preparation` from visitor-facing footer copy.
 
