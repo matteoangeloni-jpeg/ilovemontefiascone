@@ -171,6 +171,20 @@ export function buildFeaturedSection(todayIso) {
   return { events, eventId, innerHtml };
 }
 
+// Serializes to a <script type="application/json"> payload rather than
+// inline markup on purpose: real browsers exclude <template> content from
+// the rendered tree, but many naive text extractors (regex tag-strippers,
+// HTML parsers that don't implement HTML5 template-content isolation)
+// treat <template> as a plain container and would read every candidate's
+// heading/teaser as real duplicate page content. JSON inside a <script>
+// tag is universally treated as non-prose data by both browsers and text
+// extractors, so the alternates cannot be mistaken for extra "featured
+// event" sections. The escaping below prevents any "<" in the payload
+// from being read as the start of a tag (e.g. a stray "</script>").
+function toInlineJson(value) {
+  return JSON.stringify(value).replace(/</g, "\\u003c");
+}
+
 function updateHub() {
   const todayIso = new Date().toISOString().slice(0, 10);
   const { events, eventId, innerHtml } = buildFeaturedSection(todayIso);
@@ -183,20 +197,19 @@ function updateHub() {
   // Pre-rendered alternates for every candidate plus the fallback, using
   // the exact same render functions as the visible build-time pick. The
   // runtime script only ever swaps to one of these - it never generates
-  // markup itself.
-  const alternates = events
-    .map((event) => `<template data-event-id="${event.id}">${renderEventBlock(event)}</template>`)
-    .join("\n            ");
-  const fallbackTemplate = `<template data-event-id="fallback">${renderFallbackBlock()}</template>`;
+  // markup itself. Keyed by event id, stored as HTML strings (not real
+  // DOM markup) inside the JSON payload below.
+  const alternates = {};
+  for (const event of events) {
+    alternates[event.id] = renderEventBlock(event);
+  }
+  alternates.fallback = renderFallbackBlock();
 
   const section = `      <section class="section section--alt" id="evento-in-evidenza" data-event-id="${eventId}">
         ${innerHtml}
       </section>
-      <div id="featured-event-alternates" hidden aria-hidden="true">
-            ${alternates}
-            ${fallbackTemplate}
-      </div>
-      <script type="application/json" id="featured-event-manifest">${JSON.stringify(manifest)}</script>
+      <script type="application/json" id="featured-event-manifest">${toInlineJson(manifest)}</script>
+      <script type="application/json" id="featured-event-alternates">${toInlineJson(alternates)}</script>
       <script src="/js/featured-event-runtime.js" defer></script>`;
 
   const hubPath = join(root, HUB_FILE);
