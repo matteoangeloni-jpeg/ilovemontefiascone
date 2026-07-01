@@ -263,3 +263,12 @@ Nessuna nuova richiesta rispetto ai task precedenti (restano valide le richieste
 - **Push:** sì — `f0eeda7..1c3ef91 main -> main`.
 - **Deploy rilevato:** no, stesso limite d'ambiente dei giri precedenti — accesso di rete verso `www.ilovemontefiascone.com` bloccato dalla policy della sandbox (confermato di nuovo dopo il push).
 - **QA live:** non eseguibile da questa sessione per lo stesso motivo. Non dichiarato "READY live".
+
+### Quarto giro (diagnosi EN + cleanup DOM `/eventi`)
+- **EN Estate 2026:** source e build confermati corretti e identici a IT per struttura dei separatori. Nessun hotfix di contenuto applicato (non serviva). Causa probabile della discrepanza live: deploy/cache per-path su Cloudflare, non un difetto di codice — confermato indipendentemente dal fatto che il testo live riportato (`Official source and method`) precede il commit `e6590ce`, di molto antecedente a questa serie di round.
+- **Cleanup `/eventi`:** i 10 blocchi candidati alla rotazione, prima dentro `<template>` con markup reale, ora serializzati come payload JSON (`<script type="application/json" id="featured-event-alternates">`), non più leggibili come sezioni HTML duplicate da estrattori che non implementano la semantica di `<template>`.
+- **Merge su main:** sì — commit `3a38296` (merge di `ab01933`), nessun conflitto.
+- **QA post-merge:** verde — build 97/97/97, 5/5 scenari rotazione, `check-semantic-text.mjs` pulito, verifica pattern-esatti pulita (incluso `Official source and method`), test di swap runtime con orologio simulato verificato (un solo `<h2>` dopo lo scambio), QA sito 295 file pulita, QA visiva 16/16 pulita.
+- **Push:** in corso.
+- **Deploy rilevato:** non verificabile da questa sandbox, stesso limite di rete dei giri precedenti.
+- **QA live:** non eseguibile da questa sessione. Non dichiarato "READY live".
