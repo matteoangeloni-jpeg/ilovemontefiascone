@@ -38,6 +38,7 @@ const supportRootFiles = [
 const nonPublicRootHtml = new Set([
   "base.html",
   "cruscotto-del-viaggiatore-widget.html",
+  "giglio-vecchio-montefiascone.html",
   "mappa-topografica-montefiascone-leaflet.html",
   "quiz-itinerario-tuscia-widget.html",
 ]);
