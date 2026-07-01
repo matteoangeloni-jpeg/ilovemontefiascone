@@ -1,5 +1,13 @@
 # Event Pages Content & SEO Upgrade — Report
 
+## Esito e stato deploy (Task 16)
+
+**Merge su main:** sì — commit `e1b3ea4` (merge di `513de8b`)
+**Push:** sì — `e00b28c..e1b3ea4 main -> main`
+**Deploy rilevato:** non rilevabile da questa sessione. Nessun workflow GitHub Actions in questo repository (`list_workflows` → `total_count: 0`) e accesso di rete generico bloccato dalla policy della sandbox (`403 policy denial` confermato su `www.ilovemontefiascone.com` subito dopo il push, tramite `$HTTPS_PROXY/__agentproxy/status`). Questo è lo stesso limite d'ambiente già riscontrato nei due task precedenti su questo repository — non è un'evidenza di deploy fallito.
+**QA live (Task 15):** non eseguito per il motivo sopra. Nessuna delle URL live richieste (le 3 pagine evento, le sitemap, `llms.txt`, `/fr/`, `sitemap-fr.xml`) è stata controllata in questa sessione.
+**Blocker residui:** nessuno a livello di codice/repo; solo l'impossibilità di verificare il deploy e la QA live da questa sandbox.
+
 ## Fonti usate
 
 Il fact-check live (sito ufficiale del festival, pagina Facebook pubblica, articoli locali) non è stato eseguibile da questa sessione: l'accesso di rete generico a internet è bloccato dalla policy della sandbox (confermato tentando sia il festival sia un dominio di controllo come Wikipedia, entrambi respinti con `403`). Al posto della verifica live, sono state usate due fonti interne già affidabili:
