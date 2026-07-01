@@ -102,9 +102,17 @@ export function pickFeaturedEvent(events, todayIso) {
 // by updateHub() and carries a stable id/data-event-id so the runtime
 // script can swap this inner HTML in place without touching anything else
 // on the page.
+// A visually-hidden (but real, DOM-present) separator inserted between
+// adjacent text values that would otherwise be extracted with zero
+// whitespace between them (e.g. "2-5 luglioEdizione") by any text-extraction
+// method that ignores CSS layout - textContent, naive tag-stripping,
+// whitespace-collapsing readers, etc. Purely cosmetic for sighted users:
+// the existing .visually-hidden utility class clips it out of view.
+const TEXT_SEPARATOR = '<span class="visually-hidden"> — </span>';
+
 function renderEventBlock(event) {
   const factsHtml = event.facts
-    .map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`)
+    .map(([label, value]) => `<div><dt>${label}</dt><dd>${value}${TEXT_SEPARATOR}</dd></div>`)
     .join("");
   const teaserHtml = event.teaser.map((paragraph) => `<p>${paragraph}</p>`).join("");
 
