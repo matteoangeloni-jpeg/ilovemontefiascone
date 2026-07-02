@@ -29,6 +29,23 @@ The French layer is not ready for publication. The source set is still hybrid in
 
 No page reaches the publication gate in this audit. The safest decision is to keep FR excluded from the public build.
 
+## FR MVP Editorial Pass
+
+The first editorial block is now scoped as a source-only MVP, still excluded from the public build:
+
+- `fr/index.html`
+- `fr/guide.html`
+- `fr/evenements.html`
+- `fr/evenements-dete-a-montefiascone-2026.html`
+
+These four pages are the safest starting set because they anchor the FR experience without opening the public perimeter. They will be rewritten first in natural French, while the remaining FR corpus stays queued for later batches.
+
+## MVP Editorial Queue
+
+- Pages rewritten in this pass: `4`
+- Pages queued for the next FR editorial batch: `12`
+- Total pages still excluded from publication: `98`
+
 ## Pages to Rewrite Next
 
 - `fr/est-festival-du-film-de-montefiascone.html`
