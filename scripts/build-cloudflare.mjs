@@ -31,7 +31,6 @@ const supportRootFiles = [
   "sitemap-it.xml",
   "sitemap-en.xml",
   "sitemap-de.xml",
-  "sitemap-fr.xml",
   "_redirects",
   "sw.js",
 ];
@@ -106,6 +105,37 @@ function optimizePublicHtml(html) {
   return `${optimized.slice(0, imageStart)}${imageTag}${optimized.slice(imageEnd + 1)}`;
 }
 
+function stripFrenchSupportSignals(fileName, text) {
+  if (fileName === "llms.txt") {
+    return text
+      .split(/\r?\n/)
+      .filter(
+        (line) =>
+          !line.includes("/fr/") &&
+          !line.includes("French draft content") &&
+          !line.includes("Public languages: Italian, English, German, French.") &&
+          !line.includes("Public perimeter: 98 IT / 98 EN / 98 DE / 98 FR."),
+      )
+      .join("\n");
+  }
+
+  if (fileName.startsWith("sitemap-") && fileName.endsWith(".xml")) {
+    return text.replace(
+      /\s*<xhtml:link rel="alternate" hreflang="fr"[^>]*\/>\s*/gi,
+      "\n",
+    );
+  }
+
+  if (fileName === "sitemap.xml") {
+    return text.replace(
+      /\s*<sitemap>\s*<loc>https:\/\/www\.ilovemontefiascone\.com\/sitemap-fr\.xml<\/loc>\s*<lastmod>[^<]*<\/lastmod>\s*<\/sitemap>\s*/gi,
+      "\n",
+    );
+  }
+
+  return text;
+}
+
 const rootFiles = [
   ...listHtml(root).filter(
     (file) => !technicalRootFiles.has(file) && !nonPublicRootHtml.has(file),
@@ -120,8 +150,6 @@ const enFiles = listHtml(join(root, "en"))
 
 const deFiles = listHtml(join(root, "de")).map((file) => `de/${file}`);
 
-const frFiles = listHtml(join(root, "fr")).map((file) => `fr/${file}`);
-
 rmSync(outputDir, { recursive: true, force: true });
 mkdirSync(outputDir, { recursive: true });
 
@@ -130,7 +158,12 @@ for (const file of rootFiles) {
   if (!existsSync(source)) {
     throw new Error(`Missing required file: ${file}`);
   }
-  cpSync(source, join(outputDir, file), { force: true });
+  const destination = join(outputDir, file);
+  cpSync(source, destination, { force: true });
+  if (file.endsWith(".txt") || file.endsWith(".xml")) {
+    const text = readFileSync(destination, "utf8");
+    writeFileSync(destination, stripFrenchSupportSignals(file, text), "utf8");
+  }
 }
 
 for (const directory of directories) {
@@ -141,7 +174,7 @@ for (const directory of directories) {
   cpSync(source, join(outputDir, directory), { recursive: true, force: true });
 }
 
-for (const file of [...enFiles, ...deFiles, ...frFiles]) {
+for (const file of [...enFiles, ...deFiles]) {
   const source = join(root, file);
   if (!existsSync(source)) {
     throw new Error(`Missing required perimeter file: ${file}`);
@@ -155,15 +188,21 @@ const publicHtmlFiles = [
   ...rootFiles.filter((file) => file.endsWith(".html")),
   ...enFiles,
   ...deFiles,
-  ...frFiles,
 ];
 
 for (const file of publicHtmlFiles) {
   const destination = join(outputDir, file);
   const html = readFileSync(destination, "utf8");
-  writeFileSync(destination, optimizePublicHtml(html), "utf8");
+  const optimized = stripFrenchPublicSignals(optimizePublicHtml(html));
+  writeFileSync(destination, optimized, "utf8");
+}
+
+function stripFrenchPublicSignals(html) {
+  return html
+    .replace(/\s*<link\b[^>]*hreflang=["']fr["'][^>]*\/?>\s*/gi, "")
+    .replace(/\s*<a\b[^>]*href=["']\/fr\/[^"']*["'][^>]*>[\s\S]*?<\/a>\s*/gi, "");
 }
 
 console.log(
-  `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length}, FR: ${frFiles.length})`,
+  `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length})`,
 );

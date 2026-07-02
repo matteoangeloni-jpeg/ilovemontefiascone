@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Allow: /llms.txt
 Allow: /de/
-Allow: /fr/
 Disallow: /*-widget.html
 Disallow: /*-leaflet.html
 Disallow: /offline.html
