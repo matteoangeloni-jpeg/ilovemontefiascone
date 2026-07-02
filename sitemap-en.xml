@@ -451,6 +451,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/galleria" />
   </url>
   <url>
+    <loc>https://www.ilovemontefiascone.com/en/giglio-vecchio-montefiascone</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/giglio-vecchio-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/giglio-vecchio-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/giglio-vecchio-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/giglio-vecchio-montefiascone" />
+  </url>
+  <url>
     <loc>https://www.ilovemontefiascone.com/en/gradoli-lake-bolsena-things-to-see</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>

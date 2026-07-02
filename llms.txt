@@ -4,9 +4,9 @@
 ## Site Identity
 - Canonical domain: https://www.ilovemontefiascone.com/
 - Public languages: Italian, English, German.
-- Public perimeter: 97 IT / 97 EN / 97 DE.
+- Public perimeter: 98 IT / 98 EN / 98 DE.
 - Source-only EN exceptions are excluded from the public perimeter and documented in the release reports.
-- Public perimeter updated: 2026-06-28.
+- Public perimeter updated: 2026-07-02.
 
 ## Main Topics
 - Montefiascone and Lake Bolsena.
@@ -61,6 +61,7 @@
 - [Festa Santa Margherita Montefiascone](https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone)
 - [Festival Ecologia Integrale Montefiascone](https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone)
 - [Galleria Montefiascone | Foto, EXIF e Lightbox](https://www.ilovemontefiascone.com/galleria)
+- [Giglio Vecchio a Montefiascone: Zepponami e tradizioni](https://www.ilovemontefiascone.com/giglio-vecchio-montefiascone)
 - [Gradoli sul Lago di Bolsena | Cosa vedere](https://www.ilovemontefiascone.com/gradoli-cosa-vedere-lago-di-bolsena)
 - [Grotte di Castro | Borgo del Lago di Bolsena](https://www.ilovemontefiascone.com/grotte-di-castro-cosa-vedere-lago-di-bolsena)
 - [Guide Montefiascone | Itinerari e idee di visita](https://www.ilovemontefiascone.com/guide)
@@ -141,6 +142,7 @@
 - [Events in Montefiascone | Wine, Cinema and Summer](https://www.ilovemontefiascone.com/en/events-montefiascone)
 - [Food and Wine Experiences in Montefiascone](https://www.ilovemontefiascone.com/en/food-wine-experiences-montefiascone)
 - [Montefiascone Photo Gallery | Lake Bolsena and Events](https://www.ilovemontefiascone.com/en/gallery-montefiascone)
+- [Giglio Vecchio in Montefiascone: Church, Sport &amp; Festival](https://www.ilovemontefiascone.com/en/giglio-vecchio-montefiascone)
 - [Gradoli near Lake Bolsena | What to See](https://www.ilovemontefiascone.com/en/gradoli-lake-bolsena-things-to-see)
 - [Grotte di Castro near Lake Bolsena | Travel Guide](https://www.ilovemontefiascone.com/en/grotte-di-castro-lake-bolsena-things-to-see)
 - [How to Get to Montefiascone | Travel Tips](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone)
@@ -255,6 +257,7 @@
 - [Fotografischer Rundgang in Montefiascone](https://www.ilovemontefiascone.com/de/fotografischer-rundgang-montefiascone)
 - [Fotospots in Montefiascone und am Bolsenasee](https://www.ilovemontefiascone.com/de/fotospots-montefiascone-bolsenasee)
 - [Montefiascone Fotogalerie | Bolsenasee und Events](https://www.ilovemontefiascone.com/de/galerie-montefiascone)
+- [Giglio Vecchio in Montefiascone: Kirche, Sport &amp; Festival](https://www.ilovemontefiascone.com/de/giglio-vecchio-montefiascone)
 - [Gradoli am Bolsenasee | Was sehen](https://www.ilovemontefiascone.com/de/gradoli-bolsenasee-sehenswuerdigkeiten)
 - [Grotte di Castro am Bolsenasee | Reiseführer](https://www.ilovemontefiascone.com/de/grotte-di-castro-bolsenasee-sehenswuerdigkeiten)
 - [Montefiascone am Bolsenasee | Reiseführer](https://www.ilovemontefiascone.com/de/)
