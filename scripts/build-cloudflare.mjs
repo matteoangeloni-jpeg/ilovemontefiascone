@@ -31,6 +31,7 @@ const supportRootFiles = [
   "sitemap-it.xml",
   "sitemap-en.xml",
   "sitemap-de.xml",
+  "sitemap-fr.xml",
   "_redirects",
   "sw.js",
 ];
@@ -119,6 +120,8 @@ const enFiles = listHtml(join(root, "en"))
 
 const deFiles = listHtml(join(root, "de")).map((file) => `de/${file}`);
 
+const frFiles = listHtml(join(root, "fr")).map((file) => `fr/${file}`);
+
 rmSync(outputDir, { recursive: true, force: true });
 mkdirSync(outputDir, { recursive: true });
 
@@ -138,7 +141,7 @@ for (const directory of directories) {
   cpSync(source, join(outputDir, directory), { recursive: true, force: true });
 }
 
-for (const file of [...enFiles, ...deFiles]) {
+for (const file of [...enFiles, ...deFiles, ...frFiles]) {
   const source = join(root, file);
   if (!existsSync(source)) {
     throw new Error(`Missing required perimeter file: ${file}`);
@@ -152,6 +155,7 @@ const publicHtmlFiles = [
   ...rootFiles.filter((file) => file.endsWith(".html")),
   ...enFiles,
   ...deFiles,
+  ...frFiles,
 ];
 
 for (const file of publicHtmlFiles) {
@@ -161,5 +165,5 @@ for (const file of publicHtmlFiles) {
 }
 
 console.log(
-  `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length})`,
+  `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length}, FR: ${frFiles.length})`,
 );
