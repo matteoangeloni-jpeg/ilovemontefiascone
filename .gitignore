@@ -51,4 +51,5 @@ cronoscalata-preview.png
 # Generated reports / scratch files
 seo_report.json
 audit_data.json
+check_report.json
 gemini-code-*.md
