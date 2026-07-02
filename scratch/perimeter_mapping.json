@@ -1,0 +1,688 @@
+[
+  {
+    "it_file": "anno-domini-1074-montefiascone.html",
+    "it_slug": "anno-domini-1074-montefiascone",
+    "en_slug": "anno-domini-1074-montefiascone",
+    "de_slug": "anno-domini-1074-montefiascone",
+    "fr_slug": "anno-domini-1074-montefiascone"
+  },
+  {
+    "it_file": "associazioni-volontariato-montefiascone.html",
+    "it_slug": "associazioni-volontariato-montefiascone",
+    "en_slug": "associations-volunteering-montefiascone",
+    "de_slug": "vereine-ehrenamt-montefiascone",
+    "fr_slug": "associations-benevoles-de-montefiascone"
+  },
+  {
+    "it_file": "atb-festival-montefiascone.html",
+    "it_slug": "atb-festival-montefiascone",
+    "en_slug": "atb-festival-montefiascone",
+    "de_slug": "atb-festival-montefiascone",
+    "fr_slug": "festival-atb-montefiascone"
+  },
+  {
+    "it_file": "basilica-san-flaviano-montefiascone.html",
+    "it_slug": "basilica-san-flaviano-montefiascone",
+    "en_slug": "basilica-san-flaviano-montefiascone",
+    "de_slug": "basilika-san-flaviano-montefiascone",
+    "fr_slug": "basilique-san-flaviano-montefiascone"
+  },
+  {
+    "it_file": "bolsena-cosa-vedere.html",
+    "it_slug": "bolsena-cosa-vedere",
+    "en_slug": "bolsena-things-to-see",
+    "de_slug": "bolsena-sehenswuerdigkeiten",
+    "fr_slug": "bolsena-que-voir"
+  },
+  {
+    "it_file": "bomarzo-da-montefiascone.html",
+    "it_slug": "bomarzo-da-montefiascone",
+    "en_slug": "bomarzo-from-montefiascone",
+    "de_slug": "bomarzo-ab-montefiascone",
+    "fr_slug": "bomarzo-de-montefiascone"
+  },
+  {
+    "it_file": "borghi-del-lago-di-bolsena-in-auto.html",
+    "it_slug": "borghi-del-lago-di-bolsena-in-auto",
+    "en_slug": "lake-bolsena-villages-by-car",
+    "de_slug": "bolsenasee-doerfer-mit-dem-auto",
+    "fr_slug": "villages-du-lac-de-bolsena-en-voiture"
+  },
+  {
+    "it_file": "borghi-lago-di-bolsena.html",
+    "it_slug": "borghi-lago-di-bolsena",
+    "en_slug": "lake-bolsena-villages",
+    "de_slug": "bolsenasee-doerfer",
+    "fr_slug": "villages-sur-le-lac-de-bolsena"
+  },
+  {
+    "it_file": "borghi-piu-belli-lago-di-bolsena.html",
+    "it_slug": "borghi-piu-belli-lago-di-bolsena",
+    "en_slug": "best-villages-on-lake-bolsena",
+    "de_slug": "schoenste-orte-am-bolsenasee",
+    "fr_slug": "les-plus-beaux-villages-du-lac-de-bolsena"
+  },
+  {
+    "it_file": "calendario-eventi-montefiascone.html",
+    "it_slug": "calendario-eventi-montefiascone",
+    "en_slug": "montefiascone-events-calendar",
+    "de_slug": "veranstaltungskalender-montefiascone",
+    "fr_slug": "calendrier-des-evenements-de-montefiascone"
+  },
+  {
+    "it_file": "cantine-montefiascone-degustazione-est-est-est.html",
+    "it_slug": "cantine-montefiascone-degustazione-est-est-est",
+    "en_slug": "wine-tasting-montefiascone-est-est-est",
+    "de_slug": "weingueter-montefiascone-verkostung",
+    "fr_slug": "degustation-de-vignobles-de-montefiascone-est-est-est"
+  },
+  {
+    "it_file": "capodimonte-lago-di-bolsena-cosa-vedere.html",
+    "it_slug": "capodimonte-lago-di-bolsena-cosa-vedere",
+    "en_slug": "capodimonte-lake-bolsena-things-to-see",
+    "de_slug": "capodimonte-bolsenasee-sehenswuerdigkeiten",
+    "fr_slug": "capodimonte-lac-de-bolsena-que-voir"
+  },
+  {
+    "it_file": "caprarola-palazzo-farnese-da-montefiascone.html",
+    "it_slug": "caprarola-palazzo-farnese-da-montefiascone",
+    "en_slug": "caprarola-palazzo-farnese-from-montefiascone",
+    "de_slug": "caprarola-palazzo-farnese-ab-montefiascone",
+    "fr_slug": "caprarola-palais-farnese-de-montefiascone"
+  },
+  {
+    "it_file": "cattedrale-santa-margherita-montefiascone.html",
+    "it_slug": "cattedrale-santa-margherita-montefiascone",
+    "en_slug": "cathedral-santa-margherita-montefiascone",
+    "de_slug": "kathedrale-santa-margherita-montefiascone",
+    "fr_slug": "cathedrale-santa-margherita-montefiascone"
+  },
+  {
+    "it_file": "civita-di-bagnoregio-da-montefiascone.html",
+    "it_slug": "civita-di-bagnoregio-da-montefiascone",
+    "en_slug": "civita-di-bagnoregio-from-montefiascone",
+    "de_slug": "civita-di-bagnoregio-ab-montefiascone",
+    "fr_slug": "civita-di-bagnoregio-depuis-montefiascone"
+  },
+  {
+    "it_file": "come-arrivare-a-montefiascone-da-firenze.html",
+    "it_slug": "come-arrivare-a-montefiascone-da-firenze",
+    "en_slug": "how-to-get-to-montefiascone-from-florence",
+    "de_slug": "anreise-von-florenz-nach-montefiascone",
+    "fr_slug": "comment-se-rendre-a-montefiascone-depuis-florence"
+  },
+  {
+    "it_file": "come-arrivare-a-montefiascone-da-orvieto.html",
+    "it_slug": "come-arrivare-a-montefiascone-da-orvieto",
+    "en_slug": "how-to-get-to-montefiascone-from-orvieto",
+    "de_slug": "anreise-von-orvieto-nach-montefiascone",
+    "fr_slug": "comment-se-rendre-a-montefiascone-depuis-orvieto"
+  },
+  {
+    "it_file": "come-arrivare-a-montefiascone-da-roma.html",
+    "it_slug": "come-arrivare-a-montefiascone-da-roma",
+    "en_slug": "how-to-get-to-montefiascone-from-rome",
+    "de_slug": "anreise-von-rom-nach-montefiascone",
+    "fr_slug": "comment-se-rendre-a-montefiascone-depuis-rome"
+  },
+  {
+    "it_file": "come-arrivare-a-montefiascone-da-viterbo.html",
+    "it_slug": "come-arrivare-a-montefiascone-da-viterbo",
+    "en_slug": "how-to-get-to-montefiascone-from-viterbo",
+    "de_slug": "anreise-viterbo-montefiascone",
+    "fr_slug": "comment-arriver-a-montefiascone-depuis-viterbe"
+  },
+  {
+    "it_file": "come-arrivare-a-montefiascone.html",
+    "it_slug": "come-arrivare-a-montefiascone",
+    "en_slug": "how-to-get-to-montefiascone",
+    "de_slug": "anreise-nach-montefiascone",
+    "fr_slug": "comment-se-rendre-a-montefiascone"
+  },
+  {
+    "it_file": "concerto-banda-rb-revue-montefiascone.html",
+    "it_slug": "concerto-banda-rb-revue-montefiascone",
+    "en_slug": "banda-rb-revue-concert-montefiascone",
+    "de_slug": "banda-rb-revue-konzert-montefiascone",
+    "fr_slug": "orchestre-dharmonie-rb-revue-montefiascone"
+  },
+  {
+    "it_file": "cosa-fare-a-montefiascone-quando-piove.html",
+    "it_slug": "cosa-fare-a-montefiascone-quando-piove",
+    "en_slug": "rainy-day-montefiascone",
+    "de_slug": "regen-in-montefiascone",
+    "fr_slug": "que-faire-a-montefiascone-quand-il-pleut"
+  },
+  {
+    "it_file": "cosa-fare-la-sera-a-montefiascone.html",
+    "it_slug": "cosa-fare-la-sera-a-montefiascone",
+    "en_slug": "evening-in-montefiascone",
+    "de_slug": "abend-in-montefiascone",
+    "fr_slug": "que-faire-le-soir-a-montefiascone"
+  },
+  {
+    "it_file": "cosa-vedere-dintorni-montefiascone-itinerario.html",
+    "it_slug": "cosa-vedere-dintorni-montefiascone-itinerario",
+    "en_slug": "things-to-do-near-montefiascone",
+    "de_slug": "ausfluege-rund-um-montefiascone",
+    "fr_slug": "que-voir-autour-de-litineraire-de-montefiascone"
+  },
+  {
+    "it_file": "cosa-vedere-montefiascone-guida-completa.html",
+    "it_slug": "cosa-vedere-montefiascone-guida-completa",
+    "en_slug": "things-to-see-montefiascone",
+    "de_slug": "sehenswuerdigkeiten-montefiascone",
+    "fr_slug": "que-voir-montefiascone-guide-complet"
+  },
+  {
+    "it_file": "cosa-vedere.html",
+    "it_slug": "cosa-vedere",
+    "en_slug": "what-to-see-montefiascone",
+    "de_slug": "was-sehen-montefiascone",
+    "fr_slug": "que-voir"
+  },
+  {
+    "it_file": "cronoscalata-montefiascone-coppa-citta.html",
+    "it_slug": "cronoscalata-montefiascone-coppa-citta",
+    "en_slug": "montefiascone-hill-climb",
+    "de_slug": "cronoscalata-lago-montefiascone",
+    "fr_slug": "contre-la-montre-montefiascone-coppa-citta"
+  },
+  {
+    "it_file": "cucina-tipica-montefiascone.html",
+    "it_slug": "cucina-tipica-montefiascone",
+    "en_slug": "typical-food-montefiascone",
+    "de_slug": "typische-kueche-montefiascone",
+    "fr_slug": "cuisine-typique-de-montefiascone"
+  },
+  {
+    "it_file": "degustazione-vino-montefiascone-come-funziona.html",
+    "it_slug": "degustazione-vino-montefiascone-come-funziona",
+    "en_slug": "how-wine-tasting-works-montefiascone",
+    "de_slug": "weinverkostung-montefiascone-ablauf",
+    "fr_slug": "degustation-de-vin-de-montefiascone-comment-ca-marche"
+  },
+  {
+    "it_file": "dormire-centro-storico-montefiascone.html",
+    "it_slug": "dormire-centro-storico-montefiascone",
+    "en_slug": "staying-in-historic-centre-montefiascone",
+    "de_slug": "uebernachten-altstadt-montefiascone",
+    "fr_slug": "dormir-dans-le-centre-historique-de-montefiascone"
+  },
+  {
+    "it_file": "dove-dormire-a-montefiascone.html",
+    "it_slug": "dove-dormire-a-montefiascone",
+    "en_slug": "where-to-stay-in-montefiascone",
+    "de_slug": "unterkunft-in-montefiascone",
+    "fr_slug": "ou-dormir-a-montefiascone"
+  },
+  {
+    "it_file": "dove-mangiare-a-montefiascone.html",
+    "it_slug": "dove-mangiare-a-montefiascone",
+    "en_slug": "where-to-eat-in-montefiascone",
+    "de_slug": "essen-in-montefiascone",
+    "fr_slug": "ou-manger-a-montefiascone"
+  },
+  {
+    "it_file": "dove-vedere-il-tramonto-sul-lago-di-bolsena.html",
+    "it_slug": "dove-vedere-il-tramonto-sul-lago-di-bolsena",
+    "en_slug": "where-to-watch-sunset-lake-bolsena",
+    "de_slug": "sonnenuntergang-bolsenasee",
+    "fr_slug": "ou-voir-le-coucher-de-soleil-sur-le-lac-de-bolsena"
+  },
+  {
+    "it_file": "enogastronomia-ricette-tipiche-montefiascone.html",
+    "it_slug": "enogastronomia-ricette-tipiche-montefiascone",
+    "en_slug": "montefiascone-food-recipes",
+    "de_slug": "kulinarik-rezepte-montefiascone",
+    "fr_slug": "mets-et-vins-recettes-typiques-de-montefiascone"
+  },
+  {
+    "it_file": "esperienze-enogastronomiche-montefiascone.html",
+    "it_slug": "esperienze-enogastronomiche-montefiascone",
+    "en_slug": "food-wine-experiences-montefiascone",
+    "de_slug": "kulinarische-erlebnisse-montefiascone",
+    "fr_slug": "experiences-gastronomiques-et-nologiques-a-montefiascone"
+  },
+  {
+    "it_file": "est-est-est-montefiascone-vino-doc.html",
+    "it_slug": "est-est-est-montefiascone-vino-doc",
+    "en_slug": "est-est-est-montefiascone-doc-wine",
+    "de_slug": "est-est-est-wein-montefiascone",
+    "fr_slug": "est-est-est-montefiascone-vino-doc"
+  },
+  {
+    "it_file": "est-film-festival-montefiascone.html",
+    "it_slug": "est-film-festival-montefiascone",
+    "en_slug": "est-film-festival-montefiascone",
+    "de_slug": "est-film-festival-montefiascone",
+    "fr_slug": "est-festival-du-film-de-montefiascone"
+  },
+  {
+    "it_file": "est-lake-festival-montefiascone.html",
+    "it_slug": "est-lake-festival-montefiascone",
+    "en_slug": "est-lake-festival-montefiascone",
+    "de_slug": "est-lake-festival-montefiascone",
+    "fr_slug": "est-festival-du-lac-montefiascone"
+  },
+  {
+    "it_file": "estate-sul-lago-di-bolsena.html",
+    "it_slug": "estate-sul-lago-di-bolsena",
+    "en_slug": "summer-on-lake-bolsena",
+    "de_slug": "sommer-am-bolsenasee",
+    "fr_slug": "lete-sur-le-lac-de-bolsena"
+  },
+  {
+    "it_file": "eventi-estate-montefiascone-2026.html",
+    "it_slug": "eventi-estate-montefiascone-2026",
+    "en_slug": "montefiascone-summer-events-2026",
+    "de_slug": "sommerveranstaltungen-montefiascone-2026",
+    "fr_slug": "evenements-dete-a-montefiascone-2026"
+  },
+  {
+    "it_file": "eventi-tradizioni-fiera-del-vino-montefiascone.html",
+    "it_slug": "eventi-tradizioni-fiera-del-vino-montefiascone",
+    "en_slug": "montefiascone-wine-fair-traditions",
+    "de_slug": "weinfest-montefiascone-traditionen",
+    "fr_slug": "evenements-traditions-foire-aux-vins-de-montefiascone"
+  },
+  {
+    "it_file": "eventi.html",
+    "it_slug": "eventi",
+    "en_slug": "events-montefiascone",
+    "de_slug": "veranstaltungen-montefiascone",
+    "fr_slug": "evenements"
+  },
+  {
+    "it_file": "festa-santa-margherita-montefiascone.html",
+    "it_slug": "festa-santa-margherita-montefiascone",
+    "en_slug": "santa-margherita-feast-montefiascone",
+    "de_slug": "fest-santa-margherita-montefiascone",
+    "fr_slug": "fete-de-santa-margherita-montefiascone"
+  },
+  {
+    "it_file": "festival-ecologia-integrale-montefiascone.html",
+    "it_slug": "festival-ecologia-integrale-montefiascone",
+    "en_slug": "integral-ecology-festival-montefiascone",
+    "de_slug": "festival-integrale-oekologie-montefiascone",
+    "fr_slug": "festival-decologie-integrale-de-montefiascone"
+  },
+  {
+    "it_file": "galleria.html",
+    "it_slug": "galleria",
+    "en_slug": "gallery-montefiascone",
+    "de_slug": "galerie-montefiascone",
+    "fr_slug": "galerie"
+  },
+  {
+    "it_file": "giglio-vecchio-montefiascone.html",
+    "it_slug": "giglio-vecchio-montefiascone",
+    "en_slug": "giglio-vecchio-montefiascone",
+    "de_slug": "giglio-vecchio-montefiascone",
+    "fr_slug": "giglio-vecchio-montefiascone"
+  },
+  {
+    "it_file": "gradoli-cosa-vedere-lago-di-bolsena.html",
+    "it_slug": "gradoli-cosa-vedere-lago-di-bolsena",
+    "en_slug": "gradoli-lake-bolsena-things-to-see",
+    "de_slug": "gradoli-bolsenasee-sehenswuerdigkeiten",
+    "fr_slug": "gradoli-que-voir-lac-de-bolsena"
+  },
+  {
+    "it_file": "grotte-di-castro-cosa-vedere-lago-di-bolsena.html",
+    "it_slug": "grotte-di-castro-cosa-vedere-lago-di-bolsena",
+    "en_slug": "grotte-di-castro-lake-bolsena-things-to-see",
+    "de_slug": "grotte-di-castro-bolsenasee-sehenswuerdigkeiten",
+    "fr_slug": "grottes-de-castro-que-voir-lac-de-bolsena"
+  },
+  {
+    "it_file": "guide.html",
+    "it_slug": "guide",
+    "en_slug": "montefiascone-travel-guide",
+    "de_slug": "reisefuehrer-montefiascone",
+    "fr_slug": "guide"
+  },
+  {
+    "it_file": "index.html",
+    "it_slug": "index",
+    "en_slug": "",
+    "de_slug": "",
+    "fr_slug": ""
+  },
+  {
+    "it_file": "informazioni-turistiche-montefiascone.html",
+    "it_slug": "informazioni-turistiche-montefiascone",
+    "en_slug": "tourist-information-montefiascone",
+    "de_slug": "touristeninformation-montefiascone",
+    "fr_slug": "informations-touristiques-sur-montefiascone"
+  },
+  {
+    "it_file": "itinerari-tematici-montefiascone.html",
+    "it_slug": "itinerari-tematici-montefiascone",
+    "en_slug": "thematic-itineraries-montefiascone",
+    "de_slug": "thematische-routen-montefiascone",
+    "fr_slug": "itineraires-thematiques-de-montefiascone"
+  },
+  {
+    "it_file": "itinerario-auto-lago-di-bolsena.html",
+    "it_slug": "itinerario-auto-lago-di-bolsena",
+    "en_slug": "lake-bolsena-by-car",
+    "de_slug": "bolsenasee-mit-dem-auto",
+    "fr_slug": "itineraire-en-voiture-du-lac-de-bolsena"
+  },
+  {
+    "it_file": "itinerario-fotografico-montefiascone.html",
+    "it_slug": "itinerario-fotografico-montefiascone",
+    "en_slug": "montefiascone-photography-itinerary",
+    "de_slug": "fotografischer-rundgang-montefiascone",
+    "fr_slug": "itineraire-photographique-de-montefiascone"
+  },
+  {
+    "it_file": "lago-di-bolsena-con-bambini.html",
+    "it_slug": "lago-di-bolsena-con-bambini",
+    "en_slug": "lake-bolsena-with-kids",
+    "de_slug": "bolsenasee-mit-kindern",
+    "fr_slug": "lac-de-bolsena-avec-des-enfants"
+  },
+  {
+    "it_file": "lago-di-bolsena-cosa-vedere.html",
+    "it_slug": "lago-di-bolsena-cosa-vedere",
+    "en_slug": "what-to-see-on-lake-bolsena",
+    "de_slug": "bolsenasee-sehenswuerdigkeiten",
+    "fr_slug": "lac-de-bolsena-que-voir"
+  },
+  {
+    "it_file": "lago-di-bolsena-in-2-giorni.html",
+    "it_slug": "lago-di-bolsena-in-2-giorni",
+    "en_slug": "lake-bolsena-in-two-days",
+    "de_slug": "bolsenasee-in-zwei-tagen",
+    "fr_slug": "lac-de-bolsena-en-2-jours"
+  },
+  {
+    "it_file": "lago-di-bolsena-in-autunno.html",
+    "it_slug": "lago-di-bolsena-in-autunno",
+    "en_slug": "lake-bolsena-in-autumn",
+    "de_slug": "bolsenasee-im-herbst",
+    "fr_slug": "lac-de-bolsena-en-automne"
+  },
+  {
+    "it_file": "lago-di-bolsena-in-bici.html",
+    "it_slug": "lago-di-bolsena-in-bici",
+    "en_slug": "cycling-lake-bolsena",
+    "de_slug": "bolsenasee-mit-dem-fahrrad",
+    "fr_slug": "lac-de-bolsena-a-velo"
+  },
+  {
+    "it_file": "lago-di-bolsena-in-un-giorno.html",
+    "it_slug": "lago-di-bolsena-in-un-giorno",
+    "en_slug": "lake-bolsena-in-one-day",
+    "de_slug": "bolsenasee-an-einem-tag",
+    "fr_slug": "lac-de-bolsena-en-une-journee"
+  },
+  {
+    "it_file": "lago-di-bolsena.html",
+    "it_slug": "lago-di-bolsena",
+    "en_slug": "lake-bolsena",
+    "de_slug": "bolsenasee",
+    "fr_slug": "lac-de-bolsene"
+  },
+  {
+    "it_file": "mangiare-centro-storico-montefiascone.html",
+    "it_slug": "mangiare-centro-storico-montefiascone",
+    "en_slug": "eating-historic-centre-montefiascone",
+    "de_slug": "essen-altstadt-montefiascone",
+    "fr_slug": "manger-dans-le-centre-historique-de-montefiascone"
+  },
+  {
+    "it_file": "mappa.html",
+    "it_slug": "mappa",
+    "en_slug": "map-montefiascone",
+    "de_slug": "karte-montefiascone",
+    "fr_slug": "carte"
+  },
+  {
+    "it_file": "marta-lago-di-bolsena-cosa-vedere.html",
+    "it_slug": "marta-lago-di-bolsena-cosa-vedere",
+    "en_slug": "marta-lake-bolsena-things-to-see",
+    "de_slug": "marta-bolsenasee-sehenswuerdigkeiten",
+    "fr_slug": "lac-marta-de-bolsena-que-voir"
+  },
+  {
+    "it_file": "migliori-panorami-lago-di-bolsena.html",
+    "it_slug": "migliori-panorami-lago-di-bolsena",
+    "en_slug": "best-viewpoints-lake-bolsena",
+    "de_slug": "beste-aussichten-bolsenasee",
+    "fr_slug": "meilleures-vues-du-lac-de-bolsena"
+  },
+  {
+    "it_file": "montefiascone-con-bambini-famiglie.html",
+    "it_slug": "montefiascone-con-bambini-famiglie",
+    "en_slug": "montefiascone-with-kids",
+    "de_slug": "montefiascone-mit-kindern",
+    "fr_slug": "montefiascone-avec-enfants-familles"
+  },
+  {
+    "it_file": "montefiascone-in-2-giorni.html",
+    "it_slug": "montefiascone-in-2-giorni",
+    "en_slug": "montefiascone-in-two-days",
+    "de_slug": "montefiascone-in-zwei-tagen",
+    "fr_slug": "montefiascone-en-2-jours"
+  },
+  {
+    "it_file": "montefiascone-in-autunno-vendemmia.html",
+    "it_slug": "montefiascone-in-autunno-vendemmia",
+    "en_slug": "autumn-in-montefiascone-lake-bolsena",
+    "de_slug": "montefiascone-im-herbst-weinlese",
+    "fr_slug": "montefiascone-en-recolte-dautomne"
+  },
+  {
+    "it_file": "montefiascone-in-inverno.html",
+    "it_slug": "montefiascone-in-inverno",
+    "en_slug": "winter-in-montefiascone",
+    "de_slug": "montefiascone-im-winter",
+    "fr_slug": "montefiascone-en-hiver"
+  },
+  {
+    "it_file": "montefiascone-in-primavera.html",
+    "it_slug": "montefiascone-in-primavera",
+    "en_slug": "spring-in-montefiascone-lake-bolsena",
+    "de_slug": "montefiascone-im-fruehling",
+    "fr_slug": "montefiascone-au-printemps"
+  },
+  {
+    "it_file": "montefiascone-in-un-giorno.html",
+    "it_slug": "montefiascone-in-un-giorno",
+    "en_slug": "montefiascone-in-one-day",
+    "de_slug": "montefiascone-an-einem-tag",
+    "fr_slug": "montefiascone-en-une-journee"
+  },
+  {
+    "it_file": "montefiascone-lago-bolsena-spot-fotografici-aerei.html",
+    "it_slug": "montefiascone-lago-bolsena-spot-fotografici-aerei",
+    "en_slug": "photo-spots-montefiascone-lake-bolsena",
+    "de_slug": "fotospots-montefiascone-bolsenasee",
+    "fr_slug": "spots-de-photos-aeriennes-du-lac-de-montefiascone-bolsena"
+  },
+  {
+    "it_file": "montefiascone-senza-auto.html",
+    "it_slug": "montefiascone-senza-auto",
+    "en_slug": "montefiascone-without-car",
+    "de_slug": "montefiascone-ohne-auto",
+    "fr_slug": "montefiascone-sans-voitures"
+  },
+  {
+    "it_file": "monumenti-minori-chiese-storiche-montefiascone.html",
+    "it_slug": "monumenti-minori-chiese-storiche-montefiascone",
+    "en_slug": "minor-churches-historic-monuments-montefiascone",
+    "de_slug": "kleine-kirchen-historische-monumente-montefiascone",
+    "fr_slug": "monuments-mineurs-eglises-historiques-montefiascone"
+  },
+  {
+    "it_file": "panorami-festival-montefiascone.html",
+    "it_slug": "panorami-festival-montefiascone",
+    "en_slug": "panorami-festival-montefiascone",
+    "de_slug": "panorami-festival-montefiascone",
+    "fr_slug": "panoramas-du-festival-de-montefiascone"
+  },
+  {
+    "it_file": "parcheggi-montefiascone.html",
+    "it_slug": "parcheggi-montefiascone",
+    "en_slug": "parking-in-montefiascone",
+    "de_slug": "parken-in-montefiascone",
+    "fr_slug": "parking-montefiascone"
+  },
+  {
+    "it_file": "pesce-di-lago-lago-di-bolsena.html",
+    "it_slug": "pesce-di-lago-lago-di-bolsena",
+    "en_slug": "lake-fish-lake-bolsena",
+    "de_slug": "fisch-aus-dem-bolsenasee",
+    "fr_slug": "lac-poisson-lac-de-bolsena"
+  },
+  {
+    "it_file": "prodotti-tipici-montefiascone-tuscia.html",
+    "it_slug": "prodotti-tipici-montefiascone-tuscia",
+    "en_slug": "local-products-montefiascone-tuscia",
+    "de_slug": "typische-produkte-montefiascone-tuscia",
+    "fr_slug": "produits-typiques-de-montefiascone-tuscia"
+  },
+  {
+    "it_file": "progetto-editoriale.html",
+    "it_slug": "progetto-editoriale",
+    "en_slug": "editorial-project-montefiascone",
+    "de_slug": "redaktionelles-projekt-montefiascone",
+    "fr_slug": "projet-editorial"
+  },
+  {
+    "it_file": "quando-visitare-montefiascone.html",
+    "it_slug": "quando-visitare-montefiascone",
+    "en_slug": "best-time-to-visit-montefiascone",
+    "de_slug": "beste-reisezeit-montefiascone",
+    "fr_slug": "quand-visiter-montefiascone"
+  },
+  {
+    "it_file": "rocca-dei-papi-montefiascone.html",
+    "it_slug": "rocca-dei-papi-montefiascone",
+    "en_slug": "rocca-dei-papi-montefiascone",
+    "de_slug": "rocca-dei-papi-montefiascone",
+    "fr_slug": "forteresse-des-papes-de-montefiascone"
+  },
+  {
+    "it_file": "san-lorenzo-nuovo-cosa-vedere-lago-di-bolsena.html",
+    "it_slug": "san-lorenzo-nuovo-cosa-vedere-lago-di-bolsena",
+    "en_slug": "san-lorenzo-nuovo-lake-bolsena-things-to-see",
+    "de_slug": "san-lorenzo-nuovo-bolsenasee-sehenswuerdigkeiten",
+    "fr_slug": "san-lorenzo-nuovo-que-voir-lac-de-bolsena"
+  },
+  {
+    "it_file": "spiagge-lago-di-bolsena.html",
+    "it_slug": "spiagge-lago-di-bolsena",
+    "en_slug": "lake-bolsena-beaches",
+    "de_slug": "straende-am-bolsenasee",
+    "fr_slug": "plages-du-lac-de-bolsena"
+  },
+  {
+    "it_file": "strada-del-vino-est-est-est-montefiascone.html",
+    "it_slug": "strada-del-vino-est-est-est-montefiascone",
+    "en_slug": "est-est-est-wine-route-montefiascone",
+    "de_slug": "est-est-est-weinroute-montefiascone",
+    "fr_slug": "strada-del-vino-est-est-est-est-est-montefiascone"
+  },
+  {
+    "it_file": "terme-viterbo-da-montefiascone.html",
+    "it_slug": "terme-viterbo-da-montefiascone",
+    "en_slug": "thermal-baths-near-montefiascone",
+    "de_slug": "thermalbaeder-viterbo-ab-montefiascone",
+    "fr_slug": "station-thermale-de-viterbe-depuis-montefiascone"
+  },
+  {
+    "it_file": "trekking-lago-di-bolsena.html",
+    "it_slug": "trekking-lago-di-bolsena",
+    "en_slug": "trekking-lake-bolsena",
+    "de_slug": "wandern-bolsenasee",
+    "fr_slug": "randonnee-au-lac-de-bolsena"
+  },
+  {
+    "it_file": "tuscania-da-montefiascone.html",
+    "it_slug": "tuscania-da-montefiascone",
+    "en_slug": "tuscania-from-montefiascone",
+    "de_slug": "tuscania-ab-montefiascone",
+    "fr_slug": "toscane-de-montefiascone"
+  },
+  {
+    "it_file": "tuscia-in-3-giorni-da-montefiascone.html",
+    "it_slug": "tuscia-in-3-giorni-da-montefiascone",
+    "en_slug": "tuscia-in-three-days-from-montefiascone",
+    "de_slug": "tuscia-in-drei-tagen-ab-montefiascone",
+    "fr_slug": "tuscia-en-3-jours-depuis-montefiascone"
+  },
+  {
+    "it_file": "valentano-cosa-vedere-lago-di-bolsena.html",
+    "it_slug": "valentano-cosa-vedere-lago-di-bolsena",
+    "en_slug": "valentano-lake-bolsena-things-to-see",
+    "de_slug": "valentano-bolsenasee-sehenswuerdigkeiten",
+    "fr_slug": "valetano-que-voir-lac-de-bolsena"
+  },
+  {
+    "it_file": "via-francigena-bolsena-montefiascone.html",
+    "it_slug": "via-francigena-bolsena-montefiascone",
+    "en_slug": "via-francigena-bolsena-montefiascone",
+    "de_slug": "via-francigena-bolsena-montefiascone",
+    "fr_slug": "via-francigena-bolsena-montefiascone"
+  },
+  {
+    "it_file": "via-francigena-cosa-portare.html",
+    "it_slug": "via-francigena-cosa-portare",
+    "en_slug": "via-francigena-packing-list-montefiascone",
+    "de_slug": "via-francigena-packliste-montefiascone",
+    "fr_slug": "via-francigena-quoi-apporter"
+  },
+  {
+    "it_file": "via-francigena-montefiascone-viterbo.html",
+    "it_slug": "via-francigena-montefiascone-viterbo",
+    "en_slug": "via-francigena-montefiascone-viterbo",
+    "de_slug": "via-francigena-montefiascone-viterbo",
+    "fr_slug": "via-francigena-montefiascone-viterbe"
+  },
+  {
+    "it_file": "viaggio-lento-lago-di-bolsena.html",
+    "it_slug": "viaggio-lento-lago-di-bolsena",
+    "en_slug": "slow-travel-lake-bolsena",
+    "de_slug": "langsames-reisen-bolsenasee",
+    "fr_slug": "voyage-lent-vers-le-lac-de-bolsena"
+  },
+  {
+    "it_file": "villa-lante-bagnaia-da-montefiascone.html",
+    "it_slug": "villa-lante-bagnaia-da-montefiascone",
+    "en_slug": "villa-lante-from-montefiascone",
+    "de_slug": "villa-lante-bagnaia-ab-montefiascone",
+    "fr_slug": "villa-lante-bagnaia-de-montefiascone"
+  },
+  {
+    "it_file": "vino.html",
+    "it_slug": "vino",
+    "en_slug": "montefiascone-wine-guide",
+    "de_slug": "montefiascone-wein-guide",
+    "fr_slug": "vin"
+  },
+  {
+    "it_file": "viterbo-da-montefiascone.html",
+    "it_slug": "viterbo-da-montefiascone",
+    "en_slug": "viterbo-from-montefiascone",
+    "de_slug": "viterbo-ab-montefiascone",
+    "fr_slug": "viterbe-depuis-montefiascone"
+  },
+  {
+    "it_file": "weekend-a-montefiascone.html",
+    "it_slug": "weekend-a-montefiascone",
+    "en_slug": "weekend-in-montefiascone",
+    "de_slug": "wochenende-in-montefiascone",
+    "fr_slug": "week-end-a-montefiascone"
+  },
+  {
+    "it_file": "weekend-romantico-lago-di-bolsena.html",
+    "it_slug": "weekend-romantico-lago-di-bolsena",
+    "en_slug": "romantic-weekend-lake-bolsena",
+    "de_slug": "romantisches-wochenende-bolsenasee",
+    "fr_slug": "week-end-romantique-sur-le-lac-de-bolsena"
+  }
+]
