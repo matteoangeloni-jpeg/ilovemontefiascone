@@ -29,6 +29,20 @@ Build a natural French editorial layer for the first FR block without reopening 
 | `fr/associations-benevoles-de-montefiascone.html` | queued | P2 | Civic life and volunteering. |
 | `fr/week-end-a-montefiascone.html` | queued | P2 | Short-stay planning page. |
 
+## First Manual Recovery Cluster
+
+The first cluster currently being normalized by hand is the core travel/discovery set:
+
+- `fr/index.html`
+- `fr/guide.html`
+- `fr/que-voir-montefiascone-guide-complet.html`
+- `fr/carte.html`
+- `fr/lac-de-bolsena-que-voir.html`
+- `fr/via-francigena-bolsena-montefiascone.html`
+- `fr/montefiascone-en-2-jours.html`
+
+This cluster stays source-only and does not reopen the public FR perimeter.
+
 ## Editing Rules
 
 - Use natural French, not literal translation.

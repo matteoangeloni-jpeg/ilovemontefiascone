@@ -10,6 +10,14 @@ Scope: source-only French corpus. Public FR remains excluded.
 - Public FR: excluded
 - Current status: `NOT READY` until residual mixed-language fragments are fully normalized
 - Current state after automated normalization: editorial progress in place, but several pages still need a controlled French cleanup pass
+- First manual recovery cluster started on core travel/discovery pages:
+  - `fr/index.html`
+  - `fr/guide.html`
+  - `fr/que-voir-montefiascone-guide-complet.html`
+  - `fr/carte.html`
+  - `fr/lac-de-bolsena-que-voir.html`
+  - `fr/via-francigena-bolsena-montefiascone.html`
+  - `fr/montefiascone-en-2-jours.html`
 
 ## Mass normalization recovery note
 
