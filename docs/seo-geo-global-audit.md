@@ -1,22 +1,22 @@
 # SEO / GEO Global Audit
 
-Updated: 2026-06-29  
+Updated: 2026-07-02  
 Branch: `feature/de-articles-expansion`  
 Scope: static trilingual site only. The separate Next.js project is excluded.
 
 ## Verdict
 
-**READY**
+**READY WITH NOTES**
 
-The public trilingual perimeter is now technically clean and aligned across source, build and release artifacts.
+The public trilingual perimeter is technically clean and aligned across source, build and release artifacts. The current repo state also includes a new organic growth documentation set that maps clusters, search intents, linking opportunities and backlog priorities.
 
 ## What Was Closed
 
 ### Public perimeter
 
-- Source corpus aligned at `97 / 97 / 97`
-- Public build aligned at `97 / 97 / 97`
-- Public sitemaps aligned at `97 / 97 / 97`
+- Source corpus aligned at `98 / 98 / 98`
+- Public build aligned at `98 / 98 / 98`
+- Public sitemaps aligned at `98 / 98 / 98`
 - `llms.txt` aligned to the strict public perimeter
 
 ### EN matrix
@@ -43,9 +43,28 @@ The five priority German evergreen pages were strengthened to remove the pre-gat
 
 Affected public pages and `llms.txt` were normalized so the public perimeter no longer exposes mojibake in source or in `dist-it`.
 
+### Current P1 refinement note
+
+The main remaining editorial priority is not perimeter expansion but ongoing quality control on the existing pillar pages:
+
+- keep event titles concise and search-friendly
+- preserve prudent wording on event details that are not visible or verified
+- avoid introducing new URLs while reinforcing internal linking across the three public languages
+
+### Organic growth documentation set
+
+The current strategy layer is now documented in four dedicated files:
+
+- `docs/organic-cluster-map.md`
+- `docs/query-intent-map.md`
+- `docs/internal-linking-opportunities.md`
+- `docs/content-backlog-organic-growth.md`
+
+This audit should now be read as the executive index for the release state and the next organic-growth phase, not as a duplicate of the cluster maps themselves.
+
 ## Final QA Results
 
-Automated QA was executed on all `291` public pages in source and in the generated `dist-it` package.
+Automated QA was executed on all `294` public pages in source and in the generated `dist-it` package.
 
 | Check | Source | Build |
 | --- | --- | --- |
@@ -69,11 +88,11 @@ Automated QA was executed on all `291` public pages in source and in the generat
 ## Release Artifact Status
 
 - `npm run build:cloudflare`: pass
-- `sitemap-it.xml`: `97`
-- `sitemap-en.xml`: `97`
-- `sitemap-de.xml`: `97`
+- `sitemap-it.xml`: `98`
+- `sitemap-en.xml`: `98`
+- `sitemap-de.xml`: `98`
 - `sitemap.xml`: pass
-- `llms.txt`: `97 / 97 / 97` public page sections
+- `llms.txt`: `98 / 98 / 98` public page sections
 - `robots.txt`: no FR references
 - `_redirects`: canonical host redirect, EN exception redirects, technical 404 rules
 - `/fr/`: absent
@@ -91,11 +110,12 @@ This means the strict publication gate remains ready and the previously document
 
 ## Recommended Next Step
 
-Move from thin-content remediation to editorial refinement:
+Move from technical closure to structured organic growth:
 
-1. review internal linking opportunities across the strengthened DE event cluster
-2. monitor search performance for DE event and Lake Bolsena discovery queries
-3. keep future event pages aligned with the same no-invention data rule
+1. apply only the safest internal-linking opportunities from the new opportunity map
+2. refine the strongest hubs rather than creating new pages
+3. keep future content aligned with the no-invention data rule and the public perimeter
+4. use the cluster map and intent map as the source of truth for the next editorial batch
 
 ## Confirmations
 
