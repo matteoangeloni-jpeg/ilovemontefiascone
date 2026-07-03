@@ -18,10 +18,10 @@ Build a natural French editorial layer for the first FR block without reopening 
 | `fr/evenements-dete-a-montefiascone-2026.html` | rewritten now | P0 | Evergreen calendar anchored on verified 2026 events. |
 | `fr/que-voir.html` | queued | P1 | Core discovery hub. |
 | `fr/que-voir-montefiascone-guide-complet.html` | queued | P1 | Detailed sightseeing guide. |
-| `fr/vin.html` | queued | P1 | Wine and tasting hub. |
-| `fr/est-est-est-montefiascone-vino-doc.html` | queued | P1 | Wine brand pillar. |
-| `fr/degustation-de-vin-de-montefiascone-comment-ca-marche.html` | queued | P1 | Tasting process explanation. |
-| `fr/degustation-de-vignobles-de-montefiascone-est-est-est.html` | queued | P1 | Winery tasting spoke. |
+| `fr/vin.html` | rewritten now | P1 | Wine and tasting hub. |
+| `fr/est-est-est-montefiascone-vino-doc.html` | rewritten now | P1 | Wine brand pillar. |
+| `fr/degustation-de-vin-de-montefiascone-comment-ca-marche.html` | rewritten now | P1 | Tasting process explanation. |
+| `fr/degustation-de-vignobles-de-montefiascone-est-est-est.html` | rewritten now | P1 | Winery tasting spoke. |
 | `fr/que-voir-autour-de-litineraire-de-montefiascone.html` | queued | P1 | Nearby destinations hub. |
 | `fr/via-francigena-bolsena-montefiascone.html` | queued | P1 | Walking route from Bolsena. |
 | `fr/via-francigena-montefiascone-viterbe.html` | queued | P1 | Stage toward Viterbo. |
@@ -62,6 +62,25 @@ Cluster notes:
 - event pages were rewritten with a stricter prudence rule for dates, access conditions, lineups, programs and organizer claims;
 - internal linking was limited to FR pages already revised inside the source corpus;
 - public FR remains excluded from the build and from public hreflang, sitemap and llms surfaces.
+
+## Third Manual Recovery Cluster
+
+The third bounded cluster now manually reviewed is the FR wine and tasting set:
+
+- `fr/vin.html`
+- `fr/est-est-est-montefiascone-vino-doc.html`
+- `fr/degustation-de-vin-de-montefiascone-comment-ca-marche.html`
+- `fr/degustation-de-vignobles-de-montefiascone-est-est-est.html`
+- `fr/strada-del-vino-est-est-est-est-est-montefiascone.html`
+- `fr/evenements-traditions-foire-aux-vins-de-montefiascone.html`
+
+Cluster notes:
+
+- the wine hub, DOC pillar and tasting spokes were fully rewritten in French source form;
+- unsupported pricing, booking promises and winery-specific assertions were removed;
+- the wine route page is framed as an editorial route, not as an official consortium itinerary;
+- the Wine Fair page was kept inside the cluster only to align vocabulary, metadata and internal links with the wine block;
+- broader gastronomy pages remain outside this cluster and need a later dedicated pass.
 
 ## Editing Rules
 

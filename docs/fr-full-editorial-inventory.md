@@ -83,6 +83,35 @@ Residual risk kept under note, not blocker:
 - a few event pages intentionally keep source-backed operational details such as announced dates, named openings or tasting slots, but now with clearer prudence language;
 - public FR publication remains blocked until later clusters reduce the remaining source corpus risk.
 
+## Manual recovery progress after cluster 3
+
+The third manual cluster, focused on **wine, tasting and the Est! Est!! Est!!! narrative**, has now been revised source-side without reopening public FR.
+
+Pages treated in cluster 3:
+
+- `fr/vin.html` -> `FR_READY_SOURCE`
+- `fr/est-est-est-montefiascone-vino-doc.html` -> `FR_READY_SOURCE`
+- `fr/degustation-de-vin-de-montefiascone-comment-ca-marche.html` -> `FR_READY_SOURCE`
+- `fr/degustation-de-vignobles-de-montefiascone-est-est-est.html` -> `FR_READY_SOURCE`
+- `fr/strada-del-vino-est-est-est-est-est-montefiascone.html` -> `FR_READY_SOURCE`
+- `fr/evenements-traditions-foire-aux-vins-de-montefiascone.html` -> `FR_READY_SOURCE`
+
+What was corrected in this cluster:
+
+- French title / meta / H1 coherence across the bounded wine block;
+- French OG / Twitter titles and descriptions aligned to clean FR URLs;
+- canonical and `og:url` normalized to FR clean URLs;
+- JSON-LD rebuilt as `Article`, `CollectionPage`, `BreadcrumbList`, `ItemList` or `FAQPage` where appropriate;
+- `inLanguage` aligned to `fr-FR`;
+- unsupported winery specifics, prices, booking assumptions and partner claims removed;
+- internal links limited to already revised FR pages inside the wine and core-travel clusters.
+
+Residual risk kept under note, not blocker:
+
+- broader gastronomy pages still outside this cluster keep the corpus globally in source-only recovery mode;
+- the Wine Fair page keeps only already published date references and prudent wording for daily programming;
+- public FR publication remains blocked until later clusters reduce the remaining source corpus risk.
+
 ## Inventory
 
 | # | File | Future URL | IT equiv. | EN equiv. | DE equiv. | Cluster | Role | Title | Meta description | H1 | Status linguistique | Problems | Final |
