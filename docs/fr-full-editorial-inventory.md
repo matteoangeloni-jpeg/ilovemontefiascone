@@ -112,6 +112,31 @@ Residual risk kept under note, not blocker:
 - the Wine Fair page keeps only already published date references and prudent wording for daily programming;
 - public FR publication remains blocked until later clusters reduce the remaining source corpus risk.
 
+## Manual recovery progress after cluster 4
+
+The fourth manual cluster, focused on **local gastronomy, products of the territory and food-and-wine framing**, has now been revised source-side without reopening public FR.
+
+Pages treated in cluster 4:
+
+- `fr/cuisine-typique-de-montefiascone.html` -> `FR_READY_SOURCE`
+- `fr/produits-typiques-de-montefiascone-tuscia.html` -> `FR_READY_SOURCE`
+- `fr/experiences-gastronomiques-et-nologiques-a-montefiascone.html` -> `FR_READY_SOURCE`
+
+What was corrected in this cluster:
+
+- French title / meta / H1 coherence across the gastronomy trio;
+- canonical and `og:url` normalized to clean FR URLs;
+- social metadata aligned to French source copy;
+- JSON-LD simplified to supported `Article`, `BreadcrumbList` and `FAQPage` structures;
+- unsupported restaurant names, producer lists, reservation promises, schedules and pricing removed;
+- internal links restricted to already revised FR pages.
+
+Residual risk kept under note, not blocker:
+
+- this cluster is editorial and orientational, not transactional;
+- practical food, dining and booking details still require on-site or official verification;
+- public FR publication remains blocked until later clusters reduce the remaining source corpus risk.
+
 ## Inventory
 
 | # | File | Future URL | IT equiv. | EN equiv. | DE equiv. | Cluster | Role | Title | Meta description | H1 | Status linguistique | Problems | Final |

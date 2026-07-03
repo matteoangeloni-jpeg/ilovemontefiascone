@@ -82,6 +82,21 @@ Cluster notes:
 - the Wine Fair page was kept inside the cluster only to align vocabulary, metadata and internal links with the wine block;
 - broader gastronomy pages remain outside this cluster and need a later dedicated pass.
 
+## Fourth Manual Recovery Cluster
+
+The fourth bounded cluster now manually reviewed is the FR local gastronomy and territory-products set:
+
+- `fr/cuisine-typique-de-montefiascone.html`
+- `fr/produits-typiques-de-montefiascone-tuscia.html`
+- `fr/experiences-gastronomiques-et-nologiques-a-montefiascone.html`
+
+Cluster notes:
+
+- the three gastronomy pages were fully rewritten in French source form;
+- product, restaurant, reservation and pricing claims were kept prudent;
+- no unsupported addresses, menus, schedules or producer lists were introduced;
+- the cluster completes the first FR wine-and-gastronomy block while public FR remains excluded.
+
 ## Editing Rules
 
 - Use natural French, not literal translation.
@@ -92,4 +107,4 @@ Cluster notes:
 
 ## Next Batch
 
-The next FR batch should focus on the P1 pages before any secondary civic or weekend content.
+The next FR batch should move beyond wine and gastronomy toward the remaining P1 discovery and utility pages, before any secondary civic or weekend content.

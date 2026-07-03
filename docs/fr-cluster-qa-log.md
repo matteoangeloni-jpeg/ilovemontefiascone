@@ -34,6 +34,12 @@ Scope: source-only French recovery clusters. Public FR remains excluded.
 5. `fr/strada-del-vino-est-est-est-est-est-montefiascone.html`
 6. `fr/evenements-traditions-foire-aux-vins-de-montefiascone.html`
 
+## Fourth cluster completed
+
+1. `fr/cuisine-typique-de-montefiascone.html`
+2. `fr/produits-typiques-de-montefiascone-tuscia.html`
+3. `fr/experiences-gastronomiques-et-nologiques-a-montefiascone.html`
+
 ## Editorial goals
 
 - translate visible French surfaces without reopening the full 98-page corpus;
@@ -97,3 +103,23 @@ Scope: source-only French recovery clusters. Public FR remains excluded.
   - no unsupported winery booking conditions;
   - no unsupported restaurant or partner claims;
   - Foire du Vin page keeps only already published date references and non-definitive program wording.
+
+## Fourth cluster QA table
+
+| File | Cluster | Title | Meta | H1 | Body FR | Gastronomy data prudent | Links | Canonical | Structured data | Residuals | Interventions | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `fr/cuisine-typique-de-montefiascone.html` | FR gastronomie locale et produits du territoire | OK | OK | OK | OK | OK | OK | OK | OK | none blocking | page rebuilt, links normalized to FR gastronomy and wine pages, no commercial claims | `FR_READY_SOURCE` |
+| `fr/produits-typiques-de-montefiascone-tuscia.html` | FR gastronomie locale et produits du territoire | OK | OK | OK | OK | OK | OK | OK | OK | none blocking | product page rebuilt, territory framing clarified, practical claims softened | `FR_READY_SOURCE` |
+| `fr/experiences-gastronomiques-et-nologiques-a-montefiascone.html` | FR gastronomie locale et produits du territoire | OK | OK | OK | OK | OK | OK | OK | OK | none blocking | experience page rebuilt, reservation and pricing claims removed, FR path alignment restored | `FR_READY_SOURCE` |
+
+## Fourth cluster notes
+
+- Bounded cluster kept to three core gastronomy pages only.
+- No additional FR pages were reopened.
+- Prudence rule maintained:
+  - no restaurants invented;
+  - no producers invented;
+  - no pricing;
+  - no booking guarantees;
+  - no operational promises on gastronomy experiences;
+  - no event markup introduced on non-event gastronomy pages.
