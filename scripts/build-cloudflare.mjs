@@ -111,11 +111,14 @@ function optimizePublicHtml(html) {
 
 function stripFrenchSupportSignals(fileName, text) {
   if (fileName === "llms.txt") {
+    const frenchUrlPattern =
+      /https:\/\/www\.ilovemontefiascone\.com\/fr(?:\/|[\s)#?]|$)/i;
     return text
       .split(/\r?\n/)
       .filter(
         (line) =>
           !line.includes("/fr/") &&
+          !frenchUrlPattern.test(line) &&
           !line.includes("French draft content") &&
           !line.includes("Public languages: Italian, English, German, French.") &&
           !line.includes("Public perimeter: 98 IT / 98 EN / 98 DE / 98 FR."),

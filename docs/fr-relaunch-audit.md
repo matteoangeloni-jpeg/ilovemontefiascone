@@ -163,3 +163,10 @@ These four pages are the safest starting set because they anchor the FR experien
 - `llms.txt` remains clean and does not expose `/fr/`, `.html`, `pages.dev`, or `github.io`.
 - No deploy has been performed in this step.
 - No push has been performed in this step.
+
+## llms.txt FR exclusion fix
+
+- Problem detected: the generated public `dist-it/llms.txt` still exposed a French URL even though FR pages remain excluded from the public build.
+- Root cause: the source `llms.txt` still contained one FR line and the build filter in `scripts/build-cloudflare.mjs` only stripped lines containing `/fr/`, not the clean `/fr` URL form without trailing slash.
+- Files corrected: `llms.txt`, `scripts/build-cloudflare.mjs`.
+- Verification: rebuilt with `npm run build:cloudflare`; public output remains `98 IT / 98 EN / 98 DE`, FR pages stay excluded, and `dist-it/llms.txt` no longer contains `/fr/`, FR URLs, `sitemap-fr`, `.html`, `pages.dev`, or `github.io`.
