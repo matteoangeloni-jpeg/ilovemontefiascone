@@ -205,6 +205,374 @@ const WEATHER_ENDPOINT =
 
 const RAIN_CODES = new Set([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82, 95, 96, 99]);
 const SUNNY_CODES = new Set([0, 1, 2]);
+const MOBILE_NAV_QUERY = "(max-width: 63.99rem)";
+
+const NAV_CONFIG = {
+  it: {
+    homeLabel: "Home",
+    clusters: [
+      {
+        key: "visit",
+        label: "Visita",
+        activePatterns: [
+          "/cosa-vedere",
+          "/rocca-dei-papi",
+          "/cattedrale",
+          "/basilica",
+          "/mappa",
+          "/via-francigena",
+          "/itinerari",
+          "/galleria",
+          "/montefiascone-in-",
+          "/monumenti-"
+        ],
+        items: [
+          { href: "/cosa-vedere", label: "Cosa vedere", description: "Luoghi chiave nel borgo" },
+          { href: "/cosa-vedere-montefiascone-guida-completa", label: "Guida completa", description: "Rocca, cattedrale, centro storico" },
+          { href: "/mappa", label: "Mappa", description: "Parcheggi, punti chiave, dislivelli" },
+          { href: "/itinerari-tematici-montefiascone", label: "Itinerari", description: "Percorsi per temi e tempo disponibile" },
+          { href: "/via-francigena-bolsena-montefiascone", label: "Via Francigena", description: "Tappa e lettura del cammino" },
+          { href: "/galleria", label: "Galleria", description: "Immagini e crediti fotografici" }
+        ]
+      },
+      {
+        key: "events",
+        label: "Eventi",
+        activePatterns: [
+          "/eventi",
+          "/atb-festival",
+          "/est-film-festival",
+          "/cronoscalata",
+          "/festa-santa-margherita",
+          "/concerto-banda",
+          "/panorami-festival",
+          "/festival-ecologia",
+          "/est-lake-festival",
+          "/anno-domini-1074"
+        ],
+        items: [
+          { href: "/eventi", label: "Eventi a Montefiascone", description: "Hub eventi e orientamento" },
+          { href: "/eventi-estate-montefiascone-2026", label: "Estate 2026", description: "Cartellone stagionale confermato" },
+          { href: "/eventi-tradizioni-fiera-del-vino-montefiascone", label: "Fiera del Vino", description: "Tradizioni e contesto storico" },
+          { href: "/atb-festival-montefiascone", label: "ATB Festival", description: "Musica live e estate falisca" },
+          { href: "/est-film-festival-montefiascone", label: "Est Film Festival", description: "Cinema e incontri nel borgo" }
+        ]
+      },
+      {
+        key: "lake",
+        label: "Lago e dintorni",
+        activePatterns: [
+          "/lago-di-bolsena",
+          "/bolsena-",
+          "/marta-",
+          "/capodimonte-",
+          "/gradoli-",
+          "/grotte-di-castro",
+          "/san-lorenzo-nuovo",
+          "/valentano-",
+          "/spiagge-",
+          "/borghi-lago-",
+          "/borghi-piu-belli-lago-",
+          "/dove-vedere-il-tramonto-sul-lago",
+          "/pesce-di-lago"
+        ],
+        items: [
+          { href: "/lago-di-bolsena", label: "Lago di Bolsena", description: "Hub generale del lago" },
+          { href: "/borghi-lago-di-bolsena", label: "Borghi del lago", description: "Paesi e soste attorno alla riva" },
+          { href: "/montefiascone-in-2-giorni", label: "Montefiascone in 2 giorni", description: "Base per un weekend" },
+          { href: "/cosa-vedere-dintorni-montefiascone-itinerario", label: "Itinerario dintorni", description: "Tuscia e gite in giornata" }
+        ]
+      },
+      {
+        key: "wine",
+        label: "Vino e sapori",
+        activePatterns: [
+          "/vino",
+          "/est-est-est",
+          "/cantine-",
+          "/degustazione-",
+          "/cucina-tipica",
+          "/prodotti-tipici",
+          "/esperienze-enogastronomiche",
+          "/dove-mangiare"
+        ],
+        items: [
+          { href: "/est-est-est-montefiascone-vino-doc", label: "Est! Est!! Est!!!", description: "Il vino simbolo di Montefiascone" },
+          { href: "/vino", label: "Hub vino", description: "Orientamento tra pagine e cantine" },
+          { href: "/degustazione-vino-montefiascone-come-funziona", label: "Degustazioni", description: "Come funziona una visita" },
+          { href: "/cantine-montefiascone-degustazione-est-est-est", label: "Cantine", description: "Dove iniziare con le visite" },
+          { href: "/cucina-tipica-montefiascone", label: "Cucina tipica", description: "Piatti e abbinamenti locali" },
+          { href: "/prodotti-tipici-montefiascone-tuscia", label: "Prodotti locali", description: "Sapori della Tuscia" }
+        ]
+      },
+      {
+        key: "practical",
+        label: "Info pratiche",
+        activePatterns: [
+          "/come-arrivare",
+          "/dove-mangiare",
+          "/dove-dormire",
+          "/dormire-",
+          "/parcheggi",
+          "/progetto-editoriale",
+          "/privacy",
+          "/cookie",
+          "/informazioni-turistiche"
+        ],
+        items: [
+          { href: "/come-arrivare-a-montefiascone", label: "Come arrivare", description: "Auto, treno e collegamenti" },
+          { href: "/dove-mangiare-a-montefiascone", label: "Dove mangiare", description: "Orientamento tra centro e cucina" },
+          { href: "/dove-dormire-a-montefiascone", label: "Dove dormire", description: "Scegliere la base giusta" },
+          { href: "/progetto-editoriale", label: "Progetto editoriale", description: "Trasparenza e criteri di aggiornamento" }
+        ]
+      }
+    ]
+  },
+  en: {
+    homeLabel: "Home",
+    clusters: [
+      {
+        key: "visit",
+        label: "Visit",
+        activePatterns: [
+          "/things-to-see",
+          "/what-to-see",
+          "/travel-guide",
+          "/map-",
+          "/via-francigena",
+          "/thematic-itineraries",
+          "/gallery-",
+          "/montefiascone-in-",
+          "/rocca-",
+          "/cathedral-",
+          "/basilica-"
+        ],
+        items: [
+          { href: "/en/things-to-see-montefiascone", label: "What to see", description: "Highlights in town" },
+          { href: "/en/montefiascone-travel-guide", label: "Travel guide", description: "Old town, landmarks, planning" },
+          { href: "/en/map-montefiascone", label: "Map", description: "Key points, parking, slopes" },
+          { href: "/en/thematic-itineraries-montefiascone", label: "Itineraries", description: "Routes by theme and pace" },
+          { href: "/en/via-francigena-bolsena-montefiascone", label: "Via Francigena", description: "Walking context and stage" },
+          { href: "/en/gallery-montefiascone", label: "Gallery", description: "Photo credits and views" }
+        ]
+      },
+      {
+        key: "events",
+        label: "Events",
+        activePatterns: [
+          "/events-",
+          "/summer-events",
+          "/wine-fair",
+          "/atb-festival",
+          "/est-film-festival",
+          "/hill-climb",
+          "/banda-rb-revue",
+          "/panorami-festival",
+          "/integral-ecology",
+          "/est-lake-festival",
+          "/santa-margherita-feast",
+          "/anno-domini-1074"
+        ],
+        items: [
+          { href: "/en/events-montefiascone", label: "Events in Montefiascone", description: "Main events hub" },
+          { href: "/en/montefiascone-summer-events-2026", label: "Summer 2026", description: "Confirmed seasonal calendar" },
+          { href: "/en/montefiascone-wine-fair-traditions", label: "Wine Fair", description: "Traditions and summer context" },
+          { href: "/en/atb-festival-montefiascone", label: "ATB Festival", description: "Live music and summer nights" },
+          { href: "/en/est-film-festival-montefiascone", label: "Est Film Festival", description: "Cinema and meetings" }
+        ]
+      },
+      {
+        key: "lake",
+        label: "Lake and nearby",
+        activePatterns: [
+          "/lake-bolsena",
+          "/bolsena-",
+          "/marta-",
+          "/capodimonte-",
+          "/gradoli-",
+          "/grotte-di-castro",
+          "/san-lorenzo-nuovo",
+          "/valentano-",
+          "/best-villages",
+          "/where-to-watch-sunset",
+          "/lake-fish"
+        ],
+        items: [
+          { href: "/en/lake-bolsena", label: "Lake Bolsena", description: "Main lake hub" },
+          { href: "/en/lake-bolsena-villages", label: "Lake villages", description: "Towns around the shore" },
+          { href: "/en/montefiascone-in-two-days", label: "Montefiascone in 2 days", description: "A practical weekend base" },
+          { href: "/en/things-to-do-near-montefiascone", label: "Nearby day trips", description: "Tuscia and easy detours" }
+        ]
+      },
+      {
+        key: "wine",
+        label: "Wine and food",
+        activePatterns: [
+          "/wine",
+          "/est-est-est",
+          "/tasting",
+          "/wineries",
+          "/typical-food",
+          "/local-products",
+          "/food-recipes",
+          "/food-wine-experiences",
+          "/where-to-eat"
+        ],
+        items: [
+          { href: "/en/est-est-est-montefiascone-doc-wine", label: "Est! Est!! Est!!!", description: "The local DOC wine" },
+          { href: "/en/montefiascone-wine-guide", label: "Wine guide", description: "Overview of wine pages" },
+          { href: "/en/wine-tasting-montefiascone-est-est-est", label: "Tastings", description: "How wine visits work" },
+          { href: "/en/how-wine-tasting-works-montefiascone", label: "How tastings work", description: "Planning before booking" },
+          { href: "/en/typical-food-montefiascone", label: "Local food", description: "Typical dishes and pairings" },
+          { href: "/en/local-products-montefiascone-tuscia", label: "Local products", description: "Tuscia flavours" }
+        ]
+      },
+      {
+        key: "practical",
+        label: "Practical info",
+        activePatterns: [
+          "/how-to-get",
+          "/where-to-eat",
+          "/where-to-stay",
+          "/staying-",
+          "/parking-",
+          "/editorial-project",
+          "/privacy",
+          "/cookie",
+          "/tourist-information"
+        ],
+        items: [
+          { href: "/en/how-to-get-to-montefiascone", label: "How to get there", description: "Travel basics and routes" },
+          { href: "/en/where-to-eat-in-montefiascone", label: "Where to eat", description: "Food planning in town" },
+          { href: "/en/where-to-stay-in-montefiascone", label: "Where to stay", description: "Choose the right base" },
+          { href: "/en/editorial-project-montefiascone", label: "Editorial project", description: "Transparency and method" }
+        ]
+      }
+    ]
+  },
+  de: {
+    homeLabel: "Startseite",
+    clusters: [
+      {
+        key: "visit",
+        label: "Besuchen",
+        activePatterns: [
+          "/was-sehen",
+          "/sehenswuerdigkeiten",
+          "/reisefuehrer",
+          "/karte-",
+          "/via-francigena",
+          "/thematische-routen",
+          "/galerie-",
+          "/montefiascone-in-",
+          "/rocca-",
+          "/kathedrale-",
+          "/basilika-"
+        ],
+        items: [
+          { href: "/de/was-sehen-montefiascone", label: "Sehenswürdigkeiten", description: "Die wichtigsten Orte im Borgo" },
+          { href: "/de/reisefuehrer-montefiascone", label: "Reiseführer", description: "Altstadt, Orientierung, Planung" },
+          { href: "/de/karte-montefiascone", label: "Karte", description: "Zugänge, Höhenlage, Übersicht" },
+          { href: "/de/thematische-routen-montefiascone", label: "Itinerarien", description: "Routen nach Thema und Zeit" },
+          { href: "/de/via-francigena-bolsena-montefiascone", label: "Via Francigena", description: "Etappe und Pilgerkontext" },
+          { href: "/de/galerie-montefiascone", label: "Galerie", description: "Bilder und Fotocredits" }
+        ]
+      },
+      {
+        key: "events",
+        label: "Veranstaltungen",
+        activePatterns: [
+          "/veranstaltungen-",
+          "/sommerveranstaltungen",
+          "/weinfest-",
+          "/atb-festival",
+          "/est-film-festival",
+          "/cronoscalata",
+          "/banda-rb-revue",
+          "/panorami-festival",
+          "/festival-integrale-oekologie",
+          "/est-lake-festival",
+          "/fest-santa-margherita",
+          "/anno-domini-1074"
+        ],
+        items: [
+          { href: "/de/veranstaltungen-montefiascone", label: "Events in Montefiascone", description: "Hauptübersicht für Termine" },
+          { href: "/de/sommerveranstaltungen-montefiascone-2026", label: "Sommer 2026", description: "Bestätigte saisonale Termine" },
+          { href: "/de/weinfest-montefiascone-traditionen", label: "Weinfest", description: "Tradition und Sommersaison" },
+          { href: "/de/atb-festival-montefiascone", label: "ATB Festival", description: "Live-Musik und Sommerabende" },
+          { href: "/de/est-film-festival-montefiascone", label: "Est Film Festival", description: "Kino und Begegnungen" }
+        ]
+      },
+      {
+        key: "lake",
+        label: "See und Umgebung",
+        activePatterns: [
+          "/bolsenasee",
+          "/bolsena-",
+          "/marta-",
+          "/capodimonte-",
+          "/gradoli-",
+          "/grotte-di-castro",
+          "/san-lorenzo-nuovo",
+          "/valentano-",
+          "/schoenste-orte-am-bolsenasee",
+          "/sonnenuntergang-bolsenasee",
+          "/fisch-aus-dem-bolsenasee"
+        ],
+        items: [
+          { href: "/de/bolsenasee", label: "Bolsenasee", description: "Hauptseite zum See" },
+          { href: "/de/bolsenasee-doerfer", label: "Dörfer am See", description: "Orte und Uferstationen" },
+          { href: "/de/montefiascone-in-zwei-tagen", label: "Montefiascone in 2 Tagen", description: "Praktische Wochenendbasis" },
+          { href: "/de/ausfluege-rund-um-montefiascone", label: "Ausflüge", description: "Tuscia und Tagesziele" }
+        ]
+      },
+      {
+        key: "wine",
+        label: "Wein und Küche",
+        activePatterns: [
+          "/wein",
+          "/est-est-est",
+          "/weinverkostung",
+          "/weingueter",
+          "/typische-kueche",
+          "/typische-produkte",
+          "/kulinarische-erlebnisse",
+          "/essen-in-montefiascone"
+        ],
+        items: [
+          { href: "/de/est-est-est-wein-montefiascone", label: "Est! Est!! Est!!!", description: "Der DOC-Wein des Ortes" },
+          { href: "/de/montefiascone-wein-guide", label: "Weinführer", description: "Überblick zu Wein und Genuss" },
+          { href: "/de/weinverkostung-montefiascone-ablauf", label: "Verkostungen", description: "Ablauf und Planung" },
+          { href: "/de/weingueter-montefiascone-verkostung", label: "Weingüter", description: "Besuche und Orientierung" },
+          { href: "/de/typische-kueche-montefiascone", label: "Typische Küche", description: "Gerichte und Kombinationen" },
+          { href: "/de/typische-produkte-montefiascone-tuscia", label: "Lokale Produkte", description: "Aromen der Tuscia" }
+        ]
+      },
+      {
+        key: "practical",
+        label: "Praktische Infos",
+        activePatterns: [
+          "/anreise-",
+          "/anreise-nach-",
+          "/essen-in-montefiascone",
+          "/unterkunft-",
+          "/uebernachten-",
+          "/parken-",
+          "/redaktionelles-projekt",
+          "/privacy",
+          "/cookie",
+          "/touristeninformation"
+        ],
+        items: [
+          { href: "/de/anreise-nach-montefiascone", label: "Anreise", description: "Wege und Grundlagen zur Fahrt" },
+          { href: "/de/essen-in-montefiascone", label: "Essen", description: "Orientierung für Mahlzeiten" },
+          { href: "/de/unterkunft-in-montefiascone", label: "Unterkunft", description: "Die passende Basis wählen" },
+          { href: "/de/redaktionelles-projekt-montefiascone", label: "Redaktionelles Projekt", description: "Transparenz und Methode" }
+        ]
+      }
+    ]
+  }
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
@@ -229,14 +597,172 @@ function scheduleContextualWeather() {
 
 function initNav() {
   const toggle = document.querySelector("[data-nav-toggle]");
-  const nav = document.querySelector("[data-nav]");
+  const nav = document.querySelector("[data-nav]") || document.querySelector(".site-nav");
 
   if (!toggle || !nav) return;
+
+  const lang = getDocumentLanguage();
+  const config = NAV_CONFIG[lang];
+  if (config) {
+    nav.innerHTML = buildNavMarkup(config, lang, window.location.pathname);
+    nav.classList.add("site-nav--enhanced");
+    setupClusterNavigation(nav);
+  }
 
   toggle.addEventListener("click", () => {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!expanded));
     nav.classList.toggle("is-open", !expanded);
+  });
+
+  window.addEventListener("resize", () => {
+    if (!window.matchMedia(MOBILE_NAV_QUERY).matches) {
+      toggle.setAttribute("aria-expanded", "false");
+      nav.classList.remove("is-open");
+    }
+  });
+}
+
+function getDocumentLanguage() {
+  const docLang = document.documentElement.lang.slice(0, 2).toLowerCase();
+  return NAV_CONFIG[docLang] ? docLang : "it";
+}
+
+function buildNavMarkup(config, lang, currentPath) {
+  const pathname = normalizePath(currentPath);
+  const homeHref = lang === "it" ? "/" : `/${lang}/`;
+  const homeCurrent = pathname === normalizePath(homeHref);
+
+  const clusterMarkup = config.clusters
+    .map((cluster) => buildClusterMarkup(cluster, pathname))
+    .join("");
+
+  return `
+    <ul class="site-nav__clusters">
+      <li class="site-nav__item site-nav__item--home${homeCurrent ? " is-current" : ""}">
+        <a class="site-nav__home-link" href="${homeHref}"${homeCurrent ? ' aria-current="page"' : ""}>${config.homeLabel}</a>
+      </li>
+      ${clusterMarkup}
+    </ul>
+  `;
+}
+
+function buildClusterMarkup(cluster, pathname) {
+  const isCurrent = isClusterCurrent(cluster, pathname);
+  const itemsMarkup = cluster.items
+    .map((item) => {
+      const current = pathname === normalizePath(item.href);
+      return `
+        <li>
+          <a href="${item.href}"${current ? ' aria-current="page"' : ""}>
+            <span class="site-nav__panel-label">${item.label}</span>
+            <span class="site-nav__panel-note">${item.description}</span>
+          </a>
+        </li>
+      `;
+    })
+    .join("");
+
+  return `
+    <li class="site-nav__item site-nav__item--cluster${isCurrent ? " is-current" : ""}" data-nav-cluster="${cluster.key}">
+      <button class="site-nav__trigger" type="button" aria-expanded="false">
+        <span>${cluster.label}</span>
+      </button>
+      <div class="site-nav__panel" hidden>
+        <p class="site-nav__panel-title">${cluster.label}</p>
+        <ul class="site-nav__panel-list">
+          ${itemsMarkup}
+        </ul>
+      </div>
+    </li>
+  `;
+}
+
+function isClusterCurrent(cluster, pathname) {
+  return cluster.activePatterns.some((pattern) => pathname.includes(pattern));
+}
+
+function normalizePath(path) {
+  if (!path) return "/";
+  if (path.length > 1 && path.endsWith("/")) return path.slice(0, -1);
+  return path;
+}
+
+function setupClusterNavigation(nav) {
+  const mq = window.matchMedia(MOBILE_NAV_QUERY);
+  const clusterItems = [...nav.querySelectorAll(".site-nav__item--cluster")];
+  if (!clusterItems.length) return;
+
+  const closeAll = (except = null) => {
+    clusterItems.forEach((item) => {
+      if (item === except) return;
+      const button = item.querySelector(".site-nav__trigger");
+      const panel = item.querySelector(".site-nav__panel");
+      if (!button || !panel) return;
+      button.setAttribute("aria-expanded", "false");
+      panel.hidden = true;
+    });
+  };
+
+  clusterItems.forEach((item) => {
+    const button = item.querySelector(".site-nav__trigger");
+    const panel = item.querySelector(".site-nav__panel");
+    const firstLink = panel?.querySelector("a");
+
+    if (!button || !panel) return;
+
+    button.addEventListener("click", () => {
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      if (!expanded) {
+        closeAll(item);
+      }
+      button.setAttribute("aria-expanded", String(!expanded));
+      panel.hidden = expanded;
+    });
+
+    button.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        closeAll(item);
+        button.setAttribute("aria-expanded", "true");
+        panel.hidden = false;
+        firstLink?.focus();
+      }
+      if (event.key === "Escape") {
+        closeAll();
+        button.focus();
+      }
+    });
+
+    item.addEventListener("mouseenter", () => {
+      if (mq.matches) return;
+      closeAll(item);
+      button.setAttribute("aria-expanded", "true");
+      panel.hidden = false;
+    });
+
+    item.addEventListener("mouseleave", () => {
+      if (mq.matches) return;
+      button.setAttribute("aria-expanded", "false");
+      panel.hidden = true;
+    });
+  });
+
+  nav.addEventListener("focusout", (event) => {
+    const nextTarget = event.relatedTarget;
+    if (nextTarget && nav.contains(nextTarget)) return;
+    closeAll();
+  });
+
+  document.addEventListener("click", (event) => {
+    if (nav.contains(event.target)) return;
+    closeAll();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeAll();
+    }
   });
 }
 
