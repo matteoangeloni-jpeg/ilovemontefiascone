@@ -1,6 +1,6 @@
 # FR Full Editorial Inventory
 
-Updated: 2026-07-02
+Updated: 2026-07-03
 Branch: `feat/fr-seo-relaunch`
 Scope: source-only French corpus. Public FR remains excluded.
 
@@ -50,6 +50,38 @@ Recovery sequence:
 2. keep the already validated `41115bd` FR editorial block as the reference baseline;
 3. restart with a compact first cluster only after manual review, starting from the FR core travel and discovery pages;
 4. do not reopen the full 98-page corpus in a single automated pass.
+
+## Inventory
+
+## Manual recovery progress after cluster 2
+
+The second manual cluster, focused on **events and seasonal calendar**, has now been revised source-side without reopening public FR.
+
+Pages treated in cluster 2:
+
+- `fr/evenements.html` → `FR_READY_SOURCE`
+- `fr/calendrier-des-evenements-de-montefiascone.html` → `FR_READY_SOURCE`
+- `fr/evenements-dete-a-montefiascone-2026.html` → `FR_READY_SOURCE`
+- `fr/evenements-traditions-foire-aux-vins-de-montefiascone.html` → `FR_READY_SOURCE`
+- `fr/festival-atb-montefiascone.html` → `FR_READY_WITH_NOTES`
+- `fr/est-festival-du-film-de-montefiascone.html` → `FR_READY_SOURCE`
+- `fr/festival-decologie-integrale-de-montefiascone.html` → `FR_READY_WITH_NOTES`
+- `fr/anno-domini-1074-montefiascone.html` → `FR_READY_WITH_NOTES`
+
+What was corrected in this cluster:
+
+- French title / meta / H1 coherence;
+- French OG / Twitter titles and descriptions;
+- clean FR canonical and `og:url` alignment;
+- FR breadcrumb and JSON-LD ids;
+- event-data softening where details were not stable enough to be asserted as definitive;
+- visible Italian residuals removed from the treated pages;
+- internal links limited to revised FR event pages and already reviewed FR hubs.
+
+Residual risk kept under note, not blocker:
+
+- a few event pages intentionally keep source-backed operational details such as announced dates, named openings or tasting slots, but now with clearer prudence language;
+- public FR publication remains blocked until later clusters reduce the remaining source corpus risk.
 
 ## Inventory
 

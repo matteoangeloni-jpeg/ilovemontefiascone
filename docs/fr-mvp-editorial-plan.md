@@ -1,6 +1,6 @@
 # FR MVP Editorial Plan
 
-Updated: 2026-07-02  
+Updated: 2026-07-03  
 Branch: `feat/fr-seo-relaunch`  
 Scope: source-only French editorial MVP. Public FR remains excluded.
 
@@ -42,6 +42,26 @@ The first cluster currently being normalized by hand is the core travel/discover
 - `fr/montefiascone-en-2-jours.html`
 
 This cluster stays source-only and does not reopen the public FR perimeter.
+
+## Second Manual Recovery Cluster
+
+The second bounded cluster now manually reviewed is the FR events and seasonal calendar set:
+
+- `fr/evenements.html`
+- `fr/calendrier-des-evenements-de-montefiascone.html`
+- `fr/evenements-dete-a-montefiascone-2026.html`
+- `fr/evenements-traditions-foire-aux-vins-de-montefiascone.html`
+- `fr/festival-atb-montefiascone.html`
+- `fr/est-festival-du-film-de-montefiascone.html`
+- `fr/festival-decologie-integrale-de-montefiascone.html`
+- `fr/anno-domini-1074-montefiascone.html`
+
+Cluster notes:
+
+- titles, H1, meta descriptions, OG/Twitter titles and JSON-LD were aligned to French clean URLs;
+- event pages were rewritten with a stricter prudence rule for dates, access conditions, lineups, programs and organizer claims;
+- internal linking was limited to FR pages already revised inside the source corpus;
+- public FR remains excluded from the build and from public hreflang, sitemap and llms surfaces.
 
 ## Editing Rules
 
