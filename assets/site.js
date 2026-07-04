@@ -4,6 +4,7 @@
   const header = document.querySelector(".site-header");
   const toggle = document.querySelector("[data-nav-toggle]");
   const nav = document.getElementById("primary-navigation");
+  const enhancedNav = document.querySelector("[data-nav]");
 
   function setMenu(open) {
     if (!header || !toggle) return;
@@ -11,7 +12,7 @@
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
   }
 
-  if (toggle && nav) {
+  if (toggle && nav && !enhancedNav) {
     toggle.addEventListener("click", () => {
       setMenu(toggle.getAttribute("aria-expanded") !== "true");
     });

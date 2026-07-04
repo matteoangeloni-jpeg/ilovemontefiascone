@@ -17,7 +17,7 @@ const events = [
   { id: "festival-ecologia-integrale", startDate: "2026-07-02", endDate: "2026-07-05" },
   { id: "atb-festival", startDate: "2026-07-09", endDate: "2026-07-12" },
   { id: "panorami-festival", startDate: "2026-07-16", endDate: "2026-07-19" },
-  { id: "festa-santa-margherita", startDate: "2026-07-19", endDate: "2026-07-20" },
+  { id: "festa-santa-margherita", startDate: "2026-07-16", endDate: "2026-07-20" },
   { id: "est-film-festival", startDate: "2026-07-20", endDate: "2026-07-26" },
   { id: "fiera-del-vino", startDate: "2026-08-01", endDate: "2026-08-14" },
   { id: "est-lake-festival", startDate: "2026-08-14", endDate: "2026-08-23" },
@@ -43,6 +43,11 @@ const scenarios = [
     name: "the day right after Ecologia Integrale ends",
     today: "2026-07-06",
     expected: "atb-festival",
+  },
+  {
+    name: "when Santa Margherita is in progress after Panorami",
+    today: "2026-07-20",
+    expected: "festa-santa-margherita",
   },
   {
     name: "after the last known event (fallback expected)",
