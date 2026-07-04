@@ -10,6 +10,9 @@ https://ilovemontefiascone.com/* https://www.ilovemontefiascone.com/:splat 301
 /en/est-est-est-wine-montefiascone /en/est-est-est-montefiascone-doc-wine 301
 /en/via-francigena-montefiascone.html /en/via-francigena-montefiascone-viterbo 301
 /en/via-francigena-montefiascone /en/via-francigena-montefiascone-viterbo 301
+/en/events /en/montefiascone-events-calendar 301
+/de/events /de/veranstaltungen-montefiascone 301
+/de/veranstaltungen /de/veranstaltungen-montefiascone 301
 /base.html /404.html 404
 /*-widget.html /404.html 404
 /*-leaflet.html /404.html 404
@@ -24,3 +27,6 @@ https://ilovemontefiascone.com/* https://www.ilovemontefiascone.com/:splat 301
 /en/:slug.html /en/:slug 301
 /de/:slug.html /de/:slug 301
 /:slug.html /:slug 301
+/en/wine /en/est-est-est-montefiascone-doc-wine 301
+/de/wein /de/est-est-est-wein-montefiascone 301
+/de/est-est-est /de/est-est-est-wein-montefiascone 301

@@ -1,4 +1,4 @@
-const SW_VERSION = "mf-pwa-v10-2026-06-14-itlaunch";
+const SW_VERSION = "mf-pwa-v11-2026-07-04-linkcleanup";
 const STATIC_CACHE = `${SW_VERSION}-static`;
 const ARTICLE_CACHE = `${SW_VERSION}-articles`;
 const ASSET_CACHE = `${SW_VERSION}-assets`;
@@ -7,12 +7,12 @@ const MAP_CACHE = `${SW_VERSION}-map`;
 
 const PRECACHE_URLS = [
   "/",
-  "/cosa-vedere.html",
-  "/guide.html",
-  "/eventi.html",
-  "/vino.html",
-  "/mappa.html",
-  "/associazioni-volontariato-montefiascone.html",
+  "/cosa-vedere",
+  "/guide",
+  "/eventi",
+  "/vino",
+  "/mappa",
+  "/associazioni-volontariato-montefiascone",
   "/css/style.css",
   "/assets/site.css",
   "/assets/gallery.css",

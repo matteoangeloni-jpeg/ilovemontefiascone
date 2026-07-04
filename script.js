@@ -9,7 +9,7 @@ const DEFAULT_CONTENT = {
   body:
     "Se i dati meteo non sono disponibili, parti dal centro storico, dalla Rocca dei Papi e dalla Cattedrale di Santa Margherita. Poi scegli se proseguire verso il lago o verso le guide del portale.",
   ctaLabel: "Scopri cosa vedere",
-  ctaHref: "/cosa-vedere.html"
+  ctaHref: "/cosa-vedere"
 };
 
 const SUNNY_CONTENT = {
@@ -17,7 +17,7 @@ const SUNNY_CONTENT = {
   body:
     "Con tempo stabile conviene privilegiare passeggiate, belvederi e percorsi all'aperto. Via Francigena, panorama sul Lago di Bolsena e centro alto offrono il percorso piu efficace della giornata.",
   ctaLabel: "Apri la mappa dei percorsi",
-  ctaHref: "/mappa.html"
+  ctaHref: "/mappa"
 };
 
 const RAIN_CONTENT = {
@@ -25,7 +25,7 @@ const RAIN_CONTENT = {
   body:
     "Con pioggia conviene orientarsi verso interni, chiese, spazi coperti e approfondimenti storici. La pagina sui luoghi aiuta a concentrare la visita su monumenti, musei diffusi e tappe culturali.",
   ctaLabel: "Vai ai luoghi al coperto",
-  ctaHref: "/cosa-vedere.html"
+  ctaHref: "/cosa-vedere"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
