@@ -111,8 +111,9 @@ export function pickFeaturedEvent(events, todayIso) {
 const TEXT_SEPARATOR = '<span class="visually-hidden"> — </span>';
 
 function renderEventBlock(event) {
+  const safeSeparator = '<span class="visually-hidden"> — </span>';
   const factsHtml = event.facts
-    .map(([label, value]) => `<div><dt>${label}</dt><dd>${value}${TEXT_SEPARATOR}</dd></div>`)
+    .map(([label, value]) => `<div><dt>${label}</dt><dd>${value}${safeSeparator}</dd></div>`)
     .join("");
   const teaserHtml = event.teaser.map((paragraph) => `<p>${paragraph}</p>`).join("");
 
@@ -231,6 +232,7 @@ function updateHub() {
   console.log(`Featured event on ${HUB_FILE} refreshed for ${todayIso} (${eventId})`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+const entryFile = process.argv[1] ? resolve(process.argv[1]) : null;
+if (entryFile && fileURLToPath(import.meta.url) === entryFile) {
   updateHub();
 }
