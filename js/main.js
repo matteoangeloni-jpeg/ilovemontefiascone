@@ -724,6 +724,8 @@ function normalizeSiteChrome() {
   if (footer) {
     footer.innerHTML = buildFooterMarkup(chrome.footer);
   }
+
+  setupLanguageSwitcherDropdown();
 }
 
 function initNav() {
@@ -915,14 +917,86 @@ function getLocaleLinks(currentLang) {
 }
 
 function buildLanguageSwitcherMarkup(localeLinks, currentLang) {
-  return ["it", "en", "de"]
+  const langNames = {
+    it: "Italiano",
+    en: "English",
+    de: "Deutsch"
+  };
+
+  const listItems = ["it", "en", "de"]
     .map((lang) => {
-      const label = lang.toUpperCase();
+      const label = langNames[lang];
       const href = localeLinks[lang] || getLocaleRoot(lang);
       const active = lang === currentLang ? ' class="is-current"' : "";
-      return `<a${active} href="${href}" lang="${lang}">${label}</a>`;
+      return `<li><a${active} href="${href}" lang="${lang}">${label}</a></li>`;
     })
     .join("");
+
+  return `
+    <button class="lang-switcher__trigger" type="button" aria-expanded="false" aria-haspopup="true">
+      ${currentLang.toUpperCase()} <span class="lang-switcher__arrow"></span>
+    </button>
+    <ul class="lang-switcher__list" hidden>
+      ${listItems}
+    </ul>
+  `;
+}
+
+function setupLanguageSwitcherDropdown() {
+  const switcher = document.querySelector(".lang-switcher");
+  if (!switcher) return;
+
+  const trigger = switcher.querySelector(".lang-switcher__trigger");
+  const list = switcher.querySelector(".lang-switcher__list");
+  if (!trigger || !list) return;
+
+  const openMenu = () => {
+    trigger.setAttribute("aria-expanded", "true");
+    list.hidden = false;
+  };
+  const closeMenu = () => {
+    trigger.setAttribute("aria-expanded", "false");
+    list.hidden = true;
+  };
+
+  trigger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isExpanded = trigger.getAttribute("aria-expanded") === "true";
+    if (isExpanded) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  let hoverTimeout = null;
+  switcher.addEventListener("mouseenter", () => {
+    if (hoverTimeout) clearTimeout(hoverTimeout);
+    openMenu();
+  });
+  switcher.addEventListener("mouseleave", () => {
+    hoverTimeout = setTimeout(() => {
+      closeMenu();
+    }, 250);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!switcher.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  trigger.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      openMenu();
+      list.querySelector("a")?.focus();
+    }
+    if (e.key === "Escape") {
+      closeMenu();
+      trigger.focus();
+    }
+  });
 }
 
 function toRelativeUrl(url) {
@@ -993,8 +1067,14 @@ function setupClusterNavigation(nav) {
       }
     });
 
+    let closeTimeout = null;
+
     item.addEventListener("mouseenter", () => {
       if (mq.matches) return;
+      if (closeTimeout) {
+        clearTimeout(closeTimeout);
+        closeTimeout = null;
+      }
       closeAll(item);
       button.setAttribute("aria-expanded", "true");
       panel.hidden = false;
@@ -1002,8 +1082,10 @@ function setupClusterNavigation(nav) {
 
     item.addEventListener("mouseleave", () => {
       if (mq.matches) return;
-      button.setAttribute("aria-expanded", "false");
-      panel.hidden = true;
+      closeTimeout = setTimeout(() => {
+        button.setAttribute("aria-expanded", "false");
+        panel.hidden = true;
+      }, 250);
     });
   });
 
