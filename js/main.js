@@ -929,9 +929,18 @@ function toRelativeUrl(url) {
   if (!url) return "";
   try {
     const parsed = new URL(url, window.location.origin);
-    if (parsed.origin !== window.location.origin) return "";
-    const path = parsed.pathname || "/";
+    const allowedHosts = new Set([
+      window.location.hostname,
+      "www.ilovemontefiascone.com",
+      "ilovemontefiascone.com"
+    ]);
+    if (!allowedHosts.has(parsed.hostname)) return "";
+
+    let path = parsed.pathname || "/";
     if (path === "/") return "/";
+    if (path === "/index.html") return "/";
+    if (path.endsWith("/index.html")) return path.slice(0, -"index.html".length);
+    if (path.endsWith(".html")) path = path.slice(0, -".html".length);
     return path.endsWith("/") ? path : path;
   } catch {
     return url;
