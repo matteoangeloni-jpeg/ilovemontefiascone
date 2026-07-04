@@ -161,7 +161,7 @@ export const FEATURED_EVENT_CANDIDATES = [
     ],
     image: {
       jpg: "/media/events/festa-santa-margherita-2026-poster.png",
-      webp: "/media/events/festa-santa-margherita-2026-poster.png",
+      webp: "/media/events/festa-santa-margherita-2026-poster.webp",
       width: 1127,
       height: 1600,
       alt: "Manifesto ufficiale della Festa in onore di Santa Margherita 2026 a Montefiascone",
