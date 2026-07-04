@@ -97,6 +97,7 @@ a:hover {
 }
 
 .brand {
+  hyphens: none;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -125,6 +126,7 @@ a:hover {
 }
 
 .site-nav {
+  hyphens: none;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -955,6 +957,7 @@ p {
   }
 
   .brand {
+  hyphens: none;
     flex: 1 1 auto;
   }
 
@@ -970,6 +973,7 @@ p {
   }
 
   .site-nav {
+  hyphens: none;
     width: 100%;
     display: grid;
     gap: 0;
@@ -983,6 +987,7 @@ p {
   }
 
   .site-header.is-open .site-nav {
+  hyphens: none;
     max-height: 24rem;
     opacity: 1;
     pointer-events: auto;
