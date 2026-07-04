@@ -1,69 +1,93 @@
 # SEO UI Post Refresh Check
 
+## Scope
+
+- Sprint branch: `feat/ui-menu-seo-refresh`
+- Focus: shared header, clustered navigation, footer consistency, mobile menu polish, selective visual refresh with real `.webp` photography only
+- Google Stitch role: reference-only for layout and hierarchy
+
 ## SEO check
 
-- `title`: invariati.
-- `meta description`: invariati.
-- `H1`: invariati.
-- `canonical`: invariati.
-- `hreflang`: invariati nel sorgente; il build pubblico continua a rimuovere FR.
-- `routing`: invariato.
-- Menu nuovo: nessun URL `.html` introdotto nella configurazione cluster.
+- `title`: unchanged by the refresh.
+- `meta description`: unchanged by the refresh.
+- `H1`: unchanged by the refresh.
+- `canonical`: unchanged.
+- `og:url`: unchanged.
+- `hreflang`: unchanged in source logic; public build still exposes only `it`, `en`, `de`, `x-default`.
+- Routing strategy: unchanged.
+- New navigation and footer links: no clean-URL regressions introduced.
 
-## Build pubblico
+## Public build QA
 
 - `npm run build:cloudflare`: OK
-- Output confermato: `98 IT / 98 EN / 98 DE`
-- `sitemap-it.xml`: `98`
-- `sitemap-en.xml`: `98`
-- `sitemap-de.xml`: `98`
-- `sitemap.xml`: solo IT/EN/DE
+- Public output confirmed: `98 IT / 98 EN / 98 DE`
+- `sitemap-it.xml`: `98` clean URLs
+- `sitemap-en.xml`: `98` clean URLs
+- `sitemap-de.xml`: `98` clean URLs
+- `sitemap.xml`: only IT / EN / DE sitemap references
+- `sitemap-fr.xml`: absent
+- `/fr/`: absent from public build
 
-## FR / llms / sitemap
+## llms.txt check
 
-- Nessun `/fr/` nel build pubblico.
-- Nessun `hreflang="fr"` nel build pubblico.
-- Nessun `sitemap-fr.xml` nel build pubblico.
-- `llms.txt` senza FR.
-- `llms.txt` senza `.html`.
-- `llms.txt` senza `pages.dev`.
-- `llms.txt` senza `github.io`.
+- No `/fr/`
+- No `.html`
+- No `pages.dev`
+- No `github.io`
+- Public perimeter still aligned to the production-language triad only
 
-## UI/UX check campione
+## Navigation and footer check
 
-- Campioni verificati:
-  - `dist-it/index.html`
-  - `dist-it/en/index.html`
-  - `dist-it/de/index.html`
-  - `dist-it/eventi.html`
-  - `dist-it/en/events-montefiascone.html`
-  - `dist-it/de/veranstaltungen-montefiascone.html`
-  - `dist-it/galleria.html`
-  - `dist-it/de/cronoscalata-lago-montefiascone.html`
-  - `dist-it/de/est-film-festival-montefiascone.html`
-  - `dist-it/de/atb-festival-montefiascone.html`
-  - `dist-it/de/est-lake-festival-montefiascone.html`
+- Shared runtime normalization handled in `js/main.js`
+- Shared visual rules aligned in `css/style.css` and mirrored to `css/style.min.css`
+- Language switcher aligned to `IT / EN / DE`
+- Footer sections aligned per locale:
+  - IT: `Esplora`, `Info pratiche`
+  - EN: `Explore`, `Practical info`
+  - DE: `Entdecken`, `Praktische Infos`
+- Mobile toggle visible at compact viewport
+- `body.nav-open` lock added to prevent background scroll while the menu is open
 
-- Esito strutturale:
-  - `data-nav` presente.
-  - `data-nav-toggle` presente.
-  - `main.js` presente.
-  - Nessuna pagina pubblica campione rimasta fuori dal refresh.
+## Visual asset check
 
-## Copertura pattern nav
+- Manual `.webp` images inventoried: `50`
+- New manual `.webp` images published in this sprint: `5`
+- Google Stitch images published: `0`
+- New public images used:
+  - `media/gallery/montefiascone-centro-drone.webp`
+  - `media/gallery/montefiascone-centro-drone-estate.webp`
+  - `media/gallery/montefiascone-eventi-bandiere-notte.webp`
+  - `media/gallery/lago-bolsena-tramonto-riva.webp`
+  - `media/gallery/via-francigena-scalinata.webp`
 
-- Pagine pubbliche fuori perimetro nav dopo il refresh: `0`
-- Pagine con `data-nav` ma senza toggle: `0`
-- Pagine con header/menu ma senza script di navigazione: `0`
+## Sample UI smoke test
 
-## Stabilità tecnica
+- Build tested through local static preview using direct built files where needed (`index.html`, `eventi.html`, localized event/lake pages)
+- Sample set checked:
+  - `index.html`
+  - `en/index.html`
+  - `de/index.html`
+  - `eventi.html`
+  - `en/events-montefiascone.html`
+  - `de/veranstaltungen-montefiascone.html`
+  - `lago-di-bolsena.html`
+  - `en/lake-bolsena.html`
+  - `de/bolsenasee.html`
+  - `via-francigena-bolsena-montefiascone.html`
+- Result:
+  - localized footer headings rendered correctly
+  - language switcher rendered consistently
+  - mobile menu toggle visible
+  - refreshed photography present on the targeted hub pages
 
-- `node --check js/main.js`: OK
-- `node --check assets/site.js`: OK
-- Nessuna nuova dipendenza aggiunta.
-- Nessun asset nuovo pesante introdotto.
+## Encoding and hygiene
 
-## Problemi residui
+- No `/fr/` leakage in public package
+- No `.html` URLs inside public sitemaps
+- No Stitch references in public output
+- No placeholder / draft / lorem markers found in the public build checks executed for this sprint
 
-- Nessun blocker SEO tecnico emerso dal refresh.
-- Utile uno smoke test visuale browser-side prima di push o deploy, soprattutto su dropdown desktop e accordion mobile della galleria.
+## Residual notes
+
+- The local static smoke test relies on direct built files for some pages because clean URLs depend on the production redirect layer.
+- A broader browser-side sweep after the future deploy is still recommended for final visual confirmation on the live stack.

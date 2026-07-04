@@ -121,8 +121,22 @@ dl {
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--border);
-  background: rgba(250, 250, 250, 0.96);
+  background: rgba(250, 250, 250, 0.94);
   backdrop-filter: blur(16px);
+  box-shadow: 0 10px 28px rgba(45, 45, 45, 0.04);
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(139, 38, 53, 0) 0%, rgba(139, 38, 53, 0.2) 48%, rgba(44, 94, 109, 0.14) 100%);
+  pointer-events: none;
+}
+
+.site-header.is-open {
+  box-shadow: 0 18px 38px rgba(45, 45, 45, 0.08);
 }
 
 .header__inner,
@@ -299,7 +313,7 @@ dl {
   top: calc(100% + 0.75rem);
   left: 0;
   z-index: 80;
-  width: min(26rem, calc(100vw - 2rem));
+  width: min(28rem, calc(100vw - 2rem));
   padding: 1rem;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-lg);
@@ -400,7 +414,7 @@ dl {
   min-height: 2.2rem;
   padding: 0 0.5rem;
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 999px;
   background: #ffffff;
   color: var(--blu-lago);
   font-weight: 700;
@@ -1084,16 +1098,18 @@ dl {
 }
 
 .site-footer {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   background: var(--antracite);
   color: rgba(255, 255, 255, 0.86);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-footer a {
   color: rgba(255, 255, 255, 0.92);
 }
 
-.footer__inner {
+.footer__inner,
+.site-footer__grid {
   display: grid;
   gap: 1rem;
   padding: 2rem 0;
@@ -1101,10 +1117,78 @@ dl {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-.footer__links {
+.footer__links,
+.site-footer__links {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.site-footer__grid {
+  gap: 1.4rem;
+  padding-bottom: 1.35rem;
+}
+
+.site-footer__brand,
+.site-footer__section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.site-footer__title,
+.site-footer__heading {
+  margin: 0;
+  color: #ffffff;
+}
+
+.site-footer__heading {
+  font-size: 1.15rem;
+}
+
+.site-footer__brand p,
+.site-footer__section p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.site-footer__disclaimer {
+  font-size: 0.95rem;
+}
+
+.site-footer__links {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer__links li {
+  list-style: none;
+}
+
+.site-footer__links a {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.45;
+}
+
+.site-footer__links a:hover,
+.site-footer__links a:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-footer__meta {
+  padding: 0 0 2.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer__meta p {
+  margin: 0;
+  padding-top: 1rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.65;
 }
 
 @media (min-width: 48rem) {
@@ -1182,6 +1266,10 @@ dl {
 }
 
 @media (max-width: 63.99rem) {
+  body.nav-open {
+    overflow: hidden;
+  }
+
   .header__inner,
   .nav-shell {
     flex-wrap: wrap;
@@ -1221,11 +1309,11 @@ dl {
   .site-nav ul {
     display: grid;
     gap: 0;
-    padding: 0.55rem 1rem;
+    padding: 0.65rem 1rem 0.8rem;
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: var(--shadow);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(250, 246, 239, 0.98));
+    box-shadow: 0 20px 40px rgba(45, 45, 45, 0.12);
   }
 
   .site-nav__item + .site-nav__item,
@@ -1250,7 +1338,7 @@ dl {
     width: 100%;
     justify-content: space-between;
     min-height: 3.1rem;
-    padding: 0.95rem 0.1rem;
+    padding: 0.95rem 0.2rem;
     border: 0;
     border-radius: 0;
     background: transparent;
@@ -1269,7 +1357,7 @@ dl {
     position: static;
     width: 100%;
     margin-bottom: 0.55rem;
-    padding: 0 0 0.85rem;
+    padding: 0.15rem 0 0.75rem;
     border: 0;
     border-top: 1px solid var(--border);
     border-radius: 0;
@@ -1283,7 +1371,7 @@ dl {
   }
 
   .site-nav__panel-list a {
-    padding: 0.8rem 0.2rem;
+    padding: 0.8rem 0.55rem;
     background: transparent;
     border: 0;
     border-bottom: 1px dashed rgba(45, 45, 45, 0.12);
@@ -1307,6 +1395,21 @@ dl {
   .site-nav a::after {
     left: 0.15rem;
     right: 0.15rem;
+  }
+
+  .site-footer__grid {
+    gap: 1.1rem;
+    padding-top: 1.75rem;
+  }
+
+  .site-footer__section {
+    padding-top: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .site-footer__section:first-of-type {
+    padding-top: 0;
+    border-top: 0;
   }
 
   .site-nav.is-open > a {

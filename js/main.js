@@ -574,7 +574,113 @@ const NAV_CONFIG = {
   }
 };
 
+const CHROME_CONFIG = {
+  it: {
+    menuLabel: "Menu",
+    navAriaLabel: "Navigazione principale",
+    langAriaLabel: "Versione del sito",
+    footer: {
+      introTitle: "I Love Montefiascone",
+      introCopy:
+        "Guida turistica indipendente su Montefiascone, Lago di Bolsena e Tuscia.",
+      introNote:
+        "Questo portale non &egrave; collegato al Comune di Montefiascone.",
+      sections: [
+        {
+          title: "Esplora",
+          links: [
+            { href: "/cosa-vedere-montefiascone-guida-completa", label: "Guida completa" },
+            { href: "/eventi", label: "Eventi" },
+            { href: "/lago-di-bolsena", label: "Lago di Bolsena" },
+            { href: "/vino", label: "Vino e sapori" }
+          ]
+        },
+        {
+          title: "Info pratiche",
+          links: [
+            { href: "/mappa", label: "Mappa" },
+            { href: "/come-arrivare-a-montefiascone", label: "Come arrivare" },
+            { href: "/dove-dormire-a-montefiascone", label: "Dove dormire" },
+            { href: "/progetto-editoriale", label: "Progetto editoriale" }
+          ]
+        }
+      ],
+      meta:
+        "Verifica sempre programmi, accessi e orari sui canali ufficiali prima della visita."
+    }
+  },
+  en: {
+    menuLabel: "Menu",
+    navAriaLabel: "Main navigation",
+    langAriaLabel: "Site language",
+    footer: {
+      introTitle: "I Love Montefiascone",
+      introCopy:
+        "Independent travel guide to Montefiascone, Lake Bolsena and Tuscia.",
+      introNote:
+        "This portal is not connected to the Municipality of Montefiascone.",
+      sections: [
+        {
+          title: "Explore",
+          links: [
+            { href: "/en/montefiascone-travel-guide", label: "Travel guide" },
+            { href: "/en/events-montefiascone", label: "Events" },
+            { href: "/en/lake-bolsena", label: "Lake Bolsena" },
+            { href: "/en/montefiascone-wine-guide", label: "Wine and food" }
+          ]
+        },
+        {
+          title: "Practical info",
+          links: [
+            { href: "/en/map-montefiascone", label: "Map" },
+            { href: "/en/how-to-get-to-montefiascone", label: "How to get there" },
+            { href: "/en/where-to-stay-in-montefiascone", label: "Where to stay" },
+            { href: "/en/editorial-project-montefiascone", label: "Editorial project" }
+          ]
+        }
+      ],
+      meta:
+        "Always verify programmes, access conditions and opening hours on official channels before your visit."
+    }
+  },
+  de: {
+    menuLabel: "Men&uuml;",
+    navAriaLabel: "Hauptnavigation",
+    langAriaLabel: "Sprache der Website",
+    footer: {
+      introTitle: "I Love Montefiascone",
+      introCopy:
+        "Unabh&auml;ngiger Reisef&uuml;hrer f&uuml;r Montefiascone, den Bolsenasee und die Tuscia.",
+      introNote:
+        "Dieses Portal ist nicht mit der Gemeinde Montefiascone verbunden.",
+      sections: [
+        {
+          title: "Entdecken",
+          links: [
+            { href: "/de/reisefuehrer-montefiascone", label: "Reisef&uuml;hrer" },
+            { href: "/de/veranstaltungen-montefiascone", label: "Veranstaltungen" },
+            { href: "/de/bolsenasee", label: "Bolsenasee" },
+            { href: "/de/montefiascone-wein-guide", label: "Wein und K&uuml;che" }
+          ]
+        },
+        {
+          title: "Praktische Infos",
+          links: [
+            { href: "/de/karte-montefiascone", label: "Karte" },
+            { href: "/de/anreise-nach-montefiascone", label: "Anreise" },
+            { href: "/de/unterkunft-in-montefiascone", label: "Unterkunft" },
+            { href: "/de/redaktionelles-projekt-montefiascone", label: "Redaktionelles Projekt" }
+          ]
+        }
+      ],
+      meta:
+        "Programme, Zug&auml;nge und &Ouml;ffnungszeiten sollten vor der Reise immer &uuml;ber offizielle Kan&auml;le gepr&uuml;ft werden."
+    }
+  }
+};
+
 document.addEventListener("DOMContentLoaded", () => {
+  normalizeSiteChrome();
   initNav();
   scheduleContextualWeather();
 });
@@ -595,7 +701,33 @@ function scheduleContextualWeather() {
   }
 }
 
+function normalizeSiteChrome() {
+  const lang = getDocumentLanguage();
+  const chrome = CHROME_CONFIG[lang];
+  const navConfig = NAV_CONFIG[lang];
+  if (!chrome || !navConfig) return;
+
+  const header = document.querySelector(".site-header");
+  const footer = document.querySelector(".site-footer");
+  const localeLinks = getLocaleLinks(lang);
+  const currentPath = window.location.pathname;
+
+  if (header) {
+    header.innerHTML = buildHeaderMarkup({
+      chrome,
+      navConfig,
+      currentPath,
+      localeLinks
+    });
+  }
+
+  if (footer) {
+    footer.innerHTML = buildFooterMarkup(chrome.footer);
+  }
+}
+
 function initNav() {
+  const header = document.querySelector(".site-header");
   const toggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-nav]") || document.querySelector(".site-nav");
 
@@ -609,16 +741,35 @@ function initNav() {
     setupClusterNavigation(nav);
   }
 
+  const setOpen = (open) => {
+    toggle.setAttribute("aria-expanded", String(open));
+    nav.classList.toggle("is-open", open);
+    header?.classList.toggle("is-open", open);
+    document.body.classList.toggle("nav-open", open);
+  };
+
   toggle.addEventListener("click", () => {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!expanded));
-    nav.classList.toggle("is-open", !expanded);
+    setOpen(!expanded);
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.matchMedia(MOBILE_NAV_QUERY).matches) {
+        setOpen(false);
+      }
+    });
   });
 
   window.addEventListener("resize", () => {
     if (!window.matchMedia(MOBILE_NAV_QUERY).matches) {
-      toggle.setAttribute("aria-expanded", "false");
-      nav.classList.remove("is-open");
+      setOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setOpen(false);
     }
   });
 }
@@ -644,6 +795,58 @@ function buildNavMarkup(config, lang, currentPath) {
       </li>
       ${clusterMarkup}
     </ul>
+  `;
+}
+
+function buildHeaderMarkup({ chrome, navConfig, currentPath, localeLinks }) {
+  return `
+    <div class="container header__inner">
+      <a class="brand" href="${getLocaleRoot(getDocumentLanguage())}">Montefiascone</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>${chrome.menuLabel}</button>
+      <nav class="site-nav" id="primary-navigation" aria-label="${chrome.navAriaLabel}" data-nav>
+        ${buildNavMarkup(navConfig, getDocumentLanguage(), currentPath)}
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switcher" aria-label="${chrome.langAriaLabel}">
+          ${buildLanguageSwitcherMarkup(localeLinks, getDocumentLanguage())}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function buildFooterMarkup(footer) {
+  const sectionsMarkup = footer.sections
+    .map(
+      (section) => `
+        <section class="site-footer__section">
+          <h2 class="site-footer__heading">${section.title}</h2>
+          <ul class="site-footer__links">
+            ${section.links
+              .map(
+                (link) => `
+                  <li><a href="${link.href}">${link.label}</a></li>
+                `,
+              )
+              .join("")}
+          </ul>
+        </section>
+      `,
+    )
+    .join("");
+
+  return `
+    <div class="container site-footer__grid">
+      <section class="site-footer__brand">
+        <h2 class="site-footer__title">${footer.introTitle}</h2>
+        <p>${footer.introCopy}</p>
+        <p class="site-footer__disclaimer">${footer.introNote}</p>
+      </section>
+      ${sectionsMarkup}
+    </div>
+    <div class="container site-footer__meta">
+      <p>${footer.meta}</p>
+    </div>
   `;
 }
 
@@ -686,6 +889,53 @@ function normalizePath(path) {
   if (!path) return "/";
   if (path.length > 1 && path.endsWith("/")) return path.slice(0, -1);
   return path;
+}
+
+function getLocaleRoot(lang) {
+  return lang === "it" ? "/" : `/${lang}/`;
+}
+
+function getLocaleLinks(currentLang) {
+  const fallback = {
+    it: "/",
+    en: "/en/",
+    de: "/de/"
+  };
+
+  const links = { ...fallback };
+
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => {
+    const hreflang = (link.getAttribute("hreflang") || "").toLowerCase();
+    if (!["it", "en", "de"].includes(hreflang)) return;
+    links[hreflang] = toRelativeUrl(link.getAttribute("href")) || fallback[hreflang];
+  });
+
+  links[currentLang] = toRelativeUrl(window.location.href) || links[currentLang];
+  return links;
+}
+
+function buildLanguageSwitcherMarkup(localeLinks, currentLang) {
+  return ["it", "en", "de"]
+    .map((lang) => {
+      const label = lang.toUpperCase();
+      const href = localeLinks[lang] || getLocaleRoot(lang);
+      const active = lang === currentLang ? ' class="is-current"' : "";
+      return `<a${active} href="${href}" lang="${lang}">${label}</a>`;
+    })
+    .join("");
+}
+
+function toRelativeUrl(url) {
+  if (!url) return "";
+  try {
+    const parsed = new URL(url, window.location.origin);
+    if (parsed.origin !== window.location.origin) return "";
+    const path = parsed.pathname || "/";
+    if (path === "/") return "/";
+    return path.endsWith("/") ? path : path;
+  } catch {
+    return url;
+  }
 }
 
 function setupClusterNavigation(nav) {
