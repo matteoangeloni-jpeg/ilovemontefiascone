@@ -42,3 +42,15 @@ Nessuno critico. La modifica al `sw.js` attiverà un rinfresco del Service Worke
 
 ## Prossimi step consigliati
 Continuare lo sviluppo e rilasciare i contenuti per lo sprint EN (espansione e editorializzazione), monitorando GSC (Google Search Console) non appena il sito riceverà un po' di volume sui link indicizzati per confermare la sparizione degli hop a `.html`.
+
+## Strategic wine routing: Est! Est!! Est!!!
+- **Why 'wine' is generic:** Montefiascone's core wine identity is strongly tied to the specific DOC 'Est! Est!! Est!!!'. A generic '/wine' URL misses the opportunity to rank for this unique GEO/SEO asset.
+- **Pillar Pages Identified:**
+  - IT: est-est-est-montefiascone-vino-doc`n  - EN: /en/est-est-est-montefiascone-doc-wine`n  - DE: /de/est-est-est-wein-montefiascone`n- **Decision on /en/wine:** Added a 301 redirect to /en/est-est-est-montefiascone-doc-wine to capture type-in traffic and intuitive URL guessing without creating a generic duplicate page.
+- **Decision on DE aliases:** Added /de/wein and /de/est-est-est as 301 redirects to the DE pillar /de/est-est-est-wein-montefiascone.
+- **Next Sprint Actions:**
+  - Strengthen the IT Est! Est!! Est!!! pillar.
+  - Strengthen the EN Est! Est!! Est!!! pillar.
+  - Strengthen the DE Est! Est!! Est!!! pillar.
+  - Interlink wine, Wine Fair (Fiera del Vino), tastings, wineries, and gastronomy.
+  - Prepare FR content only when the broader FR release is ready.
