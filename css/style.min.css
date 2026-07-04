@@ -150,6 +150,7 @@ dl {
 }
 
 .brand {
+  hyphens: none;
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
@@ -197,11 +198,12 @@ dl {
 }
 
 .site-nav {
+  hyphens: none;
   display: block;
 }
 
 .site-nav__clusters,
-.site-nav ul,
+.site-nav > ul,
 .tag-list,
 .hero__highlights,
 .plain-list,
@@ -212,7 +214,7 @@ dl {
   margin: 0;
 }
 
-.site-nav ul {
+.site-nav > ul {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -1197,13 +1199,14 @@ dl {
   }
 
   .site-nav {
+  hyphens: none;
     display: block;
     width: auto;
     margin-left: auto;
   }
 
   .site-nav__clusters,
-  .site-nav ul {
+  .site-nav > ul {
     display: flex;
     align-items: center;
     gap: 0.9rem;
@@ -1277,6 +1280,7 @@ dl {
   }
 
   .brand {
+  hyphens: none;
     flex: 1 1 auto;
   }
 
@@ -1296,6 +1300,7 @@ dl {
   }
 
   .site-nav {
+  hyphens: none;
     display: none;
     width: 100%;
     order: 4;
@@ -1306,7 +1311,7 @@ dl {
   }
 
   .site-nav__clusters,
-  .site-nav ul {
+  .site-nav > ul {
     display: grid;
     gap: 0;
     padding: 0.65rem 1rem 0.8rem;
@@ -1698,6 +1703,7 @@ dl {
   }
 
   .brand {
+  hyphens: none;
     grid-column: 1;
     grid-row: 1;
     font-size: clamp(1.2rem, 5.7vw, 1.45rem);
@@ -1720,6 +1726,7 @@ dl {
   }
 
   .site-nav {
+  hyphens: none;
     grid-column: 1 / -1;
     grid-row: 3;
     order: initial;
