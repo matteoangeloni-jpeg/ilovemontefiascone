@@ -3476,3 +3476,529 @@ body {
   filter: saturate(1.05) contrast(1.02);
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   VISUAL PARITY — Phase 2: Architecture Fixes + Deep Refinement
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── FIX: hero--subpage (DE pages) — CSS Grid stacking ─── */
+/* Structure in DE: <section class="hero hero--subpage">
+                      <picture>...</picture>
+                      <div class="hero__content container">...</div>
+                    </section>
+   Grid single-area stack: picture fills behind, content overlays. */
+
+.hero--subpage {
+  display: grid !important;
+  grid-template-rows: 1fr !important;
+  grid-template-columns: 1fr !important;
+  min-height: clamp(320px, 50vh, 520px) !important;
+  background: #1a2e35 !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden;
+  position: relative !important;
+}
+
+.hero--subpage > picture {
+  grid-area: 1 / 1 !important;
+  position: static !important;
+  display: block !important;
+  overflow: hidden !important;
+  z-index: 0 !important;
+  order: unset !important;
+}
+
+.hero--subpage > picture img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 35% !important;
+  filter: saturate(1.06) brightness(0.82) !important;
+  min-height: clamp(320px, 50vh, 520px) !important;
+}
+
+.hero--subpage > .hero__content {
+  grid-area: 1 / 1 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  align-self: end !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.55) 55%,
+    rgba(0, 0, 0, 0.82) 100%
+  ) !important;
+  color: #ffffff !important;
+  padding: 4rem 1.5rem 2.5rem !important;
+  width: 100% !important;
+}
+
+.hero--subpage > .hero__content h1 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4) !important;
+  font-size: clamp(2rem, 5vw, 3.2rem) !important;
+  font-family: var(--font-display) !important;
+}
+
+.hero--subpage > .hero__content p {
+  color: rgba(255, 255, 255, 0.88) !important;
+  line-height: 1.65;
+}
+
+.hero--subpage > .hero__content .eyebrow {
+  color: var(--tufo) !important;
+  opacity: 0.92;
+}
+
+.hero--subpage > .hero__content .breadcrumb a {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.hero--subpage > .hero__content .breadcrumb li:last-child,
+.hero--subpage > .hero__content .breadcrumb li:last-child a {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.hero--subpage > .hero__content .breadcrumb li + li::before {
+  color: rgba(255, 255, 255, 0.38) !important;
+}
+
+@media (min-width: 48rem) {
+  .hero--subpage {
+    min-height: clamp(400px, 58vh, 600px) !important;
+  }
+
+  .hero--subpage > picture img {
+    min-height: clamp(400px, 58vh, 600px) !important;
+  }
+
+  .hero--subpage > .hero__content {
+    padding: 5rem 2.5rem 3.5rem !important;
+  }
+
+  .hero--subpage > .hero__content h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem) !important;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .hero--subpage {
+    min-height: clamp(260px, 45vh, 380px) !important;
+  }
+
+  .hero--subpage > picture img {
+    min-height: clamp(260px, 45vh, 380px) !important;
+  }
+
+  .hero--subpage > .hero__content {
+    padding: 3rem 1rem 1.75rem !important;
+  }
+
+  .hero--subpage > .hero__content h1 {
+    font-size: clamp(1.75rem, 8vw, 2.3rem) !important;
+  }
+}
+
+/* Est! pillar DE variant */
+.hero--subpage-pillar > .hero__content {
+  background: linear-gradient(
+    180deg,
+    rgba(108, 12, 32, 0) 0%,
+    rgba(108, 12, 32, 0.65) 55%,
+    rgba(108, 12, 32, 0.92) 100%
+  ) !important;
+}
+
+.hero--subpage-pillar > .hero__content h1 {
+  color: var(--tufo) !important;
+}
+
+.hero--subpage-pillar > .hero__content .eyebrow {
+  color: var(--tufo) !important;
+}
+
+/* ─── Missing class: hub-sidebar ─── */
+.hub-sidebar {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 64rem) {
+  .hub-sidebar {
+    position: sticky;
+    top: 5.5rem;
+    align-self: start;
+  }
+}
+
+/* ─── Missing classes: spoke-main + spoke-sidebar ─── */
+.spoke-main {
+  min-width: 0;
+}
+
+.spoke-sidebar {
+  min-width: 0;
+}
+
+@media (min-width: 64rem) {
+  .spoke-sidebar {
+    position: sticky;
+    top: 5.5rem;
+    align-self: start;
+  }
+}
+
+/* ─── Missing class: photo-card ─── */
+.photo-card {
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-card);
+  transition:
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
+}
+
+.photo-card:hover {
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Homepage hub: wider layout at large screens ─── */
+@media (min-width: 64rem) {
+  .hub-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(20rem, 1fr);
+    gap: 4rem;
+  }
+}
+
+/* ─── Weather widget: integrated look ─── */
+.weather-widget-premium {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+}
+
+.weather-widget-premium .dynamic-panel {
+  border-left: none;
+  background: transparent;
+  color: #ffffff;
+  padding: 0;
+  border-radius: 0;
+}
+
+.weather-widget-premium .dynamic-panel h3 {
+  color: var(--tufo);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+}
+
+.weather-widget-premium .dynamic-panel .summary-list div {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.weather-widget-premium .dynamic-panel .summary-list dt {
+  color: var(--tufo);
+}
+
+.weather-widget-premium .dynamic-panel .summary-list dd {
+  color: #ffffff;
+}
+
+.weather-widget-premium .button {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.84rem;
+}
+
+.weather-widget-premium .button:hover {
+  background: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* ─── Essential data widget: warmer ─── */
+.essential-data-widget {
+  background: rgba(250, 246, 239, 0.82);
+  border-color: rgba(220, 199, 170, 0.5);
+  padding: 1.5rem;
+}
+
+/* ─── Est! Est!! Est!!! pillar: detail-hero--pillar ─── */
+.detail-hero--pillar .detail-hero__panel {
+  background: linear-gradient(
+    135deg,
+    var(--deep-burgundy) 0%,
+    #4a0a18 60%,
+    #3a0812 100%
+  ) !important;
+  border: none !important;
+}
+
+.detail-hero--pillar .detail-hero__content {
+  background: transparent !important;
+}
+
+.detail-hero--pillar .detail-hero__content h1 {
+  color: var(--tufo) !important;
+  font-size: clamp(1.9rem, 4.5vw, 3rem) !important;
+  line-height: 1.08 !important;
+}
+
+.detail-hero--pillar .detail-hero__content p {
+  color: rgba(255, 255, 255, 0.86) !important;
+  line-height: 1.65;
+}
+
+.detail-hero--pillar .detail-hero__content .eyebrow {
+  color: var(--tufo) !important;
+  opacity: 0.88;
+}
+
+.detail-hero--pillar .detail-hero__media img {
+  filter: saturate(1.1) brightness(0.82) !important;
+}
+
+/* ─── Card system: transitions ─── */
+.card {
+  transition:
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: 0 8px 28px rgba(45, 45, 45, 0.1);
+  border-color: rgba(45, 45, 45, 0.11);
+}
+
+/* ─── Spoke card: hover lift ─── */
+.spoke-card {
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.spoke-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+  border-color: rgba(44, 94, 109, 0.2);
+}
+
+/* ─── Nav card (3-tile): styled ─── */
+.nav-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.nav-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+}
+
+.nav-card__link::after {
+  content: " →";
+  display: inline-block;
+  transition: transform var(--transition-base);
+}
+
+.nav-card__link:hover::after {
+  transform: translateX(3px);
+}
+
+/* ─── Footer grid: 3-col on desktop ─── */
+@media (min-width: 48rem) {
+  .footer__inner {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer__inner {
+    grid-template-columns: 1.6fr 1fr 1.2fr;
+  }
+}
+
+/* ─── Mobile media grid: single col ─── */
+@media (max-width: 47.99rem) {
+  .media-card-grid--3,
+  .media-card-grid--2 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .hub-sidebar,
+  .spoke-sidebar {
+    position: static;
+  }
+}
+
+/* ─── Content card sections: editorial typography ─── */
+.content-card .content-stack section h2 {
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  color: var(--antracite);
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
+}
+
+.content-card .content-stack section h3 {
+  font-size: 1.05rem;
+  color: var(--rosso);
+  margin-bottom: 0.35rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.content-card .content-stack section p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--on-surface);
+}
+
+/* ─── Plain list links: hover ─── */
+.plain-list li a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color var(--transition-base);
+}
+
+/* ─── Section head eyebrow: consistent ─── */
+.section__head .eyebrow--dark {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
+
+/* ─── Knowledge/detail grid: tablet single col ─── */
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Homepage hero desktop: floating card bottom-center ─── */
+@media (min-width: 48rem) {
+  .page-hero__panel--home {
+    justify-content: center;
+    align-items: flex-end;
+    min-height: min(74vh, 720px);
+  }
+
+  .page-hero__content--floating {
+    margin: 0 0 3.5rem;
+    max-width: 560px;
+  }
+}
+
+/* ─── Overlay hero: wide screens ─── */
+@media (min-width: 64rem) {
+  .page-hero__content--overlay {
+    padding: 5rem 4rem 5rem;
+  }
+
+  .page-hero__content--overlay h1 {
+    font-size: clamp(3rem, 5.5vw, 4.5rem);
+  }
+}
+
+/* ─── Map panel: consistent radius ─── */
+.map-panel {
+  border-radius: var(--radius-xl);
+}
+
+/* ─── Association entries: visual dividers ─── */
+.association-stack {
+  gap: 2rem;
+}
+
+.association-entry {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.association-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ─── Button ghost: refined ─── */
+.button--ghost {
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.87rem;
+  transition:
+    background var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.button--ghost:hover {
+  background: rgba(44, 94, 109, 0.14);
+  border-color: rgba(44, 94, 109, 0.28);
+  color: var(--blu-lago-700);
+}
+
+/* ─── Footer meta bar ─── */
+.site-footer__meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.25rem 0 2rem;
+}
+
+/* ─── Tag list items: hover ─── */
+.tag-list li {
+  cursor: default;
+  transition: background var(--transition-base);
+}
+
+.tag-list li:hover {
+  background: rgba(44, 94, 109, 0.14);
+}
+
+/* ─── Skip link: always on top ─── */
+.skip-link:focus {
+  top: 0.75rem;
+  z-index: 9999;
+}
+
+/* ─── Download guide btn: rounded ─── */
+.download-guide-btn {
+  border-radius: 6px;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+/* ─── Winery card padding ─── */
+.winery-card {
+  padding: 1.35rem 1.5rem;
+}
+
+/* ─── Fast facts widget border ─── */
+.fast-facts-widget {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(220, 199, 170, 0.5);
+}
+
+/* ─── Detail hero desktop: generous content padding ─── */
+@media (min-width: 64rem) {
+  .detail-hero__content {
+    padding: 3rem 3.5rem !important;
+  }
+}
