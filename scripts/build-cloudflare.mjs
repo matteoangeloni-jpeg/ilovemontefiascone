@@ -81,7 +81,10 @@ function optimizePublicHtml(html) {
     },
   );
 
-  optimized = optimized.replaceAll("/css/style.css", "/css/style.min.css");
+  optimized = optimized.replace(
+    /\/css\/style\.(?:min\.)?css(?:\?v=[^"'\s>]+)?/g,
+    "/css/style.min.css?v=2026-07-06-premium"
+  );
   optimized = optimized.replace(
     /<source\s+srcset=["']\/media\/hero-rocca-dei-papi-1600\.webp["']\s+type=["']image\/webp["']\s*\/?\s*>/gi,
     '<source srcset="/media/hero-rocca-dei-papi-640.webp 640w, /media/hero-rocca-dei-papi-768.webp 768w, /media/hero-rocca-dei-papi-1280.webp 1280w, /media/hero-rocca-dei-papi-1600.webp 1600w" sizes="100vw" type="image/webp">',

@@ -2,9 +2,9 @@
   color-scheme: light;
   --rosso: #8b2635;
   --deep-burgundy: #6c0c20;
-  --off-white: #fcf9f8;
-  --on-surface: #1b1c1c;
-  --antracite: #2d2d2d;
+  --off-white: #fbfaf7;
+  --on-surface: #232323;
+  --antracite: #232323;
   --blu-lago: #2c5e6d;
   --blu-lago-700: #204954;
   --tufo: #dcc7aa;
@@ -12,15 +12,15 @@
   --tufo-100: #f3ebdf;
   --surface: #ffffff;
   --surface-strong: #ffffff;
-  --surface-low: #f6f3f2;
-  --surface-container: #f0eded;
-  --surface-high: #eae7e7;
-  --surface-highest: #e4e2e1;
+  --surface-low: #f8f6f3;
+  --surface-container: #f1ede8;
+  --surface-high: #eae5df;
+  --surface-highest: #e3dcd4;
   --on-surface-variant: #564242;
-  --border: rgba(45, 45, 45, 0.12);
-  --border-strong: rgba(44, 94, 109, 0.22);
-  --text-soft: #5c5b59;
-  --shadow: 0 12px 36px rgba(45, 45, 45, 0.08);
+  --border: rgba(45, 45, 45, 0.08);
+  --border-strong: rgba(44, 94, 109, 0.16);
+  --text-soft: #63615e;
+  --shadow: 0 12px 28px rgba(108, 12, 32, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
   --radius-xl: 1.5rem;
   --radius-lg: 1rem;
   --radius-md: 0.75rem;
@@ -44,7 +44,7 @@ body {
   font-family: var(--font-body);
   color: var(--antracite);
   line-height: 1.6;
-  background: #FAFAFA;
+  background: var(--off-white);
   overflow-wrap: break-word;
   hyphens: auto;
 }
@@ -4002,3 +4002,144 @@ body {
     padding: 3rem 3.5rem !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   PREMIUM VISUAL POLISH — Travel Editorial Design
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── Typography & Eyebrows ─── */
+h1, h2, h3 {
+  font-weight: 400 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--antracite) !important;
+}
+
+.eyebrow, .card__eyebrow {
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: var(--rosso) !important;
+  display: inline-block !important;
+}
+
+.brand {
+  letter-spacing: 0.08em !important;
+  font-weight: 400 !important;
+}
+
+/* ─── Premium Card & Shadow Polish ─── */
+.card, .explore-card, .spoke-card, .nav-card, .photo-card {
+  border: 1px solid rgba(139, 38, 53, 0.05) !important;
+  background: var(--surface) !important;
+  box-shadow: 0 10px 30px rgba(108, 12, 32, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01) !important;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.4s ease !important;
+}
+
+.card:hover, .explore-card:hover, .spoke-card:hover, .nav-card:hover, .photo-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 40px rgba(108, 12, 32, 0.06), 0 1px 5px rgba(0, 0, 0, 0.02) !important;
+  border-color: rgba(139, 38, 53, 0.12) !important;
+}
+
+/* ─── Media Card Image Zoom Transitions ─── */
+.media-card, .media-card--overlay {
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(108, 12, 32, 0.04) !important;
+  overflow: hidden !important;
+  background: #000000 !important;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.media-card .media-card__thumb, .media-card--overlay .media-card__thumb {
+  overflow: hidden !important;
+  border-radius: var(--radius-xl) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+}
+
+.media-card .media-card__thumb img, .media-card--overlay .media-card__thumb img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.media-card:hover, .media-card--overlay:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 24px 48px rgba(108, 12, 32, 0.09) !important;
+}
+
+.media-card:hover .media-card__thumb img, .media-card--overlay:hover .media-card__thumb img {
+  transform: scale(1.04) !important;
+}
+
+/* ─── Glassmorphic Header & Nav ─── */
+.site-header {
+  background: rgba(251, 250, 247, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(139, 38, 53, 0.05) !important;
+  box-shadow: 0 4px 20px rgba(45, 45, 45, 0.02) !important;
+}
+
+/* ─── Refined Weather & Essential Tables ─── */
+.weather-widget-premium {
+  background: linear-gradient(135deg, var(--blu-lago) 0%, var(--blu-lago-700) 100%) !important;
+  box-shadow: 0 10px 30px rgba(44, 94, 109, 0.15) !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.weather-widget-premium h3 {
+  color: var(--tufo) !important;
+  font-family: var(--font-body) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+}
+
+.weather-widget-premium .summary-list div {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.essential-data-widget {
+  background: rgba(250, 246, 239, 0.6) !important;
+  border: 1px solid rgba(220, 199, 170, 0.3) !important;
+}
+
+.essential-table th, .essential-table td {
+  border-bottom: 1px solid rgba(220, 199, 170, 0.2) !important;
+}
+
+/* ─── Section Spacing & Alt Backgrounds ─── */
+.section {
+  padding: 5rem 0 !important;
+}
+
+@media (min-width: 48rem) {
+  .section {
+    padding: 7rem 0 !important;
+  }
+}
+
+.section--alt {
+  background: rgba(250, 246, 239, 0.4) !important;
+  border-top: 1px solid rgba(220, 199, 170, 0.15) !important;
+  border-bottom: 1px solid rgba(220, 199, 170, 0.15) !important;
+}
+
+/* ─── Premium Footer Brand ─── */
+.site-footer {
+  background: #121212 !important;
+}
+
+.contact-card:first-child .footer__title {
+  font-size: 1.55rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-display) !important;
+  color: var(--tufo) !important;
+}
+
