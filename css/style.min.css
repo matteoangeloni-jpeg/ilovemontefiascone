@@ -43,7 +43,6 @@ body {
   line-height: 1.6;
   background: var(--off-white);
   overflow-wrap: break-word;
-  hyphens: auto;
 }
 img {
   display: block;
