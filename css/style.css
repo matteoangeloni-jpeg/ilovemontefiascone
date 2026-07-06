@@ -4143,3 +4143,100 @@ h1, h2, h3 {
   color: var(--tufo) !important;
 }
 
+/* ==========================================================================
+   Visual quality correction after premium release
+   Scope: homepage, editorial pages, cards, events, header/footer
+   Date: 2026-07-06
+   ========================================================================== */
+
+:root {
+  --premium-paper: #fbfaf7;
+  --premium-burgundy: #8b2635;
+  --premium-shadow-card: 0 10px 30px rgba(108, 12, 32, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
+}
+
+/* Homepage Hero Readability Overlay */
+.hero:not(.hero--subpage)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  ) !important;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Editorial details for subpage heroes */
+.hero--subpage > .hero__content {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.85) 100%
+  ) !important;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Fallback styles for placeholder-looking cards without images */
+.media-card:not(:has(img)) {
+  background: var(--premium-paper) !important;
+  border: 1px solid rgba(139, 38, 53, 0.08) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.event-card:not(:has(img)) {
+  background: var(--premium-paper) !important;
+  border: 1px dashed rgba(139, 38, 53, 0.15) !important;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Specific layout structure for events list cards */
+.events-page .media-card--overlay {
+  aspect-ratio: 3 / 4 !important;
+  box-shadow: var(--premium-shadow-card) !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.events-page .media-card--overlay:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 40px rgba(108, 12, 32, 0.08) !important;
+}
+
+/* Footer polish */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.04) !important;
+  background: #111111 !important;
+}
+
+/* Mobile responsive fixes and overflow preventions */
+@media (max-width: 760px) {
+  .section {
+    padding: 3.5rem 0 !important;
+  }
+  .page-hero__content--floating {
+    margin: 1.5rem 1rem !important;
+    padding: 2rem 1.5rem !important;
+  }
+  .media-card-grid--3, .media-card-grid--2 {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .site-header {
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
