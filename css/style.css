@@ -18,9 +18,9 @@
   --surface-highest: #e3dcd4;
   --on-surface-variant: #564242;
   --border: rgba(45, 45, 45, 0.08);
-  --border-strong: rgba(44, 94, 109, 0.16);
+  --border-strong: rgba(30, 82, 97, 0.16);
   --text-soft: #63615e;
-  --shadow: 0 12px 28px rgba(108, 12, 32, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
+  --shadow: 0 12px 40px rgba(108, 12, 32, 0.05), 0 1px 3px rgba(0, 0, 0, 0.01);
   --radius-xl: 0.75rem;
   --radius-lg: 0.5rem;
   --radius-md: 0.25rem;
@@ -66,7 +66,7 @@ a:hover {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(44, 94, 109, 0.45);
+  outline: 3px solid rgba(30, 82, 97, 0.45);
   outline-offset: 3px;
 }
 
@@ -140,7 +140,7 @@ dl {
   position: absolute;
   inset: auto 0 0;
   height: 1px;
-  background: linear-gradient(90deg, rgba(139, 38, 53, 0) 0%, rgba(139, 38, 53, 0.2) 48%, rgba(44, 94, 109, 0.14) 100%);
+  background: linear-gradient(90deg, rgba(139, 38, 53, 0) 0%, rgba(139, 38, 53, 0.2) 48%, rgba(30, 82, 97, 0.14) 100%);
   pointer-events: none;
 }
 
@@ -370,8 +370,8 @@ dl {
 
 .site-nav__panel-list a:hover,
 .site-nav__panel-list a[aria-current="page"] {
-  border-color: rgba(44, 94, 109, 0.22);
-  background: rgba(44, 94, 109, 0.08);
+  border-color: rgba(30, 82, 97, 0.22);
+  background: rgba(30, 82, 97, 0.08);
 }
 
 .site-nav__panel-list a::after {
@@ -488,7 +488,7 @@ dl {
   border-radius: var(--radius-xl);
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.16), transparent 35%),
-    linear-gradient(135deg, rgba(139, 38, 53, 0.92) 0%, rgba(45, 45, 45, 0.38) 48%, rgba(44, 94, 109, 0.9) 100%);
+    linear-gradient(135deg, rgba(139, 38, 53, 0.92) 0%, rgba(45, 45, 45, 0.38) 48%, rgba(30, 82, 97, 0.9) 100%);
   box-shadow: var(--shadow);
 }
 
@@ -530,7 +530,7 @@ dl {
   color: #fff;
   background:
     linear-gradient(180deg, rgba(14, 17, 22, 0.08) 0%, rgba(14, 17, 22, 0.62) 100%),
-    linear-gradient(135deg, rgba(139, 38, 53, 0.14) 0%, rgba(44, 94, 109, 0.16) 100%);
+    linear-gradient(135deg, rgba(139, 38, 53, 0.14) 0%, rgba(30, 82, 97, 0.16) 100%);
 }
 
 .hero__content > * + *,
@@ -677,7 +677,7 @@ dl {
   padding: 1rem;
   border-left: 4px solid var(--rosso);
   border-radius: var(--radius-md);
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
 }
 
 .section {
@@ -864,7 +864,7 @@ dl {
 .tag-list li {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
   color: var(--blu-lago);
   font-size: 0.85rem;
   font-weight: 700;
@@ -883,10 +883,32 @@ dl {
 }
 
 .info-box {
-  padding: 1rem 1.1rem;
-  border: 1px solid rgba(44, 94, 109, 0.16);
-  border-radius: var(--radius-md);
-  background: var(--tufo-50);
+  padding: 1.5rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, var(--blu-lago-700) 0%, var(--blu-lago) 100%);
+  color: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+}
+
+.info-box h2,
+.info-box h3 {
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-box strong {
+  color: #ffffff;
+}
+
+.info-box a {
+  color: var(--tufo-100);
+}
+
+.info-box a:hover {
+  color: #ffffff;
 }
 
 .breadcrumb {
@@ -1406,7 +1428,7 @@ dl {
 
   .site-nav__panel-list a:hover,
   .site-nav__panel-list a[aria-current="page"] {
-    background: rgba(44, 94, 109, 0.06);
+    background: rgba(30, 82, 97, 0.06);
     border-radius: var(--radius-md);
     border-bottom-color: transparent;
   }
@@ -1462,7 +1484,7 @@ dl {
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   background:
-    linear-gradient(135deg, rgba(139, 38, 53, 0.92), rgba(44, 94, 109, 0.9)),
+    linear-gradient(135deg, rgba(139, 38, 53, 0.92), rgba(30, 82, 97, 0.9)),
     var(--surface-strong);
   color: #fff;
   box-shadow: var(--shadow);
@@ -1470,7 +1492,7 @@ dl {
 
 .page-hero__panel--home {
   background:
-    linear-gradient(135deg, rgba(139, 38, 53, 0.7), rgba(44, 94, 109, 0.74)),
+    linear-gradient(135deg, rgba(139, 38, 53, 0.7), rgba(30, 82, 97, 0.74)),
     #224654;
   border-radius: 0;
   border: none;
@@ -2125,7 +2147,7 @@ dl {
   min-height: 1.9rem;
   padding: 0 0.7rem;
   border-radius: 999px;
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
   color: var(--blu-lago);
   font-size: 0.78rem;
   font-weight: 800;
@@ -2227,7 +2249,7 @@ dl {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--blu-lago);
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   margin-right: 0.4rem;
@@ -2816,7 +2838,7 @@ body {
   min-height: 2.4rem;
   font-size: 0.75rem;
   letter-spacing: 0.06em;
-  border-color: rgba(44, 94, 109, 0.2);
+  border-color: rgba(30, 82, 97, 0.2);
 }
 
 /* ─── Homepage Hero: cinematic full-bleed ─── */
@@ -3140,15 +3162,15 @@ body {
 
 /* ─── Tag pills: slightly more refined ─── */
 .tag-pill {
-  border-color: rgba(44, 94, 109, 0.18);
+  border-color: rgba(30, 82, 97, 0.18);
   color: var(--blu-lago);
   font-size: 0.78rem;
   transition: background var(--transition-base), color var(--transition-base), border-color var(--transition-base);
 }
 
 .tag-pill:hover {
-  background: rgba(44, 94, 109, 0.08);
-  border-color: rgba(44, 94, 109, 0.3);
+  background: rgba(30, 82, 97, 0.08);
+  border-color: rgba(30, 82, 97, 0.3);
 }
 
 /* ─── Internal page hero: premium split layout ─── */
@@ -3806,7 +3828,7 @@ body {
 .spoke-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lift);
-  border-color: rgba(44, 94, 109, 0.2);
+  border-color: rgba(30, 82, 97, 0.2);
 }
 
 /* ─── Nav card (3-tile): styled ─── */
@@ -3963,8 +3985,8 @@ body {
 }
 
 .button--ghost:hover {
-  background: rgba(44, 94, 109, 0.14);
-  border-color: rgba(44, 94, 109, 0.28);
+  background: rgba(30, 82, 97, 0.14);
+  border-color: rgba(30, 82, 97, 0.28);
   color: var(--blu-lago-700);
 }
 
@@ -3981,7 +4003,7 @@ body {
 }
 
 .tag-list li:hover {
-  background: rgba(44, 94, 109, 0.14);
+  background: rgba(30, 82, 97, 0.14);
 }
 
 /* ─── Skip link: always on top ─── */
@@ -4099,7 +4121,7 @@ h1, h2, h3 {
 /* ─── Refined Weather & Essential Tables ─── */
 .weather-widget-premium {
   background: linear-gradient(135deg, var(--blu-lago) 0%, var(--blu-lago-700) 100%) !important;
-  box-shadow: 0 10px 30px rgba(44, 94, 109, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(30, 82, 97, 0.15) !important;
   border: none !important;
   color: #ffffff !important;
 }
