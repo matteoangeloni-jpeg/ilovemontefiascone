@@ -5,11 +5,11 @@
   --off-white: #fbfaf7;
   --on-surface: #232323;
   --antracite: #232323;
-  --blu-lago: #2c5e6d;
-  --blu-lago-700: #204954;
-  --tufo: #dcc7aa;
-  --tufo-50: #faf6ef;
-  --tufo-100: #f3ebdf;
+  --blu-lago: #1e5261;
+  --blu-lago-700: #003b48;
+  --tufo: #d8c3a7;
+  --tufo-50: #faf4e6;
+  --tufo-100: #f5dfc1;
   --surface: #ffffff;
   --surface-strong: #ffffff;
   --surface-low: #f8f6f3;
@@ -21,9 +21,9 @@
   --border-strong: rgba(44, 94, 109, 0.16);
   --text-soft: #63615e;
   --shadow: 0 12px 28px rgba(108, 12, 32, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
-  --radius-xl: 1.5rem;
-  --radius-lg: 1rem;
-  --radius-md: 0.75rem;
+  --radius-xl: 0.75rem;
+  --radius-lg: 0.5rem;
+  --radius-md: 0.25rem;
   --container: min(72rem, calc(100% - 1.5rem));
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -101,13 +101,14 @@ dl {
 .skip-link {
   position: absolute;
   left: 1rem;
-  top: -3rem;
+  top: -6rem;
   z-index: 999;
   padding: 0.75rem 1rem;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: var(--blu-lago);
   color: #fff;
   text-decoration: none;
+  line-height: 1.2;
 }
 
 .skip-link:focus {
@@ -241,11 +242,12 @@ dl {
 .site-nav a {
   display: block;
   padding: 0.4rem 0;
-  color: var(--antracite);
+  color: var(--on-surface-variant);
   text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   position: relative;
   transition: color 0.2s ease;
 }
@@ -263,14 +265,16 @@ dl {
   min-height: 2.75rem;
   padding: 0.75rem 0.9rem;
   border: 1px solid transparent;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: transparent;
-  color: var(--antracite);
+  color: var(--on-surface-variant);
   font-family: var(--font-body);
-  font-size: 0.84rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   line-height: 1;
+  white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
   transition:
@@ -595,24 +599,32 @@ dl {
   align-items: center;
   justify-content: center;
   min-height: 2.9rem;
-  padding: 0 1.05rem;
+  padding: 0 1.35rem;
   border: 1px solid transparent;
-  border-radius: 999px;
-  background: var(--rosso);
+  border-radius: var(--radius-md);
+  background: var(--deep-burgundy);
   color: #fff;
   text-decoration: none;
   font-weight: 700;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
+  background: var(--rosso);
   color: #fff;
 }
 
 .button--primary {
-  background: var(--rosso);
+  background: var(--deep-burgundy);
   color: #fff;
+}
+
+.button--primary:hover {
+  background: var(--rosso);
 }
 
 .button--secondary {
@@ -622,8 +634,8 @@ dl {
 }
 
 .button--ghost {
-  background: rgba(44, 94, 109, 0.08);
-  border-color: rgba(44, 94, 109, 0.16);
+  background: rgba(30, 82, 97, 0.08);
+  border-color: rgba(30, 82, 97, 0.16);
   color: var(--blu-lago);
 }
 
@@ -1866,7 +1878,7 @@ dl {
 
 /* Weather Premium Widget */
 .weather-widget-premium {
-  background: var(--blu-lago);
+  background: linear-gradient(160deg, var(--blu-lago-700) 0%, var(--blu-lago) 100%);
   color: #ffffff;
   padding: 2rem;
   border-radius: var(--radius-lg);
@@ -4385,3 +4397,64 @@ main > .home-hero:first-child h1 {
 }
 
 
+
+/* ==========================================================================
+   P0 homepage hero readability — corrected selectors
+   The block above targets .hero/.home-hero, but the homepage hero is
+   .page-hero with .page-hero__content--overlay. The global premium-polish
+   rule "h1, h2, h3 { color: var(--antracite) !important }" therefore still
+   forced the overlay hero title dark over the aerial photo. These rules
+   match the real markup and restore the intended readable light title.
+   ========================================================================== */
+.page-hero__content--overlay h1 {
+  color: #fff8ef !important;
+  text-shadow:
+    0 3px 18px rgba(0, 0, 0, 0.72),
+    0 10px 44px rgba(0, 0, 0, 0.58) !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+.page-hero__content--overlay p {
+  color: rgba(255, 248, 239, 0.94) !important;
+  text-shadow:
+    0 2px 14px rgba(0, 0, 0, 0.7),
+    0 8px 30px rgba(0, 0, 0, 0.48) !important;
+}
+
+.page-hero__content--overlay .eyebrow {
+  color: #f5dfc1 !important;
+  background: rgba(255, 248, 239, 0.14);
+  border: 1px solid rgba(255, 248, 239, 0.2);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.58);
+}
+
+/* Stronger scrim on the left, where the hero copy sits */
+.page-hero__panel--home::before {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.55) 34%,
+      rgba(0, 0, 0, 0.25) 62%,
+      rgba(0, 0, 0, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.16) 0%,
+      rgba(0, 0, 0, 0.14) 45%,
+      rgba(0, 0, 0, 0.55) 100%
+    ) !important;
+}
+
+@media (max-width: 760px) {
+  .page-hero__panel--home::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.44) 0%,
+        rgba(0, 0, 0, 0.36) 30%,
+        rgba(0, 0, 0, 0.78) 100%
+      ) !important;
+  }
+}

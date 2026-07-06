@@ -83,7 +83,7 @@ function optimizePublicHtml(html) {
 
   optimized = optimized.replace(
     /\/css\/style\.(?:min\.)?css(?:\?v=[^"'\s>]+)?/g,
-    "/css/style.min.css?v=2026-07-06-hero-readability"
+    "/css/style.min.css?v=2026-07-06-editorial-tokens"
   );
   optimized = optimized.replace(
     /<source\s+srcset=["']\/media\/hero-rocca-dei-papi-1600\.webp["']\s+type=["']image\/webp["']\s*\/?\s*>/gi,
