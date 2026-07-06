@@ -4249,4 +4249,149 @@ h1, h2, h3 {
   }
 }
 
+/* ==========================================================================
+   P0 homepage hero readability fix
+   Ensures the main homepage title is always readable over the aerial image.
+   Date: 2026-07-06
+   ========================================================================== */
+
+/* Forza la hero homepage a comportarsi come sezione visuale scura */
+body.home .hero,
+body.home .home-hero,
+body.home .hero--home,
+body.home main > .hero:first-child,
+body:not(.page-detail) main > .hero:first-child {
+  position: relative;
+  isolation: isolate;
+  background-color: #111;
+}
+
+/* Overlay molto più forte a sinistra, dove sta il testo */
+body.home .hero::before,
+body.home .home-hero::before,
+body.home .hero--home::before,
+body.home main > .hero:first-child::before,
+body:not(.page-detail) main > .hero:first-child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.68) 32%,
+      rgba(0, 0, 0, 0.36) 58%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.22) 0%,
+      rgba(0, 0, 0, 0.18) 45%,
+      rgba(0, 0, 0, 0.56) 100%
+    ) !important;
+}
+
+/* Il contenuto deve stare sopra l'overlay */
+body.home .hero__content,
+body.home .home-hero__content,
+body.home .hero .container,
+body.home main > .hero:first-child .container,
+body:not(.page-detail) main > .hero:first-child .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Titolo homepage: mai nero sull'immagine */
+body.home .hero h1,
+body.home .home-hero h1,
+body.home .hero--home h1,
+body.home main > .hero:first-child h1,
+body:not(.page-detail) main > .hero:first-child h1 {
+  color: #fff8ef !important;
+  text-shadow:
+    0 3px 18px rgba(0, 0, 0, 0.72),
+    0 10px 44px rgba(0, 0, 0, 0.58) !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Eyebrow sopra il titolo */
+body.home .hero .eyebrow,
+body.home .hero__eyebrow,
+body.home .home-hero .eyebrow,
+body.home .home-hero__eyebrow,
+body.home main > .hero:first-child .eyebrow,
+body.home main > .hero:first-child .hero__eyebrow {
+  color: #dcc7aa !important;
+  background: rgba(255, 248, 239, 0.14);
+  border: 1px solid rgba(255, 248, 239, 0.20);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.58);
+}
+
+/* Sottotitolo homepage */
+body.home .hero p,
+body.home .home-hero p,
+body.home .hero--home p,
+body.home main > .hero:first-child p,
+body:not(.page-detail) main > .hero:first-child p {
+  color: rgba(255, 248, 239, 0.94) !important;
+  text-shadow:
+    0 2px 14px rgba(0, 0, 0, 0.70),
+    0 8px 30px rgba(0, 0, 0, 0.48) !important;
+}
+
+/* CTA homepage più leggibile */
+body.home .hero .button,
+body.home .hero .btn,
+body.home .home-hero .button,
+body.home .home-hero .btn,
+body.home main > .hero:first-child .button,
+body.home main > .hero:first-child .btn {
+  background: #fff8ef !important;
+  color: #6c0c20 !important;
+  border: 0 !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Se il body non ha classe home, usa comunque una guardia sull'URL/home structure */
+main > section:first-child.hero h1,
+main > .hero:first-child h1,
+main > .home-hero:first-child h1 {
+  color: #fff8ef !important;
+  text-shadow:
+    0 3px 18px rgba(0, 0, 0, 0.72),
+    0 10px 44px rgba(0, 0, 0, 0.58) !important;
+}
+
+/* Mobile: overlay ancora più verticale per evitare testo su zone chiare/scure miste */
+@media (max-width: 760px) {
+  body.home .hero::before,
+  body.home .home-hero::before,
+  body.home .hero--home::before,
+  body.home main > .hero:first-child::before,
+  body:not(.page-detail) main > .hero:first-child::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.42) 0%,
+        rgba(0, 0, 0, 0.34) 28%,
+        rgba(0, 0, 0, 0.82) 100%
+      ) !important;
+  }
+
+  body.home .hero h1,
+  body.home .home-hero h1,
+  body.home .hero--home h1,
+  body.home main > .hero:first-child h1,
+  body:not(.page-detail) main > .hero:first-child h1 {
+    color: #fff8ef !important;
+    text-shadow:
+      0 3px 18px rgba(0, 0, 0, 0.78),
+      0 10px 42px rgba(0, 0, 0, 0.62) !important;
+  }
+}
+
+
 
