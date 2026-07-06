@@ -4240,3 +4240,13 @@ h1, h2, h3 {
   }
 }
 
+/* Fix article layout overflow and sidebar rhythm */
+@media (min-width: 64rem) {
+  .section-grid,
+  .detail-grid {
+    grid-template-columns: minmax(0, 1.6fr) minmax(18rem, 1fr) !important;
+    gap: 3.5rem !important;
+  }
+}
+
+
