@@ -38,7 +38,7 @@ for (const file of files) {
       return imgTag;
     }
 
-    const before = full.slice(Math.max(0, offset - 400), offset);
+    const before = full.slice(0, offset);
     const lastOpen = before.lastIndexOf("<picture");
     const lastClose = before.lastIndexOf("</picture>");
     const alreadyInPicture = lastOpen > lastClose;
