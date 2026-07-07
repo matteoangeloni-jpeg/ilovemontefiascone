@@ -25,6 +25,7 @@ __pycache__/
 # Node / tool caches
 node_modules/
 .cache/
+.seo-cache/
 
 # Generated deploy output
 dist/
@@ -36,6 +37,8 @@ dist-it/
 *.sqlite3
 
 # Audit / preview artifacts
+.lighthouse-tmp/
+ilovemontefiascone.com-audit/
 audit-*.png
 audit-*.json
 audit-*.md
