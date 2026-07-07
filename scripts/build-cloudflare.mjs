@@ -32,6 +32,7 @@ const supportRootFiles = [
   "sitemap-en.xml",
   "sitemap-de.xml",
   "_redirects",
+  "_headers",
   "sw.js",
 ];
 

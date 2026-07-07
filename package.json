@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test:featured-event": "node scripts/select-featured-event.test.mjs",
-    "build:cloudflare": "node scripts/select-featured-event.test.mjs && node scripts/select-featured-event.mjs && node scripts/build-cloudflare.mjs"
+    "build:cloudflare": "node scripts/select-featured-event.test.mjs && node scripts/select-featured-event.mjs && node scripts/update-sitemap-lastmod.mjs && node scripts/build-cloudflare.mjs"
   },
   "private": true
 }
