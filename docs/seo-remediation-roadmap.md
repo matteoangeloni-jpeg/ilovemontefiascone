@@ -57,7 +57,21 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 |---|--------|-------|------|
 | 1.1 | `lastmod` reali per ogni URL (data dalla cronologia git del file, non batch) | ✅ Fatto | `scripts/update-sitemap-lastmod.mjs`, integrato in `npm run build:cloudflare` (commit `bf3f907`) |
 | 1.2 | File `_headers` per Cloudflare Pages (CSP, HSTS, X-Frame-Options, Referrer-Policy, Permissions-Policy) | ✅ Fatto | `_headers` in root, copiato in `dist-it/` (commit `bf3f907`); **bug CSP trovato e corretto** (mancava `unpkg.com` in `style-src`, avrebbe rotto il CSS di Leaflet su `/mappa` — commit `70788dc`) |
-| 1.3 | Verifica reale LCP/CLS/INP (PageSpeed/Lighthouse) su homepage + 3 pagine chiave | ⚠️ Parziale | Quota API PageSpeed Insights esaurita (429, nessuna chiave configurata) → **analisi statica** con skill `seo-technical`: hero image preloaded/fetchpriority/dimensioni esplicite su homepage (basso rischio LCP/CLS); font loading reso asincrono a build-time; CSS unico da 97KB minificato (rischio FCP moderato, non urgente); `mappa.html` carica Leaflet CSS da unpkg.com in modo bloccante (unico punto debole). **Da rifare con dati reali** appena la quota PSI si libera o con una API key dedicata |
+| 1.3 | Verifica reale LCP/CLS/INP (PageSpeed/Lighthouse) su homepage + 3 pagine chiave | ✅ Fatto (dati reali) | API key personale PageSpeed Insights configurata (`~/.config/claude-seo/google-api.json`, fuori dal repo). Risultati mobile lab reali — vedi tabella sotto. **LCP risulta peggiore di quanto stimato dall'analisi statica**: 5.3–7.1s su tutte e 3 le pagine testate (soglia "good" Google: <2.5s). CLS ottimo (0.001–0.037). TBT quasi nullo. |
+
+#### Dati reali PageSpeed Insights (mobile, lab data — 7 luglio 2026)
+
+| Pagina | Performance | LCP | CLS | TBT | Nota |
+|---|---|---|---|---|---|
+| Homepage | 57–77/100 (variabile tra run) | 5.3–6.9s | 0.037 | 0–640ms | Punteggio instabile tra due run consecutivi |
+| `/cosa-vedere-montefiascone-guida-completa` | 73/100 | 6.6s | 0.003 | 0ms | |
+| `/mappa` | 72/100 | 7.1s | 0.001 | 0ms | |
+
+> Nessun dato CrUX di campo (real-user) disponibile: traffico insufficiente per questa origine. I numeri sopra sono **lab data** (Lighthouse simulato, mobile con throttling), non dati di utenti reali.
+
+**Nota tecnica sull'audit "redirects":** ogni test segnala un risparmio potenziale enorme (3.6–9.8s) sull'audit "Avoid multiple page redirects". Ho verificato che **non è un vero redirect da correggere**: il trace di rete mostra `requestedUrl` e `finalUrl` identici, un solo request con status 200 diretto, nessun HTTP 3xx nella catena. Confermato anche con `curl` diretto (0 redirect, 200-270ms) e verificato il file `_redirects` (nessuna regola che possa causare un loop sullo stesso URL). È quasi certamente un artefatto di misurazione di Lighthouse legato a latenza di connessione/TLS variabile sotto throttling mobile simulato — ma la variabilità stessa (7.7s vs 3.6s tra due run identici) indica una risposta iniziale del server non sempre stabile, da tenere d'occhio.
+
+**Raccomandazione:** l'LCP reale è il problema più serio emerso da questa roadmap finora — va sopra soglia "good" su tutte le pagine testate. Prossimi passi consigliati (fuori dal perimetro eseguibile in questo ambiente, richiedono accesso alla dashboard Cloudflare Pages dell'utente): verificare cache-hit ratio ed eventuali cold-start delle funzioni edge, controllare le impostazioni Cache Rules/Always Online, e ripetere il test da PageSpeed Insights UI per conferma indipendente.
 
 ### Fase 2 — E-E-A-T e immagini
 
@@ -80,8 +94,8 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 | # | Azione | Stato |
 |---|--------|-------|
-| 4.1 | Google Search Console per dati reali di indicizzazione/CTR | ⏳ Da fare — richiede accesso/credenziali dell'utente |
-| 4.2 | Riesecuzione audit tecnico completo a fine Fase 1-2 | ⏳ Da fare |
+| 4.1 | Google Search Console per dati reali di indicizzazione/CTR | 🔄 In corso — API key PageSpeed/CrUX gia' configurate; manca ancora il service account per GSC (vedi sotto) |
+| 4.2 | Riesecuzione audit tecnico completo a fine Fase 1-2 | ✅ Parte CWV fatta (vedi 1.3) — resto dell'audit tecnico ancora da rifare |
 | 4.3 | Monitorare il gate FR (`docs/fr-publication-gate-roadmap.md`) | ⏳ Ricorrente |
 | 4.4 | Tracciare ranking su keyword chiave | ⏳ Da fare |
 
@@ -89,13 +103,15 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 ## Cosa resta aperto, in ordine di priorità
 
-1. **Bio autore reale** (2.1) — bloccato in attesa di dati da Matteo Angeloni (bio, foto, profili social/professionali verificabili).
-2. **Verifica CWV reale** (1.3) — ripetuta oggi, quota PSI ancora esaurita (limite giornaliero condiviso); ripetere quando disponibile una API key dedicata o la quota si libera.
-3. **Google Search Console** (4.1) — richiede accesso con credenziali dell'utente, non eseguibile autonomamente.
-4. **`width`/`height` sistematici** (2.4) e **riesecuzione audit finale** (4.2) — non ancora affrontati in modo sistematico.
+1. **LCP reale sopra soglia su tutte le pagine testate** (nuovo, da 1.3) — 5.3–7.1s contro una soglia "good" di 2.5s. Priorità più alta emersa finora nell'intera roadmap. Richiede accesso alla dashboard Cloudflare Pages (cache, cold-start edge) che non ho in questo ambiente.
+2. **Completare setup Google Search Console** (4.1) — mancano ancora: creare un service account, scaricare il JSON, aggiungerlo come utente in Search Console (passi 4-5 della guida già condivisa).
+3. **Bio autore reale** (2.1) — bloccato in attesa di dati da Matteo Angeloni (bio, foto, profili social/professionali verificabili).
+4. **`width`/`height` sistematici** (2.4) e **resto dell'audit tecnico completo** (4.2: crawlability, indexability, sicurezza, ecc. oltre alle CWV) — non ancora affrontati in modo sistematico.
 
 Il dominio `.it` (3.3) resta volutamente fuori scope su indicazione dell'utente.
 
 ## Raccomandazione
 
-I fix a rischio più alto (CSP che rompeva Leaflet, bug di rilevazione nello script webp) sono stati trovati **durante** l'esecuzione, non prima — a conferma che ogni modifica tecnica va verificata con una build reale prima del deploy, non solo per ispezione del codice. Consiglio di eseguire un giro di QA manuale su `/mappa` (verifica visiva che Leaflet si carichi) prima del prossimo deploy in produzione, poi procedere con i punti aperti sopra (a partire dalla bio autore, quando avrai i dati reali).
+I fix a rischio più alto (CSP che rompeva Leaflet, bug di rilevazione nello script webp) sono stati trovati **durante** l'esecuzione, non prima — a conferma che ogni modifica tecnica va verificata con una build reale prima del deploy, non solo per ispezione del codice. Consiglio di eseguire un giro di QA manuale su `/mappa` (verifica visiva che Leaflet si carichi) prima del prossimo deploy in produzione.
+
+Con i dati reali PageSpeed Insights ora disponibili, la priorità è cambiata: **l'LCP mobile (5.3–7.1s) è il problema più concreto e ad alto impatto** trovato finora in questa roadmap, più urgente della bio autore o dei link outbound già sistemati. Non è però risolvibile da qui: serve accesso alla dashboard Cloudflare Pages per capire se dipende da cache miss, cold-start delle funzioni edge o configurazione TLS. Completa il setup del service account Search Console (passi 4-5) così posso incrociare questi dati con l'indicizzazione reale, e valuta di controllare la dashboard Cloudflare Pages per i tempi di risposta edge.
