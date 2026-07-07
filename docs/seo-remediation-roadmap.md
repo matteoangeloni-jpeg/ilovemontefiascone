@@ -109,18 +109,47 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 #### Sitemap: 1 problema reale trovato
 
-- `sitemap-en.xml` ha **50 warning su 98 URL** (le sitemap IT hanno 0 warning). Diagnosticato con l'API di ispezione URL su 2 pagine campione: sono **warning Rich Results su schema `Event`** — campi opzionali mancanti (`organizer`, `performer`, `offers`, in un caso `url` probabilmente per cache non aggiornata da Google). Sono `WARNING`, non `ERROR`: non bloccano l'indicizzazione ma riducono la completezza del rich result. Interessano le pagine con `@type: Event` (9 pagine × varie lingue). **Non ancora corretto** — richiederebbe aggiungere `organizer`/`offers` reali dove il contenuto lo supporta, senza inventare `performer` non citati nel testo.
+- `sitemap-en.xml` ha **50 warning su 98 URL** (le sitemap IT hanno 0 warning). Diagnosticato con l'API di ispezione URL su 2 pagine campione: sono **warning Rich Results su schema `Event`** — campi opzionali mancanti (`organizer`, `performer`, `offers`, in un caso `url` probabilmente per cache non aggiornata da Google). Sono `WARNING`, non `ERROR`: non bloccano l'indicizzazione ma riducono la completezza del rich result. **Corretto in Fase 5** dove il testo lo supportava — vedi sotto.
 - Trovate sitemap duplicate sottomesse sia su `https://ilovemontefiascone.com/...` che su `https://www.ilovemontefiascone.com/...` per lo stesso dominio proprietà — ridondante (l'apex fa comunque redirect 301 a www) ma non dannoso. Pulizia consigliata ma non urgente: rimuovere le sitemap sottomesse su apex da Search Console.
+
+---
+
+## Fase 5 — Audit multi-agent (7 luglio 2026, secondo giro)
+
+Lanciati 6 audit paralleli mirati sulle aree non ancora coperte (content/E-E-A-T a scala, GEO/citabilità AI, SXO sulle anomalie GSC, tecnico a scala su 301 pagine, mappatura Event schema, visivo). L'audit visivo non ha prodotto risultati (probabile assenza di browser/Playwright in questo ambiente) — non bloccante, gli altri 5 hanno dato esiti concreti.
+
+### Trovato e corretto
+
+| Problema | Fonte | Fix applicato | Commit |
+|---|---|---|---|
+| 14 pagine con solo `TouristAttraction`/`CollectionPage`/`WebPage` (mai `Article`) senza alcun autore — il fix Fase 2.2 copriva solo i 202 blocchi `Article`, non queste | Audit content | `author` Person aggiunto (`scripts/add-author-first-node.mjs`) | `6052b04` |
+| Pagina pillar `cosa-vedere-montefiascone-guida-completa.html` con autore `Organization: Redazione` invece di `Person`, unica pagina cornerstone incoerente col resto del sito | Audit GEO | Sostituito con Person Matteo Angeloni | `6052b04` |
+| Pagina pillar senza FAQPage schema né FAQ visibili, a differenza delle altre guide | Audit GEO | 5 domande radicate nei fatti già in pagina (cupola 27m, leggenda Est Est Est, tappa Francigena 17,8km, eventi) | `f512c69` |
+| 50 warning Event schema: campi opzionali mancanti | Audit schema (mappatura completa) | `isAccessibleForFree` su Fiera del Vino (ingresso gratuito citato nel testo), `performer` su Festa Santa Margherita (Banda Musicale Grotte Santo Stefano) e Festival Ecologia Integrale (Mogol) — **non aggiunto** `organizer` su Panorami Festival: il testo cita il Comune solo come fonte del calendario, non come organizzatore dichiarato, e la pagina ha una policy editoriale esplicita di cautela | `6052b04` |
+| CTR 0,80% su `/basilica-san-flaviano-montefiascone` (2.002 impr., pos. 4.2) | Audit SXO | Title/meta riformulati in forma più distintiva rispetto ai risultati enciclopedici (Wikipedia/Comune/FAI) che dominano la SERP per quella query, stessi fatti già in pagina | `638e07b` |
+| 3 URL EN legacy con doppio hop di redirect + status 302 invece di 301 su fusioni permanenti | Audit tecnico (301 pagine) | Regole `.html` esplicite aggiunte prima della regola generica in `_redirects`, status corretto a 301 | `1e5d77c` |
+| Title identici IT/EN/DE (mai tradotti) su Est-Lake Festival, Est Film Festival, Cronoscalata (DE) | Audit tecnico | Struttura del title localizzata per mercato, nome proprio dell'evento mantenuto, coerente con le description già tradotte correttamente | `1e5d77c` |
+
+391 blocchi JSON-LD validati dopo ogni modifica, 0 errori.
+
+### Trovato ma non ancora corretto (richiede più contesto o dati che il sito non ha)
+
+- **Homepage in posizione 26,6**: causa probabile doppia, secondo l'audit SXO — (a) query generiche tipo "Montefiascone" sono dominate da Wikipedia/Tripadvisor/Italia.it con anni di autorità; (b) possibile cannibalizzazione interna tra homepage (che include nel suo FAQ "Cosa vedere a Montefiascone in un giorno?") e la pagina dedicata `cosa-vedere-montefiascone-guida-completa.html` con lo stesso intento. Non risolto: richiederebbe una decisione editoriale (es. restringere il FAQ della homepage e rimandare esplicitamente alla guida completa) più che un fix tecnico.
+- **Contenuto sottile e triplicazione** (audit content): 5 pagine campione sotto le 600 parole (soglia service-page: 800); le 3 varianti "borghi del lago" e il cluster "cosa vedere" (Rocca/Cattedrale/San Flaviano) sono trattati in triplice copia con frasi quasi identiche tra loro — pattern doorway-page da valutare (consolidare o differenziare realmente i contenuti).
+- **Freshness delle date "ultimo aggiornamento"**: la maggior parte delle pagine campionate riporta la data di rilascio del sito (13-15 giugno 2026), non una revisione editoriale reale verificabile in `dateModified`.
+- **Passaggi troppo frammentati per citazione AI** sulla pagina pillar (audit GEO): micro-paragrafi da 25-40 parole, sotto il range ottimale 134-167 parole per l'estrazione diretta da parte di motori AI — richiederebbe un lavoro di riscrittura, non un fix strutturale.
+- **Nessun `sameAs` verso Wikipedia/Wikidata** per l'entità Place "Montefiascone" — quick win a basso effort segnalato dall'audit GEO, non ancora fatto.
+- **File orfani con canonical self-referenziale** (`en/how-many-days-in-montefiascone.html` e le altre 2 pagine EN escluse dalla build) — nessun danno oggi, ma debito tecnico se lo script di build cambiasse.
 
 ---
 
 ## Cosa resta aperto, in ordine di priorità
 
 1. **LCP reale sopra soglia su tutte le pagine testate** — 5.3–7.1s contro una soglia "good" di 2.5s. Priorità più alta, richiede accesso alla dashboard Cloudflare Pages che non ho in questo ambiente.
-2. **50 warning Rich Results su schema `Event`** (organizer/performer/offers mancanti) sulle pagine EN — fixabile senza inventare dati dove il contenuto lo supporta.
-3. **CTR anomalo su `/basilica-san-flaviano-montefiascone`** (2.002 impressioni, 0,80% CTR) e **homepage in posizione 26,6** — entrambi da investigare con revisione di title/snippet.
-4. **Foto reale dell'autore** (2.1) — bio e link social fatti; manca ancora una foto reale di Matteo Angeloni.
-5. **`width`/`height` sistematici** (2.4) e **resto dell'audit tecnico completo** (crawlability, sicurezza) — non ancora affrontati in modo sistematico.
+2. **Homepage in posizione 26,6** — richiede una decisione editoriale su come differenziare homepage e guida "cosa vedere" (vedi Fase 5).
+3. **Foto reale dell'autore** (2.1) — bio e link social fatti; manca ancora una foto reale di Matteo Angeloni.
+4. **Contenuto sottile/triplicato** su varianti "borghi lago" e cluster "cosa vedere" — da consolidare o differenziare.
+5. **`sameAs` Wikipedia/Wikidata** per l'entità Place, **`width`/`height` sistematici** (2.4), **freshness date reali** — quick win a basso effort non ancora fatti.
 6. **Pulizia sitemap duplicate** in Search Console (apex vs www) — cosmetica, non urgente.
 
 Il dominio `.it` (3.3) resta volutamente fuori scope su indicazione dell'utente.
