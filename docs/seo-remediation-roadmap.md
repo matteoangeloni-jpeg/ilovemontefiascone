@@ -77,7 +77,7 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 | # | Azione | Stato | Note |
 |---|--------|-------|------|
-| 2.1 | Bio estesa autore + foto + link social/professionali | ⏸️ Rimandato | Nessun dato reale disponibile; **non fabbricato** per non creare falsi segnali E-E-A-T. Task aperto, in attesa di input dell'utente |
+| 2.1 | Bio estesa autore + link social/professionali | ✅ Fatto (IT/EN/DE) | Dati reali forniti da Matteo Angeloni: comunicatore digitale, autore del libro "Il fenomeno Civita", Instagram/TikTok verificati raggiungibili. Sezione "Chi sono" + schema Person con `jobTitle`/`description`/`sameAs` (commit `761c0b8`). **Foto reale ancora mancante** — nessuna fornita finora |
 | 2.2 | Schema `Person` collegato a `Organization`, come `author` nell'`Article` schema | ✅ Fatto | Person minimo su `progetto-editoriale.html` + equivalenti EN/DE/FR; `author` aggiunto a **tutti i 202 blocchi `Article`** del sito (commit `67fd978`, `scripts/add-author-schema.mjs`). 391 blocchi JSON-LD validati, 0 errori |
 | 2.3 | `.jpg` → `<picture>+webp` dove il file webp esiste già | ✅ Fatto | 57 immagini avvolte (54 + 3 corrette dopo un bug di rilevazione nello script — vedi `scripts/wrap-images-webp.mjs`, commit `bf3f907`/`70788dc`). 16 immagini restano solo jpg perché **non esiste ancora un file .webp corrispondente** (servirebbe generarlo con un tool di conversione immagini, non disponibile in questo ambiente) |
 | 2.4 | `width`/`height` espliciti dove mancanti | ⏳ Non verificato a fondo | Il campione controllato aveva già dimensioni esplicite; non è stata fatta una scansione sistematica di tutto il sito |
@@ -105,7 +105,7 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 1. **LCP reale sopra soglia su tutte le pagine testate** (nuovo, da 1.3) — 5.3–7.1s contro una soglia "good" di 2.5s. Priorità più alta emersa finora nell'intera roadmap. Richiede accesso alla dashboard Cloudflare Pages (cache, cold-start edge) che non ho in questo ambiente.
 2. **Completare setup Google Search Console** (4.1) — mancano ancora: creare un service account, scaricare il JSON, aggiungerlo come utente in Search Console (passi 4-5 della guida già condivisa).
-3. **Bio autore reale** (2.1) — bloccato in attesa di dati da Matteo Angeloni (bio, foto, profili social/professionali verificabili).
+3. **Foto reale dell'autore** (2.1) — bio e link social fatti; manca ancora una foto reale di Matteo Angeloni da aggiungere alla pagina editoriale.
 4. **`width`/`height` sistematici** (2.4) e **resto dell'audit tecnico completo** (4.2: crawlability, indexability, sicurezza, ecc. oltre alle CWV) — non ancora affrontati in modo sistematico.
 
 Il dominio `.it` (3.3) resta volutamente fuori scope su indicazione dell'utente.
