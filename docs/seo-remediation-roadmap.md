@@ -49,44 +49,51 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 ---
 
-## Piano d'azione
+## Piano d'azione — stato di avanzamento (aggiornato 7 luglio 2026)
 
-### Fase 1 — Correzioni rapide (Settimana 1)
+### Fase 1 — Correzioni rapide
 
-| # | Azione | Impatto | Effort |
-|---|--------|---------|--------|
-| 1.1 | Generare `lastmod` reali per ogni URL nello script di build (data ultima modifica del file sorgente `.md`/`.html`), non una data batch | Media | 2h dev (`scripts/build-cloudflare.mjs`) |
-| 1.2 | Aggiungere file `_headers` per Cloudflare Pages con `Content-Security-Policy`, `X-Frame-Options: DENY`, `Strict-Transport-Security`, `X-Content-Type-Options: nosniff` | Alta (sicurezza) | 1h dev |
-| 1.3 | Verificare con PageSpeed Insights/Lighthouse reale (non stimato) LCP/CLS/INP su homepage + 3 pagine chiave | Alta | 1h |
+| # | Azione | Stato | Note |
+|---|--------|-------|------|
+| 1.1 | `lastmod` reali per ogni URL (data dalla cronologia git del file, non batch) | ✅ Fatto | `scripts/update-sitemap-lastmod.mjs`, integrato in `npm run build:cloudflare` (commit `bf3f907`) |
+| 1.2 | File `_headers` per Cloudflare Pages (CSP, HSTS, X-Frame-Options, Referrer-Policy, Permissions-Policy) | ✅ Fatto | `_headers` in root, copiato in `dist-it/` (commit `bf3f907`); **bug CSP trovato e corretto** (mancava `unpkg.com` in `style-src`, avrebbe rotto il CSS di Leaflet su `/mappa` — commit `70788dc`) |
+| 1.3 | Verifica reale LCP/CLS/INP (PageSpeed/Lighthouse) su homepage + 3 pagine chiave | ⚠️ Parziale | Quota API PageSpeed Insights esaurita (429, nessuna chiave configurata) → **analisi statica** con skill `seo-technical`: hero image preloaded/fetchpriority/dimensioni esplicite su homepage (basso rischio LCP/CLS); font loading reso asincrono a build-time; CSS unico da 97KB minificato (rischio FCP moderato, non urgente); `mappa.html` carica Leaflet CSS da unpkg.com in modo bloccante (unico punto debole). **Da rifare con dati reali** appena la quota PSI si libera o con una API key dedicata |
 
-### Fase 2 — E-E-A-T e immagini (Settimane 2–3)
+### Fase 2 — E-E-A-T e immagini
 
-| # | Azione | Impatto | Effort |
-|---|--------|---------|--------|
-| 2.1 | Espandere `progetto-editoriale.html`: bio estesa di Matteo Angeloni, foto reale, anni di esperienza sul territorio, link a profili social/professionali | Alta | 1 giorno |
-| 2.2 | Aggiungere schema `Person` (collegato a `Organization` via `author`/`founder`) sulla pagina editoriale e come `author` nell'`Article` schema delle guide principali | Alta | 2h dev |
-| 2.3 | Sostituire i riferimenti `.jpg` con `.webp` (con fallback `<picture>`) su tutte le pagine, sfruttando le varianti già presenti in `/media/` | Media | 4h dev |
-| 2.4 | Aggiungere `width`/`height` espliciti alle immagini rimaste senza per evitare CLS | Bassa | 2h dev |
+| # | Azione | Stato | Note |
+|---|--------|-------|------|
+| 2.1 | Bio estesa autore + foto + link social/professionali | ⏸️ Rimandato | Nessun dato reale disponibile; **non fabbricato** per non creare falsi segnali E-E-A-T. Task aperto, in attesa di input dell'utente |
+| 2.2 | Schema `Person` collegato a `Organization`, come `author` nell'`Article` schema | ✅ Fatto | Person minimo su `progetto-editoriale.html` + equivalenti EN/DE/FR; `author` aggiunto a **tutti i 202 blocchi `Article`** del sito (commit `67fd978`, `scripts/add-author-schema.mjs`). 391 blocchi JSON-LD validati, 0 errori |
+| 2.3 | `.jpg` → `<picture>+webp` dove il file webp esiste già | ✅ Fatto | 57 immagini avvolte (54 + 3 corrette dopo un bug di rilevazione nello script — vedi `scripts/wrap-images-webp.mjs`, commit `bf3f907`/`70788dc`). 16 immagini restano solo jpg perché **non esiste ancora un file .webp corrispondente** (servirebbe generarlo con un tool di conversione immagini, non disponibile in questo ambiente) |
+| 2.4 | `width`/`height` espliciti dove mancanti | ⏳ Non verificato a fondo | Il campione controllato aveva già dimensioni esplicite; non è stata fatta una scansione sistematica di tutto il sito |
 
-### Fase 3 — Contenuto e autorevolezza (Mese 2)
+### Fase 3 — Contenuto e autorevolezza
 
-| # | Azione | Impatto | Effort |
-|---|--------|---------|--------|
-| 3.1 | Arricchire `/dove-mangiare-a-montefiascone.html` con categorie/tipologie di locali (non serve una directory completa) | Media | 3h contenuto |
-| 3.2 | Aggiungere link outbound a fonti autorevoli (Comune di Montefiascone, Rocca dei Papi ufficiale, musei) dove pertinente | Media | 2h contenuto |
-| 3.3 | Verificare esternamente la situazione del dominio `ilovemontefiascone.it` (WHOIS, contenuto pubblicato, eventuale rischio di brand confusion) prima di decidere se agire | Da validare | 1h ricerca |
+| # | Azione | Stato | Note |
+|---|--------|-------|------|
+| 3.1 | Arricchire `/dove-mangiare-a-montefiascone.html` con categorie di locali | ⏳ Da fare | Non ancora affrontato |
+| 3.2 | Link outbound a fonti autorevoli (Comune, musei) | ✅ Fatto (IT) | Aggiunto link verificato (HTTP 200) alla scheda ufficiale del Comune di Montefiascone su `rocca-dei-papi-montefiascone.html`, `cattedrale-santa-margherita-montefiascone.html`, `basilica-san-flaviano-montefiascone.html` (commit `cb2dc1b`). **EN/DE/FR non ancora fatti**: quelle pagine hanno contenuto riscritto (non traduzione 1:1), servono inserimenti su misura |
+| 3.3 | Verificare dominio `.it` concorrente (WHOIS, brand confusion) | ⏳ Da fare | Richiede ricerca esterna dedicata |
 
 ### Fase 4 — Monitoraggio continuo
 
-| # | Azione |
-|---|--------|
-| 4.1 | Registrare/verificare Google Search Console per dati reali di indicizzazione, CTR, query — sostituendo le stime con dati reali |
-| 4.2 | Rieseguire un audit tecnico **dopo** aver risolto i punti Fase 1–2, per avere un punteggio affidabile aggiornato |
-| 4.3 | Monitorare il gate FR (`docs/fr-publication-gate-roadmap.md`) e riattivare lo sprint FR solo a condizioni soddisfatte |
-| 4.4 | Tracciare ranking su keyword chiave: "cosa vedere montefiascone", "lago di bolsena cosa vedere", "est est est vino" |
+| # | Azione | Stato |
+|---|--------|-------|
+| 4.1 | Google Search Console per dati reali di indicizzazione/CTR | ⏳ Da fare |
+| 4.2 | Riesecuzione audit tecnico completo a fine Fase 1-2 | ⏳ Da fare |
+| 4.3 | Monitorare il gate FR (`docs/fr-publication-gate-roadmap.md`) | ⏳ Ricorrente |
+| 4.4 | Tracciare ranking su keyword chiave | ⏳ Da fare |
 
 ---
 
+## Cosa resta aperto, in ordine di priorità
+
+1. **Bio autore reale** (2.1) — bloccato in attesa di dati da Matteo Angeloni (bio, foto, profili social/professionali verificabili).
+2. **Verifica CWV reale** (1.3) — ripetere con PageSpeed Insights/Lighthouse quando disponibile una API key o quota libera.
+3. **Link outbound EN/DE/FR** (3.2) — estendere alle pagine monumento nelle altre lingue.
+4. **`/dove-mangiare`** (3.1), **dominio `.it`** (3.3), **Search Console** (4.1) — non ancora iniziati.
+
 ## Raccomandazione
 
-Prima di investire ulteriore tempo su "problemi" già risolti (meta tag, OG, schema, hreflang), la priorità reale è: **lastmod dinamici, security headers, schema Person/E-E-A-T, e conversione immagini a WebP**. Consiglio di rieseguire un audit tecnico a fine Fase 2 per avere un punteggio di baseline affidabile, dato che quello attuale (57/100) sottostima significativamente lo stato reale del sito.
+I fix a rischio più alto (CSP che rompeva Leaflet, bug di rilevazione nello script webp) sono stati trovati **durante** l'esecuzione, non prima — a conferma che ogni modifica tecnica va verificata con una build reale prima del deploy, non solo per ispezione del codice. Consiglio di eseguire un giro di QA manuale su `/mappa` (verifica visiva che Leaflet si carichi) prima del prossimo deploy in produzione, poi procedere con i punti aperti sopra.
