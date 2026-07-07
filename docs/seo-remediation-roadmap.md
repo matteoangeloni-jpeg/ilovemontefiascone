@@ -94,24 +94,41 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 | # | Azione | Stato |
 |---|--------|-------|
-| 4.1 | Google Search Console per dati reali di indicizzazione/CTR | 🔄 In corso — API key PageSpeed/CrUX gia' configurate; manca ancora il service account per GSC (vedi sotto) |
-| 4.2 | Riesecuzione audit tecnico completo a fine Fase 1-2 | ✅ Parte CWV fatta (vedi 1.3) — resto dell'audit tecnico ancora da rifare |
+| 4.1 | Google Search Console per dati reali di indicizzazione/CTR | ✅ Fatto | Service account configurato e autorizzato (`siteFullUser` su `sc-domain:ilovemontefiascone.com`). Script riutilizzabili in `~/.config/claude-seo/gsc_*.mjs` (fuori dal repo). Vedi dati reali sotto |
+| 4.2 | Riesecuzione audit tecnico completo a fine Fase 1-2 | ✅ Parte CWV+indicizzazione fatta (vedi 1.3 e sotto) — resto dell'audit tecnico (crawlability/sicurezza) ancora da rifare |
 | 4.3 | Monitorare il gate FR (`docs/fr-publication-gate-roadmap.md`) | ⏳ Ricorrente |
-| 4.4 | Tracciare ranking su keyword chiave | ⏳ Da fare |
+| 4.4 | Tracciare ranking su keyword chiave | ✅ Baseline reale disponibile (vedi sotto) |
+
+#### Dati reali Google Search Console (ultimi 28 giorni disponibili, 6 giu – 4 lug 2026)
+
+- **156 click, 4.710 impressioni, CTR 3.3%, posizione media 7,98** — il sito è confermato indicizzato e riceve traffico reale organico. Contraddice ulteriormente `seo-report.md` (che ipotizzava zero indicizzazione).
+- Query principali: eventi/festival (`fiera del vino montefiascone 2026`, `san flaviano montefiascone`, `atb montefiascone`, `1074 montefiascone`) — le pagine evento performano meglio dei contenuti evergreen.
+- **Anomalia CTR da investigare**: `/basilica-san-flaviano-montefiascone` ha 2.002 impressioni ma solo 16 click (CTR 0,80%, posizione 4.2) — posizione buona ma CTR molto sotto media, probabile snippet poco invitante da rivedere.
+- **Homepage in posizione 26,6** su query pertinenti (solo 4 click/34 impressioni) — da approfondire, è insolitamente basso per una homepage.
+- Le vecchie URL con `.html` (`eventi.html`, `come-arrivare-a-montefiascone.html`, `parcheggi-montefiascone.html`) ricevono ancora impressioni/click significativi nonostante il redirect 301 alle versioni pulite — non un problema (il redirect passa comunque il segnale), ma conferma che Google le ha ancora in cache.
+
+#### Sitemap: 1 problema reale trovato
+
+- `sitemap-en.xml` ha **50 warning su 98 URL** (le sitemap IT hanno 0 warning). Diagnosticato con l'API di ispezione URL su 2 pagine campione: sono **warning Rich Results su schema `Event`** — campi opzionali mancanti (`organizer`, `performer`, `offers`, in un caso `url` probabilmente per cache non aggiornata da Google). Sono `WARNING`, non `ERROR`: non bloccano l'indicizzazione ma riducono la completezza del rich result. Interessano le pagine con `@type: Event` (9 pagine × varie lingue). **Non ancora corretto** — richiederebbe aggiungere `organizer`/`offers` reali dove il contenuto lo supporta, senza inventare `performer` non citati nel testo.
+- Trovate sitemap duplicate sottomesse sia su `https://ilovemontefiascone.com/...` che su `https://www.ilovemontefiascone.com/...` per lo stesso dominio proprietà — ridondante (l'apex fa comunque redirect 301 a www) ma non dannoso. Pulizia consigliata ma non urgente: rimuovere le sitemap sottomesse su apex da Search Console.
 
 ---
 
 ## Cosa resta aperto, in ordine di priorità
 
-1. **LCP reale sopra soglia su tutte le pagine testate** (nuovo, da 1.3) — 5.3–7.1s contro una soglia "good" di 2.5s. Priorità più alta emersa finora nell'intera roadmap. Richiede accesso alla dashboard Cloudflare Pages (cache, cold-start edge) che non ho in questo ambiente.
-2. **Completare setup Google Search Console** (4.1) — mancano ancora: creare un service account, scaricare il JSON, aggiungerlo come utente in Search Console (passi 4-5 della guida già condivisa).
-3. **Foto reale dell'autore** (2.1) — bio e link social fatti; manca ancora una foto reale di Matteo Angeloni da aggiungere alla pagina editoriale.
-4. **`width`/`height` sistematici** (2.4) e **resto dell'audit tecnico completo** (4.2: crawlability, indexability, sicurezza, ecc. oltre alle CWV) — non ancora affrontati in modo sistematico.
+1. **LCP reale sopra soglia su tutte le pagine testate** — 5.3–7.1s contro una soglia "good" di 2.5s. Priorità più alta, richiede accesso alla dashboard Cloudflare Pages che non ho in questo ambiente.
+2. **50 warning Rich Results su schema `Event`** (organizer/performer/offers mancanti) sulle pagine EN — fixabile senza inventare dati dove il contenuto lo supporta.
+3. **CTR anomalo su `/basilica-san-flaviano-montefiascone`** (2.002 impressioni, 0,80% CTR) e **homepage in posizione 26,6** — entrambi da investigare con revisione di title/snippet.
+4. **Foto reale dell'autore** (2.1) — bio e link social fatti; manca ancora una foto reale di Matteo Angeloni.
+5. **`width`/`height` sistematici** (2.4) e **resto dell'audit tecnico completo** (crawlability, sicurezza) — non ancora affrontati in modo sistematico.
+6. **Pulizia sitemap duplicate** in Search Console (apex vs www) — cosmetica, non urgente.
 
 Il dominio `.it` (3.3) resta volutamente fuori scope su indicazione dell'utente.
 
 ## Raccomandazione
 
-I fix a rischio più alto (CSP che rompeva Leaflet, bug di rilevazione nello script webp) sono stati trovati **durante** l'esecuzione, non prima — a conferma che ogni modifica tecnica va verificata con una build reale prima del deploy, non solo per ispezione del codice. Consiglio di eseguire un giro di QA manuale su `/mappa` (verifica visiva che Leaflet si carichi) prima del prossimo deploy in produzione.
+I fix a rischio più alto (CSP che rompeva Leaflet, bug di rilevazione nello script webp) sono stati trovati **durante** l'esecuzione, non prima — a conferma che ogni modifica tecnica va verificata con una build reale prima del deploy, non solo per ispezione del codice. Consiglio di eseguire un giro di QA manuale su `/mappa` prima del prossimo deploy.
+
+Con Search Console ora collegato, il quadro è cambiato: il sito **è indicizzato e riceve traffico reale** (156 click/28gg), quindi la priorità si sposta da "essere trovati" a "convertire meglio chi già vede il sito nei risultati" — da qui l'importanza dell'LCP e delle anomalie di CTR sopra.
 
 Con i dati reali PageSpeed Insights ora disponibili, la priorità è cambiata: **l'LCP mobile (5.3–7.1s) è il problema più concreto e ad alto impatto** trovato finora in questa roadmap, più urgente della bio autore o dei link outbound già sistemati. Non è però risolvibile da qui: serve accesso alla dashboard Cloudflare Pages per capire se dipende da cache miss, cold-start delle funzioni edge o configurazione TLS. Completa il setup del service account Search Console (passi 4-5) così posso incrociare questi dati con l'indicizzazione reale, e valuta di controllare la dashboard Cloudflare Pages per i tempi di risposta edge.
