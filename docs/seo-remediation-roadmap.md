@@ -72,15 +72,15 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 
 | # | Azione | Stato | Note |
 |---|--------|-------|------|
-| 3.1 | Arricchire `/dove-mangiare-a-montefiascone.html` con categorie di locali | ⏳ Da fare | Non ancora affrontato |
-| 3.2 | Link outbound a fonti autorevoli (Comune, musei) | ✅ Fatto (IT) | Aggiunto link verificato (HTTP 200) alla scheda ufficiale del Comune di Montefiascone su `rocca-dei-papi-montefiascone.html`, `cattedrale-santa-margherita-montefiascone.html`, `basilica-san-flaviano-montefiascone.html` (commit `cb2dc1b`). **EN/DE/FR non ancora fatti**: quelle pagine hanno contenuto riscritto (non traduzione 1:1), servono inserimenti su misura |
-| 3.3 | Verificare dominio `.it` concorrente (WHOIS, brand confusion) | ⏳ Da fare | Richiede ricerca esterna dedicata |
+| 3.1 | Arricchire `/dove-mangiare-a-montefiascone.html` con categorie di locali | ✅ Fatto (IT/EN/DE) | Sezione "Tipologie di locali da cercare" (trattorie, enoteche, ristoranti sul lago, agriturismi, locali informali) senza nominare esercizi specifici, coerente con l'impostazione editoriale della pagina (commit `6a3910d`) |
+| 3.2 | Link outbound a fonti autorevoli (Comune, musei) | ✅ Fatto (IT/EN/DE) | Link verificato (HTTP 200) alla scheda ufficiale del Comune di Montefiascone su Rocca dei Papi, Cattedrale, Basilica San Flaviano, in tutte e tre le lingue pubblicate (commit `cb2dc1b`, `778397b`). **FR escluso**: contenuto ancora placeholder in italiano non tradotto, non incluso nel build pubblico |
+| 3.3 | Verificare dominio `.it` concorrente (WHOIS, brand confusion) | ⏹️ Fuori scope | Il dominio `.it` **non è di proprietà dell'utente** (conferma diretta di Matteo Angeloni: "non ho il sito .it ma solo .com") — è un dominio di terzi, quindi non azionabile con redirect o interventi tecnici lato proprietario. Verifica tecnica avviata (DNS risolve, nginx risponde 503) ma **interrotta su richiesta dell'utente** per concentrare gli sforzi sul `.com`. La 3.6 originale del report ("valutare acquisizione/redirect da ilovemontefiascone.it") va quindi considerata non perseguibile a meno di un'eventuale trattativa con l'attuale proprietario |
 
 ### Fase 4 — Monitoraggio continuo
 
 | # | Azione | Stato |
 |---|--------|-------|
-| 4.1 | Google Search Console per dati reali di indicizzazione/CTR | ⏳ Da fare |
+| 4.1 | Google Search Console per dati reali di indicizzazione/CTR | ⏳ Da fare — richiede accesso/credenziali dell'utente |
 | 4.2 | Riesecuzione audit tecnico completo a fine Fase 1-2 | ⏳ Da fare |
 | 4.3 | Monitorare il gate FR (`docs/fr-publication-gate-roadmap.md`) | ⏳ Ricorrente |
 | 4.4 | Tracciare ranking su keyword chiave | ⏳ Da fare |
@@ -90,10 +90,12 @@ Questa roadmap si basa sui **problemi reali confermati** con `grep` sul codice s
 ## Cosa resta aperto, in ordine di priorità
 
 1. **Bio autore reale** (2.1) — bloccato in attesa di dati da Matteo Angeloni (bio, foto, profili social/professionali verificabili).
-2. **Verifica CWV reale** (1.3) — ripetere con PageSpeed Insights/Lighthouse quando disponibile una API key o quota libera.
-3. **Link outbound EN/DE/FR** (3.2) — estendere alle pagine monumento nelle altre lingue.
-4. **`/dove-mangiare`** (3.1), **dominio `.it`** (3.3), **Search Console** (4.1) — non ancora iniziati.
+2. **Verifica CWV reale** (1.3) — ripetuta oggi, quota PSI ancora esaurita (limite giornaliero condiviso); ripetere quando disponibile una API key dedicata o la quota si libera.
+3. **Google Search Console** (4.1) — richiede accesso con credenziali dell'utente, non eseguibile autonomamente.
+4. **`width`/`height` sistematici** (2.4) e **riesecuzione audit finale** (4.2) — non ancora affrontati in modo sistematico.
+
+Il dominio `.it` (3.3) resta volutamente fuori scope su indicazione dell'utente.
 
 ## Raccomandazione
 
-I fix a rischio più alto (CSP che rompeva Leaflet, bug di rilevazione nello script webp) sono stati trovati **durante** l'esecuzione, non prima — a conferma che ogni modifica tecnica va verificata con una build reale prima del deploy, non solo per ispezione del codice. Consiglio di eseguire un giro di QA manuale su `/mappa` (verifica visiva che Leaflet si carichi) prima del prossimo deploy in produzione, poi procedere con i punti aperti sopra.
+I fix a rischio più alto (CSP che rompeva Leaflet, bug di rilevazione nello script webp) sono stati trovati **durante** l'esecuzione, non prima — a conferma che ogni modifica tecnica va verificata con una build reale prima del deploy, non solo per ispezione del codice. Consiglio di eseguire un giro di QA manuale su `/mappa` (verifica visiva che Leaflet si carichi) prima del prossimo deploy in produzione, poi procedere con i punti aperti sopra (a partire dalla bio autore, quando avrai i dati reali).
