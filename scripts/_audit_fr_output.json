@@ -1,0 +1,3764 @@
+{
+  "index.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "website"
+    ],
+    "og:title": [
+      "Bienvenue à Montefiascone | Lac de Bolsena, vin et patrimoine"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/assets/img/og/montefiascone-lake-bolsena-og.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Bienvenue à Montefiascone | Lac de Bolsena, vin et patrimoine",
+    "meta_description": null,
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://www.ilovemontefiascone.com/#website",
+              "name": "J'aime Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "TouristDestination",
+              "@id": "https://www.ilovemontefiascone.com/#destination",
+              "name": "Montefiascone",
+              "description": "Montefiascone est un village de Tuscia, dans le Latium près de Viterbe, surplombant le lac de Bolsena et connu pour son patrimoine historique, la Via Francigena, les événements locaux et le vin de l'Est ! Est!! Est!!!.",
+              "url": "https://www.ilovemontefiascone.com/",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 42.5366,
+                "longitude": 12.03013
+              },
+              "touristType": [
+                "Tourisme culturel",
+                "Tourisme œnogastronomique",
+                "Chemins et pèlerinages"
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/#webpage",
+              "name": "Montefiascone : guide touristique sur le lac de Bolsena",
+              "url": "https://www.ilovemontefiascone.com/",
+              "inLanguage": "fr-FR",
+              "isPartOf": {
+                "@id": "https://www.ilovemontefiascone.com/#website"
+              },
+              "about": {
+                "@id": "https://www.ilovemontefiascone.com/#destination"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Que voir à Montefiascone en une journée ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour une première visite, il est préférable de commencer par la Rocca dei Papi, la cathédrale Sainte-Marguerite et la basilique San Flaviano, puis de compléter le parcours par une promenade dans le centre historique et un belvédère sur le lac de Bolsena."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Combien de temps faut-il pour visiter Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le centre historique se visite bien en une journée, mais Montefiascone prend tout son sens comme base pour un week-end entre lac, itinéraires, panorama et environs de la Tuscie."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Montefiascone est-il une bonne base pour visiter le lac de Bolsena ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. La position en hauteur permet de rejoindre facilement le lac de Bolsena et les villages voisins tout en gardant un centre historique compact, panoramique et pratique."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quelle est la meilleure période pour visiter Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le printemps, le début de l'été et le début de l'automne sont des périodes idéales pour alterner visites culturelles, promenades panoramiques et découvertes du territoire, en vérifiant toujours le programme officiel des manifestations saisonnières."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": false,
+    "approx_wordcount": 241,
+    "fr_internal_link_count": 15
+  },
+  "guide.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/guide\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/guide",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/guide"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/montefiascone-travel-guide"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/reisefuehrer-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/guide"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/guide"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/guide"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "website"
+    ],
+    "og:title": [
+      "Guides de Montefiascone | Itinéraires, carte et idées de visite"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/petretti-lago-tramonto.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Guides de Montefiascone | Itinéraires, carte et idées de visite",
+    "meta_description": null,
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://www.ilovemontefiascone.com/guide#webpage",
+              "name": "Guides et itinéraires pour visiter Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/guide",
+              "description": "Hub éditorial avec guides, itinéraires et aperçus thématiques dédiés à Montefiascone.",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/guide#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Guides",
+                  "item": "https://www.ilovemontefiascone.com/guide"
+                }
+              ]
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.ilovemontefiascone.com/guide#itemlist",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "url": "https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet",
+                  "name": "Guide complet de Montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "url": "https://www.ilovemontefiascone.com/fr/guide",
+                  "name": "Itinéraire autour de Montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "url": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est",
+                  "name": "Caves et dégustations à Montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "url": "https://www.ilovemontefiascone.com/fr/carte",
+                  "name": "Spots photographiques et aériens"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/guide#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Par quel guide devriez-vous commencer si c'est votre première visite à Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour une première visite, commencez par le guide complet du village, puis ouvrez la carte et les pages les plus spécifiques selon le temps disponible et vos centres d'intérêt."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quel article lire pour organiser un week-end ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour un séjour de plusieurs nuits, le contenu le plus utile est l'itinéraire dans les environs, à associer à la carte et à l'hub vin pour construire un parcours complet."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où trouver des guides sur les domaines viticoles et les vins locaux ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les guides consacrés au vin s'ouvrent depuis l'hub Vin et depuis la page spécifique sur les caves de Montefiascone, avec un focus sur les dégustations et sur Est! Est!! Est!!!."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Existe-t-il un guide des environs de Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. Le portail comprend un itinéraire dédié aux environs de Montefiascone, utile à ceux qui veulent utiliser le village comme base pour le lac de Bolsena et la Tuscie."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 331,
+    "fr_internal_link_count": 15
+  },
+  "que-voir-montefiascone-guide-complet.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/things-to-see-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/sehenswuerdigkeiten-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Que voir à Montefiascone | Guide complet"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/rocca-overview.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Que voir à Montefiascone | Guide complet",
+    "meta_description": null,
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.ilovemontefiascone.com/#organization",
+              "name": "J'aime Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/"
+            },
+            {
+              "@type": "Place",
+              "@id": "https://www.ilovemontefiascone.com/#place-montefiascone",
+              "name": "Montefiascone",
+              "description": "Village de la région Tuscia de Viterbe, sur la plus haute colline des monts Volsini, surplombant le lac de Bolsena.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Montefiascone",
+                "addressRegion": "Latium",
+                "postalCode": "01027",
+                "addressCountry": "IT"
+              }
+            },
+            {
+              "@type": "TouristAttraction",
+              "@id": "https://www.ilovemontefiascone.com/#rocca-dei-papi",
+              "name": "Forteresse des Papes",
+              "description": "Forteresse médiévale située sur le point culminant de Montefiascone, avec Torre del Pellegrino et vue sur le lac de Bolsena.",
+              "url": "https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa#rocca-dei-papi",
+              "isPartOf": {
+                "@id": "https://www.ilovemontefiascone.com/#place-montefiascone"
+              },
+              "sameAs": "https://www.comune.montefiascone.vt.it/vivere_il_comune/luoghi/luogo_10.html",
+              "touristType": [
+                "Turisti culturali",
+                "Coppie",
+                "Pellegrini"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Piazza Urbano V",
+                "addressLocality": "Montefiascone",
+                "addressRegion": "Latium",
+                "postalCode": "01027",
+                "addressCountry": "IT"
+              }
+            },
+            {
+              "@type": "TouristAttraction",
+              "@id": "https://www.ilovemontefiascone.com/#cattedrale-santa-margherita",
+              "name": "Cathédrale Sainte-Marguerite",
+              "description": "Co-cathédrale de Montefiascone avec la célèbre coupole conçue par Carlo Fontana et achevée en 1674.",
+              "url": "https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa#cattedrale-di-santa-margherita",
+              "isPartOf": {
+                "@id": "https://www.ilovemontefiascone.com/#place-montefiascone"
+              },
+              "sameAs": "https://www.italia.it/it/lazio/montefiascone/cattedrale-di-santa-margherita",
+              "touristType": [
+                "Turisti culturali",
+                "Famiglie",
+                "Pellegrini"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Via S. Lucia Filippini, 2",
+                "addressLocality": "Montefiascone",
+                "addressRegion": "Latium",
+                "postalCode": "01027",
+                "addressCountry": "IT"
+              }
+            },
+            {
+              "@type": "BlogPosting",
+              "@id": "https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa#blogposting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet"
+              },
+              "headline": "Que voir à Montefiascone : guide complet entre Rocca dei Papi, Est! Est!! Est!!! et panorama sur le lac de Bolsena",
+              "description": "Guide complet de Montefiascone entre Rocca dei Papi, la cathédrale Sainte-Marguerite, San Flaviano et la Via Francigena.",
+              "inLanguage": "fr-FR",
+              "datePublished": "2026-06-09",
+              "dateModified": "2026-07-02",
+              "author": {
+                "@type": "Organization",
+                "name": "La rédaction d'I Love Montefiascone"
+              },
+              "publisher": {
+                "@id": "https://www.ilovemontefiascone.com/#organization"
+              },
+              "about": {
+                "@id": "https://www.ilovemontefiascone.com/#place-montefiascone"
+              },
+              "mentions": [
+                {
+                  "@id": "https://www.ilovemontefiascone.com/#rocca-dei-papi"
+                },
+                {
+                  "@id": "https://www.ilovemontefiascone.com/#cattedrale-santa-margherita"
+                }
+              ],
+              "keywords": [
+                "Que voir à Montefiascone",
+                "Rocca dei Papi Montefiascone",
+                "coupole Sainte-Marguerite Montefiascone",
+                "basilique San Flaviano Montefiascone",
+                "Est! Est!! Est!!! Montefiascone",
+                "Via Francigena Montefiascone Viterbe",
+                "Fête du Vin Montefiascone",
+                "tourisme en Tuscie"
+              ],
+              "url": "https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet"
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 965,
+    "fr_internal_link_count": 14
+  },
+  "carte.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/carte\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/carte",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/mappa"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/map-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/karte-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/carte"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/mappa"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/carte"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "website"
+    ],
+    "og:title": [
+      "Carte de Montefiascone | Lac, centre et Francigena"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/petretti-drone2.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Carte de Montefiascone | Lac, centre et Francigena",
+    "meta_description": "Ouvrez la carte de Montefiascone pour vous orienter entre le centre historique, le lac, la Via Francigena, les parkings utiles et les pages détaillées.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Map",
+              "@id": "https://www.ilovemontefiascone.com/mappa#map",
+              "name": "Carte touristique de Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/carte",
+              "description": "Carte touristique de Montefiascone avec le centre historique, le lac de Bolsena, la Via Francigena et des points de référence utiles pour la visite.",
+              "inLanguage": "fr-FR",
+              "about": {
+                "@id": "https://www.ilovemontefiascone.com/mappa#destination"
+              }
+            },
+            {
+              "@type": "TouristDestination",
+              "@id": "https://www.ilovemontefiascone.com/mappa#destination",
+              "name": "Montefiascone",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 42.5366,
+                "longitude": 12.03013
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/mappa#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Carte",
+                  "item": "https://www.ilovemontefiascone.com/mappa"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/mappa#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quels points doivent être marqués sur la carte de Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour une première visite, il vaut mieux enregistrer la Rocca dei Papi, la cathédrale Sainte-Marguerite, la basilique San Flaviano et la connexion avec la Via Francigena."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où se situent les principaux monuments du village ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les principaux monuments se concentrent entre le centre historique, l'axe de la cathédrale et la zone panoramique de la Rocca, San Flaviano étant plus bas que le noyau supérieur du village."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "La carte est-elle également utile pour la Via Francigena et le lac ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. La carte est utile à la fois pour lire la relation entre Montefiascone et le lac de Bolsena et pour visualiser le lien avec le tronçon local de la Via Francigena."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Comment utiliser la carte avant d'arriver ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Prima della visita conviene usarla per salvare i punti chiave, leggere i dislivelli e capire come collegare monumenti, centro storico e percorsi di cammino."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 1056,
+    "fr_internal_link_count": 32
+  },
+  "lac-de-bolsena-que-voir.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/lac-de-bolsena-que-voir\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/lac-de-bolsena-que-voir",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/bolsenasee-sehenswuerdigkeiten"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/lac-de-bolsena-que-voir"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/lac-de-bolsena-que-voir"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Lac de Bolsena : que voir | Guide complet"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/petretti-drone2.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Lac de Bolsena : que voir | Guide complet",
+    "meta_description": null,
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "TouristDestination",
+              "@id": "https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere#main",
+              "name": "Que voir au lac de Bolsena",
+              "url": "https://www.ilovemontefiascone.com/fr/lac-de-bolsena-que-voir",
+              "description": "Guide de ce qu'il faut voir autour du lac de Bolsena : villages, îles, plages et vues.",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere#list",
+              "name": "Que voir au lac de Bolsena",
+              "numberOfItems": 5,
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Bolsène"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Marta"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Capodimonte"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Île de Bisentine"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Lac de Bolsena: que voir",
+                  "item": "https://www.ilovemontefiascone.com/lago-di-bolsena-cosa-vedere"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Que voir absolument au lac de Bolsena ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I borghi di Bolsena, Marta e Capodimonte sulla riva, le isole Bisentina e Martana al centro del lago e i panorami dall'alto di Montefiascone. In estate si aggiungono le spiagge."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Combien de jours faut-il pour visiter le lac de Bolsena ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour les principaux bourgs, une journée en voiture suffit ; pour profiter du lac avec plus de calme, des plages et des environs, mieux vaut prévoir un week-end en utilisant Montefiascone comme base."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quel est le plus beau village du lac de Bolsena ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cela dépend du type de visite : Bolsena pour l’histoire et la spiritualité, Marta pour l’atmosphère de village de pêcheurs, Capodimonte pour son promontoire et l’embarquement vers les îles, Montefiascone pour le panorama."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 696,
+    "fr_internal_link_count": 25
+  },
+  "via-francigena-bolsena-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/via-francigena-bolsena-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/via-francigena-bolsena-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/via-francigena-bolsena-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/via-francigena-bolsena-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/via-francigena-bolsena-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/via-francigena-bolsena-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Via Francigena : de Bolsena à Montefiascone"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/francigena-lines.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Via Francigena : de Bolsena à Montefiascone",
+    "meta_description": "L’étape de la Via Francigena de Bolsena à Montefiascone (étape 39) : le profil montant vers le village, conseils aux pèlerins et repères utiles.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "datePublished": "2026-07-02",
+              "dateModified": "2026-07-02",
+              "author": {
+                "@type": "Person",
+                "name": "Matteo Angeloni",
+                "url": "https://www.ilovemontefiascone.com/fr/projet-editorial"
+              },
+              "@id": "https://www.ilovemontefiascone.com/via-francigena-bolsena-montefiascone#main",
+              "name": "Via Francigena : de Bolsena à Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/via-francigena-bolsena-montefiascone",
+              "description": "L’étape de la Via Francigena de Bolsena à Montefiascone : profil, conseils et repères.",
+              "inLanguage": "fr-FR",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 42.5366,
+                "longitude": 12.03013
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Montefiascone",
+                "addressRegion": "Latium",
+                "postalCode": "01027",
+                "addressCountry": "IT"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "De Bolsena à Montefiascone",
+                  "item": "https://www.ilovemontefiascone.com/fr/via-francigena-bolsena-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Combien de kilomètres y a-t-il de Bolsena à Montefiascone sur la Via Francigena ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Il s’agit de la fameuse étape 39, qui remonte du lac vers le village en altitude (590 m). La distance exacte et le tracé doivent être vérifiés auprès des sources officielles du chemin, sans s’appuyer sur une valeur fixe."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "La scène est-elle difficile ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le tronçon final remonte vers Montefiascone, situé à 590 mètres : il faut donc prévoir une montée. Le profil et le revêtement du parcours doivent être vérifiés sur les sources officielles avant de partir."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Que voir à votre arrivée à Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le village en hauteur, la basilique San Flaviano liée au chemin, la Rocca dei Papi et le panorama sur le lac. Consultez le guide « que voir » pour organiser la visite."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 620,
+    "fr_internal_link_count": 22
+  },
+  "montefiascone-en-2-jours.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/montefiascone-en-2-jours\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/montefiascone-en-2-jours",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/montefiascone-in-2-giorni"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/montefiascone-in-two-days"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/montefiascone-in-zwei-tagen"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/montefiascone-en-2-jours"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/montefiascone-in-2-giorni"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/montefiascone-en-2-jours"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Montefiascone en 2 jours | Itinéraire du week-end"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/rocca-overview.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Montefiascone en 2 jours | Itinéraire du week-end",
+    "meta_description": "Montefiascone en 2 jours : itinéraire entre le centre historique, Rocca, la Cathédrale et San Flaviano le premier jour, le lac de Bolsena, le vin et les villages le deuxième.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/montefiascone-in-2-giorni#main",
+              "name": "Montefiascone en 2 jours",
+              "url": "https://www.ilovemontefiascone.com/fr/montefiascone-en-2-jours",
+              "description": "Itinéraire de deux jours à Montefiascone entre le centre historique et le lac de Bolsena.",
+              "inLanguage": "fr-FR",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 42.5366,
+                "longitude": 12.03013
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Montefiascone",
+                "addressRegion": "VT",
+                "postalCode": "01027",
+                "addressCountry": "IT"
+              }
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.ilovemontefiascone.com/montefiascone-in-2-giorni#list",
+              "name": "Montefiascone en 2 jours",
+              "numberOfItems": 4,
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Forteresse des Papes"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Cathédrale Sainte-Marguerite"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Basilique de San Flaviano"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Lac de Bolsena"
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Dans 2 jours",
+                  "item": "https://www.ilovemontefiascone.com/montefiascone-in-2-giorni"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Que voir à Montefiascone en 2 jours ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le premier jour, la Rocca dei Papi, la cathédrale Sainte-Marguerite et la basilique San Flaviano ; le second, le lac de Bolsena avec ses villages riverains, le vin et, en été, une halte au bord de l'eau."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Montefiascone est-il suffisant pour un week-end ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui : le village remplit une journée et le lac, avec ses villages, occupe la seconde, ce qui fait de Montefiascone une base complète pour un week-end."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Est-ce familial ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, avec des variantes : espaces ouverts et lac pour les enfants, en tenant compte du fait que le centre historique est en hauteur avec quelques montées."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 610,
+    "fr_internal_link_count": 26
+  },
+  "evenements.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/evenements\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/evenements",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/eventi"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/events-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/veranstaltungen-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/evenements"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/eventi"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/evenements"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "website"
+    ],
+    "og:title": [
+      "Événements à Montefiascone | Foire aux vins et calendrier"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-rocca-notte.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Événements à Montefiascone | Calendrier, fêtes et traditions",
+    "meta_description": "Événements à Montefiascone, y compris la Foire du Vin, les fêtes, les traditions et des conseils pratiques pour comprendre quand venir et comment organiser la visite.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements#webpage",
+              "name": "Événements à Montefiascone: calendrier, fêtes et traditions",
+              "url": "https://www.ilovemontefiascone.com/fr/evenements",
+              "description": "Centre d'événements de Montefiascone avec festivals, traditions, événements d'été et guides logistiques.",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                }
+              ]
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements#itemlist",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "url": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026",
+                  "name": "Été 2026 à Montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "url": "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone",
+                  "name": "Calendrier des événements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "url": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone",
+                  "name": "Foire du Vin"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "url": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone",
+                  "name": "Festival ATB"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "url": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone",
+                  "name": "Est Film Festival"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "url": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone",
+                  "name": "Festival d'écologie intégrale"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "url": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone",
+                  "name": "A.D. 1074"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quels sont les principaux événements de Montefiascone?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les rendez-vous les plus connus sont la Foire du Vin, la fête de Santa Margherita, l'ATB Festival, l'Est Film Festival et la montée chronométrée historique entre le lac et le bourg."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quand a lieu la Foire aux Vins ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La Foire du Vin s'inscrit traditionnellement dans le calendrier estival. Avant le départ, il est conseillé de vérifier le programme disponible sur les canaux officiels des organisateurs."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où trouver le programme actualisé des événements ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le plus sûr est de consulter les canaux officiels de la commune, de la Pro Loco et de chaque manifestation, surtout pour les dates, les horaires et les éventuelles mises à jour."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Comment évolue la circulation pendant les festivals d’été ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lors des journées de plus forte affluence, il faut s'attendre à des limitations de circulation et à des parcours piétons plus longs vers le centre historique. Il est utile de vérifier la carte et les indications pratiques avant la visite."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 297,
+    "fr_internal_link_count": 15
+  },
+  "calendrier-des-evenements-de-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/calendario-eventi-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/montefiascone-events-calendar"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/veranstaltungskalender-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/calendario-eventi-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Calendrier des événements de Montefiascone | Qu"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-rocca-notte.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Calendrier des événements de Montefiascone | Qu'y a-t-il",
+    "meta_description": "Calendrier des événements de Montefiascone : Foire aux vins, courses de côte, fêtes religieuses et événements d",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone#main",
+              "name": "Calendrier des événements de Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone",
+              "description": "Aperçu des événements récurrents à Montefiascone avec référence aux dates officielles.",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone#list",
+              "name": "Calendrier des événements de Montefiascone",
+              "numberOfItems": 5,
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Foire aux Vins"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Fête de Santa Margherita"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Festival ATB"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Montée chronométrée"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Crèche vivante"
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Calendrier des événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quels sont les principaux événements de Montefiascone?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les grands repères du calendrier sont la Foire du Vin et l'ATB Festival en été, la fête de Santa Margherita en juillet, la montée chronométrée pour voitures historiques et la crèche vivante pendant la période de Noël."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où puis-je trouver les dates d'événements mises à jour ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sur les canaux officiels de la commune, de la Pro Loco et des organisateurs de chaque manifestation. Les dates changent chaque année et doivent être confirmées avant le départ."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Vaut-il la peine de réserver lors d’événements ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. Pendant la Foire du Vin et lors des week-ends d'été, l'affluence peut être importante. Il est conseillé de réserver l'hébergement à l'avance et de vérifier la circulation et les parkings."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 523,
+    "fr_internal_link_count": 16
+  },
+  "evenements-dete-a-montefiascone-2026.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/montefiascone-summer-events-2026"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/sommerveranstaltungen-montefiascone-2026"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Été 2026 à Montefiascone: calendrier des événements"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-rocca-notte.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Été 2026 à Montefiascone | Calendrier des événements",
+    "meta_description": "Calendrier été 2026 à Montefiascone : dates vérifiées, sources officielles et liens vers la Foire du Vin, Est Film Festival, ATB et autres événements.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026#article",
+              "headline": "Été 2026 à Montefiascone: calendrier des événements",
+              "name": "Été 2026 à Montefiascone: calendrier des événements",
+              "description": "Calendrier été 2026 à Montefiascone : dates vérifiées, sources officielles et liens vers la Foire du Vin, Est Film Festival, ATB et autres événements.",
+              "url": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-rocca-notte.jpg",
+              "inLanguage": "fr-FR",
+              "dateModified": "2026-06-30"
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026#events",
+              "name": "Été 2026 à Montefiascone: calendrier des événements",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Défilé historique des enfants, cuisine de rue et fête de la République",
+                  "url": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Contre-la-montre Lac-Montefiascone",
+                  "url": "https://www.ilovemontefiascone.com/fr/contre-la-montre-montefiascone-coppa-citta"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "En l'an 1074",
+                  "url": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Festival d'écologie intégrale",
+                  "url": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Festival ATB",
+                  "url": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "name": "Panoramas 2026",
+                  "url": "https://www.ilovemontefiascone.com/fr/panoramas-du-festival-de-montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "name": "Fête patronale de Santa Margherita",
+                  "url": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 8,
+                  "name": "Est Film Festival",
+                  "url": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 9,
+                  "name": "66ème Foire aux Vins de Montefiascone",
+                  "url": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 10,
+                  "name": "Est-Lake Festival",
+                  "url": "https://www.ilovemontefiascone.com/fr/est-festival-du-lac-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements été 2026",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quelle est la source du calendrier Été 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La source utilisée est l'affiche Été 2026 publiée par le Comune di Montefiascone le 10 mai 2026."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Les horaires et les prix sont-ils également indiqués ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Cette page reprend uniquement les dates et les descriptions déjà confirmées par l'affiche, sans ajouter d'horaires, de tarifs ou de détails non publiés."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quel événement n'a pas de page autonome ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le cortège historique des enfants et la fête de la République restent dans le calendrier hub, car au moment de la rédaction cette séquence était déjà passée."
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026",
+              "name": "Été 2026 à Montefiascone: calendrier des événements",
+              "description": "Calendrier été 2026 à Montefiascone : dates vérifiées, sources officielles et liens vers la Foire du Vin, Est Film Festival, ATB et autres événements.",
+              "inLanguage": "fr-FR",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 366,
+    "fr_internal_link_count": 15
+  },
+  "evenements-traditions-foire-aux-vins-de-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/montefiascone-wine-fair-traditions"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/weinfest-montefiascone-traditionen"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/eventi-tradizioni-fiera-del-vino-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Foire du Vin de Montefiascone 2026 | Traditions et visite"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-corteo-folla.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Foire du Vin de Montefiascone 2026 | Traditions et visite",
+    "meta_description": "Foire du Vin de Montefiascone 2026 : dates deja publiees, traditions liees a Est! Est!! Est!!! et conseils utiles pour preparer la visite.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone#article",
+              "headline": "Foire du Vin de Montefiascone 2026",
+              "name": "Foire du Vin de Montefiascone 2026",
+              "description": "Foire du Vin de Montefiascone 2026 : dates deja publiees, traditions liees a Est! Est!! Est!!! et conseils utiles pour preparer la visite.",
+              "url": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-corteo-folla.jpg",
+              "inLanguage": "fr-FR",
+              "about": [
+                {
+                  "@type": "Place",
+                  "name": "Montefiascone"
+                },
+                {
+                  "@type": "Event",
+                  "name": "Foire du Vin de Montefiascone 2026",
+                  "startDate": "2026-08-01",
+                  "endDate": "2026-08-14",
+                  "eventStatus": "https://schema.org/EventScheduled",
+                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Montefiascone",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Montefiascone",
+                      "addressRegion": "Latium",
+                      "addressCountry": "IT"
+                    }
+                  },
+                  "url": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone",
+                  "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-corteo-folla.jpg",
+                  "description": "Rendez-vous estival consacre au vin Est! Est!! Est!!!, aux traditions locales et aux parcours de visite dans le centre historique."
+                }
+              ],
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "I Love Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              },
+              "dateModified": "2026-07-03"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Evenements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Foire du Vin de Montefiascone 2026",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quand la Foire du Vin de Montefiascone est-elle annoncee en 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Selon le calendrier publie pour l'ete 2026, la manifestation est prevue les 1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13 et 14 aout 2026."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Le programme quotidien des evenements est-il deja definitif ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Le detail des caves participantes, des animations et des invites peut etre mis a jour a l'approche de la manifestation. Il est conseille de verifier les canaux officiels."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Un billet d'entree est-il necessaire ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les modalites d'acces et les eventuels supports de degustation doivent etre confirmes sur les canaux officiels. Cette page ne fixe pas de tarif si celui-ci n'est pas clairement publie."
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone",
+              "name": "Foire du Vin de Montefiascone 2026",
+              "description": "Foire du Vin de Montefiascone 2026 : dates deja publiees, traditions liees a Est! Est!! Est!!! et conseils utiles pour preparer la visite.",
+              "inLanguage": "fr-FR",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "I Love Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 471,
+    "fr_internal_link_count": 22
+  },
+  "festival-atb-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/atb-festival-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/atb-festival-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/atb-festival-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/atb-festival-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Festival ATB 2026 à Montefiascone | Musique et été"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/atb-festival-2026-ketama.png"
+    ],
+    "html_lang": "fr",
+    "title": "Festival ATB 2026 à Montefiascone | Musique et été",
+    "meta_description": "Festival ATB 2026 à Montefiascone : dates confirmées, ambiance musicale et repères utiles pour intégrer l",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone#article",
+              "headline": "Festival ATB 2026 à Montefiascone",
+              "name": "Festival ATB 2026 à Montefiascone",
+              "description": "Festival ATB 2026 à Montefiascone : dates confirmées, atmosphère musicale et repères utiles pour organiser une soirée d'été.",
+              "url": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/atbfestival-palco-notte.jpg",
+              "inLanguage": "fr-FR",
+              "about": [
+                {
+                  "@type": "Place",
+                  "name": "Montefiascone"
+                },
+                {
+                  "@type": "Event",
+                  "name": "Festival ATB 2026 à Montefiascone",
+                  "startDate": "2026-07-09T18:00:00+02:00",
+                  "endDate": "2026-07-12",
+                  "eventStatus": "https://schema.org/EventScheduled",
+                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Montefiascone",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Montefiascone",
+                      "addressRegion": "Latium",
+                      "addressCountry": "IT"
+                    }
+                  },
+                  "url": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone",
+                  "image": [
+                    "https://www.ilovemontefiascone.com/media/gallery/atb-festival-2026-cantarini.png",
+                    "https://www.ilovemontefiascone.com/media/gallery/atb-festival-2026-elasi.png",
+                    "https://www.ilovemontefiascone.com/media/gallery/atb-festival-2026-ketama.png",
+                    "https://www.ilovemontefiascone.com/media/gallery/atb-festival-2026-karakaz.jpg",
+                    "https://www.ilovemontefiascone.com/media/gallery/atb-festival-2026-giovanni-tiamo.jpg",
+                    "https://www.ilovemontefiascone.com/media/gallery/atb-festival-2026-loner-tennis-club.jpg"
+                  ],
+                  "description": "Festival ATB 2026 à Montefiascone : manifestation estivale liée à la musique live et à la bière artisanale, à vérifier sur les canaux officiels avant la visite."
+                }
+              ],
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              },
+              "dateModified": "2026-07-02"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Festival ATB 2026 à Montefiascone",
+                  "item": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quand a lieu le festival ATB 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Selon le programme disponible, le festival ATB 2026 se déroule du 9 au 12 juillet 2026 à Montefiascone."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Qui se produit au festival ATB 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La communication déjà diffusée présente une programmation musicale répartie sur plusieurs soirées, mais les détails pratiques doivent toujours être confirmés sur les canaux officiels avant le départ."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "L'entrée au festival ATB 2026 est-elle gratuite ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les conditions d'accès peuvent être mises à jour. Il est conseillé de vérifier les informations officielles avant la visite."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où se tient le festival ATB 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le festival est lié au centre historique de Montefiascone. Les détails logistiques peuvent varier selon le programme publié."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Ketama126 se produit-il au festival ATB 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Certains noms d'artistes ont déjà circulé dans la communication du festival, mais il faut toujours vérifier la programmation officielle mise à jour avant de partir."
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone",
+              "name": "Festival ATB 2026 à Montefiascone",
+              "description": "Festival ATB 2026 à Montefiascone : dates confirmées, atmosphère musicale et repères utiles pour organiser une soirée d'été.",
+              "inLanguage": "fr-FR",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 552,
+    "fr_internal_link_count": 16
+  },
+  "est-festival-du-film-de-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/est-film-festival-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/est-film-festival-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/est-film-festival-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/est-film-festival-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Est Film Festival 2026 à Montefiascone"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/est-film-festival-2026-cover.png"
+    ],
+    "html_lang": "fr",
+    "title": "Est Film Festival 2026 à Montefiascone | Cinéma",
+    "meta_description": "Est Film Festival 2026 à Montefiascone : dates officielles, 20e édition dans la ville, cinéma italien et sources publiques actualisées.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone#article",
+              "headline": "Est Film Festival 2026 à Montefiascone",
+              "name": "Est Film Festival 2026 à Montefiascone",
+              "description": "Est Film Festival 2026 à Montefiascone : dates officielles, 20e édition dans la ville, cinéma italien et sources publiques actualisées.",
+              "url": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/est-film-festival-2026-cover.png",
+              "inLanguage": "fr-FR",
+              "about": [
+                {
+                  "@type": "Place",
+                  "name": "Montefiascone"
+                },
+                {
+                  "@type": "Event",
+                  "name": "Est Film Festival 2026 à Montefiascone",
+                  "startDate": "2026-07-20",
+                  "endDate": "2026-07-26",
+                  "eventStatus": "https://schema.org/EventScheduled",
+                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Montefiascone",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Montefiascone",
+                      "addressRegion": "Latium",
+                      "addressCountry": "IT"
+                    }
+                  },
+                  "url": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone",
+                  "image": "https://www.ilovemontefiascone.com/media/gallery/est-film-festival-2026-cover.png",
+                  "description": "Est Film Festival 2026 à Montefiascone : cadre confirmé, cinéma italien et vérification conseillée des détails pratiques sur les canaux officiels."
+                }
+              ],
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              },
+              "dateModified": "2026-06-30"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Est Film Festival 2026 à Montefiascone",
+                  "item": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quand aura lieu l’Est Film Festival en 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'affiche officielle de l'Été 2026 indique ces dates : 20, 21, 22, 23, 24, 25 et 26 juillet 2026."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Le programme est-il déjà définitif ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. La page ne présente que le cadre déjà confirmé par les sources officielles. Les horaires, titres, invités et détails opérationnels sont à vérifier sur le programme officiel du festival."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où puis-je trouver la source officielle ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La page s'appuie à la fois sur l'affiche de l'Été 2026 de la municipalité de Montefiascone et sur le site officiel de l'Est Film Festival."
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone",
+              "name": "Est Film Festival 2026 à Montefiascone",
+              "description": "Est Film Festival 2026 à Montefiascone : dates officielles, 20e édition dans la ville, cinéma italien et sources publiques actualisées.",
+              "inLanguage": "fr-FR",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 662,
+    "fr_internal_link_count": 21
+  },
+  "festival-decologie-integrale-de-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/integral-ecology-festival-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/festival-integrale-oekologie-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/festival-ecologia-integrale-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Festival d"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Festival d'écologie intégrale 2026 | Montefiascone",
+    "meta_description": "Festival d",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone#article",
+              "headline": "Festival d'écologie intégrale 2026 à Montefiascone",
+              "name": "Festival d'écologie intégrale 2026 à Montefiascone",
+              "description": "Festival d'écologie intégrale 2026 à Montefiascone : dates déjà publiées, thème de l'édition, ouverture avec Mogol et conseils de visite sans détails non confirmés.",
+              "url": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone",
+              "image": "https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg",
+              "inLanguage": "fr-FR",
+              "about": [
+                {
+                  "@type": "Place",
+                  "name": "Montefiascone"
+                },
+                {
+                  "@type": "Event",
+                  "name": "Festival d'écologie intégrale",
+                  "startDate": "2026-07-02",
+                  "endDate": "2026-07-05",
+                  "eventStatus": "https://schema.org/EventScheduled",
+                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Montefiascone",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Montefiascone",
+                      "addressRegion": "Latium",
+                      "addressCountry": "IT"
+                    }
+                  },
+                  "organizer": {
+                    "@type": "Organization",
+                    "name": "Association Rocca dei Papi pour l'écologie intégrale ETS"
+                  },
+                  "url": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone",
+                  "image": "https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg",
+                  "description": "Festival d'écologie intégrale 2026 à Montefiascone : rencontres culturelles, thème Au-delà des déserts et ouverture annoncée avec Mogol."
+                }
+              ],
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              },
+              "dateModified": "2026-06-30"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Festival d'écologie intégrale 2026",
+                  "item": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quand a lieu le Festival d’Ecologie Intégrale 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le festival est annoncé du 2 au 5 juillet 2026, avec ouverture officielle le 2 juillet à 18 h."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où se déroule l'ouverture du Festival ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'ouverture annoncée se tient piazza Santa Lucia Filippini, dans le centre historique de Montefiascone."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Qui inaugurera l’édition 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Selon le programme disponible, l'invité d'ouverture est Mogol."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Que signifie l’écologie intégrale ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le terme relie environnement, territoire, culture et vie communautaire, plutôt qu'un simple thème écologique au sens strict."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Le Festival est-il adapté à ceux qui visitent Montefiascone pour un week-end ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. Les rencontres sont annoncées comme publiques et peuvent aussi intéresser les visiteurs de passage."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Que voir à Montefiascone avec le Festival ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La Rocca dei Papi, le centre historique et le lac de Bolsena se combinent bien avec une visite qui inclut le festival."
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone",
+              "name": "Festival d'écologie intégrale 2026",
+              "description": "Festival d'écologie intégrale 2026 à Montefiascone : dates déjà publiées, thème de l'édition, ouverture avec Mogol et conseils de visite sans détails non confirmés.",
+              "inLanguage": "fr-FR",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 757,
+    "fr_internal_link_count": 22
+  },
+  "anno-domini-1074-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/anno-domini-1074-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/anno-domini-1074-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/anno-domini-1074-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "A.D. 1074 à Montefiascone | Fête médiévale 2026"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "A.D. 1074 à Montefiascone | Fête médiévale 2026",
+    "meta_description": "A.D. 1074 à Montefiascone : dates déjà publiées, cadre médiéval, lieux annoncés et conseils utiles pour visiter l",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Event",
+              "@id": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone#event",
+              "name": "A.D. 1074",
+              "description": "Fête médiévale et reconstitution historique annoncées à Montefiascone du 26 au 28 juin 2026, entre défilé, cadres historiques et vie du centre ancien.",
+              "startDate": "2026-06-26",
+              "endDate": "2026-06-28",
+              "eventStatus": "https://schema.org/EventScheduled",
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+              "location": {
+                "@type": "Place",
+                "name": "Montefiascone, Rocca dei Papi, jardins du palais épiscopal et centre historique",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Montefiascone",
+                  "addressRegion": "Latium",
+                  "addressCountry": "IT"
+                }
+              },
+              "organizer": {
+                "@type": "Organization",
+                "name": "Amici del Colle"
+              },
+              "image": "https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg",
+              "url": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone"
+            },
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone#article",
+              "headline": "A.D. 1074 à Montefiascone",
+              "name": "A.D. 1074 à Montefiascone",
+              "description": "A.D. 1074 à Montefiascone : dates déjà publiées, cadre médiéval, lieux annoncés et conseils utiles pour visiter l'événement sans extrapoler le programme.",
+              "url": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone",
+              "image": "https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg",
+              "inLanguage": "fr-FR",
+              "about": {
+                "@id": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone#event"
+              },
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              },
+              "dateModified": "2026-06-26"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "A.D. 1074",
+                  "item": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quand A.D. 1074 est-il annoncé à Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'événement est annoncé pour les 26, 27 et 28 juin 2026."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quels lieux sont associés à A.D. 1074 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les informations publiées citent la Rocca dei Papi, les jardins du palais épiscopal et le centre historique de Montefiascone."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où trouver les mises à jour du programme ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour les mises à jour opérationnelles, il est conseillé de suivre les canaux officiels de l'événement, notamment le profil Instagram @ad1074_montefiascone."
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone",
+              "name": "A.D. 1074 à Montefiascone",
+              "description": "A.D. 1074 à Montefiascone : dates déjà publiées, cadre médiéval, lieux annoncés et conseils utiles pour visiter l'événement sans extrapoler le programme.",
+              "inLanguage": "fr-FR",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "J'aime Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 795,
+    "fr_internal_link_count": 20
+  },
+  "fete-de-santa-margherita-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/santa-margherita-feast-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/fest-santa-margherita-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/festa-santa-margherita-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Fête Santa Margherita 2026 à Montefiascone"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/events/festa-santa-margherita-2026-poster.png"
+    ],
+    "html_lang": "fr",
+    "title": "Fête Santa Margherita 2026 à Montefiascone",
+    "meta_description": "Fête Santa Margherita 2026 à Montefiascone : programme confirmé du 16 au 20 juillet, célébrations, procession, visite guidée et rendez-vous du soir.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "datePublished": "2026-07-02",
+              "author": {
+                "@type": "Person",
+                "name": "Matteo Angeloni",
+                "url": "https://www.ilovemontefiascone.com/fr/projet-editorial"
+              },
+              "@id": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone#article",
+              "headline": "Fête Santa Margherita 2026 à Montefiascone",
+              "name": "Fête Santa Margherita 2026 à Montefiascone",
+              "description": "Programme confirmé du 16 au 20 juillet 2026 pour la fête en l'honneur de Santa Margherita à Montefiascone.",
+              "url": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone",
+              "image": "https://www.ilovemontefiascone.com/media/events/festa-santa-margherita-2026-poster.png",
+              "inLanguage": "fr",
+              "about": [
+                {
+                  "@type": "Place",
+                  "name": "Montefiascone"
+                },
+                {
+                  "@type": "Event",
+                  "name": "Fête Santa Margherita 2026",
+                  "startDate": "2026-07-16",
+                  "endDate": "2026-07-20",
+                  "eventStatus": "https://schema.org/EventScheduled",
+                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Montefiascone, cocathédrale Santa Margherita et centre historique",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Montefiascone",
+                      "addressRegion": "Lazio",
+                      "addressCountry": "IT"
+                    }
+                  },
+                  "url": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone",
+                  "image": "https://www.ilovemontefiascone.com/media/events/festa-santa-margherita-2026-poster.png",
+                  "description": "Programme confirmé du 16 au 20 juillet 2026 pour la fête en l'honneur de Santa Margherita à Montefiascone."
+                }
+              ],
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "I Love Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              },
+              "dateModified": "2026-07-03"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Fête Santa Margherita 2026",
+                  "item": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quand a lieu la fête de Santa Margherita en 2026 ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le programme publié sur l'affiche couvre cinq journées, du 16 au 20 juillet 2026."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où se déroulent les principaux rendez-vous ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'affiche mentionne la cocathédrale Santa Margherita, Piazza Vittorio Emanuele, Piazzale Mauri et la pizzeria La Rotella."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Le parcours de la procession du 19 juillet est-il déjà indiqué ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. L'itinéraire annoncé passe par Piazza Santa Margherita, Via Trento, Largo Barbarigo, Via Rocca, Piazza Urbano V, Via Piave, Via Casti, Piazza Vittorio Emanuele et Via Santa Lucia Filippini avant le retour à Piazza Santa Margherita."
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone",
+              "name": "Fête Santa Margherita 2026 à Montefiascone",
+              "description": "Programme confirmé du 16 au 20 juillet 2026 pour la fête en l'honneur de Santa Margherita à Montefiascone.",
+              "inLanguage": "fr",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "I Love Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 684,
+    "fr_internal_link_count": 20
+  },
+  "vin.html": {
+    "canonical_tag": "<link href=\"https://www.ilovemontefiascone.com/fr/vin\" rel=\"canonical\"/>",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/vin",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/vino"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/montefiascone-wine-guide"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/montefiascone-wein-guide"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/vin"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/vino"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/vin"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "website"
+    ],
+    "og:title": [
+      "Vin de Montefiascone | Est! Est!! Est!!! et caves"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Vin de Montefiascone | Est! Est!! Est!!! et caves",
+    "meta_description": null,
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/vin#webpage",
+              "name": "Vin de Montefiascone : Est! Est!! Est!!! et caves",
+              "url": "https://www.ilovemontefiascone.com/fr/vin",
+              "description": "Hub français du cluster vin de Montefiascone : identité locale, caves, dégustations, route du vin et Foire du Vin.",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/vin#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Vin",
+                  "item": "https://www.ilovemontefiascone.com/fr/vin"
+                }
+              ]
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.ilovemontefiascone.com/fr/vin#itemlist",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "url": "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc",
+                  "name": "Est! Est!! Est!!! de Montefiascone DOC"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "url": "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche",
+                  "name": "Comment fonctionne une dégustation"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "url": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est",
+                  "name": "Caves et dégustations"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "url": "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone",
+                  "name": "Route du vin"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "url": "https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone",
+                  "name": "Foire du Vin"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/vin#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Par où commencer pour découvrir le vin de Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le plus logique est de commencer par l'identité d'Est! Est!! Est!!!, puis de passer aux pages sur la dégustation, les caves et la Foire du Vin afin de construire un parcours cohérent."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Le vin se découvre-t-il seulement en cave ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Le vin se lit aussi à travers le centre historique, les traditions locales et les événements saisonniers. La cave reste toutefois le point de départ le plus concret pour une dégustation."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Cette page donne-t-elle des prix ou des réservations ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Les informations commerciales, les horaires et les modalités de visite doivent être vérifiés directement auprès des établissements ou sur les canaux officiels disponibles."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 646,
+    "fr_internal_link_count": 27
+  },
+  "est-est-est-montefiascone-vino-doc.html": {
+    "canonical_tag": "<link href=\"https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc\" rel=\"canonical\"/>",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/est-est-est-wein-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Est! Est!! Est!!! de Montefiascone | Vin DOC"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Est! Est!! Est!!! de Montefiascone | Vin DOC",
+    "meta_description": null,
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc#article",
+              "headline": "Est! Est!! Est!!! de Montefiascone DOC",
+              "name": "Est! Est!! Est!!! de Montefiascone DOC",
+              "url": "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc",
+              "description": "Présentation du vin blanc DOC le plus lié à Montefiascone, à sa légende et au paysage volcanique du lac de Bolsena.",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Vin",
+                  "item": "https://www.ilovemontefiascone.com/fr/vin"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Est! Est!! Est!!!",
+                  "item": "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Pourquoi ce vin s'appelle-t-il Est! Est!! Est!!! ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La dénomination est liée à une légende médiévale dans laquelle un serviteur signalait les auberges au bon vin avec le mot latin Est. À Montefiascone, l'enthousiasme aurait été tel que le signe fut répété trois fois."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quel type de vin est Est! Est!! Est!!! di Montefiascone DOC ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Il s'agit d'un vin blanc DOC associé à Montefiascone et au secteur du lac de Bolsena, dans un contexte de sols volcaniques. Les styles peuvent varier selon les producteurs."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Où peut-on le découvrir sur place ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le plus simple est de partir du hub vin et des pages sur les dégustations et les caves. Les détails pratiques des visites doivent être vérifiés directement auprès des établissements concernés."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 545,
+    "fr_internal_link_count": 22
+  },
+  "degustation-de-vin-de-montefiascone-comment-ca-marche.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/how-wine-tasting-works-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/weinverkostung-montefiascone-ablauf"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Dégustation de vin à Montefiascone | Comment ça marche"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Dégustation de vin à Montefiascone | Comment ça marche",
+    "meta_description": "Comment fonctionne une dégustation de vin à Montefiascone : cave, cave à vin, événement ou visite guidée, avec des conseils pratiques à vérifier avant de réserver.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche#article",
+              "headline": "Dégustation de vin à Montefiascone : comment ça marche",
+              "name": "Dégustation de vin à Montefiascone : comment ça marche",
+              "url": "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche",
+              "description": "Repères utiles pour comprendre les dégustations de vin à Montefiascone sans promettre de formats ou de tarifs fixes.",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Vin",
+                  "item": "https://www.ilovemontefiascone.com/fr/vin"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Dégustation",
+                  "item": "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Comment se déroule une dégustation à Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le format varie selon le lieu. Il peut s'agir d'une dégustation en cave, d'un verre commenté dans une cave à vin ou d'un moment lié à un événement. Il est recommandé de vérifier ce qui est réellement inclus."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Faut-il réserver ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Très souvent oui, surtout pour les caves et les visites plus structurées. Réservation, horaires, langues et contenus doivent être confirmés directement avant le départ."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quel vin faut-il demander en priorité ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Est! Est!! Est!!! di Montefiascone DOC reste le repère le plus évident pour commencer. Les profils peuvent varier selon les producteurs et les millésimes."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 517,
+    "fr_internal_link_count": 21
+  },
+  "degustation-de-vignobles-de-montefiascone-est-est-est.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/weingueter-montefiascone-verkostung"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/cantine-montefiascone-degustazione-est-est-est"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Caves de Montefiascone | Dégustations et visites"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Caves de Montefiascone | Dégustations et visites",
+    "meta_description": "Guide des caves de Montefiascone pour comprendre les dégustations autour d",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est#article",
+              "headline": "Caves de Montefiascone : dégustations et visites",
+              "name": "Caves de Montefiascone : dégustations et visites",
+              "url": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est",
+              "description": "Page de repérage pour comprendre comment aborder les caves et les dégustations à Montefiascone sans affirmer de services non vérifiés.",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Vin",
+                  "item": "https://www.ilovemontefiascone.com/fr/vin"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Caves et dégustations",
+                  "item": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Faut-il choisir une cave ou une autre formule ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tout dépend du type de visite recherché. Certaines expériences sont plus narratives, d'autres plus techniques. La meilleure approche consiste à vérifier directement le format proposé."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Les dégustations sont-elles toujours sur réservation ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Très souvent, surtout quand la visite comprend un accompagnement ou un accueil structuré. Les détails pratiques peuvent être mis à jour et doivent être confirmés avant le départ."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Cette page liste-t-elle des prix ou des horaires ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Cette page sert à orienter le lecteur dans le cluster vin. Horaires, coûts, langues disponibles et contenus exacts doivent être vérifiés auprès des établissements concernés."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 509,
+    "fr_internal_link_count": 21
+  },
+  "strada-del-vino-est-est-est-est-est-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/est-est-est-wine-route-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/est-est-est-weinroute-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/strada-del-vino-est-est-est-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Route du vin Est! Est!! Est!!! | Montefiascone"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Route du vin Est! Est!! Est!!! | Montefiascone",
+    "meta_description": "Route du vin Est! Est!! Est!!! à Montefiascone : un parcours éditorial entre caves, centre historique, lac de Bolsena et tradition viticole locale.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone#article",
+              "headline": "Route du vin Est! Est!! Est!!! à Montefiascone",
+              "name": "Route du vin Est! Est!! Est!!! à Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone",
+              "description": "Parcours éditorial pour relier le vin local, le centre historique, le lac de Bolsena et les pages de dégustation.",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg",
+              "inLanguage": "fr-FR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Vin",
+                  "item": "https://www.ilovemontefiascone.com/fr/vin"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Route du vin",
+                  "item": "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Existe-t-il une route officielle du vin à Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cette page propose un parcours éditorial, pas un itinéraire officiel avec étapes fixes. Les éventuelles formules locales doivent être vérifiées directement sur les canaux concernés."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Comment relier vin, paysage et visite ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le plus simple est de lier une dégustation, une promenade dans le centre historique et un point de vue sur le lac de Bolsena. Le vin devient alors une clé de lecture du territoire."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Par où commencer ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Commencez par le hub vin, puis ouvrez les pages sur Est! Est!! Est!!!, les dégustations et la Foire du Vin. Vous pourrez ensuite construire votre itinéraire selon le temps disponible."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 503,
+    "fr_internal_link_count": 24
+  },
+  "cuisine-typique-de-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/cucina-tipica-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/typical-food-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/typische-kueche-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/cucina-tipica-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Cuisine typique de Montefiascone | Plats et territoire"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Cuisine typique de Montefiascone | Plats et territoire",
+    "meta_description": "Cuisine typique de Montefiascone : saveurs du lac, tradition culinaire de la Tuscie et liens utiles pour organiser un sejour gourmand.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone#article",
+              "headline": "Cuisine typique de Montefiascone",
+              "name": "Cuisine typique de Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone",
+              "description": "Lecture editoriale de la cuisine typique de Montefiascone entre lac, collines et tradition culinaire de la Tuscie.",
+              "inLanguage": "fr-FR",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Cuisine typique",
+                  "item": "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "A quoi ressemble la cuisine typique de Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Elle relie les saveurs du lac de Bolsena aux produits des collines de la Tuscie. On y retrouve une cuisine simple, saisonniere et fortement liee au territoire."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quel vin accompagne cette cuisine ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Est! Est!! Est!!! reste le repere le plus naturel pour accompagner les plats legers, les produits du lac et une partie de la tradition culinaire locale."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Cette page donne-t-elle des restaurants precis ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Les adresses, menus, horaires et disponibilites doivent etre verifies directement sur place ou sur les canaux des etablissements."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 412,
+    "fr_internal_link_count": 21
+  },
+  "produits-typiques-de-montefiascone-tuscia.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/prodotti-tipici-montefiascone-tuscia"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/local-products-montefiascone-tuscia"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/typische-produkte-montefiascone-tuscia"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/prodotti-tipici-montefiascone-tuscia"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Produits typiques de Montefiascone et de la Tuscie"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Produits typiques de Montefiascone et de la Tuscie",
+    "meta_description": "Produits typiques de Montefiascone et de la Tuscie : vin, saveurs du lac et reperes utiles pour comprendre la gastronomie locale.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia#article",
+              "headline": "Produits typiques de Montefiascone et de la Tuscie",
+              "name": "Produits typiques de Montefiascone et de la Tuscie",
+              "url": "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia",
+              "description": "Lecture editoriale des produits du territoire autour de Montefiascone, entre vin local, saveurs du lac et tradition culinaire de la Tuscie.",
+              "inLanguage": "fr-FR",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Produits typiques",
+                  "item": "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quel produit reste le plus associe a Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le repere le plus connu reste Est! Est!! Est!!!, mais il doit etre lu dans un ensemble plus large de produits lies au lac, aux collines et a la tradition culinaire locale."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Cette page donne-t-elle une liste commerciale complete ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Elle sert a orienter la lecture du territoire. Les disponibilites, points de vente et details pratiques doivent etre verifies directement sur place."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Comment relier ces produits a un sejour ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le plus coherent est de combiner la lecture des produits, la cuisine typique, le vin local et, si utile, une degustation ou une visite en lien avec le territoire."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 381,
+    "fr_internal_link_count": 20
+  },
+  "experiences-gastronomiques-et-nologiques-a-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/esperienze-enogastronomiche-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/food-wine-experiences-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/kulinarische-erlebnisse-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/esperienze-enogastronomiche-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Experiences gastronomiques et oenologiques a Montefiascone"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Experiences gastronomiques et oenologiques a Montefiascone",
+    "meta_description": "Experiences gastronomiques et oenologiques a Montefiascone : vin local, cuisine de la Tuscie et reperes utiles pour un sejour gourmand.",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone#article",
+              "headline": "Experiences gastronomiques et oenologiques a Montefiascone",
+              "name": "Experiences gastronomiques et oenologiques a Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone",
+              "description": "Page editoriale de cadrage pour relier vin, cuisine locale et sejour gourmand a Montefiascone sans inventer de prestations fixes.",
+              "inLanguage": "fr-FR",
+              "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Experiences gastronomiques",
+                  "item": "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Que peut couvrir une experience gastronomique a Montefiascone ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Elle peut relier cuisine locale, produits du territoire, vin Est! Est!! Est!!! et lecture du paysage, avec des formats qui varient selon la saison et les etablissements."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Faut-il reserver ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les degustations et visites peuvent varier selon la saison. Il est conseille de verifier les etablissements ou les canaux officiels avant le depart."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Cette page promet-elle un programme ou un prix ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Elle sert a structurer un parcours gourmand et prudent, sans figer des horaires, tarifs ou prestations qui ne seraient pas clairement verifies."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 393,
+    "fr_internal_link_count": 21
+  },
+  "giglio-vecchio-montefiascone.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/giglio-vecchio-montefiascone"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/giglio-vecchio-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/giglio-vecchio-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/giglio-vecchio-montefiascone"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Giglio Vecchio Montefiascone | Zepponami, football et fête"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/gallery/asd-giglio-vecchio-logo.png"
+    ],
+    "html_lang": "fr",
+    "title": "Giglio Vecchio Montefiascone | Zepponami, football et fête",
+    "meta_description": "Découvrez Giglio Vecchio à Montefiascone : Zepponami, l",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone#webpage",
+              "url": "https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone",
+              "name": "Giglio Vecchio à Montefiascone : Zepponami, football et fête",
+              "description": "Découvrez Giglio Vecchio à Montefiascone : Zepponami, l'église Madonna del Giglio, l'ASD Giglio Vecchio et le festival d'été.",
+              "inLanguage": "fr",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "I Love Montefiascone",
+                "url": "https://www.ilovemontefiascone.com/"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.ilovemontefiascone.com/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Événements",
+                  "item": "https://www.ilovemontefiascone.com/fr/evenements"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Giglio Vecchio",
+                  "item": "https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 627,
+    "fr_internal_link_count": 17
+  },
+  "projet-editorial.html": {
+    "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/projet-editorial\">",
+    "canonical_href": "https://www.ilovemontefiascone.com/fr/projet-editorial",
+    "hreflang": [
+      [
+        "it",
+        "https://www.ilovemontefiascone.com/progetto-editoriale"
+      ],
+      [
+        "en",
+        "https://www.ilovemontefiascone.com/en/editorial-project-montefiascone"
+      ],
+      [
+        "de",
+        "https://www.ilovemontefiascone.com/de/redaktionelles-projekt-montefiascone"
+      ],
+      [
+        "fr",
+        "https://www.ilovemontefiascone.com/fr/projet-editorial"
+      ],
+      [
+        "x-default",
+        "https://www.ilovemontefiascone.com/progetto-editoriale"
+      ]
+    ],
+    "og:url": [
+      "https://www.ilovemontefiascone.com/fr/projet-editorial"
+    ],
+    "og:locale": [
+      "fr_FR"
+    ],
+    "og:locale:alternate": [],
+    "og:type": [
+      "article"
+    ],
+    "og:title": [
+      "Projet éditorial | J"
+    ],
+    "og:image": [
+      "https://www.ilovemontefiascone.com/media/hero-rocca-dei-papi-1600.jpg"
+    ],
+    "html_lang": "fr",
+    "title": "Projet éditorial | J'aime Montefiascone",
+    "meta_description": "Objectif, responsabilité éditoriale, indépendance vis-à-vis de la Commune, sources locales et critères d",
+    "jsonld": [
+      {
+        "valid": true,
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Projet éditorial I Love Montefiascone",
+          "url": "https://www.ilovemontefiascone.com/fr/projet-editorial",
+          "inLanguage": "fr-FR",
+          "dateModified": "2026-07-02",
+          "about": {
+            "@type": "Organization",
+            "name": "J'aime Montefiascone"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Matteo Angeloni",
+            "jobTitle": "Responsable éditorial",
+            "url": "https://www.ilovemontefiascone.com/fr/projet-editorial",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "J'aime Montefiascone",
+              "url": "https://www.ilovemontefiascone.com"
+            }
+          }
+        }
+      }
+    ],
+    "jsonld_count": 1,
+    "has_breadcrumb_nav": true,
+    "approx_wordcount": 475,
+    "fr_internal_link_count": 14
+  }
+}

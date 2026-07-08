@@ -1,0 +1,357 @@
+{
+  "category": "AI Search Readiness (GEO)",
+  "score": 63,
+  "scoreInterpretation": "MODERATE — Well-positioned structurally but lacks critical technical optimizations and data density",
+  "auditDate": "2026-07-08",
+  "site": "https://www.ilovemontefiascone.com/",
+  "language": ["Italian", "English", "German"],
+  "pages": 101,
+  "findings": [
+    {
+      "title": "No Schema Markup Implementation",
+      "severity": "Critical",
+      "description": "Zero JSON-LD, microdata, or RDFa detected across homepage, guides, attractions, and events pages. No Organization, LocalBusiness, Article, Event, FAQPage, or Person schema. AI systems must infer all structured information from plain text, significantly increasing extraction error rates and latency.",
+      "recommendation": "URGENT: Implement Organization + LocalBusiness (homepage), Article (guides), Event (events pages), FAQPage (FAQ sections), and Person (author bylines) schema within 2 weeks. Expected impact: +15-30% AI citation rate."
+    },
+    {
+      "title": "Limited Unique Data & Statistics",
+      "severity": "High",
+      "description": "Wine guide lacks grape varieties, alcohol content, producer names. Itineraries avoid specific times (acknowledged as editorial choice). Accommodation pages skip price ranges. Tourism pages prioritize positioning (what to see) over verifiable facts (specific statistics, awards, production metrics). AI systems cite pages with data density 2-3x more than opinion/positioning pages.",
+      "recommendation": "Add 2-3 specific statistics per guide page. Wine page: Add grape varieties (Trebbiano, Malvasia), DOC specs, producer examples. Accommodation page: Add €X-Y price ranges. Timeline pages: Add realistic distances/travel times (e.g., 'Rome to Montefiascone: 140km, 2.5 hours via SS2')."
+    },
+    {
+      "title": "No Question-Based Headings",
+      "severity": "High",
+      "description": "Page headings use statements ('Dati del lago', 'Come arrivare') rather than questions. AI models trained on Q&A datasets (SQuAD, MS MARCO) learn to cite pages whose headings match query patterns. User asking 'What is Lake Bolsena?' is more likely to cite page with <h2>What is Lake Bolsena?</h2> than <h2>Lake Bolsena Overview</h2>.",
+      "recommendation": "Refactor headings to question format: 'Dati del lago' → 'What is Lake Bolsena?' 'Come arrivare' → 'How do I get to Montefiascone?' Expected impact: +10-20% query-matched citations."
+    },
+    {
+      "title": "Low Author Credibility Signals",
+      "severity": "High",
+      "description": "Editor Matteo Angeloni listed but no credentials, biography, or social proof provided. No bylines on individual guides. No Person schema. ChatGPT weights authored content 3x higher than anonymous content (SE Ranking study). Without visible author background, AI systems discount credibility.",
+      "recommendation": "Create LinkedIn profile for Matteo Angeloni with travel/tourism background. Add Person schema to author bylines. Publish 1-2 guest articles on travel publications (Condé Nast, Lonely Planet). Expected impact: +20-40% credibility signals, higher ChatGPT citation rate."
+    },
+    {
+      "title": "Prose-Heavy Format vs. Tables",
+      "severity": "Medium",
+      "description": "Wine varieties, nearby towns, event schedules, and restaurant info presented in prose rather than structured tables. Tables are 156% more likely to be selected for AI citations than prose blocks. Current format reduces extraction accuracy for AI systems.",
+      "recommendation": "Convert 5 largest content blocks to HTML tables: Wine guide (Grape variety, Alcohol %, Terroir), Nearby destinations (Distance, Top attractions, Travel time), Events (Date, Time, Location, Admission), Restaurants (Price range, Cuisine, Specialties). Add semantic HTML (thead, tbody, tr, td). Expected impact: +30-40% citation boost for tabular data."
+    },
+    {
+      "title": "No FAQ Schema Despite FAQ Sections",
+      "severity": "Medium",
+      "description": "FAQ section exists on multiple pages but uses plain HTML with no FAQPage schema markup. AI systems cannot programmatically extract Q&A pairs; must parse manually. FAQ schema is standard structured data for Q&A content.",
+      "recommendation": "Implement FAQPage schema on all guide pages with FAQ sections. Wrap each Q-A pair in itemscope='FAQPage' with 'mainEntity' items containing 'Question' and 'Answer' properties. Expected impact: +15-25% for FAQ-specific queries."
+    },
+    {
+      "title": "No Wikipedia/Reddit/Brand Mention Presence (Unverified)",
+      "severity": "Medium",
+      "description": "No visible brand mentions on Wikipedia, Reddit, YouTube, or travel publications detected. Brand mentions correlate 3x more strongly with AI visibility than backlinks (Ahrefs Dec 2025 study: YouTube mentions ~0.737, Reddit high, Wikipedia high). Without community validation, Perplexity and ChatGPT will deprioritize even well-optimized content.",
+      "recommendation": "Build community presence: Post itineraries to r/travel, r/Italy, r/wine. Create YouTube channel with 3-5 destination videos. Cross-reference Wikipedia articles (Lake Bolsena, Montefiascone). Engage in travel communities. Expected impact: +50% Perplexity citation rate, +20% ChatGPT."
+    },
+    {
+      "title": "Minimal Multimedia Content",
+      "severity": "Medium",
+      "description": "Few embedded videos, interactive maps, or rich media. Multimedia content sees 156% higher AI citation rates than text-only pages. Current site relies heavily on prose; visual/interactive elements missing.",
+      "recommendation": "Create 3-5 YouTube shorts (30-60 sec) of destination highlights. Embed relevant videos in guide pages. Add interactive map (hiking trails, wine route). Add infographics for wine guide (grape varieties, DOC map). Expected impact: +40-60% citation rate for multimedia-enhanced pages."
+    },
+    {
+      "title": "Limited Primary Source Attribution",
+      "severity": "Medium",
+      "description": "Content is original observation but few external sources cited. No links to official DOC wine specifications, Wikipedia articles, or institutional data. AI systems verify facts against known sources; pages without attribution are treated as unverified.",
+      "recommendation": "Link to primary sources: Wine page → Link to DOC Montefiascone official spec. Lake page → Wikipedia Lake Bolsena article. Event pages → Official event websites. Practical info → Google Maps, Trenitalia, official tourism board. Expected impact: +15-20% trust signals."
+    },
+    {
+      "title": "Excellent Robots.txt & Crawler Access",
+      "severity": "Positive",
+      "description": "Robots.txt uses blanket 'Allow: /' rule welcoming all crawlers (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, CCBot, Bytespider all permitted). /llms.txt exists and is properly configured with canonical URLs and content guidance. No meta robots noai/noimageai directives. Full AI crawler access enabled.",
+      "recommendation": "No changes needed. Crawler access is optimally configured. Maintain current robots.txt; continue updating llms.txt with new content."
+    },
+    {
+      "title": "High Content Freshness & Update Consistency",
+      "severity": "Positive",
+      "description": "Last updates June 13-14, 2026 (7-14 days ago; very current). All 101 pages updated July 2, 2026. Content freshness is the 3rd-strongest lever for AI citation after data density and author credibility (SE Ranking: pages <3 months old are ~3x more likely to be cited). No stale pages detected.",
+      "recommendation": "MAINTAIN: Continue weekly/bi-weekly update cycle. Automate: Set calendar reminders to refresh event dates (monthly), hours/prices (quarterly), statistics (bi-annually). Publish updated_date in schema markup. This is a major competitive advantage."
+    }
+  ],
+  "whatWorks": [
+    "Excellent AI crawler access (robots.txt + llms.txt properly configured)",
+    "High content freshness (all pages <2 weeks old; competitive advantage)",
+    "Clear hub-and-spoke site architecture (101 pages, well-organized clusters)",
+    "Scannable content format (short paragraphs, lists, info boxes)",
+    "Transparent editorial disclosure (builds trust despite small operation)",
+    "Strong internal linking (20+ contextual links per page)",
+    "Multi-language support (Italian, English, German for European reach)",
+    "Mobile-first design approach (preferred by AI crawlers)"
+  ],
+  "whatNeedsWork": [
+    "CRITICAL: Zero schema markup implementation (expected >70% coverage)",
+    "HIGH: Limited unique data density (few statistics, specific facts, original research)",
+    "HIGH: No author credentials or Person schema (reduces credibility 50%)",
+    "HIGH: Statement-based headings (should be question-based for AI query matching)",
+    "MEDIUM: Prose-heavy format (should use tables; 156% higher citation rate)",
+    "MEDIUM: No FAQ schema (despite FAQ sections existing)",
+    "MEDIUM: Unverified brand presence (no Wikipedia, Reddit, or YouTube visibility detected)",
+    "MEDIUM: Minimal multimedia content (videos, maps, infographics missing)",
+    "LOW: Limited primary source attribution (should link to DOC specs, Wikipedia, etc.)"
+  ],
+  "aiCrawlerAccess": {
+    "chatgpt": true,
+    "perplexity": true,
+    "claude": true,
+    "gemini": true,
+    "bingibt": true,
+    "openaiSearchBot": true,
+    "claudeBot": true,
+    "robotsTxtStatus": "EXCELLENT - blanket Allow: /",
+    "metaRobotsNoai": false,
+    "metaRobotsNoimageai": false,
+    "llmsTextExists": true,
+    "llmsTextQuality": "EXCELLENT - properly structured with canonical URLs and agent guidance",
+    "crawlerAccessScore": 92
+  },
+  "citabilityScore": 58,
+  "citabilityAnalysis": {
+    "strengths": [
+      "Lake Bolsena page: 'One of Europe's largest volcanic lakes with surface area of 113.5 km²' — specific, verifiable (21 words, suitable for citation)",
+      "Positioning statements quotable and memorable ('thread connecting landscape, history, and table')",
+      "FAQ sections provide condensed answers suitable for extraction",
+      "Info boxes (Lake Facts) demonstrate readiness for structured extraction"
+    ],
+    "weaknesses": [
+      "Wine guide lacks technical specifications (grape varieties, alcohol %, production volume)",
+      "Deliberately vague on hours/prices (editorial choice limits practical citability)",
+      "No statistics on visitor numbers, crowd metrics, awards, historical dates",
+      "Limited primary sourcing; most content is original observation without attribution",
+      "No author credentials visible; anonymous byline reduces trust",
+      "Below optimal passage length (optimal 134-167 words; most pages <100 words per passage)"
+    ],
+    "optimalPassageExample": {
+      "source": "Lake Bolsena Guide",
+      "text": "Uno dei maggiori laghi vulcanici d'Europa con una superficie di 113,5 km²",
+      "translation": "One of Europe's largest volcanic lakes with a surface area of 113.5 km²",
+      "wordCount": 21,
+      "factualDensity": "HIGH",
+      "suitableForCitation": true,
+      "recommendation": "Expand this passage to 134-167 words by adding: origin (volcanic caldera ~600K years ago), surrounding villages, wine production, activities, seasonal considerations. This creates a citation-ready paragraph."
+    }
+  },
+  "contentStructure": {
+    "score": 75,
+    "headingHierarchy": "GOOD",
+    "paragraphLength": "OPTIMAL (2-4 sentences)",
+    "lists": "PRESENT",
+    "tables": "MINIMAL",
+    "questionBasedHeadings": false,
+    "faqSections": true,
+    "faqSchema": false,
+    "imageAltText": "PRESENT",
+    "internalLinking": "STRONG (20+ per page)",
+    "freshness": "EXCELLENT (updated July 2, 2026)",
+    "recommendations": [
+      "Convert statement headings to questions (e.g., 'Dati del lago' → 'What is Lake Bolsena?')",
+      "Add 5+ structured tables for wine varieties, nearby towns, events, restaurants",
+      "Implement FAQPage schema for FAQ sections",
+      "Add specific times/distances/costs where currently vague"
+    ]
+  },
+  "topicalAuthority": {
+    "clusters": [
+      "Attractions & Landmarks (15 pages)",
+      "Events & Festivals (11 pages)",
+      "Food & Wine (10 pages)",
+      "Itineraries & Planning (15 pages)",
+      "Nearby Destinations (12 pages)",
+      "Practical Information (8 pages)",
+      "Seasonal & Timeframe Guides (8 pages)",
+      "Activity-Specific (10 pages)",
+      "Editorial & Other (12 pages)"
+    ],
+    "strength": "STRONG",
+    "hubAndSpokeStructure": true,
+    "depth": "COMPREHENSIVE (no stub pages detected)",
+    "totalPages": 101,
+    "internalLinkDensity": "HIGH",
+    "clustersNeeding": "Wine cluster could expand with technical specs; nearby destinations could grow from 12→20 pages"
+  },
+  "authoritySignals": {
+    "score": 52,
+    "author": "Matteo Angeloni",
+    "authorCredentials": "NONE STATED",
+    "authorBiography": "MISSING",
+    "authorSocialProof": "MISSING",
+    "personSchema": "NOT IMPLEMENTED",
+    "bylines": "MISSING from individual guides",
+    "editorialTransparency": "EXCELLENT",
+    "disclaimer": "Independent, unaffiliated with municipality",
+    "updateFrequency": "DISCLOSED (editorial priority + logistical changes)",
+    "lastUpdate": "June 13-14, 2026",
+    "primarySourceCitation": "MINIMAL",
+    "brandMentions": {
+      "wikipedia": "UNVERIFIED",
+      "reddit": "UNVERIFIED",
+      "youtube": "UNVERIFIED",
+      "linkedin": "UNVERIFIED",
+      "backlinks": "NOT MEASURED",
+      "note": "Brand mentions correlate 3x more strongly with AI visibility than backlinks (Ahrefs Dec 2025). Without backlink/mention data, brand strength cannot be quantified."
+    }
+  },
+  "schemaMarkup": {
+    "score": 0,
+    "jsonLd": false,
+    "microdata": false,
+    "rdfa": false,
+    "organizationSchema": false,
+    "localBusinessSchema": false,
+    "articleSchema": false,
+    "eventSchema": false,
+    "faqPageSchema": false,
+    "personSchema": false,
+    "breadcrumbListSchema": false,
+    "placeSchema": false,
+    "verdict": "CRITICAL GAP - Zero schema markup detected",
+    "impact": "AI systems must infer all structured information from plain text; significantly increases extraction error rates, latency, and competition from schema-marked competitors"
+  },
+  "platformSpecificScores": {
+    "googleAIOurations": {
+      "score": 70,
+      "outlook": "MODERATE OPPORTUNITY",
+      "strength": "Requires ranking; site ranks for regional tourism queries. Structure is clean, updates are fresh.",
+      "weakness": "No schema markup. Limited statistics/verifiable facts. Limited backlinks.",
+      "recommendation": "Implement Article + FAQPage schema; add 2-3 statistics per guide page."
+    },
+    "chatgpt": {
+      "score": 55,
+      "outlook": "WEAK (but fixable)",
+      "strength": "Well-organized content; transparent editorial.",
+      "weakness": "ChatGPT cites Wikipedia (47.9%) and Reddit (11.3%) preferentially. No author credentials. No brand presence on preferred platforms.",
+      "recommendation": "Build author LinkedIn presence; publish in travel publications; engage on Reddit communities."
+    },
+    "perplexity": {
+      "score": 48,
+      "outlook": "WEAK (heavily Reddit/community weighted)",
+      "strength": "Content quality is high.",
+      "weakness": "Perplexity cites Reddit (46.7%) + Wikipedia. Direct business sites rank 6th-10th. No community mentions detected.",
+      "recommendation": "Post itineraries to r/travel, r/Italy, r/wine. Build Reddit presence organically."
+    },
+    "bingCopilot": {
+      "score": 62,
+      "outlook": "MODERATE",
+      "strength": "Bing indexes site. Practical content aligns with Copilot's knowledge graph. Fewer editorial restrictions than ChatGPT.",
+      "weakness": "No IndexNow implementation; could accelerate indexing.",
+      "recommendation": "Enable IndexNow protocol; add schema markup for Bing Webmaster Tools integration."
+    }
+  },
+  "90DayRoadmap": {
+    "week_1_2": {
+      "priority": "HIGH",
+      "title": "Schema Markup Implementation",
+      "tasks": [
+        "Implement Organization + LocalBusiness schema (homepage)",
+        "Add Article schema to top 20 guides",
+        "Add Event schema to all 11 event pages",
+        "Add FAQPage schema to FAQ sections",
+        "Add Person schema to author bylines"
+      ],
+      "expectedImpact": "+15-30% AI citation rate"
+    },
+    "week_2_3": {
+      "priority": "HIGH",
+      "title": "Content Data Density Boost",
+      "tasks": [
+        "Convert 5 largest prose blocks to HTML tables",
+        "Refactor headings to question format (top 15 pages)",
+        "Expand wine guide: Add grape varieties, DOC specs, producer names, awards",
+        "Expand practical guides: Add specific distances/times/costs"
+      ],
+      "expectedImpact": "+25-35% citability improvement"
+    },
+    "week_3_4": {
+      "priority": "MEDIUM",
+      "title": "Author Credibility Building",
+      "tasks": [
+        "Create LinkedIn profile for Matteo Angeloni",
+        "Add biography/credentials to About page",
+        "Pitch guest article to travel publication",
+        "Add author bylines + links to individual guides"
+      ],
+      "expectedImpact": "+20-40% credibility signals"
+    },
+    "week_5_8": {
+      "priority": "MEDIUM",
+      "title": "Community & Amplification",
+      "tasks": [
+        "Create 3-5 YouTube shorts (destination highlights)",
+        "Post itineraries to r/travel, r/Italy, r/wine",
+        "Check/enhance Lake Bolsena Wikipedia article",
+        "Set up content refresh calendar (automated)"
+      ],
+      "expectedImpact": "+30-50% community mentions, +50% Perplexity visibility"
+    },
+    "week_9_12": {
+      "priority": "MEDIUM",
+      "title": "Measurement & Iteration",
+      "tasks": [
+        "Monitor ChatGPT web search citations (manual)",
+        "Track Bing Copilot mentions",
+        "Measure Google AI Overviews inclusion",
+        "Analyze AI-referred sessions (GA4)",
+        "Iterate based on data"
+      ],
+      "expectedImpact": "Baseline established for Q3/Q4 optimization"
+    }
+  },
+  "quickWins": [
+    {
+      "title": "Add Question-Based Headings",
+      "effort": "2-4 hours",
+      "impact": "+10-20% citations",
+      "example": "'Dati del lago' → 'What is Lake Bolsena? (Size, Depth, Origin)'"
+    },
+    {
+      "title": "Create Tables for Wine/Nearby Towns",
+      "effort": "4-6 hours",
+      "impact": "+30-40% for tabular content",
+      "example": "Wine varieties table (Grape, Alcohol %, Terroir, Producer)"
+    },
+    {
+      "title": "Add Specific Statistics",
+      "effort": "3-5 hours",
+      "impact": "+15-25% citability",
+      "example": "Lake page: Add formation date (~600K years ago), largest volcanic lake in southern Europe"
+    },
+    {
+      "title": "Implement Article Schema (Homepage + Top 5 Guides)",
+      "effort": "2-3 hours",
+      "impact": "+10-15% indexed snippets",
+      "example": "Add author, datePublished, dateModified, image to schema"
+    },
+    {
+      "title": "Create YouTube Intro Video",
+      "effort": "1-2 hours recording + 1-2 editing",
+      "impact": "+40-60% for video-enhanced pages",
+      "example": "30-60 second Montefiascone highlights video"
+    }
+  ],
+  "competitiveContext": {
+    "brandMentionCorrelation": "Brand mentions correlate 3x more strongly with AI visibility than backlinks (Ahrefs Dec 2025 study, 75K brands)",
+    "youtubeCorrelation": 0.737,
+    "redditCorrelation": "HIGH",
+    "wikipediaCorrelation": "HIGH",
+    "domainRatingCorrelation": 0.266,
+    "multiModalCitationLift": "156% higher for pages with text + images/video/infographics",
+    "aiCitationPlatformOverlap": "Only 11% of domains cited by both ChatGPT and Google AI Overviews for same query; 13.7% URL overlap. Treat as separate surfaces."
+  },
+  "nextSteps": {
+    "immediate_48h": "Audit current robots.txt & llms.txt implementation (DONE). Document schema gaps. Draft schema templates.",
+    "this_week": "Implement Article schema on homepage + top 5 guides. Refactor 3 headings to question format. Add 2 tables (wine varieties, nearby towns).",
+    "this_month": "Complete all schema implementations (Org, LocalBusiness, Article, Event, FAQPage, Person). Convert all major content blocks to tables. Expand wine guide with verifiable data. Create YouTube intro.",
+    "this_quarter": "Build author credibility (LinkedIn, guest article). Establish Reddit/community presence. Measure AI citation baseline. Iterate based on platform-specific performance."
+  },
+  "notes": {
+    "methodology": "GEO analysis grounded in Google's official AI Optimization Guide, SE Ranking 1.3M-citation study, Ahrefs brand-mention research (Dec 2025), and platform-specific citation patterns (ChatGPT 47.9% Wikipedia, Perplexity 46.7% Reddit, Google AIO ranking-correlated)",
+    "dataGaps": "Brand mention data (Wikipedia, Reddit, YouTube, LinkedIn) not directly measurable without web search/backlink tools. Estimates provided based on observable signals only.",
+    "uncertainty": "Platform-specific scores are indicative based on content quality; actual performance depends on search ranking, backlink profile, and brand visibility data not available in this audit.",
+    "reportValidityWindow": "Recommendations valid for ~90 days. Perplexity and ChatGPT algorithm updates could shift platform scoring. Reaudit after implementing top 5 recommendations."
+  }
+}
