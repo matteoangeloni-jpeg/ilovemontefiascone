@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
 Allow: /llms.txt
+Allow: /en/
 Allow: /de/
+Allow: /fr/
 Disallow: /*-widget.html
 Disallow: /*-leaflet.html
 Disallow: /offline.html
@@ -15,3 +17,6 @@ Disallow: /check-
 Disallow: /qa-
 
 Sitemap: https://www.ilovemontefiascone.com/sitemap.xml
+Sitemap: https://www.ilovemontefiascone.com/en/sitemap.xml
+Sitemap: https://www.ilovemontefiascone.com/de/sitemap.xml
+Sitemap: https://www.ilovemontefiascone.com/fr/sitemap.xml
