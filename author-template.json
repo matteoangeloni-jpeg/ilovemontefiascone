@@ -1,0 +1,14 @@
+{
+  "@type": "Person",
+  "@id": "https://www.ilovemontefiascone.com/#author-expert",
+  "name": "Matteo Angeloni",
+  "title": "Travel & Wine Specialist",
+  "description": "Wine & Tuscia region expert with 15+ years researching Montefiascone DOC wines, medieval history, and Via Francigena pilgrim routes",
+  "sameAs": [
+    "https://www.ilovemontefiascone.com",
+    "https://www.linkedin.com/in/matteo-angeloni",
+    "https://www.youtube.com/@ilovemontefiascone"
+  ],
+  "jobTitle": "Chief Content Officer",
+  "image": "https://www.ilovemontefiascone.com/media/author/matteo-angeloni.jpg"
+}
