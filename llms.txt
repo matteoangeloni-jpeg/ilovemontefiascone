@@ -1,11 +1,11 @@
 ﻿# I Love Montefiascone
-> Independent travel guide for Montefiascone, Lake Bolsena and Tuscia. This file lists only the strict public IT/EN/DE perimeter exposed by the current production build.
+> Independent travel guide for Montefiascone, Lake Bolsena and Tuscia. This file lists only the strict public IT/EN/DE/FR perimeter exposed by the current production build.
 
 ## Site Identity
 - Canonical domain: https://www.ilovemontefiascone.com/
-- Public languages: Italian, English, German.
-- Public perimeter: 98 IT / 98 EN / 98 DE.
-- Public perimeter updated: 2026-07-02.
+- Public languages: Italian, English, German, French (partial relaunch).
+- Public perimeter: 98 IT / 98 EN / 98 DE / 26 FR.
+- Public perimeter updated: 2026-07-08.
 
 ## Main Topics
 - Montefiascone and Lake Bolsena.
@@ -313,6 +313,34 @@
 - [Weingüter und Verkostung in Montefiascone](https://www.ilovemontefiascone.com/de/weingueter-montefiascone-verkostung)
 - [Weinverkostung in Montefiascone: Ablauf](https://www.ilovemontefiascone.com/de/weinverkostung-montefiascone-ablauf)
 - [Wochenende in Montefiascone](https://www.ilovemontefiascone.com/de/wochenende-in-montefiascone)
+
+## French Public Pages
+- [Bienvenue à Montefiascone | Lac de Bolsena, vin et patrimoine](https://www.ilovemontefiascone.com/fr/)
+- [A.D. 1074 à Montefiascone | Fête médiévale 2026](https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone)
+- [Calendrier des événements de Montefiascone | Qu'y a-t-il](https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone)
+- [Carte de Montefiascone | Lac, centre et Francigena](https://www.ilovemontefiascone.com/fr/carte)
+- [Cuisine typique de Montefiascone | Plats et territoire](https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone)
+- [Caves de Montefiascone | Dégustations et visites](https://www.ilovemontefiascone.com/fr/degustation-de-vignobles-de-montefiascone-est-est-est)
+- [Dégustation de vin à Montefiascone | Comment ça marche](https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche)
+- [Est! Est!! Est!!! de Montefiascone | Vin DOC](https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc)
+- [Est Film Festival 2026 à Montefiascone | Cinéma](https://www.ilovemontefiascone.com/fr/est-festival-du-film-de-montefiascone)
+- [Événements à Montefiascone | Calendrier, fêtes et traditions](https://www.ilovemontefiascone.com/fr/evenements)
+- [Été 2026 à Montefiascone | Calendrier des événements](https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026)
+- [Foire du Vin de Montefiascone 2026 | Traditions et visite](https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone)
+- [Experiences gastronomiques et oenologiques a Montefiascone](https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone)
+- [Festival ATB 2026 à Montefiascone | Musique et été](https://www.ilovemontefiascone.com/fr/festival-atb-montefiascone)
+- [Festival d'écologie intégrale 2026 | Montefiascone](https://www.ilovemontefiascone.com/fr/festival-decologie-integrale-de-montefiascone)
+- [Fête Santa Margherita 2026 à Montefiascone](https://www.ilovemontefiascone.com/fr/fete-de-santa-margherita-montefiascone)
+- [Giglio Vecchio Montefiascone | Zepponami, football et fête](https://www.ilovemontefiascone.com/fr/giglio-vecchio-montefiascone)
+- [Guides de Montefiascone | Itinéraires, carte et idées de visite](https://www.ilovemontefiascone.com/fr/guide)
+- [Lac de Bolsena : que voir | Guide complet](https://www.ilovemontefiascone.com/fr/lac-de-bolsena-que-voir)
+- [Montefiascone en 2 jours | Itinéraire du week-end](https://www.ilovemontefiascone.com/fr/montefiascone-en-2-jours)
+- [Produits typiques de Montefiascone et de la Tuscie](https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia)
+- [Projet éditorial | J'aime Montefiascone](https://www.ilovemontefiascone.com/fr/projet-editorial)
+- [Que voir à Montefiascone | Guide complet](https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet)
+- [Route du vin Est! Est!! Est!!! | Montefiascone](https://www.ilovemontefiascone.com/fr/strada-del-vino-est-est-est-est-est-montefiascone)
+- [Via Francigena : de Bolsena à Montefiascone](https://www.ilovemontefiascone.com/fr/via-francigena-bolsena-montefiascone)
+- [Vin de Montefiascone | Est! Est!! Est!!! et caves](https://www.ilovemontefiascone.com/fr/vin)
 
 ## Key Events Summer 2026
 

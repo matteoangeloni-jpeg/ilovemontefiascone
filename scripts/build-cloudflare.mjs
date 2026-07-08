@@ -10,6 +10,7 @@ import {
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
+import { FR_PUBLIC_FILES, isFrPathPublic } from "./fr-public-perimeter.mjs";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const root = resolve(scriptDir, "..");
@@ -31,6 +32,7 @@ const supportRootFiles = [
   "sitemap-it.xml",
   "sitemap-en.xml",
   "sitemap-de.xml",
+  "sitemap-fr.xml",
   "_redirects",
   "_headers",
   "sw.js",
@@ -109,34 +111,16 @@ function optimizePublicHtml(html) {
   return `${optimized.slice(0, imageStart)}${imageTag}${optimized.slice(imageEnd + 1)}`;
 }
 
+// Rilancio FR parziale: i file di supporto sorgente (llms.txt, sitemap*)
+// rappresentano gia' il perimetro pubblico reale e vengono copiati cosi' come
+// sono. L'unico filtro residuo e' nelle pagine HTML: i riferimenti a pagine
+// /fr/ NON incluse nel perimetro (vedi fr-public-perimeter.mjs) vengono
+// rimossi per non esporre URL che risponderebbero 404.
 function stripFrenchSupportSignals(fileName, text) {
-  if (fileName === "llms.txt") {
-    const frenchUrlPattern =
-      /https:\/\/www\.ilovemontefiascone\.com\/fr(?:\/|[\s)#?]|$)/i;
-    return text
-      .split(/\r?\n/)
-      .filter(
-        (line) =>
-          !line.includes("/fr/") &&
-          !frenchUrlPattern.test(line) &&
-          !line.includes("French draft content") &&
-          !line.includes("Public languages: Italian, English, German, French.") &&
-          !line.includes("Public perimeter: 98 IT / 98 EN / 98 DE / 98 FR."),
-      )
-      .join("\n");
-  }
-
   if (fileName.startsWith("sitemap-") && fileName.endsWith(".xml")) {
     return text.replace(
-      /\s*<xhtml:link rel="alternate" hreflang="fr"[^>]*\/>\s*/gi,
-      "\n",
-    );
-  }
-
-  if (fileName === "sitemap.xml") {
-    return text.replace(
-      /\s*<sitemap>\s*<loc>https:\/\/www\.ilovemontefiascone\.com\/sitemap-fr\.xml<\/loc>\s*<lastmod>[^<]*<\/lastmod>\s*<\/sitemap>\s*/gi,
-      "\n",
+      /\s*<xhtml:link rel="alternate" hreflang="fr" href="([^"]+)"[^>]*\/>/gi,
+      (tag, href) => (isFrPathPublic(href) ? tag : ""),
     );
   }
 
@@ -156,6 +140,8 @@ const enFiles = listHtml(join(root, "en"))
   .map((file) => `en/${file}`);
 
 const deFiles = listHtml(join(root, "de")).map((file) => `de/${file}`);
+
+const frFiles = FR_PUBLIC_FILES.map((file) => `fr/${file}`);
 
 rmSync(outputDir, { recursive: true, force: true });
 mkdirSync(outputDir, { recursive: true });
@@ -181,7 +167,7 @@ for (const directory of directories) {
   cpSync(source, join(outputDir, directory), { recursive: true, force: true });
 }
 
-for (const file of [...enFiles, ...deFiles]) {
+for (const file of [...enFiles, ...deFiles, ...frFiles]) {
   const source = join(root, file);
   if (!existsSync(source)) {
     throw new Error(`Missing required perimeter file: ${file}`);
@@ -195,6 +181,7 @@ const publicHtmlFiles = [
   ...rootFiles.filter((file) => file.endsWith(".html")),
   ...enFiles,
   ...deFiles,
+  ...frFiles,
 ];
 
 for (const file of publicHtmlFiles) {
@@ -206,10 +193,16 @@ for (const file of publicHtmlFiles) {
 
 function stripFrenchPublicSignals(html) {
   return html
-    .replace(/\s*<link\b[^>]*hreflang=["']fr["'][^>]*\/?>\s*/gi, "")
-    .replace(/\s*<a\b[^>]*href=["']\/fr\/[^"']*["'][^>]*>[\s\S]*?<\/a>\s*/gi, "");
+    .replace(/\s*<link\b[^>]*hreflang=["']fr["'][^>]*\/?>/gi, (tag) => {
+      const href = tag.match(/href=["']([^"']+)["']/i)?.[1];
+      return isFrPathPublic(href) ? tag : "";
+    })
+    .replace(
+      /\s*<a\b[^>]*href=["'](\/fr\/[^"']*)["'][^>]*>[\s\S]*?<\/a>\s*/gi,
+      (tag, href) => (isFrPathPublic(href) ? tag : ""),
+    );
 }
 
 console.log(
-  `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length})`,
+  `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length}, FR: ${frFiles.length})`,
 );
