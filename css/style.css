@@ -5,11 +5,11 @@
   --off-white: #fbfaf7;
   --on-surface: #232323;
   --antracite: #232323;
-  --blu-lago: #2c5e6d;
-  --blu-lago-700: #204954;
-  --tufo: #dcc7aa;
-  --tufo-50: #faf6ef;
-  --tufo-100: #f3ebdf;
+  --blu-lago: #1e5261;
+  --blu-lago-700: #003b48;
+  --tufo: #d8c3a7;
+  --tufo-50: #faf4e6;
+  --tufo-100: #f5dfc1;
   --surface: #ffffff;
   --surface-strong: #ffffff;
   --surface-low: #f8f6f3;
@@ -18,12 +18,12 @@
   --surface-highest: #e3dcd4;
   --on-surface-variant: #564242;
   --border: rgba(45, 45, 45, 0.08);
-  --border-strong: rgba(44, 94, 109, 0.16);
+  --border-strong: rgba(30, 82, 97, 0.16);
   --text-soft: #63615e;
-  --shadow: 0 12px 28px rgba(108, 12, 32, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
-  --radius-xl: 1.5rem;
-  --radius-lg: 1rem;
-  --radius-md: 0.75rem;
+  --shadow: 0 12px 40px rgba(108, 12, 32, 0.05), 0 1px 3px rgba(0, 0, 0, 0.01);
+  --radius-xl: 0.75rem;
+  --radius-lg: 0.5rem;
+  --radius-md: 0.25rem;
   --container: min(72rem, calc(100% - 1.5rem));
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -46,7 +46,6 @@ body {
   line-height: 1.6;
   background: var(--off-white);
   overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 img {
@@ -66,7 +65,7 @@ a:hover {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(44, 94, 109, 0.45);
+  outline: 3px solid rgba(30, 82, 97, 0.45);
   outline-offset: 3px;
 }
 
@@ -101,13 +100,14 @@ dl {
 .skip-link {
   position: absolute;
   left: 1rem;
-  top: -3rem;
+  top: -6rem;
   z-index: 999;
   padding: 0.75rem 1rem;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: var(--blu-lago);
   color: #fff;
   text-decoration: none;
+  line-height: 1.2;
 }
 
 .skip-link:focus {
@@ -139,7 +139,7 @@ dl {
   position: absolute;
   inset: auto 0 0;
   height: 1px;
-  background: linear-gradient(90deg, rgba(139, 38, 53, 0) 0%, rgba(139, 38, 53, 0.2) 48%, rgba(44, 94, 109, 0.14) 100%);
+  background: linear-gradient(90deg, rgba(139, 38, 53, 0) 0%, rgba(139, 38, 53, 0.2) 48%, rgba(30, 82, 97, 0.14) 100%);
   pointer-events: none;
 }
 
@@ -241,11 +241,12 @@ dl {
 .site-nav a {
   display: block;
   padding: 0.4rem 0;
-  color: var(--antracite);
+  color: var(--on-surface-variant);
   text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   position: relative;
   transition: color 0.2s ease;
 }
@@ -263,14 +264,16 @@ dl {
   min-height: 2.75rem;
   padding: 0.75rem 0.9rem;
   border: 1px solid transparent;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: transparent;
-  color: var(--antracite);
+  color: var(--on-surface-variant);
   font-family: var(--font-body);
-  font-size: 0.84rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   line-height: 1;
+  white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
   transition:
@@ -366,8 +369,8 @@ dl {
 
 .site-nav__panel-list a:hover,
 .site-nav__panel-list a[aria-current="page"] {
-  border-color: rgba(44, 94, 109, 0.22);
-  background: rgba(44, 94, 109, 0.08);
+  border-color: rgba(30, 82, 97, 0.22);
+  background: rgba(30, 82, 97, 0.08);
 }
 
 .site-nav__panel-list a::after {
@@ -484,7 +487,7 @@ dl {
   border-radius: var(--radius-xl);
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.16), transparent 35%),
-    linear-gradient(135deg, rgba(139, 38, 53, 0.92) 0%, rgba(45, 45, 45, 0.38) 48%, rgba(44, 94, 109, 0.9) 100%);
+    linear-gradient(135deg, rgba(139, 38, 53, 0.92) 0%, rgba(45, 45, 45, 0.38) 48%, rgba(30, 82, 97, 0.9) 100%);
   box-shadow: var(--shadow);
 }
 
@@ -526,7 +529,7 @@ dl {
   color: #fff;
   background:
     linear-gradient(180deg, rgba(14, 17, 22, 0.08) 0%, rgba(14, 17, 22, 0.62) 100%),
-    linear-gradient(135deg, rgba(139, 38, 53, 0.14) 0%, rgba(44, 94, 109, 0.16) 100%);
+    linear-gradient(135deg, rgba(139, 38, 53, 0.14) 0%, rgba(30, 82, 97, 0.16) 100%);
 }
 
 .hero__content > * + *,
@@ -595,24 +598,32 @@ dl {
   align-items: center;
   justify-content: center;
   min-height: 2.9rem;
-  padding: 0 1.05rem;
+  padding: 0 1.35rem;
   border: 1px solid transparent;
-  border-radius: 999px;
-  background: var(--rosso);
+  border-radius: var(--radius-md);
+  background: var(--deep-burgundy);
   color: #fff;
   text-decoration: none;
   font-weight: 700;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
+  background: var(--rosso);
   color: #fff;
 }
 
 .button--primary {
-  background: var(--rosso);
+  background: var(--deep-burgundy);
   color: #fff;
+}
+
+.button--primary:hover {
+  background: var(--rosso);
 }
 
 .button--secondary {
@@ -622,8 +633,8 @@ dl {
 }
 
 .button--ghost {
-  background: rgba(44, 94, 109, 0.08);
-  border-color: rgba(44, 94, 109, 0.16);
+  background: rgba(30, 82, 97, 0.08);
+  border-color: rgba(30, 82, 97, 0.16);
   color: var(--blu-lago);
 }
 
@@ -665,7 +676,7 @@ dl {
   padding: 1rem;
   border-left: 4px solid var(--rosso);
   border-radius: var(--radius-md);
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
 }
 
 .section {
@@ -852,7 +863,7 @@ dl {
 .tag-list li {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
   color: var(--blu-lago);
   font-size: 0.85rem;
   font-weight: 700;
@@ -871,10 +882,32 @@ dl {
 }
 
 .info-box {
-  padding: 1rem 1.1rem;
-  border: 1px solid rgba(44, 94, 109, 0.16);
-  border-radius: var(--radius-md);
-  background: var(--tufo-50);
+  padding: 1.5rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, var(--blu-lago-700) 0%, var(--blu-lago) 100%);
+  color: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+}
+
+.info-box h2,
+.info-box h3 {
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-box strong {
+  color: #ffffff;
+}
+
+.info-box a {
+  color: var(--tufo-100);
+}
+
+.info-box a:hover {
+  color: #ffffff;
 }
 
 .breadcrumb {
@@ -1394,7 +1427,7 @@ dl {
 
   .site-nav__panel-list a:hover,
   .site-nav__panel-list a[aria-current="page"] {
-    background: rgba(44, 94, 109, 0.06);
+    background: rgba(30, 82, 97, 0.06);
     border-radius: var(--radius-md);
     border-bottom-color: transparent;
   }
@@ -1450,7 +1483,7 @@ dl {
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   background:
-    linear-gradient(135deg, rgba(139, 38, 53, 0.92), rgba(44, 94, 109, 0.9)),
+    linear-gradient(135deg, rgba(139, 38, 53, 0.92), rgba(30, 82, 97, 0.9)),
     var(--surface-strong);
   color: #fff;
   box-shadow: var(--shadow);
@@ -1458,7 +1491,7 @@ dl {
 
 .page-hero__panel--home {
   background:
-    linear-gradient(135deg, rgba(139, 38, 53, 0.7), rgba(44, 94, 109, 0.74)),
+    linear-gradient(135deg, rgba(139, 38, 53, 0.7), rgba(30, 82, 97, 0.74)),
     #224654;
   border-radius: 0;
   border: none;
@@ -1866,7 +1899,7 @@ dl {
 
 /* Weather Premium Widget */
 .weather-widget-premium {
-  background: var(--blu-lago);
+  background: linear-gradient(160deg, var(--blu-lago-700) 0%, var(--blu-lago) 100%);
   color: #ffffff;
   padding: 2rem;
   border-radius: var(--radius-lg);
@@ -2113,7 +2146,7 @@ dl {
   min-height: 1.9rem;
   padding: 0 0.7rem;
   border-radius: 999px;
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
   color: var(--blu-lago);
   font-size: 0.78rem;
   font-weight: 800;
@@ -2215,7 +2248,7 @@ dl {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--blu-lago);
-  background: rgba(44, 94, 109, 0.08);
+  background: rgba(30, 82, 97, 0.08);
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   margin-right: 0.4rem;
@@ -2804,7 +2837,7 @@ body {
   min-height: 2.4rem;
   font-size: 0.75rem;
   letter-spacing: 0.06em;
-  border-color: rgba(44, 94, 109, 0.2);
+  border-color: rgba(30, 82, 97, 0.2);
 }
 
 /* ─── Homepage Hero: cinematic full-bleed ─── */
@@ -3128,15 +3161,15 @@ body {
 
 /* ─── Tag pills: slightly more refined ─── */
 .tag-pill {
-  border-color: rgba(44, 94, 109, 0.18);
+  border-color: rgba(30, 82, 97, 0.18);
   color: var(--blu-lago);
   font-size: 0.78rem;
   transition: background var(--transition-base), color var(--transition-base), border-color var(--transition-base);
 }
 
 .tag-pill:hover {
-  background: rgba(44, 94, 109, 0.08);
-  border-color: rgba(44, 94, 109, 0.3);
+  background: rgba(30, 82, 97, 0.08);
+  border-color: rgba(30, 82, 97, 0.3);
 }
 
 /* ─── Internal page hero: premium split layout ─── */
@@ -3794,7 +3827,7 @@ body {
 .spoke-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lift);
-  border-color: rgba(44, 94, 109, 0.2);
+  border-color: rgba(30, 82, 97, 0.2);
 }
 
 /* ─── Nav card (3-tile): styled ─── */
@@ -3951,8 +3984,8 @@ body {
 }
 
 .button--ghost:hover {
-  background: rgba(44, 94, 109, 0.14);
-  border-color: rgba(44, 94, 109, 0.28);
+  background: rgba(30, 82, 97, 0.14);
+  border-color: rgba(30, 82, 97, 0.28);
   color: var(--blu-lago-700);
 }
 
@@ -3969,7 +4002,7 @@ body {
 }
 
 .tag-list li:hover {
-  background: rgba(44, 94, 109, 0.14);
+  background: rgba(30, 82, 97, 0.14);
 }
 
 /* ─── Skip link: always on top ─── */
@@ -4087,7 +4120,7 @@ h1, h2, h3 {
 /* ─── Refined Weather & Essential Tables ─── */
 .weather-widget-premium {
   background: linear-gradient(135deg, var(--blu-lago) 0%, var(--blu-lago-700) 100%) !important;
-  box-shadow: 0 10px 30px rgba(44, 94, 109, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(30, 82, 97, 0.15) !important;
   border: none !important;
   color: #ffffff !important;
 }
@@ -4385,3 +4418,212 @@ main > .home-hero:first-child h1 {
 }
 
 
+
+/* ==========================================================================
+   P0 homepage hero readability — corrected selectors
+   The block above targets .hero/.home-hero, but the homepage hero is
+   .page-hero with .page-hero__content--overlay. The global premium-polish
+   rule "h1, h2, h3 { color: var(--antracite) !important }" therefore still
+   forced the overlay hero title dark over the aerial photo. These rules
+   match the real markup and restore the intended readable light title.
+   ========================================================================== */
+.page-hero__content--overlay h1 {
+  color: #fff8ef !important;
+  text-shadow:
+    0 3px 18px rgba(0, 0, 0, 0.72),
+    0 10px 44px rgba(0, 0, 0, 0.58) !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+.page-hero__content--overlay p {
+  color: rgba(255, 248, 239, 0.94) !important;
+  text-shadow:
+    0 2px 14px rgba(0, 0, 0, 0.7),
+    0 8px 30px rgba(0, 0, 0, 0.48) !important;
+}
+
+.page-hero__content--overlay .eyebrow {
+  color: #f5dfc1 !important;
+  background: rgba(255, 248, 239, 0.14);
+  border: 1px solid rgba(255, 248, 239, 0.2);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.58);
+}
+
+/* Stronger scrim on the left, where the hero copy sits */
+.page-hero__panel--home::before {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.55) 34%,
+      rgba(0, 0, 0, 0.25) 62%,
+      rgba(0, 0, 0, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.16) 0%,
+      rgba(0, 0, 0, 0.14) 45%,
+      rgba(0, 0, 0, 0.55) 100%
+    ) !important;
+}
+
+@media (max-width: 760px) {
+  .page-hero__panel--home::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.44) 0%,
+        rgba(0, 0, 0, 0.36) 30%,
+        rgba(0, 0, 0, 0.78) 100%
+      ) !important;
+  }
+}
+
+/* ============================================================
+   Editorial single-column article layout (blog-post reference)
+   IT/EN detail pages used a split "card" hero (text beside image) and a
+   two-column body (content + sidebar). The reference the owner supplied is
+   a single-column editorial article: a full-bleed hero with the title
+   overlaid on the photo (the DE .hero--subpage template already does this),
+   then one centred reading column with the sidebar flowing below, a drop
+   cap and pull-quote styling. This block brings IT/EN in line and drops the
+   two-column layout site-wide on article/detail pages.
+   ============================================================ */
+
+/* Full-bleed overlay hero for IT/EN detail pages (.detail-hero__panel wraps
+   .detail-hero__media + .detail-hero__content). Stack both in one grid area
+   so the image fills behind and the content overlays at the bottom. */
+.detail-hero__panel {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: 1fr !important;
+  min-height: clamp(320px, 52vh, 540px) !important;
+  border-radius: var(--radius-xl) !important;
+  background: #1a2e35 !important;
+  border: none !important;
+  box-shadow: var(--shadow) !important;
+  overflow: hidden !important;
+  position: relative !important;
+  isolation: isolate;
+}
+.detail-hero__panel > .detail-hero__media {
+  grid-area: 1 / 1 !important;
+  position: static !important;
+  min-height: 100% !important;
+  order: 0 !important;
+}
+.detail-hero__panel > .detail-hero__media img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: clamp(320px, 52vh, 540px) !important;
+  object-fit: cover !important;
+  object-position: center 38% !important;
+  filter: saturate(1.05) brightness(0.84) !important;
+}
+.detail-hero__panel > .detail-hero__content {
+  grid-area: 1 / 1 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  align-self: end !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  gap: 0.7rem !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 52%, rgba(0,0,0,0.82) 100%) !important;
+  color: #fff !important;
+  padding: 4rem 1.75rem 2.25rem !important;
+  max-width: none !important;
+}
+.detail-hero__panel > .detail-hero__content h1 {
+  color: #fff !important;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.42) !important;
+  font-size: clamp(2rem, 5vw, 3.2rem) !important;
+}
+.detail-hero__panel > .detail-hero__content p {
+  color: rgba(255,255,255,0.9) !important;
+}
+.detail-hero__panel > .detail-hero__content .eyebrow { color: var(--tufo) !important; opacity: 0.95; }
+.detail-hero__panel > .detail-hero__content .breadcrumb a { color: rgba(255,255,255,0.72) !important; }
+.detail-hero__panel > .detail-hero__content .breadcrumb li:last-child,
+.detail-hero__panel > .detail-hero__content .breadcrumb li:last-child a { color: rgba(255,255,255,0.92) !important; }
+.detail-hero__panel > .detail-hero__content .breadcrumb li + li::before { color: rgba(255,255,255,0.4) !important; }
+
+/* Portrait municipal poster heroes: keep them as a plain banner with the
+   title BELOW the image (dark text), never overlaid on the dense poster. */
+.detail-hero__panel:has(.detail-hero__media--poster) {
+  display: block !important;
+  min-height: 0 !important;
+  background: #ffffff !important;
+}
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__media img { min-height: 0 !important; filter: none !important; }
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__content {
+  position: static !important;
+  background: none !important;
+  color: var(--antracite) !important;
+  padding: 1.5rem !important;
+}
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__content h1 { color: var(--rosso) !important; text-shadow: none !important; }
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__content p { color: var(--text-soft) !important; }
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__content .eyebrow { color: var(--blu-lago) !important; }
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__content .breadcrumb a { color: var(--text-soft) !important; }
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__content .breadcrumb li:last-child,
+.detail-hero__panel:has(.detail-hero__media--poster) > .detail-hero__content .breadcrumb li:last-child a { color: var(--antracite) !important; }
+
+@media (min-width: 48rem) {
+  .detail-hero__panel {
+    grid-template-columns: 1fr !important;   /* remove the side-by-side split */
+    min-height: clamp(400px, 58vh, 600px) !important;
+  }
+  .detail-hero__panel > .detail-hero__media { order: 0 !important; }
+  .detail-hero__panel > .detail-hero__media img { min-height: clamp(400px, 58vh, 600px) !important; }
+  .detail-hero__panel > .detail-hero__content {
+    padding: 5rem 2.5rem 3rem !important;
+    max-width: none !important;
+  }
+}
+
+/* Single-column editorial body: kill the two-column content+sidebar grid;
+   centre one reading column and let the sidebar flow below it. */
+.section > .container.section-grid,
+.section > .container.detail-grid {
+  display: block !important;
+  max-width: 48rem;
+}
+.container.section-grid > .content-card,
+.container.detail-grid > .content-card {
+  max-width: 44rem;
+  margin-inline: auto;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+.container.section-grid > aside,
+.container.detail-grid > aside {
+  max-width: 44rem;
+  margin: 2.5rem auto 0;
+}
+
+/* Editorial touches: drop cap on the article's first paragraph, pull quotes. */
+.content-card .content-stack > section:not(.info-box):first-of-type > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 0.82;
+  padding: 0.15rem 0.55rem 0 0;
+  color: var(--rosso);
+}
+.content-card blockquote {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--rosso);
+  background: var(--tufo-50);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--antracite);
+}
