@@ -203,6 +203,13 @@ function stripFrenchPublicSignals(html) {
     );
 }
 
+const deSitemapSource = join(root, "de", "sitemap.xml");
+if (existsSync(deSitemapSource)) {
+  const deSitemapDest = join(outputDir, "de", "sitemap.xml");
+  mkdirSync(dirname(deSitemapDest), { recursive: true });
+  cpSync(deSitemapSource, deSitemapDest, { force: true });
+}
+
 console.log(
   `Cloudflare package created in ${outputDir} (IT: ${rootFiles.length - technicalRootFiles.size - supportRootFiles.length}, EN: ${enFiles.length}, DE: ${deFiles.length}, FR: ${frFiles.length})`,
 );
