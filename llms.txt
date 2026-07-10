@@ -4,8 +4,8 @@
 ## Site Identity
 - Canonical domain: https://www.ilovemontefiascone.com/
 - Public languages: Italian, English, German, French (partial relaunch).
-- Public perimeter: 98 IT / 98 EN / 98 DE / 98 FR.
-- Public perimeter updated: 2026-07-08. (FR sitemap regenerated with all 98 pages)
+- Public perimeter: 98 IT / 98 EN / 98 DE / 26 FR.
+- Public perimeter updated: 2026-07-08.
 
 ## Main Topics
 - Montefiascone and Lake Bolsena.
