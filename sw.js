@@ -1,4 +1,4 @@
-const SW_VERSION = "mf-pwa-v11-2026-07-04-linkcleanup";
+const SW_VERSION = "mf-pwa-v12-2026-07-11-endeuxparity";
 const STATIC_CACHE = `${SW_VERSION}-static`;
 const ARTICLE_CACHE = `${SW_VERSION}-articles`;
 const ASSET_CACHE = `${SW_VERSION}-assets`;

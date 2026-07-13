@@ -451,7 +451,7 @@ const NAV_CONFIG = {
     ]
   },
   de: {
-    homeLabel: "Startseite",
+    homeLabel: "Start",
     clusters: [
       {
         key: "visit",
@@ -480,7 +480,7 @@ const NAV_CONFIG = {
       },
       {
         key: "events",
-        label: "Veranstaltungen",
+        label: "Events",
         activePatterns: [
           "/veranstaltungen-",
           "/sommerveranstaltungen",
@@ -505,7 +505,7 @@ const NAV_CONFIG = {
       },
       {
         key: "lake",
-        label: "See und Umgebung",
+        label: "See & Umgebung",
         activePatterns: [
           "/bolsenasee",
           "/bolsena-",
@@ -528,7 +528,7 @@ const NAV_CONFIG = {
       },
       {
         key: "wine",
-        label: "Wein und Küche",
+        label: "Wein & Küche",
         activePatterns: [
           "/wein",
           "/est-est-est",
@@ -550,7 +550,7 @@ const NAV_CONFIG = {
       },
       {
         key: "practical",
-        label: "Praktische Infos",
+        label: "Infos",
         activePatterns: [
           "/anreise-",
           "/anreise-nach-",
@@ -568,6 +568,73 @@ const NAV_CONFIG = {
           { href: "/de/essen-in-montefiascone", label: "Essen", description: "Orientierung für Mahlzeiten" },
           { href: "/de/unterkunft-in-montefiascone", label: "Unterkunft", description: "Die passende Basis wählen" },
           { href: "/de/redaktionelles-projekt-montefiascone", label: "Redaktionelles Projekt", description: "Transparenz und Methode" }
+        ]
+      }
+    ]
+  },
+  fr: {
+    homeLabel: "Accueil",
+    clusters: [
+      {
+        key: "visit",
+        label: "Visiter",
+        activePatterns: [
+          "/que-voir",
+          "/carte",
+          "/guide",
+          "/via-francigena",
+          "/montefiascone-en-",
+          "/lac-de-bolsena"
+        ],
+        items: [
+          { href: "/fr/que-voir-montefiascone-guide-complet", label: "Que voir", description: "Guide complet du village" },
+          { href: "/fr/guide", label: "Guides", description: "Parcours par intention de visite" },
+          { href: "/fr/carte", label: "Carte", description: "Repères, dénivelés et points clés" },
+          { href: "/fr/lac-de-bolsena-que-voir", label: "Lac de Bolsena", description: "Que voir autour du lac" },
+          { href: "/fr/via-francigena-bolsena-montefiascone", label: "Via Francigena", description: "L'étape de Bolsena à Montefiascone" },
+          { href: "/fr/montefiascone-en-2-jours", label: "En 2 jours", description: "Base pour un week-end" }
+        ]
+      },
+      {
+        key: "events",
+        label: "Événements",
+        activePatterns: [
+          "/evenements",
+          "/festival",
+          "/fete-",
+          "/anno-domini",
+          "/giglio",
+          "/calendrier",
+          "/orchestre"
+        ],
+        items: [
+          { href: "/fr/evenements", label: "Hub des événements", description: "Orientation et repères" },
+          { href: "/fr/evenements-dete-a-montefiascone-2026", label: "Été 2026", description: "Programme saisonnier confirmé" },
+          { href: "/fr/evenements-traditions-foire-aux-vins-de-montefiascone", label: "Foire aux Vins", description: "Traditions et contexte historique" },
+          { href: "/fr/festival-atb-montefiascone", label: "ATB Festival", description: "Musique live au cœur de l'été" },
+          { href: "/fr/est-festival-du-film-de-montefiascone", label: "Est Film Festival", description: "Cinéma et rencontres au village" },
+          { href: "/fr/calendrier-des-evenements-de-montefiascone", label: "Calendrier", description: "Toutes les dates de l'année" }
+        ]
+      },
+      {
+        key: "wine",
+        label: "Vin et saveurs",
+        activePatterns: [
+          "/vin",
+          "/est-est-est",
+          "/degustation",
+          "/cuisine-typique",
+          "/produits-typiques",
+          "/strada-del-vino",
+          "/experiences-gastronomiques"
+        ],
+        items: [
+          { href: "/fr/est-est-est-montefiascone-vino-doc", label: "Est! Est!! Est!!!", description: "Le vin symbole de Montefiascone" },
+          { href: "/fr/vin", label: "Hub vin", description: "Orientation entre pages et caves" },
+          { href: "/fr/degustation-de-vin-de-montefiascone-comment-ca-marche", label: "Dégustations", description: "Comment fonctionne une visite" },
+          { href: "/fr/degustation-de-vignobles-de-montefiascone-est-est-est", label: "Caves", description: "Par où commencer les visites" },
+          { href: "/fr/cuisine-typique-de-montefiascone", label: "Cuisine typique", description: "Plats et accords locaux" },
+          { href: "/fr/produits-typiques-de-montefiascone-tuscia", label: "Produits locaux", description: "Saveurs de la Tuscia" }
         ]
       }
     ]
@@ -675,6 +742,40 @@ const CHROME_CONFIG = {
       ],
       meta:
         "Programme, Zug&auml;nge und &Ouml;ffnungszeiten sollten vor der Reise immer &uuml;ber offizielle Kan&auml;le gepr&uuml;ft werden."
+    }
+  },
+  fr: {
+    menuLabel: "Menu",
+    navAriaLabel: "Navigation principale",
+    langAriaLabel: "Version du site",
+    footer: {
+      introTitle: "I Love Montefiascone",
+      introCopy:
+        "Guide de voyage ind&eacute;pendant sur Montefiascone, le lac de Bolsena et la Tuscia.",
+      introNote:
+        "Ce portail n'est pas affili&eacute; &agrave; la municipalit&eacute; de Montefiascone.",
+      sections: [
+        {
+          title: "D&eacute;couvrir",
+          links: [
+            { href: "/fr/que-voir-montefiascone-guide-complet", label: "Que voir" },
+            { href: "/fr/evenements", label: "&Eacute;v&eacute;nements" },
+            { href: "/fr/lac-de-bolsena-que-voir", label: "Lac de Bolsena" },
+            { href: "/fr/vin", label: "Vin et saveurs" }
+          ]
+        },
+        {
+          title: "Infos pratiques",
+          links: [
+            { href: "/fr/carte", label: "Carte" },
+            { href: "/fr/guide", label: "Guides" },
+            { href: "/fr/montefiascone-en-2-jours", label: "En 2 jours" },
+            { href: "/fr/projet-editorial", label: "Projet &eacute;ditorial" }
+          ]
+        }
+      ],
+      meta:
+        "V&eacute;rifiez toujours les programmes, les acc&egrave;s et les horaires sur les canaux officiels avant votre visite."
     }
   }
 };
@@ -901,14 +1002,15 @@ function getLocaleLinks(currentLang) {
   const fallback = {
     it: "/",
     en: "/en/",
-    de: "/de/"
+    de: "/de/",
+    fr: "/fr/"
   };
 
   const links = { ...fallback };
 
   document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => {
     const hreflang = (link.getAttribute("hreflang") || "").toLowerCase();
-    if (!["it", "en", "de"].includes(hreflang)) return;
+    if (!["it", "en", "de", "fr"].includes(hreflang)) return;
     links[hreflang] = toRelativeUrl(link.getAttribute("href")) || fallback[hreflang];
   });
 
@@ -920,10 +1022,11 @@ function buildLanguageSwitcherMarkup(localeLinks, currentLang) {
   const langNames = {
     it: "Italiano",
     en: "English",
-    de: "Deutsch"
+    de: "Deutsch",
+    fr: "Français"
   };
 
-  const listItems = ["it", "en", "de"]
+  const listItems = ["it", "en", "de", "fr"]
     .map((lang) => {
       const label = langNames[lang];
       const href = localeLinks[lang] || getLocaleRoot(lang);
