@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cookie | I Love Montefiascone</title>
+    <title>Cookie policy | I Love Montefiascone</title>
     <meta
       name="description"
-      content="Informativa cookie minima del soft launch italiano di I Love Montefiascone.">
+      content="Cookie policy di I Love Montefiascone: cookie tecnici, Google Analytics 4 solo previo consenso, durata dei cookie e come cambiare la scelta.">
     <meta name="robots" content="noindex,follow">
     <link rel="canonical" href="https://www.ilovemontefiascone.com/cookie">
     <meta name="theme-color" content="#2C5E6D">
@@ -38,6 +38,9 @@
         <div class="header__actions">
           <div class="lang-switcher" aria-label="Versione del sito">
             <a class="is-current" href="/cookie" lang="it">IT</a>
+            <a href="/en/cookie-policy" lang="en">EN</a>
+            <a href="/de/cookie-richtlinie" lang="de">DE</a>
+            <a href="/fr/politique-cookies" lang="fr">FR</a>
           </div>
         </div>
       </div>
@@ -49,10 +52,10 @@
           <div class="page-hero__panel">
             <div class="page-hero__content">
               <p class="eyebrow eyebrow--light">Cookie</p>
-              <h1>Informativa cookie minima</h1>
+              <h1>Cookie policy</h1>
               <p>
-                Nel codice attualmente verificabile non risultano attivi cookie di profilazione o strumenti di analytics
-                caricati nelle pagine italiane previste per il soft launch.
+                Questa pagina elenca i cookie usati dal sito, la loro finalità e durata, e spiega come accettare,
+                rifiutare o cambiare la tua scelta in qualsiasi momento.
               </p>
             </div>
           </div>
@@ -62,18 +65,61 @@
       <section class="section">
         <div class="container content-stack">
           <section class="card">
-            <h2>Cookie e archiviazione locale</h2>
+            <h2>Le tue preferenze</h2>
+            <p>Puoi accettare o rifiutare i cookie analytics in qualsiasi momento con i pulsanti qui sotto:</p>
+            <p style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1rem;">
+              <button type="button" class="button" data-cookie-accept>Accetta</button>
+              <button type="button" class="button button--ghost" data-cookie-reject>Rifiuta</button>
+            </p>
+            <p style="margin-top:1rem;">
+              Se hai già fatto una scelta e vuoi cambiarla, usa il pulsante di reset:
+              <button type="button" class="button button--ghost" data-cookie-prefs>Reimposta le preferenze cookie</button>
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>Cookie tecnici necessari</h2>
             <p>
               Il portale non imposta cookie di profilazione o pubblicitari. Per il funzionamento usa solo componenti
-              tecnici: un service worker per la cache offline (se supportato dal browser) e il <code>sessionStorage</code>
-              per conservare temporaneamente il dato meteo della homepage.
+              tecnici, che non richiedono consenso perché indispensabili all'erogazione del servizio:
             </p>
+            <ul class="plain-list">
+              <li>un <strong>service worker</strong> per la cache offline (se supportato dal browser);</li>
+              <li><code>sessionStorage</code> per conservare temporaneamente il dato meteo della homepage
+                (durata: sessione di navigazione);</li>
+              <li><code>localStorage</code> per ricordare la tua scelta sul banner cookie (durata: fino a modifica
+                manuale o cancellazione dei dati del browser).</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Cookie analytics — Google Analytics 4 (solo previo consenso)</h2>
             <p>
-              Per le statistiche di visita usiamo <strong>Google Analytics 4</strong>, attivato solo previo consenso.
-              Al primo accesso compare un banner con scelta <em>Accetta</em> / <em>Rifiuta</em>: finché non si accetta,
-              lo script di Google non viene caricato e non viene impostato alcun cookie di analisi (Google Consent Mode v2,
-              impostazioni predefinite su &laquo;denied&raquo;). La scelta viene ricordata nel browser e puoi cambiarla
-              cancellando i dati del sito. Non usiamo cookie pubblicitari o di profilazione.
+              Usiamo <strong>Google Analytics 4</strong> per statistiche di visita anonime e aggregate. Questi cookie
+              vengono impostati <strong>esclusivamente dopo aver cliccato &laquo;Accetta&raquo;</strong>: prima del
+              consenso, nessuno script di Google viene caricato e nessun cookie di analisi viene creato (Google
+              Consent Mode v2, impostazioni predefinite su &laquo;negato&raquo;).
+            </p>
+            <table class="data-table">
+              <thead>
+                <tr><th>Cookie</th><th>Finalità</th><th>Durata indicativa</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>_ga</code></td><td>Distingue gli utenti in modo anonimo per le statistiche aggregate.</td><td>2 anni</td></tr>
+                <tr><td><code>_ga_8JYLVWD6P8</code></td><td>Mantiene lo stato della sessione di Google Analytics 4 per questa proprietà.</td><td>2 anni</td></tr>
+              </tbody>
+            </table>
+            <p>Per la base giuridica e il trasferimento dati verso Google vedi la <a href="/privacy">informativa privacy</a>.</p>
+          </section>
+
+          <section class="card">
+            <h2>Come cambiare o revocare la scelta</h2>
+            <p>
+              Puoi cambiare idea in qualsiasi momento: usa i pulsanti in cima a questa pagina, oppure il link
+              &laquo;Preferenze cookie&raquo; presente nel footer di ogni pagina del sito. Cliccando su
+              &laquo;Reimposta le preferenze cookie&raquo; la scelta salvata viene cancellata e la pagina si ricarica
+              mostrando di nuovo il banner, cosicché Google Analytics smette di ricevere nuovi dati finché non
+              accetti di nuovo.
             </p>
           </section>
 
@@ -84,8 +130,6 @@
               dati di connessione, incluso l'indirizzo IP:
             </p>
             <ul class="plain-list">
-              <li><strong>Google Analytics 4</strong> (<code>googletagmanager.com</code>, <code>google-analytics.com</code>):
-                statistiche di visita anonime, <strong>solo dopo il consenso</strong>. Imposta cookie <code>_ga</code>.</li>
               <li><strong>Google Fonts</strong> (<code>fonts.googleapis.com</code>, <code>fonts.gstatic.com</code>):
                 caratteri tipografici, su tutte le pagine.</li>
               <li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>): dati meteo sulla homepage.</li>
@@ -93,15 +137,6 @@
                 tile di <strong>OpenStreetMap</strong>, <strong>OpenTopoMap</strong> e <strong>ArcGIS</strong>.</li>
             </ul>
             <p>Per i dettagli si rimanda alle informative dei rispettivi servizi.</p>
-          </section>
-
-          <section class="card">
-            <h2>Cosa verificare prima del rilascio esteso</h2>
-            <ul class="plain-list">
-              <li>Presenza o meno di analytics lato hosting o tag manager.</li>
-              <li>Necessità di un banner cookie in caso di attivazione di strumenti di tracciamento.</li>
-              <li>Aggiornamento di privacy e cookie policy se cambiano i servizi di terze parti integrati.</li>
-            </ul>
           </section>
         </div>
       </section>
@@ -113,7 +148,7 @@
           <h2 class="footer__title">Trasparenza</h2>
           <div class="footer-list">
             <p><a href="/progetto-editoriale">Progetto editoriale</a></p>
-            <p><a href="/privacy" rel="nofollow">Privacy</a> &middot; <a href="/cookie" rel="nofollow">Cookie</a></p>
+            <p><a href="/privacy" rel="nofollow">Privacy</a> &middot; <a href="/cookie" rel="nofollow">Cookie policy</a> &middot; <a href="/cookie" rel="nofollow" data-cookie-prefs>Preferenze cookie</a></p>
             <p><strong>Crediti immagini</strong><br>
               <a href="/galleria">Galleria con crediti</a> &middot;
               <a href="https://www.instagram.com/david_petretti_ph_scattomatto/" target="_blank" rel="noopener">David Petretti</a> &middot;

@@ -5,10 +5,19 @@
  * - Google Consent Mode v2 defaults are set to "denied" in the page <head>
  *   (inline, before this script) so nothing is granted by default.
  * - This script does NOT load gtag.js and sends NOTHING to Google until the
- *   visitor explicitly clicks "Accept". No cookies, no network calls to Google
+ *   visitor explicitly accepts. No cookies, no network calls to Google
  *   before consent.
  * - The choice is stored in localStorage and reused on later visits.
  * - No third-party dependencies; served first-party from /js/ (CSP 'self').
+ *
+ * Public, site-wide controls (work on every page, no extra script needed):
+ * - any element with [data-cookie-accept]  -> grants consent, loads GA4
+ * - any element with [data-cookie-reject]  -> denies consent, keeps GA4 off
+ * - any element with [data-cookie-prefs]   -> clears the stored choice and
+ *   reloads the page so the banner (or an on-page choice) can be made again
+ * These attributes are used by the cookie banner itself, by the real
+ * Accept/Reject buttons on the cookie policy pages, and by the "Cookie
+ * preferences" links in every footer.
  */
 (function () {
   "use strict";
@@ -50,7 +59,15 @@
     }
   }
 
-  // --- Banner copy, language-aware (falls back to English) ---
+  function clearChoice() {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (e) {
+      /* nothing to clear */
+    }
+  }
+
+  // --- Banner / on-page copy, language-aware (falls back to English) ---
   var LANG = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
   var T = {
     it: {
@@ -66,7 +83,7 @@
       accept: "Accept",
       reject: "Decline",
       more: "Cookie policy",
-      moreHref: "/cookie",
+      moreHref: "/en/cookie-policy",
       label: "Cookie notice",
     },
     de: {
@@ -74,7 +91,7 @@
       accept: "Zustimmen",
       reject: "Ablehnen",
       more: "Cookie-Richtlinie",
-      moreHref: "/cookie",
+      moreHref: "/de/cookie-richtlinie",
       label: "Cookie-Hinweis",
     },
     fr: {
@@ -82,7 +99,7 @@
       accept: "Accepter",
       reject: "Refuser",
       more: "Politique cookies",
-      moreHref: "/cookie",
+      moreHref: "/fr/politique-cookies",
       label: "Avis sur les cookies",
     },
   };
@@ -107,7 +124,15 @@
     document.head.appendChild(st);
   }
 
+  var bannerEl = null;
+
+  function removeBanner() {
+    if (bannerEl && bannerEl.parentNode) bannerEl.parentNode.removeChild(bannerEl);
+    bannerEl = null;
+  }
+
   function showBanner() {
+    if (bannerEl) return;
     injectStyles();
     var bar = document.createElement("div");
     bar.className = "ilm-cc";
@@ -132,20 +157,13 @@
     reject.type = "button";
     reject.className = "ilm-cc__b ilm-cc__b--r";
     reject.textContent = t.reject;
-    reject.addEventListener("click", function () {
-      store("denied");
-      remove();
-    });
+    reject.setAttribute("data-cookie-reject", "");
 
     var accept = document.createElement("button");
     accept.type = "button";
     accept.className = "ilm-cc__b ilm-cc__b--a";
     accept.textContent = t.accept;
-    accept.addEventListener("click", function () {
-      store("granted");
-      remove();
-      loadGA();
-    });
+    accept.setAttribute("data-cookie-accept", "");
 
     btns.appendChild(reject);
     btns.appendChild(accept);
@@ -153,12 +171,50 @@
     inner.appendChild(btns);
     bar.appendChild(inner);
 
-    function remove() {
-      if (bar.parentNode) bar.parentNode.removeChild(bar);
-    }
-
     (document.body || document.documentElement).appendChild(bar);
+    bannerEl = bar;
   }
+
+  function accept() {
+    store("granted");
+    removeBanner();
+    loadGA();
+  }
+
+  function reject() {
+    store("denied");
+    removeBanner();
+  }
+
+  function openPreferences() {
+    // Reliable, simple revoke/change: clear the stored choice and reload.
+    // GA4 (if it was granted) stops receiving new hits once consent_storage
+    // reverts to its "denied" default on load, and the banner reappears so
+    // the visitor can make a fresh choice.
+    clearChoice();
+    location.reload();
+  }
+
+  // Expose a small public API so cookie-policy pages can wire real buttons.
+  window.ilmCookieConsent = { accept: accept, reject: reject, openPreferences: openPreferences };
+
+  // Site-wide delegated handler: works for the banner buttons above, for any
+  // real <button>/<a> with these data attributes on any page (policy pages,
+  // footers), without needing a per-page script.
+  document.addEventListener("click", function (event) {
+    var el = event.target.closest && event.target.closest("[data-cookie-accept],[data-cookie-reject],[data-cookie-prefs]");
+    if (!el) return;
+    if (el.hasAttribute("data-cookie-prefs")) {
+      event.preventDefault();
+      openPreferences();
+    } else if (el.hasAttribute("data-cookie-accept")) {
+      event.preventDefault();
+      accept();
+    } else if (el.hasAttribute("data-cookie-reject")) {
+      event.preventDefault();
+      reject();
+    }
+  });
 
   var choice = readChoice();
   if (choice === "granted") {
