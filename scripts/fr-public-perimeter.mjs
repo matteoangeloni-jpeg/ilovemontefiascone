@@ -35,6 +35,9 @@ export const FR_PUBLIC_FILES = [
   // Pagine singole verificate
   "giglio-vecchio-montefiascone.html",
   "projet-editorial.html",
+  // Pagine legali (privacy/cookie), necessarie per il consenso GA4
+  "politique-de-confidentialite.html",
+  "politique-cookies.html",
 ];
 
 // Path pubblici (clean URL) corrispondenti, es. "/fr/" e "/fr/vin"
