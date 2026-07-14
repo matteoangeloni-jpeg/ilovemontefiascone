@@ -69,8 +69,11 @@
               per conservare temporaneamente il dato meteo della homepage.
             </p>
             <p>
-              Nel codice pubblicato per il soft launch italiano non risultano attivi analytics, tag manager o pixel di
-              tracciamento.
+              Per le statistiche di visita usiamo <strong>Google Analytics 4</strong>, attivato solo previo consenso.
+              Al primo accesso compare un banner con scelta <em>Accetta</em> / <em>Rifiuta</em>: finché non si accetta,
+              lo script di Google non viene caricato e non viene impostato alcun cookie di analisi (Google Consent Mode v2,
+              impostazioni predefinite su &laquo;denied&raquo;). La scelta viene ricordata nel browser e puoi cambiarla
+              cancellando i dati del sito. Non usiamo cookie pubblicitari o di profilazione.
             </p>
           </section>
 
@@ -81,6 +84,8 @@
               dati di connessione, incluso l'indirizzo IP:
             </p>
             <ul class="plain-list">
+              <li><strong>Google Analytics 4</strong> (<code>googletagmanager.com</code>, <code>google-analytics.com</code>):
+                statistiche di visita anonime, <strong>solo dopo il consenso</strong>. Imposta cookie <code>_ga</code>.</li>
               <li><strong>Google Fonts</strong> (<code>fonts.googleapis.com</code>, <code>fonts.gstatic.com</code>):
                 caratteri tipografici, su tutte le pagine.</li>
               <li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>): dati meteo sulla homepage.</li>
