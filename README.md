@@ -123,7 +123,7 @@ Completato in preparazione del soft launch IT:
 
 Da completare prima/dopo il go-live:
 
-- [ ] indicare in `progetto-editoriale.html` il responsabile editoriale (TODO ancora aperto, da non inventare);
+- [x] indicare in `progetto-editoriale.html` il responsabile editoriale con profilo autore e contatto verificati;
 - [ ] confermare le date evento JSON-LD (`cronoscalata`, `eventi-tradizioni`) con i canali ufficiali e aggiornarle dopo lo svolgimento;
 - [ ] in `Settings > Pages` impostare la source su **GitHub Actions** (non "Deploy from a branch"): solo `dist-it/` deve andare online;
 - [ ] rigenerare `dist-it/` a ogni release ed evitare la pubblicazione di `en/` e `de/`;

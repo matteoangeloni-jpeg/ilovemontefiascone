@@ -36,6 +36,11 @@
   "@graph": [
     {
       "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Matteo Angeloni",
+        "url": "https://www.ilovemontefiascone.com/de/redaktionelles-projekt-montefiascone"
+      },
       "datePublished": "2026-06-19",
       "dateModified": "2026-06-26",
       "author": {
@@ -102,42 +107,69 @@
   <body>
     <a class="skip-link" href="#content">Zum Inhalt springen</a>
     <header class="site-header">
-      <div class="container nav-shell">
-        <a class="brand" href="/de/">Montefiascone</a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>Menü</button>
-        <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation" data-nav>
-          <a href="/de/">Startseite</a>
-          <a href="/de/sehenswuerdigkeiten-montefiascone">Sehenswürdigkeiten</a>
-          <a href="/de/bolsenasee">Bolsenasee</a>
-          <a href="/de/montefiascone-wein-guide">Wein</a>
-          <a href="/de/anreise-nach-montefiascone">Anreise</a>
-          <a href="/de/unterkunft-in-montefiascone">Unterkunft</a>
-        </nav>
-        <div class="header__actions">
-          <div class="lang-switcher" aria-label="Website-Version">
-            <a href="/montefiascone-in-2-giorni" lang="it">IT</a>
-            <a href="/en/montefiascone-in-two-days" lang="en">EN</a>
-            <a class="is-current" href="/de/montefiascone-in-zwei-tagen" lang="de">DE</a>
-            <a href="/fr/montefiascone-en-2-jours" lang="fr">FR</a>
-          </div>
-        </div>
-      </div>
-    </header>
+<div class="container header__inner">
+<a class="brand" href="/de/">Montefiascone</a>
+<button aria-controls="primary-navigation" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">Menü</button>
+<nav aria-label="Hauptnavigation" class="site-nav" data-nav="" id="primary-navigation">
+<ul>
+<li><a href="/de/">Startseite</a></li>
+<li><a href="/de/sehenswuerdigkeiten-montefiascone">Sehenswürdigkeiten</a></li>
+<li><a href="/de/reisefuehrer-montefiascone">Reiseführer</a></li>
+<li><a href="/de/veranstaltungen-montefiascone">Veranstaltungen</a></li>
+<li><a href="/de/montefiascone-wein-guide">Wein</a></li>
+<li><a href="/de/galerie-montefiascone">Galerie</a></li>
+<li><a href="/de/karte-montefiascone">Karte</a></li>
+<li><a href="/de/vereine-ehrenamt-montefiascone">Vereine</a></li>
+</ul>
+</nav>
+<div class="header__actions">
+<div aria-label="Sprache der Website" class="lang-switcher"><a href="/montefiascone-in-2-giorni" lang="it">IT</a><a href="/en/montefiascone-in-two-days" lang="en">EN</a><a class="is-current" href="/de/montefiascone-in-zwei-tagen" lang="de">DE</a></div>
+</div>
+</div>
+</header>
     <main id="content">
-      <section class="hero hero--subpage">
-        <picture>
+      <section class="detail-hero">
+<div class="container detail-hero__grid">
+<article class="detail-hero__panel">
+<div class="detail-hero__media">
+<picture>
           <source srcset="/media/hero-rocca-dei-papi-1600.webp" type="image/webp">
           <img fetchpriority="high" src="/media/hero-rocca-dei-papi-1600.jpg" width="1600" height="900" alt="Montefiascone mit Blick auf den Bolsenasee" decoding="async">
         </picture>
-        <div class="hero__content container">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/de/">Startseite</a><span aria-hidden="true">/</span><span>Montefiascone in zwei Tagen</span>
-          </nav>
-          <p class="eyebrow">Deutscher Reiseführer</p>
-          <h1>Montefiascone in zwei Tagen</h1>
-          <p>Zwei Tage in Montefiascone sind genug, um den Ort nicht nur zu sehen, sondern als Basis zu erleben. Altstadt, Höhe, Wein und Bolsenasee lassen sich so verbinden, dass ein Wochenende nicht aus Eile, sondern aus guter Reihenfolge entsteht.</p>
-        </div>
-      </section>
+</div>
+<div class="detail-hero__content">
+<nav aria-label="Breadcrumb">
+<ol class="breadcrumb">
+<li><a href="/de/">Startseite</a></li>
+<li>Montefiascone in zwei Tagen</li>
+</ol>
+</nav>
+<p class="eyebrow eyebrow--light">Deutscher Reiseführer</p>
+<h1>Montefiascone in zwei Tagen</h1>
+<p>
+                Zwei Tage in Montefiascone sind genug, um den Ort nicht nur zu sehen, sondern als Basis zu erleben. Altstadt, Höhe, Wein und Bolsenasee lassen sich so verbinden, dass ein Wochenende nicht aus Eile, sondern aus guter Reihenfolge entsteht.
+              </p>
+</div>
+</article>
+<aside class="card">
+<h2 class="card__eyebrow">Auf einen Blick</h2>
+<dl class="summary-list">
+<div>
+<dt>Wo</dt>
+<dd>Tuscia, nördliches Latium</dd>
+</div>
+<div>
+<dt>Lage</dt>
+<dd>Kleinstadt hoch über dem Bolsenasee</dd>
+</div>
+<div>
+<dt>Gut für</dt>
+<dd>Zeitplanung und Routen</dd>
+</div>
+</dl>
+</aside>
+</div>
+</section>
       <section class="section">
         <div class="container section-grid">
           <article class="card content-card">
@@ -197,18 +229,35 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div class="container footer__inner">
-        <section class="contact-card">
-          <h2 class="footer__title">I Love Montefiascone</h2>
-          <p>Unabhängiger redaktioneller Reiseführer. Nicht die offizielle Website der Gemeinde Montefiascone.</p>
-        </section>
-        <section class="contact-card">
-          <h2 class="footer__title">Planung</h2>
-          <p><a href="/de/reisefuehrer-montefiascone">Reiseführer</a></p>
-          <p><a href="/de/anreise-nach-montefiascone">Anreise</a></p>
-        </section>
-      </div>
-    </footer>
-    <script src="/js/main.js" defer></script>
-  </body>
+<div class="container footer__inner">
+<section class="contact-card">
+<h2 class="footer__title">Touristisches Informationsbüro</h2>
+<div class="footer-list">
+<p>Largo del Plebiscito, 1 · Montefiascone (VT)</p>
+<p>Tel: <a href="tel:+390761832060">0761 832060</a></p>
+<p>Unabhängiges redaktionelles Projekt: Diese Website ist nicht mit der Gemeinde Montefiascone verbunden.</p>
+</div>
+</section>
+<section class="contact-card">
+<h2 class="footer__title">Schnellzugriff</h2>
+<div class="footer-list">
+<p><a href="/de/">Startseite</a></p>
+<p><a href="/de/sehenswuerdigkeiten-montefiascone">Sehenswürdigkeiten</a></p>
+<p><a href="/de/bolsenasee">Bolsenasee</a></p>
+<p><a href="/de/karte-montefiascone">Karte</a></p>
+</div>
+</section>
+<section class="contact-card" data-trust-footer="">
+<h2 class="footer__title">Redaktioneller Hinweis</h2>
+<div class="footer-list">
+<p><a href="/de/redaktionelles-projekt-montefiascone">Redaktionelles Projekt</a></p>
+<p><a href="/privacy" rel="nofollow">Datenschutz</a> · <a href="/cookie" rel="nofollow">Cookie</a></p>
+<p>Unabhängiger Reiseführer. Er ersetzt keine offiziellen Öffnungs-, Wetter- oder Veranstaltungsinformationen.</p>
+</div>
+</section>
+</div>
+</footer>
+    <script defer="" src="/js/main.js?v=2026-06-19-lcp"></script>
+<script defer="" src="/pwa-boot.js?v=2026-06-14-itlaunch"></script>
+</body>
 </html>

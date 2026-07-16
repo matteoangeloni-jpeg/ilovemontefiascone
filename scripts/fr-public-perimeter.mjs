@@ -22,6 +22,8 @@ export const FR_PUBLIC_FILES = [
   "festival-decologie-integrale-de-montefiascone.html",
   "anno-domini-1074-montefiascone.html",
   "fete-de-santa-margherita-montefiascone.html",
+  "panoramas-du-festival-de-montefiascone.html",
+  "orchestre-dharmonie-rb-revue-montefiascone.html",
   // Cluster 3 — vino
   "vin.html",
   "est-est-est-montefiascone-vino-doc.html",
@@ -34,6 +36,7 @@ export const FR_PUBLIC_FILES = [
   "experiences-gastronomiques-et-nologiques-a-montefiascone.html",
   // Pagine singole verificate
   "giglio-vecchio-montefiascone.html",
+  "a-propos-matteo-angeloni.html",
   "projet-editorial.html",
 ];
 

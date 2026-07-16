@@ -8,19 +8,19 @@ const root = resolve(scriptDir, "..");
 const AUTHOR_NAME = "Matteo Angeloni";
 
 const files = [
-  { path: "basilica-san-flaviano-montefiascone.html", url: "https://www.ilovemontefiascone.com/progetto-editoriale" },
-  { path: "caprarola-palazzo-farnese-da-montefiascone.html", url: "https://www.ilovemontefiascone.com/progetto-editoriale" },
-  { path: "cattedrale-santa-margherita-montefiascone.html", url: "https://www.ilovemontefiascone.com/progetto-editoriale" },
-  { path: "cosa-vedere.html", url: "https://www.ilovemontefiascone.com/progetto-editoriale" },
-  { path: "rocca-dei-papi-montefiascone.html", url: "https://www.ilovemontefiascone.com/progetto-editoriale" },
-  { path: "villa-lante-bagnaia-da-montefiascone.html", url: "https://www.ilovemontefiascone.com/progetto-editoriale" },
-  { path: "en/rocca-dei-papi-montefiascone.html", url: "https://www.ilovemontefiascone.com/en/editorial-project-montefiascone" },
-  { path: "en/what-to-see-montefiascone.html", url: "https://www.ilovemontefiascone.com/en/editorial-project-montefiascone" },
-  { path: "en/things-to-see-montefiascone.html", url: "https://www.ilovemontefiascone.com/en/editorial-project-montefiascone" },
-  { path: "de/basilika-san-flaviano-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/redaktionelles-projekt-montefiascone" },
-  { path: "de/kathedrale-santa-margherita-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/redaktionelles-projekt-montefiascone" },
-  { path: "de/rocca-dei-papi-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/redaktionelles-projekt-montefiascone" },
-  { path: "de/was-sehen-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/redaktionelles-projekt-montefiascone" },
+  { path: "basilica-san-flaviano-montefiascone.html", url: "https://www.ilovemontefiascone.com/about-matteo-angeloni" },
+  { path: "caprarola-palazzo-farnese-da-montefiascone.html", url: "https://www.ilovemontefiascone.com/about-matteo-angeloni" },
+  { path: "cattedrale-santa-margherita-montefiascone.html", url: "https://www.ilovemontefiascone.com/about-matteo-angeloni" },
+  { path: "cosa-vedere.html", url: "https://www.ilovemontefiascone.com/about-matteo-angeloni" },
+  { path: "rocca-dei-papi-montefiascone.html", url: "https://www.ilovemontefiascone.com/about-matteo-angeloni" },
+  { path: "villa-lante-bagnaia-da-montefiascone.html", url: "https://www.ilovemontefiascone.com/about-matteo-angeloni" },
+  { path: "en/rocca-dei-papi-montefiascone.html", url: "https://www.ilovemontefiascone.com/en/about-matteo-angeloni" },
+  { path: "en/what-to-see-montefiascone.html", url: "https://www.ilovemontefiascone.com/en/about-matteo-angeloni" },
+  { path: "en/things-to-see-montefiascone.html", url: "https://www.ilovemontefiascone.com/en/about-matteo-angeloni" },
+  { path: "de/basilika-san-flaviano-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/ueber-matteo-angeloni" },
+  { path: "de/kathedrale-santa-margherita-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/ueber-matteo-angeloni" },
+  { path: "de/rocca-dei-papi-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/ueber-matteo-angeloni" },
+  { path: "de/was-sehen-montefiascone.html", url: "https://www.ilovemontefiascone.com/de/ueber-matteo-angeloni" },
 ];
 
 let fixed = 0;
