@@ -4,8 +4,8 @@
 ## Site Identity
 - Canonical domain: https://www.ilovemontefiascone.com/
 - Public languages: Italian, English, German, French (partial relaunch).
-- Public perimeter: 98 IT / 98 EN / 98 DE / 26 FR.
-- Public perimeter updated: 2026-07-08.
+- Public perimeter: 99 IT / 99 EN / 99 DE / 29 FR.
+- Public perimeter updated: 2026-07-18.
 
 ## Main Topics
 - Montefiascone and Lake Bolsena.
@@ -65,6 +65,7 @@
 - [Grotte di Castro | Borgo del Lago di Bolsena](https://www.ilovemontefiascone.com/grotte-di-castro-cosa-vedere-lago-di-bolsena)
 - [Guide Montefiascone | Itinerari e idee di visita](https://www.ilovemontefiascone.com/guide)
 - [I Love Montefiascone | Guida turistica sul Lago di Bolsena](https://www.ilovemontefiascone.com/)
+- [Chi è Matteo Angeloni | Autore, ricercatore e curatore editoriale](https://www.ilovemontefiascone.com/about-matteo-angeloni)
 - [Informazioni turistiche Montefiascone | Guida utile](https://www.ilovemontefiascone.com/informazioni-turistiche-montefiascone)
 - [Itinerario in auto al Lago di Bolsena](https://www.ilovemontefiascone.com/itinerario-auto-lago-di-bolsena)
 - [Itinerario fotografico Montefiascone | Spot e luce](https://www.ilovemontefiascone.com/itinerario-fotografico-montefiascone)
@@ -151,6 +152,7 @@
 - [How to Reach Montefiascone from Viterbo](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone-from-viterbo)
 - [How Wine Tasting Works in Montefiascone](https://www.ilovemontefiascone.com/en/how-wine-tasting-works-montefiascone)
 - [Montefiascone Travel Guide | Lake Bolsena, Wine &amp; Tuscia](https://www.ilovemontefiascone.com/en/)
+- [About Matteo Angeloni | Author, researcher and editorial curator](https://www.ilovemontefiascone.com/en/about-matteo-angeloni)
 - [Integral Ecology Festival Montefiascone](https://www.ilovemontefiascone.com/en/integral-ecology-festival-montefiascone)
 - [Lake Bolsena | Things to Do &amp; Villages](https://www.ilovemontefiascone.com/en/lake-bolsena)
 - [Lake Bolsena Beaches | Where to Swim](https://www.ilovemontefiascone.com/en/lake-bolsena-beaches)
@@ -260,6 +262,7 @@
 - [Gradoli am Bolsenasee | Was sehen](https://www.ilovemontefiascone.com/de/gradoli-bolsenasee-sehenswuerdigkeiten)
 - [Grotte di Castro am Bolsenasee | Reiseführer](https://www.ilovemontefiascone.com/de/grotte-di-castro-bolsenasee-sehenswuerdigkeiten)
 - [Montefiascone am Bolsenasee | Reiseführer](https://www.ilovemontefiascone.com/de/)
+- [Über Matteo Angeloni | Autor, Forscher und redaktioneller Kurator](https://www.ilovemontefiascone.com/de/ueber-matteo-angeloni)
 - [Karte von Montefiascone](https://www.ilovemontefiascone.com/de/karte-montefiascone)
 - [Kathedrale Santa Margherita](https://www.ilovemontefiascone.com/de/kathedrale-santa-margherita-montefiascone)
 - [Kleine Kirchen und historische Monumente in Montefiascone](https://www.ilovemontefiascone.com/de/kleine-kirchen-historische-monumente-montefiascone)
@@ -316,6 +319,7 @@
 
 ## French Public Pages
 - [Montefiascone : guide du village, lac de Bolsena et vin](https://www.ilovemontefiascone.com/fr/)
+- [À propos de Matteo Angeloni | Auteur, chercheur et curateur éditorial](https://www.ilovemontefiascone.com/fr/a-propos-matteo-angeloni)
 - [A.D. 1074 à Montefiascone | Fête médiévale 2026](https://www.ilovemontefiascone.com/fr/anno-domini-1074-montefiascone)
 - [Calendrier des événements de Montefiascone | Qu'y a-t-il](https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone)
 - [Carte de Montefiascone | Lac, centre et Francigena](https://www.ilovemontefiascone.com/fr/carte)

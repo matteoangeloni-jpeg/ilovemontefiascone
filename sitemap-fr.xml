@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com" />
@@ -79,7 +79,7 @@
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/evenements</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/eventi" />
@@ -101,7 +101,7 @@
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/eventi-estate-montefiascone-2026" />
@@ -181,12 +181,22 @@
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/vino" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/montefiascone-wine-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/montefiascone-wein-guide" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ilovemontefiascone.com/fr/vin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/vino" />
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/est-est-est-montefiascone-doc-wine" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/est-est-est-wein-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ilovemontefiascone.com/fr/est-est-est-montefiascone-vino-doc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/est-est-est-montefiascone-vino-doc" />
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/degustation-de-vin-de-montefiascone-comment-ca-marche</loc>
@@ -267,7 +277,7 @@
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/projet-editorial</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/progetto-editoriale" />
@@ -278,7 +288,7 @@
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/panoramas-du-festival-de-montefiascone</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/panorami-festival-montefiascone" />
@@ -289,7 +299,7 @@
   </url>
   <url>
     <loc>https://www.ilovemontefiascone.com/fr/orchestre-dharmonie-rb-revue-montefiascone</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/concerto-banda-rb-revue-montefiascone" />
@@ -297,5 +307,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/banda-rb-revue-konzert-montefiascone" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.ilovemontefiascone.com/fr/orchestre-dharmonie-rb-revue-montefiascone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/concerto-banda-rb-revue-montefiascone" />
+  </url>
+  <url>
+    <loc>https://www.ilovemontefiascone.com/fr/a-propos-matteo-angeloni</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/about-matteo-angeloni" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/about-matteo-angeloni" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/ueber-matteo-angeloni" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ilovemontefiascone.com/fr/a-propos-matteo-angeloni" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/about-matteo-angeloni" />
   </url>
 </urlset>
