@@ -7,14 +7,14 @@ This roadmap is adapted from the standard 4-phase SEO-plan template, but reflect
 
 Nothing in this phase is content work. The goal is to stop flying blind and close small residual debt before scaling FR publication.
 
-1. **Connect Google Search Console and GA4** for all indexable properties (or confirm they are already connected and pull a first real baseline — this plan currently has zero traffic/ranking data). Use the `seo-google` skill once credentials are available.
-2. **Run a backlink baseline** via `seo-backlinks` (free tier: Moz, Bing Webmaster, Common Crawl) to know the real domain-authority gap flagged in the IT competitor analysis.
+1. ~~Connect Google Search Console and GA4~~ **Done 2026-07-22.** A service account (`~/.config/claude-seo/`) was already provisioned with `siteFullUser` access on `sc-domain:ilovemontefiascone.com`; 90-day baseline pulled (516 clicks / 12,737 impressions site-wide, broken down by language — see SEO-STRATEGY.md §4 update). GA4 not yet checked — same credential file may cover it (`ga4_property_id` field in `google-api.json`); verify and pull a GA4 baseline next.
+2. ~~Run a backlink baseline~~ **Done 2026-07-22** via `seo-backlinks` (Common Crawl): domain has essentially zero external backlink profile — see SEO-STRATEGY.md §4.
 3. **Submit updated sitemaps** to GSC for all four locales, and explicitly request indexing for the pages published in this engagement (FR `panoramas-du-festival-de-montefiascone`, `orchestre-dharmonie-rb-revue-montefiascone`, the four author bio pages, and the four new DE pages added in `ca7ac83`).
 4. **Resolve `css/de-premium.css`**: either wire it into the DE templates it was written for, or delete it. Zero SEO impact either way, but it's a 5-minute decision sitting open.
 5. **Confirm `de/sitemap.xml` vs `sitemap-de.xml`**: the two files are near-duplicates and `de/sitemap.xml` is not referenced from the sitemap index. Verify `robots.txt` doesn't also declare it as a second `Sitemap:` entry (which would create duplicate discovery paths); if it's a pure build artifact with no external reference, leave it — if referenced, deduplicate.
 6. **Baseline the AI-citation metric**: manually spot-check "Montefiascone" and "Lake Bolsena" (+ FR/DE equivalents) in Google AI Overviews, ChatGPT, and Perplexity to establish a starting point before `llms.txt`'s effect can be measured.
 
-Gate to exit Phase 1: GSC/GA4 baseline captured for at least IT and EN (the two highest-traffic-potential languages); backlink baseline captured; the two cleanup items resolved.
+Gate to exit Phase 1: GSC/GA4 baseline captured for at least IT and EN (the two highest-traffic-potential languages); backlink baseline captured; the two cleanup items resolved. **GSC baseline, backlink baseline, and both cleanup items done 2026-07-22 (commits `5874c8b`, plus this baseline pull). Remaining: GA4 verification, sitemap resubmission (item 3), AI-citation baseline (item 6).**
 
 ## Phase 2 — FR Expansion, Wave 1 (Weeks 5–12)
 
