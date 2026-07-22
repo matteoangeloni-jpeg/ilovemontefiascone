@@ -28,7 +28,14 @@ Executes `CONTENT-CALENDAR.md` Months 1–3: FR clusters 5a (Lake Bolsena, 26 ca
 
 - Finish FR clusters 5c (Via Francigena) and 5d remainder per the content calendar.
 - Ship FR nav parity (`NAV_CONFIG` fr block) once cluster 5a+5b give it real content to point to.
-- **Outreach**: `viefrancigene.org/fr` is a confirmed, on-topic, non-competing site (official pilgrimage-route portal, not a destination guide) — a natural first backlink/partnership target for the FR market specifically. Pursue it once the Via Francigena FR cluster (5c) is live, so there's a genuinely relevant page to link to.
+- **Outreach — candidate list confirmed 2026-07-22.** Given the ~0 backlink finding, this should start as soon as Phase 1 cleanup is done, not wait for Phase 3. Verified live and relevant (spot-checked via WebFetch):
+  - `visitbolsena.it` — Comune di Bolsena-affiliated tourism portal (official tax ID in footer), has an "Esplora i dintorni" section that could reasonably link to Montefiascone.
+  - `tusciaturismo.com` — active regional tourism portal, covers Lake Bolsena (Marta, Isola Bisentina) extensively but has **no visible Montefiascone content** — a genuine content gap to pitch, not just a link swap.
+  - `lakebolsena.it` (Consorzio Turistico Lago di Bolsena) and `lagodibolsena.net` — lake-focused portals, not yet individually verified; check before contacting.
+  - `prolocomontefiascone.it` (Pro Loco Montefiascone, organizes the Foire du Vin the site already covers) and `comune.montefiascone.vt.it` — most locally relevant, but the Pro Loco site didn't render enough content in an automated check to confirm activity; verify manually before reaching out.
+  - `tusciatimes.eu` — local news outlet; a press-style pitch (not a link swap) fits better here, timed to a seasonal publish like the Estate calendar.
+  - `viefrancigene.org/fr` — official pilgrimage-route portal, on-topic, non-competing; pursue once the Via Francigena FR cluster (5c) is live, so there's a genuinely relevant page to link to.
+  Approach: pitch a mention in their "link utili"/"dintorni" section, leading with the site's depth (multi-language, dated event calendar, structured content) as the differentiator. Draft outreach copy before contacting anyone.
 - Begin the DE depth pass against `bolsenasee-info.de` (one cluster per quarter, per the content calendar) — start this only after FR wave 1 is fully shipped, not in parallel, to avoid splitting focus on the highest-leverage work.
 - Start the GEO/AI-citation tracking loop (`seo-geo`) now that a Phase-1 baseline exists — measure movement, not just presence.
 
