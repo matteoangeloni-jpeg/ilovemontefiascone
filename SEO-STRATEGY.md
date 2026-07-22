@@ -32,10 +32,16 @@ The strategic picture is unusual for a plan of this type: **most of "Phase 1: Fo
 | DE | Medium — one strong dedicated niche portal (`bolsenasee-info.de`) sets the bar for local depth | Site now has page-count parity (99) with IT/EN; must close a *depth* gap, not a *coverage* gap |
 | FR | Lowest — no dedicated French guide found in SERP research | **Highest relative opportunity per page published**, but only 29/98 pages are live — opportunity is gated by the roadmap, not by competition |
 
+### Update 2026-07-22: the backlink baseline is in, and it changes the risk picture
+
+A free-tier `seo-backlinks` pass found that **Common Crawl has never fetched a single page of this domain, in any snapshot from CC-MAIN-2024-18 through CC-MAIN-2026-25** — roughly two years of the web's largest open crawl index. This is an indirect signal (absence of evidence, not a direct backlink count — Moz and Bing Webmaster Tools both require account access this session doesn't have), but it is a strong one: it means the domain is very likely operating with **an essentially nonexistent external link profile**, not just a smaller one than IT competitors like siviaggia.it.
+
+This matters for the "organic #1" goal directly: content depth and technical cleanliness (both genuinely strong here, see §3 and the 89/100 audit score) can win long-tail, low-competition queries — which is exactly why FR and EN are flagged as the best near-term opportunities above. But for competitive head-terms in the IT market especially, **zero backlinks is very likely the binding constraint**, not content quality. No amount of further on-page work fixes this; only outreach/backlink acquisition does. This is reflected in the KPI table (§5) and elevates backlink outreach from a "Phase 3 nice-to-have" to something worth starting to scope in parallel once Phase 1's cleanup items are done, even though FR content expansion remains the single highest-leverage *content* lever (see Pillar 1 below).
+
 ## 4. Strategic Pillars (12 months)
 
-1. **Finish FR to full parity** — execute `docs/fr-parity-roadmap.md` clusters 5a–5e (Lake Bolsena, logistics, Via Francigena, minor events, surroundings) to take the public perimeter from 29 → 98 pages. This is the single highest-leverage lever available: it is publishing into a market with essentially no dedicated competitor.
-2. **Close the measurement gap.** No GSC/GA4/backlink data has been used in any audit to date. Without a real baseline, "organic #1" cannot be verified or steered. This is Phase 1, non-negotiable.
+1. **Finish FR to full parity** — execute `docs/fr-parity-roadmap.md` clusters 5a–5e (Lake Bolsena, logistics, Via Francigena, minor events, surroundings) to take the public perimeter from 29 → 98 pages. This is the single highest-leverage *content* lever available: it is publishing into a market with essentially no dedicated competitor. **Correction from a 2026-07-22 QA pass:** the ~26 lake-cluster (5a) source pages are not lightly-flawed drafts awaiting a quick promotion pass — several checked in depth had entire sections (H1, hero paragraph, full FAQ) left in Italian behind French metadata/chrome, and internal links pointing to Italian-language pages instead of French ones. Treat every 5a–5e page as a **full rewrite from the Italian source**, comparable in effort to the wine/cuisine/event pages already completed in this engagement — not a find-and-replace QA pass. Pace accordingly; do not batch-promote without the same per-page scrutiny already proven to work.
+2. **Close the measurement gap.** No GSC/GA4 data has been used in any audit to date (the backlink half of this gap is now closed — see the update above). Without a traffic/ranking baseline, "organic #1" cannot be verified or steered. This is Phase 1, non-negotiable.
 3. **Defend and extend DE depth** against `bolsenasee-info.de` — page count parity is achieved; the next win is content depth per page (see CONTENT-CALENDAR.md).
 4. **Exploit the EN gap** — the weakest competitive field of the four languages; a moderate content push here has a disproportionately good effort/reward ratio.
 5. **Consolidate the technical/E-E-A-T foundation that already exists** into a monitored, non-regressing baseline (schema coverage, hreflang reciprocity, sitemap accuracy) rather than re-auditing it from scratch each cycle — use `seo-drift` baselining going forward.
@@ -55,7 +61,7 @@ Traffic and ranking-position baselines are **not available** in this plan (no GS
 | Organic sessions (IT/EN/DE/FR) | Unknown — TBD after GSC connection | baseline set | +X% vs 3mo baseline | +X% vs 3mo baseline |
 | Top-10 rankings for "Montefiascone" + variants (per language) | Unknown — TBD after GSC connection | baseline set | tracked | tracked |
 | AI citation frequency (Overviews/ChatGPT/Perplexity) | Untracked | manual spot-check baseline | tracked via seo-geo | tracked via seo-geo |
-| Referring domains (backlinks) | Unknown — no backlink audit run | baseline via `seo-backlinks` | +outreach to viefrancigene.org-type sites | tracked growth |
+| Referring domains (backlinks) | **~0 — Common Crawl has never fetched this domain in any snapshot from CC-MAIN-2024-18 through CC-MAIN-2026-25** (checked 2026-07-22; indirect but strong signal of an essentially nonexistent external link profile). Moz/Bing require accounts, not checked. | first confirmed backlinks (outreach) | +outreach to viefrancigene.org-type sites | tracked growth |
 
 ## 6. Related Documents
 

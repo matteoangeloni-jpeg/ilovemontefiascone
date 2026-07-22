@@ -18,7 +18,7 @@ Gate to exit Phase 1: GSC/GA4 baseline captured for at least IT and EN (the two 
 
 ## Phase 2 — FR Expansion, Wave 1 (Weeks 5–12)
 
-Executes `CONTENT-CALENDAR.md` Months 1–3: FR clusters 5a (Lake Bolsena, ~20 pages) and 5b (logistics). This is the highest-leverage work in the entire plan — publishing into a market with zero dedicated competition, per `COMPETITOR-ANALYSIS.md`.
+Executes `CONTENT-CALENDAR.md` Months 1–3: FR clusters 5a (Lake Bolsena, 26 candidate pages) and 5b (logistics). This is the highest-leverage work in the entire plan — publishing into a market with zero dedicated competition, per `COMPETITOR-ANALYSIS.md`. **Pace warning (2026-07-22):** a full-content severity check found every 5a source page needs a genuine rewrite, not light editing — see `CONTENT-CALENDAR.md`. "Weeks 5–12" is a ceiling for a dedicated effort, not an estimate that 26 pages fall out of a quick QA pass; do not compress the timeline by lowering the per-page bar.
 
 - Each page follows the existing gate: French QA → parity ≥0.9 → author + FAQ → `FR_PUBLIC_FILES` → sitemap/llms.txt regeneration (already a working, proven process from this engagement — do not redesign it).
 - After each cluster ships, request indexing in GSC (now connected per Phase 1) rather than waiting for organic discovery.
