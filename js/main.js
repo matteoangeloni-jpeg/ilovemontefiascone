@@ -672,6 +672,14 @@ const CHROME_CONFIG = {
           ]
         }
       ],
+      legal: {
+        title: "Trasparenza",
+        links: [
+          { href: "/privacy", label: "Privacy", rel: "nofollow" },
+          { href: "/cookie", label: "Cookie policy", rel: "nofollow" },
+          { href: "/cookie", label: "Preferenze cookie", rel: "nofollow", cookiePrefs: true }
+        ]
+      },
       meta:
         "Verifica sempre programmi, accessi e orari sui canali ufficiali prima della visita."
     }
@@ -706,6 +714,14 @@ const CHROME_CONFIG = {
           ]
         }
       ],
+      legal: {
+        title: "Transparency",
+        links: [
+          { href: "/en/privacy-policy", label: "Privacy Policy", rel: "nofollow" },
+          { href: "/en/cookie-policy", label: "Cookie Policy", rel: "nofollow" },
+          { href: "/en/cookie-policy", label: "Cookie preferences", rel: "nofollow", cookiePrefs: true }
+        ]
+      },
       meta:
         "Always verify programmes, access conditions and opening hours on official channels before your visit."
     }
@@ -740,6 +756,14 @@ const CHROME_CONFIG = {
           ]
         }
       ],
+      legal: {
+        title: "Transparenz",
+        links: [
+          { href: "/de/datenschutzerklaerung", label: "Datenschutzerkl&auml;rung", rel: "nofollow" },
+          { href: "/de/cookie-richtlinie", label: "Cookie-Richtlinie", rel: "nofollow" },
+          { href: "/de/cookie-richtlinie", label: "Cookie-Einstellungen", rel: "nofollow", cookiePrefs: true }
+        ]
+      },
       meta:
         "Programme, Zug&auml;nge und &Ouml;ffnungszeiten sollten vor der Reise immer &uuml;ber offizielle Kan&auml;le gepr&uuml;ft werden."
     }
@@ -774,6 +798,14 @@ const CHROME_CONFIG = {
           ]
         }
       ],
+      legal: {
+        title: "Transparence",
+        links: [
+          { href: "/fr/politique-de-confidentialite", label: "Politique de confidentialit&eacute;", rel: "nofollow" },
+          { href: "/fr/politique-cookies", label: "Politique cookies", rel: "nofollow" },
+          { href: "/fr/politique-cookies", label: "Pr&eacute;f&eacute;rences cookies", rel: "nofollow", cookiePrefs: true }
+        ]
+      },
       meta:
         "V&eacute;rifiez toujours les programmes, les acc&egrave;s et les horaires sur les canaux officiels avant votre visite."
     }
@@ -938,6 +970,23 @@ function buildFooterMarkup(footer) {
     )
     .join("");
 
+  const legalMarkup = footer.legal
+    ? `
+        <section class="site-footer__section site-footer__section--legal" data-trust-footer>
+          <h2 class="site-footer__heading">${footer.legal.title}</h2>
+          <ul class="site-footer__links">
+            ${footer.legal.links
+              .map(
+                (link) => `
+                  <li><a href="${link.href}"${link.rel ? ` rel="${link.rel}"` : ""}${link.cookiePrefs ? " data-cookie-prefs" : ""}>${link.label}</a></li>
+                `,
+              )
+              .join("")}
+          </ul>
+        </section>
+      `
+    : "";
+
   return `
     <div class="container site-footer__grid">
       <section class="site-footer__brand">
@@ -946,6 +995,7 @@ function buildFooterMarkup(footer) {
         <p class="site-footer__disclaimer">${footer.introNote}</p>
       </section>
       ${sectionsMarkup}
+      ${legalMarkup}
     </div>
     <div class="container site-footer__meta">
       <p>${footer.meta}</p>

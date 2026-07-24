@@ -184,10 +184,24 @@ const publicHtmlFiles = [
   ...frFiles,
 ];
 
+// Google Analytics 4 — consent-gated (Consent Mode v2). The inline block sets
+// all consent signals to "denied" as early as possible; the deferred
+// first-party script shows the cookie banner and only loads gtag.js after the
+// visitor accepts. Injected once here so it lands in every public page's head.
+const ANALYTICS_HEAD_SNIPPET =
+  '\n  <!-- Google Analytics 4 (consent-gated, Consent Mode v2) -->' +
+  "\n  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>" +
+  '\n  <script src="/js/analytics-consent.js" defer></script>';
+
+function injectAnalytics(html) {
+  if (html.includes("/js/analytics-consent.js")) return html;
+  return html.replace(/<head\b[^>]*>/i, (headTag) => headTag + ANALYTICS_HEAD_SNIPPET);
+}
+
 for (const file of publicHtmlFiles) {
   const destination = join(outputDir, file);
   const html = readFileSync(destination, "utf8");
-  const optimized = stripFrenchPublicSignals(optimizePublicHtml(html));
+  const optimized = injectAnalytics(stripFrenchPublicSignals(optimizePublicHtml(html)));
   writeFileSync(destination, optimized, "utf8");
 }
 

@@ -38,6 +38,9 @@ export const FR_PUBLIC_FILES = [
   "giglio-vecchio-montefiascone.html",
   "a-propos-matteo-angeloni.html",
   "projet-editorial.html",
+  // Pagine legali (privacy/cookie), necessarie per il consenso GA4
+  "politique-de-confidentialite.html",
+  "politique-cookies.html",
 ];
 
 // Path pubblici (clean URL) corrispondenti, es. "/fr/" e "/fr/vin"
