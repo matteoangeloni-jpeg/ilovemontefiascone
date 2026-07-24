@@ -35,13 +35,13 @@
       "website"
     ],
     "og:title": [
-      "Bienvenue à Montefiascone | Lac de Bolsena, vin et patrimoine"
+      "Montefiascone : guide du village, lac de Bolsena et vin"
     ],
     "og:image": [
       "https://www.ilovemontefiascone.com/assets/img/og/montefiascone-lake-bolsena-og.jpg"
     ],
     "html_lang": "fr",
-    "title": "Bienvenue à Montefiascone | Lac de Bolsena, vin et patrimoine",
+    "title": "Montefiascone : guide du village, lac de Bolsena et vin",
     "meta_description": null,
     "jsonld": [
       {
@@ -51,17 +51,21 @@
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://www.ilovemontefiascone.com/#website",
-              "name": "J'aime Montefiascone",
-              "url": "https://www.ilovemontefiascone.com/",
+              "@id": "https://www.ilovemontefiascone.com/fr/#website",
+              "name": "I Love Montefiascone",
+              "url": "https://www.ilovemontefiascone.com/fr/",
               "inLanguage": "fr-FR"
             },
             {
               "@type": "TouristDestination",
-              "@id": "https://www.ilovemontefiascone.com/#destination",
+              "@id": "https://www.ilovemontefiascone.com/fr/#destination",
               "name": "Montefiascone",
-              "description": "Montefiascone est un village de Tuscia, dans le Latium près de Viterbe, surplombant le lac de Bolsena et connu pour son patrimoine historique, la Via Francigena, les événements locaux et le vin de l'Est ! Est!! Est!!!.",
-              "url": "https://www.ilovemontefiascone.com/",
+              "description": "Montefiascone est un village de la Tuscia, dans le Latium près de Viterbe, perché au-dessus du lac de Bolsena et connu pour son patrimoine historique, la Via Francigena, ses événements et le vin Est! Est!! Est!!!.",
+              "url": "https://www.ilovemontefiascone.com/fr/",
+              "sameAs": [
+                "https://fr.wikipedia.org/wiki/Montefiascone",
+                "https://www.wikidata.org/wiki/Q176142"
+              ],
               "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": 42.5366,
@@ -75,20 +79,21 @@
             },
             {
               "@type": "WebPage",
-              "@id": "https://www.ilovemontefiascone.com/#webpage",
-              "name": "Montefiascone : guide touristique sur le lac de Bolsena",
-              "url": "https://www.ilovemontefiascone.com/",
+              "@id": "https://www.ilovemontefiascone.com/fr/#webpage",
+              "name": "Montefiascone : guide du village, lac de Bolsena et vin",
+              "url": "https://www.ilovemontefiascone.com/fr/",
               "inLanguage": "fr-FR",
+              "dateModified": "2026-07-12",
               "isPartOf": {
-                "@id": "https://www.ilovemontefiascone.com/#website"
+                "@id": "https://www.ilovemontefiascone.com/fr/#website"
               },
               "about": {
-                "@id": "https://www.ilovemontefiascone.com/#destination"
+                "@id": "https://www.ilovemontefiascone.com/fr/#destination"
               }
             },
             {
               "@type": "FAQPage",
-              "@id": "https://www.ilovemontefiascone.com/#faq",
+              "@id": "https://www.ilovemontefiascone.com/fr/#faq",
               "mainEntity": [
                 {
                   "@type": "Question",
@@ -103,7 +108,7 @@
                   "name": "Combien de temps faut-il pour visiter Montefiascone ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le centre historique se visite bien en une journée, mais Montefiascone prend tout son sens comme base pour un week-end entre lac, itinéraires, panorama et environs de la Tuscie."
+                    "text": "Le centre historique se visite bien en une journée, mais Montefiascone prend tout son sens comme base pour un week-end entre lac, caves, événements et environs de la Tuscia."
                   }
                 },
                 {
@@ -119,7 +124,7 @@
                   "name": "Quelle est la meilleure période pour visiter Montefiascone ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le printemps, le début de l'été et le début de l'automne sont des périodes idéales pour alterner visites culturelles, promenades panoramiques et découvertes du territoire, en vérifiant toujours le programme officiel des manifestations saisonnières."
+                    "text": "Le printemps, le début de l'été et le début de l'automne sont des périodes idéales pour alterner visites culturelles, promenades panoramiques et dégustations, en vérifiant toujours le programme officiel des manifestations saisonnières."
                   }
                 }
               ]
@@ -130,8 +135,8 @@
     ],
     "jsonld_count": 1,
     "has_breadcrumb_nav": false,
-    "approx_wordcount": 241,
-    "fr_internal_link_count": 15
+    "approx_wordcount": 1304,
+    "fr_internal_link_count": 67
   },
   "guide.html": {
     "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/guide\">",
@@ -283,8 +288,8 @@
     ],
     "jsonld_count": 1,
     "has_breadcrumb_nav": true,
-    "approx_wordcount": 331,
-    "fr_internal_link_count": 15
+    "approx_wordcount": 1093,
+    "fr_internal_link_count": 39
   },
   "que-voir-montefiascone-guide-complet.html": {
     "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet\">",
@@ -451,8 +456,8 @@
     ],
     "jsonld_count": 1,
     "has_breadcrumb_nav": true,
-    "approx_wordcount": 965,
-    "fr_internal_link_count": 14
+    "approx_wordcount": 1989,
+    "fr_internal_link_count": 18
   },
   "carte.html": {
     "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/carte\">",
@@ -1189,8 +1194,8 @@
     ],
     "jsonld_count": 1,
     "has_breadcrumb_nav": true,
-    "approx_wordcount": 297,
-    "fr_internal_link_count": 15
+    "approx_wordcount": 1127,
+    "fr_internal_link_count": 36
   },
   "calendrier-des-evenements-de-montefiascone.html": {
     "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/calendrier-des-evenements-de-montefiascone\">",
@@ -1397,7 +1402,7 @@
               "url": "https://www.ilovemontefiascone.com/fr/evenements-dete-a-montefiascone-2026",
               "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-rocca-notte.jpg",
               "inLanguage": "fr-FR",
-              "dateModified": "2026-06-30"
+              "dateModified": "2026-07-12"
             },
             {
               "@type": "ItemList",
@@ -1531,8 +1536,8 @@
     ],
     "jsonld_count": 1,
     "has_breadcrumb_nav": true,
-    "approx_wordcount": 366,
-    "fr_internal_link_count": 15
+    "approx_wordcount": 814,
+    "fr_internal_link_count": 27
   },
   "evenements-traditions-foire-aux-vins-de-montefiascone.html": {
     "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/evenements-traditions-foire-aux-vins-de-montefiascone\">",
@@ -3281,7 +3286,7 @@
     ],
     "html_lang": "fr",
     "title": "Cuisine typique de Montefiascone | Plats et territoire",
-    "meta_description": "Cuisine typique de Montefiascone : saveurs du lac, tradition culinaire de la Tuscie et liens utiles pour organiser un sejour gourmand.",
+    "meta_description": "Cuisine typique de Montefiascone : saveurs du lac, tradition culinaire de la Tuscie et liens utiles pour organiser un séjour gourmand.",
     "jsonld": [
       {
         "valid": true,
@@ -3294,8 +3299,9 @@
               "headline": "Cuisine typique de Montefiascone",
               "name": "Cuisine typique de Montefiascone",
               "url": "https://www.ilovemontefiascone.com/fr/cuisine-typique-de-montefiascone",
-              "description": "Lecture editoriale de la cuisine typique de Montefiascone entre lac, collines et tradition culinaire de la Tuscie.",
+              "description": "Lecture éditoriale de la cuisine typique de Montefiascone entre lac, collines et tradition culinaire de la Tuscie.",
               "inLanguage": "fr-FR",
+              "dateModified": "2026-07-12",
               "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
             },
             {
@@ -3322,10 +3328,10 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "A quoi ressemble la cuisine typique de Montefiascone ?",
+                  "name": "À quoi ressemble la cuisine typique de Montefiascone ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Elle relie les saveurs du lac de Bolsena aux produits des collines de la Tuscie. On y retrouve une cuisine simple, saisonniere et fortement liee au territoire."
+                    "text": "Elle relie les saveurs du lac de Bolsena aux produits des collines de la Tuscie. On y retrouve une cuisine simple, saisonnière et fortement liée au territoire."
                   }
                 },
                 {
@@ -3333,15 +3339,15 @@
                   "name": "Quel vin accompagne cette cuisine ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Est! Est!! Est!!! reste le repere le plus naturel pour accompagner les plats legers, les produits du lac et une partie de la tradition culinaire locale."
+                    "text": "Est! Est!! Est!!! reste le repère le plus naturel pour accompagner les plats légers, les produits du lac et une partie de la tradition culinaire locale."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Cette page donne-t-elle des restaurants precis ?",
+                  "name": "Cette page donne-t-elle des restaurants précis ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non. Les adresses, menus, horaires et disponibilites doivent etre verifies directement sur place ou sur les canaux des etablissements."
+                    "text": "Non. Les adresses, menus, horaires et disponibilités doivent être vérifiés directement sur place ou sur les canaux des établissements."
                   }
                 }
               ]
@@ -3352,8 +3358,8 @@
     ],
     "jsonld_count": 1,
     "has_breadcrumb_nav": true,
-    "approx_wordcount": 412,
-    "fr_internal_link_count": 21
+    "approx_wordcount": 665,
+    "fr_internal_link_count": 28
   },
   "produits-typiques-de-montefiascone-tuscia.html": {
     "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia\">",
@@ -3398,7 +3404,7 @@
     ],
     "html_lang": "fr",
     "title": "Produits typiques de Montefiascone et de la Tuscie",
-    "meta_description": "Produits typiques de Montefiascone et de la Tuscie : vin, saveurs du lac et reperes utiles pour comprendre la gastronomie locale.",
+    "meta_description": "Produits typiques de Montefiascone et de la Tuscie : vin, saveurs du lac et repères utiles pour comprendre la gastronomie locale.",
     "jsonld": [
       {
         "valid": true,
@@ -3411,8 +3417,9 @@
               "headline": "Produits typiques de Montefiascone et de la Tuscie",
               "name": "Produits typiques de Montefiascone et de la Tuscie",
               "url": "https://www.ilovemontefiascone.com/fr/produits-typiques-de-montefiascone-tuscia",
-              "description": "Lecture editoriale des produits du territoire autour de Montefiascone, entre vin local, saveurs du lac et tradition culinaire de la Tuscie.",
+              "description": "Lecture éditoriale des produits du territoire autour de Montefiascone, entre vin local, saveurs du lac et tradition culinaire de la Tuscie.",
               "inLanguage": "fr-FR",
+              "dateModified": "2026-07-12",
               "image": "https://www.ilovemontefiascone.com/media/gallery/fieradelvino-sommelier-cantina.jpg"
             },
             {
@@ -3439,26 +3446,26 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Quel produit reste le plus associe a Montefiascone ?",
+                  "name": "Quel produit reste le plus associé à Montefiascone ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le repere le plus connu reste Est! Est!! Est!!!, mais il doit etre lu dans un ensemble plus large de produits lies au lac, aux collines et a la tradition culinaire locale."
+                    "text": "Le repère le plus connu reste Est! Est!! Est!!!, mais il doit être lu dans un ensemble plus large de produits liés au lac, aux collines et à la tradition culinaire locale."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Cette page donne-t-elle une liste commerciale complete ?",
+                  "name": "Cette page donne-t-elle une liste commerciale complète ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non. Elle sert a orienter la lecture du territoire. Les disponibilites, points de vente et details pratiques doivent etre verifies directement sur place."
+                    "text": "Non. Elle sert à orienter la lecture du territoire. Les disponibilités, points de vente et détails pratiques doivent être vérifiés directement sur place."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Comment relier ces produits a un sejour ?",
+                  "name": "Comment relier ces produits à un séjour ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le plus coherent est de combiner la lecture des produits, la cuisine typique, le vin local et, si utile, une degustation ou une visite en lien avec le territoire."
+                    "text": "Le plus cohérent est de combiner la lecture des produits, la cuisine typique, le vin local et, si utile, une dégustation ou une visite en lien avec le territoire."
                   }
                 }
               ]
@@ -3469,8 +3476,8 @@
     ],
     "jsonld_count": 1,
     "has_breadcrumb_nav": true,
-    "approx_wordcount": 381,
-    "fr_internal_link_count": 20
+    "approx_wordcount": 697,
+    "fr_internal_link_count": 28
   },
   "experiences-gastronomiques-et-nologiques-a-montefiascone.html": {
     "canonical_tag": "<link rel=\"canonical\" href=\"https://www.ilovemontefiascone.com/fr/experiences-gastronomiques-et-nologiques-a-montefiascone\">",

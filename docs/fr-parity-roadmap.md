@@ -1,6 +1,6 @@
 # FR Parity Roadmap — portare /fr/ al pari di IT
 
-Updated: 2026-07-12
+Updated: 2026-07-22
 Stato di partenza: perimetro pubblico FR = 26 pagine (vedi `scripts/fr-public-perimeter.mjs`),
 72 pagine source-only. IT/EN/DE pubblicano 98 pagine ciascuna.
 Questo documento aggiorna `docs/fr-publication-gate-roadmap.md` (il gate è stato parzialmente
@@ -31,10 +31,24 @@ Gate per ogni pagina (da `docs/fr-full-editorial-inventory.md`): QA linguistico 
 parità contenuti vs IT (ratio ≥ 0.9) → author + FAQ → aggiunta a `FR_PUBLIC_FILES` →
 rigenerare sitemap-fr.xml + llms.txt → verificare hreflang reciproci.
 
+**Severità confermata 2026-07-22**: scansionate tutte le 26 pagine candidate del cluster 5a
+(esistono già come source, 1:1 con i titoli attesi). Nessuna è pronta per la promozione diretta:
+tutte contengono testo italiano residuo (da 2 a 20 occorrenze di parole IT su un dizionario
+ristretto — il controllo puntuale su `meilleures-vues-du-lac-de-bolsena.html`, la meno colpita
+dal filtro automatico, ha rivelato H1, paragrafo hero, tutti gli H2/H3 del corpo e l'intera FAQ
+in italiano, con solo meta/nav/footer in francese, e link interni che puntano alle pagine IT
+invece che alle FR). Trattare ogni pagina come una riscrittura completa dal source IT (stesso
+impegno delle pagine vino/cucina/eventi già completate in questo lavoro), non come un pass di
+QA leggero. La pagina hub già pubblicata `lac-de-bolsena-que-voir.html` aveva anch'essa difetti
+simili (sidebar in italiano, link duplicati/rotti) — corretti il 2026-07-22 (commit `5dfff43`).
+
 Ordine cluster suggerito per valore di ricerca francofona:
 
-- [ ] **5a. Lago di Bolsena** (~20 pagine: villages, plages, que-voir per paese, velo, randonnée…).
+- [ ] **5a. Lago di Bolsena** (26 pagine candidate individuate, vedi nota sopra: villages, plages,
+      que-voir per paese, velo, randonnée, coucher de soleil, week-end romantique…).
       È il tema che il pubblico FR cerca davvero ("lac de Bolsena" ≫ "Montefiascone").
+      Nota: `lac-de-bolsene.html` ha un titolo diverso da `lac-de-bolsena-que-voir.html` (già
+      pubblicata come hub) — verificare che non sia contenuto duplicato prima di promuoverla.
 - [ ] **5b. Logistica** (comment-se-rendre ×4, parking, ou-dormir, ou-manger,
       montefiascone-sans-voitures, informations-touristiques): pagine transazionali.
 - [ ] **5c. Via Francigena** (3 pagine): segmento forte per il pubblico francese.

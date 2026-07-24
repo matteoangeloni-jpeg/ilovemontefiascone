@@ -8,11 +8,11 @@ const root = resolve(scriptDir, "..");
 
 const AUTHOR_NAME = "Matteo Angeloni";
 
-const editorialUrlByLang = {
-  ".": "https://www.ilovemontefiascone.com/progetto-editoriale",
-  en: "https://www.ilovemontefiascone.com/en/editorial-project-montefiascone",
-  de: "https://www.ilovemontefiascone.com/de/redaktionelles-projekt-montefiascone",
-  fr: "https://www.ilovemontefiascone.com/fr/projet-editorial",
+const authorUrlByLang = {
+  ".": "https://www.ilovemontefiascone.com/about-matteo-angeloni",
+  en: "https://www.ilovemontefiascone.com/en/about-matteo-angeloni",
+  de: "https://www.ilovemontefiascone.com/de/ueber-matteo-angeloni",
+  fr: "https://www.ilovemontefiascone.com/fr/a-propos-matteo-angeloni",
 };
 
 const targetDirs = [".", "en", "de", "fr"];
@@ -38,7 +38,7 @@ function authorBlock(indent, url) {
 let totalArticleAuthorsAdded = 0;
 
 for (const dir of targetDirs) {
-  const url = editorialUrlByLang[dir];
+  const url = authorUrlByLang[dir];
   for (const file of listHtmlFiles(dir)) {
     const filePath = join(root, file);
     let html = readFileSync(filePath, "utf8");
