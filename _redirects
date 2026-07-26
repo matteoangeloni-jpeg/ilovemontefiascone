@@ -29,6 +29,7 @@ https://ilovemontefiascone.com/* https://www.ilovemontefiascone.com/:splat 301
 /qa-* /404.html 404
 /en/:slug.html /en/:slug 301
 /de/:slug.html /de/:slug 301
+/fr/:slug.html /fr/:slug 301
 /:slug.html /:slug 301
 /en/wine /en/est-est-est-montefiascone-doc-wine 301
 /de/wein /de/est-est-est-wein-montefiascone 301

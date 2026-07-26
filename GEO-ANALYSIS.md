@@ -1,10 +1,38 @@
-# GEO (Generative Engine Optimization) Analysis
+﻿# GEO (Generative Engine Optimization) Analysis
 ## ilovemontefiascone.com
 
 **Audit Date:** July 8, 2026  
 **Site:** https://www.ilovemontefiascone.com/  
 **Category:** Tourism & Travel Guide (Regional Destination Site)  
 **Languages:** Italian, English, German
+
+---
+
+## Addendum: July 26, 2026 GEO Implementation
+
+**Implementation status: DONE for technical GEO quick wins.**
+
+This pass used the `seo-geo` workflow against the live site and local Cloudflare package. The historical July 8 audit remains below for context; the current implementation improves two concrete machine-readable signals:
+
+- `robots.txt` now explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot and PerplexityBot, instead of relying only on the implicit `User-agent: *` allow.
+- `llms.txt` now includes an AI Search Summary, citation-ready facts, best pages for AI answers and entity signals for Montefiascone, Lake Bolsena, Tuscia, I Love Montefiascone and Matteo Angeloni.
+- `.seo-cache/geo.json` records the updated GEO findings for future SEO workflows.
+- `npm run build:cloudflare` passed and copied the improved `robots.txt` and `llms.txt` into `dist-it`.
+
+Updated platform view after this pass:
+
+| Platform | Current Readiness | Main Remaining Gap |
+| --- | ---: | --- |
+| Google AI Overviews | Strong | Add more source-backed answer blocks on pillar pages. |
+| ChatGPT Search | Strong | Strengthen author/entity `sameAs` and external brand signals. |
+| Perplexity | Medium-strong | Add more citations to primary sources and community/entity mentions. |
+| Bing Copilot | Strong | Monitor Bing/IndexNow separately from this GEO pass. |
+
+Highest-impact next editorial work:
+
+1. Add 134-167 word "Risposta breve" blocks to `/`, `/cosa-vedere-montefiascone-guida-completa`, `/vino`, `/eventi` and `/mappa`.
+2. Add confirmed `sameAs` links for Matteo Angeloni and I Love Montefiascone when reliable public profiles are available.
+3. Add visible primary-source references to the top destination, wine, event and logistics pages without inventing official claims.
 
 ---
 
