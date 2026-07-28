@@ -25,7 +25,6 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - Pages are designed for direct travel questions such as what to see in Montefiascone, how to reach Montefiascone, where to eat, where to sleep and how to explore Lake Bolsena from Montefiascone.
 
 ## Best Pages for AI Answers
-- [What to see in Montefiascone](https://www.ilovemontefiascone.com/cosa-vedere): Core guide to the town's main sights.
 - [Montefiascone travel guide](https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa): Complete visitor overview for first-time travelers.
 - [Lake Bolsena](https://www.ilovemontefiascone.com/lago-di-bolsena): Hub for lake villages, viewpoints, beaches and slow travel.
 - [How to get to Montefiascone](https://www.ilovemontefiascone.com/come-arrivare-a-montefiascone): Practical transport page for car, train and bus planning.
@@ -70,7 +69,6 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [La Banda R&amp;B Revue a Montefiascone | Concerto 19 giugno](https://www.ilovemontefiascone.com/concerto-banda-rb-revue-montefiascone)
 - [Cosa fare a Montefiascone quando piove](https://www.ilovemontefiascone.com/cosa-fare-a-montefiascone-quando-piove)
 - [Cosa fare la sera a Montefiascone](https://www.ilovemontefiascone.com/cosa-fare-la-sera-a-montefiascone)
-- [Cosa vedere a Montefiascone | Rocca, Duomo e Francigena](https://www.ilovemontefiascone.com/cosa-vedere)
 - [Dintorni di Montefiascone | Itinerario tra lago e borghi](https://www.ilovemontefiascone.com/cosa-vedere-dintorni-montefiascone-itinerario)
 - [Cosa vedere a Montefiascone | Guida completa](https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa)
 - [Cronoscalata Lago-Montefiascone 2026](https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta)

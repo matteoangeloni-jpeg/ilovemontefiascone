@@ -7,7 +7,7 @@ const MAP_CACHE = `${SW_VERSION}-map`;
 
 const PRECACHE_URLS = [
   "/",
-  "/cosa-vedere",
+  "/cosa-vedere-montefiascone-guida-completa",
   "/guide",
   "/eventi",
   "/vino",
