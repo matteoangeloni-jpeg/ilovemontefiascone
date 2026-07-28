@@ -9,7 +9,7 @@ const DEFAULT_CONTENT = {
   body:
     "Se i dati meteo non sono disponibili, parti dal centro storico, dalla Rocca dei Papi e dalla Cattedrale di Santa Margherita. Poi scegli se proseguire verso il lago o verso le guide del portale.",
   ctaLabel: "Scopri cosa vedere",
-  ctaHref: "/cosa-vedere"
+  ctaHref: "/cosa-vedere-montefiascone-guida-completa"
 };
 
 const SUNNY_CONTENT = {
@@ -25,7 +25,7 @@ const RAIN_CONTENT = {
   body:
     "Con pioggia conviene orientarsi verso interni, chiese, spazi coperti e approfondimenti storici. La pagina sui luoghi aiuta a concentrare la visita su monumenti, musei diffusi e tappe culturali.",
   ctaLabel: "Vai ai luoghi al coperto",
-  ctaHref: "/cosa-vedere"
+  ctaHref: "/cosa-vedere-montefiascone-guida-completa"
 };
 
 document.addEventListener("DOMContentLoaded", () => {

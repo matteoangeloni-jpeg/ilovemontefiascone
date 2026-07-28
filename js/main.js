@@ -227,8 +227,7 @@ const NAV_CONFIG = {
           "/monumenti-"
         ],
         items: [
-          { href: "/cosa-vedere", label: "Cosa vedere", description: "Luoghi chiave nel borgo" },
-          { href: "/cosa-vedere-montefiascone-guida-completa", label: "Guida completa", description: "Rocca, cattedrale, centro storico" },
+          { href: "/cosa-vedere-montefiascone-guida-completa", label: "Cosa vedere", description: "Rocca, cattedrale, centro storico" },
           { href: "/mappa", label: "Mappa", description: "Parcheggi, punti chiave, dislivelli" },
           { href: "/itinerari-tematici-montefiascone", label: "Itinerari", description: "Percorsi per temi e tempo disponibile" },
           { href: "/via-francigena-bolsena-montefiascone", label: "Via Francigena", description: "Tappa e lettura del cammino" },
