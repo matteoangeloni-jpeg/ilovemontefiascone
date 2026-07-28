@@ -910,6 +910,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/san-lorenzo-nuovo-cosa-vedere-lago-di-bolsena" />
   </url>
   <url>
+    <loc>https://www.ilovemontefiascone.com/fr/semaine-gastronomique-cantinone-montefiascone</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ilovemontefiascone.com/cantinone-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ilovemontefiascone.com/en/cantinone-food-week-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ilovemontefiascone.com/de/cantinone-woche-montefiascone" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ilovemontefiascone.com/fr/semaine-gastronomique-cantinone-montefiascone" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://www.ilovemontefiascone.com/cantinone-montefiascone" />
+  </url>
+  <url>
     <loc>https://www.ilovemontefiascone.com/fr/spots-de-photos-aeriennes-du-lac-de-montefiascone-bolsena</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>

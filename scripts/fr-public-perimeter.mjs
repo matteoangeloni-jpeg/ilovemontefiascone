@@ -87,6 +87,7 @@ export const FR_PUBLIC_FILES = [
   "que-voir.html",
   "randonnee-au-lac-de-bolsena.html",
   "san-lorenzo-nuovo-que-voir-lac-de-bolsena.html",
+  "semaine-gastronomique-cantinone-montefiascone.html",
   "spots-de-photos-aeriennes-du-lac-de-montefiascone-bolsena.html",
   "station-thermale-de-viterbe-depuis-montefiascone.html",
   "strada-del-vino-est-est-est-est-est-montefiascone.html",
