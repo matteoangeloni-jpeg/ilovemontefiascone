@@ -1,0 +1,237 @@
+{
+  "analyzed_at": "2026-07-29T15:39:10.483Z",
+  "pages": 406,
+  "langCounts": {
+    "it": 103,
+    "de": 101,
+    "en": 101,
+    "fr": 101
+  },
+  "sitemapIndexEntries": 4,
+  "childSitemapCounts": {
+    "sitemap-it.xml": 99,
+    "sitemap-en.xml": 99,
+    "sitemap-de.xml": 99,
+    "sitemap-fr.xml": 101
+  },
+  "allChildSitemapUrls": 398,
+  "schemaCounts": {
+    "Person": 4,
+    "WebPage": 199,
+    "Event": 4,
+    "Article": 202,
+    "BreadcrumbList": 356,
+    "FAQPage": 280,
+    "ItemList": 72,
+    "TouristAttraction": 12,
+    "TouristDestination": 33,
+    "MusicEvent": 4,
+    "Organization": 2,
+    "Place": 2,
+    "BlogPosting": 2,
+    "CollectionPage": 11,
+    "ImageGallery": 3,
+    "AboutPage": 4,
+    "Church": 2,
+    "WebSite": 3,
+    "Map": 3,
+    "Product": 1
+  },
+  "issueCounts": {},
+  "issues": [],
+  "topPagesByWords": [
+    {
+      "rel": "fr/que-voir-montefiascone-guide-complet.html",
+      "lang": "fr",
+      "titleLen": 40,
+      "descLen": 141,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet",
+      "h1": 1,
+      "h2": 16,
+      "schemaTypes": [
+        "Organization",
+        "Place",
+        "TouristAttraction",
+        "BlogPosting"
+      ],
+      "alternates": 5,
+      "images": 5,
+      "words": 1998
+    },
+    {
+      "rel": "cosa-vedere-montefiascone-guida-completa.html",
+      "lang": "it",
+      "titleLen": 44,
+      "descLen": 135,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/cosa-vedere-montefiascone-guida-completa",
+      "h1": 1,
+      "h2": 16,
+      "schemaTypes": [
+        "Organization",
+        "Place",
+        "TouristAttraction",
+        "BlogPosting",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 5,
+      "words": 1997
+    },
+    {
+      "rel": "index.html",
+      "lang": "it",
+      "titleLen": 58,
+      "descLen": 151,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/",
+      "h1": 1,
+      "h2": 14,
+      "schemaTypes": [
+        "WebSite",
+        "TouristDestination",
+        "WebPage",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 9,
+      "words": 1365
+    },
+    {
+      "rel": "fr/index.html",
+      "lang": "fr",
+      "titleLen": 55,
+      "descLen": 142,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/fr/",
+      "h1": 1,
+      "h2": 15,
+      "schemaTypes": [
+        "WebSite",
+        "TouristDestination",
+        "WebPage",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 9,
+      "words": 1295
+    },
+    {
+      "rel": "en/index.html",
+      "lang": "en",
+      "titleLen": 60,
+      "descLen": 133,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/en/",
+      "h1": 1,
+      "h2": 13,
+      "schemaTypes": [
+        "WebSite",
+        "TouristDestination",
+        "WebPage",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 9,
+      "words": 1245
+    },
+    {
+      "rel": "vino.html",
+      "lang": "it",
+      "titleLen": 51,
+      "descLen": 112,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/vino",
+      "h1": 1,
+      "h2": 16,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "Product",
+        "ItemList",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 4,
+      "words": 1233
+    },
+    {
+      "rel": "fr/evenements.html",
+      "lang": "fr",
+      "titleLen": 60,
+      "descLen": 166,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/fr/evenements",
+      "h1": 1,
+      "h2": 16,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 4,
+      "words": 1137
+    },
+    {
+      "rel": "eventi.html",
+      "lang": "it",
+      "titleLen": 53,
+      "descLen": 137,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/eventi",
+      "h1": 1,
+      "h2": 15,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 5,
+      "words": 1128
+    },
+    {
+      "rel": "fr/vin.html",
+      "lang": "fr",
+      "titleLen": 49,
+      "descLen": 163,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/fr/vin",
+      "h1": 1,
+      "h2": 18,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 4,
+      "words": 1127
+    },
+    {
+      "rel": "guide.html",
+      "lang": "it",
+      "titleLen": 48,
+      "descLen": 128,
+      "indexable": true,
+      "canon": "https://www.ilovemontefiascone.com/guide",
+      "h1": 1,
+      "h2": 15,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList",
+        "FAQPage"
+      ],
+      "alternates": 5,
+      "images": 7,
+      "words": 1116
+    }
+  ],
+  "lowWordPages": []
+}

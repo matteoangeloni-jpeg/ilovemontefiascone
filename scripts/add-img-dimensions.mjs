@@ -27,6 +27,47 @@ function jpegSize(buf) {
   return null;
 }
 
+function webpSize(buf) {
+  if (buf.length < 30 || buf.toString("ascii", 0, 4) !== "RIFF" || buf.toString("ascii", 8, 12) !== "WEBP") {
+    return null;
+  }
+
+  let offset = 12;
+  while (offset < buf.length - 8) {
+    const chunkType = buf.toString("ascii", offset, offset + 4);
+    const chunkSize = buf.readUInt32LE(offset + 4);
+
+    if (chunkType === "VP8X" && offset + 18 <= buf.length) {
+      return {
+        width: 1 + buf.readUIntLE(offset + 12, 3),
+        height: 1 + buf.readUIntLE(offset + 15, 3),
+      };
+    }
+
+    if (chunkType === "VP8 " && offset + 18 <= buf.length) {
+      return {
+        width: buf.readUInt16LE(offset + 14) & 0x3fff,
+        height: buf.readUInt16LE(offset + 16) & 0x3fff,
+      };
+    }
+
+    if (chunkType === "VP8L" && offset + 13 <= buf.length) {
+      const b0 = buf[offset + 9];
+      const b1 = buf[offset + 10];
+      const b2 = buf[offset + 11];
+      const b3 = buf[offset + 12];
+      return {
+        width: 1 + (((b1 & 0x3f) << 8) | b0),
+        height: 1 + (((b3 & 0x0f) << 10) | (b2 << 2) | ((b1 & 0xc0) >> 6)),
+      };
+    }
+
+    offset += 8 + chunkSize + (chunkSize % 2);
+  }
+
+  return null;
+}
+
 const sizeCache = new Map();
 function imageSize(srcPath) {
   if (sizeCache.has(srcPath)) return sizeCache.get(srcPath);
@@ -34,7 +75,9 @@ function imageSize(srcPath) {
   let size = null;
   if (existsSync(absolute)) {
     const buf = readFileSync(absolute);
-    size = srcPath.endsWith(".png") ? pngSize(buf) : jpegSize(buf);
+    if (srcPath.endsWith(".png")) size = pngSize(buf);
+    else if (srcPath.endsWith(".webp")) size = webpSize(buf);
+    else size = jpegSize(buf);
   }
   sizeCache.set(srcPath, size);
   return size;
