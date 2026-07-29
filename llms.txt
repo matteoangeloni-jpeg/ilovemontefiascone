@@ -3,9 +3,9 @@
 
 ## Site Identity
 - Canonical domain: https://www.ilovemontefiascone.com/
-- Public languages: Italian, English, German, French (partial relaunch).
-- Public perimeter: 99 IT / 99 EN / 99 DE / 29 FR.
-- Public perimeter updated: 2026-07-18.
+- Public languages: Italian, English, German, French (full parity).
+- Public perimeter: 100 IT / 100 EN / 100 DE / 100 FR.
+- Public perimeter updated: 2026-07-29.
 
 ## Main Topics
 - Montefiascone and Lake Bolsena.
@@ -15,12 +15,12 @@
 - Events, seasonal travel, practical planning and Tuscia day trips.
 
 ## AI Search Summary
-I Love Montefiascone is an independent multilingual travel guide to Montefiascone, Lake Bolsena and Tuscia. The site is built for visitors planning a trip, with practical pages on what to see, where to eat, where to sleep, how to arrive, seasonal itineraries, events, lake villages, wine, food, the Via Francigena and day trips from Montefiascone. The editorial focus is local, practical and source-aware: pages avoid invented details, distinguish confirmed event information from planning guidance, and link related guides across Italian, English, German and a partial French relaunch. The canonical domain is https://www.ilovemontefiascone.com/.
+I Love Montefiascone is an independent multilingual travel guide to Montefiascone, Lake Bolsena and Tuscia. The site is built for visitors planning a trip, with practical pages on what to see, where to eat, where to sleep, how to arrive, seasonal itineraries, events, lake villages, wine, food, the Via Francigena and day trips from Montefiascone. The editorial focus is local, practical and source-aware: pages avoid invented details, distinguish confirmed event information from planning guidance, and link related guides across Italian, English, German and French, with full parity across all four languages. The canonical domain is https://www.ilovemontefiascone.com/.
 
 ## Citation-Ready Facts
 - Montefiascone is a hill town in northern Lazio, above Lake Bolsena and close to Viterbo, Orvieto and the Tuscia villages.
 - The main visitor themes are the Rocca dei Papi, the Cathedral of Santa Margherita, the Basilica of San Flaviano, lake viewpoints, the Via Francigena and Est! Est!! Est!!! di Montefiascone DOC wine.
-- The site publishes practical travel guides in Italian, English and German, with a smaller French public perimeter.
+- The site publishes practical travel guides in Italian, English, German and French, with full parity across all four languages.
 - The guide is editorial and independent; it is not the official municipal tourism site.
 - Pages are designed for direct travel questions such as what to see in Montefiascone, how to reach Montefiascone, where to eat, where to sleep and how to explore Lake Bolsena from Montefiascone.
 
@@ -177,6 +177,7 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [Giglio Vecchio in Montefiascone: Church, Sport &amp; Festival](https://www.ilovemontefiascone.com/en/giglio-vecchio-montefiascone)
 - [Gradoli near Lake Bolsena | What to See](https://www.ilovemontefiascone.com/en/gradoli-lake-bolsena-things-to-see)
 - [Grotte di Castro near Lake Bolsena | Travel Guide](https://www.ilovemontefiascone.com/en/grotte-di-castro-lake-bolsena-things-to-see)
+- [How Many Days in Montefiascone?](https://www.ilovemontefiascone.com/en/how-many-days-in-montefiascone) - Trip-length guidance for planning a stay of one, two or more days.
 - [How to Get to Montefiascone | Travel Tips](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone)
 - [How to Get to Montefiascone from Florence](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone-from-florence)
 - [How to Get to Montefiascone from Orvieto](https://www.ilovemontefiascone.com/en/how-to-get-to-montefiascone-from-orvieto)
@@ -200,6 +201,7 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [Montefiascone Map | Lake, Old Town and Via Francigena](https://www.ilovemontefiascone.com/en/map-montefiascone)
 - [Marta on Lake Bolsena: Things to See](https://www.ilovemontefiascone.com/en/marta-lake-bolsena-things-to-see)
 - [Minor Churches and Monuments in Montefiascone](https://www.ilovemontefiascone.com/en/minor-churches-historic-monuments-montefiascone)
+- [Montefiascone, Bolsena or Viterbo: Where to Stay](https://www.ilovemontefiascone.com/en/where-to-stay-montefiascone-vs-bolsena-viterbo) - Comparison guide for choosing a base among the three towns.
 - [Montefiascone Events Calendar | Seasonal Guide](https://www.ilovemontefiascone.com/en/montefiascone-events-calendar)
 - [Montefiascone Food and Traditional Recipes](https://www.ilovemontefiascone.com/en/montefiascone-food-recipes)
 - [Lago-Montefiascone Hill Climb 2026](https://www.ilovemontefiascone.com/en/montefiascone-hill-climb)
@@ -243,6 +245,7 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [What to See in Montefiascone | Travel Hub](https://www.ilovemontefiascone.com/en/what-to-see-montefiascone)
 - [What to See on Lake Bolsena](https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena)
 - [Where to Eat in Montefiascone | Local Food](https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone)
+- [Where to Stay around Lake Bolsena](https://www.ilovemontefiascone.com/en/where-to-stay-around-lake-bolsena) - Accommodation guidance for visitors basing themselves near the lake rather than in Montefiascone itself.
 - [Where to Stay in Montefiascone | Areas](https://www.ilovemontefiascone.com/en/where-to-stay-in-montefiascone)
 - [Where to Watch Sunset over Lake Bolsena](https://www.ilovemontefiascone.com/en/where-to-watch-sunset-lake-bolsena)
 - [Wine Tasting in Montefiascone | Est! Est!! Est!!!](https://www.ilovemontefiascone.com/en/wine-tasting-montefiascone-est-est-est)
