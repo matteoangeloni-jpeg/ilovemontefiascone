@@ -1,0 +1,2206 @@
+{
+  "site": "sc-domain:ilovemontefiascone.com",
+  "period": {
+    "start": "2026-04-29",
+    "end": "2026-07-27"
+  },
+  "generated_at": "2026-07-29T21:45:13.410157",
+  "filters": {
+    "min_impressions": 5,
+    "long_tail": "3+ tokens or explicit local intent patterns"
+  },
+  "clusters": [
+    {
+      "cluster": "eventi/fiera/festa/birra",
+      "impressions": 1483,
+      "clicks": 54,
+      "avg_position": 7.75,
+      "top_pages": [
+        {
+          "page": "/eventi",
+          "impressions": 878,
+          "clicks": 34,
+          "avg_position": 7.92
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "impressions": 477,
+          "clicks": 7,
+          "avg_position": 7.76
+        },
+        {
+          "page": "/eventi-estate-montefiascone-2026",
+          "impressions": 66,
+          "clicks": 10,
+          "avg_position": 6.36
+        },
+        {
+          "page": "/eventi.html",
+          "impressions": 35,
+          "clicks": 2,
+          "avg_position": 6.89
+        },
+        {
+          "page": "/calendario-eventi-montefiascone",
+          "impressions": 27,
+          "clicks": 1,
+          "avg_position": 6.48
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/eventi",
+          "query": "fiera del vino montefiascone 2026",
+          "impressions": 229,
+          "clicks": 22,
+          "ctr": 0.0961,
+          "position": 6.44,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 5
+        },
+        {
+          "page": "/eventi",
+          "query": "festa della birra montefiascone",
+          "impressions": 170,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 9.71,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 4
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "query": "a tuscia birra 2026",
+          "impressions": 140,
+          "clicks": 2,
+          "ctr": 0.0143,
+          "position": 8.65,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 4
+        },
+        {
+          "page": "/eventi",
+          "query": "festa della birra montefiascone 2026",
+          "impressions": 132,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 8.97,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 5
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "query": "tuscia birra 2026",
+          "impressions": 94,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 9.22,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 3
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "query": "festa della birra montefiascone 2026",
+          "impressions": 89,
+          "clicks": 3,
+          "ctr": 0.0337,
+          "position": 5.7,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 5
+        },
+        {
+          "page": "/eventi-estate-montefiascone-2026",
+          "query": "fiera del vino montefiascone 2026",
+          "impressions": 58,
+          "clicks": 9,
+          "ctr": 0.1552,
+          "position": 5.88,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 5
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "query": "atb festival 2026",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 7.8,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 3
+        },
+        {
+          "page": "/eventi",
+          "query": "festa del vino montefiascone",
+          "impressions": 48,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 9.56,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 4
+        },
+        {
+          "page": "/eventi",
+          "query": "festa del vino montefiascone 2026",
+          "impressions": 47,
+          "clicks": 1,
+          "ctr": 0.0213,
+          "position": 5.68,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 5
+        },
+        {
+          "page": "/eventi",
+          "query": "programma fiera del vino montefiascone 2026",
+          "impressions": 42,
+          "clicks": 8,
+          "ctr": 0.1905,
+          "position": 4.12,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 6
+        },
+        {
+          "page": "/eventi",
+          "query": "montefiascone festa della birra",
+          "impressions": 39,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 8.95,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 4
+        },
+        {
+          "page": "/eventi",
+          "query": "comune montefiascone eventi",
+          "impressions": 38,
+          "clicks": 3,
+          "ctr": 0.0789,
+          "position": 6.03,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 3
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "query": "tuscia birra montefiascone 2026",
+          "impressions": 37,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 6.97,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 4
+        },
+        {
+          "page": "/eventi",
+          "query": "festa birra montefiascone",
+          "impressions": 35,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 9.97,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 3
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "query": "atb festival montefiascone 2026",
+          "impressions": 32,
+          "clicks": 1,
+          "ctr": 0.0312,
+          "position": 7.25,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 4
+        },
+        {
+          "page": "/eventi",
+          "query": "montefiascone festa oggi",
+          "impressions": 32,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 8.41,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 3
+        },
+        {
+          "page": "/atb-festival-montefiascone",
+          "query": "atb montefiascone 2026",
+          "impressions": 26,
+          "clicks": 1,
+          "ctr": 0.0385,
+          "position": 6.12,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 3
+        },
+        {
+          "page": "/eventi",
+          "query": "fiera del vino montefiascone",
+          "impressions": 20,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 9.25,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 4
+        },
+        {
+          "page": "/eventi.html",
+          "query": "fiera del vino montefiascone 2026",
+          "impressions": 17,
+          "clicks": 1,
+          "ctr": 0.0588,
+          "position": 6.35,
+          "cluster": "eventi/fiera/festa/birra",
+          "tokens": 5
+        }
+      ]
+    },
+    {
+      "cluster": "cosa vedere/centro storico",
+      "impressions": 1399,
+      "clicks": 2,
+      "avg_position": 4.15,
+      "top_pages": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "impressions": 1307,
+          "clicks": 2,
+          "avg_position": 3.96
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "impressions": 79,
+          "clicks": 0,
+          "avg_position": 6.61
+        },
+        {
+          "page": "/montefiascone-in-un-giorno",
+          "impressions": 13,
+          "clicks": 0,
+          "avg_position": 7.77
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "montefiascone cosa vedere",
+          "impressions": 805,
+          "clicks": 2,
+          "ctr": 0.0025,
+          "position": 3.57,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cosa vedere a montefiascone",
+          "impressions": 260,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 4.33,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "montefiascone centro storico",
+          "impressions": 101,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 6.2,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cosa vedere a montefiascone e dintorni",
+          "impressions": 41,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 2.46,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 6
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "query": "montefiascone centro storico",
+          "impressions": 34,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 6.06,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "query": "montefiascone cosa vedere",
+          "impressions": 32,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 5.38,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cosa vedere montefiascone",
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 4.28,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cosa visitare a montefiascone",
+          "impressions": 21,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 4.43,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cosa fare a montefiascone",
+          "impressions": 20,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 4.15,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cosa c'è da vedere a montefiascone",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 3.38,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 6
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "query": "cosa vedere a montefiascone",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 11.08,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 4
+        },
+        {
+          "page": "/montefiascone-in-un-giorno",
+          "query": "montefiascone cosa vedere",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 2.38,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "montefiascone da vedere",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 4.43,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "capitignano cosa vedere",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 3.8,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "lago di bolsena cosa fare",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 11.8,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 5
+        },
+        {
+          "page": "/montefiascone-in-un-giorno",
+          "query": "cosa vedere a montefiascone",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 16.4,
+          "cluster": "cosa vedere/centro storico",
+          "tokens": 4
+        }
+      ]
+    },
+    {
+      "cluster": "monumenti/chiese",
+      "impressions": 719,
+      "clicks": 25,
+      "avg_position": 2.87,
+      "top_pages": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "impressions": 551,
+          "clicks": 24,
+          "avg_position": 2.95
+        },
+        {
+          "page": "/cattedrale-santa-margherita-montefiascone",
+          "impressions": 168,
+          "clicks": 1,
+          "avg_position": 2.61
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "san flaviano montefiascone",
+          "impressions": 186,
+          "clicks": 12,
+          "ctr": 0.0645,
+          "position": 3.88,
+          "cluster": "monumenti/chiese",
+          "tokens": 3
+        },
+        {
+          "page": "/cattedrale-santa-margherita-montefiascone",
+          "query": "santa margherita montefiascone",
+          "impressions": 149,
+          "clicks": 1,
+          "ctr": 0.0067,
+          "position": 2.51,
+          "cluster": "monumenti/chiese",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "chiesa di san flaviano",
+          "impressions": 122,
+          "clicks": 1,
+          "ctr": 0.0082,
+          "position": 1.44,
+          "cluster": "monumenti/chiese",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "chiesa san flaviano montefiascone",
+          "impressions": 61,
+          "clicks": 4,
+          "ctr": 0.0656,
+          "position": 2.31,
+          "cluster": "monumenti/chiese",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "chiesa di san flaviano montefiascone",
+          "impressions": 46,
+          "clicks": 3,
+          "ctr": 0.0652,
+          "position": 2.11,
+          "cluster": "monumenti/chiese",
+          "tokens": 5
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "basilica di san flaviano",
+          "impressions": 45,
+          "clicks": 1,
+          "ctr": 0.0222,
+          "position": 3.2,
+          "cluster": "monumenti/chiese",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "montefiascone san flaviano",
+          "impressions": 30,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 5.43,
+          "cluster": "monumenti/chiese",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "basilica di san flaviano montefiascone",
+          "impressions": 21,
+          "clicks": 1,
+          "ctr": 0.0476,
+          "position": 2.29,
+          "cluster": "monumenti/chiese",
+          "tokens": 5
+        },
+        {
+          "page": "/cattedrale-santa-margherita-montefiascone",
+          "query": "santa margherita montefiascone orari messe",
+          "impressions": 19,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 3.37,
+          "cluster": "monumenti/chiese",
+          "tokens": 5
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "basilica san flaviano montefiascone",
+          "impressions": 17,
+          "clicks": 2,
+          "ctr": 0.1176,
+          "position": 4.06,
+          "cluster": "monumenti/chiese",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cattedrale di montefiascone",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 4.25,
+          "cluster": "monumenti/chiese",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "san flaviano montefiascone affreschi",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 1.0,
+          "cluster": "monumenti/chiese",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "montefiascone chiesa di san flaviano",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 3.14,
+          "cluster": "monumenti/chiese",
+          "tokens": 5
+        }
+      ]
+    },
+    {
+      "cluster": "altre long-tail",
+      "impressions": 305,
+      "clicks": 6,
+      "avg_position": 16.18,
+      "top_pages": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "impressions": 122,
+          "clicks": 1,
+          "avg_position": 2.17
+        },
+        {
+          "page": "/eventi",
+          "impressions": 47,
+          "clicks": 3,
+          "avg_position": 7.77
+        },
+        {
+          "page": "/de/sehenswuerdigkeiten-montefiascone",
+          "impressions": 18,
+          "clicks": 0,
+          "avg_position": 14.33
+        },
+        {
+          "page": "/en/things-to-see-montefiascone",
+          "impressions": 16,
+          "clicks": 0,
+          "avg_position": 42.06
+        },
+        {
+          "page": "/en/",
+          "impressions": 13,
+          "clicks": 0,
+          "avg_position": 27.23
+        },
+        {
+          "page": "/dove-vedere-il-tramonto-sul-lago-di-bolsena",
+          "impressions": 9,
+          "clicks": 0,
+          "avg_position": 7.67
+        },
+        {
+          "page": "/vino",
+          "impressions": 9,
+          "clicks": 0,
+          "avg_position": 38.78
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "impressions": 8,
+          "clicks": 0,
+          "avg_position": 1.75
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "montefiascone sehenswürdigkeiten",
+          "impressions": 99,
+          "clicks": 1,
+          "ctr": 0.0101,
+          "position": 1.63,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/eventi",
+          "query": "panorami montefiascone 2026",
+          "impressions": 34,
+          "clicks": 2,
+          "ctr": 0.0588,
+          "position": 8.26,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "cose da fare a montefiascone",
+          "impressions": 23,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 4.52,
+          "cluster": "altre long-tail",
+          "tokens": 5
+        },
+        {
+          "page": "/de/sehenswuerdigkeiten-montefiascone",
+          "query": "montefiascone sehenswürdigkeiten",
+          "impressions": 18,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 14.33,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/eventi",
+          "query": "cantinone montefiascone 2026",
+          "impressions": 13,
+          "clicks": 1,
+          "ctr": 0.0769,
+          "position": 6.46,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/",
+          "query": "montefiascone day trip",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 27.23,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/things-to-see-montefiascone",
+          "query": "montefiascone day trip",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 55.9,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/dove-vedere-il-tramonto-sul-lago-di-bolsena",
+          "query": "belvedere di montefiascone",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 7.67,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/vino",
+          "query": "cantina di montefiascone",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 38.78,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "query": "montefiascone sehenswürdigkeiten",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 1.75,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/weekend-in-montefiascone",
+          "query": "montefiascone day trip",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 23.71,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/est-film-festival-montefiascone",
+          "query": "est film festival 2026",
+          "impressions": 6,
+          "clicks": 1,
+          "ctr": 0.1667,
+          "position": 5.67,
+          "cluster": "altre long-tail",
+          "tokens": 4
+        },
+        {
+          "page": "/est-lake-festival-montefiascone",
+          "query": "east lake festival",
+          "impressions": 6,
+          "clicks": 1,
+          "ctr": 0.1667,
+          "position": 6.67,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/come-arrivare-a-montefiascone",
+          "query": "montefiascone dove si trova",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 45.33,
+          "cluster": "altre long-tail",
+          "tokens": 4
+        },
+        {
+          "page": "/de/unterkunft-in-montefiascone",
+          "query": "montefiascone sehenswürdigkeiten",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 25.5,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/montefiascone-travel-guide",
+          "query": "montefiascone day trip",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 51.33,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/things-to-see-montefiascone",
+          "query": "things to do in montefiascone",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 19.0,
+          "cluster": "altre long-tail",
+          "tokens": 5
+        },
+        {
+          "page": "/en/what-to-see-montefiascone",
+          "query": "montefiascone day trip",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 77.0,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/how-to-get-to-montefiascone",
+          "query": "montefiascone day trip",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 83.2,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        },
+        {
+          "page": "/en/montefiascone-in-one-day",
+          "query": "montefiascone day trip",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 41.0,
+          "cluster": "altre long-tail",
+          "tokens": 3
+        }
+      ]
+    },
+    {
+      "cluster": "dormire/hotel/b&b",
+      "impressions": 75,
+      "clicks": 0,
+      "avg_position": 13.63,
+      "top_pages": [
+        {
+          "page": "/dove-dormire-a-montefiascone",
+          "impressions": 62,
+          "clicks": 0,
+          "avg_position": 13.53
+        },
+        {
+          "page": "/dove-dormire-a-montefiascone.html",
+          "impressions": 13,
+          "clicks": 0,
+          "avg_position": 14.08
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/dove-dormire-a-montefiascone",
+          "query": "dormire a montefiascone",
+          "impressions": 27,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 14.22,
+          "cluster": "dormire/hotel/b&b",
+          "tokens": 3
+        },
+        {
+          "page": "/dove-dormire-a-montefiascone",
+          "query": "montefiascone dove dormire",
+          "impressions": 22,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 13.23,
+          "cluster": "dormire/hotel/b&b",
+          "tokens": 3
+        },
+        {
+          "page": "/dove-dormire-a-montefiascone",
+          "query": "dove dormire a montefiascone",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 12.62,
+          "cluster": "dormire/hotel/b&b",
+          "tokens": 4
+        },
+        {
+          "page": "/dove-dormire-a-montefiascone.html",
+          "query": "dove dormire a montefiascone",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 11.88,
+          "cluster": "dormire/hotel/b&b",
+          "tokens": 4
+        },
+        {
+          "page": "/dove-dormire-a-montefiascone.html",
+          "query": "dormire a montefiascone",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 17.6,
+          "cluster": "dormire/hotel/b&b",
+          "tokens": 3
+        }
+      ]
+    },
+    {
+      "cluster": "lago/bolsena/spiagge",
+      "impressions": 71,
+      "clicks": 0,
+      "avg_position": 14.63,
+      "top_pages": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "impressions": 60,
+          "clicks": 0,
+          "avg_position": 3.23
+        },
+        {
+          "page": "/en/lake-bolsena",
+          "impressions": 11,
+          "clicks": 0,
+          "avg_position": 76.82
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "lago di bolsena sehenswürdigkeiten",
+          "impressions": 20,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 1.85,
+          "cluster": "lago/bolsena/spiagge",
+          "tokens": 5
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "bolsena sehenswürdigkeiten",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 1.73,
+          "cluster": "lago/bolsena/spiagge",
+          "tokens": 3
+        },
+        {
+          "page": "/en/lake-bolsena",
+          "query": "lago di bolsena",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 76.82,
+          "cluster": "lago/bolsena/spiagge",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "bolsenasee sehenswürdigkeiten",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 1.5,
+          "cluster": "lago/bolsena/spiagge",
+          "tokens": 3
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "montefiascone lago di bolsena",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 5.75,
+          "cluster": "lago/bolsena/spiagge",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "lac de bolsena que faire",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 10.0,
+          "cluster": "lago/bolsena/spiagge",
+          "tokens": 5
+        }
+      ]
+    },
+    {
+      "cluster": "arrivare/indicazioni",
+      "impressions": 57,
+      "clicks": 1,
+      "avg_position": 13.26,
+      "top_pages": [
+        {
+          "page": "/come-arrivare-a-montefiascone.html",
+          "impressions": 22,
+          "clicks": 0,
+          "avg_position": 9.18
+        },
+        {
+          "page": "/come-arrivare-a-montefiascone",
+          "impressions": 14,
+          "clicks": 0,
+          "avg_position": 10.21
+        },
+        {
+          "page": "/itinerario-auto-lago-di-bolsena",
+          "impressions": 8,
+          "clicks": 1,
+          "avg_position": 4.62
+        },
+        {
+          "page": "/en/via-francigena-montefiascone-viterbo",
+          "impressions": 8,
+          "clicks": 0,
+          "avg_position": 46.0
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "impressions": 5,
+          "clicks": 0,
+          "avg_position": 1.2
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/come-arrivare-a-montefiascone.html",
+          "query": "montefiascone indicazioni stradali",
+          "impressions": 22,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 9.18,
+          "cluster": "arrivare/indicazioni",
+          "tokens": 3
+        },
+        {
+          "page": "/come-arrivare-a-montefiascone",
+          "query": "montefiascone indicazioni stradali",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 9.0,
+          "cluster": "arrivare/indicazioni",
+          "tokens": 3
+        },
+        {
+          "page": "/itinerario-auto-lago-di-bolsena",
+          "query": "giro del lago di bolsena in auto",
+          "impressions": 8,
+          "clicks": 1,
+          "ctr": 0.125,
+          "position": 4.62,
+          "cluster": "arrivare/indicazioni",
+          "tokens": 7
+        },
+        {
+          "page": "/en/via-francigena-montefiascone-viterbo",
+          "query": "via francigena viterbo to rome",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 46.0,
+          "cluster": "arrivare/indicazioni",
+          "tokens": 5
+        },
+        {
+          "page": "/come-arrivare-a-montefiascone",
+          "query": "montefiascone viterbo distanza",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 12.4,
+          "cluster": "arrivare/indicazioni",
+          "tokens": 3
+        },
+        {
+          "page": "/cosa-vedere-montefiascone-guida-completa",
+          "query": "a voir autour de moi",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 1.2,
+          "cluster": "arrivare/indicazioni",
+          "tokens": 5
+        }
+      ]
+    },
+    {
+      "cluster": "mangiare/cucina/ristoranti",
+      "impressions": 18,
+      "clicks": 0,
+      "avg_position": 12.61,
+      "top_pages": [
+        {
+          "page": "/dove-mangiare-a-montefiascone",
+          "impressions": 10,
+          "clicks": 0,
+          "avg_position": 14.6
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "impressions": 8,
+          "clicks": 0,
+          "avg_position": 10.12
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/dove-mangiare-a-montefiascone",
+          "query": "dove mangiare a montefiascone",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 14.6,
+          "cluster": "mangiare/cucina/ristoranti",
+          "tokens": 4
+        },
+        {
+          "page": "/basilica-san-flaviano-montefiascone",
+          "query": "est est est montefiascone",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 10.12,
+          "cluster": "mangiare/cucina/ristoranti",
+          "tokens": 4
+        }
+      ]
+    },
+    {
+      "cluster": "mappa/parcheggi/itinerario",
+      "impressions": 5,
+      "clicks": 0,
+      "avg_position": 8.6,
+      "top_pages": [
+        {
+          "page": "/parcheggi-montefiascone",
+          "impressions": 5,
+          "clicks": 0,
+          "avg_position": 8.6
+        }
+      ],
+      "top_queries": [
+        {
+          "page": "/parcheggi-montefiascone",
+          "query": "dove parcheggiare a montefiascone",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "position": 8.6,
+          "cluster": "mappa/parcheggi/itinerario",
+          "tokens": 4
+        }
+      ]
+    }
+  ],
+  "top_opportunities": [
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "montefiascone cosa vedere",
+      "impressions": 805,
+      "clicks": 2,
+      "ctr": 0.0025,
+      "position": 3.57,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cosa vedere a montefiascone",
+      "impressions": 260,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 4.33,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "fiera del vino montefiascone 2026",
+      "impressions": 229,
+      "clicks": 22,
+      "ctr": 0.0961,
+      "position": 6.44,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "san flaviano montefiascone",
+      "impressions": 186,
+      "clicks": 12,
+      "ctr": 0.0645,
+      "position": 3.88,
+      "cluster": "monumenti/chiese",
+      "tokens": 3
+    },
+    {
+      "page": "/eventi",
+      "query": "festa della birra montefiascone",
+      "impressions": 170,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.71,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/cattedrale-santa-margherita-montefiascone",
+      "query": "santa margherita montefiascone",
+      "impressions": 149,
+      "clicks": 1,
+      "ctr": 0.0067,
+      "position": 2.51,
+      "cluster": "monumenti/chiese",
+      "tokens": 3
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "a tuscia birra 2026",
+      "impressions": 140,
+      "clicks": 2,
+      "ctr": 0.0143,
+      "position": 8.65,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "festa della birra montefiascone 2026",
+      "impressions": 132,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 8.97,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "chiesa di san flaviano",
+      "impressions": 122,
+      "clicks": 1,
+      "ctr": 0.0082,
+      "position": 1.44,
+      "cluster": "monumenti/chiese",
+      "tokens": 4
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "montefiascone centro storico",
+      "impressions": 101,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 6.2,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "montefiascone sehenswürdigkeiten",
+      "impressions": 99,
+      "clicks": 1,
+      "ctr": 0.0101,
+      "position": 1.63,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "tuscia birra 2026",
+      "impressions": 94,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.22,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "festa della birra montefiascone 2026",
+      "impressions": 89,
+      "clicks": 3,
+      "ctr": 0.0337,
+      "position": 5.7,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "chiesa san flaviano montefiascone",
+      "impressions": 61,
+      "clicks": 4,
+      "ctr": 0.0656,
+      "position": 2.31,
+      "cluster": "monumenti/chiese",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi-estate-montefiascone-2026",
+      "query": "fiera del vino montefiascone 2026",
+      "impressions": 58,
+      "clicks": 9,
+      "ctr": 0.1552,
+      "position": 5.88,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 5
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "atb festival 2026",
+      "impressions": 54,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 7.8,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/eventi",
+      "query": "festa del vino montefiascone",
+      "impressions": 48,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.56,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "festa del vino montefiascone 2026",
+      "impressions": 47,
+      "clicks": 1,
+      "ctr": 0.0213,
+      "position": 5.68,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "chiesa di san flaviano montefiascone",
+      "impressions": 46,
+      "clicks": 3,
+      "ctr": 0.0652,
+      "position": 2.11,
+      "cluster": "monumenti/chiese",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "basilica di san flaviano",
+      "impressions": 45,
+      "clicks": 1,
+      "ctr": 0.0222,
+      "position": 3.2,
+      "cluster": "monumenti/chiese",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "programma fiera del vino montefiascone 2026",
+      "impressions": 42,
+      "clicks": 8,
+      "ctr": 0.1905,
+      "position": 4.12,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 6
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cosa vedere a montefiascone e dintorni",
+      "impressions": 41,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 2.46,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 6
+    },
+    {
+      "page": "/eventi",
+      "query": "montefiascone festa della birra",
+      "impressions": 39,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 8.95,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "comune montefiascone eventi",
+      "impressions": 38,
+      "clicks": 3,
+      "ctr": 0.0789,
+      "position": 6.03,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "tuscia birra montefiascone 2026",
+      "impressions": 37,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 6.97,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "festa birra montefiascone",
+      "impressions": 35,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.97,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/cosa-vedere-montefiascone-guida-completa",
+      "query": "montefiascone centro storico",
+      "impressions": 34,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 6.06,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/eventi",
+      "query": "panorami montefiascone 2026",
+      "impressions": 34,
+      "clicks": 2,
+      "ctr": 0.0588,
+      "position": 8.26,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/cosa-vedere-montefiascone-guida-completa",
+      "query": "montefiascone cosa vedere",
+      "impressions": 32,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 5.38,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "atb festival montefiascone 2026",
+      "impressions": 32,
+      "clicks": 1,
+      "ctr": 0.0312,
+      "position": 7.25,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "montefiascone festa oggi",
+      "impressions": 32,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 8.41,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "montefiascone san flaviano",
+      "impressions": 30,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 5.43,
+      "cluster": "monumenti/chiese",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cosa vedere montefiascone",
+      "impressions": 29,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 4.28,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/dove-dormire-a-montefiascone",
+      "query": "dormire a montefiascone",
+      "impressions": 27,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 14.22,
+      "cluster": "dormire/hotel/b&b",
+      "tokens": 3
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "atb montefiascone 2026",
+      "impressions": 26,
+      "clicks": 1,
+      "ctr": 0.0385,
+      "position": 6.12,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cose da fare a montefiascone",
+      "impressions": 23,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 4.52,
+      "cluster": "altre long-tail",
+      "tokens": 5
+    },
+    {
+      "page": "/come-arrivare-a-montefiascone.html",
+      "query": "montefiascone indicazioni stradali",
+      "impressions": 22,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.18,
+      "cluster": "arrivare/indicazioni",
+      "tokens": 3
+    },
+    {
+      "page": "/dove-dormire-a-montefiascone",
+      "query": "montefiascone dove dormire",
+      "impressions": 22,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 13.23,
+      "cluster": "dormire/hotel/b&b",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "basilica di san flaviano montefiascone",
+      "impressions": 21,
+      "clicks": 1,
+      "ctr": 0.0476,
+      "position": 2.29,
+      "cluster": "monumenti/chiese",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cosa visitare a montefiascone",
+      "impressions": 21,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 4.43,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 4
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "lago di bolsena sehenswürdigkeiten",
+      "impressions": 20,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 1.85,
+      "cluster": "lago/bolsena/spiagge",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cosa fare a montefiascone",
+      "impressions": 20,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 4.15,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "fiera del vino montefiascone",
+      "impressions": 20,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.25,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/cattedrale-santa-margherita-montefiascone",
+      "query": "santa margherita montefiascone orari messe",
+      "impressions": 19,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 3.37,
+      "cluster": "monumenti/chiese",
+      "tokens": 5
+    },
+    {
+      "page": "/de/sehenswuerdigkeiten-montefiascone",
+      "query": "montefiascone sehenswürdigkeiten",
+      "impressions": 18,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 14.33,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "basilica san flaviano montefiascone",
+      "impressions": 17,
+      "clicks": 2,
+      "ctr": 0.1176,
+      "position": 4.06,
+      "cluster": "monumenti/chiese",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi.html",
+      "query": "fiera del vino montefiascone 2026",
+      "impressions": 17,
+      "clicks": 1,
+      "ctr": 0.0588,
+      "position": 6.35,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "bolsena sehenswürdigkeiten",
+      "impressions": 15,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 1.73,
+      "cluster": "lago/bolsena/spiagge",
+      "tokens": 3
+    },
+    {
+      "page": "/eventi",
+      "query": "festa santa margherita montefiascone",
+      "impressions": 15,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 6.73,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cosa c'è da vedere a montefiascone",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 3.38,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 6
+    },
+    {
+      "page": "/eventi.html",
+      "query": "comune montefiascone eventi",
+      "impressions": 13,
+      "clicks": 1,
+      "ctr": 0.0769,
+      "position": 6.15,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/eventi",
+      "query": "cantinone montefiascone 2026",
+      "impressions": 13,
+      "clicks": 1,
+      "ctr": 0.0769,
+      "position": 6.46,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/cosa-vedere-montefiascone-guida-completa",
+      "query": "cosa vedere a montefiascone",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 11.08,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 4
+    },
+    {
+      "page": "/dove-dormire-a-montefiascone",
+      "query": "dove dormire a montefiascone",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 12.62,
+      "cluster": "dormire/hotel/b&b",
+      "tokens": 4
+    },
+    {
+      "page": "/en/",
+      "query": "montefiascone day trip",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 27.23,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/calendario-eventi-montefiascone",
+      "query": "programma santa margherita montefiascone",
+      "impressions": 12,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 5.42,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/en/lake-bolsena",
+      "query": "lago di bolsena",
+      "impressions": 11,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 76.82,
+      "cluster": "lago/bolsena/spiagge",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "bolsenasee sehenswürdigkeiten",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 1.5,
+      "cluster": "lago/bolsena/spiagge",
+      "tokens": 3
+    },
+    {
+      "page": "/calendario-eventi-montefiascone",
+      "query": "festa santa margherita montefiascone",
+      "impressions": 10,
+      "clicks": 1,
+      "ctr": 0.1,
+      "position": 6.6,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/dove-mangiare-a-montefiascone",
+      "query": "dove mangiare a montefiascone",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 14.6,
+      "cluster": "mangiare/cucina/ristoranti",
+      "tokens": 4
+    },
+    {
+      "page": "/en/things-to-see-montefiascone",
+      "query": "montefiascone day trip",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 55.9,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/dove-vedere-il-tramonto-sul-lago-di-bolsena",
+      "query": "belvedere di montefiascone",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 7.67,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/come-arrivare-a-montefiascone",
+      "query": "montefiascone indicazioni stradali",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.0,
+      "cluster": "arrivare/indicazioni",
+      "tokens": 3
+    },
+    {
+      "page": "/vino",
+      "query": "cantina di montefiascone",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 38.78,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "san flaviano montefiascone affreschi",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 1.0,
+      "cluster": "monumenti/chiese",
+      "tokens": 4
+    },
+    {
+      "page": "/cosa-vedere-montefiascone-guida-completa",
+      "query": "montefiascone sehenswürdigkeiten",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 1.75,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/montefiascone-in-un-giorno",
+      "query": "montefiascone cosa vedere",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 2.38,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "cattedrale di montefiascone",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 4.25,
+      "cluster": "monumenti/chiese",
+      "tokens": 3
+    },
+    {
+      "page": "/itinerario-auto-lago-di-bolsena",
+      "query": "giro del lago di bolsena in auto",
+      "impressions": 8,
+      "clicks": 1,
+      "ctr": 0.125,
+      "position": 4.62,
+      "cluster": "arrivare/indicazioni",
+      "tokens": 7
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "montefiascone lago di bolsena",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 5.75,
+      "cluster": "lago/bolsena/spiagge",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi",
+      "query": "festa montefiascone oggi",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 6.12,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/eventi",
+      "query": "festa della birra a montefiascone",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 8.75,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 5
+    },
+    {
+      "page": "/eventi",
+      "query": "festa a montefiascone oggi",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.38,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/eventi-estate-montefiascone-2026",
+      "query": "programma fiera del vino montefiascone 2026",
+      "impressions": 8,
+      "clicks": 1,
+      "ctr": 0.125,
+      "position": 9.88,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 6
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "est est est montefiascone",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 10.12,
+      "cluster": "mangiare/cucina/ristoranti",
+      "tokens": 4
+    },
+    {
+      "page": "/dove-dormire-a-montefiascone.html",
+      "query": "dove dormire a montefiascone",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 11.88,
+      "cluster": "dormire/hotel/b&b",
+      "tokens": 4
+    },
+    {
+      "page": "/en/via-francigena-montefiascone-viterbo",
+      "query": "via francigena viterbo to rome",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 46.0,
+      "cluster": "arrivare/indicazioni",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "montefiascone chiesa di san flaviano",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 3.14,
+      "cluster": "monumenti/chiese",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "montefiascone da vedere",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 4.43,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "lac de bolsena que faire",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 10.0,
+      "cluster": "lago/bolsena/spiagge",
+      "tokens": 5
+    },
+    {
+      "page": "/eventi",
+      "query": "atb festival montefiascone 2026",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 10.57,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/en/weekend-in-montefiascone",
+      "query": "montefiascone day trip",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 23.71,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/en/est-film-festival-montefiascone",
+      "query": "est film festival 2026",
+      "impressions": 6,
+      "clicks": 1,
+      "ctr": 0.1667,
+      "position": 5.67,
+      "cluster": "altre long-tail",
+      "tokens": 4
+    },
+    {
+      "page": "/est-lake-festival-montefiascone",
+      "query": "east lake festival",
+      "impressions": 6,
+      "clicks": 1,
+      "ctr": 0.1667,
+      "position": 6.67,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/en/things-to-see-montefiascone",
+      "query": "things to do in montefiascone",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 19.0,
+      "cluster": "altre long-tail",
+      "tokens": 5
+    },
+    {
+      "page": "/de/unterkunft-in-montefiascone",
+      "query": "montefiascone sehenswürdigkeiten",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 25.5,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/come-arrivare-a-montefiascone",
+      "query": "montefiascone dove si trova",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 45.33,
+      "cluster": "altre long-tail",
+      "tokens": 4
+    },
+    {
+      "page": "/en/montefiascone-travel-guide",
+      "query": "montefiascone day trip",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 51.33,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/en/what-to-see-montefiascone",
+      "query": "montefiascone day trip",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 77.0,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/cosa-vedere-montefiascone-guida-completa",
+      "query": "a voir autour de moi",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 1.2,
+      "cluster": "arrivare/indicazioni",
+      "tokens": 5
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "capitignano cosa vedere",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 3.8,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 3
+    },
+    {
+      "page": "/parcheggi-montefiascone",
+      "query": "dove parcheggiare a montefiascone",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 8.6,
+      "cluster": "mappa/parcheggi/itinerario",
+      "tokens": 4
+    },
+    {
+      "page": "/calendario-eventi-montefiascone",
+      "query": "festa montefiascone oggi",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 8.8,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/atb-festival-montefiascone",
+      "query": "atb festival montefiascone",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 9.2,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 3
+    },
+    {
+      "page": "/eventi.html",
+      "query": "fiera del vino montefiascone",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 10.6,
+      "cluster": "eventi/fiera/festa/birra",
+      "tokens": 4
+    },
+    {
+      "page": "/basilica-san-flaviano-montefiascone",
+      "query": "lago di bolsena cosa fare",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 11.8,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 5
+    },
+    {
+      "page": "/come-arrivare-a-montefiascone",
+      "query": "montefiascone viterbo distanza",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 12.4,
+      "cluster": "arrivare/indicazioni",
+      "tokens": 3
+    },
+    {
+      "page": "/montefiascone-in-un-giorno",
+      "query": "cosa vedere a montefiascone",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 16.4,
+      "cluster": "cosa vedere/centro storico",
+      "tokens": 4
+    },
+    {
+      "page": "/dove-dormire-a-montefiascone.html",
+      "query": "dormire a montefiascone",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 17.6,
+      "cluster": "dormire/hotel/b&b",
+      "tokens": 3
+    },
+    {
+      "page": "/en/things-to-do-near-montefiascone",
+      "query": "montefiascone day trip",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 35.4,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/en/montefiascone-in-one-day",
+      "query": "montefiascone day trip",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 41.0,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/en/montefiascone-in-two-days",
+      "query": "montefiascone day trip",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 71.2,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    },
+    {
+      "page": "/en/how-to-get-to-montefiascone",
+      "query": "montefiascone day trip",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 83.2,
+      "cluster": "altre long-tail",
+      "tokens": 3
+    }
+  ]
+}
