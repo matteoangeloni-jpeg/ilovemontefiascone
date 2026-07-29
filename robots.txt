@@ -8,6 +8,8 @@ Disallow: /offline.html
 Disallow: /base.html
 Disallow: /pages/
 Disallow: /data/
+Disallow: /reports/
+Disallow: /scratch/
 Disallow: /server.py
 Disallow: /*.md$
 Disallow: /audit
