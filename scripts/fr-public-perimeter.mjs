@@ -84,7 +84,6 @@ export const FR_PUBLIC_FILES = [
   "que-faire-le-soir-a-montefiascone.html",
   "que-voir-autour-de-litineraire-de-montefiascone.html",
   "que-voir-montefiascone-guide-complet.html",
-  "que-voir.html",
   "randonnee-au-lac-de-bolsena.html",
   "san-lorenzo-nuovo-que-voir-lac-de-bolsena.html",
   "semaine-gastronomique-cantinone-montefiascone.html",

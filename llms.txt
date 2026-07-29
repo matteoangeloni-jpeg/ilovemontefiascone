@@ -4,7 +4,7 @@
 ## Site Identity
 - Canonical domain: https://www.ilovemontefiascone.com/
 - Public languages: Italian, English, German, French (full parity).
-- Public perimeter: 100 IT / 100 EN / 100 DE / 100 FR.
+- Public perimeter: 98 IT / 99 EN / 99 DE / 99 FR.
 - Public perimeter updated: 2026-07-29.
 
 ## Main Topics
@@ -75,7 +75,6 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [Cronoscalata Lago-Montefiascone 2026](https://www.ilovemontefiascone.com/cronoscalata-montefiascone-coppa-citta)
 - [Cucina tipica di Montefiascone | Piatti e sapori](https://www.ilovemontefiascone.com/cucina-tipica-montefiascone)
 - [Degustazione vino a Montefiascone: come funziona](https://www.ilovemontefiascone.com/degustazione-vino-montefiascone-come-funziona)
-- [Dormire nel centro storico di Montefiascone](https://www.ilovemontefiascone.com/dormire-centro-storico-montefiascone)
 - [Dove dormire a Montefiascone | Zone e consigli](https://www.ilovemontefiascone.com/dove-dormire-a-montefiascone)
 - [Dove mangiare a Montefiascone | Zone e consigli](https://www.ilovemontefiascone.com/dove-mangiare-a-montefiascone)
 - [Dove vedere il tramonto sul Lago di Bolsena](https://www.ilovemontefiascone.com/dove-vedere-il-tramonto-sul-lago-di-bolsena)
@@ -108,7 +107,6 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [Lago di Bolsena in autunno | Cosa fare](https://www.ilovemontefiascone.com/lago-di-bolsena-in-autunno)
 - [Lago di Bolsena in bici | Cicloturismo](https://www.ilovemontefiascone.com/lago-di-bolsena-in-bici)
 - [Lago di Bolsena in un giorno | Itinerario](https://www.ilovemontefiascone.com/lago-di-bolsena-in-un-giorno)
-- [Mangiare nel centro storico di Montefiascone](https://www.ilovemontefiascone.com/mangiare-centro-storico-montefiascone)
 - [Mappa di Montefiascone | Lago, centro e Francigena](https://www.ilovemontefiascone.com/mappa)
 - [Marta sul Lago di Bolsena: cosa vedere](https://www.ilovemontefiascone.com/marta-lago-di-bolsena-cosa-vedere)
 - [Migliori panorami sul Lago di Bolsena](https://www.ilovemontefiascone.com/migliori-panorami-lago-di-bolsena)
@@ -242,7 +240,6 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [Villa Lante from Montefiascone | Guide](https://www.ilovemontefiascone.com/en/villa-lante-from-montefiascone)
 - [Viterbo from Montefiascone | Day Trip](https://www.ilovemontefiascone.com/en/viterbo-from-montefiascone)
 - [Weekend in Montefiascone | 2-Day Itinerary](https://www.ilovemontefiascone.com/en/weekend-in-montefiascone)
-- [What to See in Montefiascone | Travel Hub](https://www.ilovemontefiascone.com/en/what-to-see-montefiascone)
 - [What to See on Lake Bolsena](https://www.ilovemontefiascone.com/en/what-to-see-on-lake-bolsena)
 - [Where to Eat in Montefiascone | Local Food](https://www.ilovemontefiascone.com/en/where-to-eat-in-montefiascone)
 - [Where to Stay around Lake Bolsena](https://www.ilovemontefiascone.com/en/where-to-stay-around-lake-bolsena) - Accommodation guidance for visitors basing themselves near the lake rather than in Montefiascone itself.
@@ -347,7 +344,6 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [Villa Lante in Bagnaia ab Montefiascone](https://www.ilovemontefiascone.com/de/villa-lante-bagnaia-ab-montefiascone)
 - [Viterbo ab Montefiascone](https://www.ilovemontefiascone.com/de/viterbo-ab-montefiascone)
 - [Wandern am Bolsenasee ab Montefiascone](https://www.ilovemontefiascone.com/de/wandern-bolsenasee)
-- [Was sehen in Montefiascone | Reise-Hub](https://www.ilovemontefiascone.com/de/was-sehen-montefiascone)
 - [Weinfest Montefiascone 2026 | Est! Est!! Est!!!](https://www.ilovemontefiascone.com/de/weinfest-montefiascone-traditionen)
 - [Weingüter und Verkostung in Montefiascone](https://www.ilovemontefiascone.com/de/weingueter-montefiascone-verkostung)
 - [Weinverkostung in Montefiascone: Ablauf](https://www.ilovemontefiascone.com/de/weinverkostung-montefiascone-ablauf)
@@ -435,7 +431,6 @@ I Love Montefiascone is an independent multilingual travel guide to Montefiascon
 - [Que faire le soir à Montefiascone](https://www.ilovemontefiascone.com/fr/que-faire-le-soir-a-montefiascone)
 - [Environs de Montefiascone | Itinéraire entre lac et villages](https://www.ilovemontefiascone.com/fr/que-voir-autour-de-litineraire-de-montefiascone)
 - [Que voir à Montefiascone | Guide complet](https://www.ilovemontefiascone.com/fr/que-voir-montefiascone-guide-complet)
-- [Que voir a Montefiascone | Rocca, cathedrale et lac](https://www.ilovemontefiascone.com/fr/que-voir)
 - [Randonnée sur le lac de Bolsena | Marcher](https://www.ilovemontefiascone.com/fr/randonnee-au-lac-de-bolsena)
 - [San Lorenzo Nouveau | Lac de Bolsena](https://www.ilovemontefiascone.com/fr/san-lorenzo-nuovo-que-voir-lac-de-bolsena)
 - [Semaine gastronomique du Cantinone à Montefiascone 2026 | Menu et dates](https://www.ilovemontefiascone.com/fr/semaine-gastronomique-cantinone-montefiascone) - 41e semaine gastronomique du Circolo Mf 80 via Trento, du 3 au 8 août 2026, chaque soir à partir de 19h30 ; menu du jour et réservation par téléphone.

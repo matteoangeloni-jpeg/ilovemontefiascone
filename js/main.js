@@ -456,7 +456,6 @@ const NAV_CONFIG = {
         key: "visit",
         label: "Besuchen",
         activePatterns: [
-          "/was-sehen",
           "/sehenswuerdigkeiten",
           "/reisefuehrer",
           "/karte-",
@@ -469,7 +468,7 @@ const NAV_CONFIG = {
           "/basilika-"
         ],
         items: [
-          { href: "/de/was-sehen-montefiascone", label: "Sehenswürdigkeiten", description: "Die wichtigsten Orte im Borgo" },
+          { href: "/de/sehenswuerdigkeiten-montefiascone", label: "Sehenswürdigkeiten", description: "Die wichtigsten Orte im Borgo" },
           { href: "/de/reisefuehrer-montefiascone", label: "Reiseführer", description: "Altstadt, Orientierung, Planung" },
           { href: "/de/karte-montefiascone", label: "Karte", description: "Zugänge, Höhenlage, Übersicht" },
           { href: "/de/thematische-routen-montefiascone", label: "Itinerarien", description: "Routen nach Thema und Zeit" },
