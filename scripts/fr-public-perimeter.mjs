@@ -35,6 +35,7 @@ export const FR_PUBLIC_FILES = [
   "festival-atb-montefiascone.html",
   "festival-decologie-integrale-de-montefiascone.html",
   "fete-de-santa-margherita-montefiascone.html",
+  "fete-madonna-della-valle-montefiascone.html",
   "forteresse-des-papes-de-montefiascone.html",
   "galerie.html",
   "giglio-vecchio-montefiascone.html",
