@@ -81,3 +81,26 @@ Ogni fase si considera superata sui dati reali, non sul numero di pagine pubblic
 - sessioni organiche GA4 e pagine per sessione sul campione consenziente;
 - domini referenti e citazioni editoriali ottenute.
 
+## Secondo sprint eseguito — belvedere e parcheggi
+
+Data: 17 settembre 2026.
+
+Evidenza GSC sugli ultimi 90 giorni:
+
+- `belvedere montefiascone`: 51 impressioni, posizione media 1,7, 0 clic;
+- `belvedere di montefiascone`: 38 impressioni, posizione media 4,2, 0 clic;
+- `montefiascone belvedere`: 32 impressioni, posizione media 1,4, 1 clic;
+- `parcheggio montefiascone`: due varianti URL per 10 impressioni complessive, posizione media 6,6-10,6, 0 clic;
+- `dove parcheggiare a montefiascone`: 5 impressioni, posizione media 8,6, 0 clic.
+
+Interventi pubblicabili realizzati:
+
+1. La pagina del tramonto è stata riallineata al cluster principale `belvedere Montefiascone`, mantenendo nello stesso URL panorama e tramonto per evitare una nuova cannibalizzazione.
+2. Title, meta description, H1 e dati Article ora nominano chiaramente Montefiascone, Rocca dei Papi e Lago di Bolsena.
+3. Inserite risposte immediate su punto panoramico, accesso, parcheggio, meteo, orario e sicurezza fotografica.
+4. Rafforzati i collegamenti dal contenuto sulla Rocca e dalla guida ai migliori panorami del lago.
+5. La pagina parcheggi è stata riallineata alla query `dove parcheggiare a Montefiascone` e ampliata con un percorso decisionale per centro alto, San Flaviano, eventi e mobilità ridotta.
+6. Rafforzato il collegamento contestuale dalla pagina `come arrivare` alla guida parcheggi.
+
+La verifica del risultato va effettuata dopo una nuova scansione Google, confrontando CTR e quota di impressioni per URL dopo 14 e 30 giorni.
+
