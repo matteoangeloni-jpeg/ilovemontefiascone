@@ -104,3 +104,17 @@ Interventi pubblicabili realizzati:
 
 La verifica del risultato va effettuata dopo una nuova scansione Google, confrontando CTR e quota di impressioni per URL dopo 14 e 30 giorni.
 
+## Controllo settimanale — 26 ottobre 2026
+
+Finestra GSC completa: 26 settembre-23 ottobre, confrontata con 29 agosto-25 settembre.
+
+| Indicatore | Ultimi 28 giorni | 28 giorni precedenti | Variazione |
+|---|---:|---:|---:|
+| Clic | 46 | 31 | +48,4% |
+| Impressioni | 3.507 | 3.751 | -6,5% |
+| CTR | 1,31% | 0,83% | +0,48 punti |
+
+Il recupero di clic e CTR è positivo, ma la guida pilastro `cosa-vedere-montefiascone-guida-completa` ha ottenuto 168 impressioni, posizione media 3,4 e nessun clic. Le query generiche restano distribuite soprattutto tra San Flaviano e Santa Margherita. Per aumentare la chiarezza dello snippet senza creare nuovi URL, il title della guida è stato focalizzato su mappa, tempi e itinerario; sono state inoltre sostituite informazioni stagionali non più affidabili con indicazioni verificabili e con il collegamento alla scheda ufficiale della Rocca dei Papi.
+
+GA4 registra 3 sessioni organiche e 7 visualizzazioni nel periodo 28 settembre-25 ottobre, contro 13 sessioni e 31 visualizzazioni nei 28 giorni precedenti. Il dato resta un campione parziale perché dipende dal consenso; la valutazione principale della crescita continua quindi a basarsi su Search Console.
+
